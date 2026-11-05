@@ -1,0 +1,376 @@
+{
+  "game_id": "cowboys-texans-2026-wk4",
+  "matchup": "Dallas Cowboys @ Houston Texans",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 47.5,
+      "ml_fav": -138,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Texans -2.5 (home fav), matches Fox opening exactly on spread and total -- no movement since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47.5,
+        "ml_fav": -138,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Texans -2.5 (home fav), matches Fox opening exactly on spread and total -- no movement since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 48.5,
+        "ml_fav": -134,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars spread via vegasinsider.com (Texans -2.5), matches DK exactly."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:36Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 48.5,
+        "ml_fav": -134,
+        "ml_dog": 125
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1): Texans(home) -2.5. Caesars via vegasinsider.com: Cowboys(away) +3 -> home(Texans) -3, half-pt wider, same side. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 48.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-02",
+    "spread_lean": "Small lean Texans -2.5 or better",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Line ticked from -2.5 (DK, unchanged since open) to Texans -3 on Caesars this cycle, crossing key number 3 on one book -- no confirmed, correctly-attributed injury news found for this specific matchup this cycle (search results were dominated by stale/misattributed CeeDee Lamb ankle articles from a different Cowboys game, not used as a signal)",
+      "Model still favors Texans by 5.2 net vs market 2.5-3 -- a real but single-category (Elo/recent-form) gap with no second corroborating signal yet"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": true,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.296592+00:00",
+    "n": 10000,
+    "homeElo": 1531.4,
+    "awayElo": 1449.0,
+    "gamesSeen": 6,
+    "eloMarginHome": 5.2,
+    "statsMarginHome": 0.1,
+    "marginDivergence": 5.1,
+    "projTotal": 48.2,
+    "homeWinProbElo": 67.9,
+    "marketHomeSpread": -3,
+    "marketTotal": 48.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 26.7,
+    "projAwayMeanRaw": 21.5,
+    "projHomeMeanAdjusted": 26.7,
+    "projAwayMeanAdjusted": 21.5,
+    "injuryAdjustedMarginHome": 5.2,
+    "projTotalAdjusted": 48.2,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+5.2) and recent-scoring margin (+0.1) disagree by 5.1 points -- worth a second look before trusting either alone.",
+      "Houston Texans (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Nico Collins (-2.0) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Dallas Cowboys (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 63.2,
+    "awayWinPct": 34.2,
+    "tiePct": 2.5,
+    "medianHomeScore": 27,
+    "medianAwayScore": 22,
+    "coverPctHome": 56.7,
+    "overPct": 49.7
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:33Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 26,
+      "handle_pct_home": 36
+    },
+    "total": {
+      "bets_pct_over": 61,
+      "handle_pct_over": 90
+    },
+    "moneyline": {
+      "bets_pct_home": 33,
+      "handle_pct_home": 17
+    },
+    "reverse_line_move": false,
+    "rlm_note": "64% of handle is on the away side but the spread hasn't moved yet (-2.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:28:53Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser",
+    "picks": [
+      {
+        "player": "Nico Collins",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Houstons clear WR1 against a middling Dallas secondary.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Dallas allows 53.0 fantasy pts to WRs thru 3 games, middle of the pack"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Collins is HOUs clear WR1"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 84.2 vs 74.5 line, +9.7 diff, 25.76% edge"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 74.5,
+        "opening_captured_at": "2026-10-01T01:28:53Z",
+        "current_line": 74.5,
+        "current_captured_at": "2026-10-01T01:28:53Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 75,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com (only 1 game found, missed time)",
+        "backtest": {
+          "hits": 1,
+          "misses": 0,
+          "pushes": 0,
+          "total": 1,
+          "pct": 100,
+          "line": 74.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Dak Prescott",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Prescott has real scramble/designed-run upside in this offense.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 17.8 vs 10.5 line, +7.3 diff, 26.37% edge"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Prescott has a real rushing floor via scrambles and short-yardage designed runs"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Cowboys a slight road dog, no strong pace signal either way"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 10.5,
+        "opening_captured_at": "2026-10-01T01:28:53Z",
+        "current_line": 10.5,
+        "current_captured_at": "2026-10-01T01:28:53Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 14,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 26,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 19,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 3,
+          "misses": 0,
+          "pushes": 0,
+          "total": 3,
+          "pct": 100,
+          "line": 10.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "C.J. Stroud",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "BetRivers",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Model and matchup both point the same direction as Houston favored at home.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Dallas allows 53.0 fantasy pts to WRs thru 3 games (~17.7/g), middle of the pack, not a shutdown defense"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 282.9 vs 245.5 line, +37.4 diff, 26.4% edge"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Our own sim favors Houston by 5.2 net pts at home, consistent with a positive passing script"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 245.5,
+        "opening_captured_at": "2026-10-01T01:08:04Z",
+        "current_line": 245.5,
+        "current_captured_at": "2026-10-01T01:08:04Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 274,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 353,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 167,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 245.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-03T11:56:39Z",
+    "analysis": [
+      "The model still likes Houston by 5.2 net points, well beyond the markets -2.5, driven mostly by an Elo edge (1531 vs 1449). That gap now has a second, corroborating signal it lacked before: WR1 Nico Collins (hamstring) is back after missing three straight games, confirmed as a full practice participant Friday and saying himself hell play -- Houstons passing offense was running without its top target for exactly the stretch the model is drawing recent form from.",
+      "Dallas has its own recurring secondary/linebacker injury questions (Durant, Hooker, Overshown, Locke all carrying designations again), but nothing firm enough yet to price as a adjustment -- worth a tighter look if Dallas official designations harden further."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Texans -2.5 or better",
+        "confidence": 5,
+        "reasoning": "Model favors Texans well beyond the market number, and getting the WR1 who was missing for the model recent-form window back is a real corroborating signal.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.296592+00:00",
+      "marginHome": 5.2,
+      "total": 48.2
+    }
+  ],
+  "final_score": {
+    "home": 30,
+    "away": 34
+  }
+}

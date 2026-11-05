@@ -1,0 +1,246 @@
+{
+  "game_id": "dolphins-vikings-2026-wk4",
+  "matchup": "Miami Dolphins @ Minnesota Vikings",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T20:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -10.5,
+      "total": 43.5,
+      "ml_fav": -560,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Vikings -10.5 (home fav). Fox opening Vikings -10/38.5 -- total up 5pts since open (38.5->43.5), spread steady; total move worth watching next cycle. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 43.5,
+        "ml_fav": -560,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Vikings -10.5 (home fav). Fox opening Vikings -10/38.5 -- total up 5pts since open (38.5->43.5), spread steady; total move worth watching next cycle. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 41.5,
+        "ml_fav": -550,
+        "ml_dog": 400
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:29:04Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 39.5,
+        "ml_fav": -625,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 39.5,
+        "ml_fav": -625,
+        "ml_dog": 525
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1), matches Caesars via vegasinsider.com. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "No edge",
+    "total_lean": "No edge (small over tilt, not enough to call)",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Corrected current total is 41.5 (was a stale 43.5) -- model total (42.9) now sits a touch above it, a 1.4pt gap too small to call a real lean on its own",
+      "Spread remains essentially matched (model 10.3 vs corrected market 10.5)"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.350637+00:00",
+    "n": 10000,
+    "homeElo": 1575.9,
+    "awayElo": 1366.3,
+    "gamesSeen": 6,
+    "eloMarginHome": 10.3,
+    "statsMarginHome": 6.1,
+    "marginDivergence": 4.2,
+    "projTotal": 42.9,
+    "homeWinProbElo": 81.5,
+    "marketHomeSpread": -10.5,
+    "marketTotal": 39.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 26.6,
+    "projAwayMeanRaw": 16.3,
+    "projHomeMeanAdjusted": 26.6,
+    "projAwayMeanAdjusted": 16.3,
+    "injuryAdjustedMarginHome": 10.3,
+    "projTotalAdjusted": 42.9,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [
+      "Elo margin (+10.3) and recent-scoring margin (+6.1) disagree by 4.2 points -- worth a second look before trusting either alone."
+    ],
+    "homeWinPct": 75.4,
+    "awayWinPct": 22.2,
+    "tiePct": 2.4,
+    "medianHomeScore": 27,
+    "medianAwayScore": 17,
+    "coverPctHome": 49.1,
+    "overPct": 60.4
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 62,
+      "handle_pct_home": 58
+    },
+    "total": {
+      "bets_pct_over": 55,
+      "handle_pct_over": 48
+    },
+    "moneyline": {
+      "bets_pct_home": 94,
+      "handle_pct_home": 66
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:08:04Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser Oct 1 AM",
+    "picks": [
+      {
+        "player": "Kyler Murray",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Murray has been a real efficiency upgrade at QB for Minnesota this year.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 227.3 vs 200.5 line, +26.8 diff, 25.4% edge"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Murray has been a confirmed real upgrade for MIN since taking over the job"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Vikings are a big home favorite (-10.5), early efficient passing likely but garbage-time volume less certain"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 200.5,
+        "opening_captured_at": "2026-10-01T01:08:04Z",
+        "current_line": 200.5,
+        "current_captured_at": "2026-10-01T01:08:04Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 18,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com (left game 1 early with concussion, only game available)",
+        "backtest": {
+          "hits": 0,
+          "misses": 1,
+          "pushes": 0,
+          "total": 1,
+          "pct": 0,
+          "line": 200.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-29T12:55:08Z",
+    "analysis": [
+      "Minnesota's model margin (10.3) tracks the market's -10.5 almost exactly, so there's no real spread or total gap to lean on this week -- both sources agree the Vikings are a clear, near-double-digit favorite at home.",
+      "Justin Jefferson has shown up in this week's fantasy injury roundups without a confirmed designation yet as of Tuesday -- worth a specific check on Wednesday's official report, since a real Jefferson absence would be the kind of signal that could move this from a watch to an actionable lean."
+    ],
+    "leans": []
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.350637+00:00",
+      "marginHome": 10.3,
+      "total": 42.9
+    }
+  ],
+  "final_score": {
+    "home": 15,
+    "away": 10
+  }
+}

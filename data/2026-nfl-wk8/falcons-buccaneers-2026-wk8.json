@@ -1,0 +1,344 @@
+{
+  "game_id": "falcons-buccaneers-2026-wk8",
+  "matchup": "Atlanta Falcons @ Tampa Bay Buccaneers",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -1,
+      "total": 44.5,
+      "ml_fav": -113,
+      "ml_dog": 100
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1,
+        "total": 44.5,
+        "ml_fav": -113,
+        "ml_dog": 100
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": {
+        "spread": -2,
+        "total": 45,
+        "ml_fav": -131,
+        "ml_dog": 111
+      },
+      "draftkings": {
+        "spread": -1,
+        "total": 44.5,
+        "ml_fav": -113,
+        "ml_dog": 100
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 46.5,
+        "ml_fav": -141,
+        "ml_dog": 120
+      },
+      "draftkings": {
+        "spread": -1.5,
+        "total": 46,
+        "ml_fav": -124,
+        "ml_dog": 110
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 46.5,
+        "ml_fav": -141,
+        "ml_dog": 120
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 44,
+        "ml_fav": -140,
+        "ml_dog": 119
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 43.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 43.5,
+        "ml_fav": -126,
+        "ml_dog": 108
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -135,
+        "ml_dog": 110
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T17:03:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 43.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 43.5,
+        "ml_fav": -126,
+        "ml_dog": 108
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -135,
+        "ml_dog": 110
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~17:05Z (12:05pm ET). BookMaker.eu null (stale board)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": null,
+    "total_lean": "OVER 43.5",
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "model 47.7",
+      "total fell 45 to 43.5 vs over tickets"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T17:03:46.505849+00:00",
+    "n": 10000,
+    "homeElo": 1463.5,
+    "awayElo": 1474.5,
+    "gamesSeen": 14,
+    "eloMarginHome": 1.5,
+    "statsMarginHome": 0.4,
+    "marginDivergence": 1.1,
+    "projTotal": 47.7,
+    "homeWinProbElo": 55.3,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": -1.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 24.6,
+    "projAwayMeanRaw": 23.1,
+    "projHomeMeanAdjusted": 23.6,
+    "projAwayMeanAdjusted": 23.1,
+    "injuryAdjustedMarginHome": 0.5,
+    "projTotalAdjusted": 46.7,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [
+      "Home injury adjustment: -1.0 pts -- Emeka Egbuka (WR, out, -1.0).",
+      "Tampa Bay Buccaneers (home)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Baker Mayfield (-5.5) [-5.5 pts total]; Baker Mayfield (-5.5), Antoine Winfield Jr. (-0.8), Benjamin Morrison (-0.8), SirVocea Dennis (-0.4) [-7.4 pts total]; Baker Mayfield (-6.0), Antoine Winfield Jr. (-1.0) [-7.0 pts total]; Emeka Egbuka (-1.5), Luke Goedeke (-0.8), Antoine Winfield Jr. (-1.0), Baker Mayfield (-0.8) [-4.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Atlanta Falcons (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]; Brian Robinson (-0.5), Michael Jerrell (-0.8), Cameron Williams (-0.8), Billy Bowman Jr. (-0.4), Divine Deablo (-0.4), Za'Darius Smith (-0.3) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 50.2,
+    "awayWinPct": 46.8,
+    "tiePct": 3.0,
+    "medianHomeScore": 24,
+    "medianAwayScore": 23,
+    "coverPctHome": 44.4,
+    "overPct": 59.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:08.113211+00:00",
+      "marginHome": -0.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.177043+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.772081+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.693337+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-28T00:49:37.044676+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.815179+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.928084+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.937348+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-11-01T01:52:15.309590+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.108732+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.286600+00:00",
+      "marginHome": 1.5,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-11-01T17:03:46.505849+00:00",
+      "marginHome": 0.5,
+      "total": 46.7
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Bucs by 1.5 (Elo) and 0.4 (scoring), total 47.7 vs 43.5; over in 61.4% of runs. The total opened 45 and dropped to 43.5 while 71% of tickets were on the over and the money (52% of handle) was on the under.",
+      "Atlanta's secondary is thin (CB Billy Bowman out, Avieon Terrell questionable), which supports the model's over, but the total moving down against tickets is market pressure the other way. Lean only."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "OVER 43.5",
+        "confidence": 4,
+        "reasoning": "Model 47.7, but the total fell 1.5 against over tickets. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 51,
+      "handle_pct_home": 60
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 48
+    },
+    "moneyline": {
+      "bets_pct_home": 39,
+      "handle_pct_home": 31
+    },
+    "reverse_line_move": false,
+    "rlm_note": "60% of handle is on the home side and the spread has moved toward them (-1 -> -1.5) -- money and line agree, no RLM.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-01T17:03:46Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Emeka Egbuka",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Inactive (RotoWire lineups inactives 11/1 ~12:00pm ET)"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 16,
+    "away": 0
+  }
+}

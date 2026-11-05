@@ -1,0 +1,400 @@
+{
+  "game_id": "cardinals-49ers-2026-wk3",
+  "matchup": "Arizona Cardinals @ San Francisco 49ers",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T20:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": -9.0,
+      "total": 48.0,
+      "ml_fav": -427,
+      "ml_dog": 336
+    },
+    "draftkings": {
+      "spread": -8.5,
+      "total": 48.5,
+      "ml_fav": -485,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 48.0,
+        "ml_fav": -427,
+        "ml_dog": 336
+      },
+      "draftkings": {
+        "spread": -8.5,
+        "total": 48.5,
+        "ml_fav": -485,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:09Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 47.5,
+        "ml_fav": -399,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 48.0,
+        "ml_fav": -400,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -8.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK lags the market on this one (-7.5 vs -8 to -9 elsewhere) -- Purdy still out (see injury_adjustments)"
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 47.5,
+        "ml_fav": -403,
+        "ml_dog": 319
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 48.0,
+        "ml_fav": -400,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -8.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "49ers(home) favored; notable spread spread across books -- BME -9, Caesars -8, DK -7.5 -- flag as a real divergence, not a typo."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 47.5,
+        "ml_fav": -403,
+        "ml_dog": 319
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 48.0,
+        "ml_fav": -400,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:25:04Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 48.0,
+        "ml_fav": -400,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK/Caesars both steady at SF -7.5 since Fri (sharp/BME last read -9.0 on 9/25 -- book-vs-sharp gap persists, but Bosa's now-confirmed multi-week OUT (new today) argues the fair number may be lower than -9, not that DK needs to catch up -- see updated research. CORRECTION: prior research assumed Kyler Murray was still ARI's QB and 'on track to start' -- that was already stale; Murray was released by Arizona in May 2026 and is now Minnesota's QB (see vikings-buccaneers). ARI's actual starter is Jacoby Brissett, has been all season -- not new information, just fixing a carried-forward error."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- DK/Caesars gap to sharp (last read -9.0) may reflect Bosa now being out, not book lag; needs the model read post-injury-update rather than an assumed timing buy",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Nick Bosa (49ers, top pass rusher) confirmed OUT multi-week (calf/knee) as of Sun AM -- upgraded from Thursdays rest-day ambiguity, new material development",
+      "CORRECTION: Cardinals QB is Jacoby Brissett, not Kyler Murray -- Murray was released by ARI in May 2026 and is now Minnesotas QB; prior cycles carried forward a stale assumption",
+      "49ers still missing WR Demarcus Robinson, DT Thompson, DE Height; Mike Evans questionable (hip) -- role-tier, already priced"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:25:04.671337+00:00",
+    "n": 10000,
+    "homeElo": 1620.7,
+    "awayElo": 1401.1,
+    "gamesSeen": 4,
+    "eloMarginHome": 10.7,
+    "statsMarginHome": 5.8,
+    "marginDivergence": 4.9,
+    "projTotal": 45.2,
+    "homeWinProbElo": 82.4,
+    "marketHomeSpread": -7.5,
+    "marketTotal": 48.0,
+    "homeInjuryPts": -4.5,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 27.9,
+    "projAwayMeanRaw": 17.2,
+    "projHomeMeanAdjusted": 23.4,
+    "projAwayMeanAdjusted": 17.2,
+    "injuryAdjustedMarginHome": 6.2,
+    "projTotalAdjusted": 40.7,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+10.7) and recent-scoring margin (+5.8) disagree by 4.9 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -4.5 pts -- Brock Purdy (QB, out, -2.5), Nick Bosa (DE, out, -2.0)."
+    ],
+    "homeWinPct": 65.6,
+    "awayWinPct": 32.0,
+    "tiePct": 2.4,
+    "medianHomeScore": 23,
+    "medianAwayScore": 18,
+    "coverPctHome": 45.9,
+    "overPct": 30.6
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:25:04Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Brock Purdy",
+          "status": "out",
+          "pts": -2.5,
+          "note": "Turf toe, HC Shanahan says highly unlikely to play for a 2nd straight week. Mac Jones starts again after a strong debut -- priced below typical starter-out penalty."
+        },
+        {
+          "position": "DE",
+          "player": "Nick Bosa",
+          "status": "out",
+          "pts": -2.0,
+          "note": "Confirmed OUT multi-week (calf/knee) per Sun AM report -- top pass rusher, previously only a DNP/rest-day question mark as of Thu, now a confirmed multi-week absence. New this cycle."
+        }
+      ],
+      "items_total_pts": -4.5,
+      "stacking_notes": [],
+      "total_pts": -4.5
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:31:58Z",
+    "analysis": [
+      "Nick Bosa is now confirmed OUT multi-week for San Francisco, layering on top of Brock Purdy already sitting out for a 2nd straight week (Mac Jones starting, playing well). Once both injuries are priced in, the model actually flips the spread read: the fair line comes out to roughly SF -6.2, well inside DraftKings own -7.5 and further still from Caesars -7.5 to BookMaker.eus recent -9.0 read. The bigger story is the total -- the model projects 40.7 points combined against a market sitting at 48.0, a 7.3-point gap and the widest of any game on the board this week, with 69% of simulations landing Under.",
+      "Arizona is also starting a backup-caliber QB (Jacoby Brissett, not Kyler Murray -- correcting an error carried forward from an earlier cycle that assumed Murray was still on this roster), so neither offense is at full strength. That combination -- two shorthanded offenses, one missing its best pass rusher -- points squarely at a lower-scoring, closer-than-the-number game than the market currently reflects."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 48",
+        "confidence": 8,
+        "reasoning": "Model total (40.7) sits 7.3 pts below the market with both Purdy and now Bosa confirmed out -- the widest model-market total gap on the board, 69% of sims Under.",
+        "best_bet": true,
+        "factors": [
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model 40.7 vs market 48.0, a 7.3pt gap"
+          },
+          {
+            "label": "Sim Under%",
+            "dir": "for",
+            "detail": "69.4% of 10,000 sims land Under"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "49ers -4.5 pts (Purdy out, Bosa NEW confirmed out multi-week)"
+          },
+          {
+            "label": "Two shorthanded offenses",
+            "dir": "for",
+            "detail": "ARI also starting backup-caliber Brissett, not a full-strength attack either"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 0,
+          "net": 4
+        }
+      },
+      {
+        "market": "spread",
+        "pick": "ARI +7.5 (if still on the board at DK/Caesars)",
+        "confidence": 5,
+        "reasoning": "Once Bosas absence is priced in, the model fair line (SF -6.2) sits inside the markets -7.5 to -9.0 range -- modest value on the road dog getting free points, not a high-conviction play.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Injury-adjusted margin",
+            "dir": "for",
+            "detail": "Model margin 6.2 vs market -7.5 to -9.0 -- ARI getting more points than the model needs"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "54.1% of sims have Arizona covering +7.5"
+          },
+          {
+            "label": "Elo gap",
+            "dir": "against",
+            "detail": "Raw Elo still favors SF by 10.7 before injuries -- a real talent gap underneath the number"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "Cardinals +7.5",
+    "pick_team": "Arizona Cardinals",
+    "pct": 58,
+    "system": "swept away dog first meeting + divisional underdogs",
+    "why": "San Francisco swept Arizona 2-0 in 2025; this is their first meeting of 2026 and Arizona is again the away dog. Cardinals are also the divisional underdog in a full NFC West game -- a second, independent system on the same side.",
+    "stack_count": 2,
+    "applied_at": "2026-09-25T13:50:42.986057+00:00",
+    "checks": [
+      {
+        "key": "swept_away_dog_first_meeting",
+        "label": "swept away dog first meeting",
+        "pct": 58,
+        "why": "San Francisco swept Arizona 2-0 in 2025; this is their first meeting of 2026 and Arizona is again the away dog.",
+        "applies": true,
+        "mechanism": "A team swept 2-0 last season is the away underdog in the first meeting of the new season.",
+        "source": "same as above",
+        "baseline_pct": 58
+      },
+      {
+        "key": "divisional_underdogs",
+        "label": "divisional underdogs",
+        "pct": 53.8,
+        "why": "Cardinals are also the divisional underdog in a full NFC West game -- a second, independent system on the same side.",
+        "applies": true,
+        "mechanism": "Divisional dogs outperform non-divisional dogs (50.5% over the same span) -- familiarity/rivalry keeps games closer.",
+        "source": "NFLBettingSystems.com",
+        "baseline_pct": 53.8
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:25:04Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 72,
+      "handle_pct_home": 73
+    },
+    "total": {
+      "bets_pct_over": 70,
+      "handle_pct_over": 80
+    },
+    "moneyline": {
+      "bets_pct_home": 96,
+      "handle_pct_home": 89
+    },
+    "reverse_line_move": false,
+    "rlm_note": "73% of handle is on the home side but the spread hasn't moved yet (-9, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: SF is home/favorite, so bets/handle above are SF's share."
+  },
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "Christian McCaffrey",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Soft-ish ARI run D and a -9 script help, but SF is splitting carries with rookie Kaelon Black and CMC was under 3 YPC in Wk2.",
+        "opening_line": 54.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 54.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "SF -9 home fav -- biggest favorite-script spot on the slate"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ARI 209 RB rush yds allowed in 2 games (104.5/g); 14th vs RBs overall"
+          },
+          {
+            "label": "Timeshare",
+            "dir": "against",
+            "detail": "Wk1: CMC 10 car/68 yds vs Kaelon Black 14 car/65 -- SF managing his load"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "against",
+            "detail": "Wk2 vs MIA: under 3 YPC; value came from 2 goal-line TDs"
+          },
+          {
+            "label": "Blowout risk",
+            "dir": "neutral",
+            "detail": "-9 spread can mean a rested CMC and more Black late"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 14,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 1,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "final_score": {
+    "home": 36,
+    "away": 30
+  }
+}

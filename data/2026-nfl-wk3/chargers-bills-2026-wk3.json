@@ -1,0 +1,397 @@
+{
+  "game_id": "chargers-bills-2026-wk3",
+  "matchup": "Los Angeles Chargers @ Buffalo Bills",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": -7.0,
+      "total": 50.5,
+      "ml_fav": -342,
+      "ml_dog": 276
+    },
+    "draftkings": {
+      "spread": -4.5,
+      "total": 50.5,
+      "ml_fav": -215,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:55Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -342,
+        "ml_dog": 276
+      },
+      "draftkings": {
+        "spread": -4.5,
+        "total": 50.5,
+        "ml_fav": -215,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -329,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -330,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK Bills spread widened -4.5 -> -7.0 since yesterday, now matches BME/Caesars/FD"
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -337,
+        "ml_dog": 272
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -330,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Bills(home) favored; Caesars(VegasInsider, stale Sep22) half-pt higher than BME/DK."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -346,
+        "ml_dog": 278
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -330,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:25:34Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.0,
+        "total": 50.5,
+        "ml_fav": -330,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK/Caesars both steady at BUF -7 since Fri (already crossed key number 7 earlier in week). NEW: Chargers have a 6-man OUT list this AM -- starting RT Trey Pipkins III, starting DL anchor Dalvin Tomlinson, CB Elijah Molden, G Kayode Awosika, TE Charlie Kolar, WR Brenen Thompson. This is real roster attrition on top of an already-large number; re-simulating with injury pts applied to see if the market has fully priced it."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "Watching -- LAC now has a confirmed 6-man OUT list (starting RT + starting DL anchor among them) on top of an already-large BUF -7; check simulated margin before leaning either way, laying a full 7 is a bad number regardless",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "6 Chargers OUT this AM: T Pipkins, DL Tomlinson, CB Molden, G Awosika, TE Kolar, WR Thompson -- two O-line starters plus a DL anchor is real, not just camp-body noise",
+      "Line already sits at BUF -7 (crossed the key number earlier this week) -- some of this may already be priced in"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:25:34.986234+00:00",
+    "n": 10000,
+    "homeElo": 1649.8,
+    "awayElo": 1442.3,
+    "gamesSeen": 4,
+    "eloMarginHome": 10.2,
+    "statsMarginHome": 3.6,
+    "marginDivergence": 6.6,
+    "projTotal": 48.5,
+    "homeWinProbElo": 81.3,
+    "marketHomeSpread": -7.0,
+    "marketTotal": 50.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -3.35,
+    "projHomeMeanRaw": 29.4,
+    "projAwayMeanRaw": 19.1,
+    "projHomeMeanAdjusted": 29.4,
+    "projAwayMeanAdjusted": 15.8,
+    "injuryAdjustedMarginHome": 13.6,
+    "projTotalAdjusted": 45.1,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+10.2) and recent-scoring margin (+3.6) disagree by 6.6 points -- worth a second look before trusting either alone.",
+      "Away injury adjustment: -3.4 pts -- Trey Pipkins III (T, out, -1.0), Dalvin Tomlinson (DL, out, -1.0), Elijah Molden (CB, out, -0.5), Kayode Awosika (G, out, -0.5), Charlie Kolar (TE, out, -0.2), Brenen Thompson (WR, out, -0.1)."
+    ],
+    "homeWinPct": 81.7,
+    "awayWinPct": 16.5,
+    "tiePct": 1.8,
+    "medianHomeScore": 29,
+    "medianAwayScore": 16,
+    "coverPctHome": 68.1,
+    "overPct": 35.4
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:31:58Z",
+    "analysis": [
+      "Buffalo was already a comfortable Elo favorite here, and a confirmed 6-man Chargers inactive list this morning -- starting RT Trey Pipkins III, DL anchor Dalvin Tomlinson, CB Elijah Molden, G Kayode Awosika, TE Charlie Kolar and WR Brenen Thompson -- widens the gap further. The model now projects Buffalo by 13.6 points against a market number of -7, with 68% of simulations having the Bills cover.",
+      "The number itself (a full 7) is one of the least attractive lay-numbers in football purely on key-number math, and public money is already heavily on Buffalo (81% of tickets, 73% of handle), so this isnt a hidden angle -- its a real model edge on a popular, well-known side. Size it accordingly rather than treating it as a lock."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "BUF -7",
+        "confidence": 7,
+        "reasoning": "Confirmed 6-man LAC inactive list (2 O-line/DL starters among them) widens an already-large Elo edge -- model projects BUF by 13.6 vs the markets -7, 68% of sims cover.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Injury",
+            "dir": "for",
+            "detail": "LAC (away) -3.35 pts -- 2 starters (T Pipkins, DL Tomlinson) plus 4 depth pieces confirmed out"
+          },
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "+10.2 pts home, before the injury update"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "68.1% of sims have Buffalo covering -7"
+          },
+          {
+            "label": "Number quality",
+            "dir": "against",
+            "detail": "Laying a full 7 is a historically bad key-number to buy, and the public is already heavy on this side (81% tickets/73% handle) -- no hidden value, sizing should reflect that"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "Chargers +7",
+    "pick_team": "Los Angeles Chargers",
+    "pct": 79,
+    "system": "winless road vs home favorite + road dog window 02",
+    "why": "Los Angeles is 0-2 (lost 14-26 at Las Vegas in Week 2), on the road, and off a loss, facing a home favorite. Independently fits the broader 0-2-road-dog window on its own.",
+    "stack_count": 2,
+    "applied_at": "2026-09-25T13:06:18.100963+00:00",
+    "checks": [
+      {
+        "key": "winless_road_vs_home_favorite",
+        "label": "winless road vs home favorite",
+        "pct": 79,
+        "why": "Los Angeles is 0-2 (lost 14-26 at Las Vegas in Week 2), on the road, and off a loss, facing a home favorite.",
+        "applies": true,
+        "mechanism": "A winless team on the road, off a loss, facing a home favorite -- desperation/no-respect shape.",
+        "source": "WagerTalk-style trend video, cross-checked against real records each week (see _add_wagertalk_angles*.py history)",
+        "baseline_pct": 79
+      },
+      {
+        "key": "road_dog_window_02",
+        "label": "road dog window 02",
+        "pct": 66,
+        "why": "Independently fits the broader 0-2-road-dog window on its own.",
+        "applies": true,
+        "mechanism": "Broader window: any 0-2 team as a road underdog.",
+        "source": "same as above",
+        "baseline_pct": 66
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:25:35Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 81,
+      "handle_pct_home": 73
+    },
+    "total": {
+      "bets_pct_over": 69,
+      "handle_pct_over": 80
+    },
+    "moneyline": {
+      "bets_pct_home": 94,
+      "handle_pct_home": 83
+    },
+    "reverse_line_move": false,
+    "rlm_note": "73% of handle is on the home side but the spread hasn't moved yet (-7, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: BUF is home/favorite."
+  },
+  "props": {
+    "last_checked": "2026-09-24T18:53:28Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "James Cook",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Big home-favorite script supports late carries, but LAC is a top-10 run D vs RBs and Cook's two games split 57 and 135 -- capped as a lean into a tough matchup.",
+        "opening_line": 81.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 81.5,
+        "current_captured_at": "2026-09-24T18:53:28Z",
+        "factors": [
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "BUF -7 home fav, 92% of handle -- 2nd-half clock-killing carries"
+          },
+          {
+            "label": "Volume trend",
+            "dir": "for",
+            "detail": "Carries up 13 -> 21 Wk1 to Wk2; 21-135-1 vs DET"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "LAC 10th-fewest pts to RBs (10.5/g); 158 RB rush yds allowed in 2 games (79/g)"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "against",
+            "detail": "1 of 2 over 81.5 -- Wk1 13-57 vs a tough HOU front"
+          },
+          {
+            "label": "Total",
+            "dir": "neutral",
+            "detail": "50.5 total -- shootout risk means Allen-driven drives can steal rush share"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 10,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 1,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:25:34Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "T",
+          "player": "Trey Pipkins III",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Starting RT confirmed OUT Sun AM -- part of a 6-man Chargers OUT list this week."
+        },
+        {
+          "position": "DL",
+          "player": "Dalvin Tomlinson",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Starting DL anchor confirmed OUT -- part of the same 6-man OUT list, weakens LAC run defense."
+        },
+        {
+          "position": "CB",
+          "player": "Elijah Molden",
+          "status": "out",
+          "pts": -0.5,
+          "note": "DB confirmed OUT, part of the 6-man list."
+        },
+        {
+          "position": "G",
+          "player": "Kayode Awosika",
+          "status": "out",
+          "pts": -0.5,
+          "note": "O-line depth confirmed OUT, same 6-man list as Pipkins -- combined with Pipkins this is 2 O-line pieces down."
+        },
+        {
+          "position": "TE",
+          "player": "Charlie Kolar",
+          "status": "out",
+          "pts": -0.25,
+          "note": "Depth TE confirmed OUT, minor."
+        },
+        {
+          "position": "WR",
+          "player": "Brenen Thompson",
+          "status": "out",
+          "pts": -0.1,
+          "note": "Deep depth WR confirmed OUT, negligible."
+        }
+      ],
+      "items_total_pts": -3.35,
+      "stacking_notes": [],
+      "total_pts": -3.35
+    }
+  },
+  "final_score": {
+    "home": 24,
+    "away": 16
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "game_id": "commanders-49ers-2026-wk6",
+  "matchup": "Washington Commanders @ San Francisco 49ers",
+  "week": "Week 6",
+  "kickoff": "2026-10-20T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -7.5,
+      "total": 50.5,
+      "ml_fav": -440,
+      "ml_dog": 340
+    },
+    "fanduel": {
+      "spread": -7.5,
+      "total": 50.5,
+      "ml_fav": -440,
+      "ml_dog": 340
+    },
+    "caesars": {
+      "spread": -7.5,
+      "total": 51,
+      "ml_fav": -440,
+      "ml_dog": 340
+    },
+    "note": "VegasInsider DOM (home=49ers)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -440,
+        "ml_dog": 340
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -440,
+        "ml_dog": 340
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 51,
+        "ml_fav": -440,
+        "ml_dog": 340
+      },
+      "note": "VegasInsider DOM (home=49ers)."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 51.0,
+        "ml_fav": -361,
+        "ml_dog": 290
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -410,
+        "ml_dog": 320
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -420,
+        "ml_dog": 330
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -420,
+        "ml_dog": 320
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 51,
+        "ml_fav": -361,
+        "ml_dog": 290
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -425,
+        "ml_dog": 330
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=SF relative. DK cross-checked VI vs cleatz (total 50.5 -120/even, ML WAS+330/SF-425). BookMaker.eu from lines.bookmaker.eu."
+    },
+    {
+      "captured_at": "2026-10-15T17:00:27Z",
+      "bookmaker_eu": {
+        "spread": -8,
+        "total": 51,
+        "ml_fav": -377,
+        "ml_dog": 301
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 50.5,
+        "ml_fav": -395,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh): SF-377/WAS+301, total51, spread-8. DK spread+total via cleatz.com (fresh, 49ers-7.5/Over50.5); cleatz had no ML row, ML via rotowire.com (Last Verified Oct 15 2026): WAS+310/SF-395. Caesars/FanDuel spread via VI DOM (Oct13 banner, unconfirmed-stale)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:20Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": -361,
+        "ml_dog": 289
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads) + BookMaker.eu. DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": -361,
+        "ml_dog": 289
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 52.5,
+        "ml_fav": -425.0,
+        "ml_dog": 330.0
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": -420.0,
+        "ml_dog": 330.0
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 52.0,
+        "ml_fav": -420.0,
+        "ml_dog": 320.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 52.5,
+        "ml_fav": -470,
+        "ml_dog": 360
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    },
+    {
+      "captured_at": "2026-10-18T17:04:46Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": -386,
+        "ml_dog": 307
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 52,
+        "ml_fav": -455,
+        "ml_dog": 350
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 52,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads (DK/Caesars/FanDuel) from VegasInsider DOM per-book columns, home-relative. BookMaker.eu + DK total/ML from lines.bookmaker.eu board (cleatz.com odds-compare panel required per-game clicks not done this cycle for ML on Caesars/FanDuel -- logged null)."
+    },
+    {
+      "captured_at": "2026-10-18T21:04:01Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": -399,
+        "ml_dog": 316
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 52.5,
+        "ml_fav": -455,
+        "ml_dog": 350
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 51.5,
+        "ml_fav": -420,
+        "ml_dog": 330
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 52,
+        "ml_fav": -420,
+        "ml_dog": 320
+      },
+      "note": "Spreads/totals/ML for DK/FanDuel/Caesars from cleatz.com compare-all-books panel; cross-checked spreads against VegasInsider per-book columns -- exact match. BookMaker.eu from lines.bookmaker.eu live board."
+    }
+  ],
+  "research": {
+    "spread_lean": "No lean",
+    "total_lean": "Under 51.5",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Clean injury report both sides per NFL.com Wk6 (no Out/Doubtful/Questionable listed)",
+      "Pure model-vs-market total gap: 63.0% of sims land under DK 51.5/VI fallback 52.5"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T17:09:28.962875+00:00",
+    "n": 10000,
+    "homeElo": 1663.4,
+    "awayElo": 1379.2,
+    "gamesSeen": 10,
+    "eloMarginHome": 13.3,
+    "statsMarginHome": 6.9,
+    "marginDivergence": 6.4,
+    "projTotal": 47.3,
+    "homeWinProbElo": 87.1,
+    "marketHomeSpread": -7.5,
+    "marketTotal": 52,
+    "homeInjuryPts": -4.5,
+    "awayInjuryPts": -0.8,
+    "projHomeMeanRaw": 30.3,
+    "projAwayMeanRaw": 17.0,
+    "projHomeMeanAdjusted": 25.8,
+    "projAwayMeanAdjusted": 16.2,
+    "injuryAdjustedMarginHome": 9.6,
+    "projTotalAdjusted": 42.0,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+13.3) and recent-scoring margin (+6.9) disagree by 6.4 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -4.5 pts -- Jauan Jennings (WR, out, -1.0), Jaylon Moore (T, out, -1.0), Dre Greenlaw (LB, out, -1.0), Arik Armstead (DT, out, -0.8), Jiayir Brown (S, out, -0.5), Ross Dwelley (TE, out, -0.2).",
+      "Away injury adjustment: -0.8 pts -- Terry McLaurin (WR, questionable, -0.6), Jacory Croskey-Merritt (RB, out, -0.2).",
+      "San Francisco 49ers (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Washington Commanders (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]; Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 74.0,
+    "awayWinPct": 24.0,
+    "tiePct": 2.1,
+    "medianHomeScore": 26,
+    "medianAwayScore": 16,
+    "coverPctHome": 55.4,
+    "overPct": 23.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:59.131654+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.531927+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-13T14:03:04.784474+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-14T13:04:24.636855+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-17T13:10:48.032743+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-17T21:11:04.735726+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.955484+00:00",
+      "marginHome": 13.3,
+      "total": 47.3
+    },
+    {
+      "run_at": "2026-10-18T17:09:28.962875+00:00",
+      "marginHome": 9.6,
+      "total": 42.0
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-18T17:10:09Z",
+    "analysis": [
+      "San Francisco is missing six contributors for this one -- starting WR Jauan Jennings and starting tackle Jaylon Moore (both concussion), LB Dre Greenlaw (1-game suspension), DT Arik Armstead, S Ji'Ayir Brown, and TE Ross Dwelley -- while Washington's only real question is Terry McLaurin (hamstring, DNP Friday, no confirmed Monday status yet). The sim's adjusted total fell from 47.3 to 42.0 against a 52 market total, with the Niners still comfortably favored (74% win, -7.5ish margin) even with the injury list.",
+      "The gap here is almost entirely about total scoring, not the spread -- SF's offensive injuries (Jennings, Moore) are the kind that slow a scoring pace without necessarily costing the game outright against a banged-up Washington roster of its own. McLaurin's status is genuinely unresolved into Monday, so treat the Commanders' offensive projection as having some unpriced downside risk if he sits."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 52",
+        "confidence": 6,
+        "reasoning": "Sim total 42.0 vs market 52 is a 10pt gap on SF's six-player injury list (Jennings, Moore, Greenlaw, Armstead, Brown, Dwelley); standard unit given early-season model uncertainty. | Stake $15 \u00b7 pass at 49",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "SF -7.5",
+        "confidence": 4,
+        "reasoning": "Model still likes SF at home (coverPct 55%) despite the injury hit, but McLaurin's unresolved status cuts both ways -- if he sits, Washington's offense projects worse and SF's number looks safer; if he plays, this is a coinflip cover. Sized down for that uncertainty. | Stake $7.50 \u00b7 pass at -9",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-14T21:06:31Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser DOM; CBS posvsdef QB rank confirmed same run",
+    "picks": [
+      {
+        "player": "Brock Purdy",
+        "team": "home",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "covers.com consensus (best odds FanDuel)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Model projects 28.2 vs the 16.5 line, SF is a 7.5pt favorite implying a heavy rush script, and Washington ranks 31st-softest of 32 vs QB. | Stake $15 \u00b7 pass at 19.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 28.2 vs 16.5 line, +11.7 diff, 26.3% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "WAS ranks 31st-softest of 32 vs QB (28.0 fpts allowed, CBS posvsdef, read 10/14)"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "Purdy averaging 35.0 rush yds/g this year vs 14.0 last year"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "SF a 7.5pt home favorite; model has SF running on 46.8% of plays, 2nd-highest league-wide"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 31,
+          "rank_basis": "CBS QB fantasy pts allowed YTD, read 10/14"
+        },
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 0,
+          "net": 4
+        },
+        "opening_line": 16.5,
+        "opening_captured_at": "2026-10-14T21:06:31Z",
+        "current_line": 16.5,
+        "current_captured_at": "2026-10-14T21:06:31Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T21:05:22Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 72,
+      "handle_pct_home": 68
+    },
+    "total": {
+      "bets_pct_over": 46,
+      "handle_pct_over": 57
+    },
+    "moneyline": {
+      "bets_pct_home": 95,
+      "handle_pct_home": 77
+    },
+    "reverse_line_move": false,
+    "rlm_note": "68% of handle is on the home side but the spread hasn't moved yet (-7.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "49ers(home)-relative, converted from cleatz's SF/WAS rows (bets/handle)."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-18T17:09:28Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Jauan Jennings",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Concussion, ruled out per si.com -- starting WR"
+        },
+        {
+          "position": "T",
+          "player": "Jaylon Moore",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Concussion, ruled out per si.com -- starting tackle"
+        },
+        {
+          "position": "LB",
+          "player": "Dre Greenlaw",
+          "status": "out",
+          "pts": -1.0,
+          "note": "1-game NFL suspension for headbutting Ernest Jones, confirmed by multiple outlets 10/12/26 -- starting LB"
+        },
+        {
+          "position": "DT",
+          "player": "Arik Armstead",
+          "status": "out",
+          "pts": -0.8,
+          "note": "Foot/knee, ruled out per si.com -- starting DT"
+        },
+        {
+          "position": "S",
+          "player": "Jiayir Brown",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Knee sprain, ruled out per si.com -- starting safety"
+        },
+        {
+          "position": "TE",
+          "player": "Ross Dwelley",
+          "status": "out",
+          "pts": -0.2,
+          "note": "Ankle, ruled out per si.com -- backup TE, minimal role"
+        }
+      ],
+      "items_total_pts": -4.5,
+      "stacking_notes": [],
+      "total_pts": -4.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Terry McLaurin",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "Hamstring, DNP Friday, no official Monday designation yet per commanders.com -- genuinely unresolved, priced as partial risk not full out"
+        },
+        {
+          "position": "RB",
+          "player": "Jacory Croskey-Merritt",
+          "status": "out",
+          "pts": -0.2,
+          "note": "Groin, ruled out per commanders.com -- backup RB, minimal role"
+        }
+      ],
+      "items_total_pts": -0.8,
+      "stacking_notes": [],
+      "total_pts": -0.8
+    }
+  },
+  "final_score": {
+    "home": 23,
+    "away": 17
+  }
+}

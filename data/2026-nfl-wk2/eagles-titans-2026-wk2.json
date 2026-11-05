@@ -1,0 +1,233 @@
+{
+  "game_id": "eagles-titans-2026-wk2",
+  "matchup": "Philadelphia Eagles @ Tennessee Titans",
+  "week": "Week 2",
+  "kickoff": "2026-09-20T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-14",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 7.0,
+      "total": 41.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-14T15:06:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+    },
+    {
+      "captured_at": "2026-09-14T16:03:37Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 39,
+        "ml_fav": -353,
+        "ml_dog": 284
+      },
+      "draftkings": null,
+      "fanduel": {
+        "spread": -7.0,
+        "total": 40.5,
+        "ml_fav": -355,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "Full-refresh pass 2026-09-14 ~16:00 UTC, replacing this morning's consensus-preview placeholder with real per-book data. BookMaker.eu fetched live from its own odds board. FanDuel fetched from its research page (confirmed today-dated, 2026-09-14 -- not the historically-frozen pattern this source usually shows, since Week 2 content didn't exist before this week). DraftKings via rotowire failed to render tonight (page stuck on client-side 'Loading NFL Odds...', no data in the static fetch) -- logged null rather than guess. Caesars via vegasinsider produced internally inconsistent numbers this pass (several entries contradicted BookMaker.eu/FanDuel by 3-5+ points in ways no other source supports) -- treated as unreliable and logged null rather than pass off a probable extraction error as real."
+    },
+    {
+      "captured_at": "2026-09-14T16:04:13Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39.0,
+        "ml_fav": -353,
+        "ml_dog": 284
+      },
+      "draftkings": null,
+      "fanduel": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -355,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "CORRECTION to the snapshot logged minutes ago in this same refresh pass: the spread sign was entered wrong on this game. The AWAY team is the favorite here, so the home-relative spread (this project's convention: negative = HOME favored) must be POSITIVE, not negative -- I initially wrote the raw 'favorite's own number' without flipping the sign for the away-favorite case, exactly the mistake the skill's own sign-convention notes warn about. Numbers themselves (which book, which price) are unchanged from the prior snapshot -- only the spread sign is corrected."
+    },
+    {
+      "captured_at": "2026-09-15T12:36:14Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39.0,
+        "ml_fav": -324,
+        "ml_dog": 263
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu fetched live (fresh Sep 15 6:30am PT board). DraftKings via rotowire.com failed to load (page returned only loading placeholders, no data). Caesars/DK cross-check via vegasinsider.com returned a stale Week 1 table (marked 'Last Updated: September 13, 2026', still showing Week 1 matchups) instead of Week 2 -- not a real current read, logged null rather than pass off Week 1 numbers as Week 2. FanDuel not attempted this pass (editorial page long since established frozen/stale). Sharp reference (BookMaker.eu) is the only confirmed-current book this cycle."
+    },
+    {
+      "captured_at": "2026-09-16T01:55:53Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39.0,
+        "ml_fav": -324,
+        "ml_dog": 263
+      },
+      "draftkings": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -310,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars via VegasInsider (spread only, totals unconfirmed); FanDuel source frozen/stale, logged null"
+    },
+    {
+      "captured_at": "2026-09-17T16:16:00Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39,
+        "ml_fav": -321,
+        "ml_dog": 260
+      },
+      "draftkings": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -310,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire returned numbers byte-identical to the Sep 16 snapshot across the entire tracked slate despite a same-day freshness marker -- treated as a probable stale/non-refreshed source, not confirmed real 'no movement'. Caesars/VegasInsider page dated Sep 15 (2 days old) -- logged null rather than pass off a stale number. BookMaker.eu shows real movement on several games but without a second live book corroborating it today, treat that movement as informational only this cycle, not yet confirmed as a genuine market move."
+    },
+    {
+      "captured_at": "2026-09-18T13:38:39Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39.0,
+        "ml_fav": -321,
+        "ml_dog": 260
+      },
+      "draftkings": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -310,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire (marked 'Last Verified: Sep 18 2026') and BookMaker.eu both returned numbers byte-identical to the Sep 17 snapshot across the ENTIRE tracked slate -- treated as a probable stale/non-refreshed source pass, not confirmed as genuine 'no movement' today. Caesars via VegasInsider still dated Sep 15 (3 days old) -- logged null. FanDuel's editorial page is established frozen/stale, not attempted this pass."
+    },
+    {
+      "captured_at": "2026-09-19T12:35:11Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39.0,
+        "ml_fav": -325,
+        "ml_dog": 264
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "Systemic staleness this cycle: DraftKings via rotowire.com returned numbers byte-identical to the Sep 18 snapshot with a Sep-18-dated (not today) freshness marker -- treated as stale/non-refreshed, logged null rather than pass off yesterday's numbers as today's. Caesars/FanDuel via vegasinsider.com dated Sep 15/Sep 17 -- also stale, logged null. BookMaker.eu fetched live from its own board and moved on most games -- treat this movement as informational pending a US book actually repricing, not yet confirmed as a genuine market move (see systemic-divergence caution)."
+    },
+    {
+      "captured_at": "2026-09-20T12:44:48Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 39.0,
+        "ml_fav": -325,
+        "ml_dog": 264
+      },
+      "draftkings": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -310,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home-relative spread shown for Titans (home); Eagles favored by 7. DK via rotowire last verified 2026-09-19. Caesars spread-only via VegasInsider."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-20",
+    "spread_lean": "No lean",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Eagles missing starting EDGE Jonathan Greenard (out); still favored by 7 on the road -- single signal, not enough alone to move off the market number",
+      "Andrew Mukuba (S) also questionable for Eagles"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": true,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-20T12:45:04.864047+00:00",
+    "n": 10000,
+    "homeElo": 1278.3,
+    "awayElo": 1557.9,
+    "gamesSeen": 2,
+    "eloMarginHome": -9.3,
+    "statsMarginHome": -5.7,
+    "marginDivergence": -3.6,
+    "projTotal": 44.0,
+    "homeWinProbElo": 20.9,
+    "marketHomeSpread": 7.0,
+    "marketTotal": 40.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Only 2 logged game(s) across both teams -- leans are suppressed below 4 to avoid mistaking a cold-start rating gap for a real signal. Raw cover%/over% still shown below for reference."
+    ],
+    "homeWinPct": 25.3,
+    "awayWinPct": 72.3,
+    "tiePct": 2.4,
+    "medianHomeScore": 18,
+    "medianAwayScore": 26,
+    "coverPctHome": 44.7,
+    "overPct": 59.2
+  },
+  "wagertalk_angle": {
+    "pick": "Eagles -7",
+    "pick_team": "Philadelphia Eagles",
+    "pct": 69,
+    "system": "Fade: lost at home Week 1, home again Week 2 (thin -- matches the market number)",
+    "why": "Tennessee lost at home in the opener and is home again (~31% ATS for the home team, ~69% for the visitor), but Philadelphia is already a 7-point favorite in the market, so this confirms the number rather than finding value against it.",
+    "stack_count": 1
+  },
+  "final_score": {
+    "home": 20,
+    "away": 24
+  }
+}

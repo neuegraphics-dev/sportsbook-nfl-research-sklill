@@ -1,0 +1,475 @@
+{
+  "game_id": "bears-seahawks-2026-wk8",
+  "matchup": "Chicago Bears @ Seattle Seahawks",
+  "week": "Week 8",
+  "kickoff": "2026-11-03T01:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3,
+      "total": 46.5,
+      "ml_fav": -162,
+      "ml_dog": 138
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -162,
+        "ml_dog": 138
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -162,
+        "ml_dog": 138
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); BookMaker.eu not listing this game; Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 46,
+        "ml_fav": -170,
+        "ml_dog": 144
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -170,
+        "ml_dog": 155
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 46,
+        "ml_fav": -170,
+        "ml_dog": 144
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 46,
+        "ml_fav": -181,
+        "ml_dog": 153
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": -174,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": -170,
+        "ml_dog": 144
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-02T14:50:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread/total from covers.com odds board rendered in browser, page 'last updated Nov 02 9:47 AM ET'; all 9 books SEA -3.5 / 46.5. Moneylines not re-read this cycle (null). BookMaker.eu null (stale). cleatz/RotoWire show -3 but are older/unlabelled."
+    },
+    {
+      "captured_at": "2026-11-02T14:58:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": -178,
+        "ml_dog": 150
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 46.5,
+        "ml_fav": -170,
+        "ml_dog": 144
+      },
+      "note": "covers.com odds board (updated 9:47 AM ET) incl. moneylines; column mapping DK/FD/Caesars verified against 11/1 Caesars ML."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "CHI +3.5 (minimum-action)",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "blended margin 2.9",
+      "hook through 3",
+      "Monangai out"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-02T14:50:34.039506+00:00",
+    "n": 10000,
+    "homeElo": 1680.3,
+    "awayElo": 1572.8,
+    "gamesSeen": 14,
+    "eloMarginHome": 6.2,
+    "statsMarginHome": -0.5,
+    "marginDivergence": 6.8,
+    "projTotal": 48.8,
+    "homeWinProbElo": 71.0,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 46.5,
+    "homeInjuryPts": -1.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 27.5,
+    "projAwayMeanRaw": 21.3,
+    "projHomeMeanAdjusted": 26.5,
+    "projAwayMeanAdjusted": 21.3,
+    "injuryAdjustedMarginHome": 5.2,
+    "projTotalAdjusted": 47.8,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+6.2) and recent-scoring margin (-0.5) disagree by 6.8 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -1.0 pts -- Charles Cross (LT, doubtful, -1.0).",
+      "Seattle Seahawks (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Zach Charbonnet (-1.2), Drake Thomas (-0.4), Chazz Surratt (-0.3), Drew Lock (-0.8), DeMarcus Lawrence (-0.4), Uchenna Nwosu (-0.3), Elijah Arroyo (-0.4) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Chicago Bears (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]; Caleb Williams (-4.0) [-4.0 pts total]; Caleb Williams (-4.0), D'Andre Swift (-0.5), Kyle Monangai (-0.5) [-5.0 pts total]; T.J. Edwards (-1.0), Jack Sanborn (-0.4), Jonah Jackson (-0.6), Kyle Monangai (-0.2) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 63.2,
+    "awayWinPct": 34.3,
+    "tiePct": 2.5,
+    "medianHomeScore": 27,
+    "medianAwayScore": 21,
+    "coverPctHome": 54.6,
+    "overPct": 53.5
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:07.732987+00:00",
+      "marginHome": 5.4,
+      "total": 48.9
+    },
+    {
+      "run_at": "2026-10-26T13:09:26.914639+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.478661+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.360378+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:36.784508+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.545030+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.667870+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.593897+00:00",
+      "marginHome": 6.2,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-11-01T01:53:16.659097+00:00",
+      "marginHome": 5.2,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-11-01T13:12:55.847006+00:00",
+      "marginHome": 5.2,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-11-01T13:40:00.742896+00:00",
+      "marginHome": 5.2,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-11-01T21:43:46.537799+00:00",
+      "marginHome": 5.2,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-11-02T14:50:34.039506+00:00",
+      "marginHome": 5.2,
+      "total": 47.8
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:48:08Z",
+    "analysis": [
+      "Sim: Seahawks by 5.2 after the -1.0 pt Charles Cross (LT, doubtful) adjustment (Elo 6.2; 2026 scoring has Chicago 0.5 better); projected total 47.8 vs the 46.5 market. All nine books on the covers.com board (updated 9:47am ET Monday) hold SEA -3.5 / 46.5, so the hook through 3 is still there.",
+      "Handle is 61% on Seattle with the line unmoved from Sunday, so no reverse line move. Elo and 2026 scoring disagree by 6.8 pts, which keeps conviction low. Minimum-action pick on CHI +3.5 for the Monday night window; re-check inactives (Cross, Monangai, Charbonnet, Shaheed) before kickoff."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "CHI +3.5",
+        "confidence": 4,
+        "best_bet": true,
+        "reasoning": "Minimum-action pick (Monday night window): blended margin about 2.9 puts the hook through 3 on Chicago; Elo prefers Seattle. Line re-checked Monday 9:47am ET, still -3.5. | Stake $6 \u00b7 pass at +3",
+        "factors": [
+          {
+            "label": "Scoring margin",
+            "dir": "for",
+            "detail": "2026 scoring has CHI better by 0.5"
+          },
+          {
+            "label": "Elo margin",
+            "dir": "against",
+            "detail": "SEA by 6.2"
+          },
+          {
+            "label": "Key number",
+            "dir": "for",
+            "detail": "+3.5 keeps the hook through 3 (all 9 books at -3.5)"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-11-01T13:21:29Z",
+    "status": "captured",
+    "source_note": "Lines/projections: covers.com player-props board (live browser render 2026-11-01 ~13:00Z), best price shown. Roster/starter check: RotoWire NFL lineups 11/1. Ranks: CBS posvsdef (QB/RB/TE, thru Wk8 TNF) and footballdb 2026 WR (thru Wk7). Game logs: statmuse (partial).",
+    "picks": [
+      {
+        "player": "D'Andre Swift",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "bet365",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Seattle allows the 3rd-fewest RB rushing yards and Chicago is a road dog. | Stake $12 \u00b7 pass at 59.5",
+        "matchup": {
+          "opp_rank_vs_pos": 3,
+          "rank_basis": "CBS RB rush yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "SEA allows 71.0 RB rush yds/g, 3rd fewest (CBS; league avg 91.1)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 51.7 vs 63.5 line (-11.8)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "CHI +3.5 road dog: trailing script cuts carries"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "backup RB Kyle Monangai out: more carries for Swift"
+          },
+          {
+            "label": "Backtest",
+            "dir": "neutral",
+            "detail": "124 and 45 yds in his 2 logged games (statmuse, partial log)"
+          }
+        ],
+        "confidence_base": 4,
+        "stake": 12,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 63.5,
+        "opening_captured_at": "2026-11-01T13:21:29Z",
+        "current_line": 63.5,
+        "current_captured_at": "2026-11-01T13:21:29Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 124,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 45,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com (only 2 games returned)",
+        "backtest": {
+          "hits": 1,
+          "misses": 1,
+          "pushes": 0,
+          "total": 2,
+          "pct": 50,
+          "line": 63.5,
+          "lean": "under"
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-01T01:53:16Z",
+    "home": {
+      "items": [
+        {
+          "position": "LT",
+          "player": "Charles Cross",
+          "status": "doubtful",
+          "pts": -1.0,
+          "note": "Ankle, out/doubtful per RotoWire 10/30; LT anchor"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "market_signal": {
+    "captured_at": "2026-11-02T14:47:58Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 50,
+      "handle_pct_home": 61
+    },
+    "total": {
+      "bets_pct_over": 70,
+      "handle_pct_over": 54
+    },
+    "moneyline": {
+      "bets_pct_home": 55,
+      "handle_pct_home": 48
+    },
+    "reverse_line_move": false,
+    "rlm_note": "61% of handle is on the home side and the spread has moved toward them (-3 -> -3.5) -- money and line agree, no RLM.",
+    "note": "cleatz 2026-11-02 ~14:50Z, Seahawks(home)-relative. Page shows SEA -3 while 9 books on covers show -3.5."
+  },
+  "final_score": {
+    "home": 17,
+    "away": 34
+  }
+}

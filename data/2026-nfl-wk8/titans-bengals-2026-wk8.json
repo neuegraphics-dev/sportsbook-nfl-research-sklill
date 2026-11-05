@@ -1,0 +1,395 @@
+{
+  "game_id": "titans-bengals-2026-wk8",
+  "matchup": "Tennessee Titans @ Cincinnati Bengals",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -10,
+      "total": 46.5,
+      "ml_fav": -575,
+      "ml_dog": 475
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10,
+        "total": 46.5,
+        "ml_fav": -575,
+        "ml_dog": 475
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:09Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 47,
+        "ml_fav": -537,
+        "ml_dog": 408
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": 46.5,
+        "ml_fav": -575,
+        "ml_dog": 475
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -10.5,
+        "total": 46,
+        "ml_fav": -521,
+        "ml_dog": 398
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": 47.5,
+        "ml_fav": -525,
+        "ml_dog": 490
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -10.5,
+        "total": 46,
+        "ml_fav": -521,
+        "ml_dog": 398
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -10.5,
+        "total": 46,
+        "ml_fav": -603,
+        "ml_dog": 449
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old; VI showed BEN -12.5 vs BM -10.5/RotoWire -10: unconfirmed, US books omitted"
+    },
+    {
+      "captured_at": "2026-11-01T01:55:12Z",
+      "bookmaker_eu": {
+        "spread": -10.5,
+        "total": 46,
+        "ml_fav": -603,
+        "ml_dog": 449
+      },
+      "draftkings": {
+        "spread": -12.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -12.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK/CZ -12.5 confirmed by VegasInsider 10/30 + cleatz 10/31 (BEN -12.5); BM -10.5 is 10/29 and likely stale"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -12.5,
+        "total": 46.5,
+        "ml_fav": -800,
+        "ml_dog": 550
+      },
+      "fanduel": {
+        "spread": -12.5,
+        "total": 46.5,
+        "ml_fav": -820,
+        "ml_dog": 570
+      },
+      "caesars": {
+        "spread": -12.5,
+        "total": 46.5,
+        "ml_fav": -800,
+        "ml_dog": 550
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T17:03:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -13.5,
+        "total": 45.5,
+        "ml_fav": -900,
+        "ml_dog": 600
+      },
+      "fanduel": {
+        "spread": -13.5,
+        "total": 46.5,
+        "ml_fav": -1000,
+        "ml_dog": 660
+      },
+      "caesars": {
+        "spread": -13.5,
+        "total": 46.5,
+        "ml_fav": -952,
+        "ml_dog": 600
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~17:05Z (12:05pm ET). BookMaker.eu null (stale board)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": null,
+    "total_lean": "UNDER 46.5",
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "model total 43.2 vs 46.5",
+      "TEN: Spears, Tate out; Ridley Q",
+      "Burrow off injury report"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T17:03:46.392848+00:00",
+    "n": 10000,
+    "homeElo": 1526.1,
+    "awayElo": 1275.6,
+    "gamesSeen": 13,
+    "eloMarginHome": 11.9,
+    "statsMarginHome": 6.3,
+    "marginDivergence": 5.6,
+    "projTotal": 44.2,
+    "homeWinProbElo": 84.8,
+    "marketHomeSpread": -13.5,
+    "marketTotal": 46.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.4,
+    "projHomeMeanRaw": 28.1,
+    "projAwayMeanRaw": 16.1,
+    "projHomeMeanAdjusted": 28.1,
+    "projAwayMeanAdjusted": 14.7,
+    "injuryAdjustedMarginHome": 13.3,
+    "projTotalAdjusted": 42.8,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+11.9) and recent-scoring margin (+6.3) disagree by 5.6 points -- worth a second look before trusting either alone.",
+      "Away injury adjustment: -1.4 pts -- Carnell Tate (WR, out, -1.0), Jaylon Jones (CB, out, -0.4).",
+      "Cincinnati Bengals (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 80.8,
+    "awayWinPct": 17.4,
+    "tiePct": 1.9,
+    "medianHomeScore": 28,
+    "medianAwayScore": 15,
+    "coverPctHome": 48.4,
+    "overPct": 39.7
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:08.384119+00:00",
+      "marginHome": 11.6,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.366532+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.967355+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.880021+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-28T00:49:37.231654+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-28T12:53:20.008937+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-29T01:46:44.110946+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-29T15:33:33.183686+00:00",
+      "marginHome": 11.9,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-11-01T01:55:12.701788+00:00",
+      "marginHome": 12.9,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.260830+00:00",
+      "marginHome": 12.9,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.549266+00:00",
+      "marginHome": 12.9,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-11-01T17:03:46.392848+00:00",
+      "marginHome": 13.3,
+      "total": 42.8
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Bengals by 12.9 (Elo 11.9, scoring 6.3), projected total 43.2 vs market 46.5; under in 59.7% of runs. Spread moved from CIN -10 to -12.5 with Joe Burrow off the injury report (Titans' official report, 10/30).",
+      "Tennessee is without RB Tyjae Spears and WR Carnell Tate (out), Calvin Ridley is questionable, and Cam Ward has 4 TD/5 INT through seven games, so the Titans' half of this total is the weak half. The spread sits on the Elo number; the under is the cleaner read."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "UNDER 46.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Model total 43.2 is 3.3 under the market with Tennessee's skill group thinned. | Stake $12 \u00b7 pass at 45.5",
+        "factors": [
+          {
+            "label": "Model total",
+            "dir": "for",
+            "detail": "43.2 projected vs 46.5; under 59.7% of sims"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "TEN: Spears, Tate out; Ridley questionable"
+          },
+          {
+            "label": "Public",
+            "dir": "neutral",
+            "detail": "65% of total handle on the over (cleatz splits snapshot 12:52am ET 11/1)"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        }
+      },
+      {
+        "market": "spread",
+        "pick": "TEN +12.5",
+        "confidence": 3,
+        "reasoning": "Scoring margin (6.3) says room, Elo (11.9) says fair. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-01T17:03:46Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Carnell Tate",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Shoulder, out per RotoWire 10/30; WR1 role"
+        },
+        {
+          "position": "CB",
+          "player": "Jaylon Jones",
+          "status": "out",
+          "pts": -0.4,
+          "note": "Inactive (RotoWire lineups inactives 11/1 ~12:00pm ET)"
+        }
+      ],
+      "items_total_pts": -1.4,
+      "stacking_notes": [],
+      "total_pts": -1.4
+    }
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 60,
+      "handle_pct_home": 70
+    },
+    "total": {
+      "bets_pct_over": 56,
+      "handle_pct_over": 65
+    },
+    "moneyline": {
+      "bets_pct_home": 95,
+      "handle_pct_home": 93
+    },
+    "reverse_line_move": false,
+    "rlm_note": "70% of handle is on the home side and the spread has moved toward them (-10 -> -12.5) -- money and line agree, no RLM.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 43,
+    "away": 36
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "game_id": "rams-raiders-2026-wk7",
+  "matchup": "Los Angeles Rams @ Las Vegas Raiders",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": 4,
+      "total": 47.5,
+      "ml_fav": -200,
+      "ml_dog": 168
+    },
+    "draftkings": {
+      "spread": 5.5,
+      "total": 47.5,
+      "ml_fav": -225,
+      "ml_dog": 185
+    },
+    "fanduel": {
+      "spread": 4.5,
+      "total": 47.5,
+      "ml_fav": -210,
+      "ml_dog": 180
+    },
+    "caesars": {
+      "spread": 4,
+      "total": 47.5,
+      "ml_fav": -213,
+      "ml_dog": 179
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Raiders."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": 4,
+        "total": 47.5,
+        "ml_fav": -200,
+        "ml_dog": 168
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 47.5,
+        "ml_fav": -210,
+        "ml_dog": 180
+      },
+      "caesars": {
+        "spread": 4,
+        "total": 47.5,
+        "ml_fav": -213,
+        "ml_dog": 179
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Raiders."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:09Z",
+      "bookmaker_eu": {
+        "spread": 4,
+        "total": 47.5,
+        "ml_fav": -200,
+        "ml_dog": 168
+      },
+      "draftkings": {
+        "spread": 4,
+        "total": 48.5,
+        "ml_fav": -210,
+        "ml_dog": 175
+      },
+      "fanduel": {
+        "spread": 4,
+        "total": 48.5,
+        "ml_fav": -213,
+        "ml_dog": 179
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 48.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Raiders."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 48.5,
+        "ml_fav": -192,
+        "ml_dog": 162
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 48.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": 48.5,
+        "ml_fav": -176,
+        "ml_dog": 148
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Rams -4",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Model-only signal, modest edge",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 60,
+      "handle_pct_home": 77
+    },
+    "total": {
+      "bets_pct_over": 73,
+      "handle_pct_over": 96
+    },
+    "moneyline": {
+      "bets_pct_home": 20,
+      "handle_pct_home": 41
+    },
+    "reverse_line_move": false,
+    "rlm_note": "77% of handle is on the home side and the spread has moved toward them (+5.5 -> +3.5) -- money and line agree, no RLM.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.592516+00:00",
+    "n": 10000,
+    "homeElo": 1394.2,
+    "awayElo": 1595.8,
+    "gamesSeen": 12,
+    "eloMarginHome": -6.1,
+    "statsMarginHome": -1.7,
+    "marginDivergence": -4.4,
+    "projTotal": 47.9,
+    "homeWinProbElo": 29.2,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 48.5,
+    "homeInjuryPts": -1.2,
+    "awayInjuryPts": -3.3,
+    "projHomeMeanRaw": 20.9,
+    "projAwayMeanRaw": 27.0,
+    "projHomeMeanAdjusted": 19.7,
+    "projAwayMeanAdjusted": 23.7,
+    "injuryAdjustedMarginHome": -4.0,
+    "projTotalAdjusted": 43.4,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (-6.1) and recent-scoring margin (-1.7) disagree by 4.4 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -1.2 pts -- Carter Runyon (TE, out, -0.2), Dont'e Thornton Jr. (WR, out, -0.3), Mike Washington Jr. (RB, questionable, -0.3), Quay Walker (LB, questionable, -0.4).",
+      "Away injury adjustment: -3.3 pts -- Davante Adams (WR, out, -1.8), Puka Nacua (WR, questionable, -0.7), Trent McDuffie (CB, questionable, -0.4), Nate Landman (LB, out, -0.4).",
+      "Los Angeles Rams (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 37.8,
+    "awayWinPct": 59.7,
+    "tiePct": 2.6,
+    "medianHomeScore": 20,
+    "medianAwayScore": 24,
+    "coverPctHome": 48.4,
+    "overPct": 35.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.971337+00:00",
+      "marginHome": -6.1,
+      "total": 47.9
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.877066+00:00",
+      "marginHome": -6.1,
+      "total": 47.9
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.686815+00:00",
+      "marginHome": -6.1,
+      "total": 47.9
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.348049+00:00",
+      "marginHome": -3.2,
+      "total": 45.0
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.592516+00:00",
+      "marginHome": -4.0,
+      "total": 43.4
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Rams -3.5 (DK +100 at -3.5) against a model of Rams by 4.0; no edge. Los Angeles is without Davante Adams with Puka Nacua and Trent McDuffie questionable.",
+      "Sims lean under on the adjusted total but the raw 47.9 is near the 48.5 line, so no total lean."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-21T12:46:03Z",
+    "status": "captured",
+    "source_note": "Opening-day cycle (Tue): covers.com player-props board showed only spread/total picks, no player props yet; RotoWire JSON board had not rendered (still Week 6 titled); Linemate rows were mixed/unverified against current rosters. No clean, source-verified pick cleared the bar this cycle -- will re-check as covers.com/RotoWire/Linemate populate later in the week.",
+    "picks": [
+      {
+        "player": "Kyren Williams",
+        "position": "RB",
+        "team": "away",
+        "market": "rush_yards",
+        "lean": "over",
+        "book": "Linemate",
+        "confidence": 6,
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Las Vegas allows 113.67 rush yds/g to RBs, ranks 23rd of 32 (CBS posvsdef, 2026 season avg) -- a soft run defense"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Last 5 games (nfl.com/linemate gamelog): 50, 49, 80, 88, 85 rush yds (avg 70.4); Rams backup RB R. Rivers is on IR (calf), so Williams has the backfield to himself"
+          },
+          {
+            "label": "Hit Rate",
+            "dir": "for",
+            "detail": "Line moved 59.5 to 63.5 since capture; still 3 of his last 5 games (80, 88, 85) clear 63.5, and Linemate showed 68% hit rate (13/19) at the original number"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 23,
+          "rank_basis": "CBS posvsdef RB, rush yards allowed, 2026 season avg"
+        },
+        "reasoning": "Line moved 59.5->63.5; still soft Raiders run D (23rd of 32), clean workhorse role (backup RB on IR), and a 70.4 rush-yd/g recent average comfortably above the new line.",
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 59.5,
+        "opening_captured_at": "2026-10-21T11:19:39Z",
+        "current_line": 63.5,
+        "current_captured_at": "2026-10-21T12:46:03Z"
+      },
+      {
+        "player": "Matthew Stafford",
+        "position": "QB",
+        "team": "away",
+        "market": "pass_yards",
+        "lean": "over",
+        "book": "Covers.com consensus best price",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Las Vegas ranks 28th of 32 vs QB pass yards allowed (CBS posvsdef, 2026 season avg) -- a soft pass defense"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 279.73 vs 263.5 line, +16.2 diff, 24.88% EV"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Stafford has thrown for 222, 383, 317, 390 yds his last 4 games (nfl.com logs), averaging ~328 -- well above the 263.5 line"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 28,
+          "rank_basis": "CBS posvsdef QB, pass yards allowed, 2026 season avg"
+        },
+        "reasoning": "Raiders rank 28th of 32 vs QB pass yards; Stafford confirmed healthy and active (Sept 28 2026 report). Model projects well above the line.",
+        "confidence": 6,
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 263.5,
+        "opening_captured_at": "2026-10-21T11:03:15Z",
+        "current_line": 263.5,
+        "current_captured_at": "2026-10-21T11:03:15Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "TE",
+          "player": "Carter Runyon",
+          "status": "out",
+          "pts": -0.2,
+          "note": "TE out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Dont'e Thornton Jr.",
+          "status": "out",
+          "pts": -0.3,
+          "note": "WR out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "RB",
+          "player": "Mike Washington Jr.",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "foot/back (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Quay Walker",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "LB q (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -1.2,
+      "stacking_notes": [],
+      "total_pts": -1.2
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Davante Adams",
+          "status": "out",
+          "pts": -1.8,
+          "note": "WR out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Puka Nacua",
+          "status": "questionable",
+          "pts": -0.7,
+          "note": "WR1 calf (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "Trent McDuffie",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CB1 groin (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Nate Landman",
+          "status": "out",
+          "pts": -0.4,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.3,
+      "stacking_notes": [],
+      "total_pts": -3.3
+    }
+  },
+  "final_score": {
+    "home": 21,
+    "away": 35
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "game_id": "patriots-bills-2026-wk4",
+  "matchup": "New England Patriots @ Buffalo Bills",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -5.5,
+      "total": 50.5,
+      "ml_fav": -260,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Bills -5.5 (home fav). Fox opening Bills -6.5/48.5 -- total up 2 since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -5.5,
+        "total": 50.5,
+        "ml_fav": -260,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Bills -5.5 (home fav). Fox opening Bills -6.5/48.5 -- total up 2 since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.0,
+        "total": 48.5,
+        "ml_fav": -310,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:54Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": -298,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars spread via vegasinsider.com (Bills -6.5), matches DK exactly."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": -298,
+        "ml_dog": 270
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1): Bills(home) -6.5. Caesars via vegasinsider.com: Patriots(away) +7 -> home(Bills) -7, half-pt wider, same side. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-02",
+    "spread_lean": "No edge (market runs well ahead of model -- treated as market-knows-more)",
+    "total_lean": "Lean Under 48.5 (model projects lower)",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Line essentially steady in the -6.5/-7 Bills-favored range since the last check -- no new confirmed injury news found this cycle for either side",
+      "Josh Allen (questionable, knee contusion Wk3) had been expected to play with no missed time per last cycles reporting; no updated status found this cycle, treated as unchanged rather than assumed cleared"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.682645+00:00",
+    "n": 10000,
+    "homeElo": 1657.2,
+    "awayElo": 1635.7,
+    "gamesSeen": 6,
+    "eloMarginHome": 2.8,
+    "statsMarginHome": 1.3,
+    "marginDivergence": 1.4,
+    "projTotal": 47.0,
+    "homeWinProbElo": 59.9,
+    "marketHomeSpread": -7,
+    "marketTotal": 48.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 24.9,
+    "projAwayMeanRaw": 22.1,
+    "projHomeMeanAdjusted": 24.9,
+    "projAwayMeanAdjusted": 22.1,
+    "injuryAdjustedMarginHome": 2.8,
+    "projTotalAdjusted": 47.0,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [],
+    "homeWinPct": 56.1,
+    "awayWinPct": 41.1,
+    "tiePct": 2.8,
+    "medianHomeScore": 25,
+    "medianAwayScore": 22,
+    "coverPctHome": 37.4,
+    "overPct": 46.0
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 76,
+      "handle_pct_home": 89
+    },
+    "total": {
+      "bets_pct_over": 48,
+      "handle_pct_over": 35
+    },
+    "moneyline": {
+      "bets_pct_home": 78,
+      "handle_pct_home": 59
+    },
+    "reverse_line_move": false,
+    "rlm_note": "89% of handle is on the home side and the spread has moved toward them (-5.5 -> -6.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:29:20Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser. Note: the rush_yards line on Cook had a genuine script conflict and was intentionally left out -- this receiving-yards line is a cleaner, standalone read.",
+    "picks": [
+      {
+        "player": "James Cook",
+        "team": "home",
+        "position": "RB",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Cooks checkdown role gives him a clean receiving floor regardless of the rushing-side script conflict.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 14.75 vs 6.5 line, +8.3 diff, 26.24% edge"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Cook is BUFs clear passing-down back out of the backfield"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Bills are a big home favorite -- doesnt cleanly point either way for a checkdown market"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 6.5,
+        "opening_captured_at": "2026-10-01T01:29:20Z",
+        "current_line": 6.5,
+        "current_captured_at": "2026-10-01T01:29:20Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 12,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 4,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 0,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 6.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-29T13:35:57Z",
+    "analysis": [
+      "The corrected current line is Bills -7, total 48.5 (both real corrections from an earlier stale -5.5/50.5 read). The market has hardened toward Buffalo considerably -- more than the model's own Elo-based margin (2.8) suggests -- which reads more like the market pricing in something the simple team-strength model can't see than a real, backable Patriots angle. Treating that spread gap as market-knows-more rather than an edge.",
+      "The total is the more defensible read: model (47.0) sits a point and a half under the corrected market, with no counter-signal found on either roster this week."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 48.5",
+        "confidence": 4,
+        "reasoning": "Model total sits under the corrected market number, single-category signal.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.682645+00:00",
+      "marginHome": 2.8,
+      "total": 47.0
+    }
+  ],
+  "final_score": {
+    "home": 26,
+    "away": 29
+  }
+}

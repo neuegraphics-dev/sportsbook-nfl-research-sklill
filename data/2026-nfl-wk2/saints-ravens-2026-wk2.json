@@ -1,0 +1,215 @@
+{
+  "game_id": "saints-ravens-2026-wk2",
+  "matchup": "New Orleans Saints @ Baltimore Ravens",
+  "week": "Week 2",
+  "kickoff": "2026-09-20T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-14",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -8.5,
+      "total": 48.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-14T15:06:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -8.5,
+        "total": 48.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+    },
+    {
+      "captured_at": "2026-09-14T16:03:37Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 47,
+        "ml_fav": -433,
+        "ml_dog": 339
+      },
+      "draftkings": null,
+      "fanduel": {
+        "spread": -8.5,
+        "total": 48.5,
+        "ml_fav": -480,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "Full-refresh pass 2026-09-14 ~16:00 UTC, replacing this morning's consensus-preview placeholder with real per-book data. BookMaker.eu fetched live from its own odds board. FanDuel fetched from its research page (confirmed today-dated, 2026-09-14 -- not the historically-frozen pattern this source usually shows, since Week 2 content didn't exist before this week). DraftKings via rotowire failed to render tonight (page stuck on client-side 'Loading NFL Odds...', no data in the static fetch) -- logged null rather than guess. Caesars via vegasinsider produced internally inconsistent numbers this pass (several entries contradicted BookMaker.eu/FanDuel by 3-5+ points in ways no other source supports) -- treated as unreliable and logged null rather than pass off a probable extraction error as real."
+    },
+    {
+      "captured_at": "2026-09-15T12:36:15Z",
+      "bookmaker_eu": {
+        "spread": -8.5,
+        "total": 47.0,
+        "ml_fav": -404,
+        "ml_dog": 320
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu fetched live (fresh Sep 15 6:30am PT board). DraftKings via rotowire.com failed to load (page returned only loading placeholders, no data). Caesars/DK cross-check via vegasinsider.com returned a stale Week 1 table (marked 'Last Updated: September 13, 2026', still showing Week 1 matchups) instead of Week 2 -- not a real current read, logged null rather than pass off Week 1 numbers as Week 2. FanDuel not attempted this pass (editorial page long since established frozen/stale). Sharp reference (BookMaker.eu) is the only confirmed-current book this cycle."
+    },
+    {
+      "captured_at": "2026-09-16T01:56:42Z",
+      "bookmaker_eu": {
+        "spread": -8.5,
+        "total": 47.0,
+        "ml_fav": -404,
+        "ml_dog": 320
+      },
+      "draftkings": {
+        "spread": -8.5,
+        "total": 47.5,
+        "ml_fav": -360,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars via VegasInsider (spread only, totals unconfirmed); FanDuel source frozen/stale, logged null"
+    },
+    {
+      "captured_at": "2026-09-17T16:16:00Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 47.5,
+        "ml_fav": -391,
+        "ml_dog": 310
+      },
+      "draftkings": {
+        "spread": -8.5,
+        "total": 47.5,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire returned numbers byte-identical to the Sep 16 snapshot across the entire tracked slate despite a same-day freshness marker -- treated as a probable stale/non-refreshed source, not confirmed real 'no movement'. Caesars/VegasInsider page dated Sep 15 (2 days old) -- logged null rather than pass off a stale number. BookMaker.eu shows real movement on several games but without a second live book corroborating it today, treat that movement as informational only this cycle, not yet confirmed as a genuine market move."
+    },
+    {
+      "captured_at": "2026-09-18T13:38:39Z",
+      "bookmaker_eu": {
+        "spread": -9.0,
+        "total": 47.5,
+        "ml_fav": -391,
+        "ml_dog": 310
+      },
+      "draftkings": {
+        "spread": -8.5,
+        "total": 47.5,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire (marked 'Last Verified: Sep 18 2026') and BookMaker.eu both returned numbers byte-identical to the Sep 17 snapshot across the ENTIRE tracked slate -- treated as a probable stale/non-refreshed source pass, not confirmed as genuine 'no movement' today. Caesars via VegasInsider still dated Sep 15 (3 days old) -- logged null. FanDuel's editorial page is established frozen/stale, not attempted this pass."
+    },
+    {
+      "captured_at": "2026-09-19T12:35:11Z",
+      "bookmaker_eu": {
+        "spread": -8.5,
+        "total": 46.5,
+        "ml_fav": -419,
+        "ml_dog": 330
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "Systemic staleness this cycle: DraftKings via rotowire.com returned numbers byte-identical to the Sep 18 snapshot with a Sep-18-dated (not today) freshness marker -- treated as stale/non-refreshed, logged null rather than pass off yesterday's numbers as today's. Caesars/FanDuel via vegasinsider.com dated Sep 15/Sep 17 -- also stale, logged null. BookMaker.eu fetched live from its own board and moved on most games -- treat this movement as informational pending a US book actually repricing, not yet confirmed as a genuine market move (see systemic-divergence caution)."
+    },
+    {
+      "captured_at": "2026-09-20T12:44:48Z",
+      "bookmaker_eu": {
+        "spread": -8.5,
+        "total": 46.5,
+        "ml_fav": -408,
+        "ml_dog": 322
+      },
+      "draftkings": {
+        "spread": -8.5,
+        "total": 47.5,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire last verified 2026-09-19. Caesars spread-only via VegasInsider."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-20",
+    "spread_lean": "Saints +8.5 or better",
+    "total_lean": "Under 46.5",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Ravens clearly more banged up: DT Nnamdi Madubuike OUT (defensive anchor), WR Zay Flowers DOUBTFUL, LT Ronnie Stanley questionable, plus two more OUT (Buchanan, Tampa) -- Saints' own list is comparatively minor (long snapper out, Olave questionable)",
+      "Weather: rain developing mid-game, reaching 61% precipitation -- total-suppressing on top of the injury picture"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-20T12:45:05.054554+00:00",
+    "n": 10000,
+    "homeElo": 1562.5,
+    "awayElo": 1421.3,
+    "gamesSeen": 2,
+    "eloMarginHome": 7.6,
+    "statsMarginHome": 3.9,
+    "marginDivergence": 3.7,
+    "projTotal": 47.1,
+    "homeWinProbElo": 74.8,
+    "marketHomeSpread": -8.5,
+    "marketTotal": 47.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Only 2 logged game(s) across both teams -- leans are suppressed below 4 to avoid mistaking a cold-start rating gap for a real signal. Raw cover%/over% still shown below for reference."
+    ],
+    "homeWinPct": 69.4,
+    "awayWinPct": 28.5,
+    "tiePct": 2.1,
+    "medianHomeScore": 27,
+    "medianAwayScore": 20,
+    "coverPctHome": 47.8,
+    "overPct": 48.7
+  },
+  "wagertalk_angle": {
+    "pick": "Saints +8.5",
+    "pick_team": "New Orleans Saints",
+    "pct": 57.5,
+    "system": "Off-loss vs off-win",
+    "why": "New Orleans is the off-loss team facing an off-win Ravens team -- the off-loss side covers ~57.5% ATS historically. Standalone signal.",
+    "stack_count": 1
+  },
+  "final_score": {
+    "home": 17,
+    "away": 24
+  }
+}

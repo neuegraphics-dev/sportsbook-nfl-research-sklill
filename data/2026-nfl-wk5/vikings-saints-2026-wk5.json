@@ -1,0 +1,519 @@
+{
+  "game_id": "vikings-saints-2026-wk5",
+  "matchup": "Minnesota Vikings @ New Orleans Saints",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 1.5,
+      "total": 46.5,
+      "ml_fav": -126,
+      "ml_dog": 120
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 off the board."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 46.5,
+        "ml_fav": -126,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 off the board."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.0,
+        "total": 42.5,
+        "ml_fav": -118,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 2.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 MIN -1.5/41.5. Total down 4-5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.0,
+        "total": 42.5,
+        "ml_fav": -118,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 42.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Saints"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Saints. ml_fav/ml_dog keyed to favorite(Vikings,away)/dog(Saints,home) per schema; DK ML via cleatz (Vikings -142/Saints +120)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -142.0,
+        "ml_dog": 120.0
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -134.0,
+        "ml_dog": 116.0
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -139.0,
+        "ml_dog": 118.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -134,
+        "ml_dog": 116
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -139,
+        "ml_dog": 118
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -134,
+        "ml_dog": 116
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -139,
+        "ml_dog": 118
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Saints."
+    },
+    {
+      "captured_at": "2026-10-11T13:00:59Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 41.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 41.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Vikings -1.5 (FD) / -2 (CZR)",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Justin Jefferson limited (ankle) but trending to play; Addison/Darrisaw minor questionable tags priced",
+      "Both Elo and real-form model views have MIN by ~7"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T17:27:32Z",
+    "home": {
+      "items": [
+        {
+          "position": "LB",
+          "player": "Elliss/Jennings",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "Both DNP Thu Oct 8 (calf/knee); Godchaux also DNP (groin/rest) -- uncertainty-weighted"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Justin Jefferson",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Ankle, LIMITED Thu Oct 8"
+        },
+        {
+          "position": "WR",
+          "player": "Jordan Addison",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "Hamstring, LIMITED Thu Oct 8 (recategorized from rest/soreness to hamstring)"
+        },
+        {
+          "position": "OT",
+          "player": "Christian Darrisaw",
+          "status": "questionable",
+          "pts": -0.75,
+          "note": "Concussion protocol, DNP Thu Oct 8 -- starting LT, uncertainty-weighted pending clearance"
+        }
+      ],
+      "items_total_pts": -1.55,
+      "stacking_notes": [],
+      "total_pts": -1.55
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.049432+00:00",
+    "n": 10000,
+    "homeElo": 1390.7,
+    "awayElo": 1581.8,
+    "gamesSeen": 8,
+    "eloMarginHome": -5.7,
+    "statsMarginHome": -3.6,
+    "marginDivergence": -2.1,
+    "projTotal": 43.1,
+    "homeWinProbElo": 30.5,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 41.5,
+    "homeInjuryPts": -1.0,
+    "awayInjuryPts": -1.55,
+    "projHomeMeanRaw": 18.7,
+    "projAwayMeanRaw": 24.4,
+    "projHomeMeanAdjusted": 17.7,
+    "projAwayMeanAdjusted": 22.8,
+    "injuryAdjustedMarginHome": -5.2,
+    "projTotalAdjusted": 40.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -1.0 pts -- Elliss/Jennings (LB, questionable, -1.0).",
+      "Away injury adjustment: -1.6 pts -- Justin Jefferson (WR, questionable, -0.5), Jordan Addison (WR, questionable, -0.3), Christian Darrisaw (OT, questionable, -0.8).",
+      "New Orleans Saints (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Kaden Ellis (-0.5), Pete Werner (-0.5), Anfernee Jennings (-0.4), Carl Granderson (-0.6), Travis Etienne (-0.5) [-2.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 34.9,
+    "awayWinPct": 62.6,
+    "tiePct": 2.5,
+    "medianHomeScore": 18,
+    "medianAwayScore": 23,
+    "coverPctHome": 43.0,
+    "overPct": 48.0
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.800044+00:00",
+      "marginHome": -3.4,
+      "total": 41.7
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.654471+00:00",
+      "marginHome": -6.5,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.984217+00:00",
+      "marginHome": -6.5,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.666328+00:00",
+      "marginHome": -6.5,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.812040+00:00",
+      "marginHome": -6.5,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-10-09T17:27:39.729424+00:00",
+      "marginHome": -5.2,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-09T21:05:22.003639+00:00",
+      "marginHome": -5.2,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.015737+00:00",
+      "marginHome": -5.2,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.279727+00:00",
+      "marginHome": -5.2,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-10T21:04:16.037835+00:00",
+      "marginHome": -5.2,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.049432+00:00",
+      "marginHome": -5.2,
+      "total": 40.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-08T12:57:56Z",
+    "analysis": [
+      "Tuesday update: the total has collapsed from 46.5 to 42.5 and the spread sits at Vikings -1 to -2. Minnesota beat Miami 15-10 while New Orleans was routed 45-24 on Monday night, losing Alvin Kamara briefly to a knee issue, with three linebackers already ailing and Noah Fant inactive -- all on a short week.",
+      "Both halves of the model now agree on Minnesota: the injury-adjusted sim has the Vikings by 6.5 and real 2026 scoring has them by 7.2, against a market that barely favors them. Justin Jefferson's minor ankle sprain is the main variable; if he practices fully Wednesday this number likely moves toward Minnesota."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Vikings -1.5 (FD) / -2 CZR",
+        "confidence": 6,
+        "reasoning": "Both model views have MIN by ~7. Jefferson limited Wed and Addison DNP (soreness) are the risk; recheck Friday. | Stake $15 \u00b7 pass at -3",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-09T17:32:46Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM); statmuse.com game log",
+    "picks": [
+      {
+        "player": "Alvin Kamara",
+        "team": "home",
+        "position": "RB",
+        "market": "rec_yards",
+        "book": "Covers (best line)",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Tough receiving matchup caps this, but model sees real value and his most recent game (35 rec yds) was his best of the season -- context, not a strong bet. | Stake $0 (prefer skip, -115) \u00b7 pass at 11.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "MIN ranks 4th of 32 vs RB (tough-matchup cap applies), 22.8 rec yds/g allowed to RBs"
+          },
+          {
+            "label": "Volume",
+            "dir": "neutral",
+            "detail": "Inconsistent target share (6, 1, 7 targets last 3 games) but season-high 35 rec yds most recent outing"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 19.70 vs 12.5 line, +7.2 diff, 25.5% EV"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        },
+        "opening_line": 12.5,
+        "opening_captured_at": "2026-10-09T17:32:46Z",
+        "current_line": 12.5,
+        "current_captured_at": "2026-10-09T17:32:46Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 38,
+      "handle_pct_home": 60
+    },
+    "total": {
+      "bets_pct_over": 65,
+      "handle_pct_over": 50
+    },
+    "moneyline": {
+      "bets_pct_home": 41,
+      "handle_pct_home": 45
+    },
+    "reverse_line_move": true,
+    "rlm_note": "60% of handle is on the home side but the spread moved AGAINST them (+1.5 -> +2.5) -- real reverse line move toward away.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "final_score": {
+    "home": 13,
+    "away": 23
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "game_id": "titans-colts-2026-wk6",
+  "matchup": "Tennessee Titans @ Indianapolis Colts",
+  "week": "Week 6",
+  "kickoff": "2026-10-18T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -7,
+      "total": 44.5,
+      "ml_fav": -325,
+      "ml_dog": 260
+    },
+    "fanduel": {
+      "spread": -6.5,
+      "total": 43.5,
+      "ml_fav": -325,
+      "ml_dog": 260
+    },
+    "caesars": {
+      "spread": -7,
+      "total": 44,
+      "ml_fav": -325,
+      "ml_dog": 260
+    },
+    "note": "VegasInsider DOM (home=Colts)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7,
+        "total": 44.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 43.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "caesars": {
+        "spread": -7,
+        "total": 44,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "note": "VegasInsider DOM (home=Colts)."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -309,
+        "ml_dog": 252
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 43.5,
+        "ml_fav": -340,
+        "ml_dog": 275
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": -7,
+        "total": 44,
+        "ml_fav": -309,
+        "ml_dog": 252
+      },
+      "draftkings": {
+        "spread": -7,
+        "total": 44.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=IND relative. DK cross-checked VI vs cleatz (total 44.5 -102/-118, ML TEN+260/IND-325). BookMaker.eu from lines.bookmaker.eu."
+    },
+    {
+      "captured_at": "2026-10-15T17:00:10Z",
+      "bookmaker_eu": {
+        "spread": -7,
+        "total": 44,
+        "ml_fav": -302,
+        "ml_dog": 247
+      },
+      "draftkings": {
+        "spread": -7,
+        "total": 44.5,
+        "ml_fav": -355,
+        "ml_dog": 280
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh): IND-302/TEN+247, total44. DK via cleatz.com (fresh): IND-355/TEN+280, total44.5. Caesars/FanDuel spread via VI DOM (Oct13 banner, unconfirmed-stale)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:19Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -303,
+        "ml_dog": 247
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads) + BookMaker.eu. DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-16T21:04:03Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -303,
+        "ml_dog": 247
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI DOM (DK-7/-105,Caesars-7/-106,FD-6.5/-120) + cleatz DK total/ML (44.5, IND-340/TEN+270) + BookMaker.eu unchanged vs prior cycle."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -303,
+        "ml_dog": 247
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 44.5,
+        "ml_fav": -340.0,
+        "ml_dog": 275.0
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -325.0,
+        "ml_dog": 260.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-17T17:03:14Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -303,
+        "ml_dog": 247
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 275
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu; numbers unchanged vs this morning's 13:05Z snapshot, cross-confirmed by cleatz.com live feed (updated under 5 min) showing matching current lines -- treated as genuinely stable, not a stale-source artifact."
+    },
+    {
+      "captured_at": "2026-10-17T21:02:59Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -303,
+        "ml_dog": 247
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 44.5,
+        "ml_fav": -330,
+        "ml_dog": 265
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": 44.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "note": "VegasInsider DOM + cleatz.com + lines.bookmaker.eu."
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 44.5,
+        "ml_fav": -305,
+        "ml_dog": 245
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    },
+    {
+      "captured_at": "2026-10-18T17:04:46Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 43.5,
+        "ml_fav": -292,
+        "ml_dog": 245
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": 43.5,
+        "ml_fav": -298,
+        "ml_dog": 240
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads (DK/Caesars/FanDuel) from VegasInsider DOM per-book columns, home-relative. BookMaker.eu + DK total/ML from lines.bookmaker.eu board (cleatz.com odds-compare panel required per-game clicks not done this cycle for ML on Caesars/FanDuel -- logged null)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Indianapolis Colts -7",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Model and market agree Colts favored (64.2% cover) with no new injury signal either side this week",
+      "Elo (+12.0) and recent scoring (+5.1) agree directionally but diverge in magnitude by 6.9pts"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T17:09:35.044434+00:00",
+    "n": 10000,
+    "homeElo": 1498.4,
+    "awayElo": 1246.7,
+    "gamesSeen": 11,
+    "eloMarginHome": 12.0,
+    "statsMarginHome": 5.1,
+    "marginDivergence": 6.9,
+    "projTotal": 44.5,
+    "homeWinProbElo": 84.9,
+    "marketHomeSpread": -6.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": -0.5,
+    "awayInjuryPts": -0.5,
+    "projHomeMeanRaw": 28.2,
+    "projAwayMeanRaw": 16.2,
+    "projHomeMeanAdjusted": 27.7,
+    "projAwayMeanAdjusted": 15.7,
+    "injuryAdjustedMarginHome": 12.0,
+    "projTotalAdjusted": 43.5,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+12.0) and recent-scoring margin (+5.1) disagree by 6.9 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -0.5 pts -- Tyler Warren (TE, questionable, -0.5).",
+      "Away injury adjustment: -0.5 pts -- Kevin Winston Jr. (S, out, -0.5).",
+      "Indianapolis Colts (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 78.5,
+    "awayWinPct": 19.5,
+    "tiePct": 2.0,
+    "medianHomeScore": 28,
+    "medianAwayScore": 16,
+    "coverPctHome": 65.0,
+    "overPct": 50.0
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:58.958446+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.272052+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-13T14:03:05.115424+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-14T13:04:24.466258+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-16T21:08:26.380137+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-17T13:10:47.831514+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-17T17:03:42.379125+00:00",
+      "marginHome": 12.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-17T21:11:04.497366+00:00",
+      "marginHome": 12.5,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.643276+00:00",
+      "marginHome": 12.0,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-18T17:09:35.044434+00:00",
+      "marginHome": 12.0,
+      "total": 43.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-18T13:07:05Z",
+    "analysis": [
+      "Indianapolis is healthier than Tennessee and the model still has this as a blowout: 79.6% win, 65.5% cover at the market number, with Elo (+12.0) and recent scoring margin (+5.1) pointing the same direction even though they disagree on magnitude. The number has actually gotten cheaper for Colts backers -- DraftKings moved from -7.0 to -6.5 overnight, crossing the key number 7, which is a real discount on the same side rather than a signal to fade.",
+      "Tyler Warren (groin) is a new questionable for Indianapolis -- a limited-practice downgrade, not a clear out, so it is priced as a small uncertainty discount (-0.5) rather than a full starter-out penalty; Kevin Winston Jr. remains out for Tennessee. Neither change moves the picture much. The total sits near the model projection (43.5 adjusted vs. 44.5 market) with no clear lean either way."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "IND -6.5",
+        "confidence": 6,
+        "reasoning": "Model covers 65.5% with Indianapolis healthier than Tennessee; line already improved from -7 to -6.5 overnight, crossing the key number 7. Elo/scoring-margin divergence (12.0 vs 5.1) is the main caveat. | Stake $15 \u00b7 pass at -7.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T17:05:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 76,
+      "handle_pct_home": 60
+    },
+    "total": {
+      "bets_pct_over": 31,
+      "handle_pct_over": 52
+    },
+    "moneyline": {
+      "bets_pct_home": 92,
+      "handle_pct_home": 85
+    },
+    "reverse_line_move": true,
+    "rlm_note": "60% of handle is on the home side but the spread moved AGAINST them (-7 -> -6.5) -- real reverse line move toward away.",
+    "note": "Spread bet%/handle% from cleatz.com public-betting board, home-relative. Total/ML splits not fetched this cycle except cardinals-rams."
+  },
+  "props": {
+    "last_checked": "2026-10-14T21:06:31Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser DOM; CBS posvsdef RB rank confirmed same run; Tony Pollard-Titans roster confirmed via web search this run",
+    "picks": [
+      {
+        "player": "Tony Pollard",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "covers.com consensus (best odds theScore Bet)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Model projects 64.5 vs the 54.5 line, Pollard carries 64.7% of TEN's rush workload, and IND ranks 27th-softest of 32 vs RB rush. | Stake $15 \u00b7 pass at 58.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 64.5 vs 54.5 line, +10.0 diff, 26.0% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "IND ranks 27th-softest of 32 vs RB rush (CBS posvsdef, read 10/14)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Pollard projected 17.5 carries (90th pct RB), 64.7% of TEN backfield workload this year"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "CBS RB fantasy pts allowed YTD, read 10/14"
+        },
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 54.5,
+        "opening_captured_at": "2026-10-14T21:06:31Z",
+        "current_line": 54.5,
+        "current_captured_at": "2026-10-14T21:06:31Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-18T13:05:41Z",
+    "home": {
+      "items": [
+        {
+          "position": "TE",
+          "player": "Tyler Warren",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Groin injury, downgraded from full-go to questionable per Friday practice report (rotoballer.com, ESPN via cleatz Oct 18)"
+        }
+      ],
+      "items_total_pts": -0.5,
+      "stacking_notes": [],
+      "total_pts": -0.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "S",
+          "player": "Kevin Winston Jr.",
+          "status": "out",
+          "pts": -0.5,
+          "note": "OUT per Friday injury report (CBS Sports/Titans.com, Oct 17 2026)."
+        }
+      ],
+      "items_total_pts": -0.5,
+      "stacking_notes": [],
+      "total_pts": -0.5
+    }
+  },
+  "final_score": {
+    "home": 20,
+    "away": 26
+  }
+}

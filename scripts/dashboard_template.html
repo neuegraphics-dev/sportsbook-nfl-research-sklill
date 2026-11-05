@@ -1,0 +1,3376 @@
+<title>Line Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef0f4;
+    --surface: #ffffff;
+    --surface-2: #f4f6fa;
+    --border: #d9dee8;
+    --text: #1b2130;
+    --text-dim: #5e6779;
+    --accent: #b8791f;
+    --accent-soft: rgba(184,121,31,0.12);
+    --teal: #23806f;
+    --rust: #af5230;
+    --key-bg: #0f6fa8;
+    --key-fg: #ffffff;
+    --gold: #93720a;
+    --gold-fg: #1b2130;
+    --gold-soft: rgba(147,114,10,0.14);
+    --model: #6a4fb3;
+    --model-soft: rgba(106,79,179,0.12);
+    --shadow: rgba(20,25,35,0.10);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10141c;
+      --surface: #181e29;
+      --surface-2: #1f2632;
+      --border: #2b3446;
+      --text: #e9ecf3;
+      --text-dim: #8d97ab;
+      --accent: #e0a83f;
+      --accent-soft: rgba(224,168,63,0.16);
+      --teal: #4fb3a4;
+      --rust: #d97a56;
+      --key-bg: #3fc3f2;
+      --key-fg: #071620;
+      --gold: #ffd23f;
+      --gold-fg: #201a02;
+      --gold-soft: rgba(255,210,63,0.18);
+      --model: #b39ddb;
+      --model-soft: rgba(179,157,219,0.16);
+      --shadow: rgba(0,0,0,0.4);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10141c;
+    --surface: #181e29;
+    --surface-2: #1f2632;
+    --border: #2b3446;
+    --text: #e9ecf3;
+    --text-dim: #8d97ab;
+    --accent: #e0a83f;
+    --accent-soft: rgba(224,168,63,0.16);
+    --teal: #4fb3a4;
+    --rust: #d97a56;
+    --key-bg: #3fc3f2;
+    --key-fg: #071620;
+    --gold: #ffd23f;
+    --gold-fg: #201a02;
+    --gold-soft: rgba(255,210,63,0.18);
+    --model: #b39ddb;
+    --model-soft: rgba(179,157,219,0.16);
+    --shadow: rgba(0,0,0,0.4);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", -apple-system, sans-serif;
+    margin: 0;
+    padding: 0 20px 64px;
+    /* The page itself must never scroll sideways -- only the book-table
+       (spread/moneyline/total) wrapped in .table-scroll below is allowed
+       its own horizontal scroll, via that element's own overflow-x:auto. */
+    overflow-x: hidden;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  .num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+  header {
+    padding: 40px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    letter-spacing: 0.01em;
+    margin: 0;
+    line-height: 0.9;
+    text-wrap: balance;
+  }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--text-dim); font-size: 0.9rem; text-align: right; line-height: 1.5; }
+  .meta strong { color: var(--text); font-weight: 600; }
+
+  .callout {
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 28px;
+    color: var(--text);
+  }
+  .callout b { color: var(--accent); }
+
+  /* The tab strip itself (Bet Now / Lines / +EV / ... / Results) is wider
+     than the viewport on a phone -- rather than clipping the later tabs
+     (the page body already keeps overflow-x:hidden so it never scrolls
+     sideways as a whole), this one element gets its own horizontal scroll
+     so every tab stays reachable. flex-shrink:0 on .tabbtn stops the
+     buttons from being squeezed/wrapped instead of scrolled. */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 24px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .tabbtn {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    padding: 10px 18px;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .tabbtn:hover { color: var(--text); }
+  .tabbtn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tabbtn.gold {
+    color: var(--gold-fg);
+    background: var(--gold-soft);
+    border-radius: 8px 8px 0 0;
+    font-weight: 700;
+  }
+  .tabbtn.gold:hover { color: var(--gold-fg); background: color-mix(in srgb, var(--gold) 26%, transparent); }
+  .tabbtn.gold.active {
+    background: var(--gold);
+    color: var(--gold-fg);
+    border-bottom-color: var(--gold);
+  }
+
+  .tabpanel { display: none; }
+  .tabpanel.active { display: block; }
+
+  .rank-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 2px var(--shadow);
+    cursor: grab;
+    transition: border-color 0.15s, background 0.15s, opacity 0.15s;
+  }
+  .rank-row.dragging { opacity: 0.35; }
+  .rank-row.drag-over { border-color: var(--accent); background: var(--accent-soft); }
+  .rank-num {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--text-dim);
+    min-width: 30px;
+    text-align: right;
+  }
+  .rank-handle { color: var(--text-dim); font-size: 1.05rem; user-select: none; line-height: 1; }
+  .rank-team { font-weight: 600; font-size: 0.96rem; flex: 1 1 auto; min-width: 140px; }
+  .rank-streak { font-size: 0.82rem; color: var(--text-dim); text-align: right; flex: 0 1 auto; }
+  .rank-streak .w { color: var(--teal); font-weight: 700; }
+  .rank-streak .l { color: var(--rust); font-weight: 700; }
+  .rank-streak .t { color: var(--text-dim); font-weight: 700; }
+  .rank-market {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--model-soft);
+    color: var(--model);
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+  .rank-market.even { background: var(--surface-2); color: var(--text-dim); }
+
+  .rankref {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .rankref b { color: var(--text); }
+  .rankref .agree { color: var(--teal); font-weight: 600; }
+  .rankref .disagree { color: var(--rust); font-weight: 600; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .stat .n {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 1;
+  }
+  .stat .l {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  /* Two-number variant of .stat -- a win-loss record stacked over its own
+     average-error figure, both inside one card (Moneyline/Spread/Total on
+     the Results tab). The secondary figure is deliberately smaller and
+     dimmer than a plain .stat's single number so the record stays the
+     visual anchor of the card and the error figure reads as supporting
+     detail, not a second headline competing with it. */
+  .stat-dual { display: flex; flex-direction: column; }
+  .stat-dual .sd-primary .n { font-size: 1.7rem; }
+  .stat-dual .sd-secondary {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .stat-dual .sd-secondary .n { font-size: 1.15rem; color: var(--text-dim); }
+
+  .controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--text); }
+  .chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+  }
+
+  .week-select {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.86rem;
+    font-weight: 500;
+    padding: 7px 30px 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .week-select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  .result-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 20px; box-shadow: 0 1px 2px var(--shadow); }
+  .result-score {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+  }
+  .result-score .win { color: var(--teal); }
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .result-col .rc-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); font-weight: 600; margin-bottom: 4px; }
+  /* Each stat row gets its own border-bottom so a card with 2-3 rows reads
+     as that many distinct lines at a glance, not one dense paragraph.
+     rc-hit/rc-miss/rc-push tint that border with the same hit/miss/push
+     color the row's own badge uses -- reserved for rows that are an actual
+     graded PREDICTION (the pregame-simulation column), never for the
+     closing-line column's rows, which just state what happened and aren't
+     a prediction to grade; those keep the plain neutral border. The last
+     row in a column drops its border/padding so the block doesn't end on
+     a stray line. */
+  .result-col .rc-line {
+    font-size: 0.88rem;
+    line-height: 1.9;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid var(--border);
+  }
+  .result-col .rc-line:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .result-col .rc-line.rc-hit { border-bottom-color: color-mix(in srgb, var(--teal) 50%, var(--border)); }
+  .result-col .rc-line.rc-miss { border-bottom-color: color-mix(in srgb, var(--rust) 50%, var(--border)); }
+  .result-col .rc-line.rc-push { border-bottom-color: color-mix(in srgb, var(--text-dim) 35%, var(--border)); }
+  .rc-metric {
+    display: inline-block;
+    min-width: 52px;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 4px;
+  }
+  .rc-arrow { color: var(--text-dim); margin: 0 6px; font-size: 0.8rem; }
+  .rc-err { color: var(--text-dim); font-size: 0.82rem; margin-left: 4px; }
+  .grade-badge {
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
+    padding: 2px 8px; border-radius: 5px; display: inline-block; margin-left: 4px;
+  }
+  .grade-badge.hit { background: color-mix(in srgb, var(--teal) 16%, transparent); color: var(--teal); }
+  .grade-badge.miss { background: color-mix(in srgb, var(--rust) 16%, transparent); color: var(--rust); }
+  .grade-badge.push { background: var(--surface-2); color: var(--text-dim); }
+  .no-sim-note { font-size: 0.82rem; color: var(--text-dim); font-style: italic; }
+
+  .cards { display: flex; flex-direction: column; gap: 10px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .matchup {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+  }
+  .matchup .at { color: var(--text-dim); font-weight: 600; margin: 0 6px; font-family: "IBM Plex Sans"; font-size: 1rem; }
+  .kickoff { font-size: 0.82rem; color: var(--text-dim); white-space: nowrap; }
+  .venue { font-size: 0.78rem; color: var(--text-dim); font-style: italic; }
+
+  .badges { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  .badge.moved { background: var(--accent-soft); color: var(--accent); }
+  .badge.flip { background: color-mix(in srgb, var(--rust) 18%, transparent); color: var(--rust); }
+  .badge.key { background: var(--key-bg); color: var(--key-fg); font-weight: 700; }
+  .badge.model { background: var(--model-soft); color: var(--model); }
+
+  .keynote {
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--key-bg);
+    background: color-mix(in srgb, var(--key-bg) 10%, transparent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--text);
+  }
+  .keynote b { color: var(--key-bg); }
+
+  .modelnote {
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--model);
+    background: var(--model-soft);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--text);
+  }
+  .modelnote b { color: var(--model); }
+  .modelnote .sub { margin-top: 6px; color: var(--text-dim); font-size: 0.82rem; }
+
+  /* Public bet%/handle% split (see scripts/apply_market_signal.py) -- teal
+     border by default, rust when a reverse-line-move is flagged, same
+     hit/miss color language the rest of the page already uses so this
+     doesn't need its own legend to read at a glance. */
+  .marketsignal {
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--teal);
+    background: color-mix(in srgb, var(--teal) 10%, transparent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .marketsignal.rlm { border-left-color: var(--rust); background: color-mix(in srgb, var(--rust) 10%, transparent); }
+  .marketsignal b { color: var(--text); }
+  .marketsignal .ms-source { color: var(--text-dim); font-size: 0.76rem; font-weight: 500; }
+  .marketsignal .ms-row { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82rem; color: var(--text-dim); margin-top: 5px; }
+  .marketsignal .ms-row b { color: var(--text); }
+  .marketsignal .ms-note { margin-top: 8px; font-size: 0.8rem; color: var(--text-dim); }
+
+  /* Jumbo per-game sim lean (Moneyline/Spread/Total) on the Lines tab --
+     same jumbo-numeral idea as .btc-pick/.btc-pct-big (Bets to consider),
+     scaled to fit three side by side instead of one headline pick, and
+     colored with --model (not --gold) on purpose: gold means "this
+     cleared the actual Bet Now bar," and most games on the Lines tab
+     haven't -- using --model here keeps "here's what the sim leans" from
+     visually reading as "this is a confirmed bet." container-type lets
+     .sl-pick's clamp(...cqi...) size off the tile's own width rather than
+     the viewport's, the same reason .arb-hit sets it for .btc-pick. */
+  .simlean {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    padding: 14px 12px;
+    background: var(--model-soft);
+    border: 1px solid color-mix(in srgb, var(--model) 35%, transparent);
+    border-radius: 10px;
+  }
+  .sl-item {
+    text-align: center;
+    min-width: 0;
+    container-type: inline-size;
+  }
+  .sl-label {
+    font-size: 0.64rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  .sl-pick {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.05rem, 14cqi, 1.7rem);
+    line-height: 1.05;
+    color: var(--model);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sl-pick.na { color: var(--text-dim); font-weight: 600; font-size: 0.95rem; }
+  .sl-pct { font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: 0.92rem; color: var(--text-dim); margin-top: 2px; }
+  .sl-pct .unit { font-size: 0.75em; }
+  .simlean-caveat {
+    grid-column: 1 / -1;
+    font-size: 0.76rem;
+    color: var(--text-dim);
+    font-style: italic;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  /* Analyst-style game evaluation (see scripts/apply_game_evaluation.py) --
+     a <details> so it can appear in four places (Lines tab card, Bet Now,
+     Best Bets, Bets to consider) without four screens' worth of prose by
+     default -- open on the Lines tab where it's the primary read, closed
+     (but one click away) everywhere else it's reinforcing a pick already
+     made by another section. */
+  .gameeval {
+    margin-top: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-2);
+  }
+  .gameeval summary {
+    cursor: pointer;
+    padding: 9px 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    letter-spacing: 0.02em;
+    list-style: none;
+  }
+  .gameeval summary::-webkit-details-marker { display: none; }
+  .gameeval summary::before { content: '\25B8'; display: inline-block; margin-right: 6px; transition: transform 0.15s; }
+  .gameeval[open] summary::before { transform: rotate(90deg); }
+  .gameeval-body { padding: 2px 14px 14px; }
+  .gameeval-body p { font-size: 0.85rem; line-height: 1.6; color: var(--text); margin: 8px 0; }
+
+  /* Collapsible wrapper for the heavy part of a Lines/Props card (book
+     table, sim lean, model note, analyst take, factor list) -- with 14+
+     games or props on a tab this was the main source of scroll length, so
+     it's collapsed by default and the summary line still surfaces the
+     one number worth scanning for (current spread/total, factor count)
+     even closed. Same open/close chevron convention as .gameeval above,
+     just a plain summary row rather than a filled surface -- this wraps
+     .gameeval itself in the Lines-tab card, so two nested accordions
+     never fight each other visually. */
+  .card-detail { margin-top: 10px; border-top: 1px solid var(--border); }
+  .card-detail summary {
+    cursor: pointer;
+    padding: 10px 2px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .card-detail summary::-webkit-details-marker { display: none; }
+  .card-detail summary::before { content: '\25B8'; display: inline-block; margin-right: 6px; transition: transform 0.15s; color: var(--text-dim); }
+  .card-detail[open] summary::before { transform: rotate(90deg); }
+  .card-detail-glance { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; color: var(--text-dim); font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card-detail-body { padding-top: 4px; }
+  .eval-leans { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+  .eval-lean {
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .eval-lean.best { border-color: var(--gold); background: var(--gold-soft); }
+  .eval-lean-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .eval-lean-market { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); font-weight: 700; }
+  .badge.goldbet { background: var(--gold-soft); color: var(--gold); font-weight: 700; border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent); }
+  .eval-lean-pick { font-family: "Big Shoulders Display", sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--text); margin-top: 2px; }
+  .eval-conf-bar { height: 5px; border-radius: 3px; background: var(--border); margin-top: 7px; overflow: hidden; }
+  .eval-conf-fill { height: 100%; background: var(--model); border-radius: 3px; }
+  .eval-lean.best .eval-conf-fill { background: var(--gold); }
+  .eval-conf-label { font-size: 0.72rem; color: var(--text-dim); margin-top: 3px; font-weight: 600; }
+  .eval-lean-reason { font-size: 0.8rem; color: var(--text-dim); line-height: 1.5; margin-top: 5px; }
+  .prop-score { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; font-size:0.72rem; font-weight:600; }
+  .prop-chip { padding:2px 8px; border-radius:999px; border:1px solid var(--border); color:var(--text-dim); }
+  .prop-chip.for { color:var(--teal); border-color:var(--teal); }
+  .prop-chip.against { color:var(--rust); border-color:var(--rust); }
+  .prop-chip.tough { background:var(--rust); border-color:var(--rust); color:var(--surface); }
+  .prop-factors { list-style:none; margin:8px 0 0; padding:0; display:grid; gap:5px; }
+  .prop-factor { display:grid; grid-template-columns:16px 1fr; gap:6px; font-size:0.78rem; line-height:1.45; color:var(--text); }
+  .prop-factor-icon { font-weight:700; text-align:center; }
+  .prop-factor.for .prop-factor-icon { color:var(--teal); }
+  .prop-factor.against .prop-factor-icon { color:var(--rust); }
+  .prop-factor.neutral .prop-factor-icon { color:var(--text-dim); }
+  .prop-factor-label { font-weight:600; }
+
+  .delta { font-size: 0.78rem; padding: 1px 6px; border-radius: 4px; white-space: nowrap; }
+  .delta.up { color: var(--rust); background: color-mix(in srgb, var(--rust) 12%, transparent); }
+  .delta.down { color: var(--teal); background: color-mix(in srgb, var(--teal) 14%, transparent); }
+  .delta.flat { color: var(--text-dim); }
+
+  .book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-size: 0.87rem;
+  }
+  .book-table th, .book-table td {
+    text-align: left;
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .book-table thead th { padding-top: 0; }
+  .book-table th {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+  .book-table tbody tr:last-child td { border-bottom: none; }
+  .book-table td:first-child { font-weight: 600; color: var(--text); }
+  .book-table .tag {
+    font-size: 0.63rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  .book-table .tag.cur { color: var(--accent); }
+  .book-table td.unavailable { color: var(--text-dim); font-style: italic; font-weight: 400; }
+  .book-table .cell-wrap { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .ev-hit {
+    background: color-mix(in srgb, var(--teal) 14%, transparent);
+    border-radius: 5px;
+    padding: 2px 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .ev-badge {
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--teal);
+  }
+  .table-scroll { overflow-x: auto; }
+
+  .section-intro { font-size: 0.95rem; line-height: 1.6; color: var(--text); margin: 0 0 18px; max-width: 640px; }
+  .subhead { font-family: "Big Shoulders Display", sans-serif; font-size: 1.2rem; margin: 24px 0 10px; }
+
+  /* Bet Now's confidence ladder -- replaces a paragraph explaining how
+     Best Bets / Bets to consider / WagerTalk system rank relative to each
+     other with a compact visual legend that doubles as a preview of the
+     three sections below it. Colors intentionally match how those
+     sections style their own cards elsewhere (Best Bets uses .gold, same
+     as bestBetCard's arb-hit.gold; the other two are unaccented) so the
+     ladder reads as "here's what's coming," not a new, disconnected
+     color code to learn. */
+  .tier-ladder {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0 0 20px;
+  }
+  .tier-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .tier-rank {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    width: 20px;
+    flex: 0 0 auto;
+    text-align: center;
+  }
+  .tier-text { min-width: 0; }
+  .tier-label { font-weight: 700; font-size: 0.9rem; }
+  .tier-desc { font-size: 0.82rem; color: var(--text-dim); margin-top: 1px; }
+  .tier-step.gold { border-color: color-mix(in srgb, var(--gold) 45%, var(--border)); background: var(--gold-soft); }
+  .tier-step.gold .tier-rank, .tier-step.gold .tier-label { color: var(--gold); }
+  .tier-caveat { font-size: 0.8rem; color: var(--text-dim); font-style: italic; margin: -8px 0 18px; }
+
+  .formula-box {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .formula-box .fname { font-family: "IBM Plex Mono", monospace; color: var(--accent); font-weight: 600; }
+
+  .calc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .calc h3 { margin: 0 0 14px; font-family: "Big Shoulders Display", sans-serif; font-size: 1.3rem; }
+  .calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .field label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); }
+  .field input {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.95rem;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+  }
+  .field input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .calc-result { border-top: 1px solid var(--border); padding-top: 14px; font-size: 0.9rem; line-height: 1.7; }
+  .calc-result .big { font-family: "Big Shoulders Display", sans-serif; font-size: 1.8rem; font-weight: 700; }
+  .calc-result.arb .big { color: var(--teal); }
+  .calc-result.noarb .big { color: var(--rust); }
+
+  .honesty {
+    background: color-mix(in srgb, var(--rust) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--rust) 35%, transparent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .honesty b { color: var(--rust); }
+
+  .arb-hit {
+    background: var(--surface);
+    border: 1px solid color-mix(in srgb, var(--teal) 45%, var(--border));
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 2px var(--shadow);
+    /* Establishes a query container so the jumbo .btc-pick/.btc-pct-big
+       text inside a Bets-to-consider card can size itself off the card's
+       own width (cqi) rather than the viewport's -- it's what lets that
+       text fill the space without ever overflowing it. Harmless on the
+       EV/Arbitrage cards that also reuse .arb-hit, since it's containment
+       on an element whose width is already set by its parent, not by its
+       own content. */
+    container-type: inline-size;
+  }
+  .arb-hit .tmatch { font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: 1.3rem; }
+  .arb-hit .margin-pill {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: color-mix(in srgb, var(--teal) 16%, transparent);
+    color: var(--teal);
+    vertical-align: middle;
+  }
+  /* "Sim agrees" on a WagerTalk angle card -- yellow/gold on purpose, same
+     family as --gold but distinct from the teal default, since this isn't
+     the hard Best-Bets cross-check (that's a full "does the pick AND
+     confidence clear Best Bets' own bar" agreement) -- it's a lighter-
+     weight "the simulation's Bets-to-consider read happens to point the
+     same way" note, shown right on the WagerTalk card itself. */
+  .arb-hit .margin-pill.sim-agree {
+    background: var(--gold-soft);
+    color: var(--gold);
+  }
+  .arb-legs { margin-top: 10px; display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+  .arb-legs .leg-book { color: var(--text-dim); font-size: 0.82rem; }
+  .arb-hit .arb-note { margin-top: 10px; font-size: 0.85rem; color: var(--text-dim); line-height: 1.55; }
+
+  .risk-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px; }
+  .risk-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 0.87rem;
+    line-height: 1.55;
+  }
+  .risk-item b { display: block; color: var(--text); font-weight: 600; margin-bottom: 2px; }
+
+  .math-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.88rem; }
+  .math-table th, .math-table td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  .math-table th { color: var(--text-dim); font-weight: 600; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em; }
+
+  .teaser-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .teaser-card .tmatch { font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: 1.3rem; }
+  .teaser-flow { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 1rem; flex-wrap: wrap; }
+  .teaser-flow .arrow { color: var(--teal); font-size: 0.85rem; }
+  .teaser-reason { margin-top: 6px; font-size: 0.85rem; color: var(--text-dim); }
+
+  .timing-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 9px;
+    border-radius: 5px;
+    margin-left: 8px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .timing-badge.ideal { background: var(--teal); color: var(--bg); }
+  .timing-badge.early { background: transparent; border: 1px solid var(--border); color: var(--text-dim); }
+  .timing-badge.late {
+    background: color-mix(in srgb, var(--rust) 16%, transparent);
+    color: var(--rust);
+    border: 1px solid color-mix(in srgb, var(--rust) 40%, transparent);
+  }
+  .timing-badge.past { background: var(--surface-2); color: var(--text-dim); }
+  .timing-badge.hold { background: transparent; border: 1px dashed var(--rust); color: var(--rust); }
+  .clv-row { display:flex; flex-wrap:wrap; gap:6px 14px; margin-top:8px; font-size:0.82rem; color:var(--text-dim); }
+  .clv-row b { color: var(--text); }
+  .clv-good { color: var(--teal); font-weight:600; }
+  .clv-bad { color: var(--rust); font-weight:600; }
+  .timing-rule { font-size:0.82rem; color:var(--text-dim); line-height:1.55; margin:-4px 0 12px; max-width:640px; }
+
+  .combo-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .combo-card .combo-title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .combo-legs { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .combo-leg { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 0.92rem; }
+  .leg-flag { font-size: 0.78rem; color: var(--rust); margin-left: 2px; }
+  .combo-meta { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--text-dim); line-height: 1.6; }
+  .combo-alts { font-size: 0.85rem; color: var(--text-dim); line-height: 1.7; margin-top: 4px; }
+
+  .trap {
+    border: 1px solid color-mix(in srgb, var(--rust) 40%, transparent);
+    background: color-mix(in srgb, var(--rust) 8%, transparent);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 20px;
+  }
+  .trap h4 { margin: 0 0 8px; color: var(--rust); font-family: "Big Shoulders Display", sans-serif; font-size: 1.15rem; }
+  .trap p { margin: 0 0 8px; font-size: 0.88rem; line-height: 1.6; }
+  .trap p:last-child { margin-bottom: 0; }
+
+  .betnow-hero {
+    background: var(--gold-soft);
+    border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+  }
+  .betnow-hero .count {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: var(--gold-fg);
+    line-height: 1;
+  }
+  .betnow-hero .count-label { font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
+  .betnow-hero .next-up { margin-top: 12px; font-size: 0.88rem; line-height: 1.55; color: var(--text); border-top: 1px solid color-mix(in srgb, var(--gold) 35%, transparent); padding-top: 12px; }
+  .betnow-hero .next-up b { color: var(--gold-fg); }
+
+  .betnow-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .betnow-empty .big-check { font-size: 2rem; margin-bottom: 8px; }
+
+  .betnow-group { margin-bottom: 28px; }
+  .betnow-group-title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .betnow-group-title .n-pill {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: var(--gold-soft);
+    color: var(--gold-fg);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+  .arb-hit.gold { border-color: color-mix(in srgb, var(--gold) 50%, var(--border)); }
+  .arb-hit.gold .margin-pill { background: var(--gold-soft); color: var(--gold-fg); }
+  .betnow-group-title.gold-title { color: var(--gold-fg); }
+  .betnow-group-title.gold-title .n-pill { background: var(--gold); color: var(--gold-fg); }
+  .betnow-group-title.jumbo-title {
+    font-size: clamp(1.9rem, 5.5vw, 2.75rem);
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .btc-line { font-size: 0.9rem; line-height: 1.55; margin-top: 6px; }
+  .btc-line b { color: var(--text); }
+  .btc-caveat { margin-top: 10px; font-size: 0.82rem; color: var(--text-dim); line-height: 1.5; font-style: italic; }
+
+  /* Situational-system checklist (added 2026-09-25 per Michael): each
+     independently-confirmed system on a WagerTalk angle renders as its
+     own checked line with its own historical hit rate, instead of one
+     merged paragraph -- so it's legible at a glance which systems are
+     actually stacking and how strong each one is on its own. */
+  .wt-checks { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .wt-check {
+    display: flex; align-items: flex-start; gap: 8px;
+    font-size: 0.85rem; line-height: 1.45; color: var(--text-dim);
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px;
+  }
+  .wt-check-box {
+    flex: none; width: 16px; height: 16px; margin-top: 1px;
+    border-radius: 4px; background: var(--teal); color: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; font-weight: 800;
+  }
+  .wt-check-body { flex: 1; min-width: 0; }
+  .wt-check-label { color: var(--text); font-weight: 600; }
+  .wt-check-pct { color: var(--teal); font-weight: 700; margin-left: 4px; }
+  .wt-check-why { display: block; margin-top: 2px; }
+
+  /* Same checklist, embedded directly on a game's own Lines-tab card
+     (wagerTalkOnCardHtml) -- now inside its own accordionItem() rather
+     than a bare block, so no top border/margin needed here anymore (the
+     .card-detail accordion styling already provides that separation). */
+  .wt-oncard-title { font-size: 0.85rem; font-weight: 700; color: var(--text); }
+  .wt-oncard-pick { font-weight: 600; color: var(--teal); margin-left: 8px; font-size: 0.82rem; }
+
+  /* Accordion restructure (added 2026-09-25 per Michael): each game card's
+     Book lines / Simulation / Public betting split / Analyst take /
+     Situational systems sections are now sibling .card-detail accordion
+     items stacked with consistent spacing, instead of one section nested
+     inside another. The jumbo sim tiles (simLeanBlock) and the power-
+     ranking line (rankRefHtml) stay OUTSIDE this stack entirely, directly
+     under the card header, so the headline read is visible without
+     opening anything. */
+  .acc-stack .card-detail { margin-top: 8px; }
+  .acc-stack .card-detail:first-child { margin-top: 10px; }
+
+  /* Best-bet badge next to the matchup title -- the single most-confident
+     pick for this game (analyst best_bet lean > highest-confidence lean >
+     the sim's own raw spread read), so it's legible on scroll without
+     expanding any accordion item. */
+  .card-bestbet-badge {
+    display: inline-block; margin-left: 10px; padding: 3px 10px;
+    border-radius: 999px; background: var(--gold-soft); color: var(--gold-fg);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem; font-weight: 700; vertical-align: middle;
+  }
+
+  /* "Bet to take" headline block, top of each Bets-to-consider card. Sized
+     with clamp() (not a fixed rem) specifically so it scales down on a
+     narrow card instead of overflowing it -- min-width:0 on both flex
+     children is required for their text-overflow ellipsis fallback to
+     actually engage inside a flex row, rather than the row just stretching. */
+  .btc-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .btc-pick-wrap { min-width: 0; }
+  .btc-pick-label {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .btc-pick {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.5rem, 8cqi, 2.5rem);
+    line-height: 1;
+    /* --gold-fg is meant for text ON a gold background (e.g. the Bet Now
+       tab button) -- it resolves near-black in light mode, which read as
+       plain hard-to-read text sitting on the card's own white/dark
+       surface here. --gold is the actual yellow brand color for text on a
+       normal surface (mustard-gold in light mode, bright yellow in dark),
+       which is what this headline should use instead. */
+    color: var(--gold);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .btc-pick-book {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  .btc-pct-wrap { min-width: 0; flex-shrink: 0; text-align: right; }
+  .btc-pct-label {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .btc-pct-big {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.3rem, 6cqi, 2rem);
+    line-height: 1;
+    color: var(--teal);
+    white-space: nowrap;
+  }
+  .btc-pct-big .unit { font-size: 0.6em; font-weight: 700; }
+
+  .graph-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .graph-link:hover { text-decoration: underline; }
+  .graph-link .arrow { font-size: 0.75rem; }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>LINE<span>WATCH</span></h1>
+    <div class="meta">
+      <div><strong>Week 1 &middot; 2026 season</strong></div>
+      <div id="asOf">games tracked</div>
+    </div>
+  </header>
+
+  <div class="callout" id="moverCallout"></div>
+
+  <div class="callout" id="localNote">
+    <b>Chart links.</b> Every game below links to its full line-movement chart (spread, total, and moneyline, every book). Those links are relative paths into your tracked-data folder, so they only resolve when this page is opened as a local file there &mdash; <span id="localNoteDetail">bookmark this file (or keep the tab open) so tomorrow's refreshed data is one click away; opening this same page from claude.ai instead will show a broken link for each chart</span>.
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button class="tabbtn gold active" data-tab="betnow">Bet Now</button>
+    <button class="tabbtn" data-tab="lines">Lines</button>
+    <button class="tabbtn" data-tab="ev">+EV</button>
+    <button class="tabbtn" data-tab="arb">Arbitrage</button>
+    <button class="tabbtn" data-tab="teasers">Teasers</button>
+    <button class="tabbtn" data-tab="props">Props</button>
+    <button class="tabbtn" data-tab="results">Results</button>
+    <button class="tabbtn" data-tab="rankings">Power Rankings</button>
+  </div>
+
+  <div class="tabpanel active" id="panel-betnow">
+    <p class="section-intro" style="margin-bottom:14px;">Only real, right-now bets: a +EV price, a live cross-book arb, or a Wong teaser in its betting window. Recomputed every time this loads.</p>
+    <div class="tier-ladder">
+      <div class="tier-step gold">
+        <div class="tier-rank">1</div>
+        <div class="tier-text"><div class="tier-label">Best Bets</div><div class="tier-desc">WagerTalk + simulation independently agree</div></div>
+      </div>
+      <div class="tier-step">
+        <div class="tier-rank">2</div>
+        <div class="tier-text"><div class="tier-label">Bets to consider</div><div class="tier-desc">Simulation's boldest reads, on its own</div></div>
+      </div>
+      <div class="tier-step">
+        <div class="tier-rank">3</div>
+        <div class="tier-text"><div class="tier-label">WagerTalk system</div><div class="tier-desc">Historical trend, no cross-check</div></div>
+      </div>
+    </div>
+    <div class="tier-caveat">Agreement beats either alone &mdash; none of this is a guarantee.</div>
+    <div id="betnowHero"></div>
+    <div id="betnowBody"></div>
+    <div id="betnowTiming"></div>
+    <div id="betnowBest" class="betnow-group"></div>
+    <div id="betnowConsider" class="betnow-group"></div>
+    <div id="betnowWagerTalk" class="betnow-group"></div>
+  </div>
+
+  <div class="tabpanel" id="panel-lines">
+    <div class="stats" id="stats"></div>
+
+    <div class="controls" id="controls">
+      <button class="chip active" data-filter="all">All 16</button>
+      <button class="chip" data-filter="moved">Moved since open</button>
+      <button class="chip" data-filter="flipped">Favorite flips</button>
+    </div>
+
+    <div class="cards" id="cards"></div>
+  </div>
+
+  <div class="tabpanel" id="panel-ev">
+    <p class="section-intro">BookMaker.eu is treated as the sharp reference book: its two-sided moneyline gets "de-vigged" &mdash; the book's built-in margin stripped back out &mdash; to estimate the market's true, fair win probability for each side. Any other book paying more than that fair probability implies is <b class="num" style="color:var(--teal)">+EV</b>: a real mathematical edge over the long run, though &mdash; unlike arbitrage &mdash; not a guaranteed win on any single game.</p>
+
+    <div class="formula-box">
+      <div><span class="fname">De-vig</span> &mdash; take BookMaker's favorite and underdog implied probabilities (1 / decimal odds, each side), then divide each by their sum so they add back up to 100%. That strips the vig out and leaves a fair probability per side.</div>
+      <div style="margin-top:10px"><span class="fname">Expected value</span> &mdash; EV% = (book's decimal odds &times; BookMaker's fair probability) &minus; 1. Positive means that book is paying more than the fair price says it should.</div>
+    </div>
+
+    <h3 class="subhead">This week's +EV bets</h3>
+    <p class="section-intro" style="margin-bottom:14px;">Checking DraftKings' current moneylines against BookMaker.eu's de-vigged fair line &mdash; the only other book with simultaneous two-sided current prices right now. Recomputed from the captured data every time this page loads.</p>
+    <div id="evFound"></div>
+
+    <div class="risk-list" style="margin-top:20px;">
+      <div class="risk-item"><b>+EV isn't a guaranteed win.</b> It means the price is better than fair, not that the bet wins. The edge is meant to show up on average across many independent +EV bets &mdash; on any single game, the side you're "supposed" to have the edge on can still lose.</div>
+      <div class="risk-item"><b>The reference book can be wrong too.</b> BookMaker.eu is used here because it's a real book with two-sided current prices, not because it's provably the sharpest number available &mdash; treat this as one credible fair-value estimate, not gospel.</div>
+      <div class="risk-item"><b>Small edges disappear fast.</b> Anything under roughly 1&ndash;2% is within the normal noise of vig differences between books, and can flip the next time either line moves.</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="panel-arb">
+    <p class="section-intro">Arbitrage ("arbing") means betting every outcome of one game across different books so that no matter who wins, you cash more than you staked &mdash; because the books disagree with each other by more than their combined vig. It only works while both prices hold long enough to place both legs.</p>
+
+    <div class="formula-box">
+      <div><span class="fname">Implied probability</span> &mdash; L = 1/Odds_A + 1/Odds_B <span style="color:var(--text-dim)">(decimal odds)</span>. If <b class="num" style="color:var(--teal)">L &lt; 1.00</b>, a risk-free margin exists.</div>
+      <div style="margin-top:10px"><span class="fname">Stake split</span> &mdash; Stake_A = Total &times; (1/Odds_A) / L, Stake_B fills the rest &mdash; both legs return the same payout, Total / L.</div>
+    </div>
+
+    <h3 class="subhead">This week's cross-book check</h3>
+    <p class="section-intro" style="margin-bottom:14px;">Every game's DraftKings and FanDuel moneylines &mdash; both NY-licensed, both books you can actually place a bet at &mdash; checked against each other for a gap. <b>BookMaker.eu is deliberately excluded here</b>: it's the sharp reference used for the +EV fair-value estimate above, not a book you can bet at from NY, so it can never be a real arbitrage leg. Caesars isn't included either: no source tested so far gives a current Caesars moneyline (spread only). <b>FanDuel's current moneyline is also temporarily unavailable</b> (2026&#8209;09&#8209;08): the vegasinsider.com table it was being read from turned out not to reliably distinguish FanDuel's real moneyline from the point-spread's own juice price, so this section will show few or no hits until a source that exposes it as a distinct field is found &mdash; an empty list here means "no reliable data to check," not "no arb exists." Recomputed from the captured data every time this page loads.</p>
+    <div id="arbFound"></div>
+
+    <div class="calc">
+      <h3>Two-book calculator</h3>
+      <div class="calc-grid">
+        <div class="field"><label>Book A &mdash; label</label><input id="arbLabelA" type="text" value="Team A"></div>
+        <div class="field"><label>Book A odds (American)</label><input id="arbOddsA" type="text" value="-150" inputmode="numeric"></div>
+        <div class="field"><label>Book B &mdash; label</label><input id="arbLabelB" type="text" value="Team B"></div>
+        <div class="field"><label>Book B odds (American)</label><input id="arbOddsB" type="text" value="+170" inputmode="numeric"></div>
+        <div class="field"><label>Total stake ($)</label><input id="arbTotal" type="text" value="1000" inputmode="numeric"></div>
+      </div>
+      <div class="calc-result" id="arbResult"></div>
+    </div>
+
+    <h3 class="subhead">Before you place two legs</h3>
+    <div class="risk-list">
+      <div class="risk-item"><b>Match the settlement rules first.</b> Confirm both books grade the game the same way (overtime, pushes, void conditions) before you split stakes across them &mdash; a mismatch turns a "guaranteed" arb into a one-sided loss.</div>
+      <div class="risk-item"><b>Take the bigger-liability leg first.</b> Place the underdog / longer-odds leg before the favorite leg, then immediately place the second &mdash; it's the price more likely to move first.</div>
+      <div class="risk-item"><b>Round stakes to normal-looking numbers.</b> $479.07 reads as calculator output; $480 reads like an ordinary wager. This isn't about hiding anything &mdash; oddly precise stakes are simply one of the easiest patterns for a book's risk team to flag, and a flagged account gets limited before it ever compounds.</div>
+      <div class="risk-item"><b>Recreational books limit winners.</b> Sustained arbitrage is one of the fastest ways to get stake-limited or "gubbed" &mdash; this only keeps working at books still willing to take your action.</div>
+      <div class="risk-item"><b>Palpable errors get voided.</b> A clearly mistyped line can be voided by the book after the fact, leaving your other leg unhedged.</div>
+      <div class="risk-item"><b>The line can move before your second click lands.</b> Any delay between leg one and leg two is where a real arb turns into a real loss.</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="panel-teasers">
+    <p class="section-intro">A 2-team, 6-point "Wong teaser" only clears its own break-even when both legs' original spreads sit in a specific window &mdash; because the 6 points have to cross <i>both</i> key numbers, 3 and 7, to lift your win rate enough to cover the worse odds a teaser pays. Qualification checks the best available current spread across captured books &mdash; Caesars first (where these actually get placed), falling back to DraftKings, BookMaker.eu, or FanDuel when Caesars hasn't been captured for a game, so a book gap doesn't quietly drop a game from consideration. The total-ceiling check still borrows <b>DraftKings'</b> total, because Caesars doesn't expose a fetchable total from any source tested so far. Every leg and card below is labeled with which book its spread number actually came from &mdash; treat a non-Caesars flag as "worth checking," and confirm the exact price at Caesars before betting it.</p>
+
+    <table class="math-table">
+      <thead><tr><th>Teaser price</th><th>Required win% (both legs)</th><th>Per-leg win% needed</th></tr></thead>
+      <tbody>
+        <tr><td class="num">-110</td><td class="num">52.4%</td><td class="num">72.4%</td></tr>
+        <tr><td class="num">-120</td><td class="num">54.5%</td><td class="num">73.8%</td></tr>
+        <tr><td class="num">-130</td><td class="num">56.5%</td><td class="num">75.2%</td></tr>
+      </tbody>
+    </table>
+
+    <div class="formula-box">
+      <div>~15% of NFL games land on a 3-point margin, ~8-10% on 7 points &mdash; together nearly a quarter of all outcomes. A standard spread covers close to 50% of the time; teasing 6 points only pushes that to the 73-75% a teaser needs, and only if the move crosses <b class="num" style="color:var(--key-bg)">both</b> numbers.</div>
+      <div style="margin-top:10px">That happens in exactly two spots: a favorite of <b>exactly -7.5</b> teases down to -1.5, or an underdog of <b>+1.5 to +2.5</b> teases up to +7.5/+8.5. Outside those, the 6 points cross zero, one, or the wrong key number &mdash; the math doesn't clear. Points are also worth more in low-scoring games, so only bet when the total is <b>47 or lower</b>, no exceptions above that.</div>
+      <div style="margin-top:10px"><b class="num" style="color:var(--rust)">The -8.5 fallacy:</b> a -8.5 favorite looks like it belongs in the same window as -7.5 -- it isn't. Teasing 6 points off -8.5 lands at -2.5, not -1.5, and -2.5 still needs a 3+ point win to cash. It never actually clears the 3, so it's rejected outright rather than treated as a softer version of the -7.5 leg.</div>
+    </div>
+
+    <h3 class="subhead">When to place it: day of the game</h3>
+    <p class="section-intro" style="margin-bottom:10px;">WagerTalk's own guidance is to bet Wong teasers <b>on the day of the game itself</b>, not days ahead of it -- by kickoff day, both legs' final injury reports/inactives and any weather are already known, at the cost of whatever the line does between now and then (which can go either way -- see "The trap" below for what a wrong-direction move looks like). <span style="color:var(--text-dim)">(Corrected 2026-09-23: this section previously argued for a Tuesday&ndash;Thursday, 3&ndash;6-days-out window on this project's own line-efficiency reasoning -- that wasn't sourced from WagerTalk and didn't match their actual stated approach.)</span></p>
+
+    <h3 class="subhead">Suggested combos to parlay</h3>
+    <p class="section-intro" style="margin-bottom:14px;">Both legs of a 2-team teaser are bet day-of-game (see above), so they can only be combined if they actually kick off on the <b>same calendar day</b> -- pairing a Thursday leg with a Sunday leg isn't a real ticket, since you're not placing both bets on the same day. Legs are grouped by kickoff day first, then paired lowest-combined-total-first within each day group. A Thursday or Monday game usually has no other game on its own day, so it typically can't be combo'd at all -- it still shows below as a solo-qualifying leg. Timing badge is live: recomputed against today's date every time this page loads.</p>
+    <div id="comboList"></div>
+
+    <h3 class="subhead">All qualifying legs (reference)</h3>
+    <div id="teaserList"></div>
+
+    <div class="trap" id="teaserTrap"></div>
+
+    <p style="font-size:0.82rem; color:var(--text-dim); margin-top:20px;">Checklist before betting a teaser: (1) favorite leg is <b>exactly -7.5</b> (never -8.5) or underdog leg is <b>+1.5 to +2.5</b> on the best available current spread (Caesars when captured, otherwise DraftKings/BookMaker.eu/FanDuel &mdash; each card says which), (2) if the flagged number came from a book other than Caesars, <b>confirm the exact spread at Caesars</b> before betting &mdash; a flag from another book is enough signal to go check, not a guarantee the Caesars number matches exactly, (3) both games' totals are <b>47 or lower</b> &mdash; no exceptions, sourced from <b>DraftKings</b> since Caesars doesn't expose a fetchable total, (4) book price is -120 or better (excellent), or -125 only if the spread is locked exactly at a qualifying number (acceptable) &mdash; anything worse than -125, skip that book for this bet, (5) placed on the day of the game -- and for a 2-team combo, both legs kicking off that same calendar day.</p>
+  </div>
+
+  <div class="tabpanel" id="panel-props">
+    <p class="section-intro">Opening player-prop numbers only -- receptions, receiving/rushing/passing yards, completions, attempts. Not every player on the slate, just the ones that stand out as a real over/under lean. Captured as close to first posting as this project's cadence allows, since props reportedly get bet into one direction within the first ~20 minutes -- the "Opening line" below is frozen the moment it's first logged and never overwritten, even as later cycles refresh the current number next to it. A game with no picks yet just hasn't posted props this cycle; it's rechecked automatically until it does.</p>
+    <div id="propsPending" class="callout" hidden></div>
+    <div class="cards" id="propsList"></div>
+  </div>
+
+  <div class="tabpanel" id="panel-results">
+    <p class="section-intro">Completed games only, graded against the closing line (last snapshot captured at or before kickoff) and against whatever <span class="fname" style="font-family:'IBM Plex Mono',monospace;">simulate_game.py</span> last projected before kickoff. This is the accuracy record for the 10k-run model -- it only shows what actually happened, not a lean. A game with no pregame simulation logged (e.g. before the daily run started calling the simulator) still shows the final score and closing-line grade, just without a model-error row.</p>
+    <div class="controls" style="align-items:center;">
+      <label for="resultsWeekSelect" style="font-size:0.82rem; color:var(--text-dim); font-weight:500;">Week</label>
+      <select id="resultsWeekSelect" class="week-select"></select>
+    </div>
+    <div id="resultsSummary" class="stats"></div>
+    <div id="resultsCards" class="cards"></div>
+  </div>
+
+  <div class="tabpanel" id="panel-rankings">
+    <p class="section-intro">Your own team-strength ranking, top to bottom &mdash; drag a row to reorder. This never moves on its own week to week; it only changes when you drag a team. So if you neglect it for a stretch, the <b>streak</b> line next to each team (recomputed from real results every time this page is rebuilt) is what tells you who's been rising or falling since you last looked, without you having to re-derive it yourself.</p>
+
+    <div class="callout" id="rankingsHow">
+      <b>Using this to confirm leans.</b> Every game card on the <b>Lines</b> tab now shows a "Your rank" line for both teams. (1) If your rank gap between the two teams is bigger than what the market spread implies, that's worth a second look. (2) Check whether it agrees with the simulation's own read, shown right on the same card &mdash; two independent reads pointing the same way is a stronger starting point than either alone. (3) Agreement (or a surprising disagreement) is a <i>prompt to go verify the real signals</i> &mdash; injuries, situational trends, weather &mdash; never a lean by itself.
+    </div>
+
+    <div class="callout" id="rankingsMarketNote" style="font-size:0.82rem;">
+      <b>The "Market &plusmn;N" pill on each row</b> compares your manual order to this tool's own Elo model (the same model behind every simulation on this page) -- <b>not</b> Vegas or any outside power ranking, despite the label. Positive means the Elo model currently rates that team higher than you do; negative means lower. Your dragged order is always what actually drives the page (game cards, "Your rank," everything) -- this pill is a read-only reference, recomputed fresh from real results every rebuild, never something that pushes your list around on its own.
+    </div>
+
+    <div class="controls" id="rankingsControls" style="align-items:center; justify-content:space-between;">
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="chip" id="rankCopyBtn" type="button">Copy order to save permanently</button>
+        <button class="chip" id="rankResetBtn" type="button">Reset to power-rating seed</button>
+      </div>
+      <div id="rankSavedFlash" style="font-size:0.8rem; color:var(--teal); font-weight:600; opacity:0; transition:opacity 0.3s;">Saved</div>
+    </div>
+
+    <div class="callout" id="rankingsPersistNote" style="font-size:0.82rem;">
+      Dragging saves instantly, but only to this browser (localStorage) &mdash; the same way this page already works when opened as a local file (see the note above the tabs). To make a reorder permanent, so it survives a cleared browser or shows up the next time the skill rebuilds this page from scratch, click <b>Copy order to save permanently</b> and paste the result back to Claude.
+    </div>
+
+    <div class="cards" id="rankingsList"></div>
+  </div>
+
+  <footer>
+    Opening line: DraftKings, captured 2026&#8209;05&#8209;14 (cross&#8209;validated on covers.com, foxsports.com, oddsshopper.com). FanDuel opening captured separately &mdash; where a real mid&#8209;May capture exists it's frozen and shown as a cross&#8209;check only, never as current; where it doesn't, the row instead shows the earliest date this tracker had any FanDuel data at all, labeled "first seen [date]" rather than "open" so it isn't mistaken for the true opening line.
+    Current line: sourced per game from The Odds API where reachable, falling back to DraftKings via rotowire.com, Caesars via vegasinsider.com, and BookMaker.eu's public odds board when it isn't &mdash; see the "refreshed" timestamp at the top of this page for exactly when this build's snapshot was captured, and each game's line-movement chart for that game's own capture history.
+    Pinnacle was checked across 15+ sources and confirmed unavailable to any tested retail aggregator, so BookMaker.eu replaced it as the sharp&#8209;book reference here. Circa Sports was also checked (VegasInsider explicitly excludes it; no other tested source renders its odds) and isn't included yet.
+    Spreads are shown relative to the home team. This is a static snapshot from the build time shown above &mdash; ask for a refresh (the skill can be re-run any time, including mid-day for last-minute research) to update it.
+  </footer>
+</div>
+
+<script>
+const GAMES = __GAMES_JSON__;
+const RESULTS = __RESULTS_JSON__;
+const RANKINGS = __RANKINGS_JSON__;
+const WAGERTALK_ANGLES = __WAGERTALK_ANGLES_JSON__;
+const PROPS = __PROPS_JSON__;
+const BUILT_AT = "__BUILT_AT__";
+
+// Renders "N games tracked -- refreshed <local date/time>" in the header.
+// This is the fix for running the skill ad hoc mid-day (not just on the
+// regular cadence) for last-minute research: without a visible build
+// timestamp, a page refreshed at 9am and one refreshed at 4pm the same day
+// were indistinguishable, so there was no way to tell whether "current"
+// data was actually from this morning. BUILT_AT comes from
+// build_dashboard.py's own --reference (defaults to real build time), not
+// from any one game's snapshot, so it's accurate even on a day with zero
+// qualifying triggers.
+function renderAsOf() {
+  const el = document.getElementById('asOf');
+  const d = new Date(BUILT_AT);
+  const stamp = isNaN(d.getTime())
+    ? BUILT_AT
+    : d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+  el.textContent = `${GAMES.length} games tracked · refreshed ${stamp}`;
+}
+
+// Replaces the old hand-typed "Miami Dolphins @ Las Vegas Raiders..."
+// callout, which was accurate the day it was written but silently went
+// stale on every later refresh since nothing recomputed it. This derives
+// the same "biggest move" claim from the current GAMES data every build,
+// so it can't drift out of sync with the table below it again.
+function renderMoverCallout() {
+  const el = document.getElementById('moverCallout');
+  const withDelta = GAMES.filter(g => typeof g.spreadDelta === 'number');
+  if (!withDelta.length) {
+    el.innerHTML = '<b>Cross-checked.</b> Spread-movement data isn\'t available for any tracked game in this build.';
+    return;
+  }
+  const biggest = withDelta.reduce((a, b) => Math.abs(b.spreadDelta) > Math.abs(a.spreadDelta) ? b : a);
+  if (Math.abs(biggest.spreadDelta) < 0.01) {
+    el.innerHTML = '<b>Cross-checked.</b> No tracked game has moved from its opening spread yet this build.';
+    return;
+  }
+  const dir = biggest.spreadDelta < 0 ? 'toward the home team' : 'toward the away team';
+  const flipNote = biggest.flipped ? ', a full favorite flip through both key numbers' : (biggest.keyNumberCrossed ? ', crossing a key number' : '');
+  el.innerHTML = `<b>Cross-checked.</b> ${biggest.away} @ ${biggest.home} shows the biggest move on the board: opened ${biggest.openSpreadSide}, now ${biggest.curSpreadSide} &mdash; ${Math.abs(biggest.spreadDelta).toFixed(1)} pts ${dir}${flipNote}.`;
+}
+
+function fmtKickoff(iso) {
+  const d = new Date(iso);
+  return d.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+}
+
+function deltaChip(delta, invert) {
+  if (delta === null || delta === undefined || delta === 0) return '<span class="delta flat">no change</span>';
+  const dir = delta > 0 ? 'up' : 'down';
+  const cls = invert ? (dir === 'up' ? 'down' : 'up') : dir;
+  const sign = delta > 0 ? '+' : '';
+  return `<span class="delta ${cls}">${sign}${delta}</span>`;
+}
+
+function renderStats() {
+  const moved = GAMES.filter(g => g.moved).length;
+  const flipped = GAMES.filter(g => g.flipped).length;
+  const keyNum = GAMES.filter(g => g.keyNumberCrossed).length;
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="n num">${GAMES.length}</div><div class="l">Games tracked</div></div>
+    <div class="stat"><div class="n num">${moved}</div><div class="l">Moved since open</div></div>
+    <div class="stat"><div class="n num">${keyNum}</div><div class="l">Crossed a key number</div></div>
+    <div class="stat"><div class="n num">${flipped}</div><div class="l">Favorite flips</div></div>
+  `;
+}
+
+// Shared by every card renderer across every tab (Lines, +EV, Arbitrage,
+// Teasers, combos, and the Bet Now digest, which reuses these same
+// functions) -- one game always links to the same chart file.
+function graphLinkHtml(g) {
+  if (!g.graphLink) return '';
+  return `<a class="graph-link" href="${g.graphLink}" target="_blank" rel="noopener">Line movement chart <span class="arrow">&rarr;</span></a>`;
+}
+
+// Model's home-relative spread, in this project's own sign convention
+// (negative = home favored) -- simulate_game.py stores eloMarginHome as
+// "points home is favored by" (positive = home favored), so this flips it
+// to match spreadSideStr's convention before formatting for display.
+// Uses injuryAdjustedMarginHome (Elo margin + both sides' injury pts) when
+// present rather than the raw, injury-blind eloMarginHome -- this is the
+// "what does the model actually project for THIS game" number, and
+// showing the raw Elo margin here would silently disagree with the
+// win%/cover% figures printed right next to it once an injury adjustment
+// is applied (see simulate_game.py's module docstring). Falls back to
+// eloMarginHome for a game object built before this field existed.
+function modelSpreadStr(g) {
+  const raw = g.sim.injuryAdjustedMarginHome;
+  const m = -(raw !== null && raw !== undefined ? raw : g.sim.eloMarginHome);
+  if (Math.abs(m) < 0.05) return 'PK';
+  return m < 0 ? `${g.homeAbbr} -${Math.abs(m).toFixed(1)}` : `${g.awayAbbr} -${Math.abs(m).toFixed(1)}`;
+}
+
+// Renders the Monte-Carlo simulation block (see scripts/simulate_game.py)
+// when a game has one -- most games won't yet, since it's a per-game,
+// on-demand script, not part of the automatic daily run.
+function modelNoteHtml(g) {
+  if (!g.sim) return '';
+  const s = g.sim;
+  const badges = [];
+  if (s.spreadLean) badges.push(`<span class="badge model">Model: ${s.spreadLean === 'home' ? g.homeAbbr : g.awayAbbr} ATS</span>`);
+  if (s.totalLean) badges.push(`<span class="badge model">Model: ${s.totalLean === 'over' ? 'Over' : 'Under'}</span>`);
+  const hasInjuryAdj = (Math.abs(s.homeInjuryPts || 0) >= 0.01) || (Math.abs(s.awayInjuryPts || 0) >= 0.01);
+  if (hasInjuryAdj) badges.push('<span class="badge model">Injury-adjusted</span>');
+  const coverStr = (s.coverPctHome !== null && s.coverPctHome !== undefined) ? `${s.coverPctHome}% sims have ${g.homeAbbr} covering` : '';
+  const overStr = (s.overPct !== null && s.overPct !== undefined) ? `${s.overPct}% sims go Over` : '';
+  const pct = [coverStr, overStr].filter(Boolean).join(' &middot; ');
+  const displayTotal = (s.projTotalAdjusted !== null && s.projTotalAdjusted !== undefined) ? s.projTotalAdjusted : s.projTotal;
+  return `
+  <div class="modelnote">
+    <b>Simulation (${s.n.toLocaleString()} runs, Elo ${s.gamesSeen === 0 ? 'seed only' : `+ ${s.gamesSeen} logged games`}):</b>
+    projects ${modelSpreadStr(g)}, total ${displayTotal} &mdash; market is ${g.curSpreadSide || 'n/a'} / ${g.curTotalDK != null ? g.curTotalDK : 'n/a'}.
+    ${pct ? ` ${pct}.` : ''}
+    ${badges.length ? `<div class="badges" style="margin-top:6px;">${badges.join('')}</div>` : ''}
+    ${(s.notes && s.notes.length) ? `<div class="sub">${s.notes.join(' ')}</div>` : ''}
+  </div>`;
+}
+
+// Analyst-style write-up (see scripts/apply_game_evaluation.py) -- two
+// prose paragraphs plus a scored lean per market. Renders in four places
+// (see the call sites): open by default on the Lines tab card, collapsed
+// (a <details> the reader can expand) everywhere else, since Bet Now/Best
+// Bets/Bets to consider are already dense with numbers of their own. A
+// game with no evaluation yet (research pass hasn't reached it this week)
+// renders nothing, same as modelNoteHtml() when a game has no sim yet.
+// Shared for/against/neutral checklist renderer (added 2026-09-25 per
+// Michael) -- same visual treatment as propFactorsHtml() below, generalized
+// to work for either a player-prop pick or a game-level lean, since both
+// now carry the same {factors:[{label,dir,detail}], alignment} shape.
+// Returns '' for a lean/pick with no factors so nothing changes for older
+// data written before this existed.
+function factorChecklistHtml(item) {
+  if (!item.factors || !item.factors.length) return '';
+  const a = item.alignment || { for: 0, against: 0, neutral: 0 };
+  const items = item.factors.map(f => `
+      <li class="prop-factor ${f.dir}">
+        <span class="prop-factor-icon">${PROP_FACTOR_ICON[f.dir] || '&bull;'}</span>
+        <span><span class="prop-factor-label">${f.label}:</span> ${f.detail}</span>
+      </li>`).join('');
+  return `
+      <div class="prop-score">
+        <span class="prop-chip for">${a.for} for</span>
+        <span class="prop-chip against">${a.against} against</span>
+      </div>
+      <ul class="prop-factors">${items}</ul>`;
+}
+
+function evaluationHtml(g, opts) {
+  const ev = g.evaluation;
+  if (!ev || !ev.analysis || !ev.analysis.length) return '';
+  opts = opts || {};
+
+  const leanRow = (l) => {
+    const pct = Math.max(0, Math.min(100, Math.round((l.confidence / 10) * 100)));
+    return `
+    <div class="eval-lean${l.best_bet ? ' best' : ''}">
+      <div class="eval-lean-top">
+        <span class="eval-lean-market">${l.market}</span>
+        ${l.best_bet ? '<span class="badge goldbet">Best bet</span>' : ''}
+      </div>
+      <div class="eval-lean-pick">${l.pick}</div>
+      <div class="eval-conf-bar"><div class="eval-conf-fill" style="width:${pct}%"></div></div>
+      <div class="eval-conf-label">${l.confidence}/10 confidence</div>
+      <div class="eval-lean-reason">${l.reasoning}</div>
+      ${factorChecklistHtml(l)}
+    </div>`;
+  };
+
+  const leanCount = (ev.leans || []).length;
+  return `
+  <details class="card-detail gameeval"${opts.open ? ' open' : ''}>
+    <summary>Analyst take${leanCount ? ` &middot; ${leanCount} lean${leanCount > 1 ? 's' : ''}` : ''}</summary>
+    <div class="card-detail-body gameeval-body">
+      ${ev.analysis.map(p => `<p>${p}</p>`).join('')}
+      ${leanCount ? `<div class="eval-leans">${(ev.leans).map(leanRow).join('')}</div>` : ''}
+    </div>
+  </details>`;
+}
+
+// "Bets to consider" -- a softer, simulation-only bar than the hard
+// +EV/arbitrage/Wong bar the rest of Bet Now runs on. A game qualifies if
+// EITHER the model's spread diverges 3+ points from the market, OR a
+// simulation percentage (cover% on either side, over/under% on either
+// side) hits 60% or more. Unlike spreadLean/totalLean (57.9% breakeven +
+// edge, suppressed below MIN_GAMES_SEEN_FOR_LEAN combined games), this
+// applies neither gate -- it's meant to surface the model's boldest reads
+// on its own terms, including early-season ones still running mostly on a
+// prior-season seed, so every card says its gamesSeen plainly rather than
+// hiding a cold-start read.
+const BTC_SPREAD_GAP_PTS = 3;
+const BTC_PCT_THRESHOLD = 60;
+
+function computeBetsToConsider() {
+  const hits = [];
+  GAMES.forEach(g => {
+    const s = g.sim;
+    if (!s) return;
+    const reasons = [];
+    let spreadGapPts = null;
+
+    // Uses the injury-adjusted margin (falls back to raw eloMarginHome for
+    // an older cached game object) -- same reasoning as modelSpreadStr():
+    // this is "does the model's actual projection for THIS game diverge
+    // from the market," and the model's actual projection includes
+    // whatever injury_adjustments applied, not just the injury-blind Elo
+    // read. Using the raw margin here would miss exactly the cases this
+    // feature exists for (a starter ruled out shifts the model's real
+    // read on the game without the market having caught up yet).
+    const modelMarginRaw = s.injuryAdjustedMarginHome !== null && s.injuryAdjustedMarginHome !== undefined
+      ? s.injuryAdjustedMarginHome : s.eloMarginHome;
+    const haveMarketSpread = g.curSpreadHomeRel !== null && g.curSpreadHomeRel !== undefined;
+    if (haveMarketSpread && modelMarginRaw !== null && modelMarginRaw !== undefined) {
+      const modelHomeRel = -modelMarginRaw;
+      spreadGapPts = Math.abs(modelHomeRel - g.curSpreadHomeRel);
+      if (spreadGapPts >= BTC_SPREAD_GAP_PTS) {
+        reasons.push({ type: 'gap', value: spreadGapPts });
+      }
+    }
+
+    if (s.coverPctHome !== null && s.coverPctHome !== undefined) {
+      if (s.coverPctHome >= BTC_PCT_THRESHOLD) reasons.push({ type: 'cover', side: g.homeAbbr, pct: s.coverPctHome });
+      else if ((100 - s.coverPctHome) >= BTC_PCT_THRESHOLD) reasons.push({ type: 'cover', side: g.awayAbbr, pct: 100 - s.coverPctHome });
+    }
+
+    if (s.overPct !== null && s.overPct !== undefined) {
+      if (s.overPct >= BTC_PCT_THRESHOLD) reasons.push({ type: 'total', side: 'Over', pct: s.overPct });
+      else if ((100 - s.overPct) >= BTC_PCT_THRESHOLD) reasons.push({ type: 'total', side: 'Under', pct: 100 - s.overPct });
+    }
+
+    if (reasons.length) {
+      // Ranking key: how far the sim's confidence sits from a coinflip
+      // (50%), on whichever of cover%/over-under% swings furthest --
+      // computed the same way for every hit regardless of which reason(s)
+      // actually qualified it, so a gap-only game and a 68%-cover game
+      // both land on one consistent scale.
+      const coverDev = (s.coverPctHome !== null && s.coverPctHome !== undefined) ? Math.abs(s.coverPctHome - 50) : 0;
+      const totalDev = (s.overPct !== null && s.overPct !== undefined) ? Math.abs(s.overPct - 50) : 0;
+      const pctDiff = Math.max(coverDev, totalDev);
+      hits.push({ g, s, reasons, spreadGapPts: spreadGapPts || 0, pctDiff });
+    }
+  });
+  hits.sort((a, b) => b.pctDiff - a.pctDiff);
+  return hits;
+}
+
+// Whole-number spreads/totals print without a trailing ".0" ("-3", "46")
+// -- half-point lines keep their one decimal ("+1.5") -- matching how a
+// sportsbook itself displays a line, since this string is meant to be the
+// literal thing you'd type into a bet slip, not a rounded stat.
+function fmtLineNum(val) {
+  return Number.isInteger(val) ? `${val}` : val.toFixed(1);
+}
+
+// Market spread for ONE side, home-relative g.curSpreadHomeRel converted to
+// that side's own number -- "TEN +1.5" or "DEN -3" -- since curSpreadSide
+// only ever names the favorite, not whichever side a pick calls for.
+// Returns null (no `hasLine`) when there's no current DraftKings spread to
+// read this off of, so the caller can skip the "at DraftKings" tag.
+function spreadStrForSide(g, sideAbbr) {
+  const hr = g.curSpreadHomeRel;
+  if (hr === null || hr === undefined) return { text: `${sideAbbr} n/a`, hasLine: false };
+  const val = sideAbbr === g.homeAbbr ? hr : -hr;
+  if (Math.abs(val) < 0.05) return { text: `${sideAbbr} PK`, hasLine: true };
+  return { text: `${sideAbbr} ${val > 0 ? '+' : ''}${fmtLineNum(val)}`, hasLine: true };
+}
+
+function betToConsiderCard(hit) {
+  const { g, s, reasons } = hit;
+  const modelStr = modelSpreadStr(g);
+  const marketSpreadStr = g.curSpreadSide || 'n/a';
+  const gapReason = reasons.find(r => r.type === 'gap');
+  const coverReason = reasons.find(r => r.type === 'cover');
+  const totalReason = reasons.find(r => r.type === 'total');
+
+  // The single headline "bet to take" -- the literal line you'd put on a
+  // ticket at DraftKings right now (team + current spread, or Over/Under +
+  // current total), not a rounded model number. Picked from whichever
+  // qualifying reason has the highest percentage behind it (a spread pick
+  // beats a total pick on a tie, arbitrarily but consistently). A
+  // gap-only card (no reason cleared the 60% bar) still gets a headline
+  // pick, read off which way coverPctHome leans even below threshold --
+  // the gap itself says the model disagrees with the market, so it still
+  // names a side.
+  let headline;
+  if (coverReason && (!totalReason || coverReason.pct >= totalReason.pct)) {
+    const sp = spreadStrForSide(g, coverReason.side);
+    headline = { text: sp.text, pct: coverReason.pct, hasLine: sp.hasLine };
+  } else if (totalReason) {
+    const hasLine = g.curTotalDK !== null && g.curTotalDK !== undefined;
+    headline = { text: `${totalReason.side} ${hasLine ? fmtLineNum(g.curTotalDK) : 'n/a'}`, pct: totalReason.pct, hasLine };
+  } else {
+    const side = (s.coverPctHome !== null && s.coverPctHome !== undefined && s.coverPctHome >= 50) ? g.homeAbbr : g.awayAbbr;
+    const pct = s.coverPctHome !== null && s.coverPctHome !== undefined ? Math.max(s.coverPctHome, 100 - s.coverPctHome) : null;
+    const sp = spreadStrForSide(g, side);
+    headline = { text: sp.text, pct, hasLine: sp.hasLine };
+  }
+
+  const pill = gapReason ? `${gapReason.value.toFixed(1)} pt gap` : `${headline.pct.toFixed(1)}%`;
+
+  const lines = [];
+  if (gapReason) {
+    lines.push(`<div class="btc-line"><b>Spread gap:</b> model ${modelStr} vs market ${marketSpreadStr} &mdash; ${gapReason.value.toFixed(1)} pts apart.</div>`);
+  }
+  if (coverReason) {
+    lines.push(`<div class="btc-line"><b>Spread confidence:</b> ${coverReason.pct.toFixed(1)}% of sims have ${coverReason.side} covering &mdash; model ${modelStr}, market ${marketSpreadStr}.</div>`);
+  }
+  if (totalReason) {
+    const haveBoth = g.curTotalDK !== null && g.curTotalDK !== undefined && s.projTotal !== null && s.projTotal !== undefined;
+    const totalDiff = haveBoth ? Math.abs(s.projTotal - g.curTotalDK).toFixed(1) : null;
+    lines.push(`<div class="btc-line"><b>Total confidence:</b> ${totalReason.pct.toFixed(1)}% of sims go ${totalReason.side} &mdash; sim total ${s.projTotal}, market ${g.curTotalDK != null ? g.curTotalDK : 'n/a'}${totalDiff !== null ? ` (${totalDiff} pts apart)` : ''}.</div>`);
+  }
+
+  const caveat = s.gamesSeen === 0
+    ? `No current-season result logged for either team yet &mdash; this read leans entirely on regressed prior-season data, not anything that's happened this season.`
+    : (s.gamesSeen < 4
+      ? `Only ${s.gamesSeen} logged game(s) across both teams so far &mdash; still an early read.`
+      : '');
+
+  return `
+  <div class="arb-hit">
+    <div class="btc-top">
+      <div class="btc-pick-wrap">
+        <div class="btc-pick-label">Sportsbook bet to take</div>
+        <div class="btc-pick">${headline.text}</div>
+        ${headline.hasLine ? `<div class="btc-pick-book">at DraftKings</div>` : ''}
+      </div>
+      <div class="btc-pct-wrap">
+        <div class="btc-pct-label">Sim confidence</div>
+        <div class="btc-pct-big">${headline.pct !== null ? headline.pct.toFixed(1) : 'n/a'}${headline.pct !== null ? '<span class="unit">%</span>' : ''}</div>
+      </div>
+    </div>
+    <div class="tmatch">${g.awayAbbr}<span class="at" style="font-family:'IBM Plex Sans'; font-size:0.9rem; color:var(--text-dim); margin:0 6px;">@</span>${g.homeAbbr}<span class="margin-pill">${pill}</span></div>
+    ${lines.join('')}
+    ${caveat ? `<div class="btc-caveat">${caveat}</div>` : ''}
+    ${evaluationHtml(g)}
+    ${graphLinkHtml(g)}
+  </div>`;
+}
+
+function renderBetsToConsider() {
+  const hits = computeBetsToConsider();
+  const el = document.getElementById('betnowConsider');
+  if (!hits.length) {
+    el.innerHTML = `
+      <div class="betnow-group-title jumbo-title">Bets to consider<span class="n-pill">0</span></div>
+      <p class="section-intro">No tracked game currently has a ${BTC_SPREAD_GAP_PTS}+ point model/market spread gap or a simulation read of ${BTC_PCT_THRESHOLD}%+ on either side (cover or total). Recomputed every time this page loads.</p>`;
+    return;
+  }
+  el.innerHTML = `
+    <div class="betnow-group-title jumbo-title">Bets to consider<span class="n-pill">${hits.length}</span></div>
+    <p class="section-intro">A game lands here if the simulation model's spread diverges ${BTC_SPREAD_GAP_PTS}+ points from the market, or a simulation percentage (cover% or total%) hits ${BTC_PCT_THRESHOLD}%+ on either side. These are model leans, not a guaranteed edge -- unlike the hard bar above, nothing here is suppressed for a low game count, so read each card's caveat before treating a pick as more than a prior-season-informed guess.</p>
+    ${hits.map(betToConsiderCard).join('')}`;
+}
+
+// "Best Bets" -- the cross-check between the two OTHER independent
+// lenses on this page: a WagerTalk situational-trend angle and our
+// own simulation's "Bets to consider" read (same BTC_PCT_THRESHOLD/
+// BTC_SPREAD_GAP_PTS bar defined above, nothing new). A game only lands
+// here when both land on the SAME team in the SAME game -- e.g. WagerTalk
+// Michaels' historical angle says one thing and the 10k-run simulation
+// independently agrees, which is a meaningfully different (and rarer)
+// claim than either system clearing its own bar alone. A Wong-qualifying
+// teaser leg on that same team, when one exists, is added as a THIRD
+// confirmation and pushes that entry to the top -- but Wong alone never
+// substitutes for the required WagerTalk+sim agreement, and a Wong leg on a
+// team the other two don't agree on is never shown here (it still shows
+// on the Teasers tab, just not as a Best Bet).
+//
+// Two totally different kinds of number (a historical trend system's own
+// hit rate vs. a Monte Carlo simulation's cover rate) can't be
+// statistically combined into one real probability -- avgPct below is a
+// display/ranking heuristic only, not a claim that e.g. two 70% reads
+// combine into anything specific. Ranked by match count first (3 beats
+// 2), then by that average, so a triple-confirmed pick always outranks a
+// double-confirmed one regardless of the raw numbers.
+function computeBestBets() {
+  const btcHits = computeBetsToConsider();
+  const btcByGameId = {};
+  btcHits.forEach(h => { btcByGameId[h.g.id] = h; });
+
+  const results = [];
+  (WAGERTALK_ANGLES || []).forEach(a => {
+    if (!a.pickTeamAbbr) return;
+    const hit = btcByGameId[a.gameId];
+    if (!hit) return;
+    const coverReason = hit.reasons.find(r => r.type === 'cover');
+    if (!coverReason || coverReason.side !== a.pickTeamAbbr) return;
+
+    const g = hit.g;
+    const wongMatches = !!(g.wong && g.wong.qualifies && g.wong.teasedSide &&
+      g.wong.teasedSide.split(' ')[0] === a.pickTeamAbbr);
+
+    const pcts = [a.pct, coverReason.pct];
+    results.push({
+      a, g, coverReason, wongMatches,
+      matchCount: wongMatches ? 3 : 2,
+      avgPct: pcts.reduce((x, y) => x + y, 0) / pcts.length,
+    });
+  });
+
+  results.sort((x, y) => (y.matchCount - x.matchCount) || (y.avgPct - x.avgPct));
+  return results;
+}
+
+function bestBetCard(r, rank) {
+  const { a, g, coverReason, wongMatches, matchCount, avgPct } = r;
+  const chips = [
+    `<span class="badge model">WagerTalk ${a.pct.toFixed(1)}%</span>`,
+    `<span class="badge model">Simulation ${coverReason.pct.toFixed(1)}%</span>`,
+  ];
+  if (wongMatches) {
+    chips.push(`<span class="badge key">Wong teaser ${g.wong.teasedSide}</span>`);
+  }
+  return `
+  <div class="arb-hit gold">
+    <div class="btc-top">
+      <div class="btc-pick-wrap">
+        <div class="btc-pick-label">#${rank} &mdash; Sportsbook bet to take</div>
+        <div class="btc-pick">${a.pick}</div>
+        <div class="btc-pick-book">${a.awayAbbr} @ ${a.homeAbbr} &middot; ${matchCount}-way match</div>
+      </div>
+      <div class="btc-pct-wrap">
+        <div class="btc-pct-label">Avg. confidence</div>
+        <div class="btc-pct-big">${avgPct.toFixed(1)}<span class="unit">%</span></div>
+      </div>
+    </div>
+    <div class="badges" style="margin:4px 0 10px;">${chips.join('')}</div>
+    <div class="btc-line"><b>WagerTalk angle:</b> ${a.why}</div>
+    <div class="btc-line"><b>Simulation agrees:</b> ${coverReason.pct.toFixed(1)}% of sim runs have ${coverReason.side} covering the current market number.</div>
+    ${wongMatches ? `<div class="btc-line"><b>Wong teaser confirms:</b> ${g.wong.reason}</div>` : ''}
+    ${evaluationHtml(g)}
+    ${graphLinkHtml(a)}
+  </div>`;
+}
+
+function renderBestBets() {
+  const el = document.getElementById('betnowBest');
+  const bets = computeBestBets();
+  if (!bets.length) {
+    el.innerHTML = `
+      <div class="betnow-group-title jumbo-title">Best Bets<span class="n-pill">0</span></div>
+      <p class="section-intro">No tracked game right now has a WagerTalk angle AND the simulation's own Bets-to-consider threshold landing on the same team. Recomputed every time this page loads -- check back as lines and simulations update, or see Bets to consider / WagerTalk system below for each lens on its own.</p>`;
+    return;
+  }
+  el.innerHTML = `
+    <div class="betnow-group-title jumbo-title">Best Bets<span class="n-pill">${bets.length}</span></div>
+    <p class="section-intro">Every entry here is a WagerTalk angle that the simulation model independently landed on too -- two unrelated methods agreeing on the same team. A gold Wong-teaser badge means a third, also-independent system agrees as well. Ranked highest to lowest by match count, then by average confidence.</p>
+    ${bets.map((b, i) => bestBetCard(b, i + 1)).join('')}`;
+}
+
+// "WagerTalk system" -- a third, independent lens alongside the hard
+// EV/arb/Wong bar and the simulation-driven "Bets to consider" above:
+// historical situational ATS-trend angles (off a loss/win pairings, a team
+// repeating as a home loser, division double-revenge spots, a winless team
+// getting a small number on the road, an away-favorite-after-a-home-favorite
+// win, etc.) checked against this week's REAL matchups and REAL prior-season
+// results -- never against any specific team names from wherever a given
+// system was first sourced, since those go stale as fast as the schedule
+// does. WAGERTALK_ANGLES is built in Python (build_dashboard.py) from each
+// game's own `wagertalk_angle` field and arrives here already deduped to one
+// pick per game and sorted by historical hit-rate -- this function only
+// renders it. Only angles historically clearing >50% are ever written to
+// that field in the first place, so nothing here is a coin flip.
+// Each individually-confirmed system renders as its own checked line with
+// its own hit rate (a.checks, written by apply_wagertalk_angle.py's
+// checkbox model) -- falls back to the single merged System/why lines for
+// any angle still on the legacy single-angle shape (pre-2026-09-25 data,
+// or a one-off system with no per-check breakdown).
+function wagerTalkChecksHtml(a) {
+  if (!a.checks || !a.checks.length) {
+    return `<div class="btc-line"><b>System:</b> ${a.system}</div><div class="btc-line">${a.why}</div>`;
+  }
+  return `<div class="wt-checks">${a.checks.map(c => `
+    <div class="wt-check">
+      <div class="wt-check-box">&#10003;</div>
+      <div class="wt-check-body">
+        <span class="wt-check-label">${c.label || c.key}</span><span class="wt-check-pct">${(+c.pct).toFixed(0)}% ATS</span>
+        <span class="wt-check-why">${c.why}</span>
+      </div>
+    </div>`).join('')}</div>`;
+}
+
+function wagerTalkAngleCard(a, simAgrees) {
+  return `
+  <div class="arb-hit">
+    <div class="btc-top">
+      <div class="btc-pick-wrap">
+        <div class="btc-pick-label">Sportsbook bet to take</div>
+        <div class="btc-pick">${a.pick}</div>
+        <div class="btc-pick-book">${a.awayAbbr} @ ${a.homeAbbr}</div>
+      </div>
+      <div class="btc-pct-wrap">
+        <div class="btc-pct-label">Historical hit rate</div>
+        <div class="btc-pct-big">${a.pct.toFixed(1)}<span class="unit">%</span></div>
+      </div>
+    </div>
+    <div class="tmatch">${a.awayAbbr}<span class="at" style="font-family:'IBM Plex Sans'; font-size:0.9rem; color:var(--text-dim); margin:0 6px;">@</span>${a.homeAbbr}${a.stackCount > 1 ? `<span class="margin-pill">${a.stackCount}-system stack</span>` : ''}${simAgrees ? `<span class="margin-pill sim-agree">Sim agrees</span>` : ''}</div>
+    ${wagerTalkChecksHtml(a)}
+    ${graphLinkHtml(a)}
+  </div>`;
+}
+
+// True when this angle's pick lands on the same side as the simulation's
+// OWN "Bets to consider" read for that game (same threshold/logic as that
+// section -- see computeBetsToConsider() above) -- a spread pick is
+// checked against a 'cover' reason on the matching team abbreviation, a
+// total pick (no pickTeamAbbr) against a 'total' reason on the matching
+// Over/Under side. This is a lighter-weight note than the Best Bets
+// cross-check (which requires clearing Best Bets' own bar to be listed at
+// all) -- it just flags "the model's boldest reads happen to agree here
+// too," even when that agreement doesn't independently qualify for Best
+// Bets on its own.
+function wagerTalkSimAgrees(a, btcByGameId) {
+  const hit = btcByGameId[a.gameId];
+  if (!hit) return false;
+  if (a.pickTeamAbbr) {
+    return hit.reasons.some(r => r.type === 'cover' && r.side === a.pickTeamAbbr);
+  }
+  const pickSide = a.pick && a.pick.indexOf('Over') === 0 ? 'Over' : (a.pick && a.pick.indexOf('Under') === 0 ? 'Under' : null);
+  if (!pickSide) return false;
+  return hit.reasons.some(r => r.type === 'total' && r.side === pickSide);
+}
+
+function renderWagerTalkAngles() {
+  const el = document.getElementById('betnowWagerTalk');
+  const angles = WAGERTALK_ANGLES || [];
+  if (!angles.length) {
+    el.innerHTML = `
+      <div class="betnow-group-title">WagerTalk system<span class="n-pill">0</span></div>
+      <p class="section-intro">No tracked game currently matches one of these situational ATS-trend angles at better than a coin flip.</p>`;
+    return;
+  }
+  const btcByGameId = {};
+  computeBetsToConsider().forEach(h => { btcByGameId[h.g.id] = h; });
+  el.innerHTML = `
+    <div class="betnow-group-title">WagerTalk system<span class="n-pill">${angles.length}</span></div>
+    <p class="section-intro">Historical situational ATS trends (not this tool's own simulation model) matched against this week's real matchups and real prior-season results, ranked by each angle's own historical hit rate -- highest first. Anything at 50% or below is left off entirely. A gold <b>Sim agrees</b> tag means the simulation's own "Bets to consider" read independently lands on the same side -- short of a full Best Bets cross-check, but still two unrelated methods pointing the same way. These are third-party trend stats, not independently verified by this tool the way the simulation model is -- treat as one more input, not gospel.</p>
+    ${angles.map(a => wagerTalkAngleCard(a, wagerTalkSimAgrees(a, btcByGameId))).join('')}`;
+}
+
+// Jumbo "what does the sim say" strip for one game -- Moneyline, Spread,
+// Total, each the same size and treatment so nothing needs decoding row by
+// row. All three read off the SAME 10k-trial run (g.sim), not a mix of the
+// raw Elo prior and the trial outcomes -- Moneyline uses homeWinPct/
+// awayWinPct (actual trial win rates) rather than homeWinProbElo (the Elo
+// formula's own pregame number) specifically so a reader isn't quietly
+// comparing two different kinds of number across the three tiles.
+// Spread/Total read off coverPctHome/overPct -- the sim's read on the
+// CURRENT MARKET line -- via the same spreadStrForSide()/fmtLineNum()
+// helpers "Bets to consider" already uses, so the pick shown here is the
+// literal number you'd put on a ticket, not the model's own unrounded
+// internal projection.
+//
+// Deliberately NOT gated behind MIN_GAMES_SEEN_FOR_LEAN the way
+// spreadLean/totalLean (the promoted "Model: X ATS" badge) are -- that
+// gate exists to stop a cold-start read from being PROMOTED to a
+// confident-looking pick (see simulate_game.py's own note on this,
+// verified live 2026-09-06). This block shows the same raw percentages
+// modelNoteHtml() already prints below the table, just jumbo -- it isn't a
+// new number, only a faster way to read the one that was already there.
+// The gamesSeen caveat still prints inline so an early-season read is
+// never silently presented as more settled than it is.
+function simLeanBlock(g) {
+  const s = g.sim;
+  if (!s) return '';
+
+  const haveMl = s.homeWinPct !== null && s.homeWinPct !== undefined && s.awayWinPct !== null && s.awayWinPct !== undefined;
+  const mlPick = haveMl ? (s.homeWinPct >= s.awayWinPct ? g.homeAbbr : g.awayAbbr) : null;
+  const mlPct = haveMl ? Math.max(s.homeWinPct, s.awayWinPct) : null;
+
+  let spreadPick = null, spreadPct = null;
+  if (s.coverPctHome !== null && s.coverPctHome !== undefined) {
+    const side = s.coverPctHome >= 50 ? g.homeAbbr : g.awayAbbr;
+    const sp = spreadStrForSide(g, side);
+    if (sp.hasLine) { spreadPick = sp.text; spreadPct = Math.max(s.coverPctHome, 100 - s.coverPctHome); }
+  }
+
+  let totalPick = null, totalPct = null;
+  if (s.overPct !== null && s.overPct !== undefined && g.curTotalDK !== null && g.curTotalDK !== undefined) {
+    totalPick = `${s.overPct >= 50 ? 'Over' : 'Under'} ${fmtLineNum(g.curTotalDK)}`;
+    totalPct = Math.max(s.overPct, 100 - s.overPct);
+  }
+
+  if (mlPick === null && spreadPick === null && totalPick === null) return '';
+
+  const tile = (label, pick, pct) => `
+    <div class="sl-item">
+      <div class="sl-label">${label}</div>
+      <div class="sl-pick${pick === null ? ' na' : ''}">${pick !== null ? pick : 'n/a'}</div>
+      ${pct !== null ? `<div class="sl-pct">${pct.toFixed(1)}<span class="unit">%</span></div>` : ''}
+    </div>`;
+
+  const caveat = s.gamesSeen === 0
+    ? 'Early read -- no 2026 results logged yet for either team'
+    : (s.gamesSeen < 4 ? `Early read -- only ${s.gamesSeen} logged game(s) between both teams` : '');
+
+  return `
+  <div class="simlean">
+    ${tile('Moneyline', mlPick, mlPct)}
+    ${tile('Spread', spreadPick, spreadPct)}
+    ${tile('Total', totalPick, totalPct)}
+    ${caveat ? `<div class="simlean-caveat">${caveat}</div>` : ''}
+  </div>`;
+}
+
+// Public bet%/handle% split + derived reverse-line-move read (see
+// scripts/apply_market_signal.py -- this function only formats what that
+// script already computed, never recomputes RLM itself).
+function marketSignalHtml(g) {
+  const ms = g.marketSignal;
+  if (!ms) return '';
+  const rows = [];
+  if (ms.spread) rows.push(`<div class="ms-row"><span>Spread (${g.homeAbbr})</span><b>${ms.spread.bets_pct_home}% bets / ${ms.spread.handle_pct_home}% handle</b></div>`);
+  if (ms.total) rows.push(`<div class="ms-row"><span>Total (Over)</span><b>${ms.total.bets_pct_over}% bets / ${ms.total.handle_pct_over}% handle</b></div>`);
+  if (ms.moneyline) rows.push(`<div class="ms-row"><span>Moneyline (${g.homeAbbr})</span><b>${ms.moneyline.bets_pct_home}% bets / ${ms.moneyline.handle_pct_home}% handle</b></div>`);
+  if (!rows.length) return '';
+  const isRlm = ms.reverse_line_move === true;
+  return `
+  <div class="marketsignal${isRlm ? ' rlm' : ''}">
+    <b>${isRlm ? 'Reverse line move flagged' : 'Public betting split'}</b> <span class="ms-source">(${ms.source})</span>
+    ${rows.join('')}
+    ${ms.rlm_note ? `<div class="ms-note">${ms.rlm_note}</div>` : ''}
+  </div>`;
+}
+
+// Situational-system checklist for THIS game's Lines-tab card (added
+// 2026-09-25 per Michael -- previously the WagerTalk angle only showed up
+// in the separate aggregated list on the Bet Now tab, never on the game's
+// own card here, so it was easy to miss). Looks the game up in the same
+// WAGERTALK_ANGLES array the Bet Now tab reads, by game id -- no separate
+// data path, so the two can never show different information for the same
+// game.
+// Situational systems, as its own top-level accordion item on the game's
+// own card (added 2026-09-25) -- same data WAGERTALK_ANGLES already feeds
+// the Bet Now tab with, looked up by game id, so the two never disagree.
+function wagerTalkOnCardHtml(g) {
+  const a = (WAGERTALK_ANGLES || []).find(x => x.gameId === g.id);
+  if (!a) return '';
+  return accordionItem(
+    'Situational systems',
+    `${a.pick} &middot; ${a.pct.toFixed(0)}% historical`,
+    wagerTalkChecksHtml(a));
+}
+
+// Shared wrapper for every accordion item on a Lines-tab game card (added
+// 2026-09-25 per Michael -- each section below used to be crammed into
+// one "Full line breakdown" accordion, which meant opening it dumped the
+// whole card at once and buried the sim tiles/situational checks behind a
+// click). Returns '' when bodyHtml is empty so an accordion item with
+// nothing to show (e.g. no market-signal data yet) just doesn't render,
+// same convention as every other *Html() helper in this file.
+function accordionItem(summary, glance, bodyHtml, opts) {
+  if (!bodyHtml) return '';
+  opts = opts || {};
+  return `
+  <details class="card-detail"${opts.open ? ' open' : ''}>
+    <summary>${summary}${glance ? ` <span class="card-detail-glance">${glance}</span>` : ''}</summary>
+    <div class="card-detail-body">${bodyHtml}</div>
+  </details>`;
+}
+
+// The one-line "what would you actually bet on this game" badge next to
+// the matchup title (added 2026-09-25 per Michael -- previously you had
+// to open the Analyst-take accordion to see this at all). Priority: the
+// analyst's own flagged best_bet lean, else its highest-confidence lean,
+// else the sim's own spread read (modelSpreadStr) as a last resort so a
+// game with no analyst write-up yet still shows SOMETHING rather than
+// nothing. Returns null (not '') so the caller can decide how to lay out
+// its absence, same convention as favDogOf().
+function bestBetBadge(g) {
+  const leans = (g.evaluation && g.evaluation.leans) || [];
+  if (leans.length) {
+    const best = leans.find(l => l.best_bet) || leans.slice().sort((a, b) => b.confidence - a.confidence)[0];
+    if (best) return { pick: best.pick, source: best.best_bet ? 'Best bet' : `${best.confidence}/10 lean` };
+  }
+  if (g.sim && g.sim.eloMarginHome !== null && g.sim.eloMarginHome !== undefined) {
+    return { pick: modelSpreadStr(g), source: 'Model read' };
+  }
+  return null;
+}
+
+function card(g) {
+  const badges = [];
+  if (g.flipped) badges.push('<span class="badge flip">Favorite flip</span>');
+  else if (g.moved) badges.push('<span class="badge moved">Moved</span>');
+  if (g.keyNumberCrossed) badges.push('<span class="badge key">Key number</span>');
+
+  const bb = bestBetBadge(g);
+  const bookLinesGlance = `${g.curSpreadSide || 'no current spread'} &middot; total ${g.curTotalDK ?? '&mdash;'}`;
+  const bookLinesBody = `
+        <div class="table-scroll">
+          <table class="book-table">
+            <thead><tr><th>Line</th><th>Moneyline</th><th>Spread</th><th>Total</th></tr></thead>
+            <tbody>${bookRows(g)}</tbody>
+          </table>
+        </div>
+        ${graphLinkHtml(g)}`;
+
+  return `
+  <div class="card" data-moved="${g.moved}" data-flipped="${g.flipped}">
+    <div class="card-top">
+      <div>
+        <div class="matchup">${g.awayAbbr}<span class="at">@</span>${g.homeAbbr}${bb ? `<span class="card-bestbet-badge" title="${bb.source}">${bb.pick}</span>` : ''}</div>
+        ${g.venueNote ? `<div class="venue">${g.venueNote}</div>` : ''}
+      </div>
+      <div class="kickoff">${fmtKickoff(g.kickoff)} &middot; ${g.daysOut}d out</div>
+    </div>
+    ${badges.length ? `<div class="badges">${badges.join('')}</div>` : ''}
+    ${g.keyNumberNote ? `<div class="keynote"><b>Key number crossed:</b> ${g.keyNumberNote}</div>` : ''}
+    ${rankRefHtml(g)}
+    ${simLeanBlock(g)}
+    <div class="acc-stack">
+      ${accordionItem('Book lines', bookLinesGlance, bookLinesBody)}
+      ${accordionItem('Simulation', null, modelNoteHtml(g))}
+      ${accordionItem('Public betting split', null, marketSignalHtml(g))}
+      ${evaluationHtml(g, {open: true})}
+      ${wagerTalkOnCardHtml(g)}
+    </div>
+  </div>`;
+}
+
+function favDogOf(g, spreadStr) {
+  if (!spreadStr) return null;
+  const fav = spreadStr.split(' ')[0];
+  const dog = fav === g.awayAbbr ? g.homeAbbr : g.awayAbbr;
+  return { fav, dog };
+}
+
+function mlCell(g, mlFav, mlDog, spreadStr) {
+  if (mlFav === null || mlFav === undefined || mlDog === null || mlDog === undefined || !spreadStr) {
+    return '<td class="num unavailable">not captured</td>';
+  }
+  const sides = favDogOf(g, spreadStr);
+  const dogStr = mlDog > 0 ? `+${mlDog}` : `${mlDog}`;
+  return `<td class="num"><span class="cell-wrap">${sides.fav} <b>${mlFav}</b> / ${sides.dog} <b>${dogStr}</b></span></td>`;
+}
+
+function bmFairProbs(g) {
+  if (g.bmMlFav == null || g.bmMlDog == null) return null;
+  const dFav = americanToDecimal(g.bmMlFav);
+  const dDog = americanToDecimal(g.bmMlDog);
+  const pFavRaw = 1 / dFav, pDogRaw = 1 / dDog;
+  const overround = pFavRaw + pDogRaw;
+  return { fairFav: pFavRaw / overround, fairDog: pDogRaw / overround, vigPct: (overround - 1) * 100 };
+}
+
+function evPct(americanOdds, fairProb) {
+  const dec = americanToDecimal(americanOdds);
+  if (!dec) return null;
+  return (dec * fairProb - 1) * 100;
+}
+
+function dkVsBmEv(g) {
+  const fair = bmFairProbs(g);
+  if (!fair || g.dkMlFav == null || g.dkMlDog == null) return null;
+  return { evFav: evPct(g.dkMlFav, fair.fairFav), evDog: evPct(g.dkMlDog, fair.fairDog), fair };
+}
+
+function mlCellEv(g) {
+  if (g.dkMlFav == null || g.dkMlDog == null || !g.curSpreadSide) {
+    return '<td class="num unavailable">not captured</td>';
+  }
+  const sides = favDogOf(g, g.curSpreadSide);
+  const ev = dkVsBmEv(g);
+  const favEv = ev ? ev.evFav : null;
+  const dogEv = ev ? ev.evDog : null;
+  const favStr = mlWithEv(sides.fav, g.dkMlFav, favEv);
+  const dogStr = mlWithEv(sides.dog, g.dkMlDog, dogEv);
+  return `<td class="num"><span class="cell-wrap">${favStr} / ${dogStr}</span></td>`;
+}
+
+function mlWithEv(team, ml, ev) {
+  const mlStr = ml > 0 ? `+${ml}` : `${ml}`;
+  if (ev !== null && ev !== undefined && ev > 0) {
+    return `<span class="ev-hit">${team} <b>${mlStr}</b><span class="ev-badge">+${ev.toFixed(2)}% EV</span></span>`;
+  }
+  return `${team} <b>${mlStr}</b>`;
+}
+
+function spreadCell(value, delta) {
+  if (value === null || value === undefined) return '<td class="num unavailable">not captured</td>';
+  const chip = delta !== undefined ? deltaChip(delta) : '';
+  return `<td class="num"><span class="cell-wrap"><b>${value}</b>${chip}</span></td>`;
+}
+
+function totalCell(value, delta) {
+  if (value === null || value === undefined) return '<td class="num unavailable">not captured</td>';
+  const chip = delta !== undefined ? deltaChip(delta) : '';
+  return `<td class="num"><span class="cell-wrap"><b>${value}</b>${chip}</span></td>`;
+}
+
+// A book's "current" value can now be carried forward from an earlier day
+// than this build's own snapshot (see most_recent_book() in lib.py / the
+// curDkAsOf etc. fields build_dashboard.py adds) rather than always being
+// today's fetch -- this renders that plainly next to the "current" tag
+// instead of letting a stale number pass as fresh. isoDate is a bare
+// YYYY-MM-DD; parsed as UTC noon so no local timezone can roll it back a day.
+function asOfSuffix(isoDate) {
+  if (!isoDate) return '';
+  const d = new Date(isoDate + 'T12:00:00Z');
+  return ` &middot; as of ${d.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' })}`;
+}
+
+// Best-of shopping across the tracked, actually-bettable current books
+// (DraftKings, Caesars, FanDuel) -- BookMaker.eu is never eligible here,
+// it's the sharp reference row, not a real bet you can place (see the
+// EV/Arbitrage tabs for why). Simplified from a 6-row per-book table to
+// 3 rows (Open / Best / BookMaker.eu) 2026-09-23 per Michael -- the old
+// table forced a reader to do this same comparison by eye across 4-6
+// rows; a market with only one real current source today (total is
+// DraftKings-only -- no source tested exposes a current Caesars or
+// FanDuel total) still resolves correctly through the same code path,
+// it just always picks that one book, and adding a new source's field
+// later needs no template change to start competing automatically.
+
+function bestOf(candidates, isBetter) {
+  let best = null;
+  for (const c of candidates) {
+    if (c.value === null || c.value === undefined) continue;
+    if (!best || isBetter(c.value, best.value)) best = c;
+  }
+  return best;
+}
+
+// Smallest magnitude = cheapest number to back the favorite. An underdog
+// bettor wants the opposite (the largest number) -- shown plainly enough
+// (team, number, book) that the reader makes that call themselves rather
+// than this picking a side for them.
+function bestSpreadCell(g) {
+  const candidates = [];
+  if (g.curSpreadHomeRel !== null && g.curSpreadHomeRel !== undefined && g.curSpreadSide) {
+    candidates.push({ book: 'DraftKings', value: g.curSpreadHomeRel, str: g.curSpreadSide, delta: g.spreadDelta });
+  }
+  if (g.curSpreadCaesarsHomeRel !== null && g.curSpreadCaesarsHomeRel !== undefined && g.curSpreadCaesars) {
+    candidates.push({ book: 'Caesars', value: g.curSpreadCaesarsHomeRel, str: g.curSpreadCaesars, delta: undefined });
+  }
+  const best = bestOf(candidates, (a, b) => Math.abs(a) < Math.abs(b));
+  if (!best) return '<td class="num unavailable">not captured</td>';
+  const chip = best.delta !== undefined ? deltaChip(best.delta) : '';
+  return `<td class="num"><span class="cell-wrap"><b>${best.str}</b>${chip}<span class="tag">${best.book}</span></span></td>`;
+}
+
+// DraftKings is currently the only book this tracker captures a real
+// current total from at all (see above) -- this still shops properly,
+// it just always resolves to DK until a second source exists.
+function bestTotalCell(g) {
+  if (g.curTotalDK === null || g.curTotalDK === undefined) return '<td class="num unavailable">not captured</td>';
+  const chip = deltaChip(g.totalDelta);
+  return `<td class="num"><span class="cell-wrap"><b>${g.curTotalDK}</b>${chip}<span class="tag">DraftKings</span></span></td>`;
+}
+
+// Higher American odds is better for either side (less negative for the
+// favorite, more positive for the dog), so plain numeric max works the
+// same way for both -- shopped independently per side, so e.g. the
+// favorite could come from DraftKings while the dog comes from FanDuel.
+function bestMoneylineSide(g, side) {
+  const candidates = [];
+  const dk = side === 'fav' ? g.dkMlFav : g.dkMlDog;
+  const fd = side === 'fav' ? g.fdMlFav : g.fdMlDog;
+  if (dk !== null && dk !== undefined) candidates.push({ book: 'DraftKings', value: dk });
+  if (fd !== null && fd !== undefined) candidates.push({ book: 'FanDuel', value: fd });
+  return bestOf(candidates, (a, b) => a > b);
+}
+
+function bestMlCell(g) {
+  const bestFav = bestMoneylineSide(g, 'fav');
+  const bestDog = bestMoneylineSide(g, 'dog');
+  if (!bestFav && !bestDog) return '<td class="num unavailable">not captured</td>';
+  const sides = g.curSpreadSide ? favDogOf(g, g.curSpreadSide) : null;
+  const fair = bmFairProbs(g);
+  const bits = [];
+  if (bestFav) {
+    const label = sides ? sides.fav : 'Fav';
+    const ev = fair ? evPct(bestFav.value, fair.fairFav) : null;
+    bits.push(`${mlWithEv(label, bestFav.value, ev)} <span class="tag">${bestFav.book}</span>`);
+  }
+  if (bestDog) {
+    const label = sides ? sides.dog : 'Dog';
+    const ev = fair ? evPct(bestDog.value, fair.fairDog) : null;
+    bits.push(`${mlWithEv(label, bestDog.value, ev)} <span class="tag">${bestDog.book}</span>`);
+  }
+  return `<td class="num"><span class="cell-wrap">${bits.join(' &nbsp;/&nbsp; ')}</span></td>`;
+}
+
+function bookRows(g) {
+  let rows = '';
+
+  // Open — DraftKings' opening line (this tracker's documented opening-
+  // line source; see the footer for the cross-validation detail).
+  rows += `<tr><td>Open<span class="tag">DraftKings</span></td>` +
+    `<td class="num unavailable">not captured</td>` +
+    spreadCell(g.openSpreadSide) +
+    totalCell(g.openTotal) +
+    `</tr>`;
+
+  // Best — shops DraftKings/Caesars/FanDuel independently per market;
+  // each number is tagged with which book it actually came from.
+  rows += `<tr><td>Best<span class="tag cur">current</span></td>` +
+    bestMlCell(g) +
+    bestSpreadCell(g) +
+    bestTotalCell(g) +
+    `</tr>`;
+
+  // BookMaker.eu — current (public odds board, no login wall; replaces Pinnacle, which
+  // stayed unavailable from every tested source). The sharp/no-vig reference, never
+  // part of the Best shop above since it isn't a real bettable option from NY.
+  rows += `<tr><td>BookMaker.eu<span class="tag cur">current${asOfSuffix(g.curBmAsOf)}</span></td>` +
+    mlCell(g, g.bmMlFav, g.bmMlDog, g.bmSpreadSide) +
+    spreadCell(g.bmSpreadSide) +
+    totalCell(g.bmTotal) +
+    `</tr>`;
+
+  return rows;
+}
+
+function render(filter) {
+  const list = GAMES.filter(g => {
+    if (filter === 'moved') return g.moved;
+    if (filter === 'flipped') return g.flipped;
+    return true;
+  });
+  document.getElementById('cards').innerHTML = list.map(card).join('') || '<p style="color:var(--text-dim)">No games match this filter.</p>';
+}
+
+document.getElementById('controls').addEventListener('click', (e) => {
+  const btn = e.target.closest('.chip');
+  if (!btn) return;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  render(btn.dataset.filter);
+});
+
+const PROP_MARKET_LABEL = {
+  receptions: 'Receptions', rec_yards: 'Rec Yards', rush_yards: 'Rush Yards',
+  pass_yards: 'Pass Yards', completions: 'Completions', attempts: 'Attempts',
+};
+
+// Multifactor scorecard (apply_props.py `factors`/`matchup`/`alignment`).
+// Only rendered when the pick has factors -- older picks just show the
+// headline reasoning, nothing hidden.
+const PROP_FACTOR_ICON = { for: '&#10003;', against: '&#10007;', neutral: '&bull;' };
+function propFactorsHtml(p) {
+  if (!p.factors || !p.factors.length) return '';
+  const a = p.alignment || { for: 0, against: 0, neutral: 0 };
+  const r = p.matchup && p.matchup.opp_rank_vs_pos;
+  const tough = r && ((p.lean === 'over' && r <= 10) || (p.lean === 'under' && r >= 23));
+  const rankChip = r
+    ? `<span class="prop-chip ${tough ? 'tough' : (p.lean === 'over' ? (r >= 20 ? 'for' : '') : (r <= 12 ? 'for' : ''))}" title="${p.matchup.rank_basis || ''}">Opp D vs ${p.position}: ${r}/32${tough ? ' &middot; tough' : ''}</span>`
+    : '';
+  const items = p.factors.map(f => `
+      <li class="prop-factor ${f.dir}">
+        <span class="prop-factor-icon">${PROP_FACTOR_ICON[f.dir] || '&bull;'}</span>
+        <span><span class="prop-factor-label">${f.label}:</span> ${f.detail}</span>
+      </li>`).join('');
+  return `
+      <div class="prop-score">
+        <span class="prop-chip for">${a.for} for</span>
+        <span class="prop-chip against">${a.against} against</span>
+        ${rankChip}
+      </div>
+      <ul class="prop-factors">${items}</ul>`;
+}
+
+function propCardHtml(p) {
+  const dirLabel = p.lean === 'over' ? 'Over' : 'Under';
+  const marketLabel = PROP_MARKET_LABEL[p.market] || p.market;
+  const teamAbbr = p.team === 'home' ? p.homeAbbr : p.awayAbbr;
+  const moved = p.current_line !== p.opening_line;
+  const pct = Math.max(0, Math.min(100, Math.round((p.confidence / 10) * 100)));
+  return `
+  <div class="card">
+    <div class="card-top">
+      <div>
+        <div class="matchup">${p.player} <span class="at">&middot;</span> ${p.position}</div>
+        <div class="venue">${teamAbbr} &middot; ${p.awayAbbr}@${p.homeAbbr} &middot; ${marketLabel}</div>
+      </div>
+      <div class="kickoff">${fmtKickoff(p.kickoff)}</div>
+    </div>
+    <div class="eval-lean best" style="margin-top:10px;">
+      <div class="eval-lean-top">
+        <span class="eval-lean-market">${marketLabel}</span>
+        <span>${propTimingBadge(p)} <span class="badge goldbet">${dirLabel}</span></span>
+      </div>
+      <div class="eval-lean-pick">${dirLabel} ${p.opening_line}${moved ? ` <span class="delta ${p.current_line > p.opening_line ? 'up' : 'down'}">now ${p.current_line}</span>` : ''}</div>
+      <div class="eval-conf-bar"><div class="eval-conf-fill" style="width:${pct}%"></div></div>
+      <div class="eval-conf-label">${p.confidence}/10 confidence</div>
+      <div class="eval-lean-reason">${p.reasoning}</div>
+    </div>
+    <details class="card-detail">
+      <summary>Factors &amp; source <span class="card-detail-glance">${(p.factors && p.factors.length) || 0} factor${(p.factors && p.factors.length === 1) ? '' : 's'}</span></summary>
+      <div class="card-detail-body">
+        ${propFactorsHtml(p)}
+        <div style="font-size:0.78rem; color:var(--text-dim); margin-top:8px;">${p.book} &middot; opened ${fmtKickoff(p.opening_captured_at)}</div>
+        ${graphLinkHtml(p)}
+      </div>
+    </details>
+  </div>`;
+}
+
+function renderProps() {
+  const list = document.getElementById('propsList');
+  if (!PROPS.picks.length) {
+    list.innerHTML = '<div class="betnow-empty"><div class="big-check">&#9203;</div>No opening prop numbers captured yet this cycle -- rechecked automatically until they post.</div>';
+  } else {
+    list.innerHTML = PROPS.picks.map(propCardHtml).join('');
+  }
+  const pendingEl = document.getElementById('propsPending');
+  if (PROPS.pendingGames && PROPS.pendingGames.length) {
+    pendingEl.hidden = false;
+    pendingEl.innerHTML = `<b>Still watching for props:</b> ${PROPS.pendingGames.map(g => `${g.awayAbbr}@${g.homeAbbr}`).join(', ')} &mdash; rechecked automatically until numbers post.`;
+  } else {
+    pendingEl.hidden = true;
+  }
+}
+
+document.getElementById('tabs').addEventListener('click', (e) => {
+  const btn = e.target.closest('.tabbtn');
+  if (!btn) return;
+  document.querySelectorAll('.tabbtn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.tabpanel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+});
+
+function americanToDecimal(v) {
+  const n = parseFloat(v);
+  if (isNaN(n) || n === 0) return null;
+  return n > 0 ? 1 + n / 100 : 1 + 100 / Math.abs(n);
+}
+
+function updateArb() {
+  const dA = americanToDecimal(document.getElementById('arbOddsA').value);
+  const dB = americanToDecimal(document.getElementById('arbOddsB').value);
+  const total = parseFloat(document.getElementById('arbTotal').value) || 0;
+  const labelA = document.getElementById('arbLabelA').value || 'Team A';
+  const labelB = document.getElementById('arbLabelB').value || 'Team B';
+  const out = document.getElementById('arbResult');
+  if (!dA || !dB || total <= 0) {
+    out.className = 'calc-result';
+    out.innerHTML = '<span style="color:var(--text-dim)">Enter both odds and a stake to check.</span>';
+    return;
+  }
+  const pA = 1 / dA, pB = 1 / dB;
+  const L = pA + pB;
+  const stakeA = total * pA / L;
+  const stakeB = total - stakeA;
+  const payout = total / L;
+  const profit = payout - total;
+  if (L < 1) {
+    out.className = 'calc-result arb';
+    out.innerHTML = `
+      <div class="big num">+$${profit.toFixed(2)} <span style="font-size:1rem;font-weight:500;color:var(--text-dim)">guaranteed (${((1 - L) * 100).toFixed(2)}% margin)</span></div>
+      <div style="margin-top:8px">Bet <b class="num">$${stakeA.toFixed(2)}</b> on ${labelA} &middot; <b class="num">$${stakeB.toFixed(2)}</b> on ${labelB}. Either way, payout is <b class="num">$${payout.toFixed(2)}</b>.</div>
+    `;
+  } else {
+    out.className = 'calc-result noarb';
+    out.innerHTML = `
+      <div class="big num">No arb <span style="font-size:1rem;font-weight:500;color:var(--text-dim)">(${((L - 1) * 100).toFixed(2)}% over 100%)</span></div>
+      <div style="margin-top:8px">Combined implied probability is ${(L * 100).toFixed(2)}% &mdash; the books agree closely enough that there's no risk-free split here.</div>
+    `;
+  }
+}
+['arbOddsA', 'arbOddsB', 'arbTotal', 'arbLabelA', 'arbLabelB'].forEach(id =>
+  document.getElementById(id).addEventListener('input', updateArb)
+);
+
+// Arbitrage only ever pairs NY-licensed, actually-placeable books --
+// BookMaker.eu is excluded here on purpose (2026-09-08): it's the sharp
+// reference used for the +EV fair-value estimate elsewhere on this page,
+// but Michael can't actually place a bet there from NY, so it can never be
+// one leg of a real arbitrage. DraftKings vs FanDuel is the only pair this
+// tracker currently has simultaneous two-sided current moneylines for --
+// Caesars isn't included here because no tested source gives a current
+// Caesars moneyline (spread only). If DK and FanDuel ever agree closely
+// enough that no arb exists, this correctly returns nothing rather than
+// falling back to a book that isn't a real option. As of 2026-09-08,
+// g.fdMlFav/fdMlDog are null for every game -- the vegasinsider-sourced
+// current FD moneyline was reverted the same day it was added, after
+// re-verification found the extraction couldn't reliably tell FanDuel's
+// real moneyline apart from the point-spread's own juice price in that
+// table (a follow-up fetch asked to distinguish them explicitly and
+// couldn't). This function is written correctly and will start producing
+// results again the moment fdMlFav/fdMlDog have trustworthy values -- no
+// change needed here, only to the data source.
+function checkGameArb(g) {
+  if (g.dkMlFav == null || g.dkMlDog == null || g.fdMlFav == null || g.fdMlDog == null) return null;
+  const favTeam = g.curSpreadSide ? g.curSpreadSide.split(' ')[0] : null;
+  if (!favTeam) return null;
+  const dogTeam = favTeam === g.awayAbbr ? g.homeAbbr : g.awayAbbr;
+
+  const bestFav = Math.max(g.dkMlFav, g.fdMlFav);
+  const bestFavBook = g.dkMlFav >= g.fdMlFav ? 'DraftKings' : 'FanDuel';
+  const bestDog = Math.max(g.dkMlDog, g.fdMlDog);
+  const bestDogBook = g.dkMlDog >= g.fdMlDog ? 'DraftKings' : 'FanDuel';
+
+  const dA = americanToDecimal(bestFav);
+  const dB = americanToDecimal(bestDog);
+  const L = 1 / dA + 1 / dB;
+  if (L >= 1) return null;
+
+  const total = 1000;
+  const pA = 1 / dA, pB = 1 / dB;
+  const stakeA = total * pA / L;
+  const stakeB = total - stakeA;
+  const payout = total / L;
+
+  return {
+    g, favTeam, dogTeam, bestFav, bestFavBook, bestDog, bestDogBook,
+    marginPct: (1 - L) * 100, stakeA, stakeB, payout, profit: payout - total,
+  };
+}
+
+function arbHitCard(a, gold) {
+  const thin = a.marginPct < 1;
+  return `
+  <div class="arb-hit${gold ? ' gold' : ''}">
+    <div class="tmatch">${a.g.awayAbbr}<span class="at" style="font-family:'IBM Plex Sans'; font-size:0.9rem; color:var(--text-dim); margin:0 6px;">@</span>${a.g.homeAbbr}<span class="margin-pill">${a.marginPct.toFixed(2)}% margin</span></div>
+    <div class="arb-legs">
+      <div><b class="num">${a.favTeam} ${a.bestFav}</b> <span class="leg-book">at ${a.bestFavBook}</span></div>
+      <div><b class="num">${a.dogTeam} ${a.bestDog > 0 ? '+' : ''}${a.bestDog}</b> <span class="leg-book">at ${a.bestDogBook}</span></div>
+    </div>
+    <div class="arb-note">On a $1,000 total stake: <b class="num">$${a.stakeA.toFixed(2)}</b> on ${a.favTeam}, <b class="num">$${a.stakeB.toFixed(2)}</b> on ${a.dogTeam} &mdash; guaranteed <b class="num" style="color:var(--teal)">$${a.payout.toFixed(2)}</b> back either way (+$${a.profit.toFixed(2)}).
+    ${thin ? ' A margin this thin is well inside normal execution slippage &mdash; rounding, a half-second of line movement between legs, or a stake-size limit can erase it. Worth knowing about, not worth rushing.' : ''}</div>
+    ${evaluationHtml(a.g)}
+    ${graphLinkHtml(a.g)}
+  </div>`;
+}
+
+// Shared by the Arbitrage tab and the Bet Now digest.
+function computeArbHits() {
+  return GAMES.map(checkGameArb).filter(Boolean);
+}
+
+function renderArbs() {
+  const found = computeArbHits();
+  const el = document.getElementById('arbFound');
+  const fdMissing = GAMES.every(g => g.fdMlFav == null || g.fdMlDog == null);
+  if (!found.length) {
+    el.innerHTML = fdMissing
+      ? '<p style="color:var(--text-dim); margin-bottom:20px;">Nothing to check right now &mdash; FanDuel\'s current moneyline isn\'t captured for any game today (see the note above), so DraftKings has no second NY book to compare against. This isn\'t "no arb found," it\'s "no data to check."</p>'
+      : '<p style="color:var(--text-dim); margin-bottom:20px;">No DraftKings vs. FanDuel arbs in today\'s captured data. That can flip run to run as either book\'s prices move &mdash; recheck after the next report run.</p>';
+  } else {
+    el.innerHTML = found.map(a => arbHitCard(a)).join('') +
+      '<p style="font-size:0.82rem; color:var(--text-dim); margin: 4px 0 20px;">Only DraftKings vs. FanDuel is checked automatically. Use the calculator below for any other book pair, including your own sportsbook.</p>';
+  }
+}
+
+function evHitCard(h, gold) {
+  const mlStr = h.ml > 0 ? `+${h.ml}` : `${h.ml}`;
+  return `
+  <div class="arb-hit${gold ? ' gold' : ''}">
+    <div class="tmatch">${h.g.awayAbbr}<span class="at" style="font-family:'IBM Plex Sans'; font-size:0.9rem; color:var(--text-dim); margin:0 6px;">@</span>${h.g.homeAbbr}<span class="margin-pill">+${h.evPct.toFixed(2)}% EV</span></div>
+    <div class="arb-legs">
+      <div><b class="num">${h.team} ${mlStr}</b> <span class="leg-book">at DraftKings</span></div>
+      <div class="leg-book">BookMaker.eu fair probability for ${h.team}: ${(h.fairProb * 100).toFixed(1)}%</div>
+    </div>
+    ${evaluationHtml(h.g)}
+    ${graphLinkHtml(h.g)}
+  </div>`;
+}
+
+// Shared by the +EV tab and the Bet Now digest -- computed once here so both
+// views read the same result rather than each recomputing it their own way.
+function computeEvHits() {
+  const hits = [];
+  GAMES.forEach(g => {
+    const ev = dkVsBmEv(g);
+    if (!ev || !g.curSpreadSide) return;
+    const sides = favDogOf(g, g.curSpreadSide);
+    if (ev.evFav !== null && ev.evFav > 0) {
+      hits.push({ g, team: sides.fav, ml: g.dkMlFav, evPct: ev.evFav, fairProb: ev.fair.fairFav });
+    }
+    if (ev.evDog !== null && ev.evDog > 0) {
+      hits.push({ g, team: sides.dog, ml: g.dkMlDog, evPct: ev.evDog, fairProb: ev.fair.fairDog });
+    }
+  });
+  hits.sort((a, b) => b.evPct - a.evPct);
+  return hits;
+}
+
+function renderEv() {
+  const hits = computeEvHits();
+  const el = document.getElementById('evFound');
+  if (!hits.length) {
+    el.innerHTML = '<p style="color:var(--text-dim)">No +EV bets against BookMaker.eu\'s fair line in today\'s captured data. That can flip run to run as either book\'s prices move &mdash; recheck after the next report run.</p>';
+  } else {
+    el.innerHTML = hits.map(h => evHitCard(h)).join('');
+  }
+}
+
+function fmtShortDate(d) {
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+// "Day of game" ET calendar date, not the raw UTC one -- a kickoff stored
+// as "...T00:20:00Z" for a Sunday Night Football game is already Monday in
+// UTC, but it's still Sunday's game to a US bettor. Getting this wrong
+// would misclassify SNF legs as being on a different day than the rest of
+// that Sunday's slate, which breaks both the day-of-game window check
+// below and the same-day-only combo grouping in renderCombos().
+function etDateStr(d) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(d);
+}
+
+// WagerTalk's own guidance is to bet Wong teasers on the DAY OF THE GAME,
+// not on a lead-time window before it (corrected 2026-09-23 -- see "When
+// to place it" above; the previous 3-6-days-out version here was this
+// project's own line-efficiency reasoning, not WagerTalk's actual advice).
+// "ideal" = today's ET calendar date matches the kickoff's; nothing
+// between "today" and kickoff itself needs its own state, so there's no
+// "late" tier anymore -- once today isn't game day and hasn't passed yet,
+// it's simply "early." Recomputed against the real current date/time every
+// page load.
+function bettingWindowStatus(kickoffIso) {
+  const kickoff = new Date(kickoffIso);
+  const now = new Date();
+  if (kickoff.getTime() <= now.getTime()) {
+    return { state: 'past', label: 'Kickoff has passed', opensAt: kickoff };
+  }
+  if (etDateStr(kickoff) === etDateStr(now)) {
+    return { state: 'ideal', label: 'Bet now &mdash; game day', opensAt: kickoff };
+  }
+  return { state: 'early', label: `Wait &mdash; bet on game day (${fmtShortDate(kickoff)})`, opensAt: kickoff };
+}
+
+function timingBadge(status) {
+  return `<span class="timing-badge ${status.state}">${status.label}</span>`;
+}
+
+// Same jumbo "Sportsbook bet to take" card as Bets to consider (.arb-hit /
+// .btc-top / .btc-pick / .btc-pct-big) -- reused here so a qualifying
+// teaser leg reads as an actual placeable bet at a glance, not just a math
+// footnote. The right-hand jumbo slot shows the game total (the other hard
+// qualifying threshold, now a strict <=47) rather than a confidence percent,
+// since a teaser leg's edge is a fixed, mechanical clearance rather than a
+// simulated probability.
+function teaserCard(g) {
+  const w = g.wong;
+  const fromStr = (w.teasedFrom > 0 ? '+' : '') + w.teasedFrom;
+  const toStr = (w.teasedTo > 0 ? '+' : '') + w.teasedTo;
+  const teamAbbr = w.teasedSide.split(' ')[0];
+  const srcLabel = g.wongSpreadSourceLabel || 'unknown book';
+  const srcNote = g.wongSpreadSource === 'caesars'
+    ? `spread: ${srcLabel}`
+    : `spread: ${srcLabel} (verify at Caesars before betting)`;
+  return `
+  <div class="arb-hit">
+    <div class="btc-top">
+      <div class="btc-pick-wrap">
+        <div class="btc-pick-label">Sportsbook bet to take</div>
+        <div class="btc-pick">${teamAbbr} ${toStr}</div>
+        <div class="btc-pick-book">2-team, 6-pt Wong teaser &middot; ${srcNote}</div>
+      </div>
+      <div class="btc-pct-wrap">
+        <div class="btc-pct-label">Game total (DraftKings)</div>
+        <div class="btc-pct-big">${w.total}<span class="unit">pts</span></div>
+      </div>
+    </div>
+    <div class="tmatch">${g.awayAbbr}<span class="at" style="font-family:'IBM Plex Sans'; font-size:0.9rem; color:var(--text-dim); margin:0 6px;">@</span>${g.homeAbbr}<span class="margin-pill">clears 3 &amp; 7</span>${timingBadge(bettingWindowStatus(g.kickoff))}</div>
+    <div class="btc-line"><b>Tease:</b> ${fromStr} &rarr; ${toStr} on 6 points &mdash; ${w.reason}</div>
+    ${evaluationHtml(g)}
+    ${graphLinkHtml(g)}
+  </div>`;
+}
+
+// Combos used to be a hardcoded per-week list of game IDs. That broke the
+// first time the qualifying set changed under a data-source swap (DK spread
+// -> Caesars spread, 2026-09-08: browns-jaguars and bears-panthers dropped
+// out, jets-titans newly qualified) -- a static list has no way to notice
+// its own game IDs stopped qualifying. Built dynamically instead: every
+// currently-qualifying leg is eligible, paired lowest-total-first (lower
+// combined total = fewer points the tease has to clear), so this self-
+// corrects every rebuild with no manual per-week editing.
+function allPairs(ids) {
+  const out = [];
+  for (let i = 0; i < ids.length; i++) {
+    for (let j = i + 1; j < ids.length; j++) out.push([ids[i], ids[j]]);
+  }
+  return out;
+}
+
+// Greedily pairs adjacent-by-total legs (list already sorted ascending by
+// total) into non-overlapping pairs -- not a global optimum, just a simple,
+// stable "safest with next-safest" pairing that leaves at most one leg
+// unpaired on an odd count.
+function buildPrimaryCombos(sortedLegs) {
+  const used = new Set();
+  const pairs = [];
+  for (let i = 0; i < sortedLegs.length; i++) {
+    if (used.has(sortedLegs[i].id)) continue;
+    for (let j = i + 1; j < sortedLegs.length; j++) {
+      if (used.has(sortedLegs[j].id)) continue;
+      pairs.push([sortedLegs[i].id, sortedLegs[j].id]);
+      used.add(sortedLegs[i].id);
+      used.add(sortedLegs[j].id);
+      break;
+    }
+  }
+  return pairs;
+}
+
+function legFlag(w) {
+  if (w.margin === 7.5) {
+    return '<div class="leg-flag">-7.5 is the only favorite margin that qualifies at all &mdash; it sits between the -7 trap (doesn\'t clear the key number, see below) and the -8.5 fallacy (teases to -2.5, still doesn\'t clear the 3). Double check the line hasn\'t moved off -7.5 in either direction before betting this one.</div>';
+  }
+  return '';
+}
+
+function comboCard(idPair, byId) {
+  const gA = byId[idPair[0]], gB = byId[idPair[1]];
+  if (!gA || !gB || !gA.wong || !gB.wong) return '';
+  const wA = gA.wong, wB = gB.wong;
+  // Both legs share a calendar day by construction (renderCombos only
+  // pairs within one day-group), so either leg's own window status is the
+  // combo's status.
+  const status = bettingWindowStatus(gA.kickoff);
+  return `
+  <div class="combo-card">
+    <div class="combo-title">${gA.awayAbbr}/${gA.homeAbbr} + ${gB.awayAbbr}/${gB.homeAbbr}${timingBadge(status)}</div>
+    <div class="combo-legs">
+      <div class="combo-leg"><b class="num">${wA.teasedSide}</b><span style="color:var(--text-dim)">(from ${wA.teasedFrom > 0 ? '+' : ''}${wA.teasedFrom})</span></div>
+      ${legFlag(wA)}
+      <div class="combo-leg"><b class="num">${wB.teasedSide}</b><span style="color:var(--text-dim)">(from ${wB.teasedFrom > 0 ? '+' : ''}${wB.teasedFrom})</span></div>
+      ${legFlag(wB)}
+    </div>
+    <div class="combo-meta">Combined total: <b class="num">${(wA.total + wB.total).toFixed(1)}</b> pts (DraftKings) &middot; estimated combined win probability ~56&ndash;59% (each leg independently ~75&ndash;77% per the guide) &mdash; clears the 54.5% breakeven a -120 teaser needs, and is in range even at -130. Spreads: ${gA.awayAbbr}/${gA.homeAbbr} from ${gA.wongSpreadSourceLabel || 'unknown book'}, ${gB.awayAbbr}/${gB.homeAbbr} from ${gB.wongSpreadSourceLabel || 'unknown book'} &mdash; verify both at Caesars before betting.</div>
+    <div style="display:flex; gap:18px; flex-wrap:wrap;">
+      ${graphLinkHtml(gA).replace('Line movement chart', `${gA.awayAbbr}/${gA.homeAbbr} chart`)}
+      ${graphLinkHtml(gB).replace('Line movement chart', `${gB.awayAbbr}/${gB.homeAbbr} chart`)}
+    </div>
+  </div>`;
+}
+
+function renderCombos() {
+  const byId = {};
+  GAMES.forEach(g => { byId[g.id] = g; });
+  const qualifying = GAMES.filter(g => g.wong && g.wong.qualifies);
+  const el = document.getElementById('comboList');
+
+  if (!qualifying.length) {
+    el.innerHTML = '<p style="color:var(--text-dim)">No qualifying legs this week.</p>';
+    return;
+  }
+
+  const byDay = {};
+  qualifying.forEach(g => {
+    const day = etDateStr(new Date(g.kickoff));
+    (byDay[day] = byDay[day] || []).push(g);
+  });
+  const dayGroups = Object.keys(byDay).sort().map(day => ({
+    day,
+    legs: byDay[day].slice().sort((a, b) => a.wong.total - b.wong.total),
+  }));
+  const multiLegDays = dayGroups.filter(d => d.legs.length >= 2);
+  const soloDays = dayGroups.filter(d => d.legs.length === 1);
+
+  if (!multiLegDays.length) {
+    const soloNote = soloDays.length
+      ? ` ${soloDays.map(d => `${d.legs[0].awayAbbr}/${d.legs[0].homeAbbr} (${fmtShortDate(new Date(d.legs[0].kickoff))})`).join(', ')} qualif${soloDays.length === 1 ? 'ies' : 'y'} solo but ${soloDays.length === 1 ? 'has' : 'have'} no same-day partner to combo with. See "All qualifying legs" below.`
+      : '';
+    el.innerHTML = `<p style="color:var(--text-dim)">No two qualifying legs share a game day right now, so there's no 2-team combo to build -- Wong teasers are bet day-of-game, so both legs need to kick off the same calendar day.${soloNote}</p>`;
+    return;
+  }
+
+  let primaryHtml = '';
+  const altLines = [];
+  multiLegDays.forEach(group => {
+    const primaryPairs = buildPrimaryCombos(group.legs);
+    primaryHtml += primaryPairs.map(pair => comboCard(pair, byId)).join('');
+    const usedIds = new Set(primaryPairs.flat());
+
+    const dayLabel = fmtShortDate(new Date(group.legs[0].kickoff));
+    const altPairs = allPairs(group.legs.map(g => g.id))
+      .filter(([a, b]) => !primaryPairs.some(([pa, pb]) => pa === a && pb === b));
+    const altLabels = altPairs.map(([a, b]) => {
+      const gA = byId[a], gB = byId[b];
+      return gA && gB ? `${gA.awayAbbr}/${gA.homeAbbr} + ${gB.awayAbbr}/${gB.homeAbbr}` : '';
+    }).filter(Boolean);
+    if (altLabels.length) altLines.push(`${dayLabel} &mdash; other valid pairings: ${altLabels.join(' &middot; ')}.`);
+
+    const unpaired = group.legs.filter(g => !usedIds.has(g.id));
+    if (unpaired.length) {
+      altLines.push(`${dayLabel} &mdash; ${unpaired.map(g => `${g.awayAbbr}/${g.homeAbbr} (${g.wong.teasedSide}, total ${g.wong.total})`).join(', ')} also qualif${unpaired.length === 1 ? 'ies' : 'y'} solo that day and can swap in for any leg above from the same day.`);
+    }
+  });
+  if (soloDays.length) {
+    altLines.push(`No same-day partner to combo with: ${soloDays.map(d => `${d.legs[0].awayAbbr}/${d.legs[0].homeAbbr} (${fmtShortDate(new Date(d.legs[0].kickoff))})`).join(', ')} -- still shown solo under "All qualifying legs" below.`);
+  }
+
+  el.innerHTML = primaryHtml + (altLines.length ? `<p class="combo-alts">${altLines.join('<br>')}</p>` : '');
+}
+
+function renderTeasers() {
+  const qualifying = GAMES.filter(g => g.wong && g.wong.qualifies);
+  document.getElementById('teaserList').innerHTML = qualifying.map(teaserCard).join('') || '<p style="color:var(--text-dim)">No games qualify from this slate.</p>';
+
+  const trapGame = GAMES.find(g => g.id === 'saints-lions-2026-wk1');
+  if (trapGame) {
+    document.getElementById('teaserTrap').innerHTML = `
+      <h4>The trap: ${trapGame.awayAbbr} @ ${trapGame.homeAbbr}</h4>
+      <p>${trapGame.wongSpreadSideUsed || trapGame.curSpreadSide} (${trapGame.wongSpreadSourceLabel || 'DraftKings'}) looks tempting to tease &mdash; it's sitting right on a key number. But it's exactly the case the guide warns about: teasing a -7 favorite to -1 doesn't cross 7, it lands ON it. A 7-point win becomes a push at -1 instead of a win, so that key number gives you nothing &mdash; the tease only picks up whatever 3 alone is worth.</p>
+      <p>It also fails the totals rule on its own: total is ${trapGame.curTotalDK} (DraftKings &mdash; Caesars doesn't expose one), above the 47-point ceiling. Two independent reasons to leave this one alone.</p>
+      ${graphLinkHtml(trapGame)}
+    `;
+  }
+}
+
+// Wong legs that are qualifying AND actually on their game day right now
+// (bettingWindowStatus's 'ideal' state) -- not just qualifying on paper.
+function computeWongInWindow() {
+  return GAMES.filter(g => g.wong && g.wong.qualifies && bettingWindowStatus(g.kickoff).state === 'ideal');
+}
+
+// Earliest qualifying-but-not-yet-open leg, so an empty Bet Now tab can still
+// say something useful ("check back on [date]") instead of just "nothing".
+function nextWongOpen() {
+  const upcoming = GAMES
+    .filter(g => g.wong && g.wong.qualifies)
+    .map(g => ({ g, status: bettingWindowStatus(g.kickoff) }))
+    .filter(x => x.status.state === 'early');
+  if (!upcoming.length) return null;
+  upcoming.sort((a, b) => a.status.opensAt - b.status.opensAt);
+  return upcoming[0];
+}
+
+// ---------------------------------------------------------------------------
+// Market timing / CLV layer (added 2026-09-24 per Michael).
+// Rule of thumb: public money pushes favorites and overs UP through the week,
+// so the best number on a favorite/over is usually early; underdogs/unders
+// usually get BETTER late. So:
+//   favorite spread, ML favorite, game Over, prop Over  -> BET EARLY
+//   underdog spread, ML dog, game Under, prop Under      -> WAIT, bet late
+// "Late window" = within TIMING_LATE_WINDOW_H of kickoff. A pick only
+// qualifies at confidence >= TIMING_MIN_CONF. Movement vs the opener is the
+// CLV read: an early pick whose number already moved against us is flagged
+// "chasing"; a late pick whose number improved while we waited shows the gain.
+// Pure derivation at page load from data already in GAMES/PROPS -- no new
+// write path. Exception: a prop with an "against" Health/Injury factor holds
+// for the injury report even if it's an Over (news beats the calendar).
+// ---------------------------------------------------------------------------
+const TIMING_MIN_CONF = 5;
+const TIMING_LATE_WINDOW_H = 12;
+const TIMING_CHASE_PTS = 1;      // spread/total pts moved against us from open
+const TIMING_PROP_CHASE = 0.5;   // prop line units moved against us from open
+// Bet Now threshold (added 2026-09-24 per Michael -- the open-window list was
+// too long). A timing pick is promoted to the top "Bet now" list only if its
+// window is open, it has NOT already moved past the number, and either:
+//   - it is a Best Bet (lean flagged best_bet, or matches a Best Bets pick)
+//     at >= TIMING_BEST_MIN_CONF, or
+//   - it is a top-conviction play at >= TIMING_TOP_CONF.
+// Capped at TIMING_BET_NOW_MAX, Best Bets first, then confidence. Everything
+// else in an open window drops to a collapsed "Also in window" list.
+const TIMING_TOP_CONF = 7;
+const TIMING_BEST_MIN_CONF = 6;
+const TIMING_BET_NOW_MAX = 5;
+
+function parseLeanPick(g, lean) {
+  const pick = (lean.pick || '').trim();
+  if (/^no (play|lean)/i.test(pick)) return null;
+  let m = pick.match(/^(Over|Under)\s*(\d+(?:\.\d)?)/i);
+  if (m) return { kind: 'total', side: m[1].toLowerCase(), num: parseFloat(m[2]) };
+  m = pick.match(/^([A-Z]{2,3})\s+([+-]\d+(?:\.\d)?|PK)/);
+  if (m) {
+    const num = m[2] === 'PK' ? 0 : parseFloat(m[2]);
+    if (m[1] !== g.homeAbbr && m[1] !== g.awayAbbr) return null;
+    return { kind: 'spread', team: m[1], num, fav: num < 0 };
+  }
+  m = pick.match(/^([A-Z]{2,3})\s+ML/i);
+  if (m && lean.market === 'moneyline') {
+    const favHome = g.curSpreadHomeRel !== null && g.curSpreadHomeRel < 0;
+    return { kind: 'ml', team: m[1], fav: (m[1] === g.homeAbbr) === favHome };
+  }
+  return null;
+}
+
+function lateWindowOpensAt(g) {
+  return new Date(new Date(g.kickoff).getTime() - TIMING_LATE_WINDOW_H * 3600e3);
+}
+
+function timingStatus(early, g, chaseAmt, hold) {
+  const now = new Date();
+  const ko = new Date(g.kickoff);
+  if (now >= ko) return { state: 'past', label: 'Kicked off', bucket: null };
+  if (hold) return { state: 'hold', label: 'Hold: injury news', bucket: 'wait', opensLabel: 'after the injury report' };
+  if (early) {
+    if (chaseAmt !== null && chaseAmt >= TIMING_CHASE_PTS) return { state: 'late', label: 'Bet early, already moved', bucket: 'now' };
+    return { state: 'ideal', label: 'Bet early, now', bucket: 'now' };
+  }
+  const opens = lateWindowOpensAt(g);
+  if (now >= opens) return { state: 'ideal', label: 'Bet late, window open', bucket: 'now' };
+  return { state: 'early', label: `Wait: bet game day (${ko.toLocaleDateString('en-US', { weekday: 'short' })})`, bucket: 'wait' };
+}
+
+function computeTimingPicks() {
+  const out = [];
+  GAMES.forEach(g => {
+    const ev = g.evaluation;
+    (ev && ev.leans ? ev.leans : []).forEach(l => {
+      if ((l.confidence || 0) < TIMING_MIN_CONF) return;
+      const p = parseLeanPick(g, l);
+      if (!p) return;
+      let early, clv = null, curText = '', openText = '';
+      if (p.kind === 'total') {
+        early = p.side === 'over';
+        const d = g.totalDelta;
+        // positive = total went up: bad for an over, good for an under
+        if (d !== null && d !== undefined) clv = early ? -d : d;
+        curText = g.curTotalDK !== null && g.curTotalDK !== undefined ? `${p.side === 'over' ? 'Over' : 'Under'} ${fmtLineNum(g.curTotalDK)}` : 'n/a';
+        openText = g.openTotal !== null && g.openTotal !== undefined ? fmtLineNum(g.openTotal) : 'n/a';
+      } else {
+        early = p.fav;
+        const d = g.spreadDelta;
+        // spreadDelta is home-relative (cur - open); convert to the picked side.
+        // For any side, a positive side-delta = more points = better for that side.
+        if (d !== null && d !== undefined) clv = p.team === g.homeAbbr ? d : -d;
+        curText = spreadStrForSide(g, p.team).text;
+        openText = g.openSpreadSide || 'n/a';
+      }
+      const chase = clv !== null && clv < 0 ? -clv : null;
+      const st = timingStatus(early, g, chase, false);
+      if (!st.bucket) return;
+      const bbTeams = (computeBestBets() || []).filter(r => r.g.id === g.id).map(r => r.a.pickTeamAbbr);
+      const isBest = !!l.best_bet || (p.kind === 'spread' && bbTeams.includes(p.team));
+      out.push({ g, type: 'line', market: l.market, pick: l.pick, conf: l.confidence, reasoning: l.reasoning,
+                 early, clv, curText, openText, st, isBest, chasing: chase !== null && chase >= TIMING_CHASE_PTS });
+    });
+    const props = g.props && g.props.picks ? g.props.picks : [];
+    props.forEach(pp => {
+      if ((pp.confidence || 0) < TIMING_MIN_CONF) return;
+      const early = pp.lean === 'over';
+      const d = (pp.current_line ?? pp.opening_line) - pp.opening_line;
+      const clv = early ? -d : d;
+      const chase = clv < 0 ? -clv / TIMING_PROP_CHASE * TIMING_CHASE_PTS : null;
+      const hold = (pp.factors || []).some(f => f.dir === 'against' && /health|injur/i.test(f.label));
+      const st = timingStatus(early, g, chase, hold);
+      if (!st.bucket) return;
+      const mk = PROP_MARKET_LABEL[pp.market] || pp.market;
+      out.push({ g, type: 'prop', market: mk, pick: `${pp.player} ${pp.lean === 'over' ? 'Over' : 'Under'} ${pp.current_line ?? pp.opening_line} ${mk}`,
+                 conf: pp.confidence, reasoning: pp.reasoning, early, clv,
+                 curText: `${pp.current_line ?? pp.opening_line} (${pp.book})`, openText: `${pp.opening_line}`, st,
+                 isBest: false, chasing: chase !== null && chase >= TIMING_CHASE_PTS });
+    });
+  });
+  out.sort((a, b) => b.conf - a.conf || new Date(a.g.kickoff) - new Date(b.g.kickoff));
+  return out;
+}
+
+function timingQualifies(t) {
+  if (t.st.bucket !== 'now' || t.chasing) return false;
+  return t.isBest ? t.conf >= TIMING_BEST_MIN_CONF : t.conf >= TIMING_TOP_CONF;
+}
+
+function splitTimingPicks() {
+  const all = computeTimingPicks();
+  const top = all.filter(timingQualifies)
+    .sort((a, b) => (b.isBest - a.isBest) || (b.conf - a.conf) || (new Date(a.g.kickoff) - new Date(b.g.kickoff)))
+    .slice(0, TIMING_BET_NOW_MAX);
+  const topSet = new Set(top);
+  return {
+    top,
+    alsoOpen: all.filter(t => t.st.bucket === 'now' && !topSet.has(t)),
+    wait: all.filter(t => t.st.bucket === 'wait'),
+  };
+}
+
+function clvText(t) {
+  if (t.clv === null || t.clv === undefined || Math.abs(t.clv) < 0.05) return '<span>No move since open</span>';
+  const n = fmtLineNum(Math.abs(t.clv));
+  return t.clv > 0
+    ? `<span class="clv-good">${n} better than open</span>`
+    : `<span class="clv-bad">${n} worse than open</span>`;
+}
+
+function timingCard(t) {
+  return `
+  <div class="arb-hit${t.st.bucket === 'now' ? ' gold' : ''}">
+    <div class="tmatch">${t.pick}
+      ${t.isBest ? '<span class="badge goldbet">Best bet</span>' : ''}
+      <span class="timing-badge ${t.st.state}">${t.st.label}</span>
+    </div>
+    <div class="venue">${t.g.awayAbbr}@${t.g.homeAbbr} &middot; ${fmtKickoff(t.g.kickoff)} &middot; ${t.type === 'prop' ? 'Prop' : t.market} &middot; ${t.conf}/10 &middot; ${t.early ? 'favorite/over side: bet early' : 'dog/under side: bet late'}</div>
+    <div class="clv-row"><span>Open <b>${t.openText}</b></span><span>Now <b>${t.curText}</b></span>${clvText(t)}</div>
+    ${t.reasoning ? `<div class="arb-note">${t.reasoning}</div>` : ''}
+  </div>`;
+}
+
+function renderTiming() {
+  const el = document.getElementById('betnowTiming');
+  const { top, alsoOpen, wait } = splitTimingPicks();
+  let html = `<div class="betnow-group">
+      <div class="betnow-group-title jumbo-title">Bet now<span class="n-pill">${top.length}</span></div>
+      <p class="timing-rule">Best Bets at ${TIMING_BEST_MIN_CONF}+/10 and top plays at ${TIMING_TOP_CONF}+/10, max ${TIMING_BET_NOW_MAX}, only while the timing window is open and the number hasn't moved past you. <b>Favorites and overs:</b> bet early. <b>Underdogs and unders:</b> bet in the last ${TIMING_LATE_WINDOW_H}h before kickoff.</p>
+      ${top.length ? top.map(timingCard).join('') : '<div class="betnow-empty">No Best Bet or 7+/10 play is in its timing window right now. Check the lists below.</div>'}
+    </div>`;
+  if (alsoOpen.length) {
+    html += `<details class="gameeval betnow-group">
+      <summary>Also in window: lower confidence or line already moved (${alsoOpen.length})</summary>
+      <div class="gameeval-body">${alsoOpen.map(timingCard).join('')}</div>
+    </details>`;
+  }
+  if (wait.length) {
+    html += `<details class="gameeval betnow-group">
+      <summary>Wait list: bet late (${wait.length})</summary>
+      <div class="gameeval-body">${wait.map(timingCard).join('')}</div>
+    </details>`;
+  }
+  el.innerHTML = html;
+}
+
+// Timing chip on each prop card (Props tab), same rules as above.
+function propTimingBadge(p) {
+  const g = GAMES.find(x => x.id === p.gameId);
+  if (!g) return '';
+  const early = p.lean === 'over';
+  const d = (p.current_line ?? p.opening_line) - p.opening_line;
+  const clv = early ? -d : d;
+  const chase = clv < 0 ? -clv / TIMING_PROP_CHASE * TIMING_CHASE_PTS : null;
+  const hold = (p.factors || []).some(f => f.dir === 'against' && /health|injur/i.test(f.label));
+  const st = timingStatus(early, g, chase, hold);
+  return `<span class="timing-badge ${st.state}">${st.label}</span>`;
+}
+
+function renderBetNow() {
+  const evHits = computeEvHits();
+  const arbHits = computeArbHits();
+  const wongNow = computeWongInWindow();
+  const timingTop = splitTimingPicks().top;
+  const hardTotal = evHits.length + arbHits.length + wongNow.length;
+  const total = hardTotal + timingTop.length;
+
+  let nextLine = '';
+  if (total === 0) {
+    const next = nextWongOpen();
+    nextLine = next
+      ? `<div class="next-up">Next check: the Wong window opens <b>${fmtShortDate(next.status.opensAt)}</b> for <b>${next.g.awayAbbr}/${next.g.homeAbbr}</b> (${next.g.wong.teasedSide}). +EV and arbitrage can appear any time a book's price moves &mdash; recheck after each scheduled data refresh.</div>`
+      : `<div class="next-up">+EV and arbitrage can appear any time a book's price moves &mdash; recheck after each scheduled data refresh.</div>`;
+  }
+  document.getElementById('betnowHero').innerHTML = `
+    <div class="count num">${total}</div>
+    <div class="count-label">bet${total === 1 ? '' : 's'} that clear${total === 1 ? 's' : ''} the bar right now</div>
+    ${nextLine}
+  `;
+
+  const body = document.getElementById('betnowBody');
+  if (hardTotal === 0 && timingTop.length) {
+    // Timing "Bet now" list below already has plays -- skip the big empty state.
+    body.innerHTML = '';
+  } else if (hardTotal === 0) {
+    body.innerHTML = `<div class="betnow-empty"><div class="big-check">&#10003;</div>Nothing clears the hard bar right now (a real +EV price, live arb, or Wong teaser in its window) &mdash; expected this far from kickoff, not a bug. <b>Best Bets</b> and <b>Bets to consider</b> below still surface the model's own reads.</div>`;
+  } else {
+    let html = '';
+    if (evHits.length) {
+      html += `<div class="betnow-group"><div class="betnow-group-title">Positive EV<span class="n-pill">${evHits.length}</span></div>${evHits.map(h => evHitCard(h, true)).join('')}</div>`;
+    }
+    if (arbHits.length) {
+      html += `<div class="betnow-group"><div class="betnow-group-title">Arbitrage<span class="n-pill">${arbHits.length}</span></div>${arbHits.map(a => arbHitCard(a, true)).join('')}</div>`;
+    }
+    if (wongNow.length) {
+      html += `<div class="betnow-group"><div class="betnow-group-title">Wong teasers &mdash; in window<span class="n-pill">${wongNow.length}</span></div>${wongNow.map(teaserCard).join('')}</div>`;
+    }
+    body.innerHTML = html;
+  }
+
+  // Independent of the hard EV/arb/Wong bar above -- renders (or shows its
+  // own empty state) regardless of whether `total` was zero.
+  renderTiming();
+  renderBestBets();
+  renderBetsToConsider();
+  renderWagerTalkAngles();
+}
+
+// ---- Results tab -----------------------------------------------------
+// Home-relative signed spread -> display string, same convention as the
+// Lines tab's spreadStrForSide but built from raw team abbreviations
+// rather than a GAMES record (RESULTS entries carry their own).
+function fmtHomeRelSpread(hr, awayAbbr, homeAbbr) {
+  if (hr === null || hr === undefined) return null;
+  if (Math.abs(hr) < 0.05) return 'PK';
+  const val = Math.abs(hr);
+  const valStr = Number.isInteger(val) ? `${val}` : val.toFixed(1);
+  return hr < 0 ? `${homeAbbr} -${valStr}` : `${awayAbbr} -${valStr}`;
+}
+
+function signed(n, suffix) {
+  if (n === null || n === undefined) return 'n/a';
+  return `(${n > 0 ? '+' : ''}${n} ${suffix})`;
+}
+
+function gradeBadge(label, cls) {
+  return `<span class="grade-badge ${cls}">${label}</span>`;
+}
+
+// Total doesn't get a real pick-correctness grade until MIN_GAMES_SEEN_FOR_LEAN
+// games are logged (simulate_game.py suppresses totalLean before that --
+// true for most Week 1 games), so simTotalPickCorrect is null far more often
+// than not this early in a season. Rather than show no verdict at all on the
+// total row, fall back to a magnitude read on the projection itself once
+// there's no real pick to grade -- CLOSE/OFF/WAY OFF are a documented
+// judgment call (within a field goal / within a possession / a real miss),
+// not a measured threshold, and that distinction matters: this badge means
+// something different from a genuine correct/incorrect pick grade, so it
+// uses the same three badge colors but different wording on purpose.
+// Returns {label, cls} rather than pre-rendered HTML so callers can reuse
+// `cls` both for the badge itself and for tinting that row's border-bottom
+// (see .result-col .rc-line.rc-hit/.rc-miss/.rc-push) -- null means there's
+// nothing to say at all (no pick AND no error figure to fall back on).
+function totalGradeInfo(pickCorrect, errorPts) {
+  if (pickCorrect === true) return { label: 'CORRECT', cls: 'hit' };
+  if (pickCorrect === false) return { label: 'MISSED', cls: 'miss' };
+  if (errorPts === null || errorPts === undefined) return null;
+  const abs = Math.abs(errorPts);
+  if (abs <= 3) return { label: 'CLOSE', cls: 'hit' };
+  if (abs <= 10) return { label: 'OFF', cls: 'push' };
+  return { label: 'WAY OFF', cls: 'miss' };
+}
+
+function rcLineClass(cls) {
+  return cls ? ` rc-${cls}` : '';
+}
+
+// Shared between the per-game card's Spread/Winner rows AND the Results
+// tab's top-of-tab Spread/Moneyline record cards -- both must grade off
+// the exact same signal, or the two ends of the same tab silently
+// disagree. (Caught live 2026-09-10: an earlier version of the summary
+// cards graded Spread/Total off the formal, lean-confidence-gated pick
+// fields -- simAtsPickCorrect/simTotalPickCorrect -- which stay null until
+// MIN_GAMES_SEEN_FOR_LEAN games are logged, true for nearly every Week 1
+// game. That made the top card read "no picks yet" on a week where the
+// per-game card right below it was already showing a real CORRECT badge
+// for that same game's Spread row -- Michael caught it: "your spread
+// record is 1-0 because you chose SEA -2.7 when the game finished -3."
+// The fix: both views now grade off the model's own projection -- did
+// Elo's favored side actually win -- since that's the only spread signal
+// this model actually produces on its own, independent of whether a
+// formal betting lean ever cleared its confidence bar.)
+function gradeSpreadWinner(g) {
+  return g.simStraightUpCorrect === true ? 'hit' : (g.simStraightUpCorrect === false ? 'miss' : '');
+}
+
+function resultCard(r) {
+  const a = r.actual, g = r.grading;
+  const homeWon = a.winner === 'home', awayWon = a.winner === 'away';
+  const scoreLine = `<span class="${homeWon ? 'win' : ''}">${r.homeAbbr} ${a.homeScore}</span> &ndash; <span class="${awayWon ? 'win' : ''}">${r.awayAbbr} ${a.awayScore}</span>${a.winner === 'tie' ? ' (tie)' : ''}`;
+
+  const closingSpreadStr = fmtHomeRelSpread(r.closingLine.spreadHomeRel, r.awayAbbr, r.homeAbbr) || 'n/a';
+  const atsBadge = g.atsResult === 'push' ? gradeBadge('PUSH', 'push')
+    : g.atsResult === 'home_covered' ? gradeBadge(`${r.homeAbbr} COVERED`, 'hit')
+    : g.atsResult === 'away_covered' ? gradeBadge(`${r.awayAbbr} COVERED`, 'hit')
+    : '';
+  const totalBadge = g.totalResult === 'push' ? gradeBadge('PUSH', 'push')
+    : g.totalResult ? gradeBadge(g.totalResult.toUpperCase(), 'hit') : '';
+
+  let simBlock;
+  if (r.pregameSim) {
+    const s = r.pregameSim;
+    const suCls = gradeSpreadWinner(g);
+    const suBadge = suCls ? gradeBadge(suCls === 'hit' ? 'CORRECT' : 'MISSED', suCls) : '';
+    const totalInfo = totalGradeInfo(g.simTotalPickCorrect, g.simTotalErrorPts);
+    const totalBadgeSim = totalInfo ? gradeBadge(totalInfo.label, totalInfo.cls) : '';
+    // eloMarginHome is "points home favored by" (positive = home) -- flip
+    // sign to this project's home-relative spread convention before
+    // formatting, same conversion modelSpreadStr() does on the Lines tab.
+    // actualMarginStr reads the real final margin through the exact same
+    // formatter (negate marginHome the same way) so "projected" and
+    // "actual" print as two directly comparable "TEAM -N" strings, side by
+    // side, instead of forcing a reader to do that translation themselves.
+    const projSpreadStr = fmtHomeRelSpread(-s.eloMarginHome, r.awayAbbr, r.homeAbbr) || 'n/a';
+    const actualSpreadStr = fmtHomeRelSpread(-a.marginHome, r.awayAbbr, r.homeAbbr) || 'n/a';
+    const winnerAbbr = a.winner === 'home' ? r.homeAbbr : (a.winner === 'away' ? r.awayAbbr : 'Tie');
+    // Each row's border-bottom is tinted by that row's own grade (rcLineClass)
+    // -- these are real graded predictions (unlike the closing-line column
+    // below, which just states what happened), so color-coding them is a
+    // legitimate correct/incorrect signal, not decoration.
+    simBlock = `
+      <div class="result-col">
+        <div class="rc-label">Pregame simulation &middot; ${(s.n || 10000).toLocaleString()} runs, ${s.gamesSeen || 0} games seen</div>
+        <div class="rc-line${rcLineClass(suCls)}"><span class="rc-metric">Spread</span> proj <b class="num">${projSpreadStr}</b><span class="rc-arrow">&rarr;</span>actual <b class="num">${actualSpreadStr}</b> ${suBadge} <span class="rc-err">${signed(g.simMarginErrorPts, 'pts')}</span></div>
+        <div class="rc-line${rcLineClass(totalInfo ? totalInfo.cls : '')}"><span class="rc-metric">Total</span> proj <b class="num">${s.projTotal}</b><span class="rc-arrow">&rarr;</span>actual <b class="num">${a.total}</b> ${totalBadgeSim} <span class="rc-err">${signed(g.simTotalErrorPts, 'pts')}</span></div>
+        <div class="rc-line${rcLineClass(suCls)}"><span class="rc-metric">Winner</span> ${r.homeAbbr} ${s.homeWinProbElo}% pregame<span class="rc-arrow">&rarr;</span>actual <b class="num">${winnerAbbr}</b> ${suBadge}</div>
+      </div>`;
+  } else {
+    simBlock = `<div class="result-col"><div class="rc-label">Pregame simulation</div><div class="no-sim-note">No simulation was logged for this game before kickoff -- score and closing-line grade only.</div></div>`;
+  }
+
+  return `
+  <div class="result-card">
+    <div class="card-top">
+      <div>
+        <div class="matchup">${r.awayAbbr}<span class="at">@</span>${r.homeAbbr}</div>
+        <div class="result-score num">${scoreLine}</div>
+      </div>
+      <div class="kickoff">${fmtKickoff(r.kickoff)}</div>
+    </div>
+    <div class="result-grid">
+      <div class="result-col">
+        <div class="rc-label">Closing line${r.closingLineIsFallback ? ' (no pre-kickoff snapshot found -- using last available)' : ''}</div>
+        <div class="rc-line">Spread: <b class="num">${closingSpreadStr}</b> ${atsBadge}</div>
+        <div class="rc-line">Total: <b class="num">${r.closingLine.total != null ? r.closingLine.total : 'n/a'}</b> &mdash; actual <b class="num">${a.total}</b> ${totalBadge}</div>
+        <div class="rc-line">Market error: <b class="num">${signed(g.marketMarginErrorPts, 'pts margin')}</b> &middot; <b class="num">${signed(g.marketTotalErrorPts, 'pts total')}</b></div>
+      </div>
+      ${simBlock}
+    </div>
+    ${graphLinkHtml(GAMES.find(x => x.id === r.gameId) || {})}
+  </div>`;
+}
+
+function renderResults() {
+  const sel = document.getElementById('resultsWeekSelect');
+  const weeks = [...new Set(RESULTS.map(r => r.week).filter(Boolean))];
+  weeks.sort((a, b) => {
+    const na = parseInt((a.match(/\d+/) || [0])[0], 10);
+    const nb = parseInt((b.match(/\d+/) || [0])[0], 10);
+    return na - nb;
+  });
+
+  if (!weeks.length) {
+    document.getElementById('resultsSummary').innerHTML = '';
+    document.getElementById('resultsCards').innerHTML = '<p style="color:var(--text-dim)">No completed games logged yet &mdash; results appear here once a game is final and its score has been captured.</p>';
+    sel.innerHTML = '<option value="">No weeks yet</option>';
+    sel.disabled = true;
+    return;
+  }
+  sel.disabled = false;
+  const current = sel.value && weeks.includes(sel.value) ? sel.value : weeks[weeks.length - 1];
+  sel.innerHTML = weeks.map(w => `<option value="${w}"${w === current ? ' selected' : ''}>${w}</option>`).join('');
+  renderResultsWeek(current);
+}
+
+function avgAbs(values) {
+  const v = values.filter(x => x !== null && x !== undefined);
+  return v.length ? v.reduce((s, x) => s + Math.abs(x), 0) / v.length : null;
+}
+
+function recordStr(wins, losses) {
+  return `${wins}-${losses}`;
+}
+
+function dualStatCard(primaryVal, primaryLabel, secondaryVal, secondaryLabel) {
+  return `<div class="stat stat-dual">
+    <div class="sd-primary"><div class="n num">${primaryVal}</div><div class="l">${primaryLabel}</div></div>
+    <div class="sd-secondary"><div class="n num">${secondaryVal}</div><div class="l">${secondaryLabel}</div></div>
+  </div>`;
+}
+
+function renderResultsWeek(week) {
+  const games = RESULTS.filter(r => r.week === week).sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff));
+  const withSim = games.filter(g => g.pregameSim);
+
+  // Moneyline (straight-up) is the one pick that's ALWAYS graded once a
+  // sim exists for a game -- simStraightUpCorrect isn't gated behind
+  // MIN_GAMES_SEEN_FOR_LEAN the way spreadLean/totalLean are (see
+  // capture_result.py / simulate_game.py). Its error figure is a
+  // win-probability miss (percentage points), not a points figure --
+  // a deliberately different metric from Spread/Total's point-based error.
+  const mlWins = withSim.filter(g => g.grading.simStraightUpCorrect === true).length;
+  const mlLosses = withSim.filter(g => g.grading.simStraightUpCorrect === false).length;
+  const avgProbMiss = avgAbs(withSim.map(g => g.grading.winProbOfActualWinner)
+    .filter(v => v !== null && v !== undefined).map(v => 100 - v));
+
+  // Spread record uses the exact same signal as the per-game card's Spread
+  // row (gradeSpreadWinner -- see its own comment for why: the formal,
+  // lean-confidence-gated pick field stays null almost all of Week 1, and
+  // grading off it made this card disagree with the card right below it).
+  const spreadGrades = withSim.map(g => gradeSpreadWinner(g.grading));
+  const spreadWins = spreadGrades.filter(c => c === 'hit').length;
+  const spreadLosses = spreadGrades.filter(c => c === 'miss').length;
+  const avgMarginErr = avgAbs(withSim.map(g => g.grading.simMarginErrorPts));
+
+  // Total record uses the same CLOSE/OFF/WAY OFF fallback the per-game
+  // card's Total row falls back to once there's no formal totalLean pick
+  // to grade (totalGradeInfo) -- WAY OFF counts as a loss, CLOSE (or a
+  // genuine correct pick) counts as a win, OFF is a push (neither), same
+  // as a real total bet landing outside either side's number.
+  const totalGrades = withSim.map(g => totalGradeInfo(g.grading.simTotalPickCorrect, g.grading.simTotalErrorPts));
+  const totWins = totalGrades.filter(t => t && t.cls === 'hit').length;
+  const totLosses = totalGrades.filter(t => t && t.cls === 'miss').length;
+  const avgTotalErr = avgAbs(withSim.map(g => g.grading.simTotalErrorPts));
+
+  document.getElementById('resultsSummary').innerHTML = `
+    <div class="stat"><div class="n num">${games.length}</div><div class="l">Games completed</div></div>
+    ${dualStatCard(
+      recordStr(mlWins, mlLosses), 'Moneyline record',
+      avgProbMiss !== null ? `${avgProbMiss.toFixed(1)}%` : 'n/a', 'Avg. win-prob miss'
+    )}
+    ${dualStatCard(
+      (spreadWins + spreadLosses) ? recordStr(spreadWins, spreadLosses) : 'n/a',
+      (spreadWins + spreadLosses) ? 'Spread record' : 'Spread record (no picks yet)',
+      avgMarginErr !== null ? `${avgMarginErr.toFixed(1)} pts` : 'n/a', 'Avg. margin of error'
+    )}
+    ${dualStatCard(
+      (totWins + totLosses) ? recordStr(totWins, totLosses) : 'n/a',
+      (totWins + totLosses) ? 'Total record' : 'Total record (no picks yet)',
+      avgTotalErr !== null ? `${avgTotalErr.toFixed(1)} pts` : 'n/a', 'Avg. margin of error'
+    )}
+  `;
+  document.getElementById('resultsCards').innerHTML = games.map(resultCard).join('') || '<p style="color:var(--text-dim)">No completed games logged for this week yet.</p>';
+}
+
+document.getElementById('resultsWeekSelect').addEventListener('change', (e) => renderResultsWeek(e.target.value));
+
+// -- Power Rankings tab --------------------------------------------------
+// The manual drag order lives in this browser's localStorage once the
+// reader ever drags a row; RANKINGS.order (built server-side, see
+// build_dashboard.py) is only the seed for a brand-new browser, or the
+// fallback if localStorage is ever cleared. The win/loss streak text is
+// NEVER stored client-side -- it's recomputed from real results on every
+// rebuild and simply passed through here, same "one write path per kind
+// of derived data" rule as everything else on this page.
+const RANK_STORAGE_KEY = 'lineWatchPowerRankingsOrder_v1';
+
+function normTeam(name) {
+  if (!name) return name;
+  const i = name.indexOf(' (');
+  return i === -1 ? name : name.slice(0, i);
+}
+
+function getRankOrder() {
+  const fallback = (RANKINGS && RANKINGS.order) || [];
+  try {
+    const saved = localStorage.getItem(RANK_STORAGE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length) {
+        // Guard against a stale saved order missing a team the current
+        // seed has (or naming one that no longer exists) -- never drop a
+        // real team off the list just because localStorage predates it.
+        const known = new Set(parsed);
+        const merged = parsed.filter(t => fallback.includes(t));
+        fallback.forEach(t => { if (!known.has(t)) merged.push(t); });
+        if (merged.length) return merged;
+      }
+    }
+  } catch (e) { /* localStorage unavailable -- fall through to the seed */ }
+  return fallback.slice();
+}
+
+function saveRankOrder(order) {
+  try { localStorage.setItem(RANK_STORAGE_KEY, JSON.stringify(order)); } catch (e) { /* best-effort */ }
+  const flash = document.getElementById('rankSavedFlash');
+  if (flash) {
+    flash.style.opacity = '1';
+    clearTimeout(saveRankOrder._t);
+    saveRankOrder._t = setTimeout(() => { flash.style.opacity = '0'; }, 1200);
+  }
+}
+
+function streakHtml(team) {
+  const s = (RANKINGS && RANKINGS.streaks) ? RANKINGS.streaks[team] : null;
+  if (!s || !s.label) return '<span class="rank-streak">No 2026 games logged yet</span>';
+  const cls = s.result === 'W' ? 'w' : (s.result === 'L' ? 'l' : 't');
+  return `<span class="rank-streak"><span class="${cls}">${s.label}</span> &mdash; ${s.text}</span>`;
+}
+
+// "Market" badge -- how THIS TOOL'S OWN Elo model (team_ratings.json,
+// updated by every real result via log_result.py) would currently rank
+// this team, compared against your manual drag order, recomputed fresh
+// every build from marketDelta (built server-side, see build_dashboard.py)
+// so it's never stale even though your manual order itself never moves on
+// its own. Deliberately reuses "Market" as the label per how this was
+// asked for, but this is NOT the Vegas betting market or any third-party
+// power ranking -- it's this project's own Elo, which happens to already
+// double as a useful "does the model agree with me" reference point. A
+// positive number means the model currently rates that team HIGHER
+// (closer to #1) than you have them; negative means lower.
+function marketBadgeHtml(team, i) {
+  const delta = (RANKINGS && RANKINGS.marketDelta) ? RANKINGS.marketDelta[team] : null;
+  if (delta === null || delta === undefined) return '';
+  if (delta === 0) return `<span class="rank-market even" title="Elo model has ${team} at the same spot, #${i + 1}">Market even</span>`;
+  const sign = delta > 0 ? '+' : '';
+  const marketRank = (RANKINGS.marketRank && RANKINGS.marketRank[team]) || null;
+  const title = marketRank
+    ? `Elo model currently has ${team} at #${marketRank}, you have them at #${i + 1}`
+    : '';
+  return `<span class="rank-market" title="${title}">Market ${sign}${delta}</span>`;
+}
+
+let rankDragSrc = null;
+
+function renderRankings() {
+  const list = document.getElementById('rankingsList');
+  if (!list) return;
+  const order = getRankOrder();
+  list.innerHTML = order.map((team, i) => `
+    <div class="rank-row" draggable="true" data-team="${team}">
+      <span class="rank-num num">${i + 1}</span>
+      <span class="rank-handle">&#9776;</span>
+      <span class="rank-team">${team}</span>
+      ${marketBadgeHtml(team, i)}
+      ${streakHtml(team)}
+    </div>`).join('');
+
+  list.querySelectorAll('.rank-row').forEach(row => {
+    row.addEventListener('dragstart', (e) => {
+      rankDragSrc = row;
+      row.classList.add('dragging');
+      if (e.dataTransfer) e.dataTransfer.effectAllowed = 'move';
+    });
+    row.addEventListener('dragend', () => {
+      row.classList.remove('dragging');
+      list.querySelectorAll('.rank-row').forEach(r => r.classList.remove('drag-over'));
+    });
+    row.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (row !== rankDragSrc) row.classList.add('drag-over');
+    });
+    row.addEventListener('dragleave', () => row.classList.remove('drag-over'));
+    row.addEventListener('drop', (e) => {
+      e.preventDefault();
+      row.classList.remove('drag-over');
+      if (!rankDragSrc || row === rankDragSrc) return;
+      const rows = Array.from(list.children);
+      const srcIdx = rows.indexOf(rankDragSrc);
+      const tgtIdx = rows.indexOf(row);
+      if (srcIdx < tgtIdx) row.after(rankDragSrc); else row.before(rankDragSrc);
+      const newOrder = Array.from(list.children).map(r => r.dataset.team);
+      saveRankOrder(newOrder);
+      renderRankings();
+      const activeFilter = document.querySelector('#controls .chip.active');
+      render(activeFilter ? activeFilter.dataset.filter : 'all');
+    });
+  });
+}
+
+function rankRefHtml(g) {
+  const order = getRankOrder();
+  if (!order.length) return '';
+  const home = normTeam(g.home), away = normTeam(g.away);
+  const homeIdx = order.indexOf(home), awayIdx = order.indexOf(away);
+  if (homeIdx === -1 || awayIdx === -1) return '';
+  const homeRank = homeIdx + 1, awayRank = awayIdx + 1;
+  let yourFavAbbr = null;
+  if (homeRank < awayRank) yourFavAbbr = g.homeAbbr;
+  else if (awayRank < homeRank) yourFavAbbr = g.awayAbbr;
+
+  let agreeHtml = '';
+  const sim = g.sim;
+  if (yourFavAbbr && sim && sim.eloMarginHome != null && sim.gamesSeen > 0) {
+    let simFavAbbr = null;
+    if (sim.eloMarginHome > 0) simFavAbbr = g.homeAbbr;
+    else if (sim.eloMarginHome < 0) simFavAbbr = g.awayAbbr;
+    if (simFavAbbr) {
+      agreeHtml = simFavAbbr === yourFavAbbr
+        ? '<span class="agree">agrees with sim</span>'
+        : '<span class="disagree">disagrees with sim</span>';
+    }
+  }
+
+  const favNote = yourFavAbbr ? ` &mdash; you favor ${yourFavAbbr}` : ' &mdash; you have them even';
+  return `<div class="rankref">Your rank: <b>${g.awayAbbr} #${awayRank}</b> vs <b>${g.homeAbbr} #${homeRank}</b>${favNote} ${agreeHtml}</div>`;
+}
+
+const rankCopyBtn = document.getElementById('rankCopyBtn');
+if (rankCopyBtn) {
+  rankCopyBtn.addEventListener('click', () => {
+    const order = getRankOrder();
+    const text = 'Save my power rankings order permanently: ' + order.join(', ');
+    const done = () => {
+      const orig = rankCopyBtn.textContent;
+      rankCopyBtn.textContent = 'Copied!';
+      setTimeout(() => { rankCopyBtn.textContent = orig; }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(() => { alert(text); });
+    } else {
+      alert(text);
+    }
+  });
+}
+
+const rankResetBtn = document.getElementById('rankResetBtn');
+if (rankResetBtn) {
+  rankResetBtn.addEventListener('click', () => {
+    if (!confirm('Reset your power rankings back to the power-rating seed order? This clears your manual order in this browser.')) return;
+    try { localStorage.removeItem(RANK_STORAGE_KEY); } catch (e) { /* best-effort */ }
+    renderRankings();
+    const activeFilter = document.querySelector('#controls .chip.active');
+    render(activeFilter ? activeFilter.dataset.filter : 'all');
+  });
+}
+
+renderAsOf();
+renderMoverCallout();
+renderStats();
+render('all');
+updateArb();
+renderEv();
+renderArbs();
+renderCombos();
+renderTeasers();
+renderBetNow();
+renderResults();
+renderRankings();
+renderProps();
+</script>

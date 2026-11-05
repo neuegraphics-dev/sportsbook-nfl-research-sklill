@@ -1,0 +1,370 @@
+{
+  "game_id": "patriots-dolphins-2026-wk8",
+  "matchup": "New England Patriots @ Miami Dolphins",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T21:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 7.5,
+      "total": 44.5,
+      "ml_fav": -420,
+      "ml_dog": 340
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.5,
+        "total": 44.5,
+        "ml_fav": -420,
+        "ml_dog": 340
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:09Z",
+      "bookmaker_eu": {
+        "spread": 7,
+        "total": 44.5,
+        "ml_fav": -346,
+        "ml_dog": 278
+      },
+      "draftkings": {
+        "spread": 7.5,
+        "total": 44.5,
+        "ml_fav": -420,
+        "ml_dog": 340
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": 7,
+        "total": 45,
+        "ml_fav": -381,
+        "ml_dog": 303
+      },
+      "draftkings": {
+        "spread": 7,
+        "total": 44.5,
+        "ml_fav": -365,
+        "ml_dog": 330
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": 7,
+        "total": 45,
+        "ml_fav": -381,
+        "ml_dog": 303
+      },
+      "draftkings": {
+        "spread": 7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": 7,
+        "total": 43.5,
+        "ml_fav": -325,
+        "ml_dog": 264
+      },
+      "draftkings": {
+        "spread": 7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 43.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": 43.5,
+        "ml_fav": -320,
+        "ml_dog": 260
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": 43.0,
+        "ml_fav": -345,
+        "ml_dog": 280
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T20:31:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 41.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": 41.5,
+        "ml_fav": -360,
+        "ml_dog": 290
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": 41.0,
+        "ml_fav": -345,
+        "ml_dog": 280
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~20:32Z (3:32pm ET). BookMaker.eu null."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "MIA +6.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "reverse line move: 7.5 to 6.5 with 80% handle on NE",
+      "scoring margin 5.4"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T20:31:44.773415+00:00",
+    "n": 10000,
+    "homeElo": 1358.9,
+    "awayElo": 1641.9,
+    "gamesSeen": 13,
+    "eloMarginHome": -9.4,
+    "statsMarginHome": -5.4,
+    "marginDivergence": -4.0,
+    "projTotal": 43.8,
+    "homeWinProbElo": 20.5,
+    "marketHomeSpread": 6.5,
+    "marketTotal": 41.0,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.8,
+    "projHomeMeanRaw": 17.2,
+    "projAwayMeanRaw": 26.6,
+    "projHomeMeanAdjusted": 17.2,
+    "projAwayMeanAdjusted": 24.8,
+    "injuryAdjustedMarginHome": -7.6,
+    "projTotalAdjusted": 42.0,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (-9.4) and recent-scoring margin (-5.4) disagree by 4.0 points -- worth a second look before trusting either alone.",
+      "Away injury adjustment: -1.8 pts -- A.J. Brown (WR, out, -1.5), TreVeyon Henderson (RB, out, -0.3)."
+    ],
+    "homeWinPct": 28.6,
+    "awayWinPct": 69.0,
+    "tiePct": 2.5,
+    "medianHomeScore": 17,
+    "medianAwayScore": 25,
+    "coverPctHome": 46.9,
+    "overPct": 52.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:08.219716+00:00",
+      "marginHome": -10.0,
+      "total": 43.4
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.252087+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.853339+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.772062+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:37.121201+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.900807+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:44.002840+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:33.037067+00:00",
+      "marginHome": -9.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T01:53:16.623685+00:00",
+      "marginHome": -8.6,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.146281+00:00",
+      "marginHome": -8.6,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.389918+00:00",
+      "marginHome": -8.6,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-11-01T20:31:44.773415+00:00",
+      "marginHome": -7.6,
+      "total": 42.0
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Patriots by 8.6 (Elo 9.4, scoring 5.4), total 43.0 vs 43.5. The line moved from NE -7.5 to -6.5 even though 80% of spread handle was on New England: a reverse move toward Miami.",
+      "The scoring margin (5.4) and the reverse move both point to Miami +6.5; Elo disagrees. Malik Willis starts for Miami. Small bet on the move; pass if it drops to +6."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "MIA +6.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Reverse line move toward Miami plus a 5.4 scoring margin. | Stake $12 \u00b7 pass at +6",
+        "factors": [
+          {
+            "label": "Market move",
+            "dir": "for",
+            "detail": "NE -7.5 to -6.5 with 80% of handle on NE"
+          },
+          {
+            "label": "Scoring margin",
+            "dir": "for",
+            "detail": "NE by 5.4, under the 6.5 spread"
+          },
+          {
+            "label": "Elo margin",
+            "dir": "against",
+            "detail": "NE by 9.4"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-01T20:31:44Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "A.J. Brown",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Inactive (RotoWire lineups inactives 11/1 ~3:30pm ET); NE WR1"
+        },
+        {
+          "position": "RB",
+          "player": "TreVeyon Henderson",
+          "status": "out",
+          "pts": -0.3,
+          "note": "Inactive (RotoWire lineups inactives 11/1 ~3:30pm ET)"
+        }
+      ],
+      "items_total_pts": -1.8,
+      "stacking_notes": [],
+      "total_pts": -1.8
+    }
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 26,
+      "handle_pct_home": 20
+    },
+    "total": {
+      "bets_pct_over": 63,
+      "handle_pct_over": 30
+    },
+    "moneyline": null,
+    "reverse_line_move": true,
+    "rlm_note": "80% of handle is on the away side but the spread moved AGAINST them (+7.5 -> +6.5) -- real reverse line move toward home.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 19,
+    "away": 24
+  }
+}

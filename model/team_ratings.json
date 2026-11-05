@@ -1,0 +1,1418 @@
+{
+  "teams": {
+    "New England Patriots": {
+      "elo": 1648.50604126559,
+      "games_played": 8,
+      "scored_history": [
+        10,
+        20,
+        6,
+        29,
+        45,
+        26,
+        24,
+        24
+      ],
+      "allowed_history": [
+        13,
+        3,
+        35,
+        26,
+        17,
+        19,
+        30,
+        19
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "Buffalo Bills": {
+      "elo": 1675.8255413504667,
+      "games_played": 7,
+      "scored_history": [
+        25.9,
+        36,
+        41,
+        24,
+        26,
+        37,
+        33,
+        36
+      ],
+      "allowed_history": [
+        23.4,
+        31,
+        31,
+        16,
+        29,
+        34,
+        30,
+        10
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]",
+        null,
+        null
+      ]
+    },
+    "Miami Dolphins": {
+      "elo": 1352.2496078071242,
+      "games_played": 7,
+      "scored_history": [
+        22.6,
+        13,
+        13,
+        10,
+        10,
+        24,
+        28,
+        19
+      ],
+      "allowed_history": [
+        24.6,
+        27,
+        35,
+        24,
+        15,
+        31,
+        25,
+        24
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "New York Jets": {
+      "elo": 1297.6666178969836,
+      "games_played": 8,
+      "scored_history": [
+        23,
+        17,
+        24,
+        12,
+        17,
+        19,
+        25,
+        33
+      ],
+      "allowed_history": [
+        10,
+        20,
+        31,
+        23,
+        12,
+        26,
+        28,
+        38
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        "Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]",
+        "Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]",
+        "Breece Hall (-0.5), Max Mitchell (-0.8), Joseph Ossai (-0.8), Francisco Mauigoa (-0.3), Dylan Parham (-0.3) [-2.7 pts total]",
+        "Breece Hall (-1.0), Max Mitchell (-0.5), Joseph Ossai (-0.4), David Bailey (-0.4) [-3.0 pts total]"
+      ]
+    },
+    "Pittsburgh Steelers": {
+      "elo": 1590.4842036373707,
+      "games_played": 9,
+      "scored_history": [
+        3,
+        30,
+        24,
+        27,
+        34,
+        26,
+        16,
+        27
+      ],
+      "allowed_history": [
+        20,
+        27,
+        27,
+        20,
+        22,
+        19,
+        10,
+        6
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Michael Pittman Jr. (-0.8), DeShon Elliott (-0.8), Jamel Dean (-0.8) [-2.2 pts total]",
+        "Michael Pittman Jr. (-0.8), DeShon Elliott (-0.8), Jamel Dean (-0.8) [-2.2 pts total]",
+        null,
+        null,
+        null
+      ]
+    },
+    "Baltimore Ravens": {
+      "elo": 1489.4838699174104,
+      "games_played": 8,
+      "scored_history": [
+        41,
+        17,
+        34,
+        24,
+        30,
+        10,
+        13,
+        10
+      ],
+      "allowed_history": [
+        23,
+        24,
+        31,
+        18,
+        23,
+        13,
+        35,
+        36
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        "Lamar Jackson (-3.5) [-3.5 pts total]",
+        "Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]",
+        "Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]",
+        null
+      ]
+    },
+    "Cincinnati Bengals": {
+      "elo": 1531.682651118654,
+      "games_played": 7,
+      "scored_history": [
+        23.7,
+        33,
+        20,
+        27,
+        17,
+        31,
+        35,
+        43
+      ],
+      "allowed_history": [
+        26.9,
+        27,
+        6,
+        30,
+        22,
+        24,
+        13,
+        36
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        "Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]",
+        null,
+        null,
+        null
+      ]
+    },
+    "Cleveland Browns": {
+      "elo": 1432.9869792042518,
+      "games_played": 8,
+      "scored_history": [
+        10,
+        23,
+        21,
+        27,
+        12,
+        13,
+        27,
+        6
+      ],
+      "allowed_history": [
+        34,
+        19,
+        18,
+        24,
+        17,
+        10,
+        24,
+        27
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Dillon Gabriel (-2.0), Denzel Ward (-0.3), Teven Jenkins (-0.4), Kalia Davis (-0.5), Mike Hall Jr. (-0.5) [-4.5 pts total]",
+        null
+      ]
+    },
+    "Jacksonville Jaguars": {
+      "elo": 1660.6490259612574,
+      "games_played": 7,
+      "scored_history": [
+        25.4,
+        34,
+        13,
+        35,
+        22,
+        19,
+        31,
+        42
+      ],
+      "allowed_history": [
+        20.9,
+        10,
+        20,
+        6,
+        17,
+        17,
+        34,
+        7
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "Houston Texans": {
+      "elo": 1515.7799430132886,
+      "games_played": 7,
+      "scored_history": [
+        22.9,
+        31,
+        6,
+        17,
+        30,
+        26,
+        34,
+        21
+      ],
+      "allowed_history": [
+        19.9,
+        36,
+        20,
+        19,
+        34,
+        3,
+        31,
+        27
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Nico Collins (-2.0) [-2.0 pts total]",
+        null,
+        null,
+        "Jalen Pitre (-0.5), David Montgomery (-1.0), Tank Dell (-0.8) [-2.2 pts total]",
+        "David Montgomery (-0.8), Reed Blankenship (-0.5), Jalen Pitre (-0.5), Blake Fisher (-0.8), Tank Dell (-0.4) [-3.8 pts total]"
+      ]
+    },
+    "Indianapolis Colts": {
+      "elo": 1438.210871929704,
+      "games_played": 9,
+      "scored_history": [
+        30,
+        19,
+        30,
+        20,
+        22,
+        20,
+        10,
+        7
+      ],
+      "allowed_history": [
+        33,
+        17,
+        13,
+        27,
+        34,
+        26,
+        16,
+        42
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]",
+        "Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]",
+        null,
+        "Sauce Gardner (-1.5), Tyler Warren (-1.0), Anthony Gould (-0.3), CJ Allen (-0.5), Bryce Boettcher (-0.2) [-3.5 pts total]",
+        null
+      ]
+    },
+    "Tennessee Titans": {
+      "elo": 1270.0511927030946,
+      "games_played": 8,
+      "scored_history": [
+        10,
+        20,
+        7,
+        18,
+        3,
+        26,
+        24,
+        36
+      ],
+      "allowed_history": [
+        23,
+        24,
+        12,
+        24,
+        26,
+        20,
+        27,
+        43
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "Denver Broncos": {
+      "elo": 1632.6762850373507,
+      "games_played": 8,
+      "scored_history": [
+        10,
+        20,
+        30,
+        14,
+        23,
+        17,
+        30,
+        28
+      ],
+      "allowed_history": [
+        31,
+        13,
+        26,
+        24,
+        17,
+        14,
+        16,
+        24
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "Los Angeles Chargers": {
+      "elo": 1396.0327858420703,
+      "games_played": 7,
+      "scored_history": [
+        21.4,
+        14,
+        14,
+        16,
+        23,
+        17,
+        6,
+        9
+      ],
+      "allowed_history": [
+        22.1,
+        26,
+        26,
+        24,
+        30,
+        23,
+        22,
+        24
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Trey Pipkins III (-1.0), Dalvin Tomlinson (-1.0), Elijah Molden (-0.5), Kayode Awosika (-0.5), Charlie Kolar (-0.2), Brenen Thompson (-0.1) [-3.4 pts total]",
+        null,
+        null,
+        "Derwin James (-1.5), Joe Alt (-1.5), Donte Jackson (-0.5), Bud Dupree (-1.5) [-5.0 pts total]",
+        null
+      ]
+    },
+    "Kansas City Chiefs": {
+      "elo": 1577.350795386175,
+      "games_played": 7,
+      "scored_history": [
+        21.6,
+        31,
+        33,
+        24,
+        30,
+        22,
+        3,
+        24
+      ],
+      "allowed_history": [
+        21.2,
+        10,
+        30,
+        10,
+        27,
+        6,
+        20,
+        28
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Rashee Rice (-2.0), Josh Simmons (-1.0) [-3.0 pts total]",
+        "Rashee Rice (-1.8), Josh Simmons (-1.2), Jaylon Moore (-0.8), Brashard Smith (-0.2), L'Jarius Sneed (-0.3) [-5.0 pts total]",
+        null
+      ]
+    },
+    "Las Vegas Raiders": {
+      "elo": 1396.3567595946952,
+      "games_played": 8,
+      "scored_history": [
+        27,
+        26,
+        35,
+        27,
+        17,
+        30,
+        21,
+        38
+      ],
+      "allowed_history": [
+        13,
+        14,
+        27,
+        30,
+        45,
+        33,
+        35,
+        33
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "Philadelphia Eagles": {
+      "elo": 1412.0922771427774,
+      "games_played": 8,
+      "scored_history": [
+        24,
+        24,
+        7,
+        20,
+        17,
+        14,
+        21,
+        10
+      ],
+      "allowed_history": [
+        22,
+        20,
+        27,
+        24,
+        19,
+        25,
+        38,
+        27
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        "Saquon Barkley (-2.0), DeVonta Smith (-2.0), Hollywood Brown (-0.8) [-5.5 pts total]",
+        "Jalen Hurts (-6.0), Saquon Barkley (-2.0), Will Shipley (-0.5) [-9.2 pts total]",
+        "Jalen Hurts (-5.0), DeVonta Smith (-1.8), Dontayvion Wicks (-0.4), Nolan Smith (-0.6), Michael Carter II (-0.5), Saquon Barkley (-0.8), Landon Dickerson (-0.4), Jonathan Greenard (-0.5), Jalyx Hunt (-0.3) [-11.1 pts total]",
+        "Jalen Hurts (-4.0) [-4.0 pts total]"
+      ]
+    },
+    "Dallas Cowboys": {
+      "elo": 1444.4263505060978,
+      "games_played": 8,
+      "scored_history": [
+        20,
+        37,
+        31,
+        34,
+        16,
+        13,
+        38,
+        30
+      ],
+      "allowed_history": [
+        28,
+        20,
+        34,
+        30,
+        24,
+        23,
+        21,
+        33
+      ],
+      "injury_flags": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        "Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]",
+        null,
+        null,
+        "CeeDee Lamb (-2.0), Tyler Booker (-0.5) [-2.5 pts total]",
+        null,
+        null
+      ]
+    },
+    "Washington Commanders": {
+      "elo": 1405.714169258901,
+      "games_played": 7,
+      "scored_history": [
+        22.4,
+        22,
+        20,
+        33,
+        13,
+        27,
+        17,
+        27
+      ],
+      "allowed_history": [
+        24.7,
+        24,
+        37,
+        31,
+        30,
+        27,
+        23,
+        10
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Jayden Daniels (-5.0) [-5.0 pts total]",
+        "Jayden Daniels (-3.0) [-3.0 pts total]",
+        "Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]",
+        null,
+        null
+      ]
+    },
+    "New York Giants": {
+      "elo": 1471.9535313634597,
+      "games_played": 7,
+      "scored_history": [
+        22.0,
+        28,
+        6,
+        12,
+        36,
+        27,
+        27,
+        27
+      ],
+      "allowed_history": [
+        24.7,
+        20,
+        28,
+        7,
+        24,
+        27,
+        34,
+        21
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Jameis Winston (-4.0), Malik Nabers (-0.6) [-4.6 pts total]",
+        "Jameis Winston (-4.0), Brian Burns (-1.5) [-5.5 pts total]",
+        null,
+        "Abdul Carter (-0.5), Andrew Thomas (-0.5), Tyler Nubin (-0.5), Theo Johnson (-0.5), Colton Hood (-0.5), Jermaine Eluemunor (-0.5) [-3.0 pts total]",
+        "Tremaine Edmunds (-0.9), Jevon Holland (-0.6), Greg Newsome II (-0.6), Theo Johnson (-0.4), Jermaine Eluemunor (-0.4) [-2.9 pts total]"
+      ]
+    },
+    "Chicago Bears": {
+      "elo": 1616.9430464326833,
+      "games_played": 8,
+      "scored_history": [
+        59,
+        3,
+        27,
+        23,
+        7,
+        31,
+        30,
+        34
+      ],
+      "allowed_history": [
+        37,
+        9,
+        7,
+        12,
+        31,
+        23,
+        24,
+        17
+      ],
+      "injury_flags": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        "Caleb Williams (-6.5) [-6.5 pts total]",
+        "Caleb Williams (-4.0) [-4.0 pts total]",
+        "Caleb Williams (-4.0), D'Andre Swift (-0.5), Kyle Monangai (-0.5) [-5.0 pts total]",
+        null,
+        "T.J. Edwards (-1.0), Jack Sanborn (-0.4), Jonah Jackson (-0.6), Kyle Monangai (-0.2) [-2.2 pts total]",
+        null
+      ]
+    },
+    "Green Bay Packers": {
+      "elo": 1532.9572249248445,
+      "games_played": 8,
+      "scored_history": [
+        22,
+        20,
+        14,
+        17,
+        31,
+        23,
+        17,
+        27
+      ],
+      "allowed_history": [
+        39,
+        17,
+        35,
+        14,
+        7,
+        13,
+        20,
+        19
+      ],
+      "injury_flags": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        "Aaron Banks (-1.0), Zach Bako-Bewele (-1.0), Jayden Reed (-1.2), Warren Brinson (-0.5), Javon Hargrave (-0.3) [-4.8 pts total]",
+        null,
+        null,
+        "Javon Hargrave (-1.3), Jonathan Ford (-0.4), Benjamin St-Juste (-0.7), Skyy Moore (-0.2) [-3.4 pts total]",
+        null,
+        null
+      ]
+    },
+    "Minnesota Vikings": {
+      "elo": 1589.3195152010242,
+      "games_played": 7,
+      "scored_history": [
+        22.4,
+        39,
+        9,
+        23,
+        15,
+        23,
+        16,
+        15
+      ],
+      "allowed_history": [
+        21.0,
+        22,
+        3,
+        16,
+        10,
+        13,
+        10,
+        19
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "Detroit Lions": {
+      "elo": 1583.2120271168037,
+      "games_played": 7,
+      "scored_history": [
+        26.2,
+        31,
+        31,
+        31,
+        26,
+        45,
+        20,
+        19
+      ],
+      "allowed_history": [
+        23.8,
+        30,
+        41,
+        24,
+        32,
+        21,
+        17,
+        15
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Brian Branch (-1.5), Rock Ya-Sin (-0.5) [-2.0 pts total]",
+        null,
+        null
+      ]
+    },
+    "Carolina Panthers": {
+      "elo": 1431.4262719987578,
+      "games_played": 7,
+      "scored_history": [
+        20.3,
+        37,
+        34,
+        18,
+        32,
+        25,
+        13,
+        19
+      ],
+      "allowed_history": [
+        23.0,
+        59,
+        3,
+        21,
+        26,
+        14,
+        43,
+        27
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        "Jaycee Horn (-1.0), Mike Jackson (-0.8), Xavier Legette (-0.5), Jalen Coker (-0.4), Damien Lewis (-0.5) [-4.7 pts total]",
+        null,
+        "Jaelan Phillips (-0.8), Thomas Incoom (-0.3), Monroe Freeling (-0.3) [-2.1 pts total]",
+        null
+      ]
+    },
+    "Tampa Bay Buccaneers": {
+      "elo": 1488.39408940306,
+      "games_played": 8,
+      "scored_history": [
+        27,
+        19,
+        16,
+        14,
+        24,
+        19,
+        43,
+        16
+      ],
+      "allowed_history": [
+        33,
+        23,
+        23,
+        17,
+        16,
+        26,
+        13,
+        0
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Baker Mayfield (-5.5) [-5.5 pts total]",
+        "Baker Mayfield (-5.5), Antoine Winfield Jr. (-0.8), Benjamin Morrison (-0.8), SirVocea Dennis (-0.4) [-7.4 pts total]",
+        "Baker Mayfield (-6.0), Antoine Winfield Jr. (-1.0) [-7.0 pts total]",
+        "Emeka Egbuka (-1.5), Luke Goedeke (-0.8), Antoine Winfield Jr. (-1.0), Baker Mayfield (-0.8) [-4.1 pts total]",
+        null
+      ]
+    },
+    "Atlanta Falcons": {
+      "elo": 1449.5877170612778,
+      "games_played": 8,
+      "scored_history": [
+        13,
+        3,
+        35,
+        45,
+        23,
+        23,
+        29,
+        0
+      ],
+      "allowed_history": [
+        20,
+        34,
+        14,
+        24,
+        30,
+        31,
+        20,
+        16
+      ],
+      "injury_flags": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        "A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]",
+        null,
+        null,
+        null,
+        "Brian Robinson (-0.5), Michael Jerrell (-0.8), Cameron Williams (-0.8), Billy Bowman Jr. (-0.4), Divine Deablo (-0.4), Za'Darius Smith (-0.3) [-4.0 pts total]",
+        null
+      ]
+    },
+    "New Orleans Saints": {
+      "elo": 1394.9153960429278,
+      "games_played": 7,
+      "scored_history": [
+        19.3,
+        30,
+        24,
+        27,
+        24,
+        13,
+        34,
+        10
+      ],
+      "allowed_history": [
+        22.5,
+        31,
+        17,
+        35,
+        45,
+        23,
+        27,
+        16
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        "Kaden Ellis (-0.5), Pete Werner (-0.5), Anfernee Jennings (-0.4), Carl Granderson (-0.6), Travis Etienne (-0.5) [-2.5 pts total]",
+        null,
+        "Alvin Kamara (-0.5), Kaden Elliss (-0.8), Anfernee Jennings (-0.8) [-2.8 pts total]",
+        null
+      ]
+    },
+    "Seattle Seahawks": {
+      "elo": 1636.1613411309202,
+      "games_played": 8,
+      "scored_history": [
+        13,
+        31,
+        31,
+        30,
+        29,
+        14,
+        20,
+        17
+      ],
+      "allowed_history": [
+        10,
+        7,
+        33,
+        23,
+        32,
+        17,
+        3,
+        34
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Zach Charbonnet (-1.2), Drake Thomas (-0.4), Chazz Surratt (-0.3), Drew Lock (-0.8), DeMarcus Lawrence (-0.4), Uchenna Nwosu (-0.3), Elijah Arroyo (-0.4) [-4.5 pts total]",
+        null
+      ]
+    },
+    "Los Angeles Rams": {
+      "elo": 1619.985378792416,
+      "games_played": 8,
+      "scored_history": [
+        7,
+        28,
+        26,
+        24,
+        34,
+        16,
+        35,
+        24
+      ],
+      "allowed_history": [
+        27,
+        6,
+        30,
+        20,
+        37,
+        18,
+        21,
+        9
+      ],
+      "injury_flags": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        "Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]",
+        null,
+        null,
+        null,
+        "Davante Adams (-1.8), Puka Nacua (-0.7), Trent McDuffie (-0.4), Nate Landman (-0.4) [-3.3 pts total]",
+        null
+      ]
+    },
+    "San Francisco 49ers": {
+      "elo": 1630.5257236269163,
+      "games_played": 7,
+      "scored_history": [
+        24.2,
+        27,
+        35,
+        36,
+        24,
+        32,
+        23,
+        20
+      ],
+      "allowed_history": [
+        22.4,
+        7,
+        13,
+        30,
+        14,
+        29,
+        17,
+        29
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        "Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]",
+        null,
+        null,
+        "Jauan Jennings (-1.0), Jaylon Moore (-1.0), Dre Greenlaw (-1.0), Arik Armstead (-0.8), Jiayir Brown (-0.5), Ross Dwelley (-0.2) [-4.5 pts total]",
+        "Nick Bosa (-1.5), Mike Evans (-1.5), Deebo Samuel Sr. (-1.0), Garret Wallow (-0.4) [-5.2 pts total]"
+      ]
+    },
+    "Arizona Cardinals": {
+      "elo": 1386.3927683316458,
+      "games_played": 8,
+      "scored_history": [
+        26,
+        7,
+        30,
+        24,
+        21,
+        18,
+        16,
+        33
+      ],
+      "allowed_history": [
+        14,
+        31,
+        36,
+        36,
+        45,
+        16,
+        30,
+        30
+      ],
+      "injury_flags": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "injury_flag_notes": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "Jeremiyah Love (-1.5), Jon Gaines II (-0.5), Walter Nolen (-0.7), Andrew Wingard (-0.3), Budda Baker (-0.3) [-3.3 pts total]",
+        null
+      ]
+    }
+  },
+  "meta": {
+    "seed_source": "PFR 2025 final standings + PF/PA + plays, pace-neutral points-per-play seed, 1/3 regression to 1500",
+    "hfa_elo": 48.0,
+    "k_factor": 20.0,
+    "regression_fraction": 0.3333333333333333
+  }
+}

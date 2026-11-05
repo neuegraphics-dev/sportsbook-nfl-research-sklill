@@ -1,0 +1,164 @@
+{
+  "game_id": "raiders-49ers-2026-wk9",
+  "matchup": "Las Vegas Raiders @ San Francisco 49ers",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T21:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -9.5,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": -9.5,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": -9.5,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -9.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -9.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -9.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 52,
+        "ml_fav": -460,
+        "ml_dog": 358
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:18Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 52,
+        "ml_fav": -460,
+        "ml_dog": 358
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.780939+00:00",
+    "n": 10000,
+    "homeElo": 1630.5,
+    "awayElo": 1396.4,
+    "gamesSeen": 15,
+    "eloMarginHome": 11.3,
+    "statsMarginHome": 6.2,
+    "marginDivergence": 5.0,
+    "projTotal": 50.9,
+    "homeWinProbElo": 83.5,
+    "marketHomeSpread": -10,
+    "marketTotal": 51.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 31.1,
+    "projAwayMeanRaw": 19.8,
+    "projHomeMeanAdjusted": 31.1,
+    "projAwayMeanAdjusted": 19.8,
+    "injuryAdjustedMarginHome": 11.3,
+    "projTotalAdjusted": 50.9,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+11.3) and recent-scoring margin (+6.2) disagree by 5.0 points -- worth a second look before trusting either alone.",
+      "San Francisco 49ers (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]; Jauan Jennings (-1.0), Jaylon Moore (-1.0), Dre Greenlaw (-1.0), Arik Armstead (-0.8), Jiayir Brown (-0.5), Ross Dwelley (-0.2) [-4.5 pts total]; Nick Bosa (-1.5), Mike Evans (-1.5), Deebo Samuel Sr. (-1.0), Garret Wallow (-0.4) [-5.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 78.2,
+    "awayWinPct": 19.9,
+    "tiePct": 1.9,
+    "medianHomeScore": 31,
+    "medianAwayScore": 20,
+    "coverPctHome": 54.4,
+    "overPct": 48.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.600170+00:00",
+      "marginHome": 11.3,
+      "total": 50.9
+    },
+    {
+      "run_at": "2026-11-03T15:29:11.324547+00:00",
+      "marginHome": 11.3,
+      "total": 50.9
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.780939+00:00",
+      "marginHome": 11.3,
+      "total": 50.9
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: San Francisco 49ers by 11.3 (injury-adjusted) against a market that has San Francisco 49ers favored by 9.5, a 1.8-point gap; sim cover% for San Francisco 49ers is 55.8% and projected total is 50.9 vs 51.5 (over 47.7%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "game_id": "patriots-bears-2026-wk7",
+  "matchup": "New England Patriots @ Chicago Bears",
+  "week": "Week 7",
+  "kickoff": "2026-10-23T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -3,
+      "total": 50.5,
+      "ml_fav": -154,
+      "ml_dog": 133
+    },
+    "draftkings": {
+      "spread": -3,
+      "total": 50.5,
+      "ml_fav": -148,
+      "ml_dog": 124
+    },
+    "fanduel": {
+      "spread": -3,
+      "total": 50.5,
+      "ml_fav": -156,
+      "ml_dog": 132
+    },
+    "caesars": {
+      "spread": -3,
+      "total": 50.5,
+      "ml_fav": -162,
+      "ml_dog": 136
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Bears."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -154,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -156,
+        "ml_dog": 132
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Bears."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -154,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -160,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "note": "DK/Caesars/FanDuel spread+total+ML via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Bears."
+    },
+    {
+      "captured_at": "2026-10-21T02:02:41Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -154,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -156,
+        "ml_dog": 132
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "note": "DK total/ML via cleatz.com (consensus matches DK opener, unchanged); Caesars/FanDuel spread+total+ML and DK spread cross-check via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu (last update ~1 day ago). All four books unchanged from opener -- no line movement this cycle."
+    },
+    {
+      "captured_at": "2026-10-21T13:35:08Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -154,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -154,
+        "ml_dog": 130
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 50.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "note": "All four books still at CHI -3/50.5, 7th straight check with no movement since Monday open; BookMaker.eu board itself last refreshed ~2 days ago per its own page (treat as informational, not a confirmed today-repriced number) -- DK/Caesars/FanDuel pulled fresh via VegasInsider DOM (updated Oct 20 3:55pm per that page's own banner) and cleatz.com consensus."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "confidence": "Medium",
+    "top_signals": [
+      "Bears OG Jonah Jackson (hip/quad, hurt Wk6 vs ATL) DNP Mon, Limited Tue -- OC noncommittal on Thursday availability (heavy.com, athlonsports.com, 2026-10-19/20)",
+      "Bears RB Kyle Monangai (thumb/toe) DNP Mon, Limited Tue (athlonsports.com 2026-10-20)",
+      "Bears LB T.J. Edwards (hamstring) DNP Mon+Tue, Bears LB Jack Sanborn (concussion) DNP Mon+Tue -- both still DNP per Courtney Cronin Wed estimate (x.com/CourtneyRCronin)",
+      "Patriots CB Carlton Davis III (neck) DNP Mon, Limited Tue; WR A.J. Brown (ankle) Limited both days (patriots.com Week 7 report)",
+      "No line movement across any of the 4 tracked books since Monday opener"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-21T13:32:51Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 26,
+      "handle_pct_home": 41
+    },
+    "total": {
+      "bets_pct_over": 48,
+      "handle_pct_over": 51
+    },
+    "moneyline": {
+      "bets_pct_home": 16,
+      "handle_pct_home": 12
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "Bears(home)-relative; CHI -3 spread bet/handle 26/41 (up from 21/36 this morning -- money easing back toward the favorite, not building toward NE); total 48/51; ML CHI 16/12. Line unchanged at -3/50.5."
+  },
+  "simulation": {
+    "run_at": "2026-10-21T02:07:29.652839+00:00",
+    "n": 10000,
+    "homeElo": 1548.7,
+    "awayElo": 1665.9,
+    "gamesSeen": 12,
+    "eloMarginHome": -2.8,
+    "statsMarginHome": 0.2,
+    "marginDivergence": -3.0,
+    "projTotal": 47.4,
+    "homeWinProbElo": 40.2,
+    "marketHomeSpread": -3,
+    "marketTotal": 50.5,
+    "homeInjuryPts": -2.2,
+    "awayInjuryPts": -0.6,
+    "projHomeMeanRaw": 22.3,
+    "projAwayMeanRaw": 25.1,
+    "projHomeMeanAdjusted": 20.1,
+    "projAwayMeanAdjusted": 24.5,
+    "injuryAdjustedMarginHome": -4.4,
+    "projTotalAdjusted": 44.6,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -2.2 pts -- T.J. Edwards (LB, questionable, -1.0), Jack Sanborn (LB, questionable, -0.4), Jonah Jackson (OG, questionable, -0.6), Kyle Monangai (RB, questionable, -0.2).",
+      "Away injury adjustment: -0.6 pts -- A.J. Brown (WR, questionable, -0.3), Carlton Davis III (CB, questionable, -0.3).",
+      "Chicago Bears (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]; Caleb Williams (-4.0) [-4.0 pts total]; Caleb Williams (-4.0), D'Andre Swift (-0.5), Kyle Monangai (-0.5) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 37.1,
+    "awayWinPct": 59.8,
+    "tiePct": 3.0,
+    "medianHomeScore": 20,
+    "medianAwayScore": 24,
+    "coverPctHome": 30.2,
+    "overPct": 33.0
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:01.488852+00:00",
+      "marginHome": -2.8,
+      "total": 47.4
+    },
+    {
+      "run_at": "2026-10-21T01:37:03.214725+00:00",
+      "marginHome": -3.6,
+      "total": 46.0
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.652839+00:00",
+      "marginHome": -4.4,
+      "total": 44.6
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-21T02:04:36Z",
+    "analysis": [
+      "The injury picture for Chicago widened materially on Tuesday: beyond LB T.J. Edwards (hamstring, DNP both days) and LB Jack Sanborn (concussion, DNP both days), starting RG Jonah Jackson (hip/quad, hurt in the Week 6 win over Atlanta) was limited Tuesday after sitting Monday and the Bears offensive coordinator was noncommittal on his Thursday availability, and RB Kyle Monangai (thumb/toe) was limited Tuesday as well. New England offsets with only minor dings -- WR A.J. Brown (ankle) and CB Carlton Davis III (neck) both limited, neither trending toward missing. None of the four tracked books (BookMaker.eu, DraftKings, Caesars, FanDuel) have moved off Chicago -3/50.5 since Monday open, so the market has not yet priced any of this in.",
+      "The model now projects New England to win outright at 60.7% (up from 58.1% this morning) with Chicago covering just 29.6% of simulations and the total settling under the market number more often (66.3% under vs 33.7% over) as the injury-adjusted total gap widened to 44.6 vs the market 50.5. The no-vig moneyline gap is now real too: DK prices Chicago around 57% implied vs the model giving Chicago only about 39% win share. Two signal categories now agree (the model read and the expanded injury ledger), which is why both leans move up a notch; a market move (RLM/steam) would be a third confirming signal and has not shown up yet, so this is still the model and injuries leading the market rather than the market catching up."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Patriots +3",
+        "confidence": 6,
+        "reasoning": "Model now favors NE outright at 60.7% win prob (up from 58.1%); Bears cover only 29.6% of sims. Two signal categories agree: model divergence plus an expanded CHI injury ledger (Edwards/Sanborn DNP x2, plus newly-verified Jackson and Monangai both limited) vs minor NE dings (A.J. Brown, Davis both limited-only). | Stake $15 \u00b7 pass at +1.5",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Under 50.5",
+        "confidence": 6,
+        "reasoning": "Model projects 44.6 vs the 50.5 market total (DK), a 5.9pt gap that widened this cycle on the Jackson/Monangai O-line and backfield dings; under covers 66.3% of sims. | Stake $15 \u00b7 pass at 48.5",
+        "best_bet": false
+      },
+      {
+        "market": "moneyline",
+        "pick": "Patriots ML",
+        "confidence": 5,
+        "reasoning": "Model win% (60.7%) vs DK no-vig price (about 57% CHI implied, 43% NE implied) shows real moneyline value, but this is the same signal as the spread lean on the same team -- fully correlated, so no separate stake under the $45/game cap. | Stake $0 \u00b7 pass at n/a (context only, see spread lean)",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-21T01:39:26Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM, table extraction); CBS posvsdef QB for matchup rank; statmuse.com for Williams' game log (incomplete, only 2-3 of 6 games returned).",
+    "picks": [
+      {
+        "player": "Caleb Williams",
+        "team": "home",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "Covers.com consensus best price",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Tough-matchup capped: NE ranks 6th of 32 vs QB fantasy points allowed, but model projection and recent volume still lean over. | Stake $7.50 \u00b7 pass at 22.5",
+        "matchup": {
+          "opp_rank_vs_pos": 6,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "New England ranks 6th of 32 vs QB (fantasy pts allowed, CBS posvsdef) -- a genuinely tough matchup, triggers the tough-matchup cap"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 29.04 vs 17.5 line, +8.5 diff, 26.1% EV"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "2 of last 3 games cleared 17.5 rush yds (65, 42) but one game well under (3 on 4 carries at ATL) -- real week-to-week variance on designed/scramble runs"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Model now has Chicago as a slight home underdog this week; trailing can mean more scramble opportunities but also more abandoned designed runs -- a wash"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 17.5,
+        "opening_captured_at": "2026-10-21T01:39:26Z",
+        "current_line": 17.5,
+        "current_captured_at": "2026-10-21T01:39:26Z"
+      },
+      {
+        "player": "Caleb Williams",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Covers.com consensus best price",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "NE's tough pass defense (6th of 32 vs QB) plus a model gap and below-line recent production support the under. | Stake $15 \u00b7 pass at 239.5",
+        "matchup": {
+          "opp_rank_vs_pos": 6,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "New England ranks 6th of 32 vs QB (fantasy pts allowed, CBS posvsdef) -- a tough matchup supports the under"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 225.0 vs 249.5 line, -23.5 diff, 25.3% EV"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Last 2 logged 2026 games: 269 and 138 pass yds (avg 203.5), both well under the 249.5 line (statmuse.com, incomplete game log -- only 2 of 6 games returned)"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "Model now has Chicago trailing on a neutral field (home underdog); a trailing offense often throws more, which cuts against the under"
+          }
+        ],
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 249.5,
+        "opening_captured_at": "2026-10-21T01:39:26Z",
+        "current_line": 249.5,
+        "current_captured_at": "2026-10-21T01:39:26Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-21T02:02:56Z",
+    "home": {
+      "items": [
+        {
+          "position": "LB",
+          "player": "T.J. Edwards",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "DNP Mon+Tue (hamstring) per athlonsports.com/heavy.com Bears Week 7 reports (2026-10-19/20); Courtney Cronin's Wed estimated report still lists him DNP -- three straight no-practice days ahead of a Thursday game, trending toward missing again but no final designation yet so priced short of a full out penalty."
+        },
+        {
+          "position": "LB",
+          "player": "Jack Sanborn",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "DNP Mon+Tue (concussion protocol) per athlonsports.com (2026-10-20); Cronin's later estimate still lists him DNP -- concussion-protocol clearance is binary/unpredictable, small uncertainty-weighted penalty for a depth/role LB."
+        },
+        {
+          "position": "OG",
+          "player": "Jonah Jackson",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "Starting RG, hurt in Wk6 win over Atlanta; DNP Mon, Limited Tue (hip/quad) per heavy.com (2026-10-19) and athlonsports.com (2026-10-20); OC Press Taylor noncommittal on Thursday availability, Luke Newman next in line at RG."
+        },
+        {
+          "position": "RB",
+          "player": "Kyle Monangai",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "DNP Mon, Limited Tue (thumb/toe) per athlonsports.com (2026-10-20); trending toward playing in some capacity, small discount only."
+        }
+      ],
+      "items_total_pts": -2.2,
+      "stacking_notes": [],
+      "total_pts": -2.2
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "A.J. Brown",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "Limited practice both Mon/Tue (ankle) per patriots.com Week 7 report (2026-10-19/20); practicing in some capacity, no sign of missing -- small discount only."
+        },
+        {
+          "position": "CB",
+          "player": "Carlton Davis III",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "DNP Mon, Limited Tue (neck) per patriots.com Week 7 report (2026-10-19/20); improving trend, small discount for a starting corner."
+        }
+      ],
+      "items_total_pts": -0.6,
+      "stacking_notes": [],
+      "total_pts": -0.6
+    }
+  },
+  "final_score": {
+    "home": 30,
+    "away": 24
+  }
+}

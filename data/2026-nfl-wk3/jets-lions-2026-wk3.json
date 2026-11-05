@@ -1,0 +1,296 @@
+{
+  "game_id": "jets-lions-2026-wk3",
+  "matchup": "New York Jets @ Detroit Lions",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": -6.5,
+      "total": 48.0,
+      "ml_fav": -286,
+      "ml_dog": 234
+    },
+    "draftkings": {
+      "spread": -7.0,
+      "total": 48.5,
+      "ml_fav": -345,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:55Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 48.0,
+        "ml_fav": -286,
+        "ml_dog": 234
+      },
+      "draftkings": {
+        "spread": -7.0,
+        "total": 48.5,
+        "ml_fav": -345,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 48.0,
+        "ml_fav": -306,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": -300,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 47.5,
+        "ml_fav": -298,
+        "ml_dog": 244
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": -300,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Lions(home) favored, all 3 sources agree on spread; total gap DK 48.5 vs BME 47.5."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 47.5,
+        "ml_fav": -298,
+        "ml_dog": 244
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": -300,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:27:33Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 48.5,
+        "ml_fav": -300,
+        "ml_dog": 270
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK/Caesars both steady at DET -6.5 since Fri (opened -7.0, so a real half-point move toward Jets earlier in the week -- small, not dramatic). NYJ OUT: S Minkah Fitzpatrick, TE Mason Taylor, LB Mauigoa (Fitzpatrick the headline loss). DET OUT: OG Bartch, S Harper; several DET interior OL limited (hip/knee/elbow). No fresh move today."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- DET -6.5 steady since Fri; cleatz shows heavy handle (86%) on DET favorite with no line move toward them, which per this projects own RLM rule (lopsided split + no movement yet) is explicitly NOT a reverse-line-move, just a lopsided public/sharp-aligned number",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Jets missing S Minkah Fitzpatrick (headline loss) -- role/depth level for the rest of the report, not schedule-moving alone",
+      "DET has multiple interior OL limited but nothing confirmed out at a starter-critical level"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:27:33.873982+00:00",
+    "n": 10000,
+    "homeElo": 1554.2,
+    "awayElo": 1323.8,
+    "gamesSeen": 4,
+    "eloMarginHome": 11.1,
+    "statsMarginHome": 2.3,
+    "marginDivergence": 8.8,
+    "projTotal": 48.9,
+    "homeWinProbElo": 83.2,
+    "marketHomeSpread": -6.5,
+    "marketTotal": 48.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 30.0,
+    "projAwayMeanRaw": 18.9,
+    "projHomeMeanAdjusted": 30.0,
+    "projAwayMeanAdjusted": 18.9,
+    "injuryAdjustedMarginHome": 11.1,
+    "projTotalAdjusted": 48.9,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+11.1) and recent-scoring margin (+2.3) disagree by 8.8 points -- worth a second look before trusting either alone."
+    ],
+    "homeWinPct": 77.3,
+    "awayWinPct": 20.4,
+    "tiePct": 2.3,
+    "medianHomeScore": 30,
+    "medianAwayScore": 19,
+    "coverPctHome": 62.7,
+    "overPct": 51.7
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-25T13:42:28Z",
+    "analysis": [
+      "Detroit is favored at home by both signals -- Elo has them +11.1, well clear of the market's -6.5 -- but the recent-scoring margin is much softer (+2.3), leaving an 8.8-point gap between the two inputs that's the widest divergence on the board this week. No confirmed starter-level injury news for either team this cycle, so this is a pure Elo-vs-market read, not an injury-driven one.",
+      "62.8% of sim runs have the Lions covering the current number, enough to clear the model's own bar, but that wide Elo/scoring-margin split is a real reason for caution rather than full conviction -- Elo may simply be ahead of what these two teams have actually shown on the field this season."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "DET -6.5",
+        "confidence": 5,
+        "reasoning": "Elo (+11.1) clears the market number by a wide margin and 62.8% of sims agree, but the 8.8-pt gap versus the softer recent-scoring signal (+2.3) keeps this from being a high-conviction play.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "+11.1 pts clears the market number (-6.5) by a wide margin"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "62.8% of sims have Detroit covering"
+          },
+          {
+            "label": "Recent form",
+            "dir": "against",
+            "detail": "Only +2.3 pts -- an 8.8pt gap vs Elo, keeps this from a high-conviction play"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:27:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 73,
+      "handle_pct_home": 86
+    },
+    "total": {
+      "bets_pct_over": 64,
+      "handle_pct_over": 93
+    },
+    "moneyline": {
+      "bets_pct_home": 92,
+      "handle_pct_home": 89
+    },
+    "reverse_line_move": false,
+    "rlm_note": "86% of handle is on the home side but the spread hasn't moved yet (-6.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: DET is home/favorite."
+  },
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "Jahmyr Gibbs",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 3,
+        "reasoning": "Script is right (DET -6.5) but the Jets are a top-5 run D vs RBs and Gibbs' Wk2 rushing was 16-52 -- his value is in the pass game, not this number.",
+        "opening_line": 84.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 84.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "NYJ 4th-fewest pts to RBs (8.5/g); just 110 RB rush yds allowed in 2 games (55/g)"
+          },
+          {
+            "label": "Recent trend",
+            "dir": "against",
+            "detail": "Wk2 vs BUF: 16 car, 52 yds (3.3 YPC); damage came via 6-61-1 receiving"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "DET -6.5 home fav, 47.5 total -- lead = late carries"
+          },
+          {
+            "label": "Role",
+            "dir": "neutral",
+            "detail": "Receiving-heavy usage helps a rec/rush+rec prop more than straight rush yds"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 4,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 1,
+          "against": 2,
+          "neutral": 1,
+          "net": -1
+        }
+      }
+    ]
+  },
+  "final_score": {
+    "home": 31,
+    "away": 24
+  }
+}

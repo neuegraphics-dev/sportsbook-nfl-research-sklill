@@ -1,0 +1,216 @@
+{
+ "_doc": "One name per player, team and book. Add a line whenever a source spells a name differently: canonical name -> list of other spellings. Read by scripts/lib.py (player_key, team_name, book_key). Suffixes (Jr., III), periods and apostrophes are already ignored automatically.",
+ "players": {
+  "Harold Fannin Jr.": [
+   "Harold Fannin"
+  ]
+ },
+ "teams": {
+  "Arizona Cardinals": [
+   "ARI",
+   "ARZ",
+   "Cardinals"
+  ],
+  "Atlanta Falcons": [
+   "ATL",
+   "Falcons"
+  ],
+  "Baltimore Ravens": [
+   "BAL",
+   "BLT",
+   "Ravens"
+  ],
+  "Buffalo Bills": [
+   "BUF",
+   "Bills"
+  ],
+  "Carolina Panthers": [
+   "CAR",
+   "Panthers"
+  ],
+  "Chicago Bears": [
+   "CHI",
+   "Bears"
+  ],
+  "Cincinnati Bengals": [
+   "CIN",
+   "Bengals"
+  ],
+  "Cleveland Browns": [
+   "CLE",
+   "CLV",
+   "Browns"
+  ],
+  "Dallas Cowboys": [
+   "DAL",
+   "Cowboys"
+  ],
+  "Denver Broncos": [
+   "DEN",
+   "Broncos"
+  ],
+  "Detroit Lions": [
+   "DET",
+   "Lions"
+  ],
+  "Green Bay Packers": [
+   "GB",
+   "GNB",
+   "Packers"
+  ],
+  "Houston Texans": [
+   "HOU",
+   "HST",
+   "Texans"
+  ],
+  "Indianapolis Colts": [
+   "IND",
+   "Colts"
+  ],
+  "Jacksonville Jaguars": [
+   "JAX",
+   "JAC",
+   "Jaguars"
+  ],
+  "Kansas City Chiefs": [
+   "KC",
+   "KAN",
+   "KCC",
+   "Chiefs"
+  ],
+  "Las Vegas Raiders": [
+   "LV",
+   "LVR",
+   "OAK",
+   "Raiders"
+  ],
+  "Los Angeles Chargers": [
+   "LAC",
+   "SD",
+   "Chargers"
+  ],
+  "Los Angeles Rams": [
+   "LAR",
+   "LA",
+   "STL",
+   "Rams"
+  ],
+  "Miami Dolphins": [
+   "MIA",
+   "Dolphins"
+  ],
+  "Minnesota Vikings": [
+   "MIN",
+   "Vikings"
+  ],
+  "New England Patriots": [
+   "NE",
+   "NWE",
+   "Patriots"
+  ],
+  "New Orleans Saints": [
+   "NO",
+   "NOR",
+   "Saints"
+  ],
+  "New York Giants": [
+   "NYG",
+   "Giants"
+  ],
+  "New York Jets": [
+   "NYJ",
+   "Jets"
+  ],
+  "Philadelphia Eagles": [
+   "PHI",
+   "Eagles"
+  ],
+  "Pittsburgh Steelers": [
+   "PIT",
+   "Steelers"
+  ],
+  "San Francisco 49ers": [
+   "SF",
+   "SFO",
+   "49ers",
+   "Niners"
+  ],
+  "Seattle Seahawks": [
+   "SEA",
+   "Seahawks"
+  ],
+  "Tampa Bay Buccaneers": [
+   "TB",
+   "TAM",
+   "Buccaneers",
+   "Bucs"
+  ],
+  "Tennessee Titans": [
+   "TEN",
+   "Titans"
+  ],
+  "Washington Commanders": [
+   "WAS",
+   "WSH",
+   "Commanders"
+  ]
+ },
+ "books": {
+  "draftkings": [
+   "dk",
+   "DraftKings"
+  ],
+  "fanduel": [
+   "fd",
+   "FanDuel"
+  ],
+  "caesars": [
+   "cz",
+   "czr",
+   "Caesars"
+  ],
+  "bookmaker_eu": [
+   "bookmaker",
+   "BookMaker.eu"
+  ],
+  "bet365": [
+   "bet365"
+  ],
+  "betrivers": [
+   "BetRivers"
+  ],
+  "fanatics": [
+   "Fanatics",
+   "Fanatics Sportsbook"
+  ],
+  "hardrock": [
+   "Hard Rock Bet",
+   "Hard Rock"
+  ],
+  "covers": [
+   "covers",
+   "Covers",
+   "covers.com",
+   "covers.com consensus",
+   "Covers consensus",
+   "covers.com model",
+   "Covers.com consensus best price",
+   "Covers.com/BetRivers",
+   "consensus"
+  ],
+  "linemate": [
+   "linemate",
+   "Linemate"
+  ],
+  "sbd": [
+   "sbd"
+  ],
+  "kalshi": [
+   "Kalshi via Covers",
+   "Kalshi"
+  ],
+  "novig": [
+   "Novig"
+  ]
+ }
+}

@@ -1,0 +1,655 @@
+{
+  "game_id": "ravens-falcons-2026-wk5",
+  "matchup": "Baltimore Ravens @ Atlanta Falcons",
+  "week": "Week 5",
+  "kickoff": "2026-10-12T00:20:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 6.0,
+      "total": 49.5,
+      "ml_fav": -278,
+      "ml_dog": 270
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 off the board; Covers BAL -6.5. Lamar Jackson ankle (walking boot, day-to-day) -- number likely stale."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.0,
+        "total": 49.5,
+        "ml_fav": -278,
+        "ml_dog": 270
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 off the board; Covers BAL -6.5. Lamar Jackson ankle (walking boot, day-to-day) -- number likely stale."
+    },
+    {
+      "captured_at": "2026-10-05T13:01:19Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Mon 10/5 AM after Lamar Jackson ankle news: SI Betting reports BAL -6 -> -2.5/-3.5 (DraftKings referenced); logged midpoint 3.0 home-relative. Total not reported."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 46.5,
+        "ml_fav": -174,
+        "ml_dog": 164
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 BAL -3.5. Total down 3 (Lamar)."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 46.5,
+        "ml_fav": -174,
+        "ml_dog": 164
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:59Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 43.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Falcons"
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -180.0,
+        "ml_dog": 150.0
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -174.0,
+        "ml_dog": 144.0
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -176.0,
+        "ml_dog": 149.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -168,
+        "ml_dog": 142
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -176,
+        "ml_dog": 149
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -168,
+        "ml_dog": 142
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -176,
+        "ml_dog": 149
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Falcons."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -172,
+        "ml_dog": 144
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -176,
+        "ml_dog": 149
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -172,
+        "ml_dog": 144
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -176,
+        "ml_dog": 149
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge (number gone, fair price now)",
+    "total_lean": "Lean Over, watching",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Lamar Jackson ruled out (ankle); Tyler Huntley confirmed starting -- fully priced by the market (ATL +6 road dog -> -3.5 home fav, a 9.5-pt swing)",
+      "Trey Hendrickson (DE) also out -- pass-rush loss the model can't price (sim total 44.5 likely understates it)"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T21:08:56Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Lamar Jackson",
+          "status": "out",
+          "pts": -3.5,
+          "note": "Ankle; ruled out Fri 10/9 by HC Jesse Minter, did not practice all week. Tyler Huntley starts -- experienced backup, moderate (not catastrophic) drop-off."
+        }
+      ],
+      "items_total_pts": -3.5,
+      "stacking_notes": [],
+      "total_pts": -3.5
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.435524+00:00",
+    "n": 10000,
+    "homeElo": 1477.0,
+    "awayElo": 1546.0,
+    "gamesSeen": 8,
+    "eloMarginHome": -0.8,
+    "statsMarginHome": -3.7,
+    "marginDivergence": 2.9,
+    "projTotal": 48.0,
+    "homeWinProbElo": 47.0,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -3.5,
+    "projHomeMeanRaw": 23.6,
+    "projAwayMeanRaw": 24.4,
+    "projHomeMeanAdjusted": 23.6,
+    "projAwayMeanAdjusted": 20.9,
+    "injuryAdjustedMarginHome": 2.7,
+    "projTotalAdjusted": 44.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Away injury adjustment: -3.5 pts -- Lamar Jackson (QB, out, -3.5).",
+      "Atlanta Falcons (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 56.3,
+    "awayWinPct": 41.1,
+    "tiePct": 2.6,
+    "medianHomeScore": 23,
+    "medianAwayScore": 21,
+    "coverPctHome": 47.8,
+    "overPct": 52.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.727102+00:00",
+      "marginHome": 0.8,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.580669+00:00",
+      "marginHome": 1.0,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.910822+00:00",
+      "marginHome": 3.0,
+      "total": 41.8
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.550773+00:00",
+      "marginHome": 4.0,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-10-09T16:15:13.158963+00:00",
+      "marginHome": 4.0,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-10-09T21:08:56.683001+00:00",
+      "marginHome": 2.7,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.415713+00:00",
+      "marginHome": 2.7,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.236620+00:00",
+      "marginHome": 2.7,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-10T21:04:16.187758+00:00",
+      "marginHome": 2.7,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.435524+00:00",
+      "marginHome": 2.7,
+      "total": 44.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-09T21:09:57Z",
+    "analysis": [
+      "Tyler Huntley is now confirmed starting for Baltimore (Lamar Jackson ruled out Friday, ankle, didn't practice all week), and the market has fully caught up -- Atlanta opened as a 6-point road underdog and is now a 3.5-point home favorite, a real 9.5-point swing that's entirely explained by the news, not a mystery line move. With the injury priced in, the sim has this close to a coinflip (Falcons 55.7% win, home cover only 47.1%), i.e. fair, not an edge, at the current number.",
+      "One thing the model can't fully capture: Baltimore also lost DE Trey Hendrickson (finger, out), its top pass rusher. That's a defensive-not-offensive loss, so it isn't priced into the sim's own total (44.5, already a touch above the 43.5 market) -- the honest read is the total should probably sit a little higher still than that 44.5, since Atlanta's O-line will see a weaker Ravens rush with Hendrickson out. Not a clean enough number to size, but worth knowing before fading the total."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Falcons -3.5 (fair, no bet)",
+        "confidence": 3,
+        "reasoning": "The Huntley news is fully priced -- sim has ATL covering only 47.1% of trials at the current number, essentially a coinflip. The earlier Falcons +3.5 number from before the line moved is gone. | Stake $0 (number gone, fair price now) \u00b7 pass at +2.5",
+        "best_bet": false
+      },
+      {
+        "market": "total",
+        "pick": "Lean Over, watching (not priced cleanly)",
+        "confidence": 4,
+        "reasoning": "Sim total 44.5 already sits above the 43.5 market even before accounting for Hendrickson (DE, out) weakening Baltimore's pass rush -- directionally Over, but the model can't size the Hendrickson piece, so holding off a real bet. | Stake $0 (watch) \u00b7 pass at 42",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-08T12:58:09Z",
+    "status": "captured",
+    "source_note": "Flowers DNP Oct 7",
+    "picks": [
+      {
+        "player": "Derrick Henry",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "under",
+        "confidence": 3,
+        "reasoning": "Withdrawn: in 5 Huntley starts Henry averaged 127 yds on 22 carries and went over 89.5 four times. The stacked-box theory was wrong. | Stake $0 (pass both sides) \u00b7 pass at 89.5",
+        "matchup": {
+          "opp_rank_vs_pos": 3,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk4 (ATL 39 pts; 194 RB rush yds on 62 att)"
+        },
+        "factors": [
+          {
+            "label": "Huntley split",
+            "dir": "against",
+            "detail": "Huntley starts: 216, 128, 100, 71, 122 (127.4 avg, 4 of 5 over 89.5)"
+          },
+          {
+            "label": "Volume",
+            "dir": "against",
+            "detail": "22 carries/g with Huntley -- BAL leans on Henry more, not less"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL 3rd vs RB, 194 RB rush yds in 4 games (3.1 YPC)"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "3.54 YPC last 3 games in 2026"
+          },
+          {
+            "label": "O-line",
+            "dir": "for",
+            "detail": "Both centers (Pocic, Gwyn) out -- Huntley sample had a healthier line"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 89.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 89.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "Bijan Robinson",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Game log is 83, 72, 194, 145: over 90.5 only 2 of 4 (median 114). The edge is the Huntley game script, not the average. | Stake $15 at 86.5-88.5; $7.50 at 90.5 \u00b7 pass at 92.5",
+        "matchup": {
+          "opp_rank_vs_pos": 13,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk4 (BAL 54 pts; 317 RB rush yds on 83 att)"
+        },
+        "factors": [
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "5.81 YPC"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "ATL +3 home dog by line but sim makes ATL a 3-pt fav with Huntley"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "BAL 13th vs RB, 3.8 YPC allowed"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "ATL LT Jake Matthews (groin) questionable"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "neutral",
+            "detail": "Wk1-4: 83, 72, 194, 145 -- 2 of 4 over 90.5, median 114"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 2,
+          "net": 1
+        },
+        "opening_line": 88.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 90.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "Mark Andrews",
+        "team": "away",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "A backup QB leans on his tight end, and Atlanta is 24th vs TEs. | Stake $0 (over SNF game cap; swap-in) \u00b7 pass at 31.5",
+        "matchup": {
+          "opp_rank_vs_pos": 24,
+          "rank_basis": "footballdb TE fantasy pts allowed thru Wk3 (ATL 30 pts; 156 TE rec yds)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "37.2 rec yds/g (18 rec, 24 targets)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL 24th vs TE, 52 TE rec yds/g allowed"
+          },
+          {
+            "label": "QB",
+            "dir": "for",
+            "detail": "Huntley -- short-area throws"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "BAL -3 by line, trailing by the sim"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 28.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 28.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "Zay Flowers",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "With Huntley at QB for the full game (4 games in 2025), Flowers averaged 61 yds and 5.3 catches and cleared 66.5 twice. That's a coinflip, so only the ATL matchup props it up. | Stake $0 (watch) \u00b7 pass at 66.5",
+        "matchup": {
+          "opp_rank_vs_pos": 25,
+          "rank_basis": "footballdb WR fantasy pts allowed thru Wk4 (ATL 91 pts; 781 WR rec yds)"
+        },
+        "factors": [
+          {
+            "label": "Huntley split",
+            "dir": "against",
+            "detail": "2025 full Huntley games: 30, 84, 68, 63 yds (61.3 avg), 2 of 4 over 66.5"
+          },
+          {
+            "label": "Receptions",
+            "dir": "neutral",
+            "detail": "4, 7, 3, 7 catches with Huntley -- 2 of 4 over 5.5"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL 25th vs WR, 195 WR rec yds/g"
+          },
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "117.3 rec yds/g in 2026 -- with Lamar"
+          },
+          {
+            "label": "Wk4 caveat",
+            "dir": "neutral",
+            "detail": "Wk4 118 yds came mostly with Lamar; Huntley threw only 63 yds in relief"
+          },
+          {
+            "label": "Injury",
+            "dir": "against",
+            "detail": "Hamstring, DNP Wed Oct 7"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 2,
+          "net": 0
+        },
+        "opening_line": 66.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 66.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T21:02:46Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 55,
+      "handle_pct_home": 53
+    },
+    "total": {
+      "bets_pct_over": 82,
+      "handle_pct_over": 74
+    },
+    "moneyline": {
+      "bets_pct_home": 61,
+      "handle_pct_home": 51
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "Refresh ~4hrs after last capture; essentially unchanged (handle ticked 49->53 on ATL, still short of the 60/40 RLM bar). VegasInsider/rotowire both returned stale (Oct 7 / cached) pages this cycle so no new DK/FD/Caesars price snapshot added -- book-level spread/total unchanged per cleatz's consensus line (ATL -3/43.5, same as last snapshot)."
+  },
+  "final_score": {
+    "home": 23,
+    "away": 30
+  }
+}

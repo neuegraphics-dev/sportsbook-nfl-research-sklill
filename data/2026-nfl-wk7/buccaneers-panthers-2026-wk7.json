@@ -1,0 +1,317 @@
+{
+  "game_id": "buccaneers-panthers-2026-wk7",
+  "matchup": "Tampa Bay Buccaneers @ Carolina Panthers",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -3,
+      "total": 45,
+      "ml_fav": -170,
+      "ml_dog": 146
+    },
+    "draftkings": {
+      "spread": -3,
+      "total": 44.5,
+      "ml_fav": -192,
+      "ml_dog": 160
+    },
+    "fanduel": {
+      "spread": -3.5,
+      "total": 44.5,
+      "ml_fav": -180,
+      "ml_dog": 152
+    },
+    "caesars": {
+      "spread": -3,
+      "total": 44.5,
+      "ml_fav": -173,
+      "ml_dog": 145
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Panthers."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 45,
+        "ml_fav": -170,
+        "ml_dog": 146
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 44.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -180,
+        "ml_dog": 152
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 44.5,
+        "ml_fav": -173,
+        "ml_dog": 145
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Panthers."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 45,
+        "ml_fav": -170,
+        "ml_dog": 146
+      },
+      "draftkings": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -190,
+        "ml_dog": 155
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -173,
+        "ml_dog": 145
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Panthers."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 45,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 44.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": 44.5,
+        "ml_fav": -152,
+        "ml_dog": 129
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": null,
+    "total_lean": "Over 44.5",
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Model total projection sits above the market number, model-only signal",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 73,
+      "handle_pct_home": 62
+    },
+    "total": {
+      "bets_pct_over": 84,
+      "handle_pct_over": 96
+    },
+    "moneyline": {
+      "bets_pct_home": 81,
+      "handle_pct_home": 85
+    },
+    "reverse_line_move": true,
+    "rlm_note": "62% of handle is on the home side but the spread moved AGAINST them (-3 -> -2.5) -- real reverse line move toward away.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.158621+00:00",
+    "n": 10000,
+    "homeElo": 1494.6,
+    "awayElo": 1414.1,
+    "gamesSeen": 11,
+    "eloMarginHome": 5.1,
+    "statsMarginHome": 2.8,
+    "marginDivergence": 2.3,
+    "projTotal": 47.8,
+    "homeWinProbElo": 67.7,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 44.5,
+    "homeInjuryPts": -2.15,
+    "awayInjuryPts": -4.1,
+    "projHomeMeanRaw": 26.5,
+    "projAwayMeanRaw": 21.3,
+    "projHomeMeanAdjusted": 24.3,
+    "projAwayMeanAdjusted": 17.2,
+    "injuryAdjustedMarginHome": 7.1,
+    "projTotalAdjusted": 41.5,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -2.1 pts -- Jaelan Phillips (LB, out, -0.8), Thomas Incoom (LB, out, -0.3), Monroe Freeling (T, questionable, -0.3). LB depth: 2 confirmed out (Jaelan Phillips, Thomas Incoom) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -4.1 pts -- Emeka Egbuka (WR, out, -1.5), Luke Goedeke (T, out, -0.8), Antoine Winfield Jr. (S, out, -1.0), Baker Mayfield (QB, questionable, -0.8).",
+      "Carolina Panthers (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jaycee Horn (-1.0), Mike Jackson (-0.8), Xavier Legette (-0.5), Jalen Coker (-0.4), Damien Lewis (-0.5) [-4.7 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Tampa Bay Buccaneers (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Baker Mayfield (-5.5) [-5.5 pts total]; Baker Mayfield (-5.5), Antoine Winfield Jr. (-0.8), Benjamin Morrison (-0.8), SirVocea Dennis (-0.4) [-7.4 pts total]; Baker Mayfield (-6.0), Antoine Winfield Jr. (-1.0) [-7.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 67.9,
+    "awayWinPct": 29.3,
+    "tiePct": 2.8,
+    "medianHomeScore": 24,
+    "medianAwayScore": 17,
+    "coverPctHome": 62.6,
+    "overPct": 41.9
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.856390+00:00",
+      "marginHome": 5.1,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.458158+00:00",
+      "marginHome": 5.1,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.413860+00:00",
+      "marginHome": 5.1,
+      "total": 47.8
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.115623+00:00",
+      "marginHome": 6.4,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.158621+00:00",
+      "marginHome": 7.1,
+      "total": 41.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:59:52Z",
+    "analysis": [
+      "Carolina -2.5 (DK -126, Caesars -127); model has Carolina by 7.1 (Elo 5.1, recent scoring 2.8), helped by Tampa Bay missing WR1 Emeka Egbuka, T Luke Goedeke and S Antoine Winfield Jr. with Baker Mayfield (thumb) questionable.",
+      "Totals disagree between the raw (47.8) and injury-adjusted (41.5) projections around a 44.5 line, so no total lean. Side lean is a standard unit."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "CAR -2.5",
+        "confidence": 4,
+        "reasoning": "Elo/scoring favor CAR, but a reverse line move (62% handle on CAR, line cut from -3 to -2.5) and TB injuries already priced argue for passing. | Stake $0 \u00b7 pass at -2.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-25T12:59:25Z",
+    "status": "pending",
+    "source_note": "2026-10-25 re-check (covers.com props, footballdb DvP thru Wk6): Godwin rec o42.5 fails tough-matchup cap (CAR 5th-toughest vs WR, 15.6 pts/g) and rec_yards -1; Mayfield pass o210.5 has net alignment 0 (thumb + Egbuka/Goedeke out offset model gap, CAR 18th vs QB). No pick clears the checklist.",
+    "picks": []
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "LB",
+          "player": "Jaelan Phillips",
+          "status": "out",
+          "pts": -0.8,
+          "note": "edge/LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Thomas Incoom",
+          "status": "out",
+          "pts": -0.3,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Monroe Freeling",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "knee (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -1.4,
+      "stacking_notes": [
+        "LB depth: 2 confirmed out (Jaelan Phillips, Thomas Incoom) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -2.15
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Emeka Egbuka",
+          "status": "out",
+          "pts": -1.5,
+          "note": "WR1 out (concussion/foot) (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Luke Goedeke",
+          "status": "out",
+          "pts": -0.8,
+          "note": "starting T out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Antoine Winfield Jr.",
+          "status": "out",
+          "pts": -1.0,
+          "note": "S star out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "QB",
+          "player": "Baker Mayfield",
+          "status": "questionable",
+          "pts": -0.8,
+          "note": "thumb, expected to play but uncertain (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -4.1,
+      "stacking_notes": [],
+      "total_pts": -4.1
+    }
+  },
+  "final_score": {
+    "home": 13,
+    "away": 43
+  }
+}

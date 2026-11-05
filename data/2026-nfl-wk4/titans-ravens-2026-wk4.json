@@ -1,0 +1,333 @@
+{
+  "game_id": "titans-ravens-2026-wk4",
+  "matchup": "Tennessee Titans @ Baltimore Ravens",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -10.5,
+      "total": 44.5,
+      "ml_fav": -700,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Ravens -10.5 (home fav). Fox opening Ravens -11.5/43.5 -- line has come in half a point toward Titans. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 44.5,
+        "ml_fav": -700,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Ravens -10.5 (home fav). Fox opening Ravens -11.5/43.5 -- line has come in half a point toward Titans. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -11.5,
+        "total": 43.5,
+        "ml_fav": -650,
+        "ml_dog": 475
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:29:04Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -11.5,
+        "total": 43.5,
+        "ml_fav": -650,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -11.5,
+        "total": 43.5,
+        "ml_fav": -650,
+        "ml_dog": 550
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -11.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1), matches Caesars via vegasinsider.com. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -11.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -11.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "No edge",
+    "total_lean": "Lean Over 43.5 (model 46.1)",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Corrected current total is 43.5, down from an earlier stale 44.5 read -- model total (46.1) now sits far enough above it to flag, though this is a single-category signal",
+      "Spread gap remains negligible (model and corrected market both have Baltimore as a near-two-score favorite)"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.805798+00:00",
+    "n": 10000,
+    "homeElo": 1541.5,
+    "awayElo": 1265.3,
+    "gamesSeen": 6,
+    "eloMarginHome": 13.0,
+    "statsMarginHome": 5.6,
+    "marginDivergence": 7.4,
+    "projTotal": 46.1,
+    "homeWinProbElo": 86.6,
+    "marketHomeSpread": -11.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 29.5,
+    "projAwayMeanRaw": 16.6,
+    "projHomeMeanAdjusted": 29.5,
+    "projAwayMeanAdjusted": 16.6,
+    "injuryAdjustedMarginHome": 13.0,
+    "projTotalAdjusted": 46.1,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+13.0) and recent-scoring margin (+5.6) disagree by 7.4 points -- worth a second look before trusting either alone."
+    ],
+    "homeWinPct": 81.0,
+    "awayWinPct": 17.2,
+    "tiePct": 1.7,
+    "medianHomeScore": 30,
+    "medianAwayScore": 17,
+    "coverPctHome": 54.1,
+    "overPct": 57.8
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 65,
+      "handle_pct_home": 66
+    },
+    "total": {
+      "bets_pct_over": 62,
+      "handle_pct_over": 67
+    },
+    "moneyline": {
+      "bets_pct_home": 90,
+      "handle_pct_home": 84
+    },
+    "reverse_line_move": false,
+    "rlm_note": "66% of handle is on the home side and the spread has moved toward them (-10.5 -> -11.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:29:05Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser",
+    "picks": [
+      {
+        "player": "Cam Ward",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "Fanatics",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Mobile rookie QB with a real rushing floor against a defense that has been generous overall.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 19.6 vs 10.5 line, +8.1 diff, 26.16% edge"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Ward is a mobile rookie QB with real scramble equity"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "Titans are a massive road underdog, which can mean more hurried/abbreviated drives"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 10.5,
+        "opening_captured_at": "2026-10-01T01:29:05Z",
+        "current_line": 10.5,
+        "current_captured_at": "2026-10-01T01:29:05Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 21,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 7,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 2,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 10.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Tony Pollard",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "theScore",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Baltimore has been unusually generous against the run, offsetting a tough Titans game script.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Baltimore allows 44.0 fantasy pts to RBs thru 3 games, among the most generous in the league"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Pollard is TENs clear lead back"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 60.2 vs 47.5 line, +12.7 diff, 26.4% edge"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "Titans are a massive road underdog (BAL -11.5), trailing script can cut into 2nd-half rush volume"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 47.5,
+        "opening_captured_at": "2026-10-01T01:08:26Z",
+        "current_line": 47.5,
+        "current_captured_at": "2026-10-01T01:08:26Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 35,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 64,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 74,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 47.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-29T13:35:57Z",
+    "analysis": [
+      "The corrected current total is 43.5, down from an earlier stale 44.5 read. That opens a real gap against the model's 46.1 projection -- worth flagging, though it's a single-category signal with nothing from the injury side to back it up.",
+      "The spread remains a non-story: Baltimore's massive Elo edge (1541 vs 1265) tracks the corrected market's -11.5 closely, so both sides agree Baltimore is simply the far better team right now."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 43.5",
+        "confidence": 4,
+        "reasoning": "Model total sits meaningfully above the corrected market number, newly visible after fixing a stale total.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.805798+00:00",
+      "marginHome": 13.0,
+      "total": 46.1
+    }
+  ],
+  "final_score": {
+    "home": 24,
+    "away": 18
+  }
+}

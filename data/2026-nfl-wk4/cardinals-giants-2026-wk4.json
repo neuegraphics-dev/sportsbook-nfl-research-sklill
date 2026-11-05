@@ -1,0 +1,308 @@
+{
+  "game_id": "cardinals-giants-2026-wk4",
+  "matchup": "Arizona Cardinals @ New York Giants",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 43.5,
+      "ml_fav": -136,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK current: Giants -2.5 (home fav). Fox's opening-line read had Cardinals -1 (home dog) -- a real favorite flip toward the Giants since the line opened, not a fetch error; worth a closer look next cycle. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -136,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK current: Giants -2.5 (home fav). Fox's opening-line read had Cardinals -1 (home dog) -- a real favorite flip toward the Giants since the line opened, not a fetch error; worth a closer look next cycle. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 43.5,
+        "ml_fav": -110,
+        "ml_dog": -110
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Genuine cross-book split this cycle: DK/rotowire shows Giants -1.5 (home fav), but Caesars/vegasinsider (team-attributed) shows Cardinals -1.5 (away fav) -- opposite favorites on an essentially even game. DK's own moneyline column was also internally inconsistent (listed Cardinals as ML favorite despite Giants spread favorite), so ml_fav logged null rather than guessed."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:36Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 44.5,
+        "ml_fav": -110,
+        "ml_dog": 105
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1). Caesars via vegasinsider.com: Cardinals(away) -2.5 -> home(Giants) +2.5, half-pt wider than DK, same side. BookMaker.eu unusable this cycle (stale old dates)."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-02",
+    "spread_lean": "Cardinals -1.5 to -2.5 (full favorite flip from Giants)",
+    "total_lean": "Under 43.5",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Full favorite flip since opening: Giants opened -2.5 home favorites, market now has Cardinals (away) favored by 1.5-2.5 after Jaxson Dart (out for season, Wk2) and now Brian Burns (confirmed torn ACL, out for season) -- two real injury-driven signal categories now corroborating the same direction",
+      "Giants rank 30th-31st in yards/play on offense; Jameis Winston managed just 118 passing yards last time out; newly-acquired J.J. McCarthy has minimal time to learn the offense so no QB upgrade expected soon",
+      "Both teams rank top-5 in time of possession/run-heavy approach -- total lean under 43.5 is well-supported by pace+injury combination, not just the raw model gap"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-02T13:07:48Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jameis Winston",
+          "status": "out",
+          "pts": -4.0,
+          "note": "Unchanged from Wk3 convention -- Jaxson Dart (knee, Wk2) out for the rest of the regular season, Jameis Winston confirmed starter."
+        },
+        {
+          "position": "EDGE",
+          "player": "Brian Burns",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Confirmed torn ACL, out for the season (rotoballer, TSN, Bleacher Report all agree) -- Giants defensive leader and top pass rusher, loses their best source of pressure on a Cardinals offense that has scored well recently."
+        }
+      ],
+      "items_total_pts": -5.5,
+      "stacking_notes": [],
+      "total_pts": -5.5
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.089475+00:00",
+    "n": 10000,
+    "homeElo": 1456.6,
+    "awayElo": 1395.0,
+    "gamesSeen": 6,
+    "eloMarginHome": 4.4,
+    "statsMarginHome": 0.7,
+    "marginDivergence": 3.7,
+    "projTotal": 46.3,
+    "homeWinProbElo": 65.3,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 44.5,
+    "homeInjuryPts": -5.5,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 25.3,
+    "projAwayMeanRaw": 21.0,
+    "projHomeMeanAdjusted": 19.8,
+    "projAwayMeanAdjusted": 21.0,
+    "injuryAdjustedMarginHome": -1.1,
+    "projTotalAdjusted": 40.8,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -5.5 pts -- Jameis Winston (QB, out, -4.0), Brian Burns (EDGE, out, -1.5).",
+      "New York Giants (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jameis Winston (-4.0), Malik Nabers (-0.6) [-4.6 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 46.1,
+    "awayWinPct": 51.2,
+    "tiePct": 2.7,
+    "medianHomeScore": 20,
+    "medianAwayScore": 21,
+    "coverPctHome": 54.5,
+    "overPct": 39.8
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:33Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 43,
+      "handle_pct_home": 15
+    },
+    "total": {
+      "bets_pct_over": 42,
+      "handle_pct_over": 59
+    },
+    "moneyline": {
+      "bets_pct_home": 33,
+      "handle_pct_home": 26
+    },
+    "reverse_line_move": false,
+    "rlm_note": "85% of handle is on the away side and the spread has moved toward them (-2.5 -> +1.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:08:16Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser Oct 1 AM; footballdb.com points-allowed for matchup rank",
+    "picks": [
+      {
+        "player": "Cam Skattebo",
+        "team": "home",
+        "position": "RB",
+        "market": "rec_yards",
+        "book": "Fanatics",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Checkdown-friendly role fits a Giants passing game now run by Winston.",
+        "factors": [
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Skattebo is Giants backfield checkdown option; Winston leans on short/intermediate reads"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Arizona allows 41.0 fantasy pts to RBs thru 3 games, middling"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 23.9 vs 17.5 line, +6.4 diff, 25.3% edge"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 17.5,
+        "opening_captured_at": "2026-10-01T01:08:16Z",
+        "current_line": 17.5,
+        "current_captured_at": "2026-10-01T01:08:16Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 0,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 19,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 40,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 17.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-02T13:08:08Z",
+    "analysis": [
+      "This line has fully flipped since opening -- the Giants opened as 2.5-point home favorites and the market now has Arizona favored by 1.5 to 2.5, driven by a stacked set of Giants injuries: Jaxson Dart is out for the season (Wk2 knee) and Brian Burns, their best pass rusher, is now confirmed out for the year with a torn ACL. The model agrees directionally -- Elo now favors the Giants only marginally (4.4 net) before the injury hit, and the -5.5 injury adjustment flips that to a 1.1-point Cardinals edge after folding in Winston and Burns both being out.",
+      "The total is the cleaner angle here: both offenses rank bottom-5 in yards per play, both teams play run-heavy, clock-control football (top-5 in time of possession), and New York just lost its best pass-rush threat, which does not speed the game up. The model projects 40.8 adjusted points against a 44.5 market total, and Arizona is still finding some rhythm (Jeremiyah Love, Trey McBride) while New York is starting a backup QB with a new, unfamiliar backup (J.J. McCarthy) behind him. A clean, injury-driven under lean."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 43.5-44.5",
+        "confidence": 6,
+        "reasoning": "Two bottom-5 offenses, both run-heavy/clock-control, and the Giants just lost their top pass rusher for the season on top of their starting QB -- model sits nearly 4 points under the market.",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "Cardinals -1.5 to -2.5",
+        "confidence": 5,
+        "reasoning": "Model and market agree on the favorite flip post-Burns/Dart; a real lean but not a huge model edge once the injuries are priced in.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.089475+00:00",
+      "marginHome": -1.1,
+      "total": 40.8
+    }
+  ],
+  "final_score": {
+    "home": 36,
+    "away": 24
+  }
+}

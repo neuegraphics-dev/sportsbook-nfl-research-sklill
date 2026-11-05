@@ -1,0 +1,622 @@
+{
+  "game_id": "steelers-browns-2026-wk4",
+  "matchup": "Pittsburgh Steelers @ Cleveland Browns",
+  "week": "Week 4",
+  "kickoff": "2026-10-02T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 2.5,
+      "total": 37.5,
+      "ml_fav": -134,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK last verified Sep28 (1 day stale). Steelers -2.5 (away fav) -> home(Browns)=+2.5. FoxSports opening had 38.5 total, close. BookMaker.eu board showing unrelated old dates this cycle, unusable. VegasInsider still on Wk3 table, Caesars/FanDuel null."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 37.5,
+        "ml_fav": -134,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK last verified Sep28 (1 day stale). Steelers -2.5 (away fav) -> home(Browns)=+2.5. FoxSports opening had 38.5 total, close. BookMaker.eu board showing unrelated old dates this cycle, unusable. VegasInsider still on Wk3 table, Caesars/FanDuel null."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 38.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:27:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 38.5,
+        "ml_fav": -142,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Sep30, ml_fav moved -155->-142 vs yesterday). Caesars spread via vegasinsider.com (Steelers -2.5 confirmed team-attributed), total/ML unconfirmed. BookMaker.eu board still returning unrelated Dec/playoff dates this cycle -- unusable, logged null."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 38.5,
+        "ml_fav": -142,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Research re-check pass, same cycle as price snapshot above (numbers unchanged)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-30",
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": "no edge",
+    "confidence": "Low",
+    "top_signals": [
+      "No confirmed key injury news found for this specific Oct 1-2 matchup this cycle -- search results were dominated by stale/mismatched articles from other Steelers-Browns meetings (2019, Nov 2024, and an apparent later-season Wk6 rematch), so nothing was used as a signal rather than risk misattribution",
+      "DK favorite ML drifted from -155 (yesterday) to -142 today with the spread unchanged at Browns +2.5/Steelers -2.5 -- minor price softening on the favorite, not a meaningful signal on its own",
+      "Caesars and DK agree on the same side and magnitude (Browns +2.5) -- no book-vs-book divergence this cycle"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-30T18:30:51.284802+00:00",
+    "n": 10000,
+    "homeElo": 1427.7,
+    "awayElo": 1520.6,
+    "gamesSeen": 6,
+    "eloMarginHome": -1.8,
+    "statsMarginHome": -2.6,
+    "marginDivergence": 0.8,
+    "projTotal": 42.3,
+    "homeWinProbElo": 43.6,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 38.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.2,
+    "projAwayMeanRaw": 22.0,
+    "projHomeMeanAdjusted": 20.2,
+    "projAwayMeanAdjusted": 22.0,
+    "injuryAdjustedMarginHome": -1.8,
+    "projTotalAdjusted": 42.3,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [],
+    "homeWinPct": 42.9,
+    "awayWinPct": 54.2,
+    "tiePct": 2.9,
+    "medianHomeScore": 20,
+    "medianAwayScore": 22,
+    "coverPctHome": 51.6,
+    "overPct": 59.4
+  },
+  "market_signal": {
+    "captured_at": "2026-09-30T18:33:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 48,
+      "handle_pct_home": 38
+    },
+    "total": {
+      "bets_pct_over": 55,
+      "handle_pct_over": 54
+    },
+    "moneyline": {
+      "bets_pct_home": 28,
+      "handle_pct_home": 51
+    },
+    "reverse_line_move": false,
+    "rlm_note": "62% of handle is on the away side but the spread hasn't moved yet (+2.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Browns(home)-relative: cleatz shows Steelers(away) -2.5 at 52pct bets / 62pct handle -> Browns(home) 48pct bets / 38pct handle."
+  },
+  "props": {
+    "last_checked": "2026-10-01T02:18:50Z",
+    "status": "captured",
+    "source_note": "footballdb.com points-allowed for real matchup ranks, replacing earlier RotoWire-grade-only factors; rendered via browser for original RotoWire picks",
+    "picks": [
+      {
+        "player": "Jerry Jeudy",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Real model edge, but leaning over into one of the leagues tougher WR defenses caps this at a mild play.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "PIT ranks 8th of 32 vs WR (45.0 fantasy pts allowed thru 3 games) -- a genuinely tough defense, capping this pick"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers/RotoWire model edge (9-12%) at a clean -114 price"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Corrected game total 38.5, one of the lowest on the Week 4 board"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        },
+        "opening_line": 13.5,
+        "opening_captured_at": "2026-09-29T15:05:42Z",
+        "current_line": 13.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 26,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 0,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 0,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 13.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Jaylen Warren",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetRivers",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Competitive road-dog script helps, but CLE has been a genuinely tough run defense, so this stays a mild lean only.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "CLE ranks 9th of 32 vs RB (33.0 fantasy pts allowed thru 3 games) -- a real tough-matchup cap here"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Steelers only 2.5-pt road underdogs on the corrected line, a competitive script that supports real workload"
+          },
+          {
+            "label": "Model",
+            "dir": "neutral",
+            "detail": "RotoWire prop tool grades this an A, but thats a third-party score, not a hard number on its own"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        },
+        "opening_line": 64.5,
+        "opening_captured_at": "2026-09-29T15:05:42Z",
+        "current_line": 64.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 46,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 43,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com (wk3 not available)",
+        "backtest": {
+          "hits": 0,
+          "misses": 2,
+          "pushes": 0,
+          "total": 2,
+          "pct": 0,
+          "line": 64.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Raheim Sanders",
+        "team": "home",
+        "position": "RB",
+        "market": "rec_yards",
+        "book": "theScore",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Real checkdown role in a split backfield against a middling (not tough) run-and-catch defense.",
+        "factors": [
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Sanders is getting real checkdown/receiving work in a split CLE backfield"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PIT ranks 18th of 32 vs RB (48.0 fantasy pts allowed thru 3 games), middling, not a tough stop unit"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Close spread (PIT -2.5) points to a competitive, full-snap-count game for both backfields"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 0,
+          "neutral": 2,
+          "net": 1
+        },
+        "opening_line": 9.5,
+        "opening_captured_at": "2026-10-01T01:29:48Z",
+        "current_line": 9.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 25,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 7,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 34,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 9.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Harold Fannin",
+        "team": "home",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Growing target share against a moderately tough but not elite TE defense.",
+        "factors": [
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Fannins target share has grown in CLEs last two games"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PIT ranks 12th of 32 vs TE (17.0 fantasy pts allowed thru 3 games), moderately tough but not top-10"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Close spread (PIT -2.5), no strong pace signal either way"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 0,
+          "neutral": 2,
+          "net": 1
+        },
+        "opening_line": 40.5,
+        "opening_captured_at": "2026-10-01T01:29:48Z",
+        "current_line": 40.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 21,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 54,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 51,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 40.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Deshaun Watson",
+        "team": "home",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "theScore",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "PIT has been genuinely elite at shutting down QB rushing this year, not just a short-week story.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "PIT has allowed just 30 rush yards to opposing QBs thru 3 games, 6th-best in the league vs the position overall"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "PIT pass rush pressure should force faster throws, less time to scramble"
+          },
+          {
+            "label": "Rest",
+            "dir": "neutral",
+            "detail": "Short Thursday-night turnaround for both sides"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 29.5,
+        "opening_captured_at": "2026-10-01T01:29:48Z",
+        "current_line": 29.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 38,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 22,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 45,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 29.5,
+          "lean": "under"
+        }
+      },
+      {
+        "player": "Quinshon Judkins",
+        "team": "home",
+        "position": "RB",
+        "market": "receptions",
+        "book": "Hard Rock",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Growing checkdown role against a defense that is not a tough stop unit vs RBs.",
+        "factors": [
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Judkins is seeing more checkdown/receiving work in the CLE timeshare"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PIT ranks 18th of 32 vs RB (48.0 fantasy pts allowed thru 3 games), middling"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Close spread (PIT -2.5), no strong pace signal either way"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 0,
+          "neutral": 2,
+          "net": 1
+        },
+        "opening_line": 1.5,
+        "opening_captured_at": "2026-10-01T01:29:48Z",
+        "current_line": 1.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 2,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 5,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 2,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 3,
+          "misses": 0,
+          "pushes": 0,
+          "total": 3,
+          "pct": 100,
+          "line": 1.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Quinshon Judkins",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetRivers",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Committee-backfield cap is real, but PIT is not actually a tough run defense, so this stays a mild lean.",
+        "factors": [
+          {
+            "label": "Committee backfield",
+            "dir": "for",
+            "detail": "Raheim Sanders also carries a real rushing line on this same board, suggesting a split Cleveland backfield that caps Judkins own number"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "PIT ranks only 18th of 32 vs RB (48.0 fantasy pts allowed thru 3 games) -- not a tough run-stop unit, which argues against the under on its own"
+          },
+          {
+            "label": "Price",
+            "dir": "neutral",
+            "detail": "BetRivers -112, single-book line this early in the week"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        },
+        "opening_line": 56.5,
+        "opening_captured_at": "2026-09-29T15:05:42Z",
+        "current_line": 56.5,
+        "current_captured_at": "2026-10-01T02:18:50Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 33,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 21,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 70,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 56.5,
+          "lean": "under"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-30T18:31:21Z",
+    "analysis": [
+      "Re-checked ahead of Thursday night: DraftKings and Caesars now agree on Browns +2.5/Steelers -2.5, total unchanged at 38.5, with the favorite's moneyline softening slightly (-155 to -142) -- a minor, unremarkable drift rather than a real signal. No confirmed injury news surfaced for either side this cycle; search results were dominated by stale articles from other Steelers-Browns meetings, so nothing from that noise was used.",
+      "The model still projects the total (42.3) well above the market number (38.5), the same single-category gap flagged yesterday -- a short week leaves little room for new information, so this stays a modest total lean rather than a confident one."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 38.5",
+        "confidence": 4,
+        "reasoning": "Model total sits ~3.8 pts above the market on a single signal category (recent scoring pace); no injury or weather corroboration found this cycle.",
+        "best_bet": false
+      }
+    ]
+  },
+  "final_score": {
+    "home": 27,
+    "away": 24
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "game_id": "cowboys-eagles-2026-wk7",
+  "matchup": "Dallas Cowboys @ Philadelphia Eagles",
+  "week": "Week 7",
+  "kickoff": "2026-10-27T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": 5.5,
+      "total": 44,
+      "ml_fav": -240,
+      "ml_dog": 199
+    },
+    "draftkings": {
+      "spread": 4.5,
+      "total": 44.5,
+      "ml_fav": -218,
+      "ml_dog": 180
+    },
+    "fanduel": {
+      "spread": 4.5,
+      "total": 44.5,
+      "ml_fav": -225,
+      "ml_dog": 188
+    },
+    "caesars": {
+      "spread": 4.5,
+      "total": 44,
+      "ml_fav": -218,
+      "ml_dog": 182
+    },
+    "note": "DK via VegasInsider DOM (cleatz.com had no card for this game this cycle); Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Eagles."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 44,
+        "ml_fav": -240,
+        "ml_dog": 199
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 44.5,
+        "ml_fav": -218,
+        "ml_dog": 180
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 44.5,
+        "ml_fav": -225,
+        "ml_dog": 188
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": -218,
+        "ml_dog": 182
+      },
+      "note": "DK via VegasInsider DOM (cleatz.com had no card for this game this cycle); Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Eagles."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:09Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 44,
+        "ml_fav": -240,
+        "ml_dog": 199
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": -220,
+        "ml_dog": 180
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": -218,
+        "ml_dog": 182
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Eagles."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": -209,
+        "ml_dog": 175
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -205,
+        "ml_dog": 170
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.5,
+        "total": 44.0,
+        "ml_fav": -218,
+        "ml_dog": 182
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    },
+    {
+      "captured_at": "2026-10-26T13:09:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4.0,
+        "total": 44.5,
+        "ml_fav": -210,
+        "ml_dog": 186
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~13:10Z DK-equivalent from RotoWire odds table (verified 10/25, book unlabeled; Cowboys -4); other books not refreshed"
+    },
+    {
+      "captured_at": "2026-10-26T20:43:36Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": -216,
+        "ml_dog": 180
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 44,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-26 ~20:45Z: DK/FD/Caesars via VegasInsider (page updated 10/25 2:18PM), BookMaker.eu direct (updated 10/25 11:16PM PT); ML only for BookMaker. Cowboys -4.5 everywhere; Hurts out, Smith/Wicks out, Barkley questionable (RotoWire)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Eagles +4.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Biggest model-vs-market gap of the week on this spread; Eagles -5.0 pt home injury adjustment (Jalen Hurts out) already baked in",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-26T20:44:17.439177+00:00",
+    "n": 10000,
+    "homeElo": 1482.1,
+    "awayElo": 1426.1,
+    "gamesSeen": 12,
+    "eloMarginHome": 4.2,
+    "statsMarginHome": -0.9,
+    "marginDivergence": 5.1,
+    "projTotal": 47.4,
+    "homeWinProbElo": 64.5,
+    "marketHomeSpread": 4.5,
+    "marketTotal": 44,
+    "homeInjuryPts": -11.05,
+    "awayInjuryPts": -1.7,
+    "projHomeMeanRaw": 25.8,
+    "projAwayMeanRaw": 21.6,
+    "projHomeMeanAdjusted": 14.7,
+    "projAwayMeanAdjusted": 19.9,
+    "injuryAdjustedMarginHome": -5.2,
+    "projTotalAdjusted": 34.6,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+4.2) and recent-scoring margin (-0.9) disagree by 5.1 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -11.1 pts -- Jalen Hurts (QB, out, -5.0), DeVonta Smith (WR, out, -1.8), Dontayvion Wicks (WR, out, -0.4), Nolan Smith (LB, out, -0.6), Michael Carter II (CB, out, -0.5), Saquon Barkley (RB, questionable, -0.8), Landon Dickerson (G, questionable, -0.4), Jonathan Greenard (LB, questionable, -0.5), Jalyx Hunt (LB, questionable, -0.3). WR depth: 2 confirmed out (DeVonta Smith, Dontayvion Wicks) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -1.7 pts -- Drew Shelton (T, out, -0.8), KaVontae Turpin (WR, out, -0.3), Dee Winters (LB, out, -0.4), P.J. Locke (S, questionable, -0.2).",
+      "Philadelphia Eagles (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Saquon Barkley (-2.0), DeVonta Smith (-2.0), Hollywood Brown (-0.8) [-5.5 pts total]; Jalen Hurts (-6.0), Saquon Barkley (-2.0), Will Shipley (-0.5) [-9.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Dallas Cowboys (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]; CeeDee Lamb (-2.0), Tyler Booker (-0.5) [-2.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 34.1,
+    "awayWinPct": 63.2,
+    "tiePct": 2.7,
+    "medianHomeScore": 14,
+    "medianAwayScore": 20,
+    "coverPctHome": 48.1,
+    "overPct": 24.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:16:02.944481+00:00",
+      "marginHome": -0.8,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.968675+00:00",
+      "marginHome": -0.8,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.517718+00:00",
+      "marginHome": -0.8,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.215367+00:00",
+      "marginHome": -0.8,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.343054+00:00",
+      "marginHome": -5.2,
+      "total": 34.6
+    },
+    {
+      "run_at": "2026-10-25T20:44:38.892721+00:00",
+      "marginHome": -5.2,
+      "total": 34.6
+    },
+    {
+      "run_at": "2026-10-26T13:09:26.878450+00:00",
+      "marginHome": -5.2,
+      "total": 34.6
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.439177+00:00",
+      "marginHome": -5.2,
+      "total": 34.6
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jalen Hurts",
+          "status": "out",
+          "pts": -5.0,
+          "note": "carried from earlier research, QB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "DeVonta Smith",
+          "status": "out",
+          "pts": -1.8,
+          "note": "WR1 out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Dontayvion Wicks",
+          "status": "out",
+          "pts": -0.4,
+          "note": "WR out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Nolan Smith",
+          "status": "out",
+          "pts": -0.6,
+          "note": "pass rusher concussion out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "Michael Carter II",
+          "status": "out",
+          "pts": -0.5,
+          "note": "CB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "RB",
+          "player": "Saquon Barkley",
+          "status": "questionable",
+          "pts": -0.8,
+          "note": "hamstring (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "G",
+          "player": "Landon Dickerson",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "knee/pec (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Jonathan Greenard",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "pass rusher ankle (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Jalyx Hunt",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "pass rusher (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -10.3,
+      "stacking_notes": [
+        "WR depth: 2 confirmed out (DeVonta Smith, Dontayvion Wicks) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -11.05
+    },
+    "away": {
+      "items": [
+        {
+          "position": "T",
+          "player": "Drew Shelton",
+          "status": "out",
+          "pts": -0.8,
+          "note": "T out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "KaVontae Turpin",
+          "status": "out",
+          "pts": -0.3,
+          "note": "WR/returner out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Dee Winters",
+          "status": "out",
+          "pts": -0.4,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "P.J. Locke",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "foot (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -1.7,
+      "stacking_notes": [],
+      "total_pts": -1.7
+    }
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-26T14:59:28Z",
+    "analysis": [
+      "Dallas -4 (DK, RotoWire table) against a model of Dallas by 5.2 after Hurts, DeVonta Smith, Wicks and two defenders are out for Philadelphia. A 1.2-point gap is no edge, and the sim total of 34.6 is not trusted because the injury method overstates unders against a 44.5 market.",
+      "Monday-night game with Barkley questionable. The Tanner McKee pass-yards prop moved from 209.5 to 198.5 on the receiver news and is now a small $7.50 over lean at 198.5, pass at 203.5. No game-line bet."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-26T20:46:49Z",
+    "status": "captured",
+    "source_note": "2026-10-26 Barkley rush yds added: user-reported 64.5 then 61.5 (one source, using 61.5); Dallas RB DvP CBS rank 24, Lineups 4.71 ypc; CONDITIONAL on active (questionable, hamstring)",
+    "picks": [
+      {
+        "player": "Saquon Barkley",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "user-reported line",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Dallas 24th vs RB, 4.71 ypc allowed; 82 and 83 yds in two healthy games, no Hurts. Hamstring: questionable, missed 2 games. Bet ONLY if active at inactives.",
+        "matchup": {
+          "opp_rank_vs_pos": 24,
+          "rank_basis": "CBS posvsdef RB, rush/fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DAL 24th vs RB (CBS), 4.71 ypc and 899 rush yds allowed (Lineups)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "21.4 att avg in primetime, 82 and 83 yds in 2 healthy games at 5.5 ypc"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "Questionable hamstring, missed last 2 games, PHI got 22 and 35 rush yds without him"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "PHI 4-pt home dog trims run share, but Hurts out leans offense on the ground"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 61.5,
+        "opening_captured_at": "2026-10-26T20:46:49Z",
+        "current_line": 61.5,
+        "current_captured_at": "2026-10-26T20:46:49Z"
+      },
+      {
+        "player": "Javonte Williams",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "user-reported best line",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Line moved 60.5 to 62.5; Covers projects 74.2 yds on 17.4 carries, still +11.7 over; Dallas -4.5 fav, 85 carries on season; PHI mid-pack vs RB.",
+        "matchup": {
+          "opp_rank_vs_pos": 16,
+          "rank_basis": "CBS posvsdef RB, rush/fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Dallas -4.5 road fav, run-heavy lean late"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "85 carries, ~17.4 proj carries vs 62.5 needs ~16"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PHI 16th vs RB, 103.5 rush yds/g, 3.96 ypc (Lineups)"
+          },
+          {
+            "label": "Projection",
+            "dir": "for",
+            "detail": "Covers proj 74.2 yds, +11.7 over 62.5 line"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 60.5,
+        "opening_captured_at": "2026-10-26T20:29:45Z",
+        "current_line": 62.5,
+        "current_captured_at": "2026-10-26T20:45:46Z"
+      },
+      {
+        "player": "Tyler Goodson",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "Novig via Sports Betting Dime",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Under 10.5 in 14 of last 16 games, avg 3.6 yds; snap share under 12% last month behind Williams.",
+        "matchup": {
+          "opp_rank_vs_pos": 16,
+          "rank_basis": "CBS posvsdef RB, rush/fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Usage",
+            "dir": "for",
+            "detail": "Snap share under 12% last 4 wks, 0 and 2 carries last 2 games"
+          },
+          {
+            "label": "History",
+            "dir": "for",
+            "detail": "Under 10.5 in 14 of last 16 games, avg 3.6 yds"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PHI 16th vs RB, 3.96 ypc allowed (Lineups)"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "Dallas -4.5 fav; garbage-time carries or Williams injury lifts him"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 10.5,
+        "opening_captured_at": "2026-10-26T20:29:45Z",
+        "current_line": 10.5,
+        "current_captured_at": "2026-10-26T20:29:45Z"
+      },
+      {
+        "player": "Tanner McKee",
+        "position": "QB",
+        "team": "home",
+        "market": "pass_yards",
+        "lean": "over",
+        "book": "CBS/SportsLine consensus",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Dallas ranks 27th of 32 vs QB pass yards allowed (CBS posvsdef, 2026 season avg)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Eagles are 4-pt home dogs (Cowboys -4, total 44.5), pushing pass volume"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "Hurts out for season, DeVonta Smith and Wicks out, Barkley questionable; line dropped 209.5 to 198.5 on this news"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "neutral",
+            "detail": "198.5 yds on ~34 att (36+ att prop +128) = 5.8 ypa vs McKee 215 on 45 att (4.8 ypa) in his only start; line already prices workload"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "CBS posvsdef QB, pass yards allowed, 2026 season avg"
+        },
+        "reasoning": "Line fell 11 yds from the 209.5 opener as the Eagles WR room (Smith, Wicks) is out and edge is mostly gone; soft Dallas pass D and dog script keep a small lean. | Stake $7.50 \u00b7 pass at 203.5",
+        "confidence": 4,
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 209.5,
+        "opening_captured_at": "2026-10-21T11:03:15Z",
+        "current_line": 198.5,
+        "current_captured_at": "2026-10-26T14:59:23Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 52,
+      "handle_pct_home": 22
+    },
+    "total": {
+      "bets_pct_over": 63,
+      "handle_pct_over": 81
+    },
+    "moneyline": {
+      "bets_pct_home": 10,
+      "handle_pct_home": 33
+    },
+    "reverse_line_move": false,
+    "rlm_note": "78% of handle is on the away side but the spread hasn't moved yet (+4.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "final_score": {
+    "home": 21,
+    "away": 38
+  }
+}

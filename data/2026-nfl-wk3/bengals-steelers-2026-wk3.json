@@ -1,0 +1,334 @@
+{
+  "game_id": "bengals-steelers-2026-wk3",
+  "matchup": "Cincinnati Bengals @ Pittsburgh Steelers",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": 3.5,
+      "total": 42.5,
+      "ml_fav": -207,
+      "ml_dog": 174
+    },
+    "draftkings": {
+      "spread": 2.5,
+      "total": 46.5,
+      "ml_fav": -130,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -207,
+        "ml_dog": 174
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 46.5,
+        "ml_fav": -130,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 42.0,
+        "ml_fav": -185,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -185,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK moved Bengals -2.5 -> -3.5 since yesterday (Caesars via VegasInsider; FD via VegasInsider spread only)"
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -185,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Bengals(away) favored both sources; DK dated Sep23, Caesars(VegasInsider) dated Sep22 2:55pm ET -- stale ~1.5 days, spread only."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -185,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:25:04Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -185,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu's public board returned a mismatched/wrong-week slate (Dec games) this cycle -- unusable, logged null. DK/Caesars both steady at CIN -3.5 since Fri, no move. Fresh check: CIN WR Iosivas OUT (thumb), DT BJ Hill doubtful (Achilles); PIT RB/OL/WR/CB/CB all questionable-tier, nothing starter-critical confirmed out. Wind ~15mph at Acrisure, borderline total-relevant."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- CIN -3.5 steady across DK/Caesars since Friday, no fresh driver",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "No confirmed starter-level OUT for either team this AM -- CIN Iosivas (thumb) and PIT Dowdle/Dunker are role-tier",
+      "Wind ~15mph at Acrisure sits right at the flag threshold, worth a same-day recheck but not independently actionable"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:25:04.467080+00:00",
+    "n": 10000,
+    "homeElo": 1509.8,
+    "awayElo": 1487.4,
+    "gamesSeen": 4,
+    "eloMarginHome": 2.8,
+    "statsMarginHome": 0.1,
+    "marginDivergence": 2.7,
+    "projTotal": 45.1,
+    "homeWinProbElo": 60.0,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 42.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 24.0,
+    "projAwayMeanRaw": 21.1,
+    "projHomeMeanAdjusted": 24.0,
+    "projAwayMeanAdjusted": 21.1,
+    "injuryAdjustedMarginHome": 2.8,
+    "projTotalAdjusted": 45.1,
+    "spreadLean": "home",
+    "totalLean": "over",
+    "notes": [],
+    "homeWinPct": 57.0,
+    "awayWinPct": 40.4,
+    "tiePct": 2.7,
+    "medianHomeScore": 24,
+    "medianAwayScore": 21,
+    "coverPctHome": 67.5,
+    "overPct": 58.1
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-25T13:42:28Z",
+    "analysis": [
+      "This is one of the bigger model-vs-market disagreements on direction this week, not just magnitude. Elo has Pittsburgh, at home, favored by 2.8 points, and the team's actual scoring margin over its last logged games backs that up almost exactly (+0.1) -- two independent signals agreeing the home team is the better side right now. The market disagrees: both DraftKings and Caesars have Cincinnati favored on the road, -3.5. Neither roster carries a real injury story into this one; an early report crediting a Colts receiver to the Steelers was a clean misattribution and nothing else moved either projection.",
+      "That's a 6.3-point gap between what the model thinks and what the market is charging -- Pittsburgh, as a home team the model actually likes, is getting +3.5 points in a game where the market has them as the road-favored underdog on paper. 66.7% of sim runs have the Steelers covering that number, which lines up with the model's own read: it isn't saying Cincinnati loses, just that +3.5 is a lot of points to hand a team Elo has as the better side at home."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "PIT +3.5 (DraftKings/Caesars)",
+        "confidence": 6,
+        "reasoning": "Model favors the home team (Steelers +2.8) while the market favors the road team (Bengals -3.5) -- a real 6.3-pt directional disagreement, and 66.7% of sims have Pittsburgh covering the current number.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "+2.8 pts favors Steelers (home) vs market's Bengals -3.5 -- a 6.3pt directional disagreement"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "66.9% of 10,000 sims have Pittsburgh covering the current number"
+          },
+          {
+            "label": "Recent form",
+            "dir": "against",
+            "detail": "Recent-scoring margin nearly flat (+0.1) vs Elo's +2.8 -- softer signal, 2.7pt divergence"
+          },
+          {
+            "label": "Public split",
+            "dir": "neutral",
+            "detail": "78% of handle already on Bengals (away) but the spread hasn't moved -- too early to call RLM"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "KIV",
+      "pick": "Pittsburgh Steelers +3.5 and moneyline -- \"Barking Dog\"",
+      "best_bet": false,
+      "note": "KIV takes the Steelers on the spread and the moneyline as her Barking Dog (24:13-25:57)."
+    }
+  ],
+  "market_signal": {
+    "captured_at": "2026-09-27T13:25:04Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 21,
+      "handle_pct_home": 17
+    },
+    "total": {
+      "bets_pct_over": 39,
+      "handle_pct_over": 21
+    },
+    "moneyline": {
+      "bets_pct_home": 11,
+      "handle_pct_home": 14
+    },
+    "reverse_line_move": false,
+    "rlm_note": "83% of handle is on the away side but the spread hasn't moved yet (+3.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: PIT is home. CIN favored, so bets/handle above are PIT's (dog) share."
+  },
+  "props": {
+    "last_checked": "2026-09-24T18:53:28Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "Ja'Marr Chase",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Talent and red-zone role say bounce-back, but PIT is a top-2 WR defense on paper and Chase hasn't cleared this number yet -- capped as a lean into a tough matchup.",
+        "opening_line": 76.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 76.5,
+        "current_captured_at": "2026-09-24T18:53:28Z",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "PIT 2nd-fewest pts to WRs (7.0/g); 184 WR yds allowed in 2 games (92/g)"
+          },
+          {
+            "label": "Recent trend",
+            "dir": "against",
+            "detail": "0 of 2 over 76.5: Wk1 2-12 on 4 tgts, Wk2 7-75-2"
+          },
+          {
+            "label": "Game script",
+            "dir": "neutral",
+            "detail": "CIN only -3.5; 79% bets/95% handle is public money, not a projected blowout"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Burrow healthy; 2 TDs vs HOU incl. a 32-yd grab over Stingley -- still the go-to target"
+          },
+          {
+            "label": "Sample caveat",
+            "dir": "for",
+            "detail": "PIT's WR number came vs ATL's 3rd-string QB (Rush) in Wk1 -- likely overstates the D"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 2,
+          "rank_basis": "footballdb fantasy pts allowed to WRs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 1,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "PIT +3.5",
+    "pick_team": "Pittsburgh Steelers",
+    "pct": 53.8,
+    "system": "divisional underdogs",
+    "why": "Steelers are the HOME underdog in a full AFC North divisional game -- divisional dogs cover at 53.8% ATS since 2019 vs 50.5% for non-divisional dogs over the same span.",
+    "stack_count": 1,
+    "applied_at": "2026-09-25T13:50:42.933588+00:00",
+    "checks": [
+      {
+        "key": "divisional_underdogs",
+        "label": "divisional underdogs",
+        "pct": 53.8,
+        "why": "Steelers are the HOME underdog in a full AFC North divisional game -- divisional dogs cover at 53.8% ATS since 2019 vs 50.5% for non-divisional dogs over the same span.",
+        "applies": true,
+        "mechanism": "Divisional dogs outperform non-divisional dogs (50.5% over the same span) -- familiarity/rivalry keeps games closer.",
+        "source": "NFLBettingSystems.com",
+        "baseline_pct": 53.8
+      }
+    ]
+  },
+  "final_score": {
+    "home": 30,
+    "away": 27
+  }
+}

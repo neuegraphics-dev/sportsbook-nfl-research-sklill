@@ -1,0 +1,365 @@
+{
+  "game_id": "broncos-49ers-2026-wk4",
+  "matchup": "Denver Broncos @ San Francisco 49ers",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3.0,
+      "total": 46.5,
+      "ml_fav": -172,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK 49ers -3 (home fav), matches Fox opening (-2.5) closely, total unchanged at 46.5. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 46.5,
+        "ml_fav": -172,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK 49ers -3 (home fav), matches Fox opening (-2.5) closely, total unchanged at 46.5. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-30T18:29:04Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47,
+        "ml_fav": -142,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:06:07Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47,
+        "ml_fav": -142,
+        "ml_dog": 130
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1), matches Caesars via vegasinsider.com: Broncos(away) +2.5 -> home(49ers) -2.5. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-30",
+    "spread_lean": "No edge",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Line drifted off the key number: 49ers -3.0 (open/yesterday) -> -2.5 today, ml_fav softened -172 -> -142 -- a real but modest move, most likely normal in-week drift rather than news-driven",
+      "No fresh injury news found for either team this cycle; Purdy (turf toe, earlier absence) remains confirmed cleared and starting per yesterdays research -- no change"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-03T12:01:43.855720+00:00",
+    "n": 10000,
+    "homeElo": 1626.9,
+    "awayElo": 1596.7,
+    "gamesSeen": 6,
+    "eloMarginHome": 3.1,
+    "statsMarginHome": 3.3,
+    "marginDivergence": -0.2,
+    "projTotal": 43.9,
+    "homeWinProbElo": 61.1,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 47.0,
+    "homeInjuryPts": -1.8,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.5,
+    "projAwayMeanRaw": 20.4,
+    "projHomeMeanAdjusted": 21.7,
+    "projAwayMeanAdjusted": 20.4,
+    "injuryAdjustedMarginHome": 1.3,
+    "projTotalAdjusted": 42.1,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -1.8 pts -- Nick Bosa (DE, out, -1.8).",
+      "San Francisco 49ers (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 53.0,
+    "awayWinPct": 44.2,
+    "tiePct": 2.8,
+    "medianHomeScore": 22,
+    "medianAwayScore": 20,
+    "coverPctHome": 47.1,
+    "overPct": 36.4
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 60,
+      "handle_pct_home": 60
+    },
+    "total": {
+      "bets_pct_over": 70,
+      "handle_pct_over": 97
+    },
+    "moneyline": {
+      "bets_pct_home": 77,
+      "handle_pct_home": 30
+    },
+    "reverse_line_move": true,
+    "rlm_note": "60% of handle is on the home side but the spread moved AGAINST them (-3 -> -2.5) -- real reverse line move toward away.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:29:20Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser",
+    "picks": [
+      {
+        "player": "Evan Engram",
+        "team": "away",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "Fanatics",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Denvers established TE1 target with a clean model edge.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 27.9 vs 17.5 line, +10.4 diff, 26.27% edge"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Engram is DENs established TE1 target"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Broncos are a slight road dog, no strong pace signal either way"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 17.5,
+        "opening_captured_at": "2026-10-01T01:29:20Z",
+        "current_line": 17.5,
+        "current_captured_at": "2026-10-01T01:29:20Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 43,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 17,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 0,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 17.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Christian McCaffrey",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Soft DEN run D (27th vs RBs, 5.3 YPC to RBs) and a backfield that has swung to CMC as Black fades, though the line already jumped 10 yds off last week.",
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3 (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DEN allowed 389 RB rush yds on 74 att thru 3 games (129.7/g, 5.3 YPC to RBs); 27th vs RBs; 143.7 team rush yds/g allowed"
+          },
+          {
+            "label": "Backfield share",
+            "dir": "for",
+            "detail": "Black snaps 43% -> 33% -> 15%, carries 14 -> 7 -> 4; CMC carries 10 -> 10 -> 15 (65.2% share Wk3). One trend, counted once"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "SF -3 home fav, total 46.5 -- close game keeps CMC on the field, less blowout-rest risk than last week at -9"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "neutral",
+            "detail": "2/3 over 64.5 (68, 23, 75) but season avg 55.3 sits below the line; line moved up from 54.5 in Wk3"
+          },
+          {
+            "label": "Injuries",
+            "dir": "neutral",
+            "detail": "Black had groin tightness in Wk2 -- if his Wk3 dip was health not role, a healthy Black could claw carries back. No Wk4 report yet"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 2,
+          "net": 3
+        },
+        "opening_line": 64.5,
+        "opening_captured_at": "2026-09-30T00:41:19Z",
+        "current_line": 64.5,
+        "current_captured_at": "2026-09-30T00:50:03Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 68,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 23,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 75,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 64.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-03T12:02:05Z",
+    "analysis": [
+      "San Francisco is officially without Nick Bosa (calf) this week, their best pass rusher, which pulls a model that was only mildly pro-49ers (Elo margin +3.1) down to a virtual pick em (+1.3 adjusted). The market still has the 49ers favored by 2.5, so this is now a real gap worth tracking, not a repeat of last weeks note.",
+      "Public handle (60%) is on the 49ers, and the line has actually moved away from them (-3 to -2.5) since -- a mild reverse line move that lines up with the Bosa news rather than against it. The total also leans under now (42.1 model vs 47.0 market)."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Broncos +2.5 or better",
+        "confidence": 5,
+        "reasoning": "Losing Bosa pulls the model from a mild 49ers lean to a near pick em against a market still at -2.5, and the lines own movement agrees.",
+        "best_bet": false
+      },
+      {
+        "market": "total",
+        "pick": "Under 47",
+        "confidence": 4,
+        "reasoning": "A real model-market gap on the total, but only one clear corroborating signal (the Bosa injury) so far.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.035047+00:00",
+      "marginHome": 3.1,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-03T12:01:43.855720+00:00",
+      "marginHome": 1.3,
+      "total": 42.1
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-10-03T12:01:43Z",
+    "home": {
+      "items": [
+        {
+          "position": "DE",
+          "player": "Nick Bosa",
+          "status": "out",
+          "pts": -1.8,
+          "note": "Calf, officially ruled OUT; San Franciscos best pass rusher, a real downgrade to the pass rush"
+        }
+      ],
+      "items_total_pts": -1.8,
+      "stacking_notes": [],
+      "total_pts": -1.8
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 24,
+    "away": 14
+  }
+}

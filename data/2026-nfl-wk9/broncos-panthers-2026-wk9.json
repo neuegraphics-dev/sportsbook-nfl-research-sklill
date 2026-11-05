@@ -1,0 +1,164 @@
+{
+  "game_id": "broncos-panthers-2026-wk9",
+  "matchup": "Denver Broncos @ Carolina Panthers",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 2.5,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 3,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 44,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 44,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.304448+00:00",
+    "n": 10000,
+    "homeElo": 1431.4,
+    "awayElo": 1632.7,
+    "gamesSeen": 15,
+    "eloMarginHome": -6.1,
+    "statsMarginHome": 0.1,
+    "marginDivergence": -6.2,
+    "projTotal": 46.1,
+    "homeWinProbElo": 29.3,
+    "marketHomeSpread": 3,
+    "marketTotal": 43.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.0,
+    "projAwayMeanRaw": 26.1,
+    "projHomeMeanAdjusted": 20.0,
+    "projAwayMeanAdjusted": 26.1,
+    "injuryAdjustedMarginHome": -6.1,
+    "projTotalAdjusted": 46.1,
+    "spreadLean": "away",
+    "totalLean": "over",
+    "notes": [
+      "Elo margin (-6.1) and recent-scoring margin (+0.1) disagree by 6.2 points -- worth a second look before trusting either alone.",
+      "Carolina Panthers (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Jaycee Horn (-1.0), Mike Jackson (-0.8), Xavier Legette (-0.5), Jalen Coker (-0.4), Damien Lewis (-0.5) [-4.7 pts total]; Jaelan Phillips (-0.8), Thomas Incoom (-0.3), Monroe Freeling (-0.3) [-2.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 32.4,
+    "awayWinPct": 65.0,
+    "tiePct": 2.5,
+    "medianHomeScore": 20,
+    "medianAwayScore": 26,
+    "coverPctHome": 41.3,
+    "overPct": 58.0
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.347685+00:00",
+      "marginHome": -6.1,
+      "total": 46.1
+    },
+    {
+      "run_at": "2026-11-03T15:29:10.723184+00:00",
+      "marginHome": -6.1,
+      "total": 46.1
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.304448+00:00",
+      "marginHome": -6.1,
+      "total": 46.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Denver Broncos by 6.1 (injury-adjusted) against a market that has Denver Broncos favored by 3, a 3.1-point gap; sim cover% for Carolina Panthers is 40.8% and projected total is 46.1 vs 43.5 (over 57.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

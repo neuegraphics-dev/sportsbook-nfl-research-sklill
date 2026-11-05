@@ -1,0 +1,163 @@
+{
+  "game_id": "bills-vikings-2026-wk9",
+  "matchup": "Buffalo Bills @ Minnesota Vikings",
+  "week": "Week 9",
+  "kickoff": "2026-11-10T01:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 2.5,
+      "total": 46.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 3,
+      "total": 46.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 3,
+      "total": 46.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 46,
+        "ml_fav": -182,
+        "ml_dog": 153
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:18Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 46,
+        "ml_fav": -182,
+        "ml_dog": 153
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.266092+00:00",
+    "n": 10000,
+    "homeElo": 1589.3,
+    "awayElo": 1675.8,
+    "gamesSeen": 14,
+    "eloMarginHome": -1.5,
+    "statsMarginHome": -0.7,
+    "marginDivergence": -0.9,
+    "projTotal": 45.3,
+    "homeWinProbElo": 44.5,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 46.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 21.9,
+    "projAwayMeanRaw": 23.4,
+    "projHomeMeanAdjusted": 21.9,
+    "projAwayMeanAdjusted": 23.4,
+    "injuryAdjustedMarginHome": -1.5,
+    "projTotalAdjusted": 45.3,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Buffalo Bills (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 44.5,
+    "awayWinPct": 52.7,
+    "tiePct": 2.9,
+    "medianHomeScore": 22,
+    "medianAwayScore": 23,
+    "coverPctHome": 55.5,
+    "overPct": 46.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.945363+00:00",
+      "marginHome": -1.5,
+      "total": 45.3
+    },
+    {
+      "run_at": "2026-11-03T15:29:10.662684+00:00",
+      "marginHome": -1.5,
+      "total": 45.3
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.266092+00:00",
+      "marginHome": -1.5,
+      "total": 45.3
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:25Z",
+    "analysis": [
+      "Sim: Buffalo Bills by 1.5 (injury-adjusted) against a market that has Buffalo Bills favored by 3, a 1.5-point gap; sim cover% for Minnesota Vikings is 54.9% and projected total is 45.3 vs 46.5 (over 47.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

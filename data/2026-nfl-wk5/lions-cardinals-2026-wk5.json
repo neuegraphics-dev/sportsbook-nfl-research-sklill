@@ -1,0 +1,587 @@
+{
+  "game_id": "lions-cardinals-2026-wk5",
+  "matchup": "Detroit Lions @ Arizona Cardinals",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 5.5,
+      "total": 52.5,
+      "ml_fav": -240,
+      "ml_dog": 200
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 off the board. Look-ahead DET -8.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 52.5,
+        "ml_fav": -240,
+        "ml_dog": 200
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 off the board. Look-ahead DET -8.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": null,
+        "total": 54.5,
+        "ml_fav": -210,
+        "ml_dog": 185
+      },
+      "fanduel": {
+        "spread": 5.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). DK spread read as -3.5 but inconsistent with its -210 ML (~-4.5) -- logged null. bet365 DET -4.5/53.5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 54.5,
+        "ml_fav": -210,
+        "ml_dog": 185
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:59Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 54.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Cardinals"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Cardinals. DK ML via cleatz (Lions -258/Cardinals +210)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250.0,
+        "ml_dog": 205.0
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -245.0,
+        "ml_dog": 198.0
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250.0,
+        "ml_dog": 205.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -245,
+        "ml_dog": 198
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -245,
+        "ml_dog": 200
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -245,
+        "ml_dog": 198
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Cardinals."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -245,
+        "ml_dog": 198
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -245,
+        "ml_dog": 200
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 54.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Cardinals +5",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Sim has DET by only 4.4 adjusted vs a 5.5-pt market -- thin, not a strong lean",
+      "Jeremiyah Love (ARI RB) questionable, ankle -- not priced, insufficient signal"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.395986+00:00",
+    "n": 10000,
+    "homeElo": 1378.0,
+    "awayElo": 1535.9,
+    "gamesSeen": 8,
+    "eloMarginHome": -4.4,
+    "statsMarginHome": -3.2,
+    "marginDivergence": -1.2,
+    "projTotal": 52.4,
+    "homeWinProbElo": 34.7,
+    "marketHomeSpread": 5.5,
+    "marketTotal": 54.5,
+    "homeInjuryPts": -1.5,
+    "awayInjuryPts": -2.0,
+    "projHomeMeanRaw": 24.0,
+    "projAwayMeanRaw": 28.4,
+    "projHomeMeanAdjusted": 22.5,
+    "projAwayMeanAdjusted": 26.4,
+    "injuryAdjustedMarginHome": -3.9,
+    "projTotalAdjusted": 48.9,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -1.5 pts -- Isaiah Adams (OL, out, -1.0), Andrew Wingard (S, out, -0.5).",
+      "Away injury adjustment: -2.0 pts -- Brian Branch (S, out, -1.5), Rock Ya-Sin (CB, out, -0.5)."
+    ],
+    "homeWinPct": 37.9,
+    "awayWinPct": 59.1,
+    "tiePct": 3.0,
+    "medianHomeScore": 23,
+    "medianAwayScore": 27,
+    "coverPctHome": 54.1,
+    "overPct": 35.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.651411+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.505754+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.837830+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.474627+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-09T16:15:13.125440+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-09T21:05:22.116858+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.375736+00:00",
+      "marginHome": -4.4,
+      "total": 52.4
+    },
+    {
+      "run_at": "2026-10-10T17:10:38.973561+00:00",
+      "marginHome": -3.9,
+      "total": 48.9
+    },
+    {
+      "run_at": "2026-10-10T21:04:16.149573+00:00",
+      "marginHome": -3.9,
+      "total": 48.9
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.395986+00:00",
+      "marginHome": -3.9,
+      "total": 48.9
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-10T17:11:46Z",
+    "analysis": [
+      "Detroit is a 5.5-point road favorite and the model agrees on direction (Elo margin -4.4, recent-scoring margin -3.2 home, both favoring the Lions) but by a thinner margin than the market number. Both sides are banged up: Arizona is down starting guard Isaiah Adams and safety Wingard; Detroit's loss is more notable on a per-player basis -- Brian Branch (Achilles) is a difference-making defensive playmaker, plus CB Rock Ya-Sin -- netting a slightly larger injury hit for the Lions (-2.0) than the Cardinals (-1.5).",
+      "After injuries, the model's margin (-3.9 home-relative, i.e. Lions by just under 4) sits well short of the market's 5.5, which is the actual signal here: not a strong side lean, but the total projects under the market number (48.9 adjusted vs 54.5 market) since neither offense is fully healthy up front."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 54.5",
+        "confidence": 5,
+        "reasoning": "Both lines are thinned by injury (Lions missing their top defensive playmaker, Cardinals missing a starting guard), pulling the injury-adjusted total (48.9) well under the market (54.5). | Stake $15 \u00b7 pass at 52.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-10T21:15:35Z",
+    "status": "captured",
+    "source_note": "covers.com consensus props (fix: corrected stake placeholder to 5 cap)",
+    "picks": [
+      {
+        "player": "Amon-Ra St. Brown",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "covers.com consensus",
+        "lean": "over",
+        "confidence": 7,
+        "reasoning": "Lions WR1 against the leagues 2nd-softest WR defense, with the model also well clear of the line. | Stake $15 (capped -- 7-8 tier not yet at 30+ graded/57%+) \u00b7 pass at 81.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Arizona ranks 31st of 32 vs WR, allowing 28.3 fantasy pts/g to the position (footballdb.com)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 87.1 yds vs the 78.5 line, +8.6 diff, 22.7% EV"
+          },
+          {
+            "label": "Offense trend",
+            "dir": "for",
+            "detail": "Goff-to-St. Brown is Detroits clear #1 passing concept; Lions rank top-5 in the NFL in total offense this year"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 78.5,
+        "opening_captured_at": "2026-10-10T21:09:04Z",
+        "current_line": 78.5,
+        "current_captured_at": "2026-10-10T21:15:35Z"
+      },
+      {
+        "player": "Michael Wilson",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "covers.com consensus",
+        "lean": "over",
+        "confidence": 7,
+        "reasoning": "Arizonas top target against a Lions defense that is historically bad vs WR and now missing both starting DBs who would normally help cover him. | Stake $15 (capped -- 7-8 tier not yet at 30+ graded/57%+) \u00b7 pass at 84",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Detroit ranks 30th of 32 vs WR, allowing 27.5 fantasy pts/g to the position (footballdb.com)"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "Lions DBs Brian Branch (S) and Rock Ya-Sin (CB) are both already logged OUT this week, thinning the Detroit secondary further"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 83.4 yds vs the 80.5 line, +2.9 diff, 15.2% EV"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 80.5,
+        "opening_captured_at": "2026-10-10T21:09:04Z",
+        "current_line": 80.5,
+        "current_captured_at": "2026-10-10T21:15:35Z"
+      },
+      {
+        "player": "Jacoby Brissett",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "covers.com consensus",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Backup QB Brissett (Kyler Murray remains out) projects well over the number as a home underdog expected to throw often against a generous Lions pass defense. | Stake $15 \u00b7 pass at 272.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 275.3 yds vs the 265.5 line, +9.8 diff, 21.86% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Cardinals are ~5.5-pt home underdogs; trailing teams throw more -- corroborated by a separate o36.5 pass-attempts line on the same board"
+          },
+          {
+            "label": "Offense trend",
+            "dir": "neutral",
+            "detail": "No QB-specific defense-vs-position rank pulled this cycle; Detroits overall pass D ranks weak (30th vs WR) but QB-specific rank not confirmed"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 265.5,
+        "opening_captured_at": "2026-10-10T21:09:04Z",
+        "current_line": 265.5,
+        "current_captured_at": "2026-10-10T21:15:35Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 31,
+      "handle_pct_home": 39
+    },
+    "total": {
+      "bets_pct_over": 75,
+      "handle_pct_over": 62
+    },
+    "moneyline": {
+      "bets_pct_home": 11,
+      "handle_pct_home": 19
+    },
+    "reverse_line_move": false,
+    "rlm_note": "61% of handle is on the away side but the spread hasn't moved yet (+5.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-10T17:10:38Z",
+    "home": {
+      "items": [
+        {
+          "position": "OL",
+          "player": "Isaiah Adams",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Ankle, starting guard, out"
+        },
+        {
+          "position": "S",
+          "player": "Andrew Wingard",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Knee, starting-level safety, out"
+        }
+      ],
+      "items_total_pts": -1.5,
+      "stacking_notes": [],
+      "total_pts": -1.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "S",
+          "player": "Brian Branch",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Achilles, alpha defensive playmaker (All-Pro caliber S/slot), out"
+        },
+        {
+          "position": "CB",
+          "player": "Rock Ya-Sin",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Hamstring, starting CB, out"
+        }
+      ],
+      "items_total_pts": -2.0,
+      "stacking_notes": [],
+      "total_pts": -2.0
+    }
+  },
+  "final_score": {
+    "home": 21,
+    "away": 45
+  }
+}

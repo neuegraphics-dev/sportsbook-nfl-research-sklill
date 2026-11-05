@@ -1,0 +1,383 @@
+{
+  "game_id": "broncos-cardinals-2026-wk7",
+  "matchup": "Denver Broncos @ Arizona Cardinals",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T20:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": 4,
+      "total": 44,
+      "ml_fav": -198,
+      "ml_dog": 166
+    },
+    "draftkings": {
+      "spread": 4.5,
+      "total": 43.5,
+      "ml_fav": -238,
+      "ml_dog": 195
+    },
+    "fanduel": {
+      "spread": 4.5,
+      "total": 43.5,
+      "ml_fav": -240,
+      "ml_dog": 198
+    },
+    "caesars": {
+      "spread": 4.5,
+      "total": 43.5,
+      "ml_fav": -225,
+      "ml_dog": 186
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Cardinals."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": 4,
+        "total": 44,
+        "ml_fav": -198,
+        "ml_dog": 166
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -238,
+        "ml_dog": 195
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -240,
+        "ml_dog": 198
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -225,
+        "ml_dog": 186
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Cardinals."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": 4,
+        "total": 44,
+        "ml_fav": -198,
+        "ml_dog": 166
+      },
+      "draftkings": {
+        "spread": 4,
+        "total": 43.5,
+        "ml_fav": -225,
+        "ml_dog": 188
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -225,
+        "ml_dog": 186
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -238,
+        "ml_dog": 195
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Cardinals."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": 4,
+        "total": 43,
+        "ml_fav": -215,
+        "ml_dog": 180
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4.5,
+        "total": 43.5,
+        "ml_fav": -238,
+        "ml_dog": 195
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.5,
+        "total": 43.0,
+        "ml_fav": -225,
+        "ml_dog": 186
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Broncos -4.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Model-only signal, modest edge"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 37,
+      "handle_pct_home": 34
+    },
+    "total": {
+      "bets_pct_over": 41,
+      "handle_pct_over": 12
+    },
+    "moneyline": {
+      "bets_pct_home": 15,
+      "handle_pct_home": 29
+    },
+    "reverse_line_move": false,
+    "rlm_note": "66% of handle is on the away side but the spread hasn't moved yet (+4.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T14:08:20.059334+00:00",
+    "n": 10000,
+    "homeElo": 1378.6,
+    "awayElo": 1607.6,
+    "gamesSeen": 12,
+    "eloMarginHome": -7.2,
+    "statsMarginHome": -3.5,
+    "marginDivergence": -3.7,
+    "projTotal": 45.1,
+    "homeWinProbElo": 26.1,
+    "marketHomeSpread": 4.5,
+    "marketTotal": 43.0,
+    "homeInjuryPts": -3.3,
+    "awayInjuryPts": -1.8,
+    "projHomeMeanRaw": 18.9,
+    "projAwayMeanRaw": 26.2,
+    "projHomeMeanAdjusted": 15.6,
+    "projAwayMeanAdjusted": 24.4,
+    "injuryAdjustedMarginHome": -8.7,
+    "projTotalAdjusted": 40.0,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -3.3 pts -- Jeremiyah Love (RB, out, -1.5), Jon Gaines II (G, out, -0.5), Walter Nolen (DT, out, -0.7), Andrew Wingard (S, out, -0.3), Budda Baker (S, questionable, -0.3).",
+      "Away injury adjustment: -1.8 pts -- Tyler Badie (RB, out, -0.1), Jonah Elliss (LB, out, -0.4), Talanoa Hufanga (S, out, -0.5), Pat Surtain II (CB, questionable, -0.6), Jonah Coleman (RB, questionable, -0.2)."
+    ],
+    "homeWinPct": 25.3,
+    "awayWinPct": 72.4,
+    "tiePct": 2.3,
+    "medianHomeScore": 16,
+    "medianAwayScore": 24,
+    "coverPctHome": 38.0,
+    "overPct": 41.6
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.893004+00:00",
+      "marginHome": -7.2,
+      "total": 45.1
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.784756+00:00",
+      "marginHome": -7.2,
+      "total": 45.1
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.346607+00:00",
+      "marginHome": -7.2,
+      "total": 45.1
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.050427+00:00",
+      "marginHome": -9.5,
+      "total": 42.8
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.530087+00:00",
+      "marginHome": -10.2,
+      "total": 38.5
+    },
+    {
+      "run_at": "2026-10-25T14:08:20.059334+00:00",
+      "marginHome": -8.7,
+      "total": 40.0
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Denver -4.5 (DK -115, Caesars -108); model has Denver by about 10.2 after Cardinals RB1 Jeremiyah Love, G Jon Gaines and DT Walter Nolen are out and QB Carson Beck is questionable (back). Elo says Denver by 7.2 and recent scoring by 3.5, so the direction agrees but the size is debatable.",
+      "Denver has its own wobble: CB Pat Surtain II is questionable. If Surtain sits and Beck plays, the gap narrows, so treat this as a standard-unit lean with a firm pass-at."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "DEN -4.5",
+        "confidence": 5,
+        "reasoning": "Model DEN by 10 (Elo 7.2, scoring 3.5) with Arizona missing RB1/OL/DT and a questionable QB. | Stake $15 \u00b7 pass at -5.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-21T02:12:30Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank; roster/team verified this run (Geno Smith/Jets, Kyler Murray/Vikings, Daniel Jones/Colts, Cam Ward/Titans confirmed via web search of 2026 transactions).",
+    "picks": [
+      {
+        "player": "Bo Nix",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Soft Arizona pass defense (30th of 32) plus a real model gap in a dome game that should boost passing. | Stake $15 \u00b7 pass at 227.5",
+        "matchup": {
+          "opp_rank_vs_pos": 30,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Arizona ranks 30th of 32 vs QB (fantasy pts allowed, CBS posvsdef), allowing 247.33 pass yds/g avg -- well above the 219.5 line"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 238.38 vs 219.5 line, +18.9 diff, 24.55% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Game played in a dome (no wind) -- typically favors passing efficiency for both teams, not Denver specifically"
+          }
+        ],
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 219.5,
+        "opening_captured_at": "2026-10-21T02:12:30Z",
+        "current_line": 219.5,
+        "current_captured_at": "2026-10-21T02:12:30Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T14:08:20Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Jeremiyah Love",
+          "status": "out",
+          "pts": -1.5,
+          "note": "RB1 out, upgraded from questionable to out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "G",
+          "player": "Jon Gaines II",
+          "status": "out",
+          "pts": -0.5,
+          "note": "G out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "DT",
+          "player": "Walter Nolen",
+          "status": "out",
+          "pts": -0.7,
+          "note": "DT out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Andrew Wingard",
+          "status": "out",
+          "pts": -0.3,
+          "note": "S out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Budda Baker",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "S q (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.3,
+      "stacking_notes": [],
+      "total_pts": -3.3
+    },
+    "away": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Tyler Badie",
+          "status": "out",
+          "pts": -0.1,
+          "note": "RB depth out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Jonah Elliss",
+          "status": "out",
+          "pts": -0.4,
+          "note": "edge out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Talanoa Hufanga",
+          "status": "out",
+          "pts": -0.5,
+          "note": "S out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "Pat Surtain II",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "CB1 ankle (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "RB",
+          "player": "Jonah Coleman",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "RB q (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -1.8,
+      "stacking_notes": [],
+      "total_pts": -1.8
+    }
+  },
+  "final_score": {
+    "home": 16,
+    "away": 30
+  }
+}

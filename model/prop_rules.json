@@ -1,0 +1,74 @@
+{
+  "version": "2026-10-13-c",
+  "approved_by": "Michael",
+  "basis": "results/props_results.json, 102 graded picks, Weeks 3-5, by market",
+  "market_stats": {
+    "rush_yards": {
+      "hits": 23,
+      "graded": 36,
+      "rate": 0.64
+    },
+    "pass_yards": {
+      "hits": 12,
+      "graded": 18,
+      "rate": 0.67
+    },
+    "rec_yards": {
+      "hits": 19,
+      "graded": 41,
+      "rate": 0.46
+    },
+    "receptions": {
+      "hits": 2,
+      "graded": 6,
+      "rate": 0.33
+    },
+    "completions": {
+      "hits": 1,
+      "graded": 1,
+      "rate": 1.0
+    }
+  },
+  "stake": {
+    "bankroll": 600,
+    "default_prop_stake": 18,
+    "by_confidence": {
+      "0-3": 0,
+      "4": 6,
+      "5": 12,
+      "6+": 18
+    },
+    "note": "1-5% bankroll scale set 2026-11-01 per Michael ($600 bankroll: 1%=$6 ... 5%=$30). Props capped at Tier 3 ($18)."
+  },
+  "confidence_bump": {
+    "rule": "+1 to base confidence when market rate >= 0.60 with graded >= 15",
+    "qualifying_markets": [
+      "rush_yards",
+      "pass_yards"
+    ],
+    "applied_before": [
+      "tough-matchup cap",
+      "net-alignment check"
+    ]
+  },
+  "confidence_7_review": {
+    "rule": "confidence 7+ is capped at 6 until the 7+ tier shows >= 55% over 15+ graded",
+    "current_7_plus": {
+      "hits": 2,
+      "graded": 8,
+      "rate": 0.25
+    }
+  },
+  "rank_gate": {
+    "status": "NOT ACTIVE",
+    "reason": "no historical rank data; CBS season-to-date ranks include tested games"
+  },
+  "confidence_penalty": {
+    "rule": "-1 to base confidence for weak markets, plus an automatic 'against' factor showing the market's graded hit rate (computed live from results/props_results.json)",
+    "markets": [
+      "rec_yards",
+      "receptions"
+    ],
+    "replaces": "the old $0 track-only rule for rec_yards/receptions (changed 2026-10-13 per Michael)"
+  }
+}

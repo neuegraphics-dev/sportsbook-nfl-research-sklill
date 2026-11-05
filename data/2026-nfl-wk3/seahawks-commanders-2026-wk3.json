@@ -1,0 +1,409 @@
+{
+  "game_id": "seahawks-commanders-2026-wk3",
+  "matchup": "Seattle Seahawks @ Washington Commanders",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": 6.5,
+      "total": 40.5,
+      "ml_fav": -289,
+      "ml_dog": 237
+    },
+    "draftkings": {
+      "spread": 1.5,
+      "total": 42.5,
+      "ml_fav": -120,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22 -- large sharp/DK spread gap (SEA -6.5 vs -1.5) flagged for review, not yet corroborated by a second book. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": {
+        "spread": 6.5,
+        "total": 40.5,
+        "ml_fav": -289,
+        "ml_dog": 237
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -120,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22 -- large sharp/DK spread gap (SEA -6.5 vs -1.5) flagged for review, not yet corroborated by a second book. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -315,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 6.5,
+        "total": 40.5,
+        "ml_fav": -300,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -361,
+        "ml_dog": 289
+      },
+      "draftkings": {
+        "spread": 6.5,
+        "total": 40.5,
+        "ml_fav": -300,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Seahawks(away) favored; BME/Caesars agree 7, DK half-pt softer at 6.5; ML gap notable (BME -361 vs DK -300)."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 7.0,
+        "total": 40.5,
+        "ml_fav": -331,
+        "ml_dog": 267
+      },
+      "draftkings": {
+        "spread": 6.5,
+        "total": 40.5,
+        "ml_fav": -300,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:29:25Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 40.5,
+        "ml_fav": -300,
+        "ml_dog": 270
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data) but its last live read (9/25) had WAS +7.0, so Caesars now sitting 1.5-2 pts above even that. DK still lagging at WAS +6.5. CONFIRMED: Sam Darnold is ACTIVE/STARTING for Seattle (HC Macdonald: ready to play, glute resolved) -- clears his -2.0 questionable penalty. NEW downside for SEA: starting safeties Julian Love (calf) AND Ty Okada (hamstring, 3rd straight game) both confirmed OUT -- AJ Finley/Rodney Thomas II starting in their place. WAS final inactives also include LB Frankie Luvu (groin), TE Chig Okonkwo (hamstring), RG Sam Cosmi (concussion)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "Still Seahawks side / fade Commanders, but re-check the margin post-update: Darnold clearing removes SEAs own -2.0 penalty (bullish SEA), while 2 starting safeties out (Love, Okada) is a new negative for SEA (bearish) -- net effect needs the fresh sim read, not assumed to still be exactly -6.5 to -7",
+    "total_lean": "No edge carried over from last read, recheck post-update",
+    "moneyline_lean": "No edge",
+    "confidence": "High",
+    "top_signals": [
+      "Sam Darnold CONFIRMED active/starting -- resolves the one lingering SEA question mark",
+      "NEW: SEA starting safeties Julian Love AND Ty Okada both confirmed OUT -- real defensive backfield depletion the market may not have fully caught (Caesars +8.5 vs DK +6.5, a growing book gap)",
+      "Jayden Daniels still confirmed OUT for WAS, Mariota starting -- unchanged, still the dominant driver"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:29:25.529090+00:00",
+    "n": 10000,
+    "homeElo": 1380.9,
+    "awayElo": 1709.9,
+    "gamesSeen": 4,
+    "eloMarginHome": -11.2,
+    "statsMarginHome": -6.8,
+    "marginDivergence": -4.4,
+    "projTotal": 45.2,
+    "homeWinProbElo": 16.6,
+    "marketHomeSpread": 8.5,
+    "marketTotal": 40.5,
+    "homeInjuryPts": -5.0,
+    "awayInjuryPts": -1.75,
+    "projHomeMeanRaw": 17.0,
+    "projAwayMeanRaw": 28.2,
+    "projHomeMeanAdjusted": 12.0,
+    "projAwayMeanAdjusted": 26.5,
+    "injuryAdjustedMarginHome": -14.5,
+    "projTotalAdjusted": 38.4,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (-11.2) and recent-scoring margin (-6.8) disagree by 4.4 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -5.0 pts -- Jayden Daniels (QB, out, -5.0).",
+      "Away injury adjustment: -1.8 pts -- Julian Love (S, out, -0.5), Ty Okada (S, out, -0.5). S depth: 2 confirmed out (Julian Love, Ty Okada) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+    ],
+    "homeWinPct": 14.2,
+    "awayWinPct": 84.0,
+    "tiePct": 1.8,
+    "medianHomeScore": 12,
+    "medianAwayScore": 27,
+    "coverPctHome": 34.4,
+    "overPct": 45.0
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:29:25Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jayden Daniels",
+          "status": "out",
+          "pts": -5.0,
+          "note": "Confirmed OUT (elbow), Mariota starting -- unchanged from earlier in the week."
+        }
+      ],
+      "items_total_pts": -5.0,
+      "stacking_notes": [],
+      "total_pts": -5.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "S",
+          "player": "Julian Love",
+          "status": "out",
+          "pts": -0.5,
+          "note": "NEW this cycle -- confirmed OUT (calf). Starting safety."
+        },
+        {
+          "position": "S",
+          "player": "Ty Okada",
+          "status": "out",
+          "pts": -0.5,
+          "note": "NEW this cycle -- confirmed OUT (hamstring), 3rd straight game missed. Starting safety."
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [
+        "S depth: 2 confirmed out (Julian Love, Ty Okada) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -1.75
+    }
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:32:26Z",
+    "analysis": [
+      "This remains the clearest injury-driven read on the board. Sam Darnold is now CONFIRMED active and starting for Seattle -- HC Macdonald says he is fully ready, glute resolved -- clearing the one lingering question mark on Seattles side. Working against Seattle: starting safeties Julian Love (calf) and Ty Okada (hamstring, his 3rd straight missed game) are both confirmed OUT, with AJ Finley and Rodney Thomas II stepping in. Net of both moves, the model margin actually widened, not narrowed -- Seattle now projects as a 14.5-point favorite against Washington, well past even Caesars aggressive +8.5 and far past DraftKings still-lagging +6.5.",
+      "Jayden Daniels remains confirmed out with Marcus Mariota starting for Washington -- unchanged and still the dominant driver. With DK sitting nearly 2 points behind Caesars and the model number even bigger than that, this is the single highest-conviction spread lean on the board this week."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "SEA -6.5 to -8.5 (shop DK first if still under 7)",
+        "confidence": 9,
+        "reasoning": "Daniels out + Mariota starting, now compounded by 2 confirmed-out Seattle safeties that the market has only partly caught up to -- model margin (14.5) clears even Caesars aggressive number, 65.6% of sims have Seattle covering the current spread.",
+        "best_bet": true,
+        "factors": [
+          {
+            "label": "Injury confirmed",
+            "dir": "for",
+            "detail": "WAS: Daniels out, Mariota starting (-5.0 pts). SEA: Darnold CONFIRMED active (penalty cleared), but 2 starting safeties (Love, Okada) now confirmed out (-1.75 pts net)"
+          },
+          {
+            "label": "Model margin",
+            "dir": "for",
+            "detail": "Injury-adjusted margin 14.5 pts, clear of the markets 6.5-8.5 range"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "65.6% of sims have Seattle covering the current number"
+          },
+          {
+            "label": "Book gap",
+            "dir": "for",
+            "detail": "DK (+6.5) still 2 points behind Caesars (+8.5) -- a live shopping window"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 0,
+          "net": 4
+        }
+      },
+      {
+        "market": "total",
+        "pick": "Under 40.5",
+        "confidence": 4,
+        "reasoning": "Model total (38.4) sits below market but research found no independent total-specific signal beyond the same injury read already driving the spread -- context, not a standalone edge.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model 38.4 vs market 40.5"
+          },
+          {
+            "label": "Independent confirmation",
+            "dir": "against",
+            "detail": "Same injury driver as the spread pick, not an independent signal"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 0,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "Under 40.5",
+    "pick_team": null,
+    "pct": 74,
+    "system": "travel under backtoback road off win",
+    "why": "Seattle won on the road last week (31-7 at Arizona) and is on the road again; Washington is also coming off a road game (a loss at Dallas) -- back-to-back-road fatigue on both sides. Also backed by heavy sharp money (95% of dollars on the Under per public-betting data) and our own model's low-confidence Under lean.",
+    "stack_count": 1,
+    "applied_at": "2026-09-25T13:06:18.203440+00:00",
+    "checks": [
+      {
+        "key": "travel_under_backtoback_road_off_win",
+        "label": "travel under backtoback road off win",
+        "pct": 74,
+        "why": "Seattle won on the road last week (31-7 at Arizona) and is on the road again; Washington is also coming off a road game (a loss at Dallas) -- back-to-back-road fatigue on both sides. Also backed by heavy sharp money (95% of dollars on the Under per public-betting data) and our own model's low-confidence Under lean.",
+        "applies": true,
+        "mechanism": "Away team won on the road last week and is on the road again; home team is also coming off a road game -- fatigue on both sides suppresses scoring.",
+        "source": "same as above",
+        "baseline_pct": 74
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "Marco",
+      "pick": "Washington Commanders (ATS) -- \"Barking Dog\"",
+      "best_bet": false,
+      "note": "Marco identifies Washington as a Barking Dog and backs them against the spread (17:42-21:19)."
+    },
+    {
+      "host": "VR",
+      "pick": "Washington Commanders +7.5",
+      "best_bet": true,
+      "note": "VR's Best Bet (31:40-35:13) -- sent +7.5 to subscribers; line has since moved to +7."
+    }
+  ],
+  "market_signal": {
+    "captured_at": "2026-09-27T13:29:25Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 21,
+      "handle_pct_home": 25
+    },
+    "total": {
+      "bets_pct_over": 55,
+      "handle_pct_over": 27
+    },
+    "moneyline": {
+      "bets_pct_home": 4,
+      "handle_pct_home": 7
+    },
+    "reverse_line_move": false,
+    "rlm_note": "75% of handle is on the away side and the spread has moved toward them (+6.5 -> +7) -- money and line agree, no RLM.",
+    "note": "Home-relative: WAS is home/dog. No divergence to flag -- ticket/handle roughly aligned on both spread and ML."
+  },
+  "props": {
+    "last_checked": "2026-09-25T14:16:03Z",
+    "status": "captured",
+    "source_note": "scoresandodds.com consensus (DK o92.5 -113); footballdb.com WR points-allowed for matchup rank",
+    "picks": [
+      {
+        "player": "Jaxon Smith-Njigba",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "WR1 workload (11 targets/game, 138.5 yds/g through 2 weeks) against a Washington defense that has allowed the 2nd-most yardage to WRs so far, though Darnold's questionable status is a real swing factor.",
+        "matchup": {
+          "opp_rank_vs_pos": 26,
+          "rank_basis": "footballdb.com fantasy pts allowed to WRs, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "WAS 26th vs WR, 168.5 rec yds/g allowed (2nd-most in NFL through Wk2)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "11 targets in each of first 2 games -- clear WR1 role"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "for",
+            "detail": "17 catches for 277 yds through 2 games (138.5 yds/g), well above this 92.5 line both weeks"
+          },
+          {
+            "label": "QB uncertainty",
+            "dir": "against",
+            "detail": "Darnold (glute) questionable; if Drew Lock starts instead, volume/efficiency to JSN is less proven"
+          },
+          {
+            "label": "Game script",
+            "dir": "neutral",
+            "detail": "SEA -7.5 road favorite -- a big lead could shift 4th-quarter work to the run game"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 92.5,
+        "opening_captured_at": "2026-09-25T14:16:03Z",
+        "current_line": 92.5,
+        "current_captured_at": "2026-09-25T14:16:03Z"
+      }
+    ]
+  },
+  "final_score": {
+    "home": 33,
+    "away": 31
+  }
+}

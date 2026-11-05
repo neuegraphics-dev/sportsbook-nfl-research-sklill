@@ -1,0 +1,555 @@
+{
+  "game_id": "seahawks-broncos-2026-wk6",
+  "matchup": "Seattle Seahawks @ Denver Broncos",
+  "week": "Week 6",
+  "kickoff": "2026-10-16T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3,
+      "total": 41.5,
+      "ml_fav": -155,
+      "ml_dog": 130
+    },
+    "fanduel": {
+      "spread": 3,
+      "total": 41.5,
+      "ml_fav": -155,
+      "ml_dog": 130
+    },
+    "caesars": {
+      "spread": 3,
+      "total": 41.5,
+      "ml_fav": -155,
+      "ml_dog": 130
+    },
+    "note": "VegasInsider DOM, DK/Caesars/FanDuel columns (home=Broncos). ML logged DK only, same across books re-shown for Caesars/FanDuel fields per sheet convention -- see note: ml not independently split per book in source, using DK figure for all three as best available. BookMaker.eu not posting (site shows Dec/Jan games only)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 41.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 41.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 41.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "note": "VegasInsider DOM, DK/Caesars/FanDuel columns (home=Broncos). ML logged DK only, same across books re-shown for Caesars/FanDuel fields per sheet convention -- see note: ml not independently split per book in source, using DK figure for all three as best available. BookMaker.eu not posting (site shows Dec/Jan games only)."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 41.0,
+        "ml_fav": -157,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": 41.5,
+        "ml_fav": -154,
+        "ml_dog": 130
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 41.0,
+        "ml_fav": -157,
+        "ml_dog": 132
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:42Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 41,
+        "ml_fav": -157,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=DEN relative. DK spread/total/ML cross-checked vegasinsider.com DK column vs cleatz.com (exact match: DK SEA-2.5/-115, DEN+2.5/-105, total 40.5 -112/-108, ML SEA-142/DEN+120). BookMaker.eu from lines.bookmaker.eu (board shows 'last update: 2 days ago' banner -- treat with mild caution). FanDuel/Caesars totals+ML not reliably confirmed this cycle, logged null."
+    },
+    {
+      "captured_at": "2026-10-14T17:00:04Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 41,
+        "ml_fav": -157,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK/ML via rotowire.com/betting/nfl/odds/week-6 (Info Last Verified Oct 14 2026: SEA -2.5, ML SEA -148/DEN +124, O/U 40.5). Caesars/FanDuel spread via VegasInsider per-book columns (page dated Oct 13 8:46pm, treat as lightly stale -- totals/ML not confirmed for those two books this cycle, logged null). BookMaker.eu via lines.bookmaker.eu board ('last update: 2 days ago' banner, unchanged from prior snapshot)."
+    },
+    {
+      "captured_at": "2026-10-14T20:57:13Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 41,
+        "ml_fav": -157,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -148,
+        "ml_dog": 126
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "note": "Home=DEN relative. Spreads for all 3 US books from VegasInsider per-book DOM columns (page dated Oct 13 8:46pm banner, unchanged from last 2 cycles -- treat as a flat/stale read, not a confirmed re-price). DK total+ML from cleatz.com live board (Over 40.5/-112, SEA -148/DEN +124, matches rotowire's Oct 14-verified DK read). FanDuel/Caesars totals+ML via VI DOM, same staleness caveat. BookMaker.eu via lines.bookmaker.eu ('last update: 2 days ago' banner, unchanged)."
+    },
+    {
+      "captured_at": "2026-10-15T16:59:39Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 41,
+        "ml_fav": -140,
+        "ml_dog": 119
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (lines.bookmaker.eu, fresh, last update Oct15 4:11am PT): SEA-140/DEN+2.5/41. DK via cleatz.com (fresh, DK-attributed, updated <5min): SEA-142/DEN+120, total 40.5. Caesars/FanDuel spread via VegasInsider DOM per-book columns (page banner still dated Oct13 8:46pm -- spread unchanged across 3 cycles, treat as flat not reconfirmed; totals/ML not captured for those two books this cycle)."
+    },
+    {
+      "captured_at": "2026-10-15T21:01:13Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 41,
+        "ml_fav": -140,
+        "ml_dog": 119
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -138,
+        "ml_dog": 118
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "note": "Home=DEN relative. DK/FanDuel/Caesars/BetMGM/Bet365/BetRivers all from cleatz.com/nfl/lines/ live compare-all-books table (page says 'Updated just now'), fully cross-confirmed -- all 6 US books agree on spread +2.5/total 40.5, DK line matches prior 16:59 snapshot exactly (unchanged into kickoff). BookMaker.eu via lines.bookmaker.eu ('Last update: 10h ago' banner -- stale, but numbers unchanged from this morning's fresher read, spread 2.5/total 41/ML -140/+119)."
+    }
+  ],
+  "research": {
+    "spread_lean": null,
+    "total_lean": "Over 40.5 (DK)",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Sim total 43.5 vs DK 40.5 (injury-adjusted), 57.9% over in sims",
+      "Denver secondary cluster: CB Patrick Surtain II + S Talanoa Hufanga both officially OUT (Denver Gazette 10/14)"
+    ],
+    "last_run": "2026-10-15"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-15T21:01:43.730884+00:00",
+    "n": 10000,
+    "homeElo": 1592.0,
+    "awayElo": 1675.9,
+    "gamesSeen": 10,
+    "eloMarginHome": -1.4,
+    "statsMarginHome": -3.7,
+    "marginDivergence": 2.2,
+    "projTotal": 44.5,
+    "homeWinProbElo": 44.9,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 40.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.0,
+    "projHomeMeanRaw": 21.5,
+    "projAwayMeanRaw": 23.0,
+    "projHomeMeanAdjusted": 21.5,
+    "projAwayMeanAdjusted": 22.0,
+    "injuryAdjustedMarginHome": -0.4,
+    "projTotalAdjusted": 43.5,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [
+      "Away injury adjustment: -1.0 pts -- Zach Charbonnet (RB, out, -1.0)."
+    ],
+    "homeWinPct": 46.6,
+    "awayWinPct": 50.4,
+    "tiePct": 3.0,
+    "medianHomeScore": 22,
+    "medianAwayScore": 22,
+    "coverPctHome": 55.7,
+    "overPct": 59.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:58.678924+00:00",
+      "marginHome": -1.4,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.046874+00:00",
+      "marginHome": -1.4,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-13T13:05:33.924849+00:00",
+      "marginHome": 0.1,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-10-13T14:03:05.003489+00:00",
+      "marginHome": -1.4,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-14T13:04:24.255728+00:00",
+      "marginHome": -1.4,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-14T17:00:11.949417+00:00",
+      "marginHome": -1.4,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-14T21:00:28.486074+00:00",
+      "marginHome": -0.9,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-15T17:03:08.016226+00:00",
+      "marginHome": -0.4,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-15T21:01:43.730884+00:00",
+      "marginHome": -0.4,
+      "total": 43.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-15T17:03:26Z",
+    "analysis": [
+      "DraftKings: Seahawks -2.5, total 40.5, moneyline Seahawks -142 / Broncos +120 (no-vig Seahawks ~58.5%, Broncos ~41.5%). BookMaker.eu (sharp) has Seahawks -140 and the same 2.5 spread, total 41 -- books agree closely on this one. Model: Broncos win 47.4% and cover 55.8% at the market number, projected total 43.5 (injury-adjusted) with 57.9% over. The model still reads this as more competitive than the market price, and the total gap over DK stayed wide even after moving Charbonnet from questionable to a confirmed OUT, which (correctly) trims Seattle own offense a touch rather than widening the gap further.",
+      "Denver is playing without both projected CB1 (Patrick Surtain II, ankle, officially OUT per Denver Gazette 10/14) and starting safety (Talanoa Hufanga, ankle, officially OUT, same report) against a Seattle offense the sim already has 3 points over the market total -- a verified signal the model cannot price since it would need to raise Seattle's own scoring, not lower Denver's (deliberately left out of injury_adjustments for that reason). CB Riley Moss (ribs) is questionable but trending to play. That argues for leaning the total over more than the model number alone, and keeps the spread read muddled since Denver's thin secondary is a real tailwind for Seattle's passing game that the market price may already be absorbing. Seattle's RB Zach Charbonnet (knee) is now confirmed OUT (seahawks.com Wed report), a minor committee-backfield loss already priced into the sim."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 40.5",
+        "confidence": 6,
+        "reasoning": "Sim total 43.5 (injury-adjusted) vs DK 40.5, 57.9% over in sims, plus a verified Denver secondary cluster (Surtain + Hufanga both officially OUT per Denver Gazette 10/14) the model cannot price -- two independent signal categories (model gap + verified injury news) agree. | Stake $15 \u00b7 pass at 42.5",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "No lean -- signals conflict",
+        "confidence": 3,
+        "reasoning": "Model (-0.4 home margin) is close to a coinflip and assumes a Denver secondary that will not be on the field (Surtain/Hufanga both out); context only, no clean edge either way. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      },
+      {
+        "market": "moneyline",
+        "pick": "No edge",
+        "confidence": 3,
+        "reasoning": "No-vig DK (SEA ~58.5% / DEN ~41.5%) is close to the model's win%, no clear mispricing either way. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-15T21:02:27Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 25,
+      "handle_pct_home": 18
+    },
+    "total": {
+      "bets_pct_over": 77,
+      "handle_pct_over": 85
+    },
+    "moneyline": {
+      "bets_pct_home": 30,
+      "handle_pct_home": 24
+    },
+    "reverse_line_move": false,
+    "rlm_note": "82% of handle is on the away side but the spread hasn't moved yet (+2.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "DEN(home)-relative, cleatz.com/public-betting/nfl live board. 82% handle on SEA spread, spread unchanged at +2.5 all week -- not RLM, matches overnight read."
+  },
+  "props": {
+    "last_checked": "2026-10-13T14:51:39Z",
+    "status": "captured",
+    "source_note": "Rebuilt 2026-10-13 from Linemate live lines (team logo, season stats, L10 hit rate, injury list) + CBS posvsdef ranks; names/teams checked against Linemate team logos and roster news",
+    "picks": [
+      {
+        "player": "Sam Darnold",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Linemate -111",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "Darnold averages 188.8 pass yds on 24.5 attempts, Denver allows the 9th-fewest pass yds, the total is 40.5, and Smith-Njigba is questionable. | Stake $15 \u00b7 pass at 214.5",
+        "factors": [
+          {
+            "label": "Production",
+            "dir": "for",
+            "detail": "188.8 pass yds/game on 24.5 att in 4 games (Linemate)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DEN 9th-fewest pass yds allowed (Linemate); CBS QB rank 14"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Total 40.5 at DK, lowest on the slate"
+          },
+          {
+            "label": "Injury",
+            "dir": "for",
+            "detail": "J. Smith-Njigba questionable, ankle (Linemate injury list)"
+          },
+          {
+            "label": "Sample",
+            "dir": "neutral",
+            "detail": "Played 4 of 5 games; L10 under hit 7/10"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 14,
+          "rank_basis": "CBS QB pts allowed YTD"
+        },
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 1,
+          "net": 4
+        },
+        "opening_line": 220.5,
+        "opening_captured_at": "2026-10-13T14:41:48Z",
+        "current_line": 220.5,
+        "current_captured_at": "2026-10-13T14:51:39Z"
+      },
+      {
+        "player": "Courtland Sutton",
+        "team": "home",
+        "position": "WR",
+        "market": "receptions",
+        "book": "Linemate -118",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Sutton averages 2.2 catches, has stayed under 3.5 in 7 of his last 10, and Seattle allows the 7th-fewest WR catches. Half unit: rec market history is weak. | Stake $7.50 \u00b7 pass at 2.5",
+        "factors": [
+          {
+            "label": "Production",
+            "dir": "for",
+            "detail": "2.2 rec/game on 5 targets (Linemate)"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "Under 3.5 in 7 of last 10"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "SEA 7th-fewest WR rec allowed (Linemate); CBS WR rank 3"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "receptions picks hit 2/6 (33%) in graded Line Watch history"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 3,
+          "rank_basis": "CBS WR pts allowed YTD"
+        },
+        "confidence_base": 5,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 3.5,
+        "opening_captured_at": "2026-10-13T14:41:48Z",
+        "current_line": 3.5,
+        "current_captured_at": "2026-10-13T14:51:39Z"
+      },
+      {
+        "player": "Jaylen Waddle",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Linemate -106",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Waddle averages 40.8 rec yds for Denver, has stayed under 49.5 in 7 of his last 10, and Seattle allows the fewest WR rec yds. Half unit: rec market history is weak. | Stake $7.50 \u00b7 pass at 45.5",
+        "factors": [
+          {
+            "label": "Production",
+            "dir": "for",
+            "detail": "40.8 rec yds/game on 6.2 targets (Linemate)"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "Under 49.5 in 7 of last 10"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "SEA fewest WR rec yds allowed (Linemate); CBS WR rank 3"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "rec_yards picks hit 19/41 (46%) in graded Line Watch history"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 3,
+          "rank_basis": "CBS WR pts allowed YTD"
+        },
+        "confidence_base": 5,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 49.5,
+        "opening_captured_at": "2026-10-13T14:41:48Z",
+        "current_line": 49.5,
+        "current_captured_at": "2026-10-13T14:51:39Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-15T17:03:07Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Zach Charbonnet",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Upgraded from questionable to OUT on Seattle Wed 10/14 report (knee, limited practice but ruled out); secondary-RB role in a committee backfield, Seattle has other backs to absorb touches (seahawks.com Week 6 injury report)."
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    }
+  },
+  "final_score": {
+    "home": 17,
+    "away": 14
+  }
+}

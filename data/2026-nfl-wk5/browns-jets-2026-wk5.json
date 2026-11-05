@@ -1,0 +1,574 @@
+{
+  "game_id": "browns-jets-2026-wk5",
+  "matchup": "Cleveland Browns @ New York Jets",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 39.5,
+      "ml_fav": -136,
+      "ml_dog": 120
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 NYJ -1.5/40.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -136,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 NYJ -1.5/40.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 40.5,
+        "ml_fav": -125,
+        "ml_dog": 115
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 NYJ -1.5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 40.5,
+        "ml_fav": -125,
+        "ml_dog": 115
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 39.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 39.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Jets"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Jets. DK ML via cleatz (Jets -135/Browns +114)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -135.0,
+        "ml_dog": 114.0
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 39.5,
+        "ml_fav": -134.0,
+        "ml_dog": 114.0
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -150.0,
+        "ml_dog": 122.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 39.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -150,
+        "ml_dog": 122
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 39.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -150,
+        "ml_dog": 122
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Jets."
+    },
+    {
+      "captured_at": "2026-10-11T13:00:59Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 39.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 39.5,
+        "ml_fav": -150,
+        "ml_dog": 122
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 38.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 38.5,
+        "ml_fav": -138,
+        "ml_dog": 118
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 38.5,
+        "ml_fav": -165,
+        "ml_dog": 128
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Browns +2.5 (DK/Caesars) / +1.5 (FanDuel)",
+    "total_lean": "Watching, no lean yet",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Breece Hall (quad) and Adonai Mitchell (finger) both confirmed doubtful -- NYJ's two most-used offensive weapons",
+      "Model flipped hard to CLE (63.8% win) on the update -- model gap + injury cluster agree"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.088177+00:00",
+    "n": 10000,
+    "homeElo": 1310.6,
+    "awayElo": 1443.7,
+    "gamesSeen": 8,
+    "eloMarginHome": -3.4,
+    "statsMarginHome": -0.3,
+    "marginDivergence": -3.1,
+    "projTotal": 43.0,
+    "homeWinProbElo": 38.0,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 39.5,
+    "homeInjuryPts": -2.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 19.8,
+    "projAwayMeanRaw": 23.2,
+    "projHomeMeanAdjusted": 17.8,
+    "projAwayMeanAdjusted": 23.2,
+    "injuryAdjustedMarginHome": -5.4,
+    "projTotalAdjusted": 41.0,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -2.0 pts -- Breece Hall (RB, doubtful, -1.5), Adonai Mitchell (WR, doubtful, -0.5)."
+    ],
+    "homeWinPct": 34.1,
+    "awayWinPct": 63.2,
+    "tiePct": 2.7,
+    "medianHomeScore": 18,
+    "medianAwayScore": 23,
+    "coverPctHome": 28.7,
+    "overPct": 53.7
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.444621+00:00",
+      "marginHome": -3.4,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.316994+00:00",
+      "marginHome": -3.4,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.651121+00:00",
+      "marginHome": -3.4,
+      "total": 43.0
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.277419+00:00",
+      "marginHome": -4.0,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.847498+00:00",
+      "marginHome": -4.0,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-09T17:27:39.767657+00:00",
+      "marginHome": -3.4,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.856737+00:00",
+      "marginHome": -5.4,
+      "total": 41.0
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.056415+00:00",
+      "marginHome": -5.4,
+      "total": 41.0
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.024173+00:00",
+      "marginHome": -5.4,
+      "total": 41.0
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.852646+00:00",
+      "marginHome": -5.4,
+      "total": 41.0
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.088177+00:00",
+      "marginHome": -5.4,
+      "total": 41.0
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-09T21:09:57Z",
+    "analysis": [
+      "The market still makes the Jets 1.5-2.5 point home favorites, but the sim has flipped hard toward Cleveland (63.8% win) now that Breece Hall (quad, doubtful, lead back) and Adonai Mitchell (finger, doubtful, missed last 2 games) are both confirmed unlikely to play -- that's a fresh, officially-tagged injury cluster on the Jets' two most used offensive weapons, not just DNP speculation, and it's worth a full 2.0 pts in the home projection.",
+      "That gives us 2 independent signal categories agreeing for the first time this week: the injury cluster (both tags newly firm) and a real model-vs-market gap (sim margin -5.4 for the home team vs a market still favoring them by 1.5-2.5). The total picture is murkier -- losing two offensive weapons argues for fewer Jets points, but the sim's own total (41.0) still sits a touch above the market (39.5), so that signal isn't clean enough to act on yet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Browns +2.5 (DK/Caesars) / +1.5 (FanDuel)",
+        "confidence": 6,
+        "reasoning": "Hall and Mitchell are both now officially doubtful (not just DNP) for the Jets' two most-used weapons, and the sim's model gap (NYJ -5.4 adjusted vs market NYJ-favored by 1.5-2.5) agrees -- 2 independent categories. | Stake $15 \u00b7 pass at +1.5",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Watching, no lean yet",
+        "confidence": 3,
+        "reasoning": "Losing Hall/Mitchell argues under, but the sim's own total (41.0) still sits above the 39.5 market -- conflicting signals, not clean enough to size. | Stake $0 (watch)",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-08T13:05:24Z",
+    "status": "captured",
+    "source_note": "Geno 206.5 / Wilson 69.5 -114 reported by Michael Oct 8",
+    "picks": [
+      {
+        "player": "Geno Smith",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Geno averages 226, against a Cleveland defense allowing 254 pass yds/g (25th) -- a 19-yd cushion. Sharp money leaning under trims it to half size. | Stake $7.50 \u00b7 pass at 212.5",
+        "matchup": {
+          "opp_rank_vs_pos": 25,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (CLE 88 pts; 1,017 pass yds)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "225.5 pass yds/g, 29 att/g"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CLE 25th vs QB, 254 pass yds/g allowed"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "NYJ -1.5 to -2.5 -- close game, balanced"
+          },
+          {
+            "label": "Total",
+            "dir": "against",
+            "detail": "Game total only 40.5"
+          },
+          {
+            "label": "Market",
+            "dir": "against",
+            "detail": "Total fell 40.5 to 39.5 with 83% of handle on the over -- sharp lean under"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 1,
+          "net": 0
+        },
+        "opening_line": 207.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 206.5,
+        "current_captured_at": "2026-10-08T13:05:24Z"
+      },
+      {
+        "player": "Garrett Wilson",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "At 69.5 he needs his own average plus 2. Same game script as Geno, so pick one -- Geno has the bigger cushion. | Stake $0 (swap for Geno) \u00b7 pass at 68.5",
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "footballdb WR fantasy pts allowed thru Wk4 (CLE 97 pts; 680 WR rec yds)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CLE 27th vs WR, 170 WR rec yds/g allowed"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "31 targets in 4 games, team leader"
+          },
+          {
+            "label": "Average",
+            "dir": "neutral",
+            "detail": "67.5 rec yds/g vs 68.5 line"
+          },
+          {
+            "label": "QB",
+            "dir": "for",
+            "detail": "Geno 225 pass yds/g"
+          },
+          {
+            "label": "Market",
+            "dir": "against",
+            "detail": "Total fell 40.5 to 39.5 with 83% of handle on the over -- sharp lean under"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 68.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 69.5,
+        "current_captured_at": "2026-10-08T13:05:24Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 22,
+      "handle_pct_home": 40
+    },
+    "total": {
+      "bets_pct_over": 63,
+      "handle_pct_over": 46
+    },
+    "moneyline": {
+      "bets_pct_home": 28,
+      "handle_pct_home": 32
+    },
+    "reverse_line_move": false,
+    "rlm_note": "60% of handle is on the away side but the spread hasn't moved yet (-2.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T21:05:15Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Breece Hall",
+          "status": "doubtful",
+          "pts": -1.5,
+          "note": "Quadriceps, listed Doubtful (sportsbookreview Wed table) and multiple reports say 'still sidelined' into Friday with no clearance. Braelon Allen (59 yds/14 car last time up) would start."
+        },
+        {
+          "position": "WR",
+          "player": "Adonai Mitchell",
+          "status": "doubtful",
+          "pts": -0.5,
+          "note": "Finger, has missed last 2 games, Doubtful, HC called him week-to-week."
+        }
+      ],
+      "items_total_pts": -2.0,
+      "stacking_notes": [],
+      "total_pts": -2.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 17,
+    "away": 12
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "game_id": "vikings-buccaneers-2026-wk3",
+  "matchup": "Minnesota Vikings @ Tampa Bay Buccaneers",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T20:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -1.5,
+      "total": 46.5,
+      "ml_fav": -116,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 46.5,
+        "ml_fav": -116,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:09Z",
+      "bookmaker_eu": {
+        "spread": 1.5,
+        "total": 42.0,
+        "ml_fav": -118,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 1.0,
+        "total": 42.5,
+        "ml_fav": -115,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:30Z",
+      "bookmaker_eu": {
+        "spread": 1.5,
+        "total": 42.0,
+        "ml_fav": -119,
+        "ml_dog": 101
+      },
+      "draftkings": {
+        "spread": 1.0,
+        "total": 42.5,
+        "ml_fav": -115,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Vikings(away) favored by a hair; BME/Caesars agree 1.5, DK 1.0."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 1.5,
+        "total": 42.0,
+        "ml_fav": -117,
+        "ml_dog": 100
+      },
+      "draftkings": {
+        "spread": 1.0,
+        "total": 42.5,
+        "ml_fav": -115,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:30:24Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.0,
+        "total": 42.5,
+        "ml_fav": -115,
+        "ml_dog": 105
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). MAJOR CORRECTION to this games research history: Kyler Murray is Minnesotas starting QB this week, confirmed via vikings.com and Star Tribune (Cardinals released him back in May 2026, Vikings signed him; JJ McCarthy is out with an ankle sprain, Carson Wentz is QB2). A prior research cycle (9/23) dismissed a Murray-to-Vikings report as a misattribution -- that dismissal was wrong, this is real and has been priced into the market already: line moved from BUC -1.5 (opening) to MIN -1 (now), a real ~2.5pt swing that DK/Caesars both already reflect. Also new: Vikings starting punter Brett Thorson is out (hamstring), Johnny Hekker signed -- immaterial to spread/total. RB Jordan Mason remains on IR (thumb) until mid-Oct, raises Jones/Dallas workload."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No fresh edge -- the Murray-to-Vikings move is real and already fully priced (line moved ~2.5 pts and has been stable at MIN -1 for 2 days); the market caught up correctly, nothing left to buy or fade here",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "CORRECTED: Kyler Murray is Minnesotas QB (not a misattribution as a prior cycle concluded) -- Cardinals released him in May, Vikings signed him, hes been playing since; McCarthy is out (ankle), Wentz is QB2",
+      "This is news that already happened and is fully reflected in a stable 2-day-old line -- no timing edge remains, just correcting the record"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:30:24.709705+00:00",
+    "n": 10000,
+    "homeElo": 1428.4,
+    "awayElo": 1560.6,
+    "gamesSeen": 4,
+    "eloMarginHome": -3.4,
+    "statsMarginHome": -3.4,
+    "marginDivergence": 0.1,
+    "projTotal": 44.7,
+    "homeWinProbElo": 38.1,
+    "marketHomeSpread": 1.0,
+    "marketTotal": 42.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.7,
+    "projAwayMeanRaw": 24.0,
+    "projHomeMeanAdjusted": 20.7,
+    "projAwayMeanAdjusted": 24.0,
+    "injuryAdjustedMarginHome": -3.4,
+    "projTotalAdjusted": 44.7,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [],
+    "homeWinPct": 38.5,
+    "awayWinPct": 58.6,
+    "tiePct": 2.9,
+    "medianHomeScore": 21,
+    "medianAwayScore": 24,
+    "coverPctHome": 42.6,
+    "overPct": 56.7
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-25T13:42:29Z",
+    "analysis": [
+      "A clean, low-drama read -- Elo has Minnesota favored on the road by 3.4, and the recent-scoring margin agrees almost exactly (also -3.4 for the home Buccaneers), a rare case of the two signals landing on the identical number. No verified starter-level injury news for either team this week; an early report tying a Kyler Murray concussion note to Minnesota was a mislabel (he plays for Arizona) and is disregarded.",
+      "The market is more generous to Tampa Bay than the model's own read -- Buccaneers +1.0 at DraftKings, +1.5 at Caesars -- but the gap (2-2.5 points) and cover rate (55.4% Vikings) both fall short of the model's bar for a real lean -- worth knowing about, not worth a full-size play."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "MIN -1 (DraftKings)",
+        "confidence": 4,
+        "reasoning": "Elo and recent-scoring margin agree almost exactly (-3.4 both), slightly favoring Minnesota beyond the market's own number, but the gap is 2-2.5 points and cover rate (55.4%) doesn't clear the model's own bar.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Signal agreement",
+            "dir": "for",
+            "detail": "Elo and recent-scoring margin agree almost exactly (-3.4 both) -- clean signal favoring Minnesota beyond the market number"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "against",
+            "detail": "55.4% doesn't clear the model's own 60% confidence bar"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 0,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "Justin Jefferson",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Kyler Murray's return is a real QB upgrade for Jefferson, but TB is a top-10 WR defense so far -- capped as a lean into a tough matchup.",
+        "opening_line": 68.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 68.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "QB change",
+            "dir": "for",
+            "detail": "Murray cleared concussion protocol and starts; Wentz started Wk2"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Clear WR1 -- led MIN pass-catchers in Wk2 despite a 3-55 line on 6 tgts"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "TB 9th-fewest pts to WRs (13.5/g); 234 WR yds allowed in 2 games (117/g)"
+          },
+          {
+            "label": "Recent trend",
+            "dir": "against",
+            "detail": "Wk2: 3 rec, 55 yds -- under 68.5"
+          },
+          {
+            "label": "Game script",
+            "dir": "neutral",
+            "detail": "MIN -1.5, 42.0 total -- low total, no pass-volume boost"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 9,
+          "rank_basis": "footballdb fantasy pts allowed to WRs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 1,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:30:24Z",
+    "source": "cleatz.com",
+    "spread": null,
+    "total": null,
+    "moneyline": {
+      "bets_pct_home": 88,
+      "handle_pct_home": 88
+    },
+    "reverse_line_move": null,
+    "rlm_note": null,
+    "note": "Home-relative: TB is home. Cleatz didnt post a spread/total split for this game this cycle -- ML only, no divergence (60/51 on tickets/handle per raw source was for MIN, the favorite)."
+  },
+  "final_score": {
+    "home": 16,
+    "away": 23
+  }
+}

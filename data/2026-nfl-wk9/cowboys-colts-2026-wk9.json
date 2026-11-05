@@ -1,0 +1,155 @@
+{
+  "game_id": "cowboys-colts-2026-wk9",
+  "matchup": "Dallas Cowboys @ Indianapolis Colts",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": null,
+    "fanduel": {
+      "spread": 5.5,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 5.5,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:37Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 5.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 51.5,
+        "ml_fav": -239,
+        "ml_dog": 199
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 51.5,
+        "ml_fav": -239,
+        "ml_dog": 199
+      },
+      "draftkings": {
+        "spread": 6,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.460182+00:00",
+    "n": 10000,
+    "homeElo": 1438.2,
+    "awayElo": 1444.4,
+    "gamesSeen": 17,
+    "eloMarginHome": 1.7,
+    "statsMarginHome": -4.1,
+    "marginDivergence": 5.8,
+    "projTotal": 51.3,
+    "homeWinProbElo": 56.0,
+    "marketHomeSpread": 5.5,
+    "marketTotal": 51.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 26.5,
+    "projAwayMeanRaw": 24.8,
+    "projHomeMeanAdjusted": 26.5,
+    "projAwayMeanAdjusted": 24.8,
+    "injuryAdjustedMarginHome": 1.7,
+    "projTotalAdjusted": 51.3,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+1.7) and recent-scoring margin (-4.1) disagree by 5.8 points -- worth a second look before trusting either alone.",
+      "Indianapolis Colts (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Sauce Gardner (-1.5), Tyler Warren (-1.0), Anthony Gould (-0.3), CJ Allen (-0.5), Bryce Boettcher (-0.2) [-3.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Dallas Cowboys (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]; CeeDee Lamb (-2.0), Tyler Booker (-0.5) [-2.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 52.8,
+    "awayWinPct": 44.6,
+    "tiePct": 2.6,
+    "medianHomeScore": 26,
+    "medianAwayScore": 25,
+    "coverPctHome": 69.0,
+    "overPct": 49.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:37.926451+00:00",
+      "marginHome": 1.7,
+      "total": 51.3
+    },
+    {
+      "run_at": "2026-11-03T15:29:10.962292+00:00",
+      "marginHome": 1.7,
+      "total": 51.3
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.460182+00:00",
+      "marginHome": 1.7,
+      "total": 51.3
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Indianapolis Colts by 1.7 (injury-adjusted) against a market that has Dallas Cowboys favored by 5.5, a 7.2-point gap; sim cover% for Indianapolis Colts is 68.8% and projected total is 51.3 vs 51.5 (over 49.9%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "game_id": "packers-buccaneers-2026-wk4",
+  "matchup": "Green Bay Packers @ Tampa Bay Buccaneers",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 1.5,
+      "total": 45.5,
+      "ml_fav": -112,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Packers -1.5 (away fav) -> home(Buccaneers)=+1.5. Fox opening had Packers -3.5/39.5 -- notable 6pt total swing (39.5->45.5) and spread has come in 2pts toward Tampa since open; worth flagging as real movement, not a fetch glitch, since spread and total both moved consistently toward a higher-scoring, closer game. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -112,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Packers -1.5 (away fav) -> home(Buccaneers)=+1.5. Fox opening had Packers -3.5/39.5 -- notable 6pt total swing (39.5->45.5) and spread has come in 2pts toward Tampa since open; worth flagging as real movement, not a fetch glitch, since spread and total both moved consistently toward a higher-scoring, closer game. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 39.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:54Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 40,
+        "ml_fav": -192,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed for this game this cycle (vegasinsider table cut off before reaching it)."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 40,
+        "ml_fav": -192,
+        "ml_dog": 175
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1), matches Caesars via vegasinsider.com. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 40.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "Small lean Packers -3.5 or better",
+    "total_lean": "No edge -- flip from earlier read, see note",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "CORRECTED: the market has actually already moved to Packers -3.5 / 39.5 -- the earlier same-day fetch (from a stale rotowire read) had this backwards, showing the line softening toward Tampa Bay after the Mayfield news, which never happened. The market caught up to the Jalon Daniels (UDFA rookie) downgrade almost immediately, same as the injury adjustment already applied here (-5.5)",
+      "With the correction, the model's remaining edge shrinks from a wide ~4pt gap to about 2.1 pts on the spread -- still a real lean given the QB story, but no longer a market-hasn't-caught-up situation",
+      "Total: model (41.0) now sits slightly ABOVE the corrected market (39.5), the opposite of the earlier read -- not a total lean either direction on a 1.5pt gap, but worth flagging that Green Bay's own shaky offensive line play (Jordan Love under heavy pressure recent weeks) may be exactly why the market isn't pricing the total any lower despite Tampa's downgrade"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-09-29T12:49:54Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Baker Mayfield",
+          "status": "out",
+          "pts": -5.5,
+          "note": "Dislocated thumb (Wk3 vs Vikings, no fracture/ligament damage), HC Bowles confirmed at least 3 weeks out. Undrafted rookie Jalon Daniels (no prior NFL starts) gets the Wk4 start for an already winless (0-3) Tampa Bay team -- clearly-worse-backup tier given zero MLB experience, brand new this week so nothing yet baked into recent-form averages."
+        }
+      ],
+      "items_total_pts": -5.5,
+      "stacking_notes": [],
+      "total_pts": -5.5
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.615958+00:00",
+    "n": 10000,
+    "homeElo": 1413.1,
+    "awayElo": 1464.5,
+    "gamesSeen": 6,
+    "eloMarginHome": -0.1,
+    "statsMarginHome": -1.5,
+    "marginDivergence": 1.4,
+    "projTotal": 46.5,
+    "homeWinProbElo": 49.5,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 40,
+    "homeInjuryPts": -5.5,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.2,
+    "projAwayMeanRaw": 23.3,
+    "projHomeMeanAdjusted": 17.7,
+    "projAwayMeanAdjusted": 23.3,
+    "injuryAdjustedMarginHome": -5.6,
+    "projTotalAdjusted": 41.0,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -5.5 pts -- Baker Mayfield (QB, out, -5.5).",
+      "Green Bay Packers (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Aaron Banks (-1.0), Zach Bako-Bewele (-1.0), Jayden Reed (-1.2), Warren Brinson (-0.5), Javon Hargrave (-0.3) [-4.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 32.9,
+    "awayWinPct": 64.5,
+    "tiePct": 2.6,
+    "medianHomeScore": 18,
+    "medianAwayScore": 23,
+    "coverPctHome": 43.5,
+    "overPct": 52.8
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 43,
+      "handle_pct_home": 57
+    },
+    "total": {
+      "bets_pct_over": 69,
+      "handle_pct_over": 57
+    },
+    "moneyline": {
+      "bets_pct_home": 29,
+      "handle_pct_home": 32
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:28:53Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser",
+    "picks": [
+      {
+        "player": "Emeka Egbuka",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "TBs clear WR1, tempered by a rookie backup QB making his first start.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 48.6 vs 36.5 line, +12.1 diff, 25.6% edge"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Egbuka is TBs clear WR1 in target share"
+          },
+          {
+            "label": "QB change",
+            "dir": "against",
+            "detail": "UDFA rookie Jalon Daniels makes his first NFL start at QB this week"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 36.5,
+        "opening_captured_at": "2026-10-01T01:28:53Z",
+        "current_line": 36.5,
+        "current_captured_at": "2026-10-01T01:28:53Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 63,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 16,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com (wk3 not available)",
+        "backtest": {
+          "hits": 1,
+          "misses": 1,
+          "pushes": 0,
+          "total": 2,
+          "pct": 50,
+          "line": 36.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Tucker Kraft",
+        "team": "away",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "TB has allowed the 3rd-most fantasy production to TEs in the league this year and Kraft is Loves clear top target.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "TB allows 34.0 fantasy pts to TEs thru 3 games (~11.3/g), among the most generous defenses"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Kraft is GBs clear starting TE and a consistent top-2 target for Love"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 47.3 vs 37.5 line, +9.8 diff, 25.6% edge"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 37.5,
+        "opening_captured_at": "2026-10-01T01:07:54Z",
+        "current_line": 37.5,
+        "current_captured_at": "2026-10-01T01:07:54Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 65,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 15,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 26,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 37.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-29T13:35:58Z",
+    "analysis": [
+      "CORRECTION: the market has actually already moved to Packers -3.5, total 39.5 -- an earlier same-day fetch (from a source that hadn't refreshed) had this backwards, showing the line softening toward Tampa Bay after Baker Mayfield's injury, which never happened. In reality the market caught up to undrafted rookie Jalon Daniels making his first NFL start almost immediately, tightening the spread edge from what looked like a wide ~4-point gap down to about 2.1 points once corrected.",
+      "The total tells the more surprising story: the model (41.0) now sits slightly ABOVE the corrected market (39.5) -- the opposite of the pre-correction read. That's not a total lean in either direction on a gap this small, but it's worth noting Green Bay's own offensive line has been shaky the last two weeks (Jordan Love under heavy, repeated pressure) -- plausibly exactly why the market isn't pricing this total any lower despite Tampa Bay's clear QB downgrade. The spread remains the cleaner side of this game, tempered from a strong lean to a real-but-modest one now that the market has largely caught up."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Packers -3.5 or better",
+        "confidence": 4,
+        "reasoning": "Fresh, confirmed backup-QB downgrade for Tampa Bay, but the market has already absorbed most of the move -- remaining model edge is modest.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.615958+00:00",
+      "marginHome": -5.6,
+      "total": 41.0
+    }
+  ],
+  "final_score": {
+    "home": 14,
+    "away": 17
+  }
+}

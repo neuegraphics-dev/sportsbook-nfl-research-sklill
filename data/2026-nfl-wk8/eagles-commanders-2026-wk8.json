@@ -1,0 +1,390 @@
+{
+  "game_id": "eagles-commanders-2026-wk8",
+  "matchup": "Philadelphia Eagles @ Washington Commanders",
+  "week": "Week 8",
+  "kickoff": "2026-11-02T01:20:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3.5,
+      "total": 41.5,
+      "ml_fav": -185,
+      "ml_dog": 170
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -185,
+        "ml_dog": 170
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -185,
+        "ml_dog": 170
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); BookMaker.eu not listing this game; Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41,
+        "ml_fav": -180,
+        "ml_dog": 170
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -4,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null); PHI@WAS US books omitted: VI shows WAS -6 vs prior -3.5, unconfirmed"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -6,
+        "total": 40.5,
+        "ml_fav": -259,
+        "ml_dog": 214
+      },
+      "draftkings": {
+        "spread": -6,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old; BM, DK, CZ all agree ~WAS -6 (RotoWire -3.5 was 10/26, stale)"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 40.5,
+        "ml_fav": -278,
+        "ml_dog": 225
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 40.5,
+        "ml_fav": -270,
+        "ml_dog": 220
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 40.5,
+        "ml_fav": -265,
+        "ml_dog": 215
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T22:43:15Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 40.5,
+        "ml_fav": -270,
+        "ml_dog": 220
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": 40.5,
+        "ml_fav": -260,
+        "ml_dog": 215
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": 40.5,
+        "ml_fav": -265,
+        "ml_dog": 210
+      },
+      "note": "covers.com odds board live render 2026-11-01 ~22:45Z (5:45pm ET); most books WAS -5.5, DK -6.5 -111/+6.5 -119. Inactives not yet posted."
+    },
+    {
+      "captured_at": "2026-11-02T00:31:43Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 40.5,
+        "ml_fav": -278,
+        "ml_dog": 225
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": 40.5,
+        "ml_fav": -245,
+        "ml_dog": 200
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": 40.5,
+        "ml_fav": -265,
+        "ml_dog": 210
+      },
+      "note": "covers.com odds board live render 2026-11-02 ~00:34Z (7:34pm ET); DK and BetMGM PHI +6.5 -120, FD/CZ +5.5."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "PHI +6.5 (minimum-action)",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "McKee starts (Hurts out), -4.0 pts",
+      "sim WAS by 3.2 vs 6.5"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-02T00:31:43.246248+00:00",
+    "n": 10000,
+    "homeElo": 1374.9,
+    "awayElo": 1442.9,
+    "gamesSeen": 13,
+    "eloMarginHome": -0.8,
+    "statsMarginHome": -1.5,
+    "marginDivergence": 0.7,
+    "projTotal": 44.8,
+    "homeWinProbElo": 47.1,
+    "marketHomeSpread": -5.5,
+    "marketTotal": 40.5,
+    "homeInjuryPts": -1.95,
+    "awayInjuryPts": -4.0,
+    "projHomeMeanRaw": 22.0,
+    "projAwayMeanRaw": 22.8,
+    "projHomeMeanAdjusted": 20.1,
+    "projAwayMeanAdjusted": 18.8,
+    "injuryAdjustedMarginHome": 1.2,
+    "projTotalAdjusted": 38.9,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -1.9 pts -- Daron Payne (DT, out, -0.8), Javon Kinlaw (DT, out, -0.4). DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -4.0 pts -- Jalen Hurts (QB, out, -4.0).",
+      "Washington Commanders (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]; Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Philadelphia Eagles (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Saquon Barkley (-2.0), DeVonta Smith (-2.0), Hollywood Brown (-0.8) [-5.5 pts total]; Jalen Hurts (-6.0), Saquon Barkley (-2.0), Will Shipley (-0.5) [-9.2 pts total]; Jalen Hurts (-5.0), DeVonta Smith (-1.8), Dontayvion Wicks (-0.4), Nolan Smith (-0.6), Michael Carter II (-0.5), Saquon Barkley (-0.8), Landon Dickerson (-0.4), Jonathan Greenard (-0.5), Jalyx Hunt (-0.3) [-11.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 51.9,
+    "awayWinPct": 45.4,
+    "tiePct": 2.7,
+    "medianHomeScore": 20,
+    "medianAwayScore": 19,
+    "coverPctHome": 38.0,
+    "overPct": 46.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:08.059908+00:00",
+      "marginHome": -2.4,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.138682+00:00",
+      "marginHome": -2.4,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.730089+00:00",
+      "marginHome": -2.4,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.656699+00:00",
+      "marginHome": -0.8,
+      "total": 44.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:37.007379+00:00",
+      "marginHome": -0.8,
+      "total": 44.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.778555+00:00",
+      "marginHome": -0.8,
+      "total": 44.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.892557+00:00",
+      "marginHome": -0.8,
+      "total": 44.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:46.426496+00:00",
+      "marginHome": 3.2,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-11-01T01:52:15.254873+00:00",
+      "marginHome": 3.2,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.072716+00:00",
+      "marginHome": 3.2,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.192312+00:00",
+      "marginHome": 3.2,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-11-01T21:43:46.498834+00:00",
+      "marginHome": 3.2,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-11-01T22:43:15.726362+00:00",
+      "marginHome": 3.2,
+      "total": 40.8
+    },
+    {
+      "run_at": "2026-11-02T00:31:43.246248+00:00",
+      "marginHome": 1.2,
+      "total": 38.9
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T00:32:08Z",
+    "analysis": [
+      "Sim (with -4.0 pts for Jalen Hurts out): Commanders by 3.2, total 40.8 vs 40.5. Tanner McKee is listed as Philadelphia's starting QB (RotoWire lineups, 11/1). The line flipped from a PHI-favored open to WAS -6.5.",
+      "Before the QB change, Elo (-0.8) and 2026 scoring (-1.5) both rate Philadelphia better; the market has priced roughly a 9-point swing vs our 4. A thin lean on PHI +6.5, used as this window's minimum-action pick."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "PHI +6.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Upgraded at 7:30pm: WAS DTs Payne and Kinlaw inactive, sim now WAS by 1.2, and the market moved toward PHI (6.5 to 5.5). | Stake $12 \u00b7 pass at +5",
+        "factors": [
+          {
+            "label": "Sim margin",
+            "dir": "for",
+            "detail": "WAS by 1.2 after -4.0 QB penalty and -1.95 for WAS DT inactives; PHI +5.5 covers 62%"
+          },
+          {
+            "label": "Market move",
+            "dir": "for",
+            "detail": "Most books moved WAS -6.5 to -5.5 since morning"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "WAS DT Daron Payne and DT Javon Kinlaw inactive (RotoWire)"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-02T00:31:43Z",
+    "home": {
+      "items": [
+        {
+          "position": "DT",
+          "player": "Daron Payne",
+          "status": "out",
+          "pts": -0.8,
+          "note": "Inactive (RotoWire lineups 11/1 ~7:30pm ET)"
+        },
+        {
+          "position": "DT",
+          "player": "Javon Kinlaw",
+          "status": "out",
+          "pts": -0.4,
+          "note": "Inactive (RotoWire lineups 11/1 ~7:30pm ET)"
+        }
+      ],
+      "items_total_pts": -1.2,
+      "stacking_notes": [
+        "DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -1.95
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jalen Hurts",
+          "status": "out",
+          "pts": -4.0,
+          "note": "On IR since 10/17 (blood clot, out indefinitely); Barkley also out. Elo still carries Hurts-era strength; market moved to WAS -6 at DK/CZ (VegasInsider). Backup quality unverified."
+        }
+      ],
+      "items_total_pts": -4.0,
+      "stacking_notes": [],
+      "total_pts": -4.0
+    }
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 56,
+      "handle_pct_home": 57
+    },
+    "total": {
+      "bets_pct_over": 69,
+      "handle_pct_over": 44
+    },
+    "moneyline": null,
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 27,
+    "away": 10
+  }
+}

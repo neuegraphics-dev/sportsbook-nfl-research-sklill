@@ -1,0 +1,625 @@
+{
+  "game_id": "falcons-packers-2026-wk3",
+  "matchup": "Atlanta Falcons @ Green Bay Packers",
+  "week": "Week 3",
+  "kickoff": "2026-09-25T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": -7.0,
+      "total": 44.0,
+      "ml_fav": -331,
+      "ml_dog": 268
+    },
+    "draftkings": {
+      "spread": -5.5,
+      "total": 46.5,
+      "ml_fav": -275,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider still showing stale Week 2 table (not yet rolled to Week 3) -- logged null. FanDuel editorial page not attempted (established frozen/stale). First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:55Z",
+      "bookmaker_eu": {
+        "spread": -7.0,
+        "total": 44.0,
+        "ml_fav": -331,
+        "ml_dog": 268
+      },
+      "draftkings": {
+        "spread": -5.5,
+        "total": 46.5,
+        "ml_fav": -275,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider still showing stale Week 2 table (not yet rolled to Week 3) -- logged null. FanDuel editorial page not attempted (established frozen/stale). First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45.0,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK/BME/Caesars/FD current as of 2026-09-23 fetch; BME/DK/FD/Caesars all favor Packers -6 to -6.5"
+    },
+    {
+      "captured_at": "2026-09-23T14:06:28Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45.0,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK(rotowire)/BME freshness markers both still read Sep 22 -- effectively unchanged from this morning. Caesars/FanDuel (via VegasInsider) show -5.5, down from -6.5 logged this morning, but VegasInsider's own 'Last Updated Sep 22 2:55 PM' marker is unchanged too -- treat this half-to-1pt move as unconfirmed until a book reprices with a fresh timestamp."
+    },
+    {
+      "captured_at": "2026-09-23T17:59:57Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45.0,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Lines unchanged vs prior snapshot; DK/BME freshness markers still dated Sep 22. Key news: A.J. Terrell placed on IR (groin) Tue 9/22, confirmed OUT per Yahoo Sports + The Falcoholic -- upgrading from prior questionable read."
+    },
+    {
+      "captured_at": "2026-09-23T18:08:02Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45.0,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Re-checked ~18:15 UTC, ~15 min after prior snapshot: all four books unchanged (DK/rotowire and VegasInsider freshness markers still dated Sep 22). No new injury news beyond Terrell IR already logged."
+    },
+    {
+      "captured_at": "2026-09-23T20:09:38Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45.0,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Recheck ~20:15 UTC: all four books unchanged from prior snapshot (DK/BME freshness markers still Sep 22). New info this pass: Packers officially ruled OUT LG Aaron Banks (knee/toe), RT Zach Bako-Bewele (season-ending knee), WR Jayden Reed (neck, hospitalized Wk2), DT Warren Brinson (calf) for Thursday; DT Javon Hargrave (knee/concussion) questionable. None of this home-side injury news has moved any book yet."
+    },
+    {
+      "captured_at": "2026-09-23T20:10:33Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45.0,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Research-attach pass, same cycle as prior snapshot (~2 min later) -- lines unchanged; attaching updated research after applying new Packers injury news."
+    },
+    {
+      "captured_at": "2026-09-23T22:09:31Z",
+      "bookmaker_eu": {
+        "spread": -5.5,
+        "total": 43.0,
+        "ml_fav": -274,
+        "ml_dog": 226
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Recheck ~22:10 UTC: BookMaker.eu (sharp) itself moved 1 full pt toward Atlanta (-6.5 -> -5.5) and total down 2 pts (45.0 -> 43.0) with ml tightening -286/+235 -> -274/+226 -- a genuine sharp-side reprice, not a stale-source artifact. DK(rotowire) still dated Sep 22, unchanged 44.5/-6.0. Caesars(VegasInsider) unchanged -5.5. Packers final Wk3 injury report confirms the same 4 OUT (Reed, Banks, Bako-Bewele, Brinson) plus Hargrave questionable; adds Anthony Campbell (DT, ankle) as a second questionable -- depth piece, not priced. A separate SI Packers article referencing a Quay Walker concussion update was discarded as a signal here: its own body describes 'Sunday's matchup against Atlanta,' inconsistent with this Thursday game, so it does not check out as being about this game."
+    },
+    {
+      "captured_at": "2026-09-24T12:09:21Z",
+      "bookmaker_eu": {
+        "spread": -5.5,
+        "total": 43.0,
+        "ml_fav": -274,
+        "ml_dog": 226
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check (~12:00 UTC): BookMaker.eu unchanged from last night's reprice (-5.5/43.0). DK(rotowire, dated Sep23) and Caesars(VegasInsider, dated Sep22 2:55pm ET -- stale ~1.5 days) both unchanged from yesterday. New: Falcons final injury report adds DE Samson Ebukam OUT (hamstring), not priced in prior snapshot."
+    },
+    {
+      "captured_at": "2026-09-24T19:41:58Z",
+      "bookmaker_eu": {
+        "spread": -5.0,
+        "total": 43.0,
+        "ml_fav": -271,
+        "ml_dog": 223
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday PM check (~19:45 UTC, ~4.5h to kickoff): BookMaker.eu (sharp) tightened another half-pt toward Atlanta (-5.5 -> -5.0), total unchanged 43.0, ml -271/+223. DK(rotowire) unchanged -6.0/44.5/-270, freshness marker still dated Sep23. Caesars(VegasInsider) shows -4.5, a full pt move from this morning's -5.5, but page's own 'Last Updated' marker is UNCHANGED (still Sep22 2:55pm) -- treat this Caesars move as unconfirmed/likely stale-source artifact, not a real reprice, until a fresh timestamp confirms it. Final injury report re-checked via SI/Yahoo: same 4 Packers OUT (Banks, Bako-Bewele, Brinson, Reed) + Hargrave/Campbell questionable, same Falcons OUT (Ebukam) + Terrell (IR) + Bowman questionable -- no new names, injury picture unchanged from this morning."
+    },
+    {
+      "captured_at": "2026-09-24T20:11:16Z",
+      "bookmaker_eu": {
+        "spread": -5.0,
+        "total": 43.0,
+        "ml_fav": -271,
+        "ml_dog": 223
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday final check (~20:10 UTC, ~4h to kickoff): BookMaker.eu, DK unchanged from 19:41 snapshot. Caesars-via-VegasInsider still -4.5 but freshness marker unchanged (Sep22) -- still unconfirmed. Final injury report (SI) confirms same 4 Packers OUT (Banks, Bako-Bewele, Brinson, Reed) + Hargrave questionable, plus newly-listed DT Anthony Campbell (ankle) questionable -- depth piece, immaterial. Same Falcons OUT (Ebukam) + Terrell IR + Bowman questionable. No material change since last cycle."
+    },
+    {
+      "captured_at": "2026-09-24T22:12:46Z",
+      "bookmaker_eu": {
+        "spread": -5.0,
+        "total": 43.0,
+        "ml_fav": -271,
+        "ml_dog": 223
+      },
+      "draftkings": {
+        "spread": -6.0,
+        "total": 44.5,
+        "ml_fav": -270,
+        "ml_dog": 235
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Pre-kickoff check (~22:15 UTC, ~2h to kickoff): BookMaker.eu and DK both unchanged from 19:41/20:11 cycles (BookMaker.eu -5.0/43.0, DK -6.0/44.5/-270; added DK underdog ML +235 from rotowire this check). Caesars-via-VegasInsider still -4.5 with freshness marker still unchanged since Sep22 -- still flagged unconfirmed, likely a stale source. No new injury news found via search (Falcons/Packers final reports match last cycle's 20:10 check); official inactives typically post ~90 min before this 00:15 UTC kickoff, i.e. after this check."
+    }
+  ],
+  "research": {
+    "spread_lean": "No clean edge -- model (5.1 pt margin) and market (BookMaker.eu -5.0, DK -6.0) remain close; sharp book has held flat at -5.0 for over 2.5 hours now, no further steam toward Atlanta",
+    "total_lean": "Under 44.5 (sim projects 36.1 adjusted, well under both DK 44.5 and BookMaker.eu 43.0) -- injury attrition on both sides confirmed final, unchanged",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "BookMaker.eu holding flat at -5.0 across three straight checks (19:41, 20:11, 22:15) after two half-point moves toward Atlanta earlier this week -- sharp direction has stabilized",
+      "cleatz.com public betting: 69% of handle on Green Bay (home) at the spread, but the line has moved AWAY from GB since opening (-7 -> -5) -- a genuine reverse line move per the model, worth noting even though sharp book itself is flat right now",
+      "Caesars-via-VegasInsider still shows -4.5 but its freshness marker has not updated since Sep 22 -- still unconfirmed",
+      "No new injury names; final reports unchanged from this afternoon check",
+      "Total remains the clearest angle: sim 36.1 adjusted vs market 43.0-44.5, both offenses down multiple contributors"
+    ],
+    "last_run": "2026-09-24"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": true,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-24T22:12:59.467629+00:00",
+    "n": 10000,
+    "homeElo": 1512.8,
+    "awayElo": 1394.6,
+    "gamesSeen": 4,
+    "eloMarginHome": 6.6,
+    "statsMarginHome": 3.0,
+    "marginDivergence": 3.7,
+    "projTotal": 44.1,
+    "homeWinProbElo": 72.2,
+    "marketHomeSpread": -4.5,
+    "marketTotal": 44.5,
+    "homeInjuryPts": -4.8,
+    "awayInjuryPts": -3.25,
+    "projHomeMeanRaw": 25.4,
+    "projAwayMeanRaw": 18.7,
+    "projHomeMeanAdjusted": 20.6,
+    "projAwayMeanAdjusted": 15.5,
+    "injuryAdjustedMarginHome": 5.1,
+    "projTotalAdjusted": 36.1,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -4.8 pts -- Aaron Banks (OL, out, -1.0), Zach Bako-Bewele (OL, out, -1.0), Jayden Reed (WR, out, -1.2), Warren Brinson (DT, out, -0.5), Javon Hargrave (DT, questionable, -0.3). OL depth: 2 confirmed out (Aaron Banks, Zach Bako-Bewele) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -3.2 pts -- A.J. Terrell (CB, out, -1.0), Billy Bowman Jr. (CB, out, -0.5), Samson Ebukam (DE, out, -1.0). CB depth: 2 confirmed out (A.J. Terrell, Billy Bowman Jr.) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+    ],
+    "homeWinPct": 62.6,
+    "awayWinPct": 34.7,
+    "tiePct": 2.8,
+    "medianHomeScore": 20,
+    "medianAwayScore": 15,
+    "coverPctHome": 51.5,
+    "overPct": 27.5
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-24T19:42:29Z",
+    "analysis": [
+      "Line movement flagged a genuine reverse line move this afternoon: BookMaker.eu has now tightened from -7.0 at open to -5.0, and Caesars-via-VegasInsider shows -4.5, even though 69% of both bets and handle at cleatz.com are on Green Bay -- the market is moving toward Atlanta despite the public leaning the other way, which is a real sharp-money signal rather than a lopsided-ticket illusion (handle and bets agree here, so it is not a classic bets-vs-handle split, but the direction against the heavy public side is the notable part). The spread itself still offers no clean edge -- the injury-adjusted sim margin (5.1) and the current market (-4.5 to -6.0 depending on book) are close enough that the RLM is a signal to watch line direction into kickoff, not yet a bet in itself.",
+      "The total remains the one angle with real separation: the sim projects 36.1 points adjusted for the five combined injuries (four Packers, three Falcons) against a market sitting at 43.0-44.5, and BookMaker.eu has shaved 2 points off its total since Monday. Final injury reports from SI/Yahoo this afternoon confirmed the same players already priced in (Banks, Bako-Bewele, Brinson, Reed out for Green Bay; Ebukam out and Terrell on IR for Atlanta) -- no new names, so the injury picture is settled ahead of kickoff. With Atlanta averaging just 3 points last week and both offenses down key contributors, the Under continues to be the strongest lean on the board."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 44.5 (DK) / Under 43.0 (BookMaker.eu)",
+        "confidence": 7,
+        "reasoning": "Sim projects 36.1 adjusted, a 7-8.5 pt gap under market, reinforced by BookMakers own 2-pt total cut and Atlantas 3-point output last week.",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "No play -- watch for further RLM into kickoff",
+        "confidence": 3,
+        "reasoning": "Genuine reverse line move (69% handle on GB, line moving toward ATL) is worth tracking, but model (5.1) and market (4.5-6.0 range across books) are too close for a confident side yet.",
+        "best_bet": false
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-24T12:09:26Z",
+    "home": {
+      "items": [
+        {
+          "position": "OL",
+          "player": "Aaron Banks",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Starting LG, knee/toe, DNP all week, officially ruled OUT for Thursday vs Atlanta"
+        },
+        {
+          "position": "OL",
+          "player": "Zach Bako-Bewele",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Starting RT, season-ending patellar tendon tear suffered Wk2 vs Jets, officially OUT; Anthony Belton/Donovan Jennings fill in -- two O-line starters out same game"
+        },
+        {
+          "position": "WR",
+          "player": "Jayden Reed",
+          "status": "out",
+          "pts": -1.25,
+          "note": "Key WR (slot/WR2), neck injury, stretchered off Wk2 vs Jets and hospitalized, DNP all week, ruled OUT -- passing game already down a weapon vs a Falcons defense that allowed just 10 pts last week"
+        },
+        {
+          "position": "DT",
+          "player": "Warren Brinson",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Depth DT, calf, DNP all week, ruled OUT"
+        },
+        {
+          "position": "DT",
+          "player": "Javon Hargrave",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "Knee/concussion, limited practice all week after missing Wk2 entirely -- real uncertainty on snap count even if active, priced as a smaller uncertainty-weighted number rather than 0 or a full-out penalty"
+        }
+      ],
+      "items_total_pts": -4.05,
+      "stacking_notes": [
+        "OL depth: 2 confirmed out (Aaron Banks, Zach Bako-Bewele) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -4.8
+    },
+    "away": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "A.J. Terrell",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Placed on IR Tue 9/22 (groin), confirmed OUT for the season/extended term, not just this game -- C.J. Henderson now starting"
+        },
+        {
+          "position": "CB",
+          "player": "Billy Bowman Jr.",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Already out with Achilles injury, unchanged"
+        },
+        {
+          "position": "DE",
+          "player": "Samson Ebukam",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Hamstring, officially ruled OUT on Falcons final Week 3 injury report -- rotational pass rusher, newly confirmed today (not on prior report)"
+        }
+      ],
+      "items_total_pts": -2.5,
+      "stacking_notes": [
+        "CB depth: 2 confirmed out (A.J. Terrell, Billy Bowman Jr.) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -3.25
+    }
+  },
+  "wagertalk_angle": {
+    "pick": "Falcons +6",
+    "pick_team": "Atlanta Falcons",
+    "pct": 79,
+    "system": "2-way stack: winless-road-off-a-loss vs. home favorite + 0-2 road-dog window",
+    "why": "Atlanta is 0-2, on the road, and off a loss (3-34 to Carolina) -- the winless-road-underdog-vs-home-favorite shape covers ~79% ATS. It also independently fits the broader 0-2-road-dog window (27-14, ~66% ATS). Two overlapping systems, same side.",
+    "stack_count": 2
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "VR",
+      "pick": "Atlanta Falcons (spread) + Over",
+      "best_bet": false,
+      "note": "VR leans toward Atlanta and the Over (0:50-4:59)."
+    }
+  ],
+  "market_signal": {
+    "captured_at": "2026-09-24T22:11:31Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 68,
+      "handle_pct_home": 69
+    },
+    "total": {
+      "bets_pct_over": 51,
+      "handle_pct_over": 50
+    },
+    "moneyline": {
+      "bets_pct_home": 79,
+      "handle_pct_home": 58
+    },
+    "reverse_line_move": true,
+    "rlm_note": "69% of handle is on the home side but the spread moved AGAINST them (-7 -> -5) -- real reverse line move toward away.",
+    "note": "Gameday final check ~20:12 UTC, numbers unchanged from midday cleatz fetch"
+  },
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "Yahoo Sports player props roundup + covers.com, captured gameday AM ~12:30 UTC for tonight's 00:15 UTC kickoff -- QB passing props not yet confirmed with a clean book number, retry next cycle.",
+    "picks": [
+      {
+        "player": "Matthew Golden",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Golden led GB in targets and yards in Wk2 and Atlanta's secondary has leaked 177 WR yds per game; a big-favorite script is the main thing working against volume.",
+        "opening_line": 53.5,
+        "opening_captured_at": "2026-09-24T13:06:38Z",
+        "current_line": 53.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Wk2 vs NYJ: team-high 6 tgts, 4-58 -- cleared 53.5"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL allowed 355 WR yds in 2 games (177/g), 14th vs WRs by fantasy pts"
+          },
+          {
+            "label": "Opp QB",
+            "dir": "for",
+            "detail": "Penix back for ATL -- more likely to keep pace than Rush/Strand"
+          },
+          {
+            "label": "Game script",
+            "dir": "against",
+            "detail": "GB -5.5 home fav, 43.0 total -- lead could mean a run-heavy 2nd half"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 14,
+          "rank_basis": "footballdb fantasy pts allowed to WRs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        }
+      },
+      {
+        "player": "Bijan Robinson",
+        "team": "away",
+        "position": "RB",
+        "market": "receptions",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Road-dog trailing script and a proven 10-target ceiling favor checkdown volume, tempered by Penix's return pulling targets downfield.",
+        "opening_line": 4.5,
+        "opening_captured_at": "2026-09-24T13:06:38Z",
+        "current_line": 4.5,
+        "current_captured_at": "2026-09-24T18:53:28Z",
+        "factors": [
+          {
+            "label": "Usage",
+            "dir": "for",
+            "detail": "11 rec in 2 games (8 on 10 tgts Wk1, team leader in tgts/rec/yds)"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "ATL +5.5 road dog -- trailing = pass volume, RB checkdowns"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "GB 21st of 32 vs RBs (17.5 pts/g); 72 RB rec yds allowed in 2 games"
+          },
+          {
+            "label": "QB change",
+            "dir": "against",
+            "detail": "Penix named starter over Rush/Strand -- 8-catch game came with a 3rd-string checkdown QB"
+          },
+          {
+            "label": "Recent trend",
+            "dir": "against",
+            "detail": "Wk2: only 3 rec (9 yds) in a 34-3 loss -- 1 of 2 games over 4.5"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 21,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 0,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "final_score": {
+    "home": 14,
+    "away": 35
+  }
+}

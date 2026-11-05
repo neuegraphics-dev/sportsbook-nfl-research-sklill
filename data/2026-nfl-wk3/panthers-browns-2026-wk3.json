@@ -1,0 +1,414 @@
+{
+  "game_id": "panthers-browns-2026-wk3",
+  "matchup": "Carolina Panthers @ Cleveland Browns",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": 3.0,
+      "total": 41.0,
+      "ml_fav": -157,
+      "ml_dog": 133
+    },
+    "draftkings": {
+      "spread": 2.5,
+      "total": 40.5,
+      "ml_fav": -142,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:55Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 41.0,
+        "ml_fav": -157,
+        "ml_dog": 133
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 40.5,
+        "ml_fav": -142,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Panthers(away) favored, all 3 sources agree."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -154,
+        "ml_dog": 131
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:27:34Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 130
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK steady at CAR -2.5; Caesars slightly softer at CAR -1.5, a 1-pt book gap, nothing dramatic. Panthers RB Brooks (groin) still in question, Browns RB Sampson still on IR -- both sides missing a RB, roughly offsetting as before. Wind ~10-13mph, under the flag threshold."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- number steady, RB questions on both sides roughly offset",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Both backfields have a RB question mark (CAR Brooks groin, CLE Sampson on IR) -- offsetting, no net edge",
+      "Small DK/Caesars book gap (2.5 vs 1.5) -- normal variance, not a signal"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:27:34.160996+00:00",
+    "n": 10000,
+    "homeElo": 1414.4,
+    "awayElo": 1449.9,
+    "gamesSeen": 4,
+    "eloMarginHome": 0.5,
+    "statsMarginHome": -2.3,
+    "marginDivergence": 2.8,
+    "projTotal": 45.6,
+    "homeWinProbElo": 51.8,
+    "marketHomeSpread": 1.5,
+    "marketTotal": 42.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.0,
+    "projAwayMeanRaw": 22.5,
+    "projHomeMeanAdjusted": 23.0,
+    "projAwayMeanAdjusted": 22.5,
+    "injuryAdjustedMarginHome": 0.5,
+    "projTotalAdjusted": 45.6,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [],
+    "homeWinPct": 49.7,
+    "awayWinPct": 47.2,
+    "tiePct": 3.1,
+    "medianHomeScore": 23,
+    "medianAwayScore": 23,
+    "coverPctHome": 55.5,
+    "overPct": 59.2
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:33:15Z",
+    "analysis": [
+      "Carolinas RB question (Jonathan Brooks, groin) and Clevelands own RB question (Dylan Sampson, on IR) continue to roughly offset, keeping the spread close to a coinflip on talent alone. Whats new this cycle is a confirmed reverse line move: 94% of handle is on Carolina, yet the spread moved AGAINST them (Panthers -3 down to -1.5 to -2.5 depending on book) -- the market moved toward Cleveland despite the public/money leaning Panthers, which is exactly the pattern this project treats as a real sharp signal rather than noise.",
+      "That RLM is a timing signal, not a talent signal on its own, and by this projects own rule it alone cant push confidence above Medium -- but its a real, worth-noting angle on a game that was otherwise a pure coinflip. The total (Over 42.5) remains the more model-driven read, just short of the projects own 60% confidence bar."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "CLE +1.5 to +2.5 (shop the highest number)",
+        "confidence": 5,
+        "reasoning": "Confirmed reverse line move -- 94% of handle on Carolina while the market moved toward Cleveland -- a real sharp-side signal on an otherwise coinflip game.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Reverse line move",
+            "dir": "for",
+            "detail": "94% of handle on CAR but the line moved toward CLE -- confirmed RLM, not just a lopsided split"
+          },
+          {
+            "label": "Model margin",
+            "dir": "neutral",
+            "detail": "Injury-adjusted margin (0.5) is essentially a coinflip on talent alone"
+          },
+          {
+            "label": "RB questions both sides",
+            "dir": "neutral",
+            "detail": "CAR (Brooks) and CLE (Sampson, IR) roughly offset"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 0,
+          "neutral": 2,
+          "net": 1
+        }
+      },
+      {
+        "market": "total",
+        "pick": "Over 42.5",
+        "confidence": 4,
+        "reasoning": "Model total (45.6) sits above market with 59.2% of sims going Over -- just short of the projects own 60% confidence bar, worth watching rather than betting outright.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model 45.6 above market (42.5)"
+          },
+          {
+            "label": "Sim Over%",
+            "dir": "for",
+            "detail": "59.2% of sims go Over -- just short of the 60% bar"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "VR",
+      "pick": "Cleveland Browns (ATS) -- \"Barking Dog\"",
+      "best_bet": false,
+      "note": "VR picks the Cleveland Browns as his Barking Dog (21:20-24:12)."
+    }
+  ],
+  "market_signal": {
+    "captured_at": "2026-09-27T13:27:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 16,
+      "handle_pct_home": 6
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 80
+    },
+    "moneyline": {
+      "bets_pct_home": 16,
+      "handle_pct_home": 15
+    },
+    "reverse_line_move": true,
+    "rlm_note": "94% of handle is on the away side but the spread moved AGAINST them (+3 -> +2.5) -- real reverse line move toward home.",
+    "note": "Home-relative: CLE is home/dog."
+  },
+  "props": {
+    "last_checked": "2026-09-24T20:17:21Z",
+    "status": "captured",
+    "source_note": "covers.com matchup model + bet365/DraftKings, captured 2026-09-24",
+    "picks": [
+      {
+        "player": "Quinshon Judkins",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 8,
+        "reasoning": "Panthers have the league's softest run defense by yards/carry and Judkins is carrying the bulk of Cleveland's RB workload.",
+        "matchup": {
+          "opp_rank_vs_pos": 32,
+          "rank_basis": "CAR run D, approx rank by yards/carry allowed (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CAR allows 6.31 yds/carry, highest allowed by any defense this season"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Judkins carrying ~75% of Browns RB carry share per Wk3 projections"
+          },
+          {
+            "label": "Trend",
+            "dir": "neutral",
+            "detail": "Judkins trended Under rush-yards in 11 of last 14 games, but that spans tougher matchups than this one"
+          },
+          {
+            "label": "Tape",
+            "dir": "for",
+            "detail": "Dawgs By Nature flags him as a potential breakout vs CAR based on early tape"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 55.5,
+        "opening_captured_at": "2026-09-24T20:17:21Z",
+        "current_line": 55.5,
+        "current_captured_at": "2026-09-24T20:17:21Z"
+      },
+      {
+        "player": "Tetairoa McMillan",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Clear WR1 in a pass-leaning offense against a Browns secondary that has already leaked receiving yards, with a thinning WR room around him raising his own target share.",
+        "matchup": {
+          "opp_rank_vs_pos": 24,
+          "rank_basis": "CLE pass D vs WR, approx bottom-third of league by rec yds allowed"
+        },
+        "factors": [
+          {
+            "label": "Form",
+            "dir": "for",
+            "detail": "Cleared 100+ rec yards in his most recent game"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Panthers project as 4th-most pass-centric offense in Wk3 with 6th-best OL pass pro"
+          },
+          {
+            "label": "Volume",
+            "dir": "against",
+            "detail": "Panthers average only 55.1 plays/game, capping total targets"
+          },
+          {
+            "label": "WR room",
+            "dir": "for",
+            "detail": "Coker DNP Thu, Legette added Thu -- injuries could funnel more targets to McMillan as clear WR1"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 55.5,
+        "opening_captured_at": "2026-09-24T20:17:21Z",
+        "current_line": 55.5,
+        "current_captured_at": "2026-09-24T20:17:21Z"
+      },
+      {
+        "player": "Harold Fannin Jr.",
+        "team": "home",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Panthers are a clear weak point vs TEs and Browns project as an underdog, a game script that typically raises pass volume.",
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "CAR TE defense, approx rank by adjusted yds/target allowed (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CAR allows 8.51 adjusted yds/target to TEs, 4th-most in the NFL"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Browns projected underdog (+2.5/+3), historically raises pass volume"
+          },
+          {
+            "label": "Trend",
+            "dir": "against",
+            "detail": "Fannin's longest-reception-over hit rate is only 10 of 15 recently, not elite"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 35.5,
+        "opening_captured_at": "2026-09-24T20:17:21Z",
+        "current_line": 35.5,
+        "current_captured_at": "2026-09-24T20:17:21Z"
+      }
+    ]
+  },
+  "final_score": {
+    "home": 21,
+    "away": 18
+  }
+}

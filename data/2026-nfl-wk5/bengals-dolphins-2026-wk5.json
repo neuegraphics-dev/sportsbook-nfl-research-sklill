@@ -1,0 +1,511 @@
+{
+  "game_id": "bengals-dolphins-2026-wk5",
+  "matchup": "Cincinnati Bengals @ Miami Dolphins",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 8.5,
+      "total": 46.5,
+      "ml_fav": -480,
+      "ml_dog": 410
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 CIN -7.5/42.5 -- 4-pt total disagreement."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 8.5,
+        "total": 46.5,
+        "ml_fav": -480,
+        "ml_dog": 410
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 CIN -7.5/42.5 -- 4-pt total disagreement."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 42.5,
+        "ml_fav": -345,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 CIN -7.5. Total down 4 (Chase/Higgins)."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 42.5,
+        "ml_fav": -345,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 42.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 42.5,
+        "ml_fav": -305,
+        "ml_dog": 245
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Dolphins"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Dolphins. DK ML via cleatz (Bengals -345/Dolphins +275). NOTE: cleatz's total odds for this game (-108/-112) are flipped vs VegasInsider's DK column (-112/-108) -- used VI's direct DK column for the odds, cleatz for the number itself (both agree on 43.5) and for bet%/handle%."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -355.0,
+        "ml_dog": 280.0
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -320.0,
+        "ml_dog": 260.0
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -335.0,
+        "ml_dog": 265.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -355,
+        "ml_dog": 280
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -320,
+        "ml_dog": 260
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -335,
+        "ml_dog": 265
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -355,
+        "ml_dog": 280
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -330,
+        "ml_dog": 265
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 43.5,
+        "ml_fav": -335,
+        "ml_dog": 265
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Dolphins."
+    },
+    {
+      "captured_at": "2026-10-11T13:00:59Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7,
+        "total": 43.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "fanduel": {
+        "spread": 7,
+        "total": 43.5,
+        "ml_fav": -340,
+        "ml_dog": 275
+      },
+      "caesars": {
+        "spread": 7,
+        "total": 43.5,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7,
+        "total": 44.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "fanduel": {
+        "spread": 7,
+        "total": 44.5,
+        "ml_fav": -340,
+        "ml_dog": 275
+      },
+      "caesars": {
+        "spread": 7,
+        "total": 45,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Dolphins +7 (DK/Caesars) / +6.5 (FanDuel)",
+    "total_lean": "No edge (number realized)",
+    "moneyline_lean": "No edge",
+    "confidence": "High",
+    "top_signals": [
+      "Chase still in concussion protocol, no Friday clearance found; Higgins limited, trending to play",
+      "Model has this as a near-coinflip (Dolphins 47.6% win) vs a 7-pt market -- confirmed reverse line move toward MIA (71% handle on CIN, line still shrank)",
+      "3 signal categories agree: model gap + injury cluster + confirmed RLM"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T21:05:15Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Ja'Marr Chase",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "Concussion protocol as of Wed/Thu; no Friday clearance or ruled-out report found despite active search -- genuinely unresolved, pricing an uncertainty-weighted number rather than 0 or a full-out penalty."
+        },
+        {
+          "position": "WR",
+          "player": "Tee Higgins",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Groin/adductor, limited practice, coach called him 'day-to-day' -- trending to play."
+        }
+      ],
+      "items_total_pts": -1.5,
+      "stacking_notes": [],
+      "total_pts": -1.5
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.127130+00:00",
+    "n": 10000,
+    "homeElo": 1360.4,
+    "awayElo": 1465.8,
+    "gamesSeen": 8,
+    "eloMarginHome": -2.3,
+    "statsMarginHome": -4.2,
+    "marginDivergence": 1.9,
+    "projTotal": 45.7,
+    "homeWinProbElo": 41.8,
+    "marketHomeSpread": 7,
+    "marketTotal": 43.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.5,
+    "projHomeMeanRaw": 21.7,
+    "projAwayMeanRaw": 24.0,
+    "projHomeMeanAdjusted": 21.7,
+    "projAwayMeanAdjusted": 22.5,
+    "injuryAdjustedMarginHome": -0.8,
+    "projTotalAdjusted": 44.2,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Away injury adjustment: -1.5 pts -- Ja'Marr Chase (WR, questionable, -1.0), Tee Higgins (WR, questionable, -0.5).",
+      "Cincinnati Bengals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 46.4,
+    "awayWinPct": 50.8,
+    "tiePct": 2.8,
+    "medianHomeScore": 22,
+    "medianAwayScore": 22,
+    "coverPctHome": 67.6,
+    "overPct": 52.5
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.333930+00:00",
+      "marginHome": -0.5,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.200933+00:00",
+      "marginHome": -0.5,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.541247+00:00",
+      "marginHome": -0.5,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.163566+00:00",
+      "marginHome": -0.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.883378+00:00",
+      "marginHome": -0.4,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.781314+00:00",
+      "marginHome": -0.8,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.096611+00:00",
+      "marginHome": -0.8,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-10T17:10:49.981522+00:00",
+      "marginHome": -0.8,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.815213+00:00",
+      "marginHome": -0.8,
+      "total": 44.2
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.127130+00:00",
+      "marginHome": -0.8,
+      "total": 44.2
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-09T21:09:57Z",
+    "analysis": [
+      "The market still has Cincinnati as 6.5-7 point favorites, but the sim has this as a near-coinflip -- Dolphins/home win prob 47.6%, adjusted margin just -0.8 in Cincinnati's favor -- because Ja'Marr Chase remains stuck in concussion protocol with no Friday clearance found anywhere, and Tee Higgins (groin/adductor) is trending to play but still limited. That's a 6+ point gap between model and market on the same game.",
+      "What tips this from 'the model disagrees with the market' to a real lean is that the move has been a genuine reverse line move: 71% of handle sits on Cincinnati, yet the home number has shrunk from Dolphins +8.5 to +7/+6.5 -- the market itself is quietly backing Miami against the public. Model gap, a real injury cluster, and a confirmed RLM all point the same way, which is the bar for the higher stake tier here."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Dolphins +7 (DK/Caesars) / +6.5 (FanDuel)",
+        "confidence": 8,
+        "reasoning": "Model (near-even game vs a 7-pt market), the Chase/Higgins injury cluster, and a confirmed reverse line move (71% handle on CIN, line still shrank toward MIA) all agree -- the 3-signal bar for the top stake tier. | Stake $22.50 \u00b7 pass at +5.5",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Under 42.5 (cleatz)/43.5 (DK)",
+        "confidence": 5,
+        "reasoning": "Already logged Monday at 46.5 and down to 42.5-43.5 now (+4 CLV) -- the number has moved to us, so no fresh money at today's price. Sim 44.2 is close to the current number, not a standing edge. | Stake $0 (number mostly realized) \u00b7 pass at 44",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-09T21:12:57Z",
+    "status": "captured",
+    "source_note": "covers.com top-EV player props board (rendered via built-in browser DOM); cross-checked Burrow's game log via statsniper.com and Miami's D-vs-QB rank via footballdb.com",
+    "picks": [
+      {
+        "player": "Joe Burrow",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "covers.com consensus",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Covers model projects well above the line and Miami grades as a bottom-third pass defense, though the season average is carried by one outlier game. | Stake $15 \u00b7 pass at 262.5",
+        "opening_line": 254.5,
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Miami ranks 22nd of 32 in fantasy pts allowed to QBs, allows 235.0 pass yds/g -- bottom-third defense"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 274.3 vs the 254.5 line, +19.8 diff, 24.3% EV edge"
+          },
+          {
+            "label": "Recent form",
+            "dir": "neutral",
+            "detail": "Season avg 292.8 ypg (4 gm) is carried by a 428-yd Wk4 outlier; other 3 games avg 247.7, just under this line"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Model has this as a near-coinflip vs a 7-pt market spread -- argues for a competitive, extended-passing script"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 2,
+          "net": 2
+        },
+        "opening_captured_at": "2026-10-09T21:12:57Z",
+        "current_line": 254.5,
+        "current_captured_at": "2026-10-09T21:12:57Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:56Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 36,
+      "handle_pct_home": 32
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 58
+    },
+    "moneyline": {
+      "bets_pct_home": 8,
+      "handle_pct_home": 17
+    },
+    "reverse_line_move": true,
+    "rlm_note": "68% of handle is on the away side but the spread moved AGAINST them (+8.5 -> +7) -- real reverse line move toward home.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "final_score": {
+    "home": 24,
+    "away": 31
+  }
+}

@@ -1,0 +1,681 @@
+{
+  "game_id": "eagles-jaguars-2026-wk5",
+  "matchup": "Philadelphia Eagles @ Jacksonville Jaguars",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T13:30:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 45.5,
+      "ml_fav": -141,
+      "ml_dog": 120
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. London. bet365 JAX -4.5/43.5 -- 2-pt book disagreement. Look-ahead PHI -1.5 (favorite flipped)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 45.5,
+        "ml_fav": -141,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. London. bet365 JAX -4.5/43.5 -- 2-pt book disagreement. Look-ahead PHI -1.5 (favorite flipped)."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -5.5,
+        "total": 43,
+        "ml_fav": -235,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 JAX -5.5/42.5. Moved 3-4.5 toward JAX since Mon (PHI RB/WR injuries)."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -5.5,
+        "total": 43,
+        "ml_fav": -235,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 41.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7,
+        "total": 41.5,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -380,
+        "ml_dog": 300
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads from VegasInsider per-book columns (DOM read); DK total/ML from cleatz.com (matches DK pricing). BookMaker.eu site blocked this cycle."
+    },
+    {
+      "captured_at": "2026-10-09T16:18:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -380,
+        "ml_dog": 300
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Research pass (populating legacy research block for report Tier1 filter); no new price move since the 16:13 UTC snapshot."
+    },
+    {
+      "captured_at": "2026-10-09T17:22:58Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -395,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 42,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FD spreads+totals), DK ML from VI moneyline table; BookMaker.eu unreachable this cycle (site load failed), sharp ref missing today"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -395,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 42,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK/Caesars/FanDuel spread+total via VegasInsider DOM; DK ML via cleatz.com (Jaguars -395/Eagles +310)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -395.0,
+        "ml_dog": 310.0
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -400.0,
+        "ml_dog": 315.0
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 42.0,
+        "ml_fav": -380.0,
+        "ml_dog": 295.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T13:16:07Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -395,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -400,
+        "ml_dog": 315
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 42.0,
+        "ml_fav": -380,
+        "ml_dog": 295
+      },
+      "note": "Research-sync pass only (same cycle, same lines as prior snapshot this run) -- updating the research block to reflect Friday's final injury report: Barkley, Smith AND Hollywood Brown all OUT, not just Smith questionable."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -410,
+        "ml_dog": 320
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -400,
+        "ml_dog": 315
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 42.0,
+        "ml_fav": -380,
+        "ml_dog": 295
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -395,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -400,
+        "ml_dog": 315
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -380,
+        "ml_dog": 295
+      },
+      "note": "DK total/ML via cleatz.com (home Jaguars -395/+310 Eagles); DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM."
+    },
+    {
+      "captured_at": "2026-10-11T13:00:59Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -380,
+        "ml_dog": 300
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 41.5,
+        "ml_fav": -400,
+        "ml_dog": 315
+      },
+      "caesars": {
+        "spread": -8,
+        "total": 41.5,
+        "ml_fav": -400,
+        "ml_dog": 305
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-10",
+    "spread_lean": "Jaguars -7.5",
+    "total_lean": "Under 41.5-42",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Eagles RB1 Saquon Barkley (hamstring) and WR1 DeVonta Smith (hamstring) BOTH ruled OUT Friday, plus WR Hollywood Brown (ankle) OUT -- Jalen Hurts himself is available (calf), so this is a skill-position talent story, not a QB story",
+      "Line already moved 9 points (PHI -1.5 open to JAX -7.5 current) on this exact news, cross-confirmed live on cleatz.com and matching prediction-market pricing (Jaguars ~76% implied) -- the edge is real but largely already captured by the market move itself",
+      "Model (injury + WR-depth-stacking adjusted) still projects a wider home margin (13.2) than the market (7.5), but sizing modestly since the news is fully public"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-10T13:06:41Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Saquon Barkley",
+          "status": "out",
+          "pts": -2.0,
+          "note": "Hamstring (tweaked vs Rams), ruled OUT on Friday report; Eagles RB1, no proven complementary back, may need to call up practice-squad RB"
+        },
+        {
+          "position": "WR",
+          "player": "DeVonta Smith",
+          "status": "out",
+          "pts": -2.0,
+          "note": "Hamstring, missed Wk4 and OUT again Friday; Eagles WR1"
+        },
+        {
+          "position": "WR",
+          "player": "Hollywood Brown",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Ankle, OUT per Friday report; Eagles WR2/3"
+        }
+      ],
+      "items_total_pts": -4.75,
+      "stacking_notes": [
+        "WR depth: 2 confirmed out (DeVonta Smith, Hollywood Brown) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -5.5
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:41.961661+00:00",
+    "n": 10000,
+    "homeElo": 1666.0,
+    "awayElo": 1520.6,
+    "gamesSeen": 8,
+    "eloMarginHome": 7.7,
+    "statsMarginHome": 4.7,
+    "marginDivergence": 3.0,
+    "projTotal": 42.6,
+    "homeWinProbElo": 75.3,
+    "marketHomeSpread": -8,
+    "marketTotal": 41.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -5.5,
+    "projHomeMeanRaw": 25.2,
+    "projAwayMeanRaw": 17.5,
+    "projHomeMeanAdjusted": 25.2,
+    "projAwayMeanAdjusted": 12.0,
+    "injuryAdjustedMarginHome": 13.2,
+    "projTotalAdjusted": 37.1,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Away injury adjustment: -5.5 pts -- Saquon Barkley (RB, out, -2.0), DeVonta Smith (WR, out, -2.0), Hollywood Brown (WR, out, -0.8). WR depth: 2 confirmed out (DeVonta Smith, Hollywood Brown) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+    ],
+    "homeWinPct": 80.9,
+    "awayWinPct": 17.1,
+    "tiePct": 2.1,
+    "medianHomeScore": 25,
+    "medianAwayScore": 12,
+    "coverPctHome": 63.7,
+    "overPct": 38.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.578755+00:00",
+      "marginHome": 9.9,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.431540+00:00",
+      "marginHome": 10.9,
+      "total": 39.5
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.762498+00:00",
+      "marginHome": 10.9,
+      "total": 39.5
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.397363+00:00",
+      "marginHome": 11.9,
+      "total": 38.5
+    },
+    {
+      "run_at": "2026-10-09T16:15:07.008502+00:00",
+      "marginHome": 11.9,
+      "total": 38.5
+    },
+    {
+      "run_at": "2026-10-09T17:25:36.274750+00:00",
+      "marginHome": 13.2,
+      "total": 37.2
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.706651+00:00",
+      "marginHome": 9.0,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-10T13:09:14.933923+00:00",
+      "marginHome": 13.2,
+      "total": 37.1
+    },
+    {
+      "run_at": "2026-10-10T17:10:49.893941+00:00",
+      "marginHome": 13.2,
+      "total": 37.1
+    },
+    {
+      "run_at": "2026-10-10T21:04:20.285058+00:00",
+      "marginHome": 13.2,
+      "total": 37.1
+    },
+    {
+      "run_at": "2026-10-11T13:02:41.961661+00:00",
+      "marginHome": 13.2,
+      "total": 37.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-10T13:09:49Z",
+    "analysis": [
+      "Jacksonville opened as a 1.5-point underdog and has moved to a 7-7.5 point favorite at every book -- a genuine 9-point swing, not a stale read (cross-checked live against cleatz.com, which shows the same DK -7.5/-108 number and flags the move as real, not news-free steam). The driver is Philadelphia's Friday injury report: RB1 Saquon Barkley (hamstring) and WR1 DeVonta Smith (hamstring) are both OUT, with WR Hollywood Brown (ankle) also OUT -- the Eagles are missing their top rusher and both outside receiving options for a neutral-site game in London. Jalen Hurts himself is available (calf, not a limiting factor). The sim's own injury-adjusted margin (Jaguars by 13.2) is now notably wider than even the market's own 7.5, largely on the strength of the WR-depth stacking penalty for losing two starting-caliber receivers at once.",
+      "The total has come down from 44.5 to roughly 41.5-42 across books, which lines up with an offense expected to lean heavily on backfield committee/practice-squad looks and a diminished air attack -- the model's injury-adjusted total (37.1) reads lower still, consistent with a de-fanged Philadelphia passing game, though some of that gap is already priced into the market given how public and well-covered this injury news is (cleatz' prediction-market feeds already show Jacksonville near 76% implied win probability)."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Jaguars -7.5",
+        "confidence": 5,
+        "reasoning": "Model sees a bigger home edge than the market (13.2 vs 7.5) off the Barkley+Smith+Brown injury cluster, but the news is fully public and already baked into a 9-point market move plus London site, so sizing modestly rather than chasing a captured number. | Stake $15 \u00b7 pass at -9.5",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Under 41.5",
+        "confidence": 4,
+        "reasoning": "Eagles down their top rusher and both outside WRs argues for a lower-scoring Philadelphia offense than the market's already-reduced total assumes, but early-week total moves this large deserve a confirming look before a full-unit bet. | Stake $7.50 \u00b7 pass at 40",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-10T21:18:58Z",
+    "status": "captured",
+    "source_note": "CORRECTION sweep: Tuten over 65.5 had already moved past its 61.5 pass-at (open 57.5 -> 65.5 on 10/9), stake should have zeroed",
+    "picks": [
+      {
+        "player": "Bhayshul Tuten",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "CORRECTION: line moved 57.5 -> 65.5, past its own 61.5 pass-at -- value is gone. | Stake $0 (number gone -- line moved past pass-at) \u00b7 pass at 61.5",
+        "matchup": {
+          "opp_rank_vs_pos": 12,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3 (PHI 39 pts; 331 RB rush yds on 82 att)"
+        },
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "68.0 rush yds/g (3 games)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "JAX -5.5 to -7, total 43 -- run-leaning favorite"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "PHI LB Zack Baun in concussion protocol"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PHI 12th vs RB, 4.0 YPC allowed"
+          },
+          {
+            "label": "Correlation",
+            "dir": "neutral",
+            "detail": "Same JAX script as JAX -5.5 and the under; moot now, stake $0"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 2,
+          "net": 3
+        },
+        "opening_line": 57.5,
+        "opening_captured_at": "2026-10-06T12:48:56Z",
+        "current_line": 65.5,
+        "current_captured_at": "2026-10-10T21:18:58Z"
+      },
+      {
+        "player": "Jalen Hurts",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Jacksonville gives up 287 pass yds/g because teams trail and throw, and Philly is a 5.5-7 point dog with no healthy lead back. Capped at 4 (JAX 6th vs QB). | Stake $0 (watch -- DeVonta Smith status decides) \u00b7 pass at 196.5",
+        "matchup": {
+          "opp_rank_vs_pos": 6,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (JAX 59 pts; 1150 pass yds allowed)"
+        },
+        "factors": [
+          {
+            "label": "Pass D volume",
+            "dir": "for",
+            "detail": "JAX allowed 1,150 pass yds in 4 games (287/g) -- opponents chase points"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "PHI +5.5 to +7 -- trailing script means more attempts"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "Barkley week-to-week, Bigsby to IR -- only Will Shipley at RB"
+          },
+          {
+            "label": "Average",
+            "dir": "against",
+            "detail": "178.3 pass yds/g in 2026, below the line"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "DeVonta Smith questionable, Lane Johnson missed Wk4"
+          },
+          {
+            "label": "Projection",
+            "dir": "neutral",
+            "detail": "RotoWire 202.4; DK 191.5 is the low number (FD 195.5)"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 191.5,
+        "opening_captured_at": "2026-10-06T19:48:36Z",
+        "current_line": 186.5,
+        "current_captured_at": "2026-10-09T16:17:03Z"
+      },
+      {
+        "player": "Trevor Lawrence",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "FanDuel",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Line ~20 yds above his 2026 average and JAX should run with a lead -- but it's the same script as Tuten over; swap-in only. | Stake $0 (swap for Tuten) \u00b7 pass at 222.5",
+        "matchup": {
+          "opp_rank_vs_pos": 17,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (PHI 76 pts)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "~205-210 pass yds/g in 2026"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "JAX -5.5 to -7 favorite, total 43"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "PHI 17th vs QB"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "PHI CB Quinyon Mitchell (knee) being tested"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 229.5,
+        "opening_captured_at": "2026-10-06T12:48:56Z",
+        "current_line": 225.5,
+        "current_captured_at": "2026-10-07T17:48:37Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T13:01:12Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 52,
+      "handle_pct_home": 52
+    },
+    "total": {
+      "bets_pct_over": 72,
+      "handle_pct_over": 68
+    },
+    "moneyline": {
+      "bets_pct_home": 76,
+      "handle_pct_home": 38
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "Spread bet%/handle% home-relative from cleatz.com public-betting board; total/ML (where present) from cleatz.com odds board."
+  },
+  "final_score": {
+    "home": 19,
+    "away": 17
+  }
+}

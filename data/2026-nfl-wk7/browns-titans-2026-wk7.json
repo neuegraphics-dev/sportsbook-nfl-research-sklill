@@ -1,0 +1,356 @@
+{
+  "game_id": "browns-titans-2026-wk7",
+  "matchup": "Cleveland Browns @ Tennessee Titans",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": 2,
+      "total": 38,
+      "ml_fav": -130,
+      "ml_dog": 111
+    },
+    "draftkings": {
+      "spread": 1.5,
+      "total": 38.5,
+      "ml_fav": -125,
+      "ml_dog": 105
+    },
+    "fanduel": {
+      "spread": 1.5,
+      "total": 38.5,
+      "ml_fav": -120,
+      "ml_dog": 102
+    },
+    "caesars": {
+      "spread": 1.5,
+      "total": 38.5,
+      "ml_fav": -125,
+      "ml_dog": 110
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Titans. NOTE: CLE favored (-1.5/-2 away) despite being listed away."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": 2,
+        "total": 38,
+        "ml_fav": -130,
+        "ml_dog": 111
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 38.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 38.5,
+        "ml_fav": -120,
+        "ml_dog": 102
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 38.5,
+        "ml_fav": -125,
+        "ml_dog": 110
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Titans. NOTE: CLE favored (-1.5/-2 away) despite being listed away."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": 2,
+        "total": 38,
+        "ml_fav": -130,
+        "ml_dog": 111
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 37.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 37.5,
+        "ml_fav": -125,
+        "ml_dog": 107
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 37.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Titans."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 37.5,
+        "ml_fav": -131,
+        "ml_dog": 111
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 36.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": 37.0,
+        "ml_fav": -132,
+        "ml_dog": 112
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Browns -1.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Model-only signal, modest edge"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 16,
+      "handle_pct_home": 26
+    },
+    "total": {
+      "bets_pct_over": 52,
+      "handle_pct_over": 15
+    },
+    "moneyline": {
+      "bets_pct_home": 19,
+      "handle_pct_home": 21
+    },
+    "reverse_line_move": false,
+    "rlm_note": "74% of handle is on the away side but the spread hasn't moved yet (+1.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.096168+00:00",
+    "n": 10000,
+    "homeElo": 1284.9,
+    "awayElo": 1439.0,
+    "gamesSeen": 12,
+    "eloMarginHome": -4.2,
+    "statsMarginHome": -2.3,
+    "marginDivergence": -2.0,
+    "projTotal": 38.6,
+    "homeWinProbElo": 35.2,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 37.0,
+    "homeInjuryPts": -0.7,
+    "awayInjuryPts": -4.45,
+    "projHomeMeanRaw": 17.2,
+    "projAwayMeanRaw": 21.4,
+    "projHomeMeanAdjusted": 16.5,
+    "projAwayMeanAdjusted": 16.9,
+    "injuryAdjustedMarginHome": -0.5,
+    "projTotalAdjusted": 33.4,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -0.7 pts -- Calvin Ridley (WR, questionable, -0.5), Tyjae Spears (RB, questionable, -0.2).",
+      "Away injury adjustment: -4.5 pts -- Dillon Gabriel (QB, out, -2.0), Denzel Ward (CB, questionable, -0.3), Teven Jenkins (G, out, -0.4), Kalia Davis (DT, out, -0.5), Mike Hall Jr. (DT, out, -0.5). DT depth: 2 confirmed out (Kalia Davis, Mike Hall Jr.) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+    ],
+    "homeWinPct": 47.1,
+    "awayWinPct": 50.2,
+    "tiePct": 2.7,
+    "medianHomeScore": 16,
+    "medianAwayScore": 17,
+    "coverPctHome": 55.4,
+    "overPct": 40.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.631148+00:00",
+      "marginHome": -4.2,
+      "total": 39.7
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.553207+00:00",
+      "marginHome": -4.2,
+      "total": 39.7
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.380239+00:00",
+      "marginHome": -4.2,
+      "total": 39.7
+    },
+    {
+      "run_at": "2026-10-22T00:43:02.973470+00:00",
+      "marginHome": -4.2,
+      "total": 38.6
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.083071+00:00",
+      "marginHome": -2.7,
+      "total": 37.1
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.096168+00:00",
+      "marginHome": -0.5,
+      "total": 33.4
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Cleveland is about -1.5 to -2.5 with QB Dillon Gabriel out and two DTs and a guard out; the model has it roughly a pick'em (Cleveland by 0.5) against a 37 total. A rare tiny-total game where the sim leans under (33.4 adjusted) but the injury method overstates unders.",
+      "No bet."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-21T02:12:30Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank; roster/team verified this run (Geno Smith/Jets, Kyler Murray/Vikings, Daniel Jones/Colts, Cam Ward/Titans confirmed via web search of 2026 transactions).",
+    "picks": [
+      {
+        "player": "Cam Ward",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Hard Rock Bet",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Titans project the fewest offensive plays in the NFL, but Cleveland's pass defense is only middling, not a true tough-matchup confirmation. | Stake $7.50 \u00b7 pass at 179.5",
+        "matchup": {
+          "opp_rank_vs_pos": 18,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "Cleveland ranks only 18th of 32 vs QB (fantasy pts allowed, CBS posvsdef), allowing 227.33 pass yds/g avg -- above the 187.5 line, so the matchup itself does not support the under"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 171.42 vs 187.5 line, -16.1 diff, 25.08% EV"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Titans project the fewest total offensive plays in the NFL (50.7/g) and the 5th-lowest pass rate on the slate (55.1%)"
+          }
+        ],
+        "confidence_base": 4,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 187.5,
+        "opening_captured_at": "2026-10-21T02:12:30Z",
+        "current_line": 187.5,
+        "current_captured_at": "2026-10-21T02:12:30Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Calvin Ridley",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "WR1 hip (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "RB",
+          "player": "Tyjae Spears",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "knee (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -0.7,
+      "stacking_notes": [],
+      "total_pts": -0.7
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Dillon Gabriel",
+          "status": "out",
+          "pts": -2.0,
+          "note": "ruled out (back), backup starts; DK barely moved so drop-off priced modestly (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "Denzel Ward",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "CB1 hand (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "G",
+          "player": "Teven Jenkins",
+          "status": "out",
+          "pts": -0.4,
+          "note": "G out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "DT",
+          "player": "Kalia Davis",
+          "status": "out",
+          "pts": -0.5,
+          "note": "DT out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "DT",
+          "player": "Mike Hall Jr.",
+          "status": "out",
+          "pts": -0.5,
+          "note": "second DT out, depth (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.7,
+      "stacking_notes": [
+        "DT depth: 2 confirmed out (Kalia Davis, Mike Hall Jr.) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -4.45
+    }
+  },
+  "final_score": {
+    "home": 24,
+    "away": 27
+  }
+}

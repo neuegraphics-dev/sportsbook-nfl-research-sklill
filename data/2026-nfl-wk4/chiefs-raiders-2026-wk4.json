@@ -1,0 +1,311 @@
+{
+  "game_id": "chiefs-raiders-2026-wk4",
+  "matchup": "Kansas City Chiefs @ Las Vegas Raiders",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 5.5,
+      "total": 45.5,
+      "ml_fav": -240,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Chiefs -5.5 (away fav) -> home(Raiders)=+5.5, matches Fox opening spread exactly. Total 45.5 vs Fox opening 48.5 -- down 3 since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 45.5,
+        "ml_fav": -240,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Chiefs -5.5 (away fav) -> home(Raiders)=+5.5, matches Fox opening spread exactly. Total 45.5 vs Fox opening 48.5 -- down 3 since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:29:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4,
+        "total": 48.5,
+        "ml_fav": -210,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:06:07Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4,
+        "total": 48.5,
+        "ml_fav": -210,
+        "ml_dog": 190
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1): Chiefs(away) -4 -> home(Raiders) +4. Caesars via vegasinsider.com: Chiefs -4.5 -> home +4.5, half-pt wider, same side. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4.0,
+        "total": 48.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "No edge",
+    "total_lean": "Lean Under 47.5 (model 44.1)",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Corrected current total is 47.5, up from a stale 45.5 -- this opens a real 3.4pt gap against the model's 44.1 projection that wasn't visible before the correction",
+      "Spread remains matched; Mahomes' season-long absence is already priced into Kansas City's recent-form average (see prior note), so no fresh injury adjustment applied -- this total gap is a separate, newly-visible signal"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.193292+00:00",
+    "n": 10000,
+    "homeElo": 1418.1,
+    "awayElo": 1590.0,
+    "gamesSeen": 6,
+    "eloMarginHome": -5.0,
+    "statsMarginHome": -2.3,
+    "marginDivergence": -2.7,
+    "projTotal": 44.1,
+    "homeWinProbElo": 32.9,
+    "marketHomeSpread": 4.5,
+    "marketTotal": 48.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 19.6,
+    "projAwayMeanRaw": 24.5,
+    "projHomeMeanAdjusted": 19.6,
+    "projAwayMeanAdjusted": 24.5,
+    "injuryAdjustedMarginHome": -5.0,
+    "projTotalAdjusted": 44.1,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [],
+    "homeWinPct": 36.1,
+    "awayWinPct": 61.4,
+    "tiePct": 2.5,
+    "medianHomeScore": 20,
+    "medianAwayScore": 24,
+    "coverPctHome": 49.7,
+    "overPct": 38.0
+  },
+  "market_signal": {
+    "captured_at": "2026-10-02T13:13:11Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 62,
+      "handle_pct_home": 38
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 83
+    },
+    "moneyline": {
+      "bets_pct_home": 21,
+      "handle_pct_home": 40
+    },
+    "reverse_line_move": true,
+    "rlm_note": "62% of handle is on the away side but the spread moved AGAINST them (+5.5 -> +4) -- real reverse line move toward home.",
+    "note": "Spread/total splits not confirmed this cycle (cleatz page gave incomplete/implied numbers for this game) -- moneyline only, converted from Chiefs(away) 79/60 row."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:28:53Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser",
+    "picks": [
+      {
+        "player": "Rashee Rice",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Fanatics",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "KCs clear top WR target with a solid model edge.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 74.0 vs 56.5 line, +17.5 diff, 25.75% edge"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Rice is KCs clear top WR in target share"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "KC a modest road favorite, no strong pace signal either way"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 56.5,
+        "opening_captured_at": "2026-10-01T01:28:53Z",
+        "current_line": 56.5,
+        "current_captured_at": "2026-10-01T01:28:53Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 19,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 83,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com (wk3 not available)",
+        "backtest": {
+          "hits": 1,
+          "misses": 1,
+          "pushes": 0,
+          "total": 2,
+          "pct": 50,
+          "line": 56.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Brock Bowers",
+        "team": "home",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "theScore",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Elite target volume offsets a tighter-than-average Chiefs TE defense.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "KC allows 24.0 fantasy pts to TEs thru 3 games (~8.0/g), tighter than average"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Bowers is a league-leading TE target, routinely 8+ targets/game"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 77.0 vs 75.5 line, +1.5 diff, 25.3% edge"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 75.5,
+        "opening_captured_at": "2026-10-01T01:07:54Z",
+        "current_line": 75.5,
+        "current_captured_at": "2026-10-01T01:07:54Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 116,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com (only 1 game found)",
+        "backtest": {
+          "hits": 1,
+          "misses": 0,
+          "pushes": 0,
+          "total": 1,
+          "pct": 100,
+          "line": 75.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-30T00:54:09Z",
+    "analysis": [
+      "CORRECTION 9/30: the prior write-up said Patrick Mahomes has been out all season -- wrong. He has started all three games (KC 3-0; 20/24, 246 yds, 2 TD vs MIA in Wk3). The model total of 44.1 also leans heavily on prior-season placeholder games: 5 of the 8 games in each team's rolling scoring window are regressed 2025 rates (KC 21.6 scored, LV 18.1). Using only the three real 2026 games (KC 29.3 scored / 16.7 allowed, LV 29.3 / 18.0), the same formula projects about 46.7 -- under a point below the 47.5 market, not 3.4.",
+      "The one real pro-under signal is market behavior: the total opened 48.5 and slipped to 47.5 while 71% of tickets and 83% of handle sit on the over -- a small move against the public money. Against that, both teams' 2026 games have gone 41, 63, 34 (KC) and 40, 40, 62 (LV), the game is indoors, and KC is missing LT Josh Simmons. Net: a thin, mostly market-driven under lean, not a model edge."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 47.5",
+        "confidence": 3,
+        "reasoning": "Model gap shrinks from 3.4 to ~0.8 on real 2026 data only; the only independent support is a 1-pt drop against 83% over handle.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.193292+00:00",
+      "marginHome": -5.0,
+      "total": 44.1
+    }
+  ],
+  "final_score": {
+    "home": 27,
+    "away": 30
+  }
+}

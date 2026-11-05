@@ -1,0 +1,165 @@
+{
+  "game_id": "bengals-falcons-2026-wk9",
+  "matchup": "Cincinnati Bengals @ Atlanta Falcons",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T14:30:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 3.5,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 3,
+      "total": 51.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:37Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 51.5,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 51.5,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": {
+        "spread": 3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.227854+00:00",
+    "n": 10000,
+    "homeElo": 1449.6,
+    "awayElo": 1531.7,
+    "gamesSeen": 15,
+    "eloMarginHome": -1.4,
+    "statsMarginHome": -7.6,
+    "marginDivergence": 6.2,
+    "projTotal": 48.7,
+    "homeWinProbElo": 45.1,
+    "marketHomeSpread": 3,
+    "marketTotal": 51.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.6,
+    "projAwayMeanRaw": 25.0,
+    "projHomeMeanAdjusted": 23.6,
+    "projAwayMeanAdjusted": 25.0,
+    "injuryAdjustedMarginHome": -1.4,
+    "projTotalAdjusted": 48.7,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (-1.4) and recent-scoring margin (-7.6) disagree by 6.2 points -- worth a second look before trusting either alone.",
+      "Atlanta Falcons (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]; Brian Robinson (-0.5), Michael Jerrell (-0.8), Cameron Williams (-0.8), Billy Bowman Jr. (-0.4), Divine Deablo (-0.4), Za'Darius Smith (-0.3) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Cincinnati Bengals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 45.3,
+    "awayWinPct": 51.6,
+    "tiePct": 3.1,
+    "medianHomeScore": 24,
+    "medianAwayScore": 25,
+    "coverPctHome": 55.4,
+    "overPct": 41.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:37.841389+00:00",
+      "marginHome": -1.4,
+      "total": 48.7
+    },
+    {
+      "run_at": "2026-11-03T15:29:10.601445+00:00",
+      "marginHome": -1.4,
+      "total": 48.7
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.227854+00:00",
+      "marginHome": -1.4,
+      "total": 48.7
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:25Z",
+    "analysis": [
+      "Sim: Cincinnati Bengals by 1.4 (injury-adjusted) against a market that has Cincinnati Bengals favored by 3, a 1.6-point gap; sim cover% for Atlanta Falcons is 54.3% and projected total is 48.7 vs 51.5 (over 42.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

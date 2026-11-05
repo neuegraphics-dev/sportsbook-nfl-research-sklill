@@ -1,0 +1,320 @@
+{
+  "game_id": "chargers-rams-2026-wk8",
+  "matchup": "Los Angeles Chargers @ Los Angeles Rams",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T21:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -7.5,
+      "total": 46.5,
+      "ml_fav": -355,
+      "ml_dog": 315
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 46.5,
+        "ml_fav": -355,
+        "ml_dog": 315
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": {
+        "spread": -7,
+        "total": 43.5,
+        "ml_fav": -315,
+        "ml_dog": 256
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 46.5,
+        "ml_fav": -355,
+        "ml_dog": 315
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 44,
+        "ml_fav": -300,
+        "ml_dog": 245
+      },
+      "draftkings": {
+        "spread": -7,
+        "total": 43.5,
+        "ml_fav": -320,
+        "ml_dog": 290
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 44,
+        "ml_fav": -300,
+        "ml_dog": 245
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 45,
+        "ml_fav": -284,
+        "ml_dog": 233
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 45.5,
+        "ml_fav": -265,
+        "ml_dog": 215
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 45.5,
+        "ml_fav": -275,
+        "ml_dog": 225
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 45.5,
+        "ml_fav": -280,
+        "ml_dog": 225
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T20:31:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 46.5,
+        "ml_fav": -285,
+        "ml_dog": 230
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 45.5,
+        "ml_fav": -290,
+        "ml_dog": 235
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 45.5,
+        "ml_fav": -295,
+        "ml_dog": 235
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~20:32Z (3:32pm ET). BookMaker.eu null."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "LAR -6.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Elo 10.1 vs scoring 3.8; money on LAC"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T20:31:44.736587+00:00",
+    "n": 10000,
+    "homeElo": 1610.6,
+    "awayElo": 1405.4,
+    "gamesSeen": 13,
+    "eloMarginHome": 10.1,
+    "statsMarginHome": 3.8,
+    "marginDivergence": 6.3,
+    "projTotal": 43.8,
+    "homeWinProbElo": 81.1,
+    "marketHomeSpread": -6.5,
+    "marketTotal": 45.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 26.9,
+    "projAwayMeanRaw": 16.8,
+    "projHomeMeanAdjusted": 26.9,
+    "projAwayMeanAdjusted": 16.8,
+    "injuryAdjustedMarginHome": 10.1,
+    "projTotalAdjusted": 43.8,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+10.1) and recent-scoring margin (+3.8) disagree by 6.3 points -- worth a second look before trusting either alone.",
+      "Los Angeles Rams (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]; Davante Adams (-1.8), Puka Nacua (-0.7), Trent McDuffie (-0.4), Nate Landman (-0.4) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Los Angeles Chargers (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Trey Pipkins III (-1.0), Dalvin Tomlinson (-1.0), Elijah Molden (-0.5), Kayode Awosika (-0.5), Charlie Kolar (-0.2), Brenen Thompson (-0.1) [-3.4 pts total]; Derwin James (-1.5), Joe Alt (-1.5), Donte Jackson (-0.5), Bud Dupree (-1.5) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 74.9,
+    "awayWinPct": 22.7,
+    "tiePct": 2.4,
+    "medianHomeScore": 27,
+    "medianAwayScore": 17,
+    "coverPctHome": 60.0,
+    "overPct": 44.6
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:07.896739+00:00",
+      "marginHome": 9.5,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.026029+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.594623+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.487800+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:36.896689+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.669770+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.780798+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.743465+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T01:52:15.087800+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T13:12:55.963584+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T13:40:00.952177+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T20:31:44.736587+00:00",
+      "marginHome": 10.1,
+      "total": 43.8
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Rams by 10.1 (Elo) vs 3.8 (scoring), total 43.8 vs 45.5. The line moved from LAR -7.5 to -6.5 while 65% of handle was on the Chargers.",
+      "The blended margin (about 7) sits on the number, and money has pushed toward the Chargers. No bet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "LAR -6.5",
+        "confidence": 4,
+        "reasoning": "Elo only; money moved the other way. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 63,
+      "handle_pct_home": 35
+    },
+    "total": {
+      "bets_pct_over": 52,
+      "handle_pct_over": 21
+    },
+    "moneyline": {
+      "bets_pct_home": 94,
+      "handle_pct_home": 92
+    },
+    "reverse_line_move": false,
+    "rlm_note": "65% of handle is on the away side and the spread has moved toward them (-7.5 -> -6.5) -- money and line agree, no RLM.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 24,
+    "away": 9
+  }
+}

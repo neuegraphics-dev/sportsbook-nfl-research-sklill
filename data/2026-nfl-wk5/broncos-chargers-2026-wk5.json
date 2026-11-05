@@ -1,0 +1,503 @@
+{
+  "game_id": "broncos-chargers-2026-wk5",
+  "matchup": "Denver Broncos @ Los Angeles Chargers",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T20:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 1.5,
+      "total": 43.5,
+      "ml_fav": -122,
+      "ml_dog": 114
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 DEN -3.5/43.5 -- 2-pt disagreement. Look-ahead LAC -2.5 (favorite flipped)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 43.5,
+        "ml_fav": -122,
+        "ml_dog": 114
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 DEN -3.5/43.5 -- 2-pt disagreement. Look-ahead LAC -2.5 (favorite flipped)."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -180,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). All books DEN -3.5 (+2 since Mon; LAC OL)."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -180,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 41.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Chargers"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 42.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Chargers. DK ML via cleatz (Broncos -180/Chargers +150)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -192.0,
+        "ml_dog": 160.0
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -186.0,
+        "ml_dog": 156.0
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 42.0,
+        "ml_fav": -190.0,
+        "ml_dog": 158.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -186,
+        "ml_dog": 156
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 42.0,
+        "ml_fav": -190,
+        "ml_dog": 158
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -186,
+        "ml_dog": 156
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 42.0,
+        "ml_fav": -190,
+        "ml_dog": 158
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Chargers."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -205,
+        "ml_dog": 172
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 42,
+        "ml_fav": -190,
+        "ml_dog": 158
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 42.5,
+        "ml_fav": -198,
+        "ml_dog": 166
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 42,
+        "ml_fav": -190,
+        "ml_dog": 158
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge (number gone)",
+    "total_lean": "Under 41.5",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Ladd McConkey (LAC WR) questionable, foot, no Friday clearance found",
+      "81% of handle on the under from 19% of tickets -- real signal on the total, not yet a spread edge"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T21:05:16Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Ladd McConkey",
+          "status": "questionable",
+          "pts": -0.75,
+          "note": "Foot, DNP Wednesday. Key slot WR, no Friday clearance found."
+        }
+      ],
+      "items_total_pts": -0.75,
+      "stacking_notes": [],
+      "total_pts": -0.75
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.318235+00:00",
+    "n": 10000,
+    "homeElo": 1429.5,
+    "awayElo": 1578.7,
+    "gamesSeen": 8,
+    "eloMarginHome": -4.0,
+    "statsMarginHome": -1.9,
+    "marginDivergence": -2.1,
+    "projTotal": 43.0,
+    "homeWinProbElo": 35.8,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 42,
+    "homeInjuryPts": -0.75,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 19.5,
+    "projAwayMeanRaw": 23.5,
+    "projHomeMeanAdjusted": 18.7,
+    "projAwayMeanAdjusted": 23.5,
+    "injuryAdjustedMarginHome": -4.8,
+    "projTotalAdjusted": 42.3,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -0.8 pts -- Ladd McConkey (WR, questionable, -0.8).",
+      "Los Angeles Chargers (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Trey Pipkins III (-1.0), Dalvin Tomlinson (-1.0), Elijah Molden (-0.5), Kayode Awosika (-0.5), Charlie Kolar (-0.2), Brenen Thompson (-0.1) [-3.4 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 35.5,
+    "awayWinPct": 61.8,
+    "tiePct": 2.6,
+    "medianHomeScore": 19,
+    "medianAwayScore": 24,
+    "coverPctHome": 45.9,
+    "overPct": 50.8
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.407316+00:00",
+      "marginHome": -6.2,
+      "total": 40.2
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.277924+00:00",
+      "marginHome": -6.9,
+      "total": 39.6
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.614659+00:00",
+      "marginHome": -6.9,
+      "total": 39.6
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.238143+00:00",
+      "marginHome": -6.9,
+      "total": 39.6
+    },
+    {
+      "run_at": "2026-10-09T16:15:13.057289+00:00",
+      "marginHome": -6.9,
+      "total": 39.6
+    },
+    {
+      "run_at": "2026-10-09T21:05:22.041719+00:00",
+      "marginHome": -4.8,
+      "total": 42.3
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.295752+00:00",
+      "marginHome": -4.8,
+      "total": 42.3
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.151520+00:00",
+      "marginHome": -4.8,
+      "total": 42.3
+    },
+    {
+      "run_at": "2026-10-10T21:04:16.074277+00:00",
+      "marginHome": -4.8,
+      "total": 42.3
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.318235+00:00",
+      "marginHome": -4.8,
+      "total": 42.3
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-08T12:57:56Z",
+    "analysis": [
+      "Books disagree: DraftKings Broncos -1.5, bet365 Broncos -3.5 (look-ahead was Chargers -2.5). The Chargers are 0-4 and finished Week 4 with four rookie offensive linemen -- LT Rashawn Slater, RT Joe Alt and LG Penning all hurt -- and Ladd McConkey (foot) missed the second half. Herbert himself is fine.",
+      "With the line cluster priced at -2.0, the sim has Denver by 6.2; real 2026 scoring alone makes it about a pick'em, so the edge depends on the Chargers' line injuries. DraftKings' -1.5 is the number to take if you take it."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Broncos -1.5",
+        "confidence": 5,
+        "reasoning": "Logged Mon at -1.5, now -3.5 everywhere (+2 CLV). At the -3.5 pass-at, so no new money. | Stake $0 at -3.5 \u00b7 pass at -3.5",
+        "best_bet": false
+      },
+      {
+        "market": "total",
+        "pick": "Under 41.5",
+        "confidence": 5,
+        "reasoning": "86% of handle on the under from 34% of tickets, and the total fell 42.5 to 41.5. Sim 39.6; LAC playing four rookie linemen. | Stake $15 \u00b7 pass at 40.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-10T13:15:09Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (model projection/EV), rendered via browser; matchup rank from footballdb.com; volume from statmuse.com game log",
+    "picks": [
+      {
+        "player": "Omarion Hampton",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "consensus",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Soft Denver run-D matchup and a clear model gap support the over, tempered by a trailing-script risk if Chargers fall behind as home underdogs. | Stake $15 \u00b7 pass at 44.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Denver Broncos rank 26th of 32 vs RB, 20.3 fantasy pts/g allowed -- a soft matchup"
+          },
+          {
+            "label": "Volume",
+            "dir": "neutral",
+            "detail": "14.75 carries/g season average (59 over 4 games), but just 9 carries in the most recent game (@SEA)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projects 53.3 yds vs the 40.5 line, +12.8 diff, 26.0% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "Chargers are the +3.5 home underdog per our own line -- a trailing script could cut into rush volume"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 40.5,
+        "opening_captured_at": "2026-10-10T13:15:09Z",
+        "current_line": 40.5,
+        "current_captured_at": "2026-10-10T13:15:09Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 43,
+      "handle_pct_home": 49
+    },
+    "total": {
+      "bets_pct_over": 68,
+      "handle_pct_over": 41
+    },
+    "moneyline": {
+      "bets_pct_home": 24,
+      "handle_pct_home": 62
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "final_score": {
+    "home": 17,
+    "away": 23
+  }
+}

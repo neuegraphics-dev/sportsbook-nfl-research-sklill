@@ -1,0 +1,500 @@
+{
+  "game_id": "lions-panthers-2026-wk4",
+  "matchup": "Detroit Lions @ Carolina Panthers",
+  "week": "Week 4",
+  "kickoff": "2026-10-05T00:20:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 2.5,
+      "total": 49.5,
+      "ml_fav": -138,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Lions -2.5 (away fav) -> home(Panthers)=+2.5. Fox opening Lions -3.5/50.5 -- line has come in 1pt toward Carolina since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 49.5,
+        "ml_fav": -138,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Lions -2.5 (away fav) -> home(Panthers)=+2.5. Fox opening Lions -3.5/50.5 -- line has come in 1pt toward Carolina since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 49.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:29:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": -175,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:06:07Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": -175,
+        "ml_dog": 175
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Oct1): Lions(away) -3.5 -> home(Panthers) +3.5. Caesars not confirmed this cycle via vegasinsider.com (page cut off before this game). BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    },
+    {
+      "captured_at": "2026-10-04T21:38:34Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": -210,
+        "ml_dog": 176
+      },
+      "caesars": null,
+      "note": "SNF kickoff update 10/4 ~5:45pm ET: FanDuel DET -3.5 (-118)/50.5 per TheLines; BetMGM DET -3.5 (-108), bet365 total 51.5 per SBD closing odds 5:20pm. DK page still 'last verified Oct 3' -> logged null rather than stale. Total opened 49.5."
+    },
+    {
+      "captured_at": "2026-10-04T23:23:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": -210,
+        "ml_dog": 176
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Kickoff update 7:25pm ET: DET -3.5 (-112)/CAR +3.5 (-108); total 50.5 with over juiced to -122 / under +102 (WagerTalk), briefly touched 51.5. VegasInsider shows -3.5 at DK/FD/MGM/CZR/bet365. Spread: 75% tickets but only 52% money on DET."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-04",
+    "spread_lean": "Lean DET -3.5 (small)",
+    "total_lean": "Lean Over 50.5 (shop for 50.5, pass at 52+)",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium-Low",
+    "top_signals": [
+      "Panthers lost BOTH starting CBs to IR this week (Horn torn quad, Mike Jackson groin) -- CAR had allowed only 335 WR yds thru Wk3 (2nd fewest) with them; structural secondary cluster",
+      "Total moved 49.5 -> 50.5/51.5 with over drawing 55% of money on 46% of tickets (SBD) -- money and line agree on the over",
+      "Lions secondary also depleted (Branch, Joseph on PUP, Harper IR, D.J. Reed questionable); DET defense 30th in EPA/play, allows 189 WR yds/g (29th)",
+      "Over 3-0 in Lions games; DET scored 31 in all three",
+      "Weather fine: 63F, 8 mph wind, patchy rain possible",
+      "Spread: 65% tickets / 64% money on DET, no RLM; model DET by 5.7 after injuries vs -3.5, but Lions 0-2-1 ATS and -3.5 loses on a 3-pt win"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-04T23:23:56.397865+00:00",
+    "n": 10000,
+    "homeElo": 1436.6,
+    "awayElo": 1560.4,
+    "gamesSeen": 6,
+    "eloMarginHome": -3.0,
+    "statsMarginHome": -1.1,
+    "marginDivergence": -1.9,
+    "projTotal": 51.7,
+    "homeWinProbElo": 39.3,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 50.5,
+    "homeInjuryPts": -4.65,
+    "awayInjuryPts": -0.4,
+    "projHomeMeanRaw": 24.3,
+    "projAwayMeanRaw": 27.3,
+    "projHomeMeanAdjusted": 19.7,
+    "projAwayMeanAdjusted": 26.9,
+    "injuryAdjustedMarginHome": -7.3,
+    "projTotalAdjusted": 46.6,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -4.7 pts -- Jaycee Horn (CB, out, -1.0), Mike Jackson (CB, out, -0.8), Xavier Legette (WR, out, -0.5), Jalen Coker (WR, out, -0.4), Damien Lewis (G, out, -0.5). CB depth: 2 confirmed out (Jaycee Horn, Mike Jackson) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts WR depth: 2 confirmed out (Xavier Legette, Jalen Coker) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -0.4 pts -- Ben Bartch (G, out, -0.4)."
+    ],
+    "homeWinPct": 28.8,
+    "awayWinPct": 68.7,
+    "tiePct": 2.5,
+    "medianHomeScore": 20,
+    "medianAwayScore": 27,
+    "coverPctHome": 39.4,
+    "overPct": 39.0
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 38,
+      "handle_pct_home": 34
+    },
+    "total": {
+      "bets_pct_over": 85,
+      "handle_pct_over": 95
+    },
+    "moneyline": {
+      "bets_pct_home": 20,
+      "handle_pct_home": 45
+    },
+    "reverse_line_move": false,
+    "rlm_note": "66% of handle is on the away side and the spread has moved toward them (+2.5 -> +3.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-04T23:24:36Z",
+    "status": "captured",
+    "source_note": "Kickoff update 7:25pm ET post-inactives; DK prop lines and bet/handle splits from DK Network Oct 4",
+    "picks": [
+      {
+        "player": "Jahmyr Gibbs",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "DraftKings",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Flipped to the under: DK has 66% of bets on the over but 65% of the money on the under, and the sim puts his median right at ~95. Capped at 4 for betting an under into the 31st-ranked run defense. Opener stays logged at 94.5.",
+        "matchup": {
+          "opp_rank_vs_pos": 31,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3; 32 = softest"
+        },
+        "factors": [
+          {
+            "label": "Sharp split",
+            "dir": "for",
+            "detail": "DK rush yds 96.5: 65.8% of bets over, 64.8% of handle under"
+          },
+          {
+            "label": "Implied efficiency",
+            "dir": "for",
+            "detail": "Attempts line 19.5; 96.5 needs ~4.9 YPC vs his 4.7 season"
+          },
+          {
+            "label": "Pass funnel",
+            "dir": "for",
+            "detail": "CAR without both starting CBs (Horn, M. Jackson IR) -- DET likely leans on Goff/St. Brown/J. Williams"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "CAR allowed 5.9 YPC to RBs thru Wk3; 31st vs RBs"
+          },
+          {
+            "label": "OL",
+            "dir": "neutral",
+            "detail": "DET G Ben Bartch inactive, C Cade Mays on IR"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 96.5,
+        "opening_captured_at": "2026-09-29T17:10:46Z",
+        "current_line": 96.5,
+        "current_captured_at": "2026-10-04T23:24:36Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 156,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 52,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 99,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 96.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Chuba Hubbard",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Rush attempts line 16.5 is drawing 99% of the money on the under; at his 13.7 carries a game and 4.5 YPC he lands near 62, and CAR as a 3.5-pt dog in a 50.5 total should throw more.",
+        "matchup": {
+          "opp_rank_vs_pos": 13,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3; 32 = softest"
+        },
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "41 carries in 3 games (13.7/g), 61.3 rush yds/g; DK attempts 16.5 has 99% of handle on the under"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "CAR +3.5 home dog, total 50.5 -- pass-leaning script"
+          },
+          {
+            "label": "OL",
+            "dir": "for",
+            "detail": "CAR RG Damien Lewis inactive"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "DET 13th vs RBs (41 fantasy pts allowed thru Wk3)"
+          },
+          {
+            "label": "Recent form",
+            "dir": "against",
+            "detail": "82 rush yds in Wk3 vs CLE; 84% snap share, AJ Dillon only 16%"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 66.5,
+        "opening_captured_at": "2026-10-04T23:24:36Z",
+        "current_line": 66.5,
+        "current_captured_at": "2026-10-04T23:24:36Z"
+      },
+      {
+        "player": "Tetairoa McMillan",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "With Legette and Coker both out he is the only established WR against the defense that has allowed the most passing yards in the league, but the line already rose 2 yards on 90% public money.",
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "footballdb WR fantasy pts allowed thru Wk3; 32 = softest"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DET allowed a league-high 898 pass yds thru Wk3; 568 WR yds (29th)"
+          },
+          {
+            "label": "Target share",
+            "dir": "for",
+            "detail": "Legette out, Coker inactive -- McMillan the only established WR; Young averaging 313 pass yds/g"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "CAR +3.5 home dog in a 50.5 total"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "neutral",
+            "detail": "2/3 over 72.5 (75, 101, 17)"
+          },
+          {
+            "label": "Pass protection",
+            "dir": "against",
+            "detail": "DET 12 sacks; CAR RG Lewis inactive"
+          },
+          {
+            "label": "Line move",
+            "dir": "neutral",
+            "detail": "Moved 70.5 -> 72.5 with ~90% of bets and money on the over -- public number"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 2,
+          "net": 2
+        },
+        "opening_line": 70.5,
+        "opening_captured_at": "2026-10-04T21:39:39Z",
+        "current_line": 72.5,
+        "current_captured_at": "2026-10-04T23:24:36Z"
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-04T23:24:22Z",
+    "analysis": [
+      "Kickoff update (7:25pm ET, post-inactives). Carolina is thinner than it was this afternoon: WR Jalen Coker and RG Damien Lewis are inactive on top of WR Xavier Legette and both starting corners (Horn, Mike Jackson) on IR, leaving Tetairoa McMillan as the only established receiver. Detroit is close to full strength (only G Ben Bartch out; CB D.J. Reed active). With those absences priced, the sim makes Detroit a 7.3-point favorite against a -3.5 market -- but the betting split pushes back: Detroit has 75% of spread tickets and only 52% of the money, meaning the bigger bets are on Carolina +3.5.",
+      "The total sits at 50.5 with the over juiced to -122 after touching 51.5, and the public has now piled in (roughly 80% of bets and money on the over). The case for points is intact -- Detroit has scored exactly 31 in all three games and allowed a league-high 898 passing yards, and Carolina has lost both starting corners -- but at -122 the over needs to win 55% of the time, and Carolina losing two receivers trims its own scoring side. That makes the over a smaller play than it was at -110 this afternoon; 51.5 at -110 is the better ticket if available."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 50.5 at -115 or better, or Over 51.5 at -110",
+        "confidence": 5,
+        "reasoning": "Points case intact (DET 31-31-31, both secondaries depleted), but the public has caught up and -122 juice eats most of the edge -- shop the price.",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "Lions -3.5",
+        "confidence": 3,
+        "reasoning": "Injury-adjusted sim has DET by 7.3, but 75% of tickets vs 52% of money means sharper money is on CAR +3.5; the two signals cancel.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.562692+00:00",
+      "marginHome": -3.0,
+      "total": 51.7
+    },
+    {
+      "run_at": "2026-10-04T21:38:34.307620+00:00",
+      "marginHome": -5.7,
+      "total": 47.6
+    },
+    {
+      "run_at": "2026-10-04T23:23:56.397865+00:00",
+      "marginHome": -7.3,
+      "total": 46.6
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-10-04T23:23:56Z",
+    "home": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "Jaycee Horn",
+          "status": "out",
+          "pts": -1.0,
+          "note": "IR, torn quad (Sep 30) -- CB1, new this week"
+        },
+        {
+          "position": "CB",
+          "player": "Mike Jackson",
+          "status": "out",
+          "pts": -0.75,
+          "note": "IR, groin (Sep 30) -- other starting CB"
+        },
+        {
+          "position": "WR",
+          "player": "Xavier Legette",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Ruled out (knee)"
+        },
+        {
+          "position": "WR",
+          "player": "Jalen Coker",
+          "status": "out",
+          "pts": -0.4,
+          "note": "Inactive (quad) per Yahoo inactives 6:56pm -- McMillan now the only established WR"
+        },
+        {
+          "position": "G",
+          "player": "Damien Lewis",
+          "status": "out",
+          "pts": -0.5,
+          "note": "RG, elbow, inactive"
+        }
+      ],
+      "items_total_pts": -3.15,
+      "stacking_notes": [
+        "CB depth: 2 confirmed out (Jaycee Horn, Mike Jackson) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+        "WR depth: 2 confirmed out (Xavier Legette, Jalen Coker) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -4.65
+    },
+    "away": {
+      "items": [
+        {
+          "position": "G",
+          "player": "Ben Bartch",
+          "status": "out",
+          "pts": -0.4,
+          "note": "Foot, inactive; C Cade Mays also on IR"
+        }
+      ],
+      "items_total_pts": -0.4,
+      "stacking_notes": [],
+      "total_pts": -0.4
+    }
+  },
+  "final_score": {
+    "home": 32,
+    "away": 26
+  }
+}

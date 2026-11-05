@@ -1,0 +1,740 @@
+{
+  "game_id": "falcons-saints-2026-wk4",
+  "matchup": "Atlanta Falcons @ New Orleans Saints",
+  "week": "Week 4",
+  "kickoff": "2026-10-06T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3.5,
+      "total": 45.5,
+      "ml_fav": -190,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Saints -3.5 (home fav). Fox opening Saints -2.5/48.5 -- total down 3 and spread up 1 toward Saints since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -190,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Saints -3.5 (home fav). Fox opening Saints -2.5/48.5 -- total down 3 and spread up 1 toward Saints since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:29:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 48.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:06:07Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 48.5,
+        "ml_fav": -145,
+        "ml_dog": 132
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Oct1): Saints(home) -2.5. Caesars not confirmed this cycle via vegasinsider.com (page cut off before this game). BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 48.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    },
+    {
+      "captured_at": "2026-10-05T13:02:47Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -2.5,
+        "total": 47.5,
+        "ml_fav": -110,
+        "ml_dog": -110
+      },
+      "caesars": null,
+      "note": "MNF day 10/5 AM: Covers lists ATL +2.5, total 47.5, ML -110 both (book not named; logged under fanduel slot as the cross-book consensus). DK last showed NO -2.5 / 48.5 on Oct 3."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "Small lean Falcons +2.5",
+    "total_lean": "Lean Under 47.5 (model 44.3)",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Corrected current total is 47.5, up from a stale 45.5 -- this opens a real 3.2pt total gap against the model's 44.3 that wasn't visible before the correction, the more notable of the two reads",
+      "Spread gap (model near pick'em vs market's Saints -2.5) is unchanged and stays a single-category, Elo-driven signal without independent corroboration"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-05T13:02:48.051206+00:00",
+    "n": 10000,
+    "homeElo": 1424.7,
+    "awayElo": 1443.0,
+    "gamesSeen": 6,
+    "eloMarginHome": 1.2,
+    "statsMarginHome": 2.3,
+    "marginDivergence": -1.1,
+    "projTotal": 44.3,
+    "homeWinProbElo": 54.3,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 48.5,
+    "homeInjuryPts": -2.5,
+    "awayInjuryPts": -0.75,
+    "projHomeMeanRaw": 22.7,
+    "projAwayMeanRaw": 21.5,
+    "projHomeMeanAdjusted": 20.2,
+    "projAwayMeanAdjusted": 20.8,
+    "injuryAdjustedMarginHome": -0.6,
+    "projTotalAdjusted": 41.0,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -2.5 pts -- Kaden Ellis (LB, doubtful, -0.5), Pete Werner (LB, doubtful, -0.5), Anfernee Jennings (LB, doubtful, -0.4), Carl Granderson (EDGE, doubtful, -0.6), Travis Etienne (RB, out, -0.5).",
+      "Away injury adjustment: -0.8 pts -- AJ Terrell Jr. (CB, out, -0.8).",
+      "Atlanta Falcons (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 47.7,
+    "awayWinPct": 49.6,
+    "tiePct": 2.7,
+    "medianHomeScore": 20,
+    "medianAwayScore": 21,
+    "coverPctHome": 42.1,
+    "overPct": 29.7
+  },
+  "market_signal": {
+    "captured_at": "2026-10-02T13:13:12Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 39,
+      "handle_pct_home": 61
+    },
+    "total": {
+      "bets_pct_over": 68,
+      "handle_pct_over": 96
+    },
+    "moneyline": {
+      "bets_pct_home": 34,
+      "handle_pct_home": 34
+    },
+    "reverse_line_move": true,
+    "rlm_note": "61% of handle is on the home side but the spread moved AGAINST them (-3.5 -> -2.5) -- real reverse line move toward away.",
+    "note": "Saints(home)-relative ML, converted from Falcons(away) 66/66 row (symmetric). Spread split not confirmed this cycle."
+  },
+  "props": {
+    "last_checked": "2026-10-05T18:22:49Z",
+    "status": "captured",
+    "source_note": "MNF 10/5 late afternoon: Michael's book -- pass/rush/rush+rec boards; tiered card under the 3-unit game cap",
+    "picks": [
+      {
+        "player": "Drake London",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "TIER 3. Real lean at FanDuel 79.5, but the 3-unit game cap is already used by Tier 1 and it shares the ATL-offense script. | Stake $0 (or $7.50 only if you drop the Penix rush under) \u00b7 pass at 82.5",
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "34% target share with Penix"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "for",
+            "detail": "100+ in 6 of last 7 with Penix (Covers)"
+          },
+          {
+            "label": "Price shop",
+            "dir": "for",
+            "detail": "79.5 at FanDuel vs 82.5 elsewhere"
+          },
+          {
+            "label": "Implied catches",
+            "dir": "against",
+            "detail": "Rec 6.5 priced +115 over / -147 under"
+          },
+          {
+            "label": "Correlation",
+            "dir": "neutral",
+            "detail": "Same outcome as Bijan bets -- game cap 3 units"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 78.5,
+        "opening_captured_at": "2026-10-01T01:29:05Z",
+        "current_line": 79.5,
+        "current_captured_at": "2026-10-05T18:22:49Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 29,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 51,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com (wk3 not available)",
+        "backtest": {
+          "hits": 0,
+          "misses": 2,
+          "pushes": 0,
+          "total": 2,
+          "pct": 0,
+          "line": 78.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Chris Olave",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "TIER 1 #1. 40 yds under his 125/g average on 12 targets a game, vs the 29th-ranked pass D without its top corner. | Stake $15 \u00b7 pass at 90.5",
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "ATL pass yds allowed per game (263/g, 29th) thru Wk3 per FanDuel Research"
+        },
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "36 targets in 3 games (12/g), 9 rec/g, 125 rec yds/g"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL 29th in pass yds allowed (263/g); CB1 AJ Terrell out"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "NO RB Travis Etienne out; Shough averages 44 att/g"
+          },
+          {
+            "label": "Attempts line",
+            "dir": "neutral",
+            "detail": "Shough attempts set at 36.5 vs his 44/g -- book expects fewer dropbacks as a favorite"
+          },
+          {
+            "label": "Defense quality",
+            "dir": "against",
+            "detail": "ATL 3rd in defensive success rate (Covers)"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 84.5,
+        "opening_captured_at": "2026-10-05T17:58:23Z",
+        "current_line": 84.5,
+        "current_captured_at": "2026-10-05T18:22:43Z"
+      },
+      {
+        "player": "Alvin Kamara",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "TIER 1 #2. Atlanta's run defense is elite (47.7 rush yds/g allowed, 2nd-fewest RB fantasy pts) and Kamara is averaging 25.5 yds on 2.8 YPC; the line already priced in Etienne being out. | Stake $15 \u00b7 pass at 33.5",
+        "matchup": {
+          "opp_rank_vs_pos": 2,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3 (ATL 21 pts, 1 = toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL allows 47.7 rush yds/g (FanDuel Research); 2nd-fewest RB fantasy pts thru Wk3 (footballdb)"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "25.5 rush yds/g on 9 att/g (2.8 YPC)"
+          },
+          {
+            "label": "Timeshare",
+            "dir": "for",
+            "detail": "Kendre Miller 6.5 att/g, 22 yds/g still splits work"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "NO pass-first: Shough 44 att/g"
+          },
+          {
+            "label": "Volume bump",
+            "dir": "against",
+            "detail": "Travis Etienne out -- Kamara attempts line 10.5 juiced to the over (-129)"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 37.5,
+        "opening_captured_at": "2026-10-05T18:22:43Z",
+        "current_line": 37.5,
+        "current_captured_at": "2026-10-05T18:22:43Z"
+      },
+      {
+        "player": "Bijan Robinson",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "TIER 1 #3. Worst run defense he'll see all year with three starting LBs out; 22 carries a game. Book shades attempts to the under (19.5, -128), which is why it's a 5 not a 6. | Stake $15 \u00b7 pass at 92.5",
+        "matchup": {
+          "opp_rank_vs_pos": 26,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3 (NO 62 pts; 32 = softest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "NO 31st-ranked run D (Covers); LBs Ellis, Werner, Jennings + edge Granderson all DNP"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "22 rush att/g, 116.3 rush yds/g"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "87.5 / 19.5 att implies 4.5 YPC vs his ~5.3 and a gutted NO front"
+          },
+          {
+            "label": "Attempts market",
+            "dir": "against",
+            "detail": "Rush attempts 19.5 priced -128 under -- book expects under 20 carries"
+          },
+          {
+            "label": "Timeshare",
+            "dir": "against",
+            "detail": "Brian Robinson Jr. 44 rush yds/g as RB2"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 87.5,
+        "opening_captured_at": "2026-10-05T18:22:43Z",
+        "current_line": 87.5,
+        "current_captured_at": "2026-10-05T18:22:43Z"
+      },
+      {
+        "player": "Bijan Robinson",
+        "team": "away",
+        "position": "RB",
+        "market": "receptions",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "TIER 2 swap-in. Plus money (+108) with NO's LBs out, but it stacks a third ATL-offense bet on the same player. | Stake $0 (swap in for a Tier 1 bet whose price moves) \u00b7 pass if -130 or worse",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "NO LBs Kaden Ellis, Pete Werner, Anfernee Jennings all DNP -- ~62% of NO LB snaps"
+          },
+          {
+            "label": "Usage",
+            "dir": "for",
+            "detail": "4.3 rec/g, 39.3 rec yds/g"
+          },
+          {
+            "label": "Price",
+            "dir": "for",
+            "detail": "+108 on the over"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "vs NO 31st-ranked run D, ATL may simply hand it off more"
+          },
+          {
+            "label": "Correlation",
+            "dir": "neutral",
+            "detail": "Same player as the Bijan rush over -- game cap 3 units"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 4.5,
+        "opening_captured_at": "2026-10-05T17:58:23Z",
+        "current_line": 4.5,
+        "current_captured_at": "2026-10-05T18:22:43Z"
+      },
+      {
+        "player": "Tyler Shough",
+        "team": "home",
+        "position": "QB",
+        "market": "completions",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "TIER 2 swap-in. Averages ~30 completions; even at the book's 36.5 attempts and his ~69% rate he lands ~25. Lower-variance way to bet NO passing, but same script as Olave. | Stake $0 (swap for Olave if 90.5+) \u00b7 pass at 25.5",
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "30.3 completions/g, 44 att/g (Yahoo)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL 29th in pass yds allowed; CB1 Terrell out"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "RB Etienne out"
+          },
+          {
+            "label": "Attempts market",
+            "dir": "against",
+            "detail": "Attempts line 36.5 -- book expects ~8 fewer throws than his average"
+          },
+          {
+            "label": "Correlation",
+            "dir": "neutral",
+            "detail": "Same outcome as Olave over"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 23.5,
+        "opening_captured_at": "2026-10-05T18:22:43Z",
+        "current_line": 23.5,
+        "current_captured_at": "2026-10-05T18:22:43Z"
+      },
+      {
+        "player": "Michael Penix Jr.",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "TIER 3 small. -2 rush yds/g; kneel-downs help if ATL leads late. One 4-yard scramble loses it, so half unit at most. | Stake $7.50 or skip \u00b7 pass at 2.5",
+        "factors": [
+          {
+            "label": "Usage",
+            "dir": "for",
+            "detail": "-2 rush yds/g so far"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "ATL run game vs 31st run D means fewer dropbacks/scrambles"
+          },
+          {
+            "label": "Variance",
+            "dir": "against",
+            "detail": "A single scramble of 4+ yds loses the bet"
+          },
+          {
+            "label": "Pressure",
+            "dir": "neutral",
+            "detail": "NO edge Granderson DNP -- less pressure, fewer forced scrambles"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 3.5,
+        "opening_captured_at": "2026-10-05T18:22:43Z",
+        "current_line": 3.5,
+        "current_captured_at": "2026-10-05T18:22:43Z"
+      },
+      {
+        "player": "Tyler Shough",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Real lean, but it is the same bet as Olave over with a smaller gap -- skip in favor of Olave. | Stake $0",
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Averaging 305 pass yds and 30 completions per game (Yahoo)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "ATL 29th in pass yds allowed (263/g); CB AJ Terrell out"
+          },
+          {
+            "label": "Defense quality",
+            "dir": "against",
+            "detail": "ATL 3rd in defensive success rate (Covers)"
+          },
+          {
+            "label": "Correlation",
+            "dir": "against",
+            "detail": "Duplicates the Olave over -- same game script"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 0,
+          "net": 0
+        },
+        "opening_line": 254.5,
+        "opening_captured_at": "2026-10-05T13:03:57Z",
+        "current_line": 254.5,
+        "current_captured_at": "2026-10-05T18:18:41Z"
+      },
+      {
+        "player": "Kyle Pitts",
+        "team": "away",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "over",
+        "confidence": 3,
+        "reasoning": "Downgraded: line climbed 26.5 -> 30.5 while he averages 0.7 rec and 6.7 yds a game -- needs a usage jump the numbers don't show yet. | Stake $0",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "NO allowed 250 rec yds to TEs thru Wk3"
+          },
+          {
+            "label": "Usage",
+            "dir": "against",
+            "detail": "0.7 rec/g, 6.7 rec yds/g; 2 targets in Wk3 despite 76% route share"
+          },
+          {
+            "label": "Line move",
+            "dir": "against",
+            "detail": "26.5 -> 27.5 -> 30.5 since Monday morning"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "NO LBs Ellis, Werner, Jennings DNP"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 0,
+          "net": 0
+        },
+        "opening_line": 26.5,
+        "opening_captured_at": "2026-10-01T01:08:27Z",
+        "current_line": 30.5,
+        "current_captured_at": "2026-10-05T18:18:41Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 0,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 15,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com (wk3 not available)",
+        "backtest": {
+          "hits": 0,
+          "misses": 2,
+          "pushes": 0,
+          "total": 2,
+          "pct": 0,
+          "line": 26.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-05T18:22:43Z",
+    "analysis": [
+      "MNF day update. The market has settled at Saints -2.5, total 47.5-48.5, moneylines near -110 both ways. New Orleans' defense is badly short-handed: linebackers Kaden Ellis, Pete Werner and Anfernee Jennings plus edge Carl Granderson were all DNPs (about 62% of the Saints' LB snaps), and RB Travis Etienne is out. Atlanta is without top corner AJ Terrell. With those priced the sim makes Atlanta a 0.6-point favorite, so the +2.5 covers about 58% of the time.",
+      "The earlier Under 47.5 read was mostly a model artifact: using only real 2026 games the projection is 47.2, essentially the market number, and both defenses are now missing key pieces. Atlanta's offense with Michael Penix back (35 points last week, Bijan Robinson 200+ yards) against the league's 31st-ranked run defense and a gutted linebacker room is the cleaner angle."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Falcons +2.5",
+        "confidence": 5,
+        "reasoning": "TIER 2 swap-in. Saints LB cluster out vs Bijan and a 31st-ranked run D; sim has ATL slightly favored (covers ~58%). Bijan rush over expresses the same edge with a sharper number. | Stake $0 (swap in if a Tier 1 price moves) \u00b7 pass at +1.5",
+        "best_bet": false
+      },
+      {
+        "market": "total",
+        "pick": "Under 47.5",
+        "confidence": 3,
+        "reasoning": "Downgraded: real-2026-only projection (47.2) matches the market. | Stake $0",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.405129+00:00",
+      "marginHome": 1.2,
+      "total": 44.3
+    },
+    {
+      "run_at": "2026-10-05T13:02:48.051206+00:00",
+      "marginHome": -0.6,
+      "total": 41.0
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-10-05T13:02:48Z",
+    "home": {
+      "items": [
+        {
+          "position": "LB",
+          "player": "Kaden Ellis",
+          "status": "doubtful",
+          "pts": -0.5,
+          "note": "DNP (Covers Oct 5) -- part of LB cluster (Ellis, Werner, Jennings) = 62% of NO LB snaps"
+        },
+        {
+          "position": "LB",
+          "player": "Pete Werner",
+          "status": "doubtful",
+          "pts": -0.5,
+          "note": "DNP"
+        },
+        {
+          "position": "LB",
+          "player": "Anfernee Jennings",
+          "status": "doubtful",
+          "pts": -0.4,
+          "note": "DNP"
+        },
+        {
+          "position": "EDGE",
+          "player": "Carl Granderson",
+          "status": "doubtful",
+          "pts": -0.6,
+          "note": "DNP"
+        },
+        {
+          "position": "RB",
+          "player": "Travis Etienne",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Unavailable per FanDuel Research Oct 5"
+        }
+      ],
+      "items_total_pts": -2.5,
+      "stacking_notes": [],
+      "total_pts": -2.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "AJ Terrell Jr.",
+          "status": "out",
+          "pts": -0.75,
+          "note": "ATL top corner out per FanDuel Research Oct 5"
+        }
+      ],
+      "items_total_pts": -0.75,
+      "stacking_notes": [],
+      "total_pts": -0.75
+    }
+  },
+  "final_score": {
+    "home": 24,
+    "away": 45
+  }
+}

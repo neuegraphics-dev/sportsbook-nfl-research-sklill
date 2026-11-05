@@ -1,0 +1,155 @@
+{
+  "game_id": "cardinals-seahawks-2026-wk9",
+  "matchup": "Arizona Cardinals @ Seattle Seahawks",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T21:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -11.5,
+      "total": 44.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": -10.5,
+      "total": 44.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": -11.5,
+      "total": 44.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -11.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -10.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -11.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": -10.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -12.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.420049+00:00",
+    "n": 10000,
+    "homeElo": 1636.2,
+    "awayElo": 1386.4,
+    "gamesSeen": 16,
+    "eloMarginHome": 11.9,
+    "statsMarginHome": 4.1,
+    "marginDivergence": 7.8,
+    "projTotal": 49.1,
+    "homeWinProbElo": 84.7,
+    "marketHomeSpread": -10.5,
+    "marketTotal": 44.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 30.5,
+    "projAwayMeanRaw": 18.6,
+    "projHomeMeanAdjusted": 30.5,
+    "projAwayMeanAdjusted": 18.6,
+    "injuryAdjustedMarginHome": 11.9,
+    "projTotalAdjusted": 49.1,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [
+      "Elo margin (+11.9) and recent-scoring margin (+4.1) disagree by 7.8 points -- worth a second look before trusting either alone.",
+      "Seattle Seahawks (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Zach Charbonnet (-1.2), Drake Thomas (-0.4), Chazz Surratt (-0.3), Drew Lock (-0.8), DeMarcus Lawrence (-0.4), Uchenna Nwosu (-0.3), Elijah Arroyo (-0.4) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Arizona Cardinals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jeremiyah Love (-1.5), Jon Gaines II (-0.5), Walter Nolen (-0.7), Andrew Wingard (-0.3), Budda Baker (-0.3) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 79.2,
+    "awayWinPct": 18.9,
+    "tiePct": 1.9,
+    "medianHomeScore": 31,
+    "medianAwayScore": 19,
+    "coverPctHome": 54.2,
+    "overPct": 62.8
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.767788+00:00",
+      "marginHome": 13.7,
+      "total": 48.8
+    },
+    {
+      "run_at": "2026-11-03T15:29:10.901466+00:00",
+      "marginHome": 11.9,
+      "total": 49.1
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.420049+00:00",
+      "marginHome": 11.9,
+      "total": 49.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Seattle Seahawks by 13.7 (injury-adjusted) against a market that has Seattle Seahawks favored by 11.5, a 2.2-point gap; sim cover% for Seattle Seahawks is 56.4% and projected total is 48.8 vs 44.5 (over 62.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

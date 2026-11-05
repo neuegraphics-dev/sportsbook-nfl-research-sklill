@@ -1,0 +1,164 @@
+{
+  "game_id": "browns-saints-2026-wk9",
+  "matchup": "Cleveland Browns @ New Orleans Saints",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": -3,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": -3,
+      "total": 43,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 43,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.341763+00:00",
+    "n": 10000,
+    "homeElo": 1394.9,
+    "awayElo": 1433.0,
+    "gamesSeen": 15,
+    "eloMarginHome": 0.4,
+    "statsMarginHome": 0.9,
+    "marginDivergence": -0.5,
+    "projTotal": 41.0,
+    "homeWinProbElo": 51.4,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 43,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.7,
+    "projAwayMeanRaw": 20.3,
+    "projHomeMeanAdjusted": 20.7,
+    "projAwayMeanAdjusted": 20.3,
+    "injuryAdjustedMarginHome": 0.4,
+    "projTotalAdjusted": 41.0,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "New Orleans Saints (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Kaden Ellis (-0.5), Pete Werner (-0.5), Anfernee Jennings (-0.4), Carl Granderson (-0.6), Travis Etienne (-0.5) [-2.5 pts total]; Alvin Kamara (-0.5), Kaden Elliss (-0.8), Anfernee Jennings (-0.8) [-2.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Cleveland Browns (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Dillon Gabriel (-2.0), Denzel Ward (-0.3), Teven Jenkins (-0.4), Kalia Davis (-0.5), Mike Hall Jr. (-0.5) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 50.8,
+    "awayWinPct": 46.3,
+    "tiePct": 2.9,
+    "medianHomeScore": 21,
+    "medianAwayScore": 20,
+    "coverPctHome": 44.6,
+    "overPct": 44.8
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.096049+00:00",
+      "marginHome": 0.4,
+      "total": 41.0
+    },
+    {
+      "run_at": "2026-11-03T15:29:10.780342+00:00",
+      "marginHome": 0.4,
+      "total": 41.0
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.341763+00:00",
+      "marginHome": 0.4,
+      "total": 41.0
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: New Orleans Saints by 0.4 (injury-adjusted) against a market that has New Orleans Saints favored by 3, a 2.6-point gap; sim cover% for New Orleans Saints is 42.4% and projected total is 41.0 vs 43 (over 43.7%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

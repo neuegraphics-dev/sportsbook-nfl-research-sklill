@@ -1,0 +1,376 @@
+{
+  "game_id": "ravens-cowboys-2026-wk3",
+  "matchup": "Baltimore Ravens @ Dallas Cowboys",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3.0,
+      "total": 52.5,
+      "ml_fav": -155,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 52.5,
+        "ml_fav": -155,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:09Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 52.5,
+        "ml_fav": -154,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 52.5,
+        "ml_fav": -155,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:30Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 52.5,
+        "ml_fav": -178,
+        "ml_dog": 150
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 53.5,
+        "ml_fav": -146,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Ravens(away) favored; Caesars half-pt higher (3.5) than BME/DK (3.0). ML gap notable (BME -178 vs DK -146)."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 52.5,
+        "ml_fav": -179,
+        "ml_dog": 151
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 53.5,
+        "ml_fav": -146,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:28:50Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 53.5,
+        "ml_fav": -146,
+        "ml_dog": 135
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check (NFL Rio game, Estadio Maracana -- outdoor, natural grass, humid, rain more likely 2nd half than at kickoff). BookMaker.eu unusable this cycle (wrong-week data), but its last real read (9/25) had already repriced the ML tighter toward BAL. NEW this AM: Malik Hooker upgraded doubtful-to-OUT, and LB DeMarvion Overshown newly confirmed OUT for Dallas -- that is now 3 DB/S-tier starters plus a starting LB down on Dallas defense. Ravens LT Ronnie Stanley also now looks all-but-out (missed all week) -- upgraded from questionable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "Model margin has widened further toward Baltimore with todays Dallas defensive downgrades (Hooker OUT, Overshown NEW) -- check simulated cover before sizing, but directionally this leans Ravens",
+    "total_lean": "Under remains the standout signal here -- sim total already sat ~6-7 pts below market before todays updates; Dallas defensive downgrades dont move the total lean much further but Stanley (Ravens LT) trending to out could cut into Baltimores own O-line if it holds",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Malik Hooker (S) upgraded doubtful-to-OUT this AM -- confirmed, not just likely, now",
+      "DeMarvion Overshown (starting LB) newly confirmed OUT -- Dallas is down 3 DB/S starters plus a LB, real secondary+box depletion",
+      "Ronnie Stanley (Ravens starting LT) reported to have missed the entire week -- upgraded from questionable, all-but-out",
+      "BookMaker.eu repriced the Ravens ML tighter (-154 to -178) on its last live read before todays fetch issue -- a real sharp signal from earlier this week still stands"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:28:50.206933+00:00",
+    "n": 10000,
+    "homeElo": 1462.0,
+    "awayElo": 1528.5,
+    "gamesSeen": 4,
+    "eloMarginHome": -0.7,
+    "statsMarginHome": -2.3,
+    "marginDivergence": 1.5,
+    "projTotal": 50.9,
+    "homeWinProbElo": 47.3,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 53.5,
+    "homeInjuryPts": -5.25,
+    "awayInjuryPts": -1.35,
+    "projHomeMeanRaw": 25.1,
+    "projAwayMeanRaw": 25.8,
+    "projHomeMeanAdjusted": 19.8,
+    "projAwayMeanAdjusted": 24.5,
+    "injuryAdjustedMarginHome": -4.6,
+    "projTotalAdjusted": 44.3,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -5.2 pts -- Tyler Smith (OL, out, -1.5), Cobie Durant (CB, out, -0.8), P.J. Locke (S, out, -0.5), Malik Hooker (S, out, -0.8), DeMarvion Overshown (LB, out, -1.0). S depth: 2 confirmed out (P.J. Locke, Malik Hooker) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -1.4 pts -- Zay Flowers (WR, questionable, -0.3), Ronnie Stanley (OL, out, -1.0)."
+    ],
+    "homeWinPct": 36.1,
+    "awayWinPct": 61.2,
+    "tiePct": 2.7,
+    "medianHomeScore": 20,
+    "medianAwayScore": 24,
+    "coverPctHome": 46.7,
+    "overPct": 25.4
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:32:26Z",
+    "analysis": [
+      "Both rosters are banged up heading into the first-ever NFL game in Rio, but Dallas is clearly worse off: starting LG Tyler Smith, CB Cobie Durant and S PJ Locke were already out, and this morning brings two more confirmed losses -- S Malik Hooker (upgraded from doubtful) and starting LB DeMarvion Overshown. Thats 3 defensive backfield starters plus a starting linebacker down, and the model auto-applies an extra depth-stacking penalty for the 2 safeties lost at the same position. Ravens LT Ronnie Stanley also looks all-but-out after missing the full week, a partial offset on the other side.",
+      "The spread itself lands close to a coinflip once both sides injuries wash out (model margin -4.6 vs a market around -3 to -3.5, cover% under 50) -- not a clean edge either way. The total is the real story: the model projects 44.3 combined points against a market sitting at 53.5, a massive 9.2-point gap, with 75% of simulations going Under. Two shorthanded offenses and a Dallas secondary missing 3 starters points at a much lower-scoring game than the market currently prices, and BookMaker.eus own moneyline reprice toward Baltimore earlier this week (-154 to -178) is an independent signal pointing the same direction."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 53.5",
+        "confidence": 8,
+        "reasoning": "Model total (44.3) sits 9.2 points below the market, the widest gap on the board alongside Cardinals-49ers -- driven by confirmed injuries on both sides plus an independent sharp-book ML reprice earlier in the week, 75% of sims Under.",
+        "best_bet": true,
+        "factors": [
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model 44.3 vs market 53.5, a 9.2pt gap"
+          },
+          {
+            "label": "Sim Under%",
+            "dir": "for",
+            "detail": "74.6% of 10,000 sims land Under"
+          },
+          {
+            "label": "Dallas injuries",
+            "dir": "for",
+            "detail": "Home -5.25 pts -- 3 DB/S starters plus a starting LB confirmed out, with a depth-stacking penalty on top"
+          },
+          {
+            "label": "Sharp book signal",
+            "dir": "for",
+            "detail": "BookMaker.eu repriced the Ravens ML tighter (-154 to -178) earlier this week -- independent confirmation"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 0,
+          "net": 4
+        }
+      },
+      {
+        "market": "spread",
+        "pick": "No strong lean",
+        "confidence": 2,
+        "reasoning": "Model margin (-4.6, Ravens) sits close to the market number (-3 to -3.5) once both sides injuries are applied -- a real but modest edge, not enough to size confidently.",
+        "best_bet": false
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "KIV",
+      "pick": "Baltimore Ravens -3.5",
+      "best_bet": true,
+      "note": "KIV's Best Bet (40:42-42:39)."
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:28:50Z",
+    "home": {
+      "items": [
+        {
+          "position": "OL",
+          "player": "Tyler Smith",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Starting LG, ruled out for Sunday -- unchanged from earlier in the week."
+        },
+        {
+          "position": "CB",
+          "player": "Cobie Durant",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Ruled out, unchanged."
+        },
+        {
+          "position": "S",
+          "player": "P.J. Locke",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Ruled out, unchanged."
+        },
+        {
+          "position": "S",
+          "player": "Malik Hooker",
+          "status": "out",
+          "pts": -0.75,
+          "note": "UPGRADED from doubtful to officially ruled OUT this AM (broken forearm) -- now confirmed, not just likely."
+        },
+        {
+          "position": "LB",
+          "player": "DeMarvion Overshown",
+          "status": "out",
+          "pts": -1.0,
+          "note": "NEW this cycle -- starting LB confirmed ruled out. Combined with Durant (CB) and Locke+Hooker (both S), Dallas is down 3 defensive backfield starters -- real secondary depletion for an international-trip road-feel game."
+        }
+      ],
+      "items_total_pts": -4.5,
+      "stacking_notes": [
+        "S depth: 2 confirmed out (P.J. Locke, Malik Hooker) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -5.25
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Zay Flowers",
+          "status": "questionable",
+          "pts": -0.35,
+          "note": "Trending better -- returned to individual drills Friday after a Wed DNP. Reduced from -0.5 given the positive trend, still not fully cleared."
+        },
+        {
+          "position": "OL",
+          "player": "Ronnie Stanley",
+          "status": "out",
+          "pts": -1.0,
+          "note": "UPGRADED from questionable -- reported to have missed all week of practice (toe), all-but-ruled-out per beat reporting. Starting LT."
+        }
+      ],
+      "items_total_pts": -1.35,
+      "stacking_notes": [],
+      "total_pts": -1.35
+    }
+  },
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup, captured gameday+3 AM cycle",
+    "picks": [
+      {
+        "player": "Javonte Williams",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Carries are capped at 12 a game, the line is weaker without LG Tyler Smith, and Dallas is a home dog likely to throw -- the under has several factors lined up.",
+        "opening_line": 59.5,
+        "opening_captured_at": "2026-09-24T13:10:19Z",
+        "current_line": 59.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Exactly 12 carries in both games -- needs 5.0 YPC to go over"
+          },
+          {
+            "label": "Recent trend",
+            "dir": "for",
+            "detail": "Wk2 vs WAS: 12 car, 30 yds (2.5 YPC)"
+          },
+          {
+            "label": "O-line",
+            "dir": "for",
+            "detail": "Starting LG Tyler Smith out -- less interior push"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "DAL +3 home dog, 52.5 total -- shootout/trailing = passing"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "BAL middle of the pack (16th vs RBs), 70 RB rush yds/g allowed -- not a wall"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 16,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 0,
+          "net": 3
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:28:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 48,
+      "handle_pct_home": 29
+    },
+    "total": null,
+    "moneyline": null,
+    "reverse_line_move": false,
+    "rlm_note": "71% of handle is on the away side but the spread hasn't moved yet (+3, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: DAL is home/dog (per DK +3, though Caesars has DAL +3.5). Cleatz's own listed 52% ticket / 71% handle figures were for the away side (BAL) per the raw source table -- restated here home-relative (DAL 48/29)."
+  },
+  "final_score": {
+    "home": 31,
+    "away": 34
+  }
+}

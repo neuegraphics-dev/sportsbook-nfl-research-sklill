@@ -1,0 +1,513 @@
+{
+  "game_id": "raiders-patriots-2026-wk5",
+  "matchup": "Las Vegas Raiders @ New England Patriots",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3.5,
+      "total": 44.5,
+      "ml_fav": -180,
+      "ml_dog": 157
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 NE -3.5/45.5. Look-ahead NE -8.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -180,
+        "ml_dog": 157
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 NE -3.5/45.5. Look-ahead NE -8.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -190,
+        "ml_dog": 172
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). All books NE -3.5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -190,
+        "ml_dog": 172
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 45.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -198,
+        "ml_dog": 164
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Patriots"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 45.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Patriots. DK ML via cleatz (Patriots -192/Raiders +160)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -192.0,
+        "ml_dog": 160.0
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -196.0,
+        "ml_dog": 164.0
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 45.0,
+        "ml_fav": -197.0,
+        "ml_dog": 163.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -198,
+        "ml_dog": 164
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -196,
+        "ml_dog": 164
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 45.0,
+        "ml_fav": -197,
+        "ml_dog": 163
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -196,
+        "ml_dog": 164
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 45.0,
+        "ml_fav": -197,
+        "ml_dog": 163
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Patriots."
+    },
+    {
+      "captured_at": "2026-10-11T13:00:59Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 44.5,
+        "ml_fav": -180,
+        "ml_dog": 152
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 45,
+        "ml_fav": -190,
+        "ml_dog": 158
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -184,
+        "ml_dog": 154
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 45.5,
+        "ml_fav": -190,
+        "ml_dog": 158
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Raiders +3.5",
+    "total_lean": "Lean Over, watching",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "NE down 4 CBs (Gonzalez, Davis III, Canada, Prunty all ruled out) + WR Hollins -- defensive cluster the model can't fully price (it only docks NE's own offense, not LV's expected gains)",
+      "Real-2026 scoring form has these teams ~even despite a +11.7 Elo gap; sim itself flags the divergence",
+      "Ashton Jeanty (LV RB) questionable, ankle/foot"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.165843+00:00",
+    "n": 10000,
+    "homeElo": 1652.9,
+    "awayElo": 1409.5,
+    "gamesSeen": 8,
+    "eloMarginHome": 11.7,
+    "statsMarginHome": 0.3,
+    "marginDivergence": 11.4,
+    "projTotal": 43.9,
+    "homeWinProbElo": 84.3,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 45,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.0,
+    "projHomeMeanRaw": 27.8,
+    "projAwayMeanRaw": 16.1,
+    "projHomeMeanAdjusted": 27.8,
+    "projAwayMeanAdjusted": 15.1,
+    "injuryAdjustedMarginHome": 12.7,
+    "projTotalAdjusted": 42.9,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+11.7) and recent-scoring margin (+0.3) disagree by 11.4 points -- worth a second look before trusting either alone.",
+      "Away injury adjustment: -1.0 pts -- Ashton Jeanty (RB, questionable, -1.0)."
+    ],
+    "homeWinPct": 80.6,
+    "awayWinPct": 17.4,
+    "tiePct": 2.1,
+    "medianHomeScore": 28,
+    "medianAwayScore": 15,
+    "coverPctHome": 74.2,
+    "overPct": 44.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.689428+00:00",
+      "marginHome": 11.7,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.543627+00:00",
+      "marginHome": 11.7,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.873833+00:00",
+      "marginHome": 11.7,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.512298+00:00",
+      "marginHome": 11.7,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.917474+00:00",
+      "marginHome": 11.7,
+      "total": 43.9
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.967278+00:00",
+      "marginHome": 12.7,
+      "total": 42.9
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.136075+00:00",
+      "marginHome": 12.7,
+      "total": 42.9
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.066489+00:00",
+      "marginHome": 12.7,
+      "total": 42.9
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.962489+00:00",
+      "marginHome": 12.7,
+      "total": 42.9
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.165843+00:00",
+      "marginHome": 12.7,
+      "total": 42.9
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-09T21:09:57Z",
+    "analysis": [
+      "New England is a massive Elo favorite (+11.7 pts) but that's almost entirely a prior-season artifact -- real 2026 scoring form has these teams within 0.3 points of each other, and the sim itself flags the 11.4-pt divergence between those two views as worth a second look rather than trusting the Elo number. Las Vegas also gets a documented discount for Ashton Jeanty (ankle/foot, questionable, lead back) with no Friday practice detail found.",
+      "New info this cycle cuts hard against New England covering as big a favorite as Elo suggests: the Patriots are down four cornerbacks (Christian Gonzalez, Carlton Davis III, Channing Canada, Karon Prunty all ruled out) plus WR Mack Hollins. That's a genuine defensive-cluster injury, and this model only knows how to dock the injured team's OWN offensive projection -- it has no mechanism to raise the opponent's expected scoring against a gutted secondary, so the total here should be read a bit higher than the raw sim number, and the spread case for the Raiders' points is stronger than the Elo-driven market number implies."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Raiders +3.5",
+        "confidence": 6,
+        "reasoning": "Real-2026 form has these teams even while NE's own CB room collapsed (4 corners ruled out) -- the Elo-driven market number is overpriced on a team whose actual defense is now a weak point; 67% of handle is on NE, which we're fading on the model+injury read. | Stake $15 \u00b7 pass at +2.5",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Lean Over 45 (watch, not a bet yet)",
+        "confidence": 4,
+        "reasoning": "NE's 4-CB secondary crisis argues for more Raiders points than the blind sim can price (the model can only dock NE's own offense, not boost LV's passing output against a depleted corner room) -- a real but hard-to-size edge, so watching rather than betting. | Stake $0 (watch) \u00b7 pass at 44.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-07T17:48:52Z",
+    "status": "captured",
+    "source_note": "SBD prop list Oct 7 (single source, verify at book); Cousins via RotoWire DK/CZR 228.5",
+    "picks": [
+      {
+        "player": "Drake Maye",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Maye averages 214 pass yds and adds 34 on the ground, and New England has scored 10, 20, 6 and 29. As a home favorite they should lean on the run. Same read as Raiders +3.5. | Stake $15 \u00b7 pass at 219.5",
+        "matchup": {
+          "opp_rank_vs_pos": 21,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (LV 78 pts; 892 pass yds)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "213.5 pass yds/g (854 in 4 games), 29 att/g"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "NE -3.5 home fav, total 45.5"
+          },
+          {
+            "label": "Offense trend",
+            "dir": "for",
+            "detail": "NE scored 10, 20, 6, 29 -- inconsistent passing game"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "LV 21st vs QB, 223 pass yds/g allowed"
+          },
+          {
+            "label": "Rushing",
+            "dir": "neutral",
+            "detail": "34 rush yds/g -- some production leaves the pass column"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 226.5,
+        "opening_captured_at": "2026-10-07T17:48:52Z",
+        "current_line": 226.5,
+        "current_captured_at": "2026-10-07T17:48:52Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 64,
+      "handle_pct_home": 69
+    },
+    "total": {
+      "bets_pct_over": 63,
+      "handle_pct_over": 70
+    },
+    "moneyline": {
+      "bets_pct_home": 71,
+      "handle_pct_home": 73
+    },
+    "reverse_line_move": false,
+    "rlm_note": "69% of handle is on the home side but the spread hasn't moved yet (-3.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T21:05:16Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Ashton Jeanty",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "Ankle/foot, Fri report gives no practice-participation detail; rookie lead back, pricing uncertainty-weighted."
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    }
+  },
+  "final_score": {
+    "home": 45,
+    "away": 17
+  }
+}

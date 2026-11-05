@@ -1,0 +1,532 @@
+{
+  "game_id": "colts-steelers-2026-wk5",
+  "matchup": "Indianapolis Colts @ Pittsburgh Steelers",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -1.5,
+      "total": 44.5,
+      "ml_fav": -132,
+      "ml_dog": 120
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 PIT -2.5/43.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 44.5,
+        "ml_fav": -132,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 PIT -2.5/43.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 44.5,
+        "ml_fav": -135,
+        "ml_dog": 125
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 PIT -2.5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 44.5,
+        "ml_fav": -135,
+        "ml_dog": 125
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 44.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 44.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Steelers"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 44.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Steelers. DK ML via cleatz (Steelers -148/Colts +124)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -148.0,
+        "ml_dog": 124.0
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -144.0,
+        "ml_dog": 122.0
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -143.0,
+        "ml_dog": 121.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -144,
+        "ml_dog": 122
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -143,
+        "ml_dog": 121
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 126
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -143,
+        "ml_dog": 121
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Steelers."
+    },
+    {
+      "captured_at": "2026-10-11T13:00:59Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": -150,
+        "ml_dog": 127
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 41.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 41.5,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 41.5,
+        "ml_fav": -162,
+        "ml_dog": 137
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Every book now at PIT -2.5 to -3, past prior pass-at levels -- no fresh value",
+      "Rico Dowdle (PIT RB) questionable, toe -- minor, not priced"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-11T13:56:17.191097+00:00",
+    "n": 10000,
+    "homeElo": 1504.6,
+    "awayElo": 1539.5,
+    "gamesSeen": 8,
+    "eloMarginHome": 0.5,
+    "statsMarginHome": -0.8,
+    "marginDivergence": 1.4,
+    "projTotal": 46.9,
+    "homeWinProbElo": 51.9,
+    "marketHomeSpread": -3,
+    "marketTotal": 43.5,
+    "homeInjuryPts": -2.25,
+    "awayInjuryPts": -2.25,
+    "projHomeMeanRaw": 23.7,
+    "projAwayMeanRaw": 23.2,
+    "projHomeMeanAdjusted": 21.5,
+    "projAwayMeanAdjusted": 21.0,
+    "injuryAdjustedMarginHome": 0.5,
+    "projTotalAdjusted": 42.4,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -2.2 pts -- Michael Pittman Jr. (WR, out, -0.8), DeShon Elliott (S, out, -0.8), Jamel Dean (CB, out, -0.8).",
+      "Away injury adjustment: -2.2 pts -- Darius Slayton (WR, out, -1.0), Will Mallory (TE, out, -0.8), Arden Key (DE, out, -0.5)."
+    ],
+    "homeWinPct": 50.5,
+    "awayWinPct": 47.0,
+    "tiePct": 2.5,
+    "medianHomeScore": 21,
+    "medianAwayScore": 21,
+    "coverPctHome": 42.9,
+    "overPct": 47.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.518150+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.392710+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.726159+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.358619+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.778038+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.893773+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-10T13:09:14.975841+00:00",
+      "marginHome": 0.5,
+      "total": 46.9
+    },
+    {
+      "run_at": "2026-10-10T17:10:23.316353+00:00",
+      "marginHome": -0.7,
+      "total": 41.2
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.889185+00:00",
+      "marginHome": -0.7,
+      "total": 41.2
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.001133+00:00",
+      "marginHome": -0.7,
+      "total": 41.2
+    },
+    {
+      "run_at": "2026-10-11T13:56:17.191097+00:00",
+      "marginHome": 0.5,
+      "total": 42.4
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-11T13:56:27Z",
+    "analysis": [
+      "CORRECTION (2026-10-11): Michael flagged that Pittman Jr. has not been a significant factor for Pittsburgh this season, and a statmuse game-log check confirmed it -- 3 games, 3/5/4 targets, 58/16/15 yards. That is a complementary WR3/4 role, not the alpha-WR1-no-backup usage the original -2.0 pt penalty assumed. Downgraded to -0.75 (secondary-starter tier), which brings Pittsburgh's injury total to -2.25 -- now an exact tie with Indianapolis's own -2.25 (Slayton/Mallory/Key).",
+      "With the injury gap that drove this pick gone, the model is back to roughly a coinflip (Elo margin +0.5 home, cover% home 42.9%), which is close enough to a fair -3 number that there is no real edge left on this game -- the earlier +3 Colts lean should not have been sized as the best bet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "IND Colts +3",
+        "confidence": 3,
+        "reasoning": "Net injury edge that drove this pick is gone after correcting the overstated Pittman Jr. penalty -- model is now a near-coinflip vs a fair -3 market number. No real edge, context only. | Stake $0 (edge corrected away) \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-09T17:32:50Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM); statmuse.com game log",
+    "picks": [
+      {
+        "player": "Daniel Jones",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Covers (best line)",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Clear upward trend (166 to 210 to 235 yds) but PIT is one of the toughest pass defenses in the league -- tough-matchup cap applies, context not a strong bet. | Stake $0 (prefer skip, -110) \u00b7 pass at 219.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "PIT ranks 5th of 32 vs QB (tough-matchup cap applies), 225.2 pass yds/g allowed"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "166, 210, 235 passing yards across his 3 games this season -- clear upward trajectory"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 231.3 vs 209.5 line, +21.8 diff, 25.3% EV"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 209.5,
+        "opening_captured_at": "2026-10-09T17:32:50Z",
+        "current_line": 209.5,
+        "current_captured_at": "2026-10-09T17:32:50Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 46,
+      "handle_pct_home": 62
+    },
+    "total": {
+      "bets_pct_over": 63,
+      "handle_pct_over": 48
+    },
+    "moneyline": {
+      "bets_pct_home": 46,
+      "handle_pct_home": 41
+    },
+    "reverse_line_move": false,
+    "rlm_note": "62% of handle is on the home side and the spread has moved toward them (-1.5 -> -3) -- money and line agree, no RLM.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-11T13:56:17Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Michael Pittman Jr.",
+          "status": "out",
+          "pts": -0.75,
+          "note": "CORRECTION (Michael flagged this, verified via statmuse game log): only 3 games played this season -- 3/5/4 targets, 2-3 rec, 58/16/15 yds. That is a complementary WR3/4 role, not the alpha-WR1-no-backup usage the original -2.0 assumed. Downgraded from alpha-skill-player tier to secondary-starter/role-player tier per the point-value guide."
+        },
+        {
+          "position": "S",
+          "player": "DeShon Elliott",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Knee, DNP all week, starting safety"
+        },
+        {
+          "position": "CB",
+          "player": "Jamel Dean",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Ankle, DNP all week, starting CB (Ramsey also questionable/limited at CB -- not priced, expected to play)"
+        }
+      ],
+      "items_total_pts": -2.25,
+      "stacking_notes": [],
+      "total_pts": -2.25
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Darius Slayton",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Knee, listed out despite limited Friday participation"
+        },
+        {
+          "position": "TE",
+          "player": "Will Mallory",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Thumb, on IR designated for return, out"
+        },
+        {
+          "position": "DE",
+          "player": "Arden Key",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Hamstring, DNP Friday, rotational pass rusher"
+        }
+      ],
+      "items_total_pts": -2.25,
+      "stacking_notes": [],
+      "total_pts": -2.25
+    }
+  },
+  "final_score": {
+    "home": 34,
+    "away": 22
+  }
+}

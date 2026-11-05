@@ -1,0 +1,518 @@
+{
+  "game_id": "49ers-seahawks-2026-wk5",
+  "matchup": "San Francisco 49ers @ Seattle Seahawks",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3.0,
+      "total": 47.5,
+      "ml_fav": -170,
+      "ml_dog": 168
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 SEA -3/46.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 47.5,
+        "ml_fav": -170,
+        "ml_dog": 168
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 SEA -3/46.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": 138
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 SEA -2.5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": 138
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:59Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 45.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Seahawks"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": 46.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Seahawks. DK ML via cleatz (Seahawks -162/49ers +136)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -162.0,
+        "ml_dog": 136.0
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": 46.5,
+        "ml_fav": -174.0,
+        "ml_dog": 146.0
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": 46.0,
+        "ml_fav": -173.0,
+        "ml_dog": 148.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": 46.5,
+        "ml_fav": -174,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": 46.0,
+        "ml_fav": -173,
+        "ml_dog": 148
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": 46.5,
+        "ml_fav": -174,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": 46.0,
+        "ml_fav": -173,
+        "ml_dog": 148
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Seahawks."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -174,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -173,
+        "ml_dog": 148
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -172,
+        "ml_dog": 144
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 46.5,
+        "ml_fav": -173,
+        "ml_dog": 148
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Elo (+3.9) and recent-scoring (-0.2) disagree by 4.1 pts -- discounting",
+      "Nick Bosa (SF EDGE) out, already priced (-1.0 away)"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-05T13:01:20Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "EDGE",
+          "player": "Nick Bosa",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Calf, out a few weeks (Sept 27)"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T17:07:56.564265+00:00",
+    "n": 10000,
+    "homeElo": 1694.4,
+    "awayElo": 1644.9,
+    "gamesSeen": 8,
+    "eloMarginHome": 3.9,
+    "statsMarginHome": -0.2,
+    "marginDivergence": 4.1,
+    "projTotal": 44.5,
+    "homeWinProbElo": 63.7,
+    "marketHomeSpread": -3,
+    "marketTotal": 46.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.0,
+    "projHomeMeanRaw": 24.2,
+    "projAwayMeanRaw": 20.3,
+    "projHomeMeanAdjusted": 24.2,
+    "projAwayMeanAdjusted": 19.3,
+    "injuryAdjustedMarginHome": 4.9,
+    "projTotalAdjusted": 43.5,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+3.9) and recent-scoring margin (-0.2) disagree by 4.1 points -- worth a second look before trusting either alone.",
+      "Away injury adjustment: -1.0 pts -- Nick Bosa (EDGE, out, -1.0).",
+      "San Francisco 49ers (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 62.1,
+    "awayWinPct": 35.3,
+    "tiePct": 2.6,
+    "medianHomeScore": 24,
+    "medianAwayScore": 19,
+    "coverPctHome": 55.5,
+    "overPct": 41.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.256478+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.126691+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.467707+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.088558+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-09T16:15:13.091259+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-09T21:05:22.079152+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.335112+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.193116+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-10T21:04:16.110644+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.357630+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-10-11T17:07:56.564265+00:00",
+      "marginHome": 4.9,
+      "total": 43.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-11T17:07:56Z",
+    "analysis": [
+      "Seahawks -3, total 47.5 (bet365 -3/46.5). Nick Bosa (calf) is out a few weeks for San Francisco. Sim has Seattle by 4.9.",
+      "Both models project fewer points (44.5 sim, 45.5 real) than the 47.5 posted."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 46.5 (DK)",
+        "confidence": 5,
+        "reasoning": "Total bounced back from 45.5 to 46.5 this cycle, reopening the gap against the sim (43.5) and the Darnold-led under read -- the earlier demote to $0 was for a total that had already fallen to 45.5; it has not stayed there. | Stake $15 \u00b7 pass at 45.5",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "Seahawks -2.5 (DK)",
+        "confidence": 3,
+        "reasoning": "Sim SEA by 4.9; 61% of handle on SEA. Thin. | Stake $0",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-09T21:15:07Z",
+    "status": "captured",
+    "source_note": "Daily current-line refresh: book line moved 227.5 -> ~231.5 per covers.com. FLAG for next research pass: covers.com's own model now projects Darnold OVER at 254.6 (25.6% EV), the opposite direction of our logged under lean -- not resolved this cycle, keeping the original under research intact rather than silently flipping it.",
+    "picks": [
+      {
+        "player": "Sam Darnold",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Darnold is averaging 187 yds on 23 attempts, against a 49ers defense that is 8th vs QBs, and Seattle is the home favorite. The line needs his best game of the year. | Stake $15 \u00b7 pass at 220.5",
+        "matchup": {
+          "opp_rank_vs_pos": 8,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (SF 61 pts; 859 pass yds)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "186.7 pass yds/g (3 games)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "23 attempts/g (69 in 3 games)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "SF 8th vs QB, 215 pass yds/g allowed"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "SEA -2.5 to -3 home fav, total 47.5"
+          },
+          {
+            "label": "Market",
+            "dir": "against",
+            "detail": "Books hang 30.5 attempts -- they expect more volume than he has shown"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 227.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 231.5,
+        "current_captured_at": "2026-10-09T21:15:07Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 55,
+      "handle_pct_home": 79
+    },
+    "total": {
+      "bets_pct_over": 63,
+      "handle_pct_over": 91
+    },
+    "moneyline": {
+      "bets_pct_home": 39,
+      "handle_pct_home": 25
+    },
+    "reverse_line_move": false,
+    "rlm_note": "79% of handle is on the home side but the spread hasn't moved yet (-3, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "final_score": {
+    "home": 29,
+    "away": 32
+  }
+}

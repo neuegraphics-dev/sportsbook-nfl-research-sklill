@@ -1,0 +1,210 @@
+{
+  "game_id": "panthers-falcons-2026-wk2",
+  "matchup": "Carolina Panthers @ Atlanta Falcons",
+  "week": "Week 2",
+  "kickoff": "2026-09-20T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-14",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -1.5,
+      "total": 44.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-14T15:06:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 44.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+    },
+    {
+      "captured_at": "2026-09-14T16:03:37Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -1.5,
+        "total": 43.5,
+        "ml_fav": -118,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "Full-refresh pass 2026-09-14 ~16:00 UTC, replacing this morning's consensus-preview placeholder. BookMaker.eu has not posted this game yet (confirmed live on its own board -- normal this far out, not a failed fetch). FanDuel fetched from its research page (today-dated). DraftKings via rotowire failed to render tonight -- logged null. Caesars via vegasinsider was unreliable this pass -- logged null."
+    },
+    {
+      "captured_at": "2026-09-15T12:36:14Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 44.0,
+        "ml_fav": -120,
+        "ml_dog": 102
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu fetched live (fresh Sep 15 6:30am PT board). DraftKings via rotowire.com failed to load (page returned only loading placeholders, no data). Caesars/DK cross-check via vegasinsider.com returned a stale Week 1 table (marked 'Last Updated: September 13, 2026', still showing Week 1 matchups) instead of Week 2 -- not a real current read, logged null rather than pass off Week 1 numbers as Week 2. FanDuel not attempted this pass (editorial page long since established frozen/stale). Sharp reference (BookMaker.eu) is the only confirmed-current book this cycle."
+    },
+    {
+      "captured_at": "2026-09-16T01:56:17Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 44.0,
+        "ml_fav": -120,
+        "ml_dog": 102
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 44.5,
+        "ml_fav": -125,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars via VegasInsider (spread only, totals unconfirmed); FanDuel source frozen/stale, logged null"
+    },
+    {
+      "captured_at": "2026-09-17T16:16:00Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 44,
+        "ml_fav": -137,
+        "ml_dog": 117
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 44.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire returned numbers byte-identical to the Sep 16 snapshot across the entire tracked slate despite a same-day freshness marker -- treated as a probable stale/non-refreshed source, not confirmed real 'no movement'. Caesars/VegasInsider page dated Sep 15 (2 days old) -- logged null rather than pass off a stale number. BookMaker.eu shows real movement on several games but without a second live book corroborating it today, treat that movement as informational only this cycle, not yet confirmed as a genuine market move. Also: VegasInsider/Caesars showed Falcons -2.5 favored, contradicting DK, BookMaker.eu, and an SI.com cross-check (all show Panthers favored by 1.5-2.5) -- another reason to discard that stale Caesars read rather than log a probable error."
+    },
+    {
+      "captured_at": "2026-09-18T13:38:39Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 44.0,
+        "ml_fav": -137,
+        "ml_dog": 117
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 44.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire (marked 'Last Verified: Sep 18 2026') and BookMaker.eu both returned numbers byte-identical to the Sep 17 snapshot across the ENTIRE tracked slate -- treated as a probable stale/non-refreshed source pass, not confirmed as genuine 'no movement' today. Caesars via VegasInsider still dated Sep 15 (3 days old) -- logged null. FanDuel's editorial page is established frozen/stale, not attempted this pass."
+    },
+    {
+      "captured_at": "2026-09-19T12:35:11Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 43.0,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "Systemic staleness this cycle: DraftKings via rotowire.com returned numbers byte-identical to the Sep 18 snapshot with a Sep-18-dated (not today) freshness marker -- treated as stale/non-refreshed, logged null rather than pass off yesterday's numbers as today's. Caesars/FanDuel via vegasinsider.com dated Sep 15/Sep 17 -- also stale, logged null. BookMaker.eu fetched live from its own board and moved on most games -- treat this movement as informational pending a US book actually repricing, not yet confirmed as a genuine market move (see systemic-divergence caution)."
+    },
+    {
+      "captured_at": "2026-09-20T12:44:48Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 43.0,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 44.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": null,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home-relative spread shown for Falcons (home); Panthers favored. Caesars via VegasInsider conflicted with DK/BookMaker.eu on which team is favored (likely a source extraction error) -- logged null rather than risk a wrong number. DK via rotowire last verified 2026-09-19."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-20",
+    "spread_lean": "Lean Panthers -1.5/-2.5 (fade home Falcons)",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Falcons starting Cooper Rush at QB for a second straight game with Michael Penix Jr. out (reportedly trending toward out for the season) -- WR1 Drake London also out this week",
+      "Situational: Falcons offense already trending down across the two games Rush has started, now also missing their top receiver -- Panthers already favored on the road makes sense given this, and it's the likely explanation for the Caesars figure conflicting with the other two books"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": true,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-20T12:45:04.990594+00:00",
+    "n": 10000,
+    "homeElo": 1438.9,
+    "awayElo": 1405.6,
+    "gamesSeen": 2,
+    "eloMarginHome": 3.3,
+    "statsMarginHome": 1.3,
+    "marginDivergence": 2.0,
+    "projTotal": 46.6,
+    "homeWinProbElo": 61.5,
+    "marketHomeSpread": 1.0,
+    "marketTotal": 44.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Only 2 logged game(s) across both teams -- leans are suppressed below 4 to avoid mistaking a cold-start rating gap for a real signal. Raw cover%/over% still shown below for reference."
+    ],
+    "homeWinPct": 57.8,
+    "awayWinPct": 39.5,
+    "tiePct": 2.7,
+    "medianHomeScore": 25,
+    "medianAwayScore": 22,
+    "coverPctHome": 62.2,
+    "overPct": 56.0
+  },
+  "wagertalk_angle": {
+    "pick": "Panthers +1.5",
+    "pick_team": "Carolina Panthers",
+    "pct": 80,
+    "system": "4-way stack: winless-road-small-number, lost-at-home-now-road, road-dog window, double-revenge home-favorite fade",
+    "why": "Carolina lost at home in the opener and is (a) now on the road (~62.5% ATS), (b) a +1 to +7.5 road dog off that loss (~71% ATS), and (c) winless with a small number on the road (~80% ATS). Separately, Atlanta was swept 2-0 by Carolina last season (30-0, then 30-27) and hosts them as a 1.5-pt favorite -- the double-revenge home-favorite spot covers only ~33% ATS for the favorite. Four independent historical systems all point the same direction.",
+    "stack_count": 4
+  },
+  "final_score": {
+    "home": 3,
+    "away": 34
+  }
+}

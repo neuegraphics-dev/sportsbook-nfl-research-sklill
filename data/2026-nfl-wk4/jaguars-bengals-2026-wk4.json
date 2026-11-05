@@ -1,0 +1,436 @@
+{
+  "game_id": "jaguars-bengals-2026-wk4",
+  "matchup": "Jacksonville Jaguars @ Cincinnati Bengals",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 50.5,
+      "ml_fav": -144,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Bengals -2.5 (home fav), matches Fox opening exactly. Total 50.5 vs Fox 51.5 opening. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 50.5,
+        "ml_fav": -144,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Bengals -2.5 (home fav), matches Fox opening exactly. Total 50.5 vs Fox 51.5 opening. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2,
+        "total": 51.5,
+        "ml_fav": -130,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars spread via vegasinsider.com (Bengals -2.5), close to DK's -2, same side."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:36Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2,
+        "total": 51.5,
+        "ml_fav": -130,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1): Bengals(home) -2. Caesars via vegasinsider.com: Jaguars(away) +2.5 -> home(Bengals) -2.5, same side. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.0,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "Jaguars +2.5 or better",
+    "total_lean": "Lean Under 50.5 (model 46.6)",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Large Elo gap favors Jacksonville (1655 vs 1477, ~178 pts) despite Cincinnati being the market's home favorite -- a real model-vs-market disagreement (model likes Jaguars by 5.2 net vs market favoring Bengals by 2.5, a 7.7-point gap)",
+      "One rookie Bengals WR already ruled out (minor, not a needle-mover) -- no starter-level injury found on either side otherwise",
+      "This is a single-category (team-strength model) signal without independent corroboration, so capped at Medium despite the size of the gap"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-03T12:01:43.794483+00:00",
+    "n": 10000,
+    "homeElo": 1476.7,
+    "awayElo": 1655.2,
+    "gamesSeen": 6,
+    "eloMarginHome": -5.2,
+    "statsMarginHome": -4.2,
+    "marginDivergence": -1.0,
+    "projTotal": 46.6,
+    "homeWinProbElo": 32.0,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 51.5,
+    "homeInjuryPts": -2.3,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.7,
+    "projAwayMeanRaw": 25.9,
+    "projHomeMeanAdjusted": 18.4,
+    "projAwayMeanAdjusted": 25.9,
+    "injuryAdjustedMarginHome": -7.5,
+    "projTotalAdjusted": 44.3,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -2.3 pts -- Tee Higgins (WR, out, -1.5), Jessie Bates III (S, out, -0.8)."
+    ],
+    "homeWinPct": 29.1,
+    "awayWinPct": 68.5,
+    "tiePct": 2.3,
+    "medianHomeScore": 18,
+    "medianAwayScore": 26,
+    "coverPctHome": 24.4,
+    "overPct": 30.5
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:33Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 39,
+      "handle_pct_home": 74
+    },
+    "total": {
+      "bets_pct_over": 79,
+      "handle_pct_over": 61
+    },
+    "moneyline": {
+      "bets_pct_home": 40,
+      "handle_pct_home": 55
+    },
+    "reverse_line_move": true,
+    "rlm_note": "74% of handle is on the home side but the spread moved AGAINST them (-2.5 -> -2) -- real reverse line move toward away.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-01T01:29:20Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser",
+    "picks": [
+      {
+        "player": "Trevor Lawrence",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "theScore",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Model and a tough road environment both argue for a lower passing total than the line.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 225.2 vs 263.5 line, -38.3 diff, 26.35% edge"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Our sim has CIN favored, consistent with JAX playing from behind and leaning run-control rather than a pass-heavy script"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "No confirmed CIN pass-D rank vs this specific opponent quality yet"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 263.5,
+        "opening_captured_at": "2026-10-01T01:29:20Z",
+        "current_line": 263.5,
+        "current_captured_at": "2026-10-01T01:29:20Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 245,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 189,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 182,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 3,
+          "misses": 0,
+          "pushes": 0,
+          "total": 3,
+          "pct": 100,
+          "line": 263.5,
+          "lean": "under"
+        }
+      },
+      {
+        "player": "Joe Burrow",
+        "team": "home",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Burrow has shown a real willingness to extend plays with his legs this year.",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 11.6 vs 7.5 line, +4.1 diff, 25.3% edge"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Burrow has taken more designed/scramble rush attempts than in past years"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "CIN a home favorite, no strong pace signal either way"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 7.5,
+        "opening_captured_at": "2026-10-01T01:29:20Z",
+        "current_line": 7.5,
+        "current_captured_at": "2026-10-01T01:29:20Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 20,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": -1,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 13,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 7.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Ja'Marr Chase",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "user screenshot (sportsbook app)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Chase is trending well above this line the last two weeks and the game projects as one of the highest-scoring on the Week 4 board.",
+        "matchup": {
+          "opp_rank_vs_pos": 16,
+          "rank_basis": "Jaguars overall pass defense, 235.7 pass yds/g allowed, 16th of 32 this season"
+        },
+        "factors": [
+          {
+            "label": "Recent trend",
+            "dir": "for",
+            "detail": "75 and 98 receiving yards the last two games, both well above this 78.5 line, after a quiet 12-yard Week 1"
+          },
+          {
+            "label": "Game total",
+            "dir": "for",
+            "detail": "Corrected game total is 50.5, the second-highest on the Week 4 board, a real-shootout environment that supports high passing volume"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "Jaguars pass defense ranks a middling 16th of 32 (235.7 yds/g allowed) -- not a soft matchup, but not a shutdown one either"
+          },
+          {
+            "label": "Season average",
+            "dir": "against",
+            "detail": "Season average (61.7 yds/g) still sits below this line; the two most recent games are carrying the trend"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 78.5,
+        "opening_captured_at": "2026-09-29T17:10:33Z",
+        "current_line": 78.5,
+        "current_captured_at": "2026-09-29T17:10:33Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 12,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 75,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 98,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 1,
+          "misses": 2,
+          "pushes": 0,
+          "total": 3,
+          "pct": 33,
+          "line": 78.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-03T12:02:05Z",
+    "analysis": [
+      "Three signals now point the same direction on Jacksonville. The model already favored the Jaguars well beyond the market on Elo/recent-form alone; this week Cincinnati is also confirmed to be without both Tee Higgins (shoulder) and Jessie Bates III (the Bengals elevated a practice-squad safety to cover for him), pushing the injury-adjusted model margin to Jaguars by 7.5 against a market that still has the Bengals favored by 2.5. The public money (74% of handle) is still on Cincinnati, but the line has already moved away from them (-2.5 to -2) -- a real reverse line move that lines up with, not against, the injury news.",
+      "That combination -- model edge, confirmed injuries to a true No. 2 weapon and a starting safety, and a line already drifting the sharp direction -- is about as corroborated as this slate gets. The total also leans down (44.3 model vs 51.5 market) now that Cincinnatis offense is shorthanded."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Jaguars +2.5 or better",
+        "confidence": 8,
+        "reasoning": "Model, confirmed injuries (Higgins + Bates both out), and the lines own reverse move all agree on the same side.",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Under 51.5",
+        "confidence": 5,
+        "reasoning": "Cincinnatis offense is down its No. 2 WR and starting safety is a defensive loss not an offensive one, but a shorthanded Bengals passing attack still trims the total read.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.458963+00:00",
+      "marginHome": -5.2,
+      "total": 46.6
+    },
+    {
+      "run_at": "2026-10-03T12:01:43.794483+00:00",
+      "marginHome": -7.5,
+      "total": 44.3
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-10-03T12:01:43Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Tee Higgins",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Shoulder, officially ruled OUT vs Jaguars; Jamarr Chase remains Cincinnatis true WR1 so this is a significant complementary loss, not a full alpha hit"
+        },
+        {
+          "position": "S",
+          "player": "Jessie Bates III",
+          "status": "out",
+          "pts": -0.8,
+          "note": "Officially OUT; Bengals elevated a practice-squad safety to fill in, a real starter-level secondary downgrade"
+        }
+      ],
+      "items_total_pts": -2.3,
+      "stacking_notes": [],
+      "total_pts": -2.3
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 17,
+    "away": 22
+  }
+}

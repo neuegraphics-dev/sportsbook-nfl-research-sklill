@@ -1,0 +1,165 @@
+{
+  "game_id": "jets-chiefs-2026-wk9",
+  "matchup": "New York Jets @ Kansas City Chiefs",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -10,
+      "total": 46.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": -9.5,
+      "total": 46.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": -10,
+      "total": 46,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -9.5,
+        "total": 46.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -10,
+        "total": 46,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 46,
+        "ml_fav": -447,
+        "ml_dog": 349
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": -9.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 46,
+        "ml_fav": -447,
+        "ml_dog": 349
+      },
+      "draftkings": {
+        "spread": -9.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.660767+00:00",
+    "n": 10000,
+    "homeElo": 1577.4,
+    "awayElo": 1297.7,
+    "gamesSeen": 15,
+    "eloMarginHome": 13.1,
+    "statsMarginHome": 4.1,
+    "marginDivergence": 9.0,
+    "projTotal": 44.1,
+    "homeWinProbElo": 86.8,
+    "marketHomeSpread": -9.5,
+    "marketTotal": 46,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 28.6,
+    "projAwayMeanRaw": 15.5,
+    "projHomeMeanAdjusted": 28.6,
+    "projAwayMeanAdjusted": 15.5,
+    "injuryAdjustedMarginHome": 13.1,
+    "projTotalAdjusted": 44.1,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+13.1) and recent-scoring margin (+4.1) disagree by 9.0 points -- worth a second look before trusting either alone.",
+      "Kansas City Chiefs (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Rashee Rice (-2.0), Josh Simmons (-1.0) [-3.0 pts total]; Rashee Rice (-1.8), Josh Simmons (-1.2), Jaylon Moore (-0.8), Brashard Smith (-0.2), L'Jarius Sneed (-0.3) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "New York Jets (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-0.5), Max Mitchell (-0.8), Joseph Ossai (-0.8), Francisco Mauigoa (-0.3), Dylan Parham (-0.3) [-2.7 pts total]; Breece Hall (-1.0), Max Mitchell (-0.5), Joseph Ossai (-0.4), David Bailey (-0.4) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 80.8,
+    "awayWinPct": 17.4,
+    "tiePct": 1.8,
+    "medianHomeScore": 29,
+    "medianAwayScore": 16,
+    "coverPctHome": 59.9,
+    "overPct": 44.6
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.181911+00:00",
+      "marginHome": 13.1,
+      "total": 44.1
+    },
+    {
+      "run_at": "2026-11-03T15:29:11.141901+00:00",
+      "marginHome": 13.1,
+      "total": 44.1
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.660767+00:00",
+      "marginHome": 13.1,
+      "total": 44.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Kansas City Chiefs by 13.1 (injury-adjusted) against a market that has Kansas City Chiefs favored by 10, a 3.1-point gap; sim cover% for Kansas City Chiefs is 58.4% and projected total is 44.1 vs 46 (over 44.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

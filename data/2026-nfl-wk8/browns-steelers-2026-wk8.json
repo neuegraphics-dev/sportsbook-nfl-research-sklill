@@ -1,0 +1,350 @@
+{
+  "game_id": "browns-steelers-2026-wk8",
+  "matchup": "Cleveland Browns @ Pittsburgh Steelers",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -4.5,
+      "total": 39,
+      "ml_fav": -205,
+      "ml_dog": 188
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -4.5,
+        "total": 39,
+        "ml_fav": -205,
+        "ml_dog": 188
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": {
+        "spread": -4,
+        "total": 38,
+        "ml_fav": -191,
+        "ml_dog": 161
+      },
+      "draftkings": {
+        "spread": -4.5,
+        "total": 39,
+        "ml_fav": -205,
+        "ml_dog": 188
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -4,
+        "total": 38.5,
+        "ml_fav": -184,
+        "ml_dog": 155
+      },
+      "draftkings": {
+        "spread": -3.5,
+        "total": 39,
+        "ml_fav": -180,
+        "ml_dog": 175
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -4,
+        "total": 38.5,
+        "ml_fav": -184,
+        "ml_dog": 155
+      },
+      "draftkings": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -3.5,
+        "total": 38.5,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 38.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 38.5,
+        "ml_fav": -198,
+        "ml_dog": 166
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 39.0,
+        "ml_fav": -190,
+        "ml_dog": 159
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T17:03:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 38.5,
+        "ml_fav": -198,
+        "ml_dog": 164
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 38.5,
+        "ml_fav": -205,
+        "ml_dog": 172
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 39.0,
+        "ml_fav": -197,
+        "ml_dog": 165
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~17:05Z (12:05pm ET). BookMaker.eu null (stale board)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "PIT -3.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Elo 7.0 / scoring 1.7, blended 4.4",
+      "PIT 4th vs QB",
+      "67% handle CLE, line held"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T17:03:46.429147+00:00",
+    "n": 10000,
+    "homeElo": 1575.2,
+    "awayElo": 1448.3,
+    "gamesSeen": 15,
+    "eloMarginHome": 7.0,
+    "statsMarginHome": 1.7,
+    "marginDivergence": 5.3,
+    "projTotal": 38.8,
+    "homeWinProbElo": 73.2,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 39.0,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 22.9,
+    "projAwayMeanRaw": 15.9,
+    "projHomeMeanAdjusted": 22.9,
+    "projAwayMeanAdjusted": 15.9,
+    "injuryAdjustedMarginHome": 7.0,
+    "projTotalAdjusted": 38.8,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+7.0) and recent-scoring margin (+1.7) disagree by 5.3 points -- worth a second look before trusting either alone.",
+      "Pittsburgh Steelers (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Michael Pittman Jr. (-0.8), DeShon Elliott (-0.8), Jamel Dean (-0.8) [-2.2 pts total]; Michael Pittman Jr. (-0.8), DeShon Elliott (-0.8), Jamel Dean (-0.8) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Cleveland Browns (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Dillon Gabriel (-2.0), Denzel Ward (-0.3), Teven Jenkins (-0.4), Kalia Davis (-0.5), Mike Hall Jr. (-0.5) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 67.7,
+    "awayWinPct": 29.7,
+    "tiePct": 2.6,
+    "medianHomeScore": 23,
+    "medianAwayScore": 16,
+    "coverPctHome": 59.7,
+    "overPct": 49.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:07.788626+00:00",
+      "marginHome": 6.8,
+      "total": 40.7
+    },
+    {
+      "run_at": "2026-10-26T13:09:26.951243+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.518701+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.415394+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:36.821025+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.582613+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.706295+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.642932+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-11-01T01:52:14.976888+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-11-01T13:12:55.887236+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-11-01T13:40:00.836101+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    },
+    {
+      "run_at": "2026-11-01T17:03:46.429147+00:00",
+      "marginHome": 7.0,
+      "total": 38.8
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Steelers by 7.0 on Elo, but only 1.7 on 2026 scoring; projected total 38.8 vs 38.5. Steelers -3.5 cover in 58.2% of Elo runs. 67% of spread handle is on Cleveland and the line has held at 3.5.",
+      "Blending the two methods still lands above 3.5 (about 4.4), and Pittsburgh ranks 4th vs QBs (CBS), a tough draw for Deshaun Watson. The Elo/scoring split keeps this at 5, not higher."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "PIT -3.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Blended margin about 4.4 clears 3.5; Pittsburgh's pass defense is top-5. | Stake $12 \u00b7 pass at -4",
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "PIT by 7.0 vs 3.5"
+          },
+          {
+            "label": "Scoring margin",
+            "dir": "against",
+            "detail": "2026 scoring only PIT by 1.7"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "PIT 4th-toughest vs QBs (13.4 fpts/g, CBS)"
+          },
+          {
+            "label": "Public money",
+            "dir": "neutral",
+            "detail": "67% of handle on CLE +3.5, line unmoved"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 37,
+      "handle_pct_home": 33
+    },
+    "total": {
+      "bets_pct_over": 59,
+      "handle_pct_over": 46
+    },
+    "moneyline": {
+      "bets_pct_home": 74,
+      "handle_pct_home": 87
+    },
+    "reverse_line_move": false,
+    "rlm_note": "67% of handle is on the away side and the spread has moved toward them (-4.5 -> -3.5) -- money and line agree, no RLM.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 27,
+    "away": 6
+  }
+}

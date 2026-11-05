@@ -1,0 +1,444 @@
+{
+  "game_id": "texans-colts-2026-wk3",
+  "matchup": "Houston Texans @ Indianapolis Colts",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 2.5,
+      "total": 45.5,
+      "ml_fav": -135,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -135,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 43.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 43.5,
+        "ml_fav": -140,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 43.5,
+        "ml_fav": -140,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Texans(away) favored, all 3 sources agree on spread; total gap DK 43.5 vs BME 42.5."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 42.5,
+        "ml_fav": -129,
+        "ml_dog": 110
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 43.5,
+        "ml_fav": -140,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:30:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 43.5,
+        "ml_fav": -140,
+        "ml_dog": 130
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data) but its last read (9/24) had the total at 42.5, down from 43.5 -- reinforcing the Under lean already in place. DK/Caesars both steady on the spread. NEW: Colts WR Alec Pierce (heel) also expected out -- a complementary piece, partially offsetting (not fully) the Collins-out edge for Houston since Indys own passing game is now also touched."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "IND +2.5 -- still the lean, Collins reconfirmed out for a 2nd day, though Pierce (IND) also out slightly tempers the edge",
+    "total_lean": "Under -- unchanged, BookMaker.eus last read continued to drift the total down before this cycles fetch issue",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Nico Collins reconfirmed unlikely to play for a 2nd straight day -- same designation, no new material change",
+      "NEW: Colts WR Alec Pierce also expected out (heel) -- a complementary piece, modestly offsets the Collins-out edge",
+      "BookMaker.eus last live total read continued drifting down earlier this week, reinforcing the Under before this cycles source issue"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:30:02.607535+00:00",
+    "n": 10000,
+    "homeElo": 1506.3,
+    "awayElo": 1541.9,
+    "gamesSeen": 4,
+    "eloMarginHome": 0.5,
+    "statsMarginHome": 0.1,
+    "marginDivergence": 0.4,
+    "projTotal": 48.2,
+    "homeWinProbElo": 51.8,
+    "marketHomeSpread": 1.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": -0.5,
+    "awayInjuryPts": -2.0,
+    "projHomeMeanRaw": 24.4,
+    "projAwayMeanRaw": 23.9,
+    "projHomeMeanAdjusted": 23.9,
+    "projAwayMeanAdjusted": 21.9,
+    "injuryAdjustedMarginHome": 2.0,
+    "projTotalAdjusted": 45.8,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -0.5 pts -- Alec Pierce (WR, out, -0.5).",
+      "Away injury adjustment: -2.0 pts -- Nico Collins (WR, out, -2.0)."
+    ],
+    "homeWinPct": 53.9,
+    "awayWinPct": 43.2,
+    "tiePct": 2.9,
+    "medianHomeScore": 24,
+    "medianAwayScore": 22,
+    "coverPctHome": 59.6,
+    "overPct": 56.2
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:29:25Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Alec Pierce",
+          "status": "out",
+          "pts": -0.5,
+          "note": "NEW this cycle -- confirmed expected out (heel). Colts complementary WR, not a bell-cow -- role-tier penalty."
+        }
+      ],
+      "items_total_pts": -0.5,
+      "stacking_notes": [],
+      "total_pts": -0.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Nico Collins",
+          "status": "out",
+          "pts": -2.0,
+          "note": "Unchanged -- reconfirmed today (Grade 1 hamstring), still described as unlikely to play."
+        }
+      ],
+      "items_total_pts": -2.0,
+      "stacking_notes": [],
+      "total_pts": -2.0
+    }
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:32:49Z",
+    "analysis": [
+      "Nico Collins remains confirmed unlikely to play for a 2nd straight day, and thats still the dominant driver here -- it flips the models own read from a slight Texans favorite to a 2.5-point Colts favorite once applied. New this morning: Colts WR Alec Pierce is also expected out (heel), a complementary piece that trims the edge slightly since Indianapolis own passing game takes a small hit too. Net of both, the model still favors Indianapolis, with 59.6% of sims covering the home number -- a real but slightly smaller edge than earlier in the week.",
+      "The total lean is softer than the spread read -- the model still projects 45.8 combined points, above the markets 43.5, so the Under isnt independently confirmed by the number itself despite the same injury news; treat it as a smaller, directionally-consistent note rather than a separate play."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "IND +2.5",
+        "confidence": 6,
+        "reasoning": "Collins out still flips the models read to Colts-favored, though Pierce also being out for Indianapolis trims the edge slightly from earlier in the week -- 59.6% of sims cover.",
+        "best_bet": true,
+        "factors": [
+          {
+            "label": "Injury flip",
+            "dir": "for",
+            "detail": "Collins out (-2.0 pts) flips the model to IND +2.5"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "59.6% of sims have Indianapolis covering"
+          },
+          {
+            "label": "Offsetting injury",
+            "dir": "against",
+            "detail": "Pierce (IND) also out (-0.5 pts) trims the edge from earlier readings (was 64.2% cover, now 59.6%)"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      },
+      {
+        "market": "total",
+        "pick": "No independent edge",
+        "confidence": 2,
+        "reasoning": "Model total (45.8) still sits above the market (43.5) despite the Under-supporting injury news -- the number itself doesnt confirm a total play.",
+        "best_bet": false
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "IND +2.5",
+    "pick_team": "Indianapolis Colts",
+    "pct": 53.8,
+    "system": "divisional underdogs",
+    "why": "Colts are the HOME underdog in a full AFC South divisional game -- same documented system, and it stacks with the model own strong injury-driven lean on the same side (Colts +2.5, 7/10 confidence).",
+    "stack_count": 1,
+    "applied_at": "2026-09-25T13:50:42.959832+00:00",
+    "checks": [
+      {
+        "key": "divisional_underdogs",
+        "label": "divisional underdogs",
+        "pct": 53.8,
+        "why": "Colts are the HOME underdog in a full AFC South divisional game -- same documented system, and it stacks with the model own strong injury-driven lean on the same side (Colts +2.5, 7/10 confidence).",
+        "applies": true,
+        "mechanism": "Divisional dogs outperform non-divisional dogs (50.5% over the same span) -- familiarity/rivalry keeps games closer.",
+        "source": "NFLBettingSystems.com",
+        "baseline_pct": 53.8
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "Marco",
+      "pick": "Houston Texans (ATS, road cover)",
+      "best_bet": true,
+      "note": "Marco's Best Bet (35:23-40:12) -- backing Houston to cover on the road despite their 0-2 record."
+    }
+  ],
+  "market_signal": {
+    "captured_at": "2026-09-27T13:30:02Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 43,
+      "handle_pct_home": 33
+    },
+    "total": {
+      "bets_pct_over": 70,
+      "handle_pct_over": 82
+    },
+    "moneyline": null,
+    "reverse_line_move": false,
+    "rlm_note": "67% of handle is on the away side but the spread hasn't moved yet (+2.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: IND is home/dog."
+  },
+  "props": {
+    "last_checked": "2026-09-24T20:17:38Z",
+    "status": "captured",
+    "source_note": "FanDuel/bet365 via scoresandodds.com + BetMGM trend data, captured 2026-09-24",
+    "picks": [
+      {
+        "player": "Jonathan Taylor",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "Houston has the league's best run defense by early-season numbers and shut Taylor down badly in their last meeting.",
+        "matchup": {
+          "opp_rank_vs_pos": 2,
+          "rank_basis": "footballdb fantasy pts allowed to RB, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Texans allowed just 86 and 85 rush yards in their first two games, 2nd-best vs RB"
+          },
+          {
+            "label": "History",
+            "dir": "for",
+            "detail": "Last H2H (Wk18 last season) Taylor managed only 26 yards on 14 carries (1.9 ypc) vs this front"
+          },
+          {
+            "label": "Role",
+            "dir": "against",
+            "detail": "Taylor is Indy's clear bell-cow, 98 and 92 rush yds in his first two games this year at 5+ ypc"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Texans are 0-2 and desperate as favorites, could stack the box early if Colts trail"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 81.5,
+        "opening_captured_at": "2026-09-24T20:17:38Z",
+        "current_line": 81.5,
+        "current_captured_at": "2026-09-24T20:17:38Z"
+      },
+      {
+        "player": "C.J. Stroud",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Colts have the league's worst pass defense and Stroud has a strong recent Over trend, even with his top WR already out.",
+        "matchup": {
+          "opp_rank_vs_pos": 32,
+          "rank_basis": "footballdb fantasy pts allowed to QB, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Colts pass D ranks 32nd (worst), allowing 353 pass yds/gm through 2 weeks"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "Stroud hit passing-yards Over in 11 of last 15 games per BetMGM (+6.40u/37% ROI)"
+          },
+          {
+            "label": "Injury",
+            "dir": "against",
+            "detail": "WR1 Nico Collins already out (hamstring) -- hurt efficiency already in Wk2"
+          },
+          {
+            "label": "OL",
+            "dir": "neutral",
+            "detail": "Missing OT Trenton Brown, 7 sacks allowed through 2 games -- shorter pocket but could inflate attempts via checkdowns"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 233.5,
+        "opening_captured_at": "2026-09-24T20:17:38Z",
+        "current_line": 233.5,
+        "current_captured_at": "2026-09-24T20:17:38Z"
+      },
+      {
+        "player": "Xavier Hutchinson",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Inherits a clear target-share bump with Nico Collins already out, against a Colts defense that is one of the softest vs WR in the league.",
+        "matchup": {
+          "opp_rank_vs_pos": 31,
+          "rank_basis": "footballdb fantasy pts allowed to WR, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "Hit receiving-yards Over in 13 of last 17 games per BetMGM (+8.45u/43% ROI)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Colts pass D ranks 31st vs WR, allowing 29.0 fantasy pts/gm to the position"
+          },
+          {
+            "label": "Role",
+            "dir": "for",
+            "detail": "Nico Collins already logged OUT -- Hutchinson is Stroud's primary outside option"
+          },
+          {
+            "label": "Competition",
+            "dir": "against",
+            "detail": "TE Dalton Schultz and pass-catching backs could cap his ceiling even with Collins out"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 38.5,
+        "opening_captured_at": "2026-09-24T20:17:38Z",
+        "current_line": 38.5,
+        "current_captured_at": "2026-09-24T20:17:38Z"
+      }
+    ]
+  },
+  "final_score": {
+    "home": 19,
+    "away": 17
+  }
+}

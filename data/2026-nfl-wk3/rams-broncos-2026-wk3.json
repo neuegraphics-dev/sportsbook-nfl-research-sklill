@@ -1,0 +1,353 @@
+{
+  "game_id": "rams-broncos-2026-wk3",
+  "matchup": "Los Angeles Rams @ Denver Broncos",
+  "week": "Week 3",
+  "kickoff": "2026-09-28T00:20:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 2.5,
+      "total": 46.5,
+      "ml_fav": -132,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 46.5,
+        "ml_fav": -132,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:09Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -145,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 46.5,
+        "ml_fav": -132,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:30Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 45.0,
+        "ml_fav": -143,
+        "ml_dog": 122
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -134,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Rams(away) favored, all 3 agree on spread."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 45.0,
+        "ml_fav": -145,
+        "ml_dog": 123
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -134,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:28:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -134,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday-eve check (SNF). BookMaker.eu still hasnt posted this game (confirmed unavailable, not just this cycles wrong-week issue). DK/Caesars steady at LAR -2.5. Nacua upgraded to doubtful (DNP all week), Kinchens (S) also now doubtful -- both new since Wed. A sharp-money piece (SI Betting Vegas) claims sharps are backing Denver getting points, though the article read as somewhat garbled/unreliable and cleatz itself shows LAR getting both more tickets AND more handle (69/70%) -- no clean divergence to confirm the sharp claim independently."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "Small lean Broncos +2.5 -- Nacua upgraded to doubtful and Kinchens also doubtful, both new since Wed, stacking on LARs side; treat as a lean not a best bet given the one sharp-money source is unreliable and cleatz shows no ticket/handle divergence to confirm it independently",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Puka Nacua (WR1/alpha) upgraded to doubtful, DNP all week -- real, confirmed development",
+      "Kam Kinchens (S) also new-doubtful this week -- second Rams starter banged up",
+      "One sharp-money source claims Denver getting backed but its unconfirmed by cleatzs own split -- flagged, not relied on alone"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:28:50.015308+00:00",
+    "n": 10000,
+    "homeElo": 1580.2,
+    "awayElo": 1635.8,
+    "gamesSeen": 4,
+    "eloMarginHome": -0.3,
+    "statsMarginHome": -2.2,
+    "marginDivergence": 1.9,
+    "projTotal": 42.8,
+    "homeWinProbElo": 48.9,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 45.5,
+    "homeInjuryPts": -0.5,
+    "awayInjuryPts": -2.0,
+    "projHomeMeanRaw": 21.3,
+    "projAwayMeanRaw": 21.6,
+    "projHomeMeanAdjusted": 20.8,
+    "projAwayMeanAdjusted": 19.6,
+    "injuryAdjustedMarginHome": 1.2,
+    "projTotalAdjusted": 40.3,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -0.5 pts -- Jonah Coleman (RB, out, -0.5).",
+      "Away injury adjustment: -2.0 pts -- Puka Nacua (WR, doubtful, -1.5), Kam Kinchens (S, doubtful, -0.5)."
+    ],
+    "homeWinPct": 51.2,
+    "awayWinPct": 45.9,
+    "tiePct": 2.9,
+    "medianHomeScore": 21,
+    "medianAwayScore": 20,
+    "coverPctHome": 59.6,
+    "overPct": 35.6
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:32:49Z",
+    "analysis": [
+      "Puka Nacua was upgraded from questionable to doubtful this morning after DNPing all week (hip/groin, on top of already missing Week 2 entirely), and starting safety Kam Kinchens is now also doubtful -- both new since midweek. Once priced in, the model tips toward Denver, projecting the Broncos to cover the home number 60% of the time, with the total also drifting under (40.3 projected vs 45.5 market, 64% of sims Under).",
+      "One outside source claimed sharp money is backing Denver, but cleatzs own ticket/handle split shows no divergence (69/70% on the Rams, tickets and money aligned) -- so treat this as a real but moderate injury-driven lean, not a confirmed sharp-money story."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "DEN +2.5",
+        "confidence": 6,
+        "reasoning": "Nacua upgraded to doubtful and Kinchens also newly doubtful tips the injury-adjusted model to Denver (+1.2 margin) against a Rams -2.5 market number, 59.6% of sims cover.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Injury",
+            "dir": "for",
+            "detail": "Rams (away) -2.0 pts -- Nacua doubtful, Kinchens doubtful, both new this week"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "59.6% of sims have Denver covering"
+          },
+          {
+            "label": "Sharp money claim",
+            "dir": "neutral",
+            "detail": "One outside source claims sharp money on Denver, but cleatzs own split shows no divergence -- unconfirmed independently"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        }
+      },
+      {
+        "market": "total",
+        "pick": "Under 45.5",
+        "confidence": 6,
+        "reasoning": "Same injury picture drags the model total to 40.3 against a 45.5 market, 64.4% of sims Under.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model 40.3 vs market 45.5"
+          },
+          {
+            "label": "Sim Under%",
+            "dir": "for",
+            "detail": "64.4% of sims land Under"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "KIV",
+      "pick": "Denver Broncos +2.5 (teaser piece)",
+      "best_bet": false,
+      "note": "KIV suggests Denver as a teaser play (5:11-7:16)."
+    }
+  ],
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "Kyren Williams",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Best matchup on the board: Denver has been gashed by RBs (143 rush yds/g) and Kyren just ran 12-85 as LA's lead back in a favored road spot.",
+        "opening_line": 55.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 55.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DEN 29th vs RBs (25.0 pts/g); 286 RB rush yds allowed in 2 games (143/g)"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "Wk2 vs NYG: 12 car, 85 yds (7.1 YPC) + a receiving TD"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "LAR -2.5 road fav -- neutral-to-positive script for the lead back"
+          },
+          {
+            "label": "Volume",
+            "dir": "against",
+            "detail": "Only 12 carries in Wk2 -- needs ~4.6 YPC on that load"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:28:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 31,
+      "handle_pct_home": 30
+    },
+    "total": null,
+    "moneyline": null,
+    "reverse_line_move": false,
+    "rlm_note": "70% of handle is on the away side but the spread hasn't moved yet (+2.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Home-relative: DEN is home/dog. No divergence between bets/handle -- straight public number, no RLM signal here."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:28:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Jonah Coleman",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Confirmed OUT (ankle) -- Broncos backfield depth piece, RJ Harvey/Dobbins both full go so limited net effect."
+        }
+      ],
+      "items_total_pts": -0.5,
+      "stacking_notes": [],
+      "total_pts": -0.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Puka Nacua",
+          "status": "doubtful",
+          "pts": -1.5,
+          "note": "Upgraded questionable-to-doubtful (hip/groin), DNP all week per HC McVay. True WR1/alpha, already missed Wk2 entirely -- bumped from -1.0 (questionable) given the doubtful tag and full-week DNP."
+        },
+        {
+          "position": "S",
+          "player": "Kam Kinchens",
+          "status": "doubtful",
+          "pts": -0.5,
+          "note": "Doubtful (hamstring), DNP all week -- starting safety, new this cycle."
+        }
+      ],
+      "items_total_pts": -2.0,
+      "stacking_notes": [],
+      "total_pts": -2.0
+    }
+  },
+  "final_score": {
+    "home": 30,
+    "away": 26
+  }
+}

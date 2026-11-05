@@ -1,0 +1,329 @@
+{
+  "game_id": "chiefs-dolphins-2026-wk3",
+  "matchup": "Kansas City Chiefs @ Miami Dolphins",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 8.5,
+      "total": 44.5,
+      "ml_fav": -455,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 8.5,
+        "total": 44.5,
+        "ml_fav": -455,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": 11.5,
+        "total": 45.5,
+        "ml_fav": -688,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 10.5,
+        "total": 46.5,
+        "ml_fav": -750,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 10.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 11.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars/BME slightly higher than DK/FD on Chiefs number"
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": 11.5,
+        "total": 46.0,
+        "ml_fav": -658,
+        "ml_dog": 482
+      },
+      "draftkings": {
+        "spread": 10.5,
+        "total": 46.5,
+        "ml_fav": -750,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 11.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Chiefs(away) heavy favorite; DK ML(-750) notably steeper than BME(-658) -- book divergence on price, not on the number itself."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 11.5,
+        "total": 46.0,
+        "ml_fav": -658,
+        "ml_dog": 482
+      },
+      "draftkings": {
+        "spread": 10.5,
+        "total": 46.5,
+        "ml_fav": -750,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:25:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 10.5,
+        "total": 46.5,
+        "ml_fav": -750,
+        "ml_dog": 575
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 10.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK/Caesars steady at KC -10.5/-10 since Fri. No new starter-out news for either side this AM -- Mahomes/Rice full go, MIA's Beal/Douglas are depth-tier."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- steady chalk number, no fresh driver",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "No new starter-level injury news this AM for either side"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:25:35.096512+00:00",
+    "n": 10000,
+    "homeElo": 1381.7,
+    "awayElo": 1574.6,
+    "gamesSeen": 4,
+    "eloMarginHome": -5.8,
+    "statsMarginHome": -4.7,
+    "marginDivergence": -1.1,
+    "projTotal": 45.8,
+    "homeWinProbElo": 30.3,
+    "marketHomeSpread": 10.0,
+    "marketTotal": 46.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.0,
+    "projAwayMeanRaw": 25.8,
+    "projHomeMeanAdjusted": 20.0,
+    "projAwayMeanAdjusted": 25.8,
+    "injuryAdjustedMarginHome": -5.8,
+    "projTotalAdjusted": 45.8,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [],
+    "homeWinPct": 32.3,
+    "awayWinPct": 65.5,
+    "tiePct": 2.2,
+    "medianHomeScore": 20,
+    "medianAwayScore": 26,
+    "coverPctHome": 61.6,
+    "overPct": 48.2
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-25T13:42:28Z",
+    "analysis": [
+      "This is a rare case where the model thinks the market has the favorite priced too high. Miami is a home underdog getting a massive number -- DraftKings has it at +10.5, with Caesars and BookMaker.eu even more generous to the Dolphins at +11.5 -- but the model's own projected margin for the Chiefs is only 5.8 points, well short of either number. No injuries were found for either side this cycle, so this isn't an injury-driven read, just a straightforward Elo-vs-market gap on a big number.",
+      "That's the kind of divergence worth a second look precisely because 10.5-11.5 is a lot of points to lay, and 66.5% of sim runs have Miami covering the market number -- the model isn't saying Kansas City loses, just that this number is more than the matchup supports on paper."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "MIA +10.5 (DraftKings)",
+        "confidence": 6,
+        "reasoning": "Model margin (5.8) sits well inside the market's 10.5-11.5 range (DraftKings at the low end, Caesars/BookMaker.eu at the high end), and 66.5% of sims have Miami covering -- a real gap, though only a single signal with no injury confirmation.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "-5.8 (Chiefs favored, but far less than the market's 10.5-11.5 gap)"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "66.5% of sims have Miami covering"
+          },
+          {
+            "label": "Signal agreement",
+            "dir": "for",
+            "detail": "Elo (-5.8) and recent form (-4.7) nearly agree -- only 1.1pt divergence"
+          },
+          {
+            "label": "Confirmation",
+            "dir": "against",
+            "detail": "Single signal with no injury news backing it up this cycle"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:25:35Z",
+    "source": "cleatz.com",
+    "spread": null,
+    "total": null,
+    "moneyline": {
+      "bets_pct_home": 96,
+      "handle_pct_home": 92
+    },
+    "reverse_line_move": null,
+    "rlm_note": null,
+    "note": "Home-relative: MIA is home/dog; ML pct above is KC's (favorite) share. Cleatz did not post a spread/total ticket split for this game this cycle."
+  },
+  "props": {
+    "last_checked": "2026-09-24T20:17:21Z",
+    "status": "captured",
+    "source_note": "FanDuel via BetMGM/SportsGrid roundups, captured 2026-09-24",
+    "picks": [
+      {
+        "player": "Kenneth Walker III",
+        "team": "away",
+        "position": "RB",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 7,
+        "reasoning": "Dolphins are a bottom-tier matchup for a receiving back and FanDuel's own model projects him well above this number.",
+        "matchup": {
+          "opp_rank_vs_pos": 31,
+          "rank_basis": "footballdb fantasy pts allowed to RB, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "MIA ranks 31st of 32 vs RB fantasy pts allowed, 29.5 pts/gm through 2 games"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "FanDuel model projects 26.1 rec yds vs the 22.5 line"
+          },
+          {
+            "label": "Trend",
+            "dir": "for",
+            "detail": "BetMGM: hit Over in 5 of last 6 road games (+5.40u/74% ROI)"
+          },
+          {
+            "label": "Backfield",
+            "dir": "neutral",
+            "detail": "Split with rookie Brashard Smith unresolved -- exact snap share not confirmed"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 22.5,
+        "opening_captured_at": "2026-09-24T20:17:21Z",
+        "current_line": 22.5,
+        "current_captured_at": "2026-09-24T20:17:21Z"
+      },
+      {
+        "player": "Rashee Rice",
+        "team": "away",
+        "position": "WR",
+        "market": "receptions",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Full practice participant with a favorite's target volume, but capped by a genuinely tough Dolphins WR matchup.",
+        "matchup": {
+          "opp_rank_vs_pos": 6,
+          "rank_basis": "footballdb fantasy pts allowed to WR, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Health",
+            "dir": "for",
+            "detail": "Full practice participant Wed (knee) -- no snap-count risk"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "FanDuel projects 4.9 catches vs 4.5 line; Chiefs -10.5/-11.5 raises target volume"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "MIA ranks 6th-best of 32 vs WR fantasy pts allowed -- tightest matchup of any position group"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Blowout could cut garbage-time work if Chiefs pull starters early"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 4.5,
+        "opening_captured_at": "2026-09-24T20:17:21Z",
+        "current_line": 4.5,
+        "current_captured_at": "2026-09-24T20:17:21Z"
+      }
+    ]
+  },
+  "final_score": {
+    "home": 10,
+    "away": 24
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "game_id": "colts-commanders-2026-wk4",
+  "matchup": "Indianapolis Colts @ Washington Commanders",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T13:30:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 4.5,
+      "total": 46.5,
+      "ml_fav": -230,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "London game. RW/DK Colts -4.5 (away fav) -> home(Commanders)=+4.5. Fox opening had Colts -3.5/47.5 -- line has firmed toward Colts since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4.5,
+        "total": 46.5,
+        "ml_fav": -230,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "London game. RW/DK Colts -4.5 (away fav) -> home(Commanders)=+4.5. Fox opening had Colts -3.5/47.5 -- line has firmed toward Colts since open. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 47.0,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 47.5,
+        "ml_fav": -180,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars spread via vegasinsider.com, team-attributed (Colts -3.5), matches DK exactly. FanDuel/BookMaker.eu unconfirmed this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:36Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 47.5,
+        "ml_fav": -180,
+        "ml_dog": 175
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1). Caesars spread via vegasinsider.com, confirmed Colts(away) -3.5 -> home(Commanders) +3.5, matches DK. BookMaker.eu board showing unrelated old dates again -- unusable."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 47.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "Colts -3.5 or better",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Corrected current line is Colts -3.5 (earlier same-day fetch had a stale -4.5) -- Jayden Daniels (elbow) still reported unlikely to play, Mariota to start",
+      "Model margin (Colts by 5.7 net, after the -3.0 downgrade adjustment) now runs about 2.2 pts ahead of the corrected market number -- the injury story plus a real, if modest, model gap"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-09-29T12:49:54Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jayden Daniels",
+          "status": "doubtful",
+          "pts": -3.0,
+          "note": "Dislocated elbow (Wk2 vs Cowboys); returning to practice and traveling to London but market/reporting treats him as unlikely to play -- oddsmakers have not moved off the line for him. Marcus Mariota (experienced veteran, has made spot starts before) starts if Daniels sits -- backup-playing-adequately tier, not a total unknown."
+        }
+      ],
+      "items_total_pts": -3.0,
+      "stacking_notes": [],
+      "total_pts": -3.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.245730+00:00",
+    "n": 10000,
+    "homeElo": 1401.9,
+    "awayElo": 1516.8,
+    "gamesSeen": 6,
+    "eloMarginHome": -2.7,
+    "statsMarginHome": -2.1,
+    "marginDivergence": -0.6,
+    "projTotal": 49.7,
+    "homeWinProbElo": 40.5,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 47.5,
+    "homeInjuryPts": -3.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.5,
+    "projAwayMeanRaw": 26.2,
+    "projHomeMeanAdjusted": 20.5,
+    "projAwayMeanAdjusted": 26.2,
+    "injuryAdjustedMarginHome": -5.7,
+    "projTotalAdjusted": 46.7,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -3.0 pts -- Jayden Daniels (QB, doubtful, -3.0).",
+      "Washington Commanders (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 33.8,
+    "awayWinPct": 63.6,
+    "tiePct": 2.6,
+    "medianHomeScore": 21,
+    "medianAwayScore": 26,
+    "coverPctHome": 45.2,
+    "overPct": 47.8
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:33Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 59,
+      "handle_pct_home": 29
+    },
+    "total": {
+      "bets_pct_over": 55,
+      "handle_pct_over": 86
+    },
+    "moneyline": {
+      "bets_pct_home": 33,
+      "handle_pct_home": 44
+    },
+    "reverse_line_move": true,
+    "rlm_note": "71% of handle is on the away side but the spread moved AGAINST them (+4.5 -> +3.5) -- real reverse line move toward home.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-03T11:50:39Z",
+    "status": "captured",
+    "source_note": "Added 2026-10-03 from Michael's podcast tip (Daniel Jones/Downs/Allen vs WAS pass D) -- verified real matchup rank via footballdb.com (WAS 32nd/32 vs WR) and real posted lines via rotowire.com player-props (Downs BetRivers u63.5, Allen BetMGM o34.5); Allen's injury status confirmed via colts.com official report. Daniel Jones pass_yards pick already captured and left untouched per policy -- the podcast's over lean on Jones is noted in the report but the existing model pick stays an under on road-favorite run-script grounds.",
+    "picks": [
+      {
+        "player": "Josh Downs",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "BetRivers",
+        "lean": "over",
+        "confidence": 7,
+        "reasoning": "Washington is the softest WR defense in the league and Downs target share has climbed every week, with Keenan Allen Questionable adding extra target upside.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "WAS ranks dead last, 32nd of 32, vs WR thru 3 games (90.0 fantasy pts allowed, 573 rec yds allowed, 191.0 yds/g) -- the softest WR defense in the league"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Targets have risen every week (4, 9, 11) with back-to-back 70+ yard games the last two weeks (72, 77)"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Colts are road favorites (~3.5), a game state that does not clearly push this specific market either way"
+          },
+          {
+            "label": "Injury context",
+            "dir": "for",
+            "detail": "Teammate Keenan Allen (groin) is Questionable, limited practice Wed/Thu and DNP Friday -- a reduced Allen role would funnel more targets to Downs"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 63.5,
+        "opening_captured_at": "2026-10-03T11:50:39Z",
+        "current_line": 63.5,
+        "current_captured_at": "2026-10-03T11:50:39Z"
+      },
+      {
+        "player": "Keenan Allen",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Great matchup and a rising role (season-high 63 yds + a TD last week), but the groin injury that limited him in practice all week is a real downside risk to full confidence.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "WAS ranks dead last, 32nd of 32, vs WR thru 3 games (90.0 fantasy pts allowed, 191.0 rec yds/g allowed) -- the softest WR defense in the league"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "20 targets, 13 catches, 100 yards and a TD thru 3 games, including a season-high 63 yards and a score last week vs Houston"
+          },
+          {
+            "label": "Injury",
+            "dir": "against",
+            "detail": "Officially Questionable with a groin injury -- limited Wed/Thu practice and DNP Friday, a real risk to his snap count or role"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "Colts are modest road favorites; game state does not clearly swing this market"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 34.5,
+        "opening_captured_at": "2026-10-03T11:50:39Z",
+        "current_line": 34.5,
+        "current_captured_at": "2026-10-03T11:50:39Z"
+      },
+      {
+        "player": "Daniel Jones",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "BetRivers",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Road-favorite game script still supports the under, but Washingtons pass defense has been one of the leagues worst, which caps how much to trust this.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "WAS ranks 31st of 32 vs QB (102.0 fantasy pts allowed thru 3 games, 861 pass yds allowed) -- a very generous pass defense, a real tough-matchup-style cap on an under"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Colts are about 3.5-pt favorites on the corrected line, a road-favorite script that typically leans run-support"
+          },
+          {
+            "label": "Price",
+            "dir": "neutral",
+            "detail": "BetRivers -113, single-book line this early in the week"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        },
+        "opening_line": 224.5,
+        "opening_captured_at": "2026-09-29T15:05:42Z",
+        "current_line": 224.5,
+        "current_captured_at": "2026-10-01T02:18:58Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 166,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 210,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 235,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 1,
+          "pushes": 0,
+          "total": 3,
+          "pct": 67,
+          "line": 224.5,
+          "lean": "under"
+        }
+      },
+      {
+        "player": "Marcus Mariota",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "BetRivers",
+        "lean": "over",
+        "confidence": 7,
+        "reasoning": "First real start, a negative game script, and one of the softest pass defenses in the league all point the same direction.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "IND ranks dead last, 32nd of 32, vs QB (74.0 fantasy pts allowed thru 3 games, 873 pass yds allowed) -- the softest pass defense in the league"
+          },
+          {
+            "label": "Injury context",
+            "dir": "for",
+            "detail": "Jayden Daniels (elbow) remains unlikely to play, so Mariota gets meaningful first-team reps as the starter"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Commanders are about 3.5-pt home underdogs on the corrected line, a negative script that tends to raise the trailing teams pass attempts"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 209.5,
+        "opening_captured_at": "2026-09-29T15:05:42Z",
+        "current_line": 209.5,
+        "current_captured_at": "2026-10-01T02:18:58Z",
+        "season_log": [
+          {
+            "week": 2,
+            "actual": 111,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 183,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com (wk1 not available, became starter wk2)",
+        "backtest": {
+          "hits": 0,
+          "misses": 2,
+          "pushes": 0,
+          "total": 2,
+          "pct": 0,
+          "line": 209.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-29T13:35:57Z",
+    "analysis": [
+      "The corrected current line is Colts -3.5 (an earlier same-day fetch had a stale -4.5). Jayden Daniels' dislocated elbow keeps him a longshot to play in London, and with that downgrade applied (-3.0, reflecting Marcus Mariota as a credible if lesser stand-in), the model still favors the Colts by 5.7 net points -- about 2.2 points clear of the corrected market number.",
+      "This remains one of the cleaner setups on the board: a real, likely-holding injury story plus a model gap pointing the same direction, in a short London week that adds a touch more variance for the injured side. Worth a final check against Wednesday's official injury report."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Colts -3.5 or better",
+        "confidence": 6,
+        "reasoning": "Daniels-out downgrade (likely) plus a model margin that clears the corrected market number by over two points.",
+        "best_bet": true
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.245730+00:00",
+      "marginHome": -5.7,
+      "total": 46.7
+    }
+  ],
+  "final_score": {
+    "home": 13,
+    "away": 30
+  }
+}

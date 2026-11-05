@@ -1,0 +1,1103 @@
+<title>Line Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght,ROND@6..144,25..151,1..1000,0..100&display=swap">
+<style>
+/* Layout: one scrolling page of card grids (Board, Teasers, Props, Money), a stock-chart slate, and a filterable hit-rate panel.
+   Single deliberate dark look: gold = the market's number, lilac = our model, cyan = where the money sits. */
+:root{
+  color-scheme: dark;
+  --ground:#0B0D12;
+  --surface:#151923;
+  --surface-2:#1B2030;
+  --surface-3:#222838;
+  --line:#232836;
+  --line-2:#343B4D;
+  --ink:#F2F3F7;
+  --ink-2:#BCC2D0;
+  --muted:#868EA2;
+  --faint:#596074;
+  --gold:#F2C35B;
+  --gold-dim:rgba(242,195,91,.14);
+  --lilac:#A99DFF;
+  --lilac-dim:rgba(169,157,255,.16);
+  --cash:#6CC6E8;
+  --cash-dim:rgba(108,198,232,.14);
+  --for:#6BDBAA;
+  --for-dim:rgba(107,219,170,.15);
+  --against:#FF8C7C;
+  --against-dim:rgba(255,140,124,.15);
+  --gutter:clamp(16px,4vw,56px);
+  --maxw:1320px;
+  --f:"Google Sans Flex","Google Sans","Product Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+html{background:var(--ground)}
+body{
+  margin:0;
+  background:radial-gradient(1100px 520px at 78% -8%,rgba(169,157,255,.10),transparent 62%),var(--ground);
+  color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;font-variation-settings:"ROND" 30;
+}
+*,*::before,*::after{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--lilac);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.num{font-variant-numeric:tabular-nums}
+.gold{color:var(--gold)} .lilac{color:var(--lilac)} .cash{color:var(--cash)}
+.label{font-size:.72rem;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- Top bar ---------- */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,13,18,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;gap:24px;min-height:56px}
+.mark{font-size:1.15rem;font-weight:500;letter-spacing:-.01em;white-space:nowrap}
+.mark b{font-weight:850;font-stretch:112%}
+.bar-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.bar-links::-webkit-scrollbar{display:none}
+.bar-links a{padding:6px 12px;border-radius:999px;font-size:.88rem;font-weight:550;color:var(--ink-2);white-space:nowrap}
+.bar-links a:hover{background:var(--surface-2);color:var(--ink)}
+.bar-clock{font-size:.82rem;color:var(--muted);white-space:nowrap}
+.bar-clock b{color:var(--ink);font-weight:650}
+@media (max-width:720px){.bar-clock{display:none}.bar-in{gap:12px}}
+
+/* ---------- Masthead ---------- */
+.mast{padding-block:clamp(36px,6vw,72px) 8px}
+.mast .label{display:flex;flex-wrap:wrap;gap:6px 14px}
+.lede{margin:16px 0 0;max-width:24ch;font-size:clamp(1.8rem,4.2vw,3.2rem);line-height:1.06;font-weight:420;letter-spacing:-.025em;text-wrap:balance}
+.lede b{font-weight:820}
+.lede a{border-bottom:2px solid var(--line-2)}
+.lede a:hover{border-color:var(--lilac)}
+.lede em{font-style:normal;color:var(--lilac);font-weight:700}
+.conf-key{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;color:var(--muted);font-size:.88rem}
+.conf-key .meter{width:150px;flex:none}
+.conf-key b{color:var(--ink-2);font-weight:650}
+
+/* ---------- Sections ---------- */
+.sec{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
+.sec.first{border-top:0;padding-top:32px}
+.sec-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px 48px;align-items:end;margin-bottom:clamp(24px,3.5vw,44px)}
+.sec-title{margin:0;font-size:clamp(2.3rem,6vw,4.8rem);line-height:.92;font-weight:780;font-stretch:88%;letter-spacing:-.04em;text-wrap:balance}
+.sec-title sup{font-size:.3em;font-weight:600;font-stretch:100%;letter-spacing:0;color:var(--muted);vertical-align:top;margin-left:.3em;position:relative;top:.5em}
+.sec-deck{margin:0;max-width:54ch;color:var(--ink-2);font-size:1rem}
+.sec-deck b{font-weight:700}
+.group-label{display:flex;align-items:baseline;gap:10px;margin:32px 0 14px}
+.group-label:first-child{margin-top:0}
+.group-label .sub{color:var(--faint);font-size:.8rem;letter-spacing:0;text-transform:none;font-weight:500}
+@media (max-width:820px){.sec-head{grid-template-columns:1fr}}
+
+/* ---------- Cards (shared by Board, Teasers, Props) ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px}
+.cards.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr))}
+.card{position:relative;display:flex;flex-direction:column;gap:12px;padding:18px 18px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;min-width:0;transition:border-color .2s,background .2s}
+a.card:hover{border-color:var(--line-2);background:#181D29}
+.card.best{border-color:rgba(242,243,247,.38)}
+.card.wong{border-color:rgba(169,157,255,.4)}
+.card-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 10px;font-size:.78rem;color:var(--muted)}
+.card-top .game{font-weight:650;color:var(--ink-2)}
+.mchip{display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:.68rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;background:var(--surface-3);color:var(--ink-2);white-space:nowrap}
+.mchip.prop{background:var(--gold-dim);color:var(--gold)}
+.mchip.wong{background:var(--lilac-dim);color:var(--lilac)}
+.card-main{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.card-main>div{min-width:0}
+.card-pick{font-size:1.4rem;font-weight:720;line-height:1.12;letter-spacing:-.02em;overflow-wrap:anywhere}
+.card-sub{margin-top:3px;font-size:.8rem;color:var(--muted)}
+.card-line{text-align:right;flex:none;line-height:1}
+.card-line .dir{display:block;font-size:.68rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:5px}
+.card-line b{font-size:2rem;font-weight:780;letter-spacing:-.03em}
+.card-why{margin:0;font-size:.88rem;color:var(--ink-2);line-height:1.5}
+.card-note{font-size:.78rem;color:var(--muted)}
+.card-foot{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line);font-size:.76rem;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:.7rem;font-weight:720;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.tag.best{background:var(--ink);color:var(--ground)}
+.tag.warn{background:var(--against-dim);color:var(--against)}
+.tag.rlm{background:var(--gold-dim);color:var(--gold)}
+.tag.watch{background:var(--surface-3);color:var(--ink-2)}
+.tag.hit{background:var(--for-dim);color:var(--for)}
+.tag.miss{background:var(--against-dim);color:var(--against)}
+.tag.push{background:var(--gold-dim);color:var(--gold)}
+.tag.stake{background:var(--for-dim);color:var(--for);font-size:.78rem}
+.tag.zero{background:var(--surface-3);color:var(--muted)}
+.passat{color:var(--ink-2)}
+.passat b{font-weight:700;color:var(--ink)}
+/* Bet card summary */
+.betsum{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:10px}
+.betsum a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.betsum a:hover{border-color:var(--line-2);background:#181D29}
+.betsum .k{font-size:.7rem;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.betsum .v{font-size:1.7rem;font-weight:780;letter-spacing:-.02em;line-height:1.1}
+.betsum .s{font-size:.8rem;color:var(--muted)}
+.betsum a.total{border-color:rgba(107,219,170,.4)}
+.betsum a.total .v{color:var(--for)}
+.daychips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:.8rem;color:var(--muted)}
+.daychips span{padding:4px 10px;border-radius:999px;background:var(--surface-2)}
+.daychips span b{color:var(--ink);font-weight:700}
+.daychips span.over{background:var(--against-dim);color:var(--against)}
+.daychips span.over b{color:var(--against)}
+.group-label .amt{margin-left:auto;color:var(--for);font-weight:750;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.group-label .amt.zero{color:var(--faint)}
+.passed{margin-top:32px;border-top:1px solid var(--line);padding-top:18px}
+.passed>summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:10px}
+.passed>summary::-webkit-details-marker{display:none}
+.passed>summary::after{content:'Show';margin-left:auto;font-size:.8rem;color:var(--ink-2);text-transform:none;letter-spacing:0}
+.passed[open]>summary::after{content:'Hide'}
+.passed .tbl-wrap{margin-top:14px}
+
+/* Confidence: a 0-10 score with a ten-cell meter. Same weight type everywhere; strength lives in the number. */
+.conf{display:flex;align-items:center;gap:12px}
+.conf-num{font-size:1.75rem;font-weight:800;line-height:1;letter-spacing:-.03em;min-width:2.6ch}
+.conf-num small{font-size:.48em;font-weight:600;color:var(--muted);letter-spacing:0}
+.conf-body{flex:1;display:flex;flex-direction:column;gap:5px;min-width:0}
+.conf-tier{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.meter{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+.meter i{height:7px;border-radius:2px;background:var(--surface-3)}
+.meter i.on{background:var(--lilac)}
+.meter.strong i.on{background:var(--ink)}
+.rule{display:flex;align-items:center;gap:10px;font-size:.8rem;color:var(--ink-2)}
+.rule b{font-size:1.05rem;font-weight:780;color:var(--lilac)}
+
+.factors{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.factors li{display:grid;grid-template-columns:16px 1fr;gap:8px;font-size:.82rem;line-height:1.42;color:var(--ink-2)}
+.factors li b{color:var(--ink);font-weight:650}
+.gl{font-weight:800;text-align:center}
+.gl.for{color:var(--for)}.gl.against{color:var(--against)}.gl.neutral{color:var(--faint)}
+.align{display:flex;gap:10px;font-size:.74rem;font-weight:650}
+.align .f{color:var(--for)}.align .a{color:var(--against)}.align .n{color:var(--faint)}
+
+.hist{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.hist-label{width:100%;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.hist-label.empty{text-transform:none;letter-spacing:0;font-weight:500;color:var(--faint)}
+.hist-chip{display:inline-flex;flex-direction:column;align-items:center;min-width:32px;padding:3px 6px;border-radius:7px;font-size:.78rem;font-weight:800;line-height:1.1}
+.hist-chip span{font-size:.58rem;font-weight:650;text-transform:uppercase;letter-spacing:.04em;opacity:.8}
+.hist-chip.hit{background:var(--for-dim);color:var(--for)}
+.hist-chip.miss{background:var(--against-dim);color:var(--against)}
+.hist-chip.push{background:var(--gold-dim);color:var(--gold)}
+.hist-src{font-size:.66rem;color:var(--faint)}
+.pending{margin-top:24px;font-size:.9rem;color:var(--ink-2)}
+.pending b{color:var(--ink)}
+.empty-note{color:var(--muted);font-size:.95rem}
+
+/* ---------- Slate ---------- */
+.slate-head,.row>summary{display:grid;grid-template-columns:4.4rem minmax(0,1fr) 4.4rem 14rem 1.6rem;column-gap:16px;align-items:center}
+.slate-head{padding-bottom:10px;border-bottom:1px solid var(--line);font-size:.7rem;color:var(--muted);font-weight:650;letter-spacing:.08em;text-transform:uppercase}
+.slate-head .r{text-align:right}
+.slate-legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:20px;font-size:.84rem;color:var(--ink-2)}
+.slate-legend span{display:inline-flex;align-items:center;gap:8px}
+.lg-line{width:22px;height:2px;background:var(--gold);display:inline-block}
+.lg-dash{width:22px;height:0;border-top:2px dashed var(--muted);display:inline-block}
+.lg-model{width:22px;height:0;border-top:2px solid var(--lilac);display:inline-block;position:relative}
+.lg-model::after{content:"";position:absolute;left:7px;top:-5px;width:8px;height:8px;border-radius:50%;background:var(--lilac)}
+.rows{display:flex;flex-direction:column}
+.row{border-bottom:1px solid var(--line)}
+.row>summary{list-style:none;cursor:pointer;padding-block:10px}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary:hover{background:linear-gradient(90deg,transparent,rgba(255,255,255,.025),transparent)}
+.row[open]>summary{background:linear-gradient(90deg,transparent,rgba(169,157,255,.05),transparent)}
+.tm{font-size:1.05rem;font-weight:720;letter-spacing:-.01em}
+.tm.away{text-align:right}
+.tm small{display:block;font-size:.7rem;font-weight:550;color:var(--muted)}
+.spark{display:block;width:100%;height:44px}
+.figs{display:flex;flex-direction:column;gap:2px;min-width:0}
+.gapfig{display:flex;align-items:baseline;gap:8px}
+.gapfig b{font-size:1.5rem;font-weight:800;line-height:1;color:var(--lilac)}
+.gapfig span{font-size:.78rem;color:var(--muted)}
+.figs .sub{font-size:.8rem;color:var(--ink-2);line-height:1.35}
+.figs .sub i{font-style:normal;color:var(--muted)}
+.chev{width:26px;height:26px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--muted);transition:transform .3s}
+.chev::before{content:"+";font-size:1rem;line-height:1}
+.row[open] .chev{transform:rotate(45deg);background:var(--surface-2);color:var(--ink)}
+@media (max-width:760px){
+  .slate-head{display:none}
+  .row>summary{grid-template-columns:2.8rem minmax(0,1fr) 2.8rem 1.6rem;grid-template-areas:"away spark home chev" "figs figs figs figs";row-gap:6px}
+  .row>summary .tm.away{grid-area:away}.row>summary .spark{grid-area:spark}.row>summary .tm.home{grid-area:home}.row>summary .figs{grid-area:figs;padding-left:3.6rem}.row>summary .chev{grid-area:chev}
+}
+
+/* Drawer */
+.drawer{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px 56px;padding:18px 0 40px}
+@media (max-width:980px){.drawer{grid-template-columns:1fr}}
+.charts{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:20px}
+@media (max-width:900px){.charts{grid-template-columns:1fr}}
+.chart{position:relative;min-width:0;padding:14px 14px 8px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;margin-bottom:6px}
+.chart-head .now{font-size:.82rem;color:var(--ink-2)}
+.chart-svg{display:block;width:100%;height:auto;overflow:visible}
+.chart-svg text{font-family:var(--f);font-size:11px;fill:var(--muted)}
+.chart-svg .end{font-size:11.5px;font-weight:700}
+.chart-svg .end.mk{fill:var(--gold)} .chart-svg .end.md{fill:var(--lilac)}
+.chart-svg .annot{fill:var(--ink-2);font-weight:650}
+.tip{position:absolute;z-index:3;pointer-events:none;min-width:150px;padding:8px 10px;border-radius:10px;background:var(--surface-3);border:1px solid var(--line-2);font-size:.78rem;color:var(--ink-2);line-height:1.45;transform:translate(-50%,-100%)}
+.tip b{color:var(--ink);font-weight:700}
+.tip .k{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px}
+.chart-foot{font-size:.74rem;color:var(--faint);margin:4px 2px 0}
+.proj{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:flex-end;gap:18px 44px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.score{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:800;line-height:.95;letter-spacing:-.035em;font-stretch:92%}
+.score em{font-style:normal;color:var(--faint);font-weight:300;margin-inline:.12em}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat b{font-size:clamp(1.5rem,2.8vw,2.1rem);font-weight:760;line-height:1;color:var(--lilac)}
+.stat b small{font-size:.5em;font-weight:600;color:var(--muted);margin-left:2px}
+.stat span{font-size:.82rem;color:var(--ink-2)}
+.read h4,.side h4{margin:0 0 12px}
+.read p{margin:0 0 14px;max-width:64ch;font-size:1.02rem;line-height:1.62}
+.callout{margin:16px 0 0;padding:12px 14px;border-radius:12px;background:var(--gold-dim);font-size:.9rem;line-height:1.5}
+.callout b{color:var(--gold)}
+.notes{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:.84rem;color:var(--muted)}
+.side{display:flex;flex-direction:column;gap:28px;min-width:0}
+.side .card{background:var(--surface-2)}
+.lines{width:100%;border-collapse:collapse;font-size:.86rem}
+.lines th,.lines td{padding:7px 0;border-bottom:1px solid var(--line);text-align:left}
+.lines th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.lines td:not(:first-child),.lines th:not(:first-child){text-align:right}
+.lines td:first-child{color:var(--ink-2)}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.checks li{display:grid;grid-template-columns:20px 1fr auto;gap:10px;align-items:start;font-size:.86rem;color:var(--ink-2);line-height:1.45}
+.cbox{width:18px;height:18px;border-radius:5px;background:var(--for);color:var(--ground);display:grid;place-items:center;font-size:.72rem;font-weight:900;margin-top:1px}
+.checks b{color:var(--ink);font-weight:650;display:block}
+.checks .pc{font-weight:800;color:var(--for)}
+
+/* ---------- Split bars (team colors, labels outside the color) ---------- */
+.split{display:flex;flex-direction:column;gap:4px}
+.split-cap{display:flex;justify-content:space-between;gap:8px;font-size:.76rem;color:var(--ink-2)}
+.split-cap span:nth-child(2){color:var(--muted);font-weight:650;letter-spacing:.06em;text-transform:uppercase;font-size:.66rem;align-self:center}
+.split-cap b{font-weight:750;color:var(--ink)}
+.sbar{display:flex;gap:2px;height:10px;border-radius:5px;overflow:hidden;background:var(--surface-3)}
+.sbar i{display:block;height:100%}
+.sbar i:first-child{border-radius:5px 0 0 5px}
+.sbar i:last-child{border-radius:0 5px 5px 0}
+
+/* ---------- Money cards ---------- */
+.mc{gap:14px}
+.mc.rlm{border-color:rgba(242,195,91,.45)}
+.mc-dual{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mc-dual>div{display:flex;flex-direction:column;gap:3px;padding:12px;border-radius:10px;min-width:0}
+.mc-move{background:var(--gold-dim)}
+.mc-money{background:var(--cash-dim)}
+.mc-dual .label{font-size:.64rem}
+.mc-move b{color:var(--gold)} .mc-money b{color:var(--cash)}
+.mc-dual b{font-size:1.15rem;font-weight:780;line-height:1.1;letter-spacing:-.02em}
+.mc-dual span:last-child{font-size:.78rem;color:var(--ink-2)}
+.verdict{display:flex;flex-direction:column;gap:6px;padding:12px 14px;border-radius:10px;background:var(--surface-2);border-left:3px solid var(--faint)}
+.verdict.bet{border-left-color:var(--for)}
+.verdict.lean{border-left-color:var(--gold)}
+.verdict .vh{display:flex;align-items:center;gap:8px;font-weight:780;font-size:.95rem}
+.verdict .vh i{font-style:normal;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:var(--surface-3);color:var(--ink-2)}
+.verdict.bet .vh i{background:var(--for-dim);color:var(--for)}
+.verdict.lean .vh i{background:var(--gold-dim);color:var(--gold)}
+.verdict p{margin:0;font-size:.86rem;line-height:1.5;color:var(--ink-2)}
+.caveat{margin-top:18px;font-size:.82rem;color:var(--muted);max-width:72ch}
+
+/* ---------- Systems ---------- */
+.sky{display:flex;flex-wrap:wrap;align-items:flex-end;gap:32px 18px}
+.tower{flex:1 1 140px;max-width:240px;min-width:0;display:flex;flex-direction:column}
+.tw-head{padding-bottom:12px}
+.tw-pick{font-size:clamp(1.4rem,2vw,1.8rem);font-weight:820;letter-spacing:-.03em;line-height:1}
+.tw-head .tag{margin-top:10px;white-space:normal}
+.tag.agree{background:var(--for-dim);color:var(--for)}
+.tag.disagree{background:var(--against-dim);color:var(--against)}
+.blk{position:relative;display:flex;flex-direction:column;gap:3px;min-height:104px;padding:12px 12px 14px;background:var(--surface);border-radius:10px;overflow:hidden;margin-top:6px}
+.blk-pct{font-size:1.9rem;font-weight:850;line-height:1;color:var(--for)}
+.blk-pct small{font-size:.5em}
+.blk-name{font-size:.82rem;font-weight:600;line-height:1.3}
+.blk-meter{position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--line)}
+.blk-meter i{position:absolute;left:0;top:0;bottom:0;background:var(--for)}
+.blk-meter u{position:absolute;top:-4px;width:2px;height:12px;background:var(--ink)}
+.tw-base{margin-top:12px;padding-top:10px;border-top:2px solid var(--line-2);font-size:.84rem;color:var(--ink-2)}
+.sky-note{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.84rem;color:var(--muted)}
+
+/* ---------- Hit rates ---------- */
+.hr-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:24px}
+.hr-bar label{font-size:.8rem;color:var(--muted)}
+.select{appearance:none;-webkit-appearance:none;font:inherit;font-size:.95rem;font-weight:650;color:var(--ink);background:var(--surface-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23BCC2D0' stroke-width='1.8'/%3E%3C/svg%3E") no-repeat right 12px center;border:1px solid var(--line-2);border-radius:10px;padding:9px 38px 9px 14px;cursor:pointer}
+.hr-summary{font-size:1rem;color:var(--ink-2);max-width:70ch;margin:0}
+.hr-summary b{color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:32px}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tile{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;min-width:0}
+.tile b{font-size:clamp(2rem,4vw,2.8rem);font-weight:820;line-height:1;letter-spacing:-.04em}
+.tile b small{font-size:.45em;font-weight:650;color:var(--muted);letter-spacing:0}
+.tile .rec{font-size:.86rem;color:var(--ink-2)}
+.pbar{position:relative;height:6px;border-radius:3px;background:var(--surface-3);margin-top:4px}
+.pbar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--for)}
+.pbar i.low{background:var(--against)}
+.pbar u{position:absolute;top:-3px;width:2px;height:12px;background:var(--ink-2)}
+.tile .be{font-size:.7rem;color:var(--faint)}
+.hr-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 48px}
+@media (max-width:900px){.hr-cols{grid-template-columns:1fr}}
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}
+.tbl th{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:650;text-align:left;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.tbl td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);color:var(--ink-2);vertical-align:middle}
+.tbl td b{color:var(--ink);font-weight:700}
+.tbl .r{text-align:right}
+.tbl .mini{display:block;width:90px;height:5px;border-radius:3px;background:var(--surface-3);position:relative}
+.tbl .mini i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--for)}
+.tbl .mini i.low{background:var(--against)}
+.more{margin-top:14px;font:inherit;font-size:.86rem;font-weight:650;color:var(--ink);background:var(--surface-2);border:1px solid var(--line-2);border-radius:10px;padding:9px 14px;cursor:pointer}
+.more:hover{background:var(--surface-3)}
+.res{font-weight:750}.res.hit{color:var(--for)}.res.miss{color:var(--against)}.res.push{color:var(--gold)}
+
+footer{border-top:1px solid var(--line);padding-block:40px 64px;color:var(--muted);font-size:.84rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+footer b{color:var(--ink-2);font-weight:650}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<nav class="bar" aria-label="Sections">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">Line<b>Watch</b></a>
+    <div class="bar-links">
+      <a href="#board">Bet card</a>
+      <a href="#teasers">Teasers</a>
+      <a href="#slate">Slate</a>
+      <a href="#money">Money</a>
+      <a href="#systems">Systems</a>
+      <a href="#props">Props</a>
+      <a href="#hitrates">Hit rates</a>
+    </div>
+    <div class="bar-clock" id="clock"></div>
+  </div>
+</nav>
+
+<header class="mast wrap" id="top">
+  <div class="label" id="mast-label"></div>
+  <h1 class="lede" id="lede"></h1>
+  <div class="conf-key" id="conf-key"></div>
+</header>
+
+<section class="sec first" id="board" aria-label="Bet card">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Bet card<sup id="board-count"></sup></h2>
+      <p class="sec-deck">Every pick with money on it, in one place. <b>Best bets</b> are worth playing at today's number. Spreads, totals and props follow, each in its own group. Picks at $0 sit in <b>Watch</b> because the number moved or they're waiting on news. Everything else is under <b>Passed</b>.</p>
+    </div>
+    <div id="board-body"></div>
+  </div>
+</section>
+
+<section class="sec" id="teasers">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Wong teasers<sup id="teasers-count"></sup></h2>
+      <p class="sec-deck">A 6-point teaser leg qualifies when a favorite sits at exactly −7.5 or an underdog sits at +1.5 to +2.5, with the game total at 47 or under. Every qualifying leg is listed. This list is never capped.</p>
+    </div>
+    <div class="cards" id="teaser-cards"></div>
+  </div>
+</section>
+
+<section class="sec" id="slate">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">The slate<sup id="slate-count"></sup></h2>
+      <p class="sec-deck">Every run logs the market's line and the model's number. The chart starts at the opening line and adds a point each time the lines are checked. Higher on the chart means the home team is more favored. Games where the model and market sit furthest apart come first.</p>
+    </div>
+    <div class="slate-legend">
+      <span><i class="lg-line"></i>DraftKings line</span>
+      <span><i class="lg-dash"></i>Caesars</span>
+      <span><i class="lg-model"></i>Model (each sim run)</span>
+    </div>
+    <div class="slate-head"><span class="r">Away</span><span>Line history</span><span>Home</span><span>Model vs. market</span><span></span></div>
+    <div class="rows" id="rows"></div>
+  </div>
+</section>
+
+<section class="sec" id="money">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Follow the money</h2>
+      <p class="sec-deck">Tickets count bettors. Money counts dollars. When the dollars pile onto one side and the line moves the other way, the book is respecting someone other than the public. Each card ends with what that means for the bet.</p>
+    </div>
+    <div class="cards wide" id="money-cards"></div>
+    <p class="caveat">Splits from cleatz.com. A game without a fresh split this cycle keeps its last captured numbers. Treat exact percentages as directional.</p>
+  </div>
+</section>
+
+<section class="sec" id="systems">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Situational systems</h2>
+      <p class="sec-deck">Historical spots that have beaten the spread. Every block is one system that fits this week's real situation. Taller stacks mean more systems agree on the same side.</p>
+    </div>
+    <div class="sky" id="sky"></div>
+    <div class="sky-note"><span>White tick: 52.4%, break-even at standard −110 juice.</span><span>Percentages are third-party historical records, not this model's output.</span></div>
+  </div>
+</section>
+
+<section class="sec" id="props">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Player props<sup id="props-count"></sup></h2>
+      <p class="sec-deck">Opening numbers, captured when the books first posted them. Each card shows the confidence score, every reason for and against, and how this player has done against today's line this season.</p>
+    </div>
+    <div class="cards" id="prop-cards"></div>
+    <p class="pending" id="pending"></p>
+  </div>
+</section>
+
+<section class="sec" id="hitrates">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Hit rates</h2>
+      <p class="sec-deck">Every graded prop and every logged game, scored against the call we made before kickoff. Pushes are left out of every rate.</p>
+    </div>
+    <div class="hr-bar">
+      <label for="hr-week">Show</label>
+      <select class="select" id="hr-week"></select>
+      <p class="hr-summary" id="hr-summary"></p>
+    </div>
+    <div id="hr-body"></div>
+    <div id="edge-body"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Line Watch</b> is personal research. Every lean is a read with a confidence score, never a guaranteed outcome.</span>
+    <span id="built"></span>
+  </div>
+</footer>
+
+<script>
+const D = {"built":"2026-11-05T02:49:07Z","week":"WK9","season":2026,"games":[{"id":"jaguars-ravens-2026-wk9","away":"Jacksonville Jaguars","home":"Baltimore Ravens","a":"JAX","h":"BAL","ko":"2026-11-06T01:15:00Z","open":-8.5,"cur":-10,"bm":-9.5,"cz":-9.5,"openTot":43.5,"tot":43.5,"bmTot":42,"model":-7.9,"modelTot":44.9,"cover":55.2,"over":54.2,"winH":28.9,"winA":68.9,"medH":19,"medA":26,"n":10000,"seen":15,"elo":-4.9,"form":-6.2,"injH":-3.0,"injA":0.0,"notes":["Home injury adjustment: -3.0 pts -- Lamar Jackson / Tyler Huntley (QB, doubtful, -3.0).","Baltimore Ravens (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]; Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]; Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Weather (M&T Bank Stadium, logged 2026-11-05): wind 5 mph, 60F, 50% precip -> no weather factor"],"wx":{"captured_at":"2026-11-05T02:48:41Z","stadium":"M&T Bank Stadium","roof":"open","wind_mph":5.0,"gust_mph":null,"temp_f":60.0,"precip_pct":50.0,"impact":"none","source":"forecast.weather.gov MapClick, Thursday night period (rain mainly after midnight)","history":[]},"kn":null,"flipped":false,"moved":true,"mlFav":-428,"mlDog":336,"analysis":["Sim: Jacksonville Jaguars by 7.9 (injury-adjusted) against a market that has Jacksonville Jaguars favored by 8.5, a 0.6-point gap; sim cover% for Baltimore Ravens is 51.7% and projected total is 44.9 vs 43.5 (over 53.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","Ravens QB situation is unresolved (Lamar Jackson thumb, Tyler Huntley toe, rookie Joe Fagnano played in relief), priced at -3.0 pts for Baltimore. With no spread edge after that adjustment, the only thin lean is the Over, labeled minimum-action for the Thursday-night window; re-check once the starting QB is known."],"leans":[{"market":"total","pick":"Over 43.5","conf":4,"why":"Minimum-action pick (Thursday-night window): sim projects 44.9 adjusted vs 43.5 (over 53.8%), but the starting QB for BAL is unresolved. Re-check Wed/Thu. | Stake $6 \u00b7 pass at 44","best":true,"factors":[{"label":"Sim total","dir":"for","detail":"Adjusted projection 44.9 vs 43.5 market"},{"label":"QB status","dir":"against","detail":"BAL QB unresolved (Jackson thumb, Huntley toe); a rookie QB drags scoring"},{"label":"Injury model","dir":"neutral","detail":"Injury pts shrink BAL scoring; sim already includes -3.0"}],"al":{"for":1,"against":1,"neutral":1,"net":0}}],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":true,"total":43.5},"hist":[{"t":"2026-11-02T14:49:37Z","dk":-8.5,"cz":-8.5,"bm":null,"tot":43.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-9.5,"bm":-9.5,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-10,"cz":null,"bm":-9.5,"tot":null}],"mh":[{"t":"2026-11-02T14:50:11.762043+00:00","m":-7.9,"tot":44.9},{"t":"2026-11-03T15:29:16.359675+00:00","m":-7.9,"tot":44.9},{"t":"2026-11-04T14:57:28.573267+00:00","m":-7.9,"tot":44.9}]},{"id":"bengals-falcons-2026-wk9","away":"Cincinnati Bengals","home":"Atlanta Falcons","a":"CIN","h":"ATL","ko":"2026-11-08T14:30:00Z","open":-3,"cur":-3,"bm":-3,"cz":-3,"openTot":51.5,"tot":51.5,"bmTot":51.5,"model":-1.4,"modelTot":48.7,"cover":55.4,"over":41.2,"winH":45.3,"winA":51.6,"medH":24,"medA":25,"n":10000,"seen":15,"elo":-1.4,"form":-7.6,"injH":0.0,"injA":0.0,"notes":["Elo margin (-1.4) and recent-scoring margin (-7.6) disagree by 6.2 points -- worth a second look before trusting either alone.","Atlanta Falcons (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]; Brian Robinson (-0.5), Michael Jerrell (-0.8), Cameron Williams (-0.8), Billy Bowman Jr. (-0.4), Divine Deablo (-0.4), Za'Darius Smith (-0.3) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Cincinnati Bengals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":false,"mlFav":-158,"mlDog":134,"analysis":["Sim: Cincinnati Bengals by 1.4 (injury-adjusted) against a market that has Cincinnati Bengals favored by 3, a 1.6-point gap; sim cover% for Atlanta Falcons is 54.3% and projected total is 48.7 vs 51.5 (over 42.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":51.5},"hist":[{"t":"2026-11-02T14:49:37Z","dk":-3,"cz":-3,"bm":null,"tot":51.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-3,"bm":-3,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-3,"cz":null,"bm":-3,"tot":null}],"mh":[{"t":"2026-11-02T14:49:37.841389+00:00","m":-1.4,"tot":48.7},{"t":"2026-11-03T15:29:10.601445+00:00","m":-1.4,"tot":48.7},{"t":"2026-11-04T14:57:28.227854+00:00","m":-1.4,"tot":48.7}]},{"id":"broncos-panthers-2026-wk9","away":"Denver Broncos","home":"Carolina Panthers","a":"DEN","h":"CAR","ko":"2026-11-08T18:00:00Z","open":-3,"cur":-2.5,"bm":-3,"cz":-3,"openTot":43.5,"tot":43.5,"bmTot":44,"model":-6.1,"modelTot":46.1,"cover":41.3,"over":58.0,"winH":32.4,"winA":65.0,"medH":20,"medA":26,"n":10000,"seen":15,"elo":-6.1,"form":0.1,"injH":0.0,"injA":0.0,"notes":["Elo margin (-6.1) and recent-scoring margin (+0.1) disagree by 6.2 points -- worth a second look before trusting either alone.","Carolina Panthers (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Jaycee Horn (-1.0), Mike Jackson (-0.8), Xavier Legette (-0.5), Jalen Coker (-0.4), Damien Lewis (-0.5) [-4.7 pts total]; Jaelan Phillips (-0.8), Thomas Incoom (-0.3), Monroe Freeling (-0.3) [-2.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":-146,"mlDog":124,"analysis":["Sim: Denver Broncos by 6.1 (injury-adjusted) against a market that has Denver Broncos favored by 3, a 3.1-point gap; sim cover% for Carolina Panthers is 40.8% and projected total is 46.1 vs 43.5 (over 57.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":true,"side":"dog","team":"CAR","from":2.5,"to":8.5,"reason":"CAR +2.5 teases up to +8.5, crossing both 3 and 7.","book":"DraftKings","totalOk":true,"total":43.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":-3,"cz":-3,"bm":null,"tot":43.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-3,"bm":-3,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-2.5,"cz":null,"bm":-3,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.347685+00:00","m":-6.1,"tot":46.1},{"t":"2026-11-03T15:29:10.723184+00:00","m":-6.1,"tot":46.1},{"t":"2026-11-04T14:57:28.304448+00:00","m":-6.1,"tot":46.1}]},{"id":"browns-saints-2026-wk9","away":"Cleveland Browns","home":"New Orleans Saints","a":"CLE","h":"NO","ko":"2026-11-08T18:00:00Z","open":2.5,"cur":3,"bm":2.5,"cz":2.5,"openTot":43.5,"tot":43.5,"bmTot":43.5,"model":0.4,"modelTot":41.0,"cover":44.6,"over":44.8,"winH":50.8,"winA":46.3,"medH":21,"medA":20,"n":10000,"seen":15,"elo":0.4,"form":0.9,"injH":0.0,"injA":0.0,"notes":["New Orleans Saints (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Kaden Ellis (-0.5), Pete Werner (-0.5), Anfernee Jennings (-0.4), Carl Granderson (-0.6), Travis Etienne (-0.5) [-2.5 pts total]; Alvin Kamara (-0.5), Kaden Elliss (-0.8), Anfernee Jennings (-0.8) [-2.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Cleveland Browns (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Dillon Gabriel (-2.0), Denzel Ward (-0.3), Teven Jenkins (-0.4), Kalia Davis (-0.5), Mike Hall Jr. (-0.5) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":-145,"mlDog":123,"analysis":["Sim: New Orleans Saints by 0.4 (injury-adjusted) against a market that has New Orleans Saints favored by 3, a 2.6-point gap; sim cover% for New Orleans Saints is 42.4% and projected total is 41.0 vs 43 (over 43.7%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":true,"side":"dog","team":"CLE","from":2.5,"to":8.5,"reason":"CLE +2.5 teases up to +8.5, crossing both 3 and 7.","book":"Caesars","totalOk":true,"total":43.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":2.5,"cz":3,"bm":null,"tot":43.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":2.5,"bm":2.5,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":3,"cz":null,"bm":2.5,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.096049+00:00","m":0.4,"tot":41.0},{"t":"2026-11-03T15:29:10.780342+00:00","m":0.4,"tot":41.0},{"t":"2026-11-04T14:57:28.341763+00:00","m":0.4,"tot":41.0}]},{"id":"cowboys-colts-2026-wk9","away":"Dallas Cowboys","home":"Indianapolis Colts","a":"DAL","h":"IND","ko":"2026-11-08T18:00:00Z","open":null,"cur":-6,"bm":-5.5,"cz":-5.5,"openTot":null,"tot":null,"bmTot":51.5,"model":1.7,"modelTot":51.3,"cover":69.0,"over":49.3,"winH":52.8,"winA":44.6,"medH":26,"medA":25,"n":10000,"seen":17,"elo":1.7,"form":-4.1,"injH":0.0,"injA":0.0,"notes":["Elo margin (+1.7) and recent-scoring margin (-4.1) disagree by 5.8 points -- worth a second look before trusting either alone.","Indianapolis Colts (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Sauce Gardner (-1.5), Tyler Warren (-1.0), Anthony Gould (-0.3), CJ Allen (-0.5), Bryce Boettcher (-0.2) [-3.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Dallas Cowboys (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]; CeeDee Lamb (-2.0), Tyler Booker (-0.5) [-2.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":false,"mlFav":-239,"mlDog":199,"analysis":["Sim: Indianapolis Colts by 1.7 (injury-adjusted) against a market that has Dallas Cowboys favored by 5.5, a 7.2-point gap; sim cover% for Indianapolis Colts is 68.8% and projected total is 51.3 vs 51.5 (over 49.9%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":null},"hist":[{"t":"2026-11-02T14:49:37Z","dk":null,"cz":-5.5,"bm":null,"tot":null},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-5.5,"bm":-5.5,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-6,"cz":null,"bm":-5.5,"tot":null}],"mh":[{"t":"2026-11-02T14:49:37.926451+00:00","m":1.7,"tot":51.3},{"t":"2026-11-03T15:29:10.962292+00:00","m":1.7,"tot":51.3},{"t":"2026-11-04T14:57:28.460182+00:00","m":1.7,"tot":51.3}]},{"id":"giants-eagles-2026-wk9","away":"New York Giants","home":"Philadelphia Eagles","a":"NYG","h":"PHI","ko":"2026-11-08T18:00:00Z","open":-3,"cur":-3.5,"bm":-3.5,"cz":-3.5,"openTot":40.5,"tot":40.5,"bmTot":40.5,"model":-0.5,"modelTot":43.8,"cover":58.1,"over":58.7,"winH":46.8,"winA":50.4,"medH":22,"medA":22,"n":10000,"seen":15,"elo":-0.5,"form":-0.2,"injH":0.0,"injA":0.0,"notes":["Philadelphia Eagles (home)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Saquon Barkley (-2.0), DeVonta Smith (-2.0), Hollywood Brown (-0.8) [-5.5 pts total]; Jalen Hurts (-6.0), Saquon Barkley (-2.0), Will Shipley (-0.5) [-9.2 pts total]; Jalen Hurts (-5.0), DeVonta Smith (-1.8), Dontayvion Wicks (-0.4), Nolan Smith (-0.6), Michael Carter II (-0.5), Saquon Barkley (-0.8), Landon Dickerson (-0.4), Jonathan Greenard (-0.5), Jalyx Hunt (-0.3) [-11.1 pts total]; Jalen Hurts (-4.0) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","New York Giants (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Jameis Winston (-4.0), Malik Nabers (-0.6) [-4.6 pts total]; Jameis Winston (-4.0), Brian Burns (-1.5) [-5.5 pts total]; Abdul Carter (-0.5), Andrew Thomas (-0.5), Tyler Nubin (-0.5), Theo Johnson (-0.5), Colton Hood (-0.5), Jermaine Eluemunor (-0.5) [-3.0 pts total]; Tremaine Edmunds (-0.9), Jevon Holland (-0.6), Greg Newsome II (-0.6), Theo Johnson (-0.4), Jermaine Eluemunor (-0.4) [-2.9 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":-190,"mlDog":160,"analysis":["Sim: New York Giants by 0.5 (injury-adjusted) against a market that has New York Giants favored by 3, a 2.5-point gap; sim cover% for Philadelphia Eagles is 58.2% and projected total is 43.8 vs 40.5 (over 60.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":true,"total":40.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":-3,"cz":-3,"bm":null,"tot":40.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-3.5,"bm":-3.5,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-3.5,"cz":null,"bm":-3.5,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.431743+00:00","m":-0.5,"tot":43.8},{"t":"2026-11-03T15:29:11.020314+00:00","m":-0.5,"tot":43.8},{"t":"2026-11-04T14:57:28.500365+00:00","m":-0.5,"tot":43.8}]},{"id":"jets-chiefs-2026-wk9","away":"New York Jets","home":"Kansas City Chiefs","a":"NYJ","h":"KC","ko":"2026-11-08T18:00:00Z","open":10,"cur":9.5,"bm":10,"cz":9.5,"openTot":46.5,"tot":46.5,"bmTot":46,"model":13.1,"modelTot":44.1,"cover":59.9,"over":44.6,"winH":80.8,"winA":17.4,"medH":29,"medA":16,"n":10000,"seen":15,"elo":13.1,"form":4.1,"injH":0.0,"injA":0.0,"notes":["Elo margin (+13.1) and recent-scoring margin (+4.1) disagree by 9.0 points -- worth a second look before trusting either alone.","Kansas City Chiefs (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Rashee Rice (-2.0), Josh Simmons (-1.0) [-3.0 pts total]; Rashee Rice (-1.8), Josh Simmons (-1.2), Jaylon Moore (-0.8), Brashard Smith (-0.2), L'Jarius Sneed (-0.3) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","New York Jets (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-0.5), Max Mitchell (-0.8), Joseph Ossai (-0.8), Francisco Mauigoa (-0.3), Dylan Parham (-0.3) [-2.7 pts total]; Breece Hall (-1.0), Max Mitchell (-0.5), Joseph Ossai (-0.4), David Bailey (-0.4) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":-447,"mlDog":349,"analysis":["Sim: Kansas City Chiefs by 13.1 (injury-adjusted) against a market that has Kansas City Chiefs favored by 10, a 3.1-point gap; sim cover% for Kansas City Chiefs is 58.4% and projected total is 44.1 vs 46 (over 44.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":true,"total":46.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":10,"cz":10,"bm":null,"tot":46.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":9.5,"bm":10,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":9.5,"cz":null,"bm":10,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.181911+00:00","m":13.1,"tot":44.1},{"t":"2026-11-03T15:29:11.141901+00:00","m":13.1,"tot":44.1},{"t":"2026-11-04T14:57:28.660767+00:00","m":13.1,"tot":44.1}]},{"id":"lions-dolphins-2026-wk9","away":"Detroit Lions","home":"Miami Dolphins","a":"DET","h":"MIA","ko":"2026-11-08T18:00:00Z","open":-7,"cur":-7,"bm":-7,"cz":-7,"openTot":49.5,"tot":49.5,"bmTot":49.5,"model":-7.3,"modelTot":47.8,"cover":49.3,"over":45.1,"winH":29.4,"winA":68.1,"medH":20,"medA":27,"n":10000,"seen":14,"elo":-7.3,"form":-4.2,"injH":0.0,"injA":0.0,"notes":["Detroit Lions (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Brian Branch (-1.5), Rock Ya-Sin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":false,"mlFav":-321,"mlDog":261,"analysis":["Sim: Detroit Lions by 7.3 (injury-adjusted) against a market that has Detroit Lions favored by 7, a 0.3-point gap; sim cover% for Miami Dolphins is 49.1% and projected total is 47.8 vs 49.5 (over 45.1%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":49.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":-7,"cz":-7,"bm":null,"tot":49.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-7,"bm":-7,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-7,"cz":null,"bm":-7,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.264444+00:00","m":-7.3,"tot":47.8},{"t":"2026-11-03T15:29:11.202642+00:00","m":-7.3,"tot":47.8},{"t":"2026-11-04T14:57:28.702383+00:00","m":-7.3,"tot":47.8}]},{"id":"rams-commanders-2026-wk9","away":"Los Angeles Rams","home":"Washington Commanders","a":"LAR","h":"WAS","ko":"2026-11-08T18:00:00Z","open":-5.5,"cur":-5.5,"bm":-5.5,"cz":-5.5,"openTot":47.5,"tot":47.5,"bmTot":47.5,"model":-6.7,"modelTot":43.5,"cover":47.2,"over":36.3,"winH":30.7,"winA":66.7,"medH":18,"medA":25,"n":10000,"seen":15,"elo":-6.7,"form":-2.4,"injH":0.0,"injA":0.0,"notes":["Elo margin (-6.7) and recent-scoring margin (-2.4) disagree by 4.3 points -- worth a second look before trusting either alone.","Washington Commanders (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]; Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Los Angeles Rams (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]; Davante Adams (-1.8), Puka Nacua (-0.7), Trent McDuffie (-0.4), Nate Landman (-0.4) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":false,"mlFav":-234,"mlDog":195,"analysis":["Sim: Los Angeles Rams by 6.7 (injury-adjusted) against a market that has Los Angeles Rams favored by 5.5, a 1.2-point gap; sim cover% for Washington Commanders is 45.8% and projected total is 43.5 vs 48 (over 37.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":47.5},"hist":[{"t":"2026-11-02T14:49:37Z","dk":-5.5,"cz":-5.5,"bm":null,"tot":47.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-5.5,"bm":-5.5,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-5.5,"cz":null,"bm":-5.5,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.014644+00:00","m":-6.7,"tot":43.5},{"t":"2026-11-03T15:29:11.382868+00:00","m":-6.7,"tot":43.5},{"t":"2026-11-04T14:57:28.818519+00:00","m":-6.7,"tot":43.5}]},{"id":"texans-chargers-2026-wk9","away":"Houston Texans","home":"Los Angeles Chargers","a":"HOU","h":"LAC","ko":"2026-11-08T21:05:00Z","open":-5.5,"cur":-4.5,"bm":-4.5,"cz":-4.5,"openTot":41.5,"tot":41.5,"bmTot":41,"model":-2.9,"modelTot":43.7,"cover":54.1,"over":56.0,"winH":40.5,"winA":56.7,"medH":20,"medA":23,"n":10000,"seen":14,"elo":-2.9,"form":-4.7,"injH":0.0,"injA":0.0,"notes":["Los Angeles Chargers (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Trey Pipkins III (-1.0), Dalvin Tomlinson (-1.0), Elijah Molden (-0.5), Kayode Awosika (-0.5), Charlie Kolar (-0.2), Brenen Thompson (-0.1) [-3.4 pts total]; Derwin James (-1.5), Joe Alt (-1.5), Donte Jackson (-0.5), Bud Dupree (-1.5) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Houston Texans (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Nico Collins (-2.0) [-2.0 pts total]; Jalen Pitre (-0.5), David Montgomery (-1.0), Tank Dell (-0.8) [-2.2 pts total]; David Montgomery (-0.8), Reed Blankenship (-0.5), Jalen Pitre (-0.5), Blake Fisher (-0.8), Tank Dell (-0.4) [-3.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":-224,"mlDog":187,"analysis":["Sim: Houston Texans by 2.9 (injury-adjusted) against a market that has Houston Texans favored by 4.5, a 1.6-point gap; sim cover% for Los Angeles Chargers is 54.9% and projected total is 43.7 vs 41.5 (over 56.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":true,"total":41.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":-5.5,"cz":-4.5,"bm":null,"tot":41.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-4.5,"bm":-4.5,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":-4.5,"cz":null,"bm":-4.5,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.516293+00:00","m":-2.9,"tot":43.7},{"t":"2026-11-03T15:29:11.443757+00:00","m":-2.9,"tot":43.7},{"t":"2026-11-04T14:57:28.859827+00:00","m":-2.9,"tot":43.7}]},{"id":"cardinals-seahawks-2026-wk9","away":"Arizona Cardinals","home":"Seattle Seahawks","a":"ARI","h":"SEA","ko":"2026-11-08T21:25:00Z","open":11.5,"cur":12.5,"bm":null,"cz":10.5,"openTot":44.5,"tot":44.5,"bmTot":null,"model":11.9,"modelTot":49.1,"cover":54.2,"over":62.8,"winH":79.2,"winA":18.9,"medH":31,"medA":19,"n":10000,"seen":16,"elo":11.9,"form":4.1,"injH":0.0,"injA":0.0,"notes":["Elo margin (+11.9) and recent-scoring margin (+4.1) disagree by 7.8 points -- worth a second look before trusting either alone.","Seattle Seahawks (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Zach Charbonnet (-1.2), Drake Thomas (-0.4), Chazz Surratt (-0.3), Drew Lock (-0.8), DeMarcus Lawrence (-0.4), Uchenna Nwosu (-0.3), Elijah Arroyo (-0.4) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Arizona Cardinals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jeremiyah Love (-1.5), Jon Gaines II (-0.5), Walter Nolen (-0.7), Andrew Wingard (-0.3), Budda Baker (-0.3) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":null,"mlDog":null,"analysis":["Sim: Seattle Seahawks by 13.7 (injury-adjusted) against a market that has Seattle Seahawks favored by 11.5, a 2.2-point gap; sim cover% for Seattle Seahawks is 56.4% and projected total is 48.8 vs 44.5 (over 62.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":true,"total":44.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":11.5,"cz":11.5,"bm":null,"tot":44.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":10.5,"bm":null,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":12.5,"cz":null,"bm":null,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.767788+00:00","m":13.7,"tot":48.8},{"t":"2026-11-03T15:29:10.901466+00:00","m":11.9,"tot":49.1},{"t":"2026-11-04T14:57:28.420049+00:00","m":11.9,"tot":49.1}]},{"id":"packers-patriots-2026-wk9","away":"Green Bay Packers","home":"New England Patriots","a":"GB","h":"NE","ko":"2026-11-08T21:25:00Z","open":3,"cur":3,"bm":3,"cz":3,"openTot":47.5,"tot":47.5,"bmTot":47,"model":6.5,"modelTot":42.5,"cover":60.9,"over":36.1,"winH":67.1,"winA":30.1,"medH":25,"medA":18,"n":10000,"seen":16,"elo":6.5,"form":-0.1,"injH":0.0,"injA":0.0,"notes":["Elo margin (+6.5) and recent-scoring margin (-0.1) disagree by 6.7 points -- worth a second look before trusting either alone.","Green Bay Packers (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Aaron Banks (-1.0), Zach Bako-Bewele (-1.0), Jayden Reed (-1.2), Warren Brinson (-0.5), Javon Hargrave (-0.3) [-4.8 pts total]; Javon Hargrave (-1.3), Jonathan Ford (-0.4), Benjamin St-Juste (-0.7), Skyy Moore (-0.2) [-3.4 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":false,"mlFav":-160,"mlDog":140,"analysis":["Sim: New England Patriots by 6.5 (injury-adjusted) against a market that has New England Patriots favored by 3, a 3.5-point gap; sim cover% for New England Patriots is 60.2% and projected total is 42.5 vs 47.5 (over 36.5%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":47.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":3,"cz":3,"bm":null,"tot":47.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":3,"bm":3,"tot":null},{"t":"2026-11-04T14:57:17Z","dk":3,"cz":null,"bm":3,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.683232+00:00","m":6.5,"tot":42.5},{"t":"2026-11-03T15:29:11.263321+00:00","m":6.5,"tot":42.5},{"t":"2026-11-04T14:57:28.740731+00:00","m":6.5,"tot":42.5}]},{"id":"raiders-49ers-2026-wk9","away":"Las Vegas Raiders","home":"San Francisco 49ers","a":"LV","h":"SF","ko":"2026-11-08T21:25:00Z","open":9.5,"cur":10,"bm":10,"cz":10,"openTot":51.5,"tot":51.5,"bmTot":52,"model":11.3,"modelTot":50.9,"cover":54.4,"over":48.4,"winH":78.2,"winA":19.9,"medH":31,"medA":20,"n":10000,"seen":15,"elo":11.3,"form":6.2,"injH":0.0,"injA":0.0,"notes":["Elo margin (+11.3) and recent-scoring margin (+6.2) disagree by 5.0 points -- worth a second look before trusting either alone.","San Francisco 49ers (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]; Jauan Jennings (-1.0), Jaylon Moore (-1.0), Dre Greenlaw (-1.0), Arik Armstead (-0.8), Jiayir Brown (-0.5), Ross Dwelley (-0.2) [-4.5 pts total]; Nick Bosa (-1.5), Mike Evans (-1.5), Deebo Samuel Sr. (-1.0), Garret Wallow (-0.4) [-5.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":-460,"mlDog":358,"analysis":["Sim: San Francisco 49ers by 11.3 (injury-adjusted) against a market that has San Francisco 49ers favored by 9.5, a 1.8-point gap; sim cover% for San Francisco 49ers is 55.8% and projected total is 50.9 vs 51.5 (over 47.7%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":51.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":9.5,"cz":9.5,"bm":null,"tot":51.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":10,"bm":10,"tot":null},{"t":"2026-11-04T14:57:18Z","dk":10,"cz":null,"bm":10,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.600170+00:00","m":11.3,"tot":50.9},{"t":"2026-11-03T15:29:11.324547+00:00","m":11.3,"tot":50.9},{"t":"2026-11-04T14:57:28.780939+00:00","m":11.3,"tot":50.9}]},{"id":"buccaneers-bears-2026-wk9","away":"Tampa Bay Buccaneers","home":"Chicago Bears","a":"TB","h":"CHI","ko":"2026-11-09T01:20:00Z","open":5.5,"cur":6,"bm":null,"cz":6,"openTot":47.5,"tot":47.5,"bmTot":null,"model":7.1,"modelTot":46.2,"cover":53.9,"over":47.0,"winH":68.4,"winA":29.1,"medH":27,"medA":19,"n":10000,"seen":16,"elo":7.1,"form":5.2,"injH":0.0,"injA":0.0,"notes":["Chicago Bears (home)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]; Caleb Williams (-4.0) [-4.0 pts total]; Caleb Williams (-4.0), D'Andre Swift (-0.5), Kyle Monangai (-0.5) [-5.0 pts total]; T.J. Edwards (-1.0), Jack Sanborn (-0.4), Jonah Jackson (-0.6), Kyle Monangai (-0.2) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.","Tampa Bay Buccaneers (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Baker Mayfield (-5.5) [-5.5 pts total]; Baker Mayfield (-5.5), Antoine Winfield Jr. (-0.8), Benjamin Morrison (-0.8), SirVocea Dennis (-0.4) [-7.4 pts total]; Baker Mayfield (-6.0), Antoine Winfield Jr. (-1.0) [-7.0 pts total]; Emeka Egbuka (-1.5), Luke Goedeke (-0.8), Antoine Winfield Jr. (-1.0), Baker Mayfield (-0.8) [-4.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":null,"flipped":false,"moved":true,"mlFav":null,"mlDog":null,"analysis":["Sim: Chicago Bears by 5.3 (injury-adjusted) against a market that has Chicago Bears favored by 5.5, a 0.2-point gap; sim cover% for Chicago Bears is 49.1% and projected total is 45.9 vs 47 (over 46.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":false,"total":47.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":5.5,"cz":5.5,"bm":null,"tot":47.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":6,"bm":null,"tot":null},{"t":"2026-11-04T14:57:18Z","dk":6,"cz":null,"bm":null,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.854050+00:00","m":5.3,"tot":45.9},{"t":"2026-11-03T15:29:10.840478+00:00","m":7.1,"tot":46.2},{"t":"2026-11-04T14:57:28.382198+00:00","m":7.1,"tot":46.2}]},{"id":"bills-vikings-2026-wk9","away":"Buffalo Bills","home":"Minnesota Vikings","a":"BUF","h":"MIN","ko":"2026-11-10T01:15:00Z","open":-2.5,"cur":-3.5,"bm":-3.5,"cz":-3.5,"openTot":46.5,"tot":46.5,"bmTot":46,"model":-1.5,"modelTot":45.3,"cover":55.5,"over":46.2,"winH":44.5,"winA":52.7,"medH":22,"medA":23,"n":10000,"seen":14,"elo":-1.5,"form":-0.7,"injH":0.0,"injA":0.0,"notes":["Buffalo Bills (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."],"wx":null,"kn":"opened BUF -2.5, now BUF -3.5 -- crossed 3, one of the NFL's key numbers (games decided by exactly 3 or 7 points are unusually common, so a cross like this is worth more than the raw point move suggests).","flipped":false,"moved":true,"mlFav":-182,"mlDog":153,"analysis":["Sim: Buffalo Bills by 1.5 (injury-adjusted) against a market that has Buffalo Bills favored by 3, a 1.5-point gap; sim cover% for Minnesota Vikings is 54.9% and projected total is 45.3 vs 46.5 (over 47.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.","First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."],"leans":[],"ms":null,"sys":null,"wong":{"qualifies":false,"totalOk":true,"total":46.5},"hist":[{"t":"2026-11-02T14:49:38Z","dk":-2.5,"cz":-3,"bm":null,"tot":46.5},{"t":"2026-11-03T15:29:04Z","dk":null,"cz":-3.5,"bm":-3.5,"tot":null},{"t":"2026-11-04T14:57:18Z","dk":-3.5,"cz":null,"bm":-3.5,"tot":null}],"mh":[{"t":"2026-11-02T14:49:38.945363+00:00","m":-1.5,"tot":45.3},{"t":"2026-11-03T15:29:10.662684+00:00","m":-1.5,"tot":45.3},{"t":"2026-11-04T14:57:28.266092+00:00","m":-1.5,"tot":45.3}]}],"props":[],"pending":[],"propsRecord":{"hits":82,"total":143,"pushes":0,"weeks":[{"wk":"WK3","hits":19,"total":28},{"wk":"WK4","hits":26,"total":43},{"wk":"WK5","hits":12,"total":30},{"wk":"WK6","hits":12,"total":19},{"wk":"WK7","hits":10,"total":17},{"wk":"WK8","hits":3,"total":6}],"tiers":[{"label":"7-8 strong","hits":2,"total":8},{"label":"5-6 real","hits":46,"total":83},{"label":"1-4 marginal","hits":34,"total":52}],"misses":[{"player":"Kenneth Walker III","market":"rec_yards","lean":"over","line":22.5,"actual":5.0},{"player":"Tetairoa McMillan","market":"rec_yards","lean":"over","line":55.5,"actual":17.0},{"player":"Javonte Williams","market":"rush_yards","lean":"under","line":59.5,"actual":98.0},{"player":"C.J. Stroud","market":"pass_yards","lean":"over","line":233.5,"actual":167.0},{"player":"Tony Pollard","market":"rush_yards","lean":"under","line":48.5,"actual":74.0},{"player":"D'Andre Swift","market":"rec_yards","lean":"over","line":13.5,"actual":4.0},{"player":"Rome Odunze","market":"receptions","lean":"under","line":2.5,"actual":3.0},{"player":"Bijan Robinson","market":"receptions","lean":"over","line":4.5,"actual":2.0},{"player":"Justin Jefferson","market":"rec_yards","lean":"over","line":68.5,"actual":32.0},{"player":"Raheim Sanders","market":"rec_yards","lean":"over","line":9.5,"actual":7.0},{"player":"Harold Fannin","market":"rec_yards","lean":"over","line":40.5,"actual":27.0},{"player":"Josh Downs","market":"rec_yards","lean":"over","line":63.5,"actual":16.0},{"player":"Marcus Mariota","market":"pass_yards","lean":"over","line":209.5,"actual":46.0},{"player":"Ja'Marr Chase","market":"rec_yards","lean":"over","line":78.5,"actual":26.0},{"player":"Emeka Egbuka","market":"rec_yards","lean":"over","line":36.5,"actual":13.0},{"player":"Tyler Higbee","market":"rec_yards","lean":"under","line":30.5,"actual":67.0},{"player":"Evan Engram","market":"rec_yards","lean":"over","line":17.5,"actual":6.0},{"player":"Christian McCaffrey","market":"rush_yards","lean":"over","line":64.5,"actual":52.0},{"player":"Omarion Hampton","market":"rush_yards","lean":"over","line":46.5,"actual":45.0},{"player":"Rashee Rice","market":"rec_yards","lean":"over","line":56.5,"actual":0.0},{"player":"Chuba Hubbard","market":"rush_yards","lean":"under","line":66.5,"actual":122.0},{"player":"Cam Skattebo","market":"rec_yards","lean":"over","line":17.5,"actual":8.0},{"player":"Dak Prescott","market":"rush_yards","lean":"over","line":10.5,"actual":7.0},{"player":"Joe Burrow","market":"rush_yards","lean":"over","line":7.5,"actual":6.0},{"player":"Bijan Robinson","market":"receptions","lean":"over","line":4.5,"actual":1.0},{"player":"Jalon Daniels","market":"rush_yards","lean":"over","line":43.5,"actual":23.0},{"player":"CeeDee Lamb","market":"rec_yards","lean":"over","line":81.5,"actual":9.0},{"player":"CeeDee Lamb","market":"receptions","lean":"over","line":6.5,"actual":2.0},{"player":"George Pickens","market":"rec_yards","lean":"under","line":61.5,"actual":130.0},{"player":"Cade Otton","market":"rec_yards","lean":"over","line":28.5,"actual":25.0},{"player":"Keenan Allen","market":"rec_yards","lean":"over","line":34.5,"actual":0.0},{"player":"Trevor Lawrence","market":"pass_yards","lean":"under","line":229.5,"actual":331.0},{"player":"Joe Burrow","market":"pass_yards","lean":"over","line":254.5,"actual":190.0},{"player":"Geno Smith","market":"pass_yards","lean":"over","line":207.5,"actual":182.0},{"player":"Drake Maye","market":"pass_yards","lean":"under","line":226.5,"actual":374.0},{"player":"David Montgomery","market":"rush_yards","lean":"over","line":43.5,"actual":11.0},{"player":"Alvin Kamara","market":"rec_yards","lean":"over","line":12.5,"actual":-6.0},{"player":"Omarion Hampton","market":"rush_yards","lean":"over","line":40.5,"actual":33.0},{"player":"Amon-Ra St. Brown","market":"rec_yards","lean":"over","line":78.5,"actual":69.0},{"player":"Michael Wilson","market":"rec_yards","lean":"over","line":80.5,"actual":30.0},{"player":"Bijan Robinson","market":"rush_yards","lean":"over","line":88.5,"actual":86.0},{"player":"Mark Andrews","market":"rec_yards","lean":"over","line":28.5,"actual":28.0},{"player":"Zay Flowers","market":"rec_yards","lean":"over","line":66.5,"actual":53.0},{"player":"Kyren Williams","market":"rush_yards","lean":"over","line":71.5,"actual":49.0},{"player":"Sam Darnold","market":"pass_yards","lean":"under","line":220.5,"actual":278.0},{"player":"Bhayshul Tuten","market":"rush_yards","lean":"over","line":64.5,"actual":39.0},{"player":"Derrick Henry","market":"rush_yards","lean":"over","line":79.5,"actual":58.0},{"player":"Drake Maye","market":"rush_yards","lean":"over","line":25.5,"actual":24.0},{"player":"Jaylen Warren","market":"rush_yards","lean":"over","line":56.5,"actual":50.0},{"player":"Jalon Daniels","market":"pass_yards","lean":"over","line":173.5,"actual":164.0},{"player":"Michael Wilson","market":"rec_yards","lean":"over","line":58.5,"actual":32.0},{"player":"Caleb Williams","market":"pass_yards","lean":"under","line":249.5,"actual":308.0},{"player":"Daniel Jones","market":"pass_yards","lean":"over","line":195.5,"actual":108.0},{"player":"Matthew Stafford","market":"pass_yards","lean":"over","line":263.5,"actual":195.0},{"player":"Patrick Mahomes","market":"pass_yards","lean":"over","line":211.5,"actual":165.0},{"player":"Jahmyr Gibbs","market":"rec_yards","lean":"over","line":36.5,"actual":27.0},{"player":"Brock Purdy","market":"rush_yards","lean":"over","line":19.5,"actual":5.0},{"player":"Tyler Goodson","market":"rush_yards","lean":"under","line":10.5,"actual":38.0},{"player":"Kyler Murray","market":"pass_yards","lean":"over","line":220.5,"actual":210.0},{"player":"Derrick Henry","market":"rush_yards","lean":"over","line":73.5,"actual":53.0},{"player":"D'Andre Swift","market":"rush_yards","lean":"under","line":63.5,"actual":69.0}]},"propRows":[{"wk":"WK3","conf":4,"res":"hit","player":"Ja'Marr Chase","market":"rec_yards","lean":"over","line":76.5,"actual":98.0,"a":"CIN","h":"PIT","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":4,"res":"hit","player":"James Cook","market":"rush_yards","lean":"over","line":81.5,"actual":154.0,"a":"LAC","h":"BUF","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":7,"res":"miss","player":"Kenneth Walker III","market":"rec_yards","lean":"over","line":22.5,"actual":5.0,"a":"KC","h":"MIA","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":4,"res":"hit","player":"Rashee Rice","market":"receptions","lean":"over","line":4.5,"actual":7.0,"a":"KC","h":"MIA","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":3,"res":"hit","player":"Jahmyr Gibbs","market":"rush_yards","lean":"over","line":84.5,"actual":99.0,"a":"NYJ","h":"DET","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":8,"res":"hit","player":"Quinshon Judkins","market":"rush_yards","lean":"over","line":55.5,"actual":70.0,"a":"CAR","h":"CLE","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"miss","player":"Tetairoa McMillan","market":"rec_yards","lean":"over","line":55.5,"actual":17.0,"a":"CAR","h":"CLE","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"hit","player":"Harold Fannin Jr.","market":"rec_yards","lean":"over","line":35.5,"actual":51.0,"a":"CAR","h":"CLE","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":4,"res":"hit","player":"Bhayshul Tuten","market":"rush_yards","lean":"over","line":53.5,"actual":73.0,"a":"NE","h":"JAX","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"hit","player":"Kirk Cousins","market":"pass_yards","lean":"over","line":211.5,"actual":248.0,"a":"LV","h":"NO","ko":"2026-09-27T20:25:00Z"},{"wk":"WK3","conf":5,"res":"miss","player":"Javonte Williams","market":"rush_yards","lean":"under","line":59.5,"actual":98.0,"a":"BAL","h":"DAL","ko":"2026-09-27T20:25:00Z"},{"wk":"WK3","conf":5,"res":"hit","player":"Jaxon Smith-Njigba","market":"rec_yards","lean":"over","line":92.5,"actual":128.0,"a":"SEA","h":"WAS","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"hit","player":"Jonathan Taylor","market":"rush_yards","lean":"under","line":81.5,"actual":68.0,"a":"HOU","h":"IND","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"miss","player":"C.J. Stroud","market":"pass_yards","lean":"over","line":233.5,"actual":167.0,"a":"HOU","h":"IND","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"hit","player":"Xavier Hutchinson","market":"rec_yards","lean":"over","line":38.5,"actual":51.0,"a":"HOU","h":"IND","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":6,"res":"hit","player":"Cam Skattebo","market":"rush_yards","lean":"over","line":57.5,"actual":60.0,"a":"TEN","h":"NYG","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":5,"res":"hit","player":"Isaiah Likely","market":"rec_yards","lean":"under","line":40.5,"actual":13.0,"a":"TEN","h":"NYG","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":4,"res":"hit","player":"Malik Nabers","market":"rec_yards","lean":"under","line":55.5,"actual":26.0,"a":"TEN","h":"NYG","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":5,"res":"hit","player":"Jameis Winston","market":"pass_yards","lean":"under","line":206.5,"actual":118.0,"a":"TEN","h":"NYG","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":4,"res":"miss","player":"Tony Pollard","market":"rush_yards","lean":"under","line":48.5,"actual":74.0,"a":"TEN","h":"NYG","ko":"2026-09-27T17:00:00Z"},{"wk":"WK3","conf":5,"res":"miss","player":"D'Andre Swift","market":"rec_yards","lean":"over","line":13.5,"actual":4.0,"a":"PHI","h":"CHI","ko":"2026-09-29T00:15:00Z"},{"wk":"WK3","conf":7,"res":"miss","player":"Rome Odunze","market":"receptions","lean":"under","line":2.5,"actual":3.0,"a":"PHI","h":"CHI","ko":"2026-09-29T00:15:00Z"},{"wk":"WK3","conf":5,"res":"hit","player":"Saquon Barkley","market":"rush_yards","lean":"over","line":75.5,"actual":82.0,"a":"PHI","h":"CHI","ko":"2026-09-29T00:15:00Z"},{"wk":"WK3","conf":4,"res":"hit","player":"Christian McCaffrey","market":"rush_yards","lean":"over","line":54.5,"actual":75.0,"a":"ARI","h":"SF","ko":"2026-09-27T20:05:00Z"},{"wk":"WK3","conf":5,"res":"hit","player":"Matthew Golden","market":"rec_yards","lean":"over","line":53.5,"actual":100.0,"a":"ATL","h":"GB","ko":"2026-09-25T00:15:00Z"},{"wk":"WK3","conf":5,"res":"miss","player":"Bijan Robinson","market":"receptions","lean":"over","line":4.5,"actual":2.0,"a":"ATL","h":"GB","ko":"2026-09-25T00:15:00Z"},{"wk":"WK3","conf":6,"res":"hit","player":"Kyren Williams","market":"rush_yards","lean":"over","line":55.5,"actual":88.0,"a":"LAR","h":"DEN","ko":"2026-09-28T00:20:00Z"},{"wk":"WK3","conf":4,"res":"miss","player":"Justin Jefferson","market":"rec_yards","lean":"over","line":68.5,"actual":32.0,"a":"MIN","h":"TB","ko":"2026-09-27T20:05:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Jerry Jeudy","market":"rec_yards","lean":"over","line":13.5,"actual":36.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Jaylen Warren","market":"rush_yards","lean":"over","line":64.5,"actual":93.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Raheim Sanders","market":"rec_yards","lean":"over","line":9.5,"actual":7.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Harold Fannin","market":"rec_yards","lean":"over","line":40.5,"actual":27.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"Deshaun Watson","market":"rush_yards","lean":"under","line":29.5,"actual":22.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"Quinshon Judkins","market":"receptions","lean":"over","line":1.5,"actual":6.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Quinshon Judkins","market":"rush_yards","lean":"under","line":56.5,"actual":53.0,"a":"PIT","h":"CLE","ko":"2026-10-02T00:15:00Z"},{"wk":"WK4","conf":7,"res":"miss","player":"Josh Downs","market":"rec_yards","lean":"over","line":63.5,"actual":16.0,"a":"IND","h":"WAS","ko":"2026-10-04T13:30:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Daniel Jones","market":"pass_yards","lean":"under","line":224.5,"actual":143.0,"a":"IND","h":"WAS","ko":"2026-10-04T13:30:00Z"},{"wk":"WK4","conf":7,"res":"miss","player":"Marcus Mariota","market":"pass_yards","lean":"over","line":209.5,"actual":46.0,"a":"IND","h":"WAS","ko":"2026-10-04T13:30:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"Nico Collins","market":"rec_yards","lean":"over","line":74.5,"actual":118.0,"a":"DAL","h":"HOU","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"C.J. Stroud","market":"pass_yards","lean":"over","line":245.5,"actual":347.0,"a":"DAL","h":"HOU","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Trevor Lawrence","market":"pass_yards","lean":"under","line":263.5,"actual":227.0,"a":"JAX","h":"CIN","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":6,"res":"miss","player":"Ja'Marr Chase","market":"rec_yards","lean":"over","line":78.5,"actual":26.0,"a":"JAX","h":"CIN","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Emeka Egbuka","market":"rec_yards","lean":"over","line":36.5,"actual":13.0,"a":"GB","h":"TB","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"Tucker Kraft","market":"rec_yards","lean":"over","line":37.5,"actual":42.0,"a":"GB","h":"TB","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"James Cook","market":"rec_yards","lean":"over","line":6.5,"actual":8.0,"a":"NE","h":"BUF","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":6,"res":"miss","player":"Tyler Higbee","market":"rec_yards","lean":"under","line":30.5,"actual":67.0,"a":"LAR","h":"PHI","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Cam Ward","market":"rush_yards","lean":"over","line":10.5,"actual":27.0,"a":"TEN","h":"BAL","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Tony Pollard","market":"rush_yards","lean":"over","line":47.5,"actual":48.0,"a":"TEN","h":"BAL","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Kyler Murray","market":"pass_yards","lean":"over","line":200.5,"actual":247.0,"a":"MIA","h":"MIN","ko":"2026-10-04T20:05:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Evan Engram","market":"rec_yards","lean":"over","line":17.5,"actual":6.0,"a":"DEN","h":"SF","ko":"2026-10-04T20:25:00Z"},{"wk":"WK4","conf":6,"res":"miss","player":"Christian McCaffrey","market":"rush_yards","lean":"over","line":64.5,"actual":52.0,"a":"DEN","h":"SF","ko":"2026-10-04T20:25:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Omarion Hampton","market":"rush_yards","lean":"over","line":46.5,"actual":45.0,"a":"LAC","h":"SEA","ko":"2026-10-04T20:25:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Rashee Rice","market":"rec_yards","lean":"over","line":56.5,"actual":0.0,"a":"KC","h":"LV","ko":"2026-10-04T20:25:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Brock Bowers","market":"rec_yards","lean":"over","line":75.5,"actual":86.0,"a":"KC","h":"LV","ko":"2026-10-04T20:25:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Jahmyr Gibbs","market":"rush_yards","lean":"under","line":96.5,"actual":46.0,"a":"DET","h":"CAR","ko":"2026-10-05T00:20:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Tetairoa McMillan","market":"rec_yards","lean":"over","line":70.5,"actual":192.0,"a":"DET","h":"CAR","ko":"2026-10-05T00:20:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Chuba Hubbard","market":"rush_yards","lean":"under","line":66.5,"actual":122.0,"a":"DET","h":"CAR","ko":"2026-10-05T00:20:00Z"},{"wk":"WK4","conf":6,"res":"miss","player":"Cam Skattebo","market":"rec_yards","lean":"over","line":17.5,"actual":8.0,"a":"ARI","h":"NYG","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Dak Prescott","market":"rush_yards","lean":"over","line":10.5,"actual":7.0,"a":"DAL","h":"HOU","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Joe Burrow","market":"rush_yards","lean":"over","line":7.5,"actual":6.0,"a":"JAX","h":"CIN","ko":"2026-10-04T17:00:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"Chris Olave","market":"rec_yards","lean":"over","line":84.5,"actual":116.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":6,"res":"hit","player":"Alvin Kamara","market":"rush_yards","lean":"under","line":37.5,"actual":23.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Bijan Robinson","market":"rush_yards","lean":"over","line":87.5,"actual":145.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Bijan Robinson","market":"receptions","lean":"over","line":4.5,"actual":1.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Drake London","market":"rec_yards","lean":"over","line":78.5,"actual":96.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Tyler Shough","market":"completions","lean":"over","line":23.5,"actual":30.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Tyler Shough","market":"pass_yards","lean":"over","line":254.5,"actual":286.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":3,"res":"hit","player":"Kyle Pitts","market":"rec_yards","lean":"over","line":26.5,"actual":47.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK5","conf":6,"res":"miss","player":"Jalon Daniels","market":"rush_yards","lean":"over","line":43.5,"actual":23.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","conf":5,"res":"hit","player":"Javonte Williams","market":"rush_yards","lean":"under","line":73.5,"actual":45.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"CeeDee Lamb","market":"rec_yards","lean":"over","line":81.5,"actual":9.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","conf":5,"res":"hit","player":"Bucky Irving","market":"rush_yards","lean":"over","line":51.5,"actual":165.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"CeeDee Lamb","market":"receptions","lean":"over","line":6.5,"actual":2.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"George Pickens","market":"rec_yards","lean":"under","line":61.5,"actual":130.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Cade Otton","market":"rec_yards","lean":"over","line":28.5,"actual":25.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK4","conf":5,"res":"hit","player":"Justin Herbert","market":"rush_yards","lean":"over","line":22.5,"actual":40.0,"a":"LAC","h":"SEA","ko":"2026-10-04T20:25:00Z"},{"wk":"WK4","conf":4,"res":"hit","player":"Michael Penix Jr.","market":"rush_yards","lean":"under","line":3.5,"actual":-2.0,"a":"ATL","h":"NO","ko":"2026-10-06T00:15:00Z"},{"wk":"WK4","conf":5,"res":"miss","player":"Keenan Allen","market":"rec_yards","lean":"over","line":34.5,"actual":0.0,"a":"IND","h":"WAS","ko":"2026-10-04T13:30:00Z"},{"wk":"WK5","conf":5,"res":"hit","player":"Bhayshul Tuten","market":"rush_yards","lean":"over","line":57.5,"actual":72.0,"a":"PHI","h":"JAX","ko":"2026-10-11T13:30:00Z"},{"wk":"WK5","conf":4,"res":"hit","player":"Jalen Hurts","market":"pass_yards","lean":"over","line":191.5,"actual":220.0,"a":"PHI","h":"JAX","ko":"2026-10-11T13:30:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"Trevor Lawrence","market":"pass_yards","lean":"under","line":229.5,"actual":331.0,"a":"PHI","h":"JAX","ko":"2026-10-11T13:30:00Z"},{"wk":"WK5","conf":6,"res":"hit","player":"Luther Burden III","market":"rec_yards","lean":"over","line":45.5,"actual":47.0,"a":"CHI","h":"GB","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Joe Burrow","market":"pass_yards","lean":"over","line":254.5,"actual":190.0,"a":"CIN","h":"MIA","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"Geno Smith","market":"pass_yards","lean":"over","line":207.5,"actual":182.0,"a":"CLE","h":"NYJ","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":4,"res":"hit","player":"Garrett Wilson","market":"rec_yards","lean":"over","line":68.5,"actual":104.0,"a":"CLE","h":"NYJ","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":4,"res":"hit","player":"Daniel Jones","market":"pass_yards","lean":"over","line":209.5,"actual":267.0,"a":"IND","h":"PIT","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":3,"res":"hit","player":"Cam Skattebo","market":"rush_yards","lean":"over","line":52.5,"actual":59.0,"a":"NYG","h":"WAS","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Drake Maye","market":"pass_yards","lean":"under","line":226.5,"actual":374.0,"a":"LV","h":"NE","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":6,"res":"miss","player":"David Montgomery","market":"rush_yards","lean":"over","line":43.5,"actual":11.0,"a":"HOU","h":"TEN","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"Alvin Kamara","market":"rec_yards","lean":"over","line":12.5,"actual":-6.0,"a":"MIN","h":"NO","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Omarion Hampton","market":"rush_yards","lean":"over","line":40.5,"actual":33.0,"a":"DEN","h":"LAC","ko":"2026-10-11T20:05:00Z"},{"wk":"WK5","conf":5,"res":"hit","player":"Sam Darnold","market":"pass_yards","lean":"under","line":227.5,"actual":195.0,"a":"SF","h":"SEA","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","conf":7,"res":"miss","player":"Amon-Ra St. Brown","market":"rec_yards","lean":"over","line":78.5,"actual":69.0,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","conf":7,"res":"miss","player":"Michael Wilson","market":"rec_yards","lean":"over","line":80.5,"actual":30.0,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","conf":6,"res":"hit","player":"Jacoby Brissett","market":"pass_yards","lean":"over","line":265.5,"actual":292.0,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Bijan Robinson","market":"rush_yards","lean":"over","line":88.5,"actual":86.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Mark Andrews","market":"rec_yards","lean":"over","line":28.5,"actual":28.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","conf":4,"res":"miss","player":"Zay Flowers","market":"rec_yards","lean":"over","line":66.5,"actual":53.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","conf":7,"res":"hit","player":"Puka Nacua","market":"rec_yards","lean":"over","line":90.5,"actual":138.0,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK5","conf":4,"res":"hit","player":"Josh Allen","market":"pass_yards","lean":"under","line":245.5,"actual":210.0,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK5","conf":5,"res":"miss","player":"Kyren Williams","market":"rush_yards","lean":"over","line":71.5,"actual":49.0,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK6","conf":6,"res":"miss","player":"Sam Darnold","market":"pass_yards","lean":"under","line":220.5,"actual":278.0,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","conf":4,"res":"hit","player":"Courtland Sutton","market":"receptions","lean":"under","line":3.5,"actual":2.0,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","conf":4,"res":"hit","player":"Jaylen Waddle","market":"rec_yards","lean":"under","line":49.5,"actual":24.0,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","conf":4,"res":"miss","player":"Bhayshul Tuten","market":"rush_yards","lean":"over","line":64.5,"actual":39.0,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","conf":4,"res":"hit","player":"C.J. Stroud","market":"pass_yards","lean":"over","line":256.5,"actual":312.0,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Bijan Robinson","market":"rush_yards","lean":"under","line":94.5,"actual":61.0,"a":"CHI","h":"ATL","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":6,"res":"miss","player":"Derrick Henry","market":"rush_yards","lean":"over","line":79.5,"actual":58.0,"a":"BAL","h":"CLE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Tony Pollard","market":"rush_yards","lean":"over","line":54.5,"actual":76.0,"a":"TEN","h":"IND","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":4,"res":"miss","player":"Drake Maye","market":"rush_yards","lean":"over","line":25.5,"actual":24.0,"a":"NYJ","h":"NE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Jameis Winston","market":"rush_yards","lean":"over","line":3.5,"actual":4.0,"a":"NO","h":"NYG","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Tanner McKee","market":"pass_yards","lean":"over","line":192.5,"actual":215.0,"a":"CAR","h":"PHI","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":4,"res":"miss","player":"Jaylen Warren","market":"rush_yards","lean":"over","line":56.5,"actual":50.0,"a":"PIT","h":"TB","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":4,"res":"miss","player":"Jalon Daniels","market":"pass_yards","lean":"over","line":173.5,"actual":164.0,"a":"PIT","h":"TB","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","conf":4,"res":"miss","player":"Michael Wilson","market":"rec_yards","lean":"over","line":58.5,"actual":32.0,"a":"ARI","h":"LAR","ko":"2026-10-18T20:05:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Josh Allen","market":"pass_yards","lean":"over","line":239.5,"actual":255.0,"a":"BUF","h":"LV","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","conf":5,"res":"hit","player":"Tre Tucker","market":"rec_yards","lean":"over","line":35.5,"actual":97.0,"a":"BUF","h":"LV","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Kenneth Walker III","market":"rush_yards","lean":"over","line":86.5,"actual":128.0,"a":"LAC","h":"KC","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","conf":4,"res":"hit","player":"MarShawn Lloyd","market":"rush_yards","lean":"under","line":40.5,"actual":10.0,"a":"DAL","h":"GB","ko":"2026-10-19T00:20:00Z"},{"wk":"WK6","conf":6,"res":"hit","player":"Brock Purdy","market":"rush_yards","lean":"over","line":16.5,"actual":28.0,"a":"WAS","h":"SF","ko":"2026-10-20T00:15:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Caleb Williams","market":"rush_yards","lean":"over","line":17.5,"actual":18.0,"a":"NE","h":"CHI","ko":"2026-10-23T00:15:00Z"},{"wk":"WK7","conf":6,"res":"miss","player":"Caleb Williams","market":"pass_yards","lean":"under","line":249.5,"actual":308.0,"a":"NE","h":"CHI","ko":"2026-10-23T00:15:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Tyler Shough","market":"pass_yards","lean":"over","line":234.5,"actual":278.0,"a":"PIT","h":"NO","ko":"2026-10-25T13:30:00Z"},{"wk":"WK7","conf":4,"res":"miss","player":"Daniel Jones","market":"pass_yards","lean":"over","line":195.5,"actual":108.0,"a":"IND","h":"MIN","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Amon-Ra St. Brown","market":"rec_yards","lean":"over","line":78.5,"actual":153.0,"a":"GB","h":"DET","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Joe Burrow","market":"pass_yards","lean":"over","line":259.5,"actual":292.0,"a":"CIN","h":"BAL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","conf":5,"res":"hit","player":"Cam Ward","market":"pass_yards","lean":"under","line":187.5,"actual":181.0,"a":"CLE","h":"TEN","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","conf":6,"res":"hit","player":"Kyren Williams","market":"rush_yards","lean":"over","line":59.5,"actual":99.0,"a":"LAR","h":"LV","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","conf":6,"res":"miss","player":"Matthew Stafford","market":"pass_yards","lean":"over","line":263.5,"actual":195.0,"a":"LAR","h":"LV","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","conf":4,"res":"miss","player":"Patrick Mahomes","market":"pass_yards","lean":"over","line":211.5,"actual":165.0,"a":"KC","h":"SEA","ko":"2026-10-26T00:20:00Z"},{"wk":"WK7","conf":6,"res":"hit","player":"Bo Nix","market":"pass_yards","lean":"over","line":219.5,"actual":222.0,"a":"DEN","h":"ARI","ko":"2026-10-25T20:05:00Z"},{"wk":"WK7","conf":5,"res":"miss","player":"Jahmyr Gibbs","market":"rec_yards","lean":"over","line":36.5,"actual":27.0,"a":"GB","h":"DET","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","conf":5,"res":"miss","player":"Brock Purdy","market":"rush_yards","lean":"over","line":19.5,"actual":5.0,"a":"SF","h":"ATL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Saquon Barkley","market":"rush_yards","lean":"over","line":61.5,"actual":62.0,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Javonte Williams","market":"rush_yards","lean":"over","line":60.5,"actual":155.0,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK7","conf":4,"res":"miss","player":"Tyler Goodson","market":"rush_yards","lean":"under","line":10.5,"actual":38.0,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK7","conf":4,"res":"hit","player":"Tanner McKee","market":"pass_yards","lean":"over","line":209.5,"actual":211.0,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK8","conf":3,"res":"hit","player":"Chuba Hubbard","market":"rush_yards","lean":"over","line":68.5,"actual":81.0,"a":"CAR","h":"GB","ko":"2026-10-30T00:15:00Z"},{"wk":"WK8","conf":4,"res":"hit","player":"Jordan Love","market":"pass_yards","lean":"over","line":260.5,"actual":288.0,"a":"CAR","h":"GB","ko":"2026-10-30T00:15:00Z"},{"wk":"WK8","conf":6,"res":"miss","player":"Kyler Murray","market":"pass_yards","lean":"over","line":220.5,"actual":210.0,"a":"MIN","h":"DET","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","conf":4,"res":"miss","player":"Derrick Henry","market":"rush_yards","lean":"over","line":73.5,"actual":53.0,"a":"BAL","h":"BUF","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","conf":4,"res":"hit","player":"Jonathan Taylor","market":"rush_yards","lean":"under","line":72.5,"actual":23.0,"a":"IND","h":"JAX","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","conf":5,"res":"miss","player":"D'Andre Swift","market":"rush_yards","lean":"under","line":63.5,"actual":69.0,"a":"CHI","h":"SEA","ko":"2026-11-03T01:15:00Z"}],"results":[{"wk":"WK1","ko":"2026-09-10T00:20:00Z","a":"NE","h":"SEA","as_":10,"hs":13,"su":true,"ats":true,"tot":false,"wp":59.7},{"wk":"WK1","ko":"2026-09-11T00:00:00Z","a":"SF","h":"LAR","as_":27,"hs":7,"su":true,"ats":true,"tot":true,"wp":52.4},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"CHI","h":"CAR","as_":59,"hs":37,"su":true,"ats":false,"tot":false,"wp":56.5},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"BUF","h":"HOU","as_":36,"hs":31,"su":false,"ats":false,"tot":true,"wp":44.1},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"CLE","h":"JAX","as_":10,"hs":34,"su":true,"ats":true,"tot":true,"wp":83.5},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"TB","h":"CIN","as_":27,"hs":33,"su":true,"ats":false,"tot":false,"wp":50.3},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"WAS","h":"PHI","as_":22,"hs":24,"su":true,"ats":false,"tot":true,"wp":75.3},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"ATL","h":"PIT","as_":13,"hs":20,"su":true,"ats":false,"tot":false,"wp":64.6},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"NYJ","h":"TEN","as_":23,"hs":10,"su":false,"ats":false,"tot":false,"wp":41.9},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"GB","h":"MIN","as_":22,"hs":39,"su":true,"ats":true,"tot":false,"wp":54.1},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"BAL","h":"IND","as_":41,"hs":23,"su":false,"ats":false,"tot":true,"wp":39.3},{"wk":"WK1","ko":"2026-09-13T17:00:00Z","a":"NO","h":"DET","as_":30,"hs":31,"su":true,"ats":false,"tot":false,"wp":74.9},{"wk":"WK1","ko":"2026-09-13T20:05:00Z","a":"ARI","h":"LAC","as_":26,"hs":14,"su":false,"ats":true,"tot":true,"wp":23.4},{"wk":"WK1","ko":"2026-09-13T20:25:00Z","a":"MIA","h":"LV","as_":13,"hs":27,"su":false,"ats":false,"tot":false,"wp":40.9},{"wk":"WK1","ko":"2026-09-14T00:20:00Z","a":"DAL","h":"NYG","as_":20,"hs":28,"su":true,"ats":true,"tot":null,"wp":54.4},{"wk":"WK1","ko":"2026-09-15T00:15:00Z","a":"DEN","h":"KC","as_":10,"hs":31,"su":false,"ats":false,"tot":true,"wp":49.0},{"wk":"WK2","ko":"2026-09-18T00:15:00Z","a":"DET","h":"BUF","as_":31,"hs":41,"su":true,"ats":null,"tot":false,"wp":65.6},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"GB","h":"NYJ","as_":20,"hs":17,"su":true,"ats":false,"tot":false,"wp":67.1},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"PHI","h":"TEN","as_":24,"hs":20,"su":true,"ats":false,"tot":true,"wp":79.1},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"CIN","h":"HOU","as_":20,"hs":6,"su":false,"ats":false,"tot":false,"wp":24.9},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"CLE","h":"TB","as_":23,"hs":19,"su":false,"ats":true,"tot":true,"wp":35.2},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"NO","h":"BAL","as_":24,"hs":17,"su":false,"ats":true,"tot":true,"wp":25.2},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"CAR","h":"ATL","as_":34,"hs":3,"su":false,"ats":false,"tot":false,"wp":38.5},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"MIN","h":"CHI","as_":9,"hs":3,"su":false,"ats":true,"tot":false,"wp":41.0},{"wk":"WK2","ko":"2026-09-20T17:00:00Z","a":"PIT","h":"NE","as_":3,"hs":20,"su":true,"ats":true,"tot":false,"wp":73.8},{"wk":"WK2","ko":"2026-09-20T20:05:00Z","a":"LV","h":"LAC","as_":26,"hs":14,"su":false,"ats":false,"tot":true,"wp":25.5},{"wk":"WK2","ko":"2026-09-20T20:05:00Z","a":"JAX","h":"DEN","as_":13,"hs":20,"su":false,"ats":false,"tot":true,"wp":44.3},{"wk":"WK2","ko":"2026-09-20T20:25:00Z","a":"SEA","h":"ARI","as_":31,"hs":7,"su":true,"ats":true,"tot":false,"wp":79.7},{"wk":"WK2","ko":"2026-09-20T20:25:00Z","a":"WAS","h":"DAL","as_":20,"hs":37,"su":true,"ats":null,"tot":false,"wp":62.3},{"wk":"WK2","ko":"2026-09-20T20:25:00Z","a":"MIA","h":"SF","as_":13,"hs":35,"su":true,"ats":false,"tot":true,"wp":82.3},{"wk":"WK2","ko":"2026-09-21T00:20:00Z","a":"IND","h":"KC","as_":30,"hs":33,"su":true,"ats":true,"tot":false,"wp":63.6},{"wk":"WK2","ko":"2026-09-22T00:15:00Z","a":"NYG","h":"LAR","as_":6,"hs":28,"su":true,"ats":true,"tot":true,"wp":76.8},{"wk":"WK3","ko":"2026-09-25T00:15:00Z","a":"ATL","h":"GB","as_":35,"hs":14,"su":false,"ats":false,"tot":false,"wp":27.8},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"CIN","h":"PIT","as_":27,"hs":30,"su":true,"ats":true,"tot":true,"wp":60.0},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"LAC","h":"BUF","as_":16,"hs":24,"su":true,"ats":true,"tot":true,"wp":81.3},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"KC","h":"MIA","as_":24,"hs":10,"su":true,"ats":false,"tot":true,"wp":69.7},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"NYJ","h":"DET","as_":24,"hs":31,"su":true,"ats":true,"tot":true,"wp":83.2},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"CAR","h":"CLE","as_":18,"hs":21,"su":true,"ats":true,"tot":false,"wp":51.8},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"NE","h":"JAX","as_":6,"hs":35,"su":false,"ats":false,"tot":true,"wp":49.9},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"SEA","h":"WAS","as_":31,"hs":33,"su":false,"ats":false,"tot":true,"wp":16.6},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"HOU","h":"IND","as_":17,"hs":19,"su":true,"ats":true,"tot":false,"wp":51.8},{"wk":"WK3","ko":"2026-09-27T17:00:00Z","a":"TEN","h":"NYG","as_":7,"hs":12,"su":true,"ats":true,"tot":false,"wp":78.5},{"wk":"WK3","ko":"2026-09-27T20:05:00Z","a":"ARI","h":"SF","as_":30,"hs":36,"su":true,"ats":false,"tot":false,"wp":82.4},{"wk":"WK3","ko":"2026-09-27T20:05:00Z","a":"MIN","h":"TB","as_":23,"hs":16,"su":true,"ats":true,"tot":false,"wp":61.9},{"wk":"WK3","ko":"2026-09-27T20:25:00Z","a":"BAL","h":"DAL","as_":34,"hs":31,"su":true,"ats":null,"tot":false,"wp":52.7},{"wk":"WK3","ko":"2026-09-27T20:25:00Z","a":"LV","h":"NO","as_":35,"hs":27,"su":false,"ats":false,"tot":false,"wp":33.9},{"wk":"WK3","ko":"2026-09-28T00:20:00Z","a":"LAR","h":"DEN","as_":26,"hs":30,"su":false,"ats":true,"tot":false,"wp":48.9},{"wk":"WK3","ko":"2026-09-29T00:15:00Z","a":"PHI","h":"CHI","as_":7,"hs":27,"su":true,"ats":true,"tot":true,"wp":51.8},{"wk":"WK4","ko":"2026-10-02T00:15:00Z","a":"PIT","h":"CLE","as_":24,"hs":27,"su":false,"ats":true,"tot":true,"wp":43.6},{"wk":"WK4","ko":"2026-10-04T13:30:00Z","a":"IND","h":"WAS","as_":30,"hs":13,"su":true,"ats":false,"tot":false,"wp":59.5},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"ARI","h":"NYG","as_":24,"hs":36,"su":true,"ats":true,"tot":false,"wp":65.3},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"DAL","h":"HOU","as_":34,"hs":30,"su":false,"ats":false,"tot":false,"wp":32.1},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"JAX","h":"CIN","as_":22,"hs":17,"su":true,"ats":true,"tot":true,"wp":68.0},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"NYJ","h":"CHI","as_":12,"hs":23,"su":true,"ats":true,"tot":false,"wp":84.0},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"GB","h":"TB","as_":17,"hs":14,"su":true,"ats":true,"tot":false,"wp":50.5},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"NE","h":"BUF","as_":29,"hs":26,"su":false,"ats":true,"tot":false,"wp":40.1},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"LAR","h":"PHI","as_":24,"hs":20,"su":true,"ats":false,"tot":true,"wp":55.2},{"wk":"WK4","ko":"2026-10-04T17:00:00Z","a":"TEN","h":"BAL","as_":18,"hs":24,"su":true,"ats":false,"tot":false,"wp":86.6},{"wk":"WK4","ko":"2026-10-04T20:05:00Z","a":"MIA","h":"MIN","as_":10,"hs":15,"su":true,"ats":true,"tot":false,"wp":81.5},{"wk":"WK4","ko":"2026-10-04T20:25:00Z","a":"DEN","h":"SF","as_":14,"hs":24,"su":true,"ats":true,"tot":true,"wp":61.1},{"wk":"WK4","ko":"2026-10-04T20:25:00Z","a":"LAC","h":"SEA","as_":23,"hs":30,"su":true,"ats":true,"tot":false,"wp":85.0},{"wk":"WK4","ko":"2026-10-04T20:25:00Z","a":"KC","h":"LV","as_":30,"hs":27,"su":true,"ats":false,"tot":false,"wp":67.1},{"wk":"WK4","ko":"2026-10-05T00:20:00Z","a":"DET","h":"CAR","as_":26,"hs":32,"su":false,"ats":false,"tot":false,"wp":39.3},{"wk":"WK4","ko":"2026-10-06T00:15:00Z","a":"ATL","h":"NO","as_":45,"hs":24,"su":false,"ats":null,"tot":null,"wp":45.7},{"wk":"WK5","ko":"2026-10-09T00:15:00Z","a":"TB","h":"DAL","as_":24,"hs":16,"su":false,"ats":false,"tot":true,"wp":33.3},{"wk":"WK5","ko":"2026-10-11T13:30:00Z","a":"PHI","h":"JAX","as_":17,"hs":19,"su":true,"ats":false,"tot":true,"wp":75.3},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"CHI","h":"GB","as_":7,"hs":31,"su":false,"ats":true,"tot":true,"wp":44.5},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"CIN","h":"MIA","as_":31,"hs":24,"su":true,"ats":null,"tot":true,"wp":58.2},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"CLE","h":"NYJ","as_":12,"hs":17,"su":false,"ats":false,"tot":false,"wp":38.0},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"LV","h":"NE","as_":17,"hs":45,"su":true,"ats":true,"tot":false,"wp":84.3},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"HOU","h":"TEN","as_":26,"hs":3,"su":true,"ats":true,"tot":false,"wp":75.9},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"MIN","h":"NO","as_":23,"hs":13,"su":true,"ats":true,"tot":false,"wp":69.5},{"wk":"WK5","ko":"2026-10-11T17:00:00Z","a":"IND","h":"PIT","as_":22,"hs":34,"su":true,"ats":false,"tot":true,"wp":51.9},{"wk":"WK5","ko":"2026-10-11T20:05:00Z","a":"DEN","h":"LAC","as_":23,"hs":17,"su":true,"ats":true,"tot":false,"wp":64.2},{"wk":"WK5","ko":"2026-10-11T20:25:00Z","a":"SF","h":"SEA","as_":32,"hs":29,"su":false,"ats":false,"tot":false,"wp":36.3},{"wk":"WK5","ko":"2026-10-11T20:25:00Z","a":"DET","h":"ARI","as_":45,"hs":21,"su":true,"ats":false,"tot":false,"wp":65.3},{"wk":"WK5","ko":"2026-10-12T00:20:00Z","a":"BAL","h":"ATL","as_":30,"hs":23,"su":true,"ats":true,"tot":true,"wp":53.0},{"wk":"WK5","ko":"2026-10-13T00:15:00Z","a":"BUF","h":"LAR","as_":37,"hs":34,"su":false,"ats":true,"tot":false,"wp":44.1},{"wk":"WK6","ko":"2026-10-16T00:15:00Z","a":"SEA","h":"DEN","as_":14,"hs":17,"su":false,"ats":true,"tot":false,"wp":44.9},{"wk":"WK6","ko":"2026-10-18T13:30:00Z","a":"HOU","h":"JAX","as_":34,"hs":31,"su":false,"ats":false,"tot":true,"wp":24.4},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"CHI","h":"ATL","as_":31,"hs":23,"su":true,"ats":false,"tot":false,"wp":53.3},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"BAL","h":"CLE","as_":10,"hs":13,"su":false,"ats":false,"tot":false,"wp":36.4},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"TEN","h":"IND","as_":26,"hs":20,"su":false,"ats":false,"tot":null,"wp":15.1},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"NYJ","h":"NE","as_":19,"hs":26,"su":true,"ats":false,"tot":false,"wp":89.7},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"NO","h":"NYG","as_":34,"hs":27,"su":false,"ats":false,"tot":false,"wp":30.3},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"CAR","h":"PHI","as_":25,"hs":14,"su":false,"ats":false,"tot":true,"wp":35.6},{"wk":"WK6","ko":"2026-10-18T17:00:00Z","a":"PIT","h":"TB","as_":26,"hs":19,"su":true,"ats":true,"tot":true,"wp":59.6},{"wk":"WK6","ko":"2026-10-18T20:05:00Z","a":"ARI","h":"LAR","as_":18,"hs":16,"su":false,"ats":true,"tot":true,"wp":14.5},{"wk":"WK6","ko":"2026-10-18T20:25:00Z","a":"BUF","h":"LV","as_":33,"hs":30,"su":true,"ats":false,"tot":false,"wp":76.8},{"wk":"WK6","ko":"2026-10-18T20:25:00Z","a":"LAC","h":"KC","as_":6,"hs":22,"su":true,"ats":true,"tot":true,"wp":79.0},{"wk":"WK6","ko":"2026-10-19T00:20:00Z","a":"DAL","h":"GB","as_":13,"hs":23,"su":true,"ats":true,"tot":true,"wp":66.8},{"wk":"WK6","ko":"2026-10-20T00:15:00Z","a":"WAS","h":"SF","as_":17,"hs":23,"su":true,"ats":false,"tot":true,"wp":87.1},{"wk":"WK7","ko":"2026-10-23T00:15:00Z","a":"NE","h":"CHI","as_":24,"hs":30,"su":false,"ats":false,"tot":false,"wp":40.2},{"wk":"WK7","ko":"2026-10-25T13:30:00Z","a":"PIT","h":"NO","as_":16,"hs":10,"su":true,"ats":true,"tot":false,"wp":64.8},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"SF","h":"ATL","as_":20,"hs":29,"su":false,"ats":false,"tot":true,"wp":25.9},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"CIN","h":"BAL","as_":35,"hs":13,"su":false,"ats":false,"tot":true,"wp":34.4},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"NYG","h":"HOU","as_":27,"hs":21,"su":false,"ats":true,"tot":false,"wp":29.6},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"CLE","h":"TEN","as_":27,"hs":24,"su":true,"ats":true,"tot":false,"wp":64.8},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"TB","h":"CAR","as_":43,"hs":13,"su":false,"ats":false,"tot":false,"wp":32.3},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"IND","h":"MIN","as_":10,"hs":16,"su":true,"ats":false,"tot":false,"wp":74.2},{"wk":"WK7","ko":"2026-10-25T17:00:00Z","a":"MIA","h":"NYJ","as_":28,"hs":25,"su":false,"ats":true,"tot":true,"wp":45.0},{"wk":"WK7","ko":"2026-10-25T20:05:00Z","a":"DEN","h":"ARI","as_":30,"hs":16,"su":true,"ats":true,"tot":false,"wp":73.9},{"wk":"WK7","ko":"2026-10-25T20:25:00Z","a":"GB","h":"DET","as_":17,"hs":20,"su":true,"ats":true,"tot":true,"wp":60.7},{"wk":"WK7","ko":"2026-10-25T20:25:00Z","a":"LAR","h":"LV","as_":35,"hs":21,"su":true,"ats":true,"tot":false,"wp":70.8},{"wk":"WK7","ko":"2026-10-26T00:20:00Z","a":"KC","h":"SEA","as_":3,"hs":20,"su":true,"ats":true,"tot":true,"wp":63.9},{"wk":"WK7","ko":"2026-10-27T00:15:00Z","a":"DAL","h":"PHI","as_":38,"hs":21,"su":false,"ats":false,"tot":false,"wp":35.5},{"wk":"WK8","ko":"2026-10-30T00:15:00Z","a":"CAR","h":"GB","as_":19,"hs":27,"su":true,"ats":true,"tot":true,"wp":66.9},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"ARI","h":"DAL","as_":33,"hs":30,"su":false,"ats":true,"tot":false,"wp":29.9},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"ATL","h":"TB","as_":0,"hs":16,"su":true,"ats":null,"tot":false,"wp":55.3},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"IND","h":"JAX","as_":7,"hs":42,"su":true,"ats":false,"tot":true,"wp":80.4},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"MIN","h":"DET","as_":15,"hs":19,"su":true,"ats":false,"tot":true,"wp":51.6},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"BAL","h":"BUF","as_":10,"hs":36,"su":true,"ats":true,"tot":true,"wp":76.6},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"TEN","h":"CIN","as_":36,"hs":43,"su":true,"ats":true,"tot":false,"wp":84.8},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"CLE","h":"PIT","as_":6,"hs":27,"su":true,"ats":true,"tot":false,"wp":73.2},{"wk":"WK8","ko":"2026-11-01T18:00:00Z","a":"LV","h":"NYJ","as_":38,"hs":33,"su":true,"ats":true,"tot":true,"wp":52.4},{"wk":"WK8","ko":"2026-11-01T21:05:00Z","a":"LAC","h":"LAR","as_":9,"hs":24,"su":true,"ats":true,"tot":true,"wp":81.1},{"wk":"WK8","ko":"2026-11-01T21:25:00Z","a":"KC","h":"DEN","as_":24,"hs":28,"su":true,"ats":true,"tot":true,"wp":61.2},{"wk":"WK8","ko":"2026-11-01T21:25:00Z","a":"NE","h":"MIA","as_":24,"hs":19,"su":true,"ats":false,"tot":true,"wp":79.5},{"wk":"WK8","ko":"2026-11-02T01:20:00Z","a":"PHI","h":"WAS","as_":10,"hs":27,"su":false,"ats":false,"tot":false,"wp":47.1},{"wk":"WK8","ko":"2026-11-03T01:15:00Z","a":"CHI","h":"SEA","as_":34,"hs":17,"su":false,"ats":false,"tot":true,"wp":29.0}],"edges":{"summary":{"byWindow":{"Sun AM":{"n":8,"withLine":7,"beat":3,"avgPts":2.36,"beatPct":43,"record":{"w":4,"l":4,"p":0,"pct":50}},"Sun 1pm":{"n":56,"withLine":56,"beat":9,"avgPts":-0.02,"beatPct":16,"record":{"w":24,"l":29,"p":1,"pct":45}},"Sun 4pm":{"n":28,"withLine":28,"beat":3,"avgPts":-0.04,"beatPct":11,"record":{"w":16,"l":11,"p":0,"pct":59}},"Mon night":{"n":12,"withLine":12,"beat":2,"avgPts":-0.83,"beatPct":17,"record":{"w":7,"l":5,"p":0,"pct":58}},"Thu night":{"n":18,"withLine":18,"beat":2,"avgPts":-0.06,"beatPct":11,"record":{"w":6,"l":11,"p":0,"pct":35}},"Sun night":{"n":12,"withLine":12,"beat":2,"avgPts":0.71,"beatPct":17,"record":{"w":3,"l":9,"p":0,"pct":25}}},"byPickType":{"edge":{"n":131,"withLine":130,"beat":21,"avgPts":0.1,"beatPct":16,"record":{"w":59,"l":68,"p":1,"pct":46}},"min-action":{"n":3,"withLine":3,"beat":0,"avgPts":-0.5,"beatPct":0,"record":{"w":1,"l":1,"p":0,"pct":50}}},"sharp":{"n":13,"beat":3,"avgPts":-0.15},"mlPriceClv":{"n":1,"avgPct":-2.6},"propsWithClose":0,"logged":134,"withLine":134,"beatClose":21,"flat":91,"beatPct":16,"avgClvPts":0.07,"closedFinal":133,"record":{"w":60,"l":69,"p":1,"pct":47},"paperPnl":-156.55,"taken":1,"takenRecord":{"w":1,"l":0,"p":0,"pct":100},"realPnl":13.16,"byRecDay":{"Mon":{"n":12,"beat":6,"avgPts":1.21},"Tue":{"n":45,"beat":4,"avgPts":0.03},"Wed":{"n":30,"beat":6,"avgPts":-0.17},"Thu":{"n":7,"beat":2,"avgPts":0.07},"Fri":{"n":12,"beat":2,"avgPts":-0.04},"Sat":{"n":14,"beat":0,"avgPts":-0.18},"Sun":{"n":14,"beat":1,"avgPts":0.07}}},"rows":[{"wk":"WK5","day":"Tue","pick":"Jalon Daniels o43.5 rush yds","conf":6.0,"stake":15.0,"rec":43.5,"now":44.5,"close":44.5,"clv":1.0,"taken":false,"res":"loss","pnl":-15.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Thu","pick":"Cowboys -8","conf":4.0,"stake":7.5,"rec":-8.0,"now":-8.5,"close":-8.5,"clv":0.5,"taken":false,"res":"loss","pnl":-7.5,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Tue","pick":"Javonte Williams u73.5 rush yds","conf":5.0,"stake":15.0,"rec":73.5,"now":73.5,"close":73.5,"clv":0.0,"taken":false,"res":"win","pnl":13.16,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Tue","pick":"Bucky Irving o51.5 rush yds","conf":5.0,"stake":15.0,"rec":51.5,"now":51.5,"close":51.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Tue","pick":"CeeDee Lamb o6.5 rec (+116)","conf":4.0,"stake":7.5,"rec":6.5,"now":6.5,"close":6.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Wed","pick":"Pickens u61.5 rec yds (swap)","conf":5.0,"stake":0.0,"rec":61.5,"now":61.5,"close":61.5,"clv":0.0,"taken":false,"res":"loss","pnl":-0.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Wed","pick":"Otton o28.5 rec yds (swap)","conf":5.0,"stake":0.0,"rec":28.5,"now":28.5,"close":28.5,"clv":0.0,"taken":false,"res":"loss","pnl":-0.0,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Tue","pick":"CeeDee Lamb o81.5 rec yds","conf":4.0,"stake":7.5,"rec":81.5,"now":80.5,"close":80.5,"clv":-1.0,"taken":false,"res":"loss","pnl":-7.5,"a":"TB","h":"DAL","ko":"2026-10-09T00:15:00Z"},{"wk":"WK5","day":"Tue","pick":"Tuten o57.5 rush yds","conf":5.0,"stake":15.0,"rec":57.5,"now":65.5,"close":65.5,"clv":8.0,"taken":true,"res":"win","pnl":13.16,"a":"PHI","h":"JAX","ko":"2026-10-11T13:30:00Z"},{"wk":"WK5","day":"Mon","pick":"Jaguars -2.5","conf":6.0,"stake":15.0,"rec":-2.5,"now":-7.5,"close":-7.5,"clv":5.0,"taken":false,"res":"loss","pnl":-15.0,"a":"PHI","h":"JAX","ko":"2026-10-11T13:30:00Z"},{"wk":"WK5","day":"Mon","pick":"PHI/JAX Under 45.5","conf":5.0,"stake":7.5,"rec":45.5,"now":41.5,"close":41.5,"clv":4.0,"taken":false,"res":"win","pnl":6.82,"a":"PHI","h":"JAX","ko":"2026-10-11T13:30:00Z"},{"wk":"WK5","day":"Mon","pick":"CIN/MIA Under 46.5","conf":6.0,"stake":15.0,"rec":46.5,"now":43.5,"close":43.5,"clv":3.0,"taken":false,"res":"loss","pnl":-15.0,"a":"CIN","h":"MIA","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Mon","pick":"Steelers -1.5","conf":4.0,"stake":7.5,"rec":-1.5,"now":-3,"close":-3,"clv":1.5,"taken":false,"res":"win","pnl":6.82,"a":"IND","h":"PIT","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Wed","pick":"G. Wilson o68.5 rec yds","conf":5.0,"stake":15.0,"rec":68.5,"now":69.5,"close":69.5,"clv":1.0,"taken":false,"res":"win","pnl":13.64,"a":"CLE","h":"NYJ","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Thu","pick":"Packers +2.5","conf":5.0,"stake":15.0,"rec":2.5,"now":1.5,"close":1.5,"clv":1.0,"taken":false,"res":"win","pnl":13.64,"a":"CHI","h":"GB","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Tue","pick":"Vikings -1","conf":6.0,"stake":15.0,"rec":-1.0,"now":-1.5,"close":-1.5,"clv":0.5,"taken":false,"res":"win","pnl":13.64,"a":"MIN","h":"NO","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Mon","pick":"Raiders +3.5","conf":5.0,"stake":15.0,"rec":3.5,"now":3.5,"close":3.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"LV","h":"NE","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Wed","pick":"Maye u226.5 pass yds","conf":5.0,"stake":15.0,"rec":226.5,"now":226.5,"close":226.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"LV","h":"NE","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Fri","pick":"Luther Burden III o45.5 rec yds","conf":6.0,"stake":15.0,"rec":45.5,"now":45.5,"close":45.5,"clv":0.0,"taken":false,"res":"win","pnl":12.5,"a":"CHI","h":"GB","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Fri","pick":"Browns +2.5","conf":6.0,"stake":15.0,"rec":2.5,"now":2.5,"close":2.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"CLE","h":"NYJ","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Fri","pick":"Burrow o254.5","conf":5.0,"stake":15.0,"rec":254.5,"now":254.5,"close":254.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"CIN","h":"MIA","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Sat","pick":"Colts +3","conf":6.0,"stake":15.0,"rec":3.0,"now":3,"close":3,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"IND","h":"PIT","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Sat","pick":"David Montgomery o43.5 rush yds","conf":6.0,"stake":15.0,"rec":43.5,"now":43.5,"close":43.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"HOU","h":"TEN","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Mon","pick":"Giants +3 (watch)","conf":4.0,"stake":7.5,"rec":3.0,"now":3.5,"close":3.5,"clv":-0.5,"taken":false,"res":"win","pnl":6.82,"a":"NYG","h":"WAS","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Thu","pick":"Dolphins +6.5","conf":5.0,"stake":15.0,"rec":6.5,"now":7,"close":7,"clv":-0.5,"taken":false,"res":"loss","pnl":-15.0,"a":"CIN","h":"MIA","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Sat","pick":"Over 38","conf":5.0,"stake":15.0,"rec":38.0,"now":37.5,"close":37.5,"clv":-0.5,"taken":false,"res":"loss","pnl":-15.0,"a":"HOU","h":"TEN","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Wed","pick":"Geno o207.5 pass yds","conf":5.0,"stake":15.0,"rec":207.5,"now":206.5,"close":206.5,"clv":-1.0,"taken":false,"res":"loss","pnl":-15.0,"a":"CLE","h":"NYJ","ko":"2026-10-11T17:00:00Z"},{"wk":"WK5","day":"Mon","pick":"Broncos -1.5","conf":5.0,"stake":15.0,"rec":-1.5,"now":-3.5,"close":-3.5,"clv":2.0,"taken":false,"res":"win","pnl":13.64,"a":"DEN","h":"LAC","ko":"2026-10-11T20:05:00Z"},{"wk":"WK5","day":"Thu","pick":"DEN/LAC Under 41.5","conf":5.0,"stake":15.0,"rec":41.5,"now":41.5,"close":41.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"DEN","h":"LAC","ko":"2026-10-11T20:05:00Z"},{"wk":"WK5","day":"Sat","pick":"Omarion Hampton o40.5 rush yds","conf":5.0,"stake":15.0,"rec":40.5,"now":40.5,"close":40.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"DEN","h":"LAC","ko":"2026-10-11T20:05:00Z"},{"wk":"WK5","day":"Sat","pick":"Under 54.5","conf":5.0,"stake":15.0,"rec":54.5,"now":54.5,"close":54.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Sat","pick":"Amon-Ra St. Brown o78.5 rec yds","conf":7.0,"stake":15.0,"rec":78.5,"now":78.5,"close":78.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Sat","pick":"Michael Wilson o80.5 rec yds","conf":7.0,"stake":15.0,"rec":80.5,"now":80.5,"close":80.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Sat","pick":"Jacoby Brissett o265.5 pass yds","conf":6.0,"stake":15.0,"rec":265.5,"now":265.5,"close":265.5,"clv":0.0,"taken":false,"res":"win","pnl":13.16,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Sun","pick":"49ers/Seahawks Under 46.5 (reopened)","conf":5.0,"stake":15.0,"rec":46.5,"now":46.5,"close":46.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"SF","h":"SEA","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Fri","pick":"Cardinals +5","conf":4.0,"stake":7.5,"rec":5.0,"now":5.5,"close":5.5,"clv":-0.5,"taken":false,"res":"loss","pnl":-7.5,"a":"DET","h":"ARI","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Wed","pick":"Darnold u227.5 pass yds","conf":5.0,"stake":15.0,"rec":227.5,"now":231.5,"close":231.5,"clv":-4.0,"taken":false,"res":"win","pnl":13.64,"a":"SF","h":"SEA","ko":"2026-10-11T20:25:00Z"},{"wk":"WK5","day":"Wed","pick":"Falcons +3.5","conf":6.0,"stake":15.0,"rec":3.5,"now":-3,"close":-3,"clv":6.5,"taken":false,"res":"loss","pnl":-15.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","day":"Wed","pick":"Bijan o88.5 rush yds","conf":6.0,"stake":15.0,"rec":88.5,"now":90.5,"close":90.5,"clv":2.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","day":"Wed","pick":"Henry u89.5 rush yds","conf":6.0,"stake":15.0,"rec":89.5,"now":89.5,"close":89.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","day":"Wed","pick":"Andrews o28.5 rec yds (swap)","conf":5.0,"stake":0.0,"rec":28.5,"now":28.5,"close":28.5,"clv":0.0,"taken":false,"res":"loss","pnl":-0.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","day":"Wed","pick":"Flowers o66.5 rec yds (swap)","conf":5.0,"stake":0.0,"rec":66.5,"now":66.5,"close":66.5,"clv":0.0,"taken":false,"res":"loss","pnl":-0.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","day":"Thu","pick":"BAL/ATL Under 43.5","conf":5.0,"stake":15.0,"rec":43.5,"now":43.5,"close":43.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BAL","h":"ATL","ko":"2026-10-12T00:20:00Z"},{"wk":"WK5","day":"Wed","pick":"Allen u245.5 pass yds","conf":5.0,"stake":15.0,"rec":245.5,"now":244.5,"close":244.5,"clv":1.0,"taken":false,"res":"win","pnl":13.64,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK5","day":"Wed","pick":"Kyren o71.5 rush yds","conf":5.0,"stake":15.0,"rec":71.5,"now":71.5,"close":71.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK5","day":"Mon","pick":"Puka Nacua o90.5 rec yds","conf":7.0,"stake":15.0,"rec":90.5,"now":90.5,"close":90.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK5","day":"Mon","pick":"BUF/LAR Under 53.5","conf":5.0,"stake":15.0,"rec":53.5,"now":54.5,"close":54.5,"clv":-1.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BUF","h":"LAR","ko":"2026-10-13T00:15:00Z"},{"wk":"WK6","day":"Tue","pick":"Emanuel Wilson o64.5 rush yds","conf":6.0,"stake":15.0,"rec":64.5,"now":64.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","day":"Tue","pick":"Bo Nix u208.5 pass yds","conf":6.0,"stake":15.0,"rec":208.5,"now":208.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","day":"Tue","pick":"Sam Darnold u220.5 pass yds","conf":6.0,"stake":15.0,"rec":220.5,"now":220.5,"close":220.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","day":"Tue","pick":"Jaylen Waddle u49.5 rec yds","conf":4.0,"stake":7.5,"rec":49.5,"now":49.5,"close":49.5,"clv":0.0,"taken":false,"res":"win","pnl":7.08,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","day":"Tue","pick":"Courtland Sutton u3.5 receptions","conf":4.0,"stake":7.5,"rec":3.5,"now":3.5,"close":3.5,"clv":0.0,"taken":false,"res":"win","pnl":6.36,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","day":"Wed","pick":"Over 40.5","conf":6.0,"stake":15.0,"rec":40.5,"now":40.5,"close":40.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"SEA","h":"DEN","ko":"2026-10-16T00:15:00Z"},{"wk":"WK6","day":"Tue","pick":"Trevor Lawrence o220.5 pass yds","conf":7.0,"stake":15.0,"rec":220.5,"now":220.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","day":"Tue","pick":"Bhayshul Tuten o64.5 rush yds","conf":4.0,"stake":7.5,"rec":64.5,"now":64.5,"close":64.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","day":"Tue","pick":"C.J. Stroud o256.5 pass yds","conf":4.0,"stake":7.5,"rec":256.5,"now":256.5,"close":256.5,"clv":0.0,"taken":false,"res":"win","pnl":6.64,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","day":"Wed","pick":"Jaguars -3","conf":5.0,"stake":15.0,"rec":-3.0,"now":-2.5,"close":-2.5,"clv":-0.5,"taken":false,"res":"loss","pnl":-15.0,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","day":"Wed","pick":"Jaguars ML -148","conf":4.0,"stake":7.5,"rec":-148.0,"now":-145,"close":-145,"clv":-2.6,"taken":false,"res":"loss","pnl":-7.5,"a":"HOU","h":"JAX","ko":"2026-10-18T13:30:00Z"},{"wk":"WK6","day":"Wed","pick":"Browns +4.5","conf":5.0,"stake":7.5,"rec":4.5,"now":3.0,"close":3.0,"clv":1.5,"taken":false,"res":"win","pnl":6.82,"a":"BAL","h":"CLE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"NE Patriots -7","conf":5.0,"stake":15.0,"rec":-7.0,"now":-7.5,"close":-7.5,"clv":0.5,"taken":false,"res":"push","pnl":0.0,"a":"NYJ","h":"NE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Tue","pick":"Derrick Henry o79.5 rush yds","conf":6.0,"stake":15.0,"rec":79.5,"now":79.5,"close":79.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BAL","h":"CLE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Eagles ML -115","conf":5.0,"stake":7.5,"rec":-115.0,"now":null,"close":null,"clv":null,"taken":false,"res":null,"pnl":null,"a":"CAR","h":"PHI","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Over 40.5","conf":4.0,"stake":7.5,"rec":40.5,"now":40.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"CAR","h":"PHI","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Bijan Robinson u94.5 rush yds","conf":5.0,"stake":15.0,"rec":94.5,"now":94.5,"close":94.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"CHI","h":"ATL","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Tony Pollard o54.5 rush yds","conf":5.0,"stake":15.0,"rec":54.5,"now":54.5,"close":54.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"TEN","h":"IND","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Jameis Winston o3.5 rush yds","conf":5.0,"stake":15.0,"rec":3.5,"now":3.5,"close":3.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"NO","h":"NYG","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Jalen Hurts o20.5 rush yds","conf":5.0,"stake":15.0,"rec":20.5,"now":20.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"CAR","h":"PHI","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Drake Maye o25.5 rush yds","conf":3.0,"stake":7.5,"rec":25.5,"now":25.5,"close":25.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"NYJ","h":"NE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"Tanner McKee o192.5 pass yds","conf":5.0,"stake":15.0,"rec":192.5,"now":192.5,"close":192.5,"clv":0.0,"taken":false,"res":"win","pnl":12.5,"a":"CAR","h":"PHI","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"Jaylen Warren o56.5 rush yds","conf":4.0,"stake":7.5,"rec":56.5,"now":56.5,"close":56.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"PIT","h":"TB","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"Jalon Daniels o173.5 pass yds","conf":4.0,"stake":7.5,"rec":173.5,"now":173.5,"close":173.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"PIT","h":"TB","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"PHI Eagles +3","conf":6.0,"stake":15.0,"rec":3.0,"now":3.0,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"CAR","h":"PHI","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"NYG Giants +1.5","conf":5.0,"stake":15.0,"rec":1.5,"now":1.5,"close":1.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"NO","h":"NYG","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Sat","pick":"Ravens -3","conf":5.0,"stake":15.0,"rec":-3.0,"now":-3.0,"close":-3.0,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"BAL","h":"CLE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Sat","pick":"Steelers -2.5","conf":7.0,"stake":15.0,"rec":-2.5,"now":-2.5,"close":-2.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"PIT","h":"TB","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Sun","pick":"Saints/Giants Under 46.5","conf":6.0,"stake":15.0,"rec":46.5,"now":46.5,"close":46.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"NO","h":"NYG","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"Over 39 (Steelers-Buccaneers total)","conf":5.0,"stake":15.0,"rec":39.0,"now":38.5,"close":38.5,"clv":-0.5,"taken":false,"res":"win","pnl":13.64,"a":"PIT","h":"TB","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Fri","pick":"IND Colts -7","conf":5.0,"stake":15.0,"rec":-7.0,"now":-6.5,"close":-6.5,"clv":-0.5,"taken":false,"res":"loss","pnl":-15.0,"a":"TEN","h":"IND","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Sat","pick":"Under 51.5","conf":4.0,"stake":7.5,"rec":51.5,"now":52.5,"close":52.5,"clv":-1.0,"taken":false,"res":"loss","pnl":-7.5,"a":"CHI","h":"ATL","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Over 41.5","conf":4.0,"stake":7.5,"rec":41.5,"now":39.5,"close":39.5,"clv":-2.0,"taken":false,"res":"loss","pnl":-7.5,"a":"BAL","h":"CLE","ko":"2026-10-18T17:00:00Z"},{"wk":"WK6","day":"Wed","pick":"Under 51.5","conf":6.0,"stake":15.0,"rec":51.5,"now":51.5,"close":51.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"ARI","h":"LAR","ko":"2026-10-18T20:05:00Z"},{"wk":"WK6","day":"Wed","pick":"Rams -12.5","conf":4.0,"stake":7.5,"rec":-12.5,"now":-12.5,"close":-12.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"ARI","h":"LAR","ko":"2026-10-18T20:05:00Z"},{"wk":"WK6","day":"Thu","pick":"Michael Wilson o58.5 rec yds","conf":4.0,"stake":7.5,"rec":58.5,"now":58.5,"close":58.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"ARI","h":"LAR","ko":"2026-10-18T20:05:00Z"},{"wk":"WK6","day":"Fri","pick":"Chargers/Chiefs Under 42","conf":6.0,"stake":15.0,"rec":42.0,"now":41.5,"close":41.5,"clv":0.5,"taken":false,"res":"win","pnl":13.64,"a":"LAC","h":"KC","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","day":"Tue","pick":"Patrick Mahomes o224.5 pass yds","conf":5.0,"stake":15.0,"rec":224.5,"now":224.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"LAC","h":"KC","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","day":"Tue","pick":"Kenneth Walker III o86.5 rush yds","conf":6.0,"stake":15.0,"rec":86.5,"now":86.5,"close":86.5,"clv":0.0,"taken":false,"res":"win","pnl":11.54,"a":"LAC","h":"KC","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","day":"Wed","pick":"Josh Allen o239.5 pass yds","conf":6.0,"stake":15.0,"rec":239.5,"now":239.5,"close":239.5,"clv":0.0,"taken":false,"res":"win","pnl":13.04,"a":"BUF","h":"LV","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","day":"Wed","pick":"Tre Tucker o35.5 rec yds","conf":5.0,"stake":15.0,"rec":35.5,"now":35.5,"close":35.5,"clv":0.0,"taken":false,"res":"win","pnl":13.51,"a":"BUF","h":"LV","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","day":"Thu","pick":"Buffalo Bills -5.5","conf":5.0,"stake":15.0,"rec":-5.5,"now":-5,"close":-5,"clv":-0.5,"taken":false,"res":"loss","pnl":-15.0,"a":"BUF","h":"LV","ko":"2026-10-18T20:25:00Z"},{"wk":"WK6","day":"Tue","pick":"MarShawn Lloyd u40.5 rush yds","conf":4.0,"stake":7.5,"rec":40.5,"now":40.5,"close":40.5,"clv":0.0,"taken":false,"res":"win","pnl":6.36,"a":"DAL","h":"GB","ko":"2026-10-19T00:20:00Z"},{"wk":"WK6","day":"Sat","pick":"Packers -1.5","conf":5.0,"stake":15.0,"rec":-1.5,"now":-1.5,"close":-1.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"DAL","h":"GB","ko":"2026-10-19T00:20:00Z"},{"wk":"WK6","day":"Sat","pick":"Under 53.5","conf":5.0,"stake":15.0,"rec":53.5,"now":53.5,"close":53.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"DAL","h":"GB","ko":"2026-10-19T00:20:00Z"},{"wk":"WK6","day":"Wed","pick":"Brock Purdy o16.5 rush yds","conf":5.0,"stake":15.0,"rec":16.5,"now":16.5,"close":16.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"WAS","h":"SF","ko":"2026-10-20T00:15:00Z"},{"wk":"WK6","day":"Sat","pick":"Under 51.5","conf":5.0,"stake":15.0,"rec":51.5,"now":52.5,"close":52.5,"clv":-1.0,"taken":false,"res":"win","pnl":13.64,"a":"WAS","h":"SF","ko":"2026-10-20T00:15:00Z"},{"wk":"WK7","day":"Tue","pick":"Patriots +3","conf":5.0,"stake":15.0,"rec":3.0,"now":3,"close":3,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"NE","h":"CHI","ko":"2026-10-23T00:15:00Z"},{"wk":"WK7","day":"Tue","pick":"Under 50.5","conf":4.0,"stake":7.5,"rec":50.5,"now":50.5,"close":50.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"NE","h":"CHI","ko":"2026-10-23T00:15:00Z"},{"wk":"WK7","day":"Tue","pick":"Caleb Williams o17.5 rush yds","conf":4.0,"stake":7.5,"rec":17.5,"now":17.5,"close":17.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"NE","h":"CHI","ko":"2026-10-23T00:15:00Z"},{"wk":"WK7","day":"Tue","pick":"Caleb Williams u249.5 pass yds","conf":6.0,"stake":15.0,"rec":249.5,"now":249.5,"close":249.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"NE","h":"CHI","ko":"2026-10-23T00:15:00Z"},{"wk":"WK7","day":"Tue","pick":"Tyler Shough o234.5 pass yards","conf":4.0,"stake":7.5,"rec":234.5,"now":234.5,"close":234.5,"clv":0.0,"taken":false,"res":"win","pnl":6.52,"a":"PIT","h":"NO","ko":"2026-10-25T13:30:00Z"},{"wk":"WK7","day":"Tue","pick":"Dolphins +4.5","conf":5.0,"stake":15.0,"rec":4.5,"now":3.5,"close":3.5,"clv":1.0,"taken":false,"res":"win","pnl":13.64,"a":"MIA","h":"NYJ","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Browns -1.5","conf":4.0,"stake":7.5,"rec":-1.5,"now":-1.5,"close":-1.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"CLE","h":"TEN","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Over 41.5","conf":4.0,"stake":7.5,"rec":41.5,"now":41.5,"close":41.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"IND","h":"MIN","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Over 39.5","conf":4.0,"stake":7.5,"rec":39.5,"now":39.5,"close":39.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"MIA","h":"NYJ","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Under 50.5","conf":4.0,"stake":7.5,"rec":50.5,"now":50.5,"close":50.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"SF","h":"ATL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Over 44.5","conf":5.0,"stake":15.0,"rec":44.5,"now":44.5,"close":44.5,"clv":0.0,"taken":false,"res":"win","pnl":13.64,"a":"TB","h":"CAR","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Joe Burrow o259.5 pass yds","conf":4.0,"stake":7.5,"rec":259.5,"now":259.5,"close":259.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"CIN","h":"BAL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Daniel Jones o195.5 pass yards","conf":4.0,"stake":7.5,"rec":195.5,"now":195.5,"close":195.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"IND","h":"MIN","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Brock Purdy o19.5 rush yards","conf":5.0,"stake":15.0,"rec":19.5,"now":19.5,"close":19.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"SF","h":"ATL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Cam Ward u187.5 pass yards","conf":5.0,"stake":15.0,"rec":187.5,"now":187.5,"close":187.5,"clv":0.0,"taken":false,"res":"win","pnl":13.04,"a":"CLE","h":"TEN","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"C.J. Stroud o3.5 rush yards","conf":6.0,"stake":15.0,"rec":3.5,"now":3.5,"close":3.5,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"NYG","h":"HOU","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Sun","pick":"Panthers -2.5","conf":5.0,"stake":15.0,"rec":-2.5,"now":null,"close":null,"clv":null,"taken":false,"res":null,"pnl":null,"a":"TB","h":"CAR","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Giants +10","conf":5.0,"stake":15.0,"rec":10.0,"now":10.5,"close":10.5,"clv":-0.5,"taken":false,"res":"win","pnl":13.64,"a":"NYG","h":"HOU","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"49ers -3.5","conf":5.0,"stake":15.0,"rec":-3.5,"now":-2.5,"close":null,"clv":-1.0,"taken":false,"res":null,"pnl":null,"a":"SF","h":"ATL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Ravens -2.5","conf":4.0,"stake":7.5,"rec":-2.5,"now":2.5,"close":2.5,"clv":-5.0,"taken":false,"res":"loss","pnl":-7.5,"a":"CIN","h":"BAL","ko":"2026-10-25T17:00:00Z"},{"wk":"WK7","day":"Tue","pick":"Broncos -4.5","conf":4.0,"stake":7.5,"rec":-4.5,"now":-4.5,"close":-4.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"DEN","h":"ARI","ko":"2026-10-25T20:05:00Z"},{"wk":"WK7","day":"Tue","pick":"Bo Nix o219.5 pass yards","conf":6.0,"stake":15.0,"rec":219.5,"now":219.5,"close":219.5,"clv":0.0,"taken":false,"res":"win","pnl":13.04,"a":"DEN","h":"ARI","ko":"2026-10-25T20:05:00Z"},{"wk":"WK7","day":"Wed","pick":"Kyren Williams OVER 59.5 rush yards","conf":6.0,"stake":15.0,"rec":59.5,"now":63.5,"close":63.5,"clv":4.0,"taken":false,"res":"win","pnl":13.64,"a":"LAR","h":"LV","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","day":"Tue","pick":"Amon-Ra St. Brown o78.5 rec yds","conf":4.0,"stake":7.5,"rec":78.5,"now":78.5,"close":78.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"GB","h":"DET","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","day":"Tue","pick":"Jahmyr Gibbs o36.5 rec yds","conf":5.0,"stake":15.0,"rec":36.5,"now":36.5,"close":36.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"GB","h":"DET","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","day":"Wed","pick":"Matthew Stafford OVER 263.5 pass yards","conf":6.0,"stake":15.0,"rec":263.5,"now":263.5,"close":263.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"LAR","h":"LV","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","day":"Tue","pick":"Rams -4","conf":4.0,"stake":7.5,"rec":-4.0,"now":-3.5,"close":-3.5,"clv":-0.5,"taken":false,"res":"win","pnl":6.82,"a":"LAR","h":"LV","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","day":"Tue","pick":"Under 53.5","conf":5.0,"stake":15.0,"rec":53.5,"now":55.5,"close":55.5,"clv":-2.0,"taken":false,"res":"win","pnl":13.64,"a":"GB","h":"DET","ko":"2026-10-25T20:25:00Z"},{"wk":"WK7","day":"Tue","pick":"Over 42.5","conf":5.0,"stake":15.0,"rec":42.5,"now":42.5,"close":42.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"KC","h":"SEA","ko":"2026-10-26T00:20:00Z"},{"wk":"WK7","day":"Tue","pick":"Patrick Mahomes o211.5 pass yards","conf":4.0,"stake":7.5,"rec":211.5,"now":211.5,"close":211.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"KC","h":"SEA","ko":"2026-10-26T00:20:00Z"},{"wk":"WK7","day":"Mon","pick":"Javonte Williams o60.5 rush yds","conf":4.0,"stake":7.5,"rec":60.5,"now":62.5,"close":62.5,"clv":2.0,"taken":false,"res":"win","pnl":6.82,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK7","day":"Tue","pick":"Eagles +4.5","conf":6.0,"stake":15.0,"rec":4.5,"now":4.5,"close":4.5,"clv":0.0,"taken":false,"res":"loss","pnl":-15.0,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK7","day":"Mon","pick":"Tyler Goodson u10.5 rush yds","conf":4.0,"stake":7.5,"rec":10.5,"now":10.5,"close":10.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK7","day":"Wed","pick":"Tanner McKee OVER 209.5 pass yards","conf":6.0,"stake":15.0,"rec":209.5,"now":198.5,"close":198.5,"clv":-11.0,"taken":false,"res":"win","pnl":13.64,"a":"DAL","h":"PHI","ko":"2026-10-27T00:15:00Z"},{"wk":"WK8","day":"Tue","pick":"Chuba Hubbard o68.5 rush yds","conf":4.0,"stake":7.5,"rec":68.5,"now":68.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"CAR","h":"GB","ko":"2026-10-30T00:15:00Z"},{"wk":"WK8","day":"Tue","pick":"Jordan Love o260.5 pass yds","conf":4.0,"stake":7.5,"rec":260.5,"now":260.5,"close":260.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"CAR","h":"GB","ko":"2026-10-30T00:15:00Z"},{"wk":"WK8","day":"Sun","pick":"TEN/CIN UNDER 46.5","conf":5.0,"stake":12.0,"rec":46.5,"now":45.5,"close":45.5,"clv":1.0,"taken":false,"res":"loss","pnl":-12.0,"a":"TEN","h":"CIN","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Tue","pick":"Jonathan Taylor u72.5 rush yds","conf":4.0,"stake":7.5,"rec":72.5,"now":72.5,"close":72.5,"clv":0.0,"taken":false,"res":"win","pnl":6.82,"a":"IND","h":"JAX","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Tue","pick":"Derrick Henry o73.5 rush yds","conf":4.0,"stake":7.5,"rec":73.5,"now":73.5,"close":73.5,"clv":0.0,"taken":false,"res":"loss","pnl":-7.5,"a":"BAL","h":"BUF","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"MIN +3.5","conf":6.0,"stake":18.0,"rec":3.5,"now":3.5,"close":3.5,"clv":0.0,"taken":false,"res":"loss","pnl":-18.0,"a":"MIN","h":"DET","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"PIT -3.5","conf":5.0,"stake":12.0,"rec":-3.5,"now":-3.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"CLE","h":"PIT","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"Kyler Murray o220.5 pass yds","conf":6.0,"stake":18.0,"rec":220.5,"now":220.5,"close":220.5,"clv":0.0,"taken":false,"res":"loss","pnl":-18.0,"a":"MIN","h":"DET","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"Josh Downs o30.5 rec yds","conf":5.0,"stake":12.0,"rec":30.5,"now":30.5,"close":30.5,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"IND","h":"JAX","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"ARI/DAL UNDER 54.5","conf":5.0,"stake":12.0,"rec":54.5,"now":54.5,"close":54.5,"clv":0.0,"taken":false,"res":"loss","pnl":-12.0,"a":"ARI","h":"DAL","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"ARI +7.5","conf":5.0,"stake":12.0,"rec":7.5,"now":7.5,"close":7.5,"clv":0.0,"taken":false,"res":"win","pnl":10.34,"a":"ARI","h":"DAL","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"LV +1.5 (conflicts w/ NYJ ML tickets)","conf":5.0,"stake":12.0,"rec":1.5,"now":1.5,"close":1.5,"clv":0.0,"taken":false,"res":"win","pnl":11.32,"a":"LV","h":"NYJ","ko":"2026-11-01T18:00:00Z"},{"wk":"WK8","day":"Sun","pick":"MIA +6.5","conf":5.0,"stake":12.0,"rec":6.5,"now":6.5,"close":6.5,"clv":0.0,"taken":false,"res":"win","pnl":11.32,"a":"NE","h":"MIA","ko":"2026-11-01T21:25:00Z"},{"wk":"WK8","day":"Sun","pick":"Patrick Mahomes o12.5 rush yds","conf":6.0,"stake":18.0,"rec":12.5,"now":12.5,"close":12.5,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"KC","h":"DEN","ko":"2026-11-01T21:25:00Z"},{"wk":"WK8","day":"Sun","pick":"PHI +6.5 (minimum-action)","conf":4.0,"stake":6.0,"rec":6.5,"now":6.5,"close":6.5,"clv":0.0,"taken":false,"res":"loss","pnl":-6.0,"a":"PHI","h":"WAS","ko":"2026-11-02T01:20:00Z"},{"wk":"WK8","day":"Tue","pick":"Caleb Williams u226.5 pass yds","conf":4.0,"stake":7.5,"rec":226.5,"now":226.5,"close":null,"clv":0.0,"taken":false,"res":null,"pnl":null,"a":"CHI","h":"SEA","ko":"2026-11-03T01:15:00Z"},{"wk":"WK8","day":"Sun","pick":"CHI +3.5 (minimum-action)","conf":4.0,"stake":6.0,"rec":3.5,"now":3.5,"close":3.5,"clv":0.0,"taken":false,"res":"win","pnl":4.92,"a":"CHI","h":"SEA","ko":"2026-11-03T01:15:00Z"},{"wk":"WK8","day":"Sun","pick":"D'Andre Swift u63.5 rush yds","conf":5.0,"stake":12.0,"rec":63.5,"now":63.5,"close":63.5,"clv":0.0,"taken":false,"res":"loss","pnl":-12.0,"a":"CHI","h":"SEA","ko":"2026-11-03T01:15:00Z"},{"wk":"WK9","day":"Mon","pick":"Over 43.5 (minimum-action)","conf":4.0,"stake":6.0,"rec":43.5,"now":42,"close":null,"clv":-1.5,"taken":false,"res":null,"pnl":null,"a":"JAX","h":"BAL","ko":"2026-11-06T01:15:00Z"}]}};
+const MINUS = '−';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtAbs = v => (Math.round(Math.abs(v) * 10) / 10).toString();
+// D sign convention: spread values are positive when the HOME team is favored.
+const sideStr = (g, m) => m == null ? '—' : Math.abs(m) < 0.05 ? 'PK' : `${m > 0 ? g.h : g.a} ${MINUS}${fmtAbs(m)}`;
+const signed = v => Math.abs(v) < 0.05 ? 'PK' : (v > 0 ? '+' : MINUS) + fmtAbs(v);
+const teamSpread = (g, team) => team === g.h ? signed(-g.cur) : signed(g.cur);
+const fmtKo = iso => new Date(iso).toLocaleString([], {weekday:'short', hour:'numeric', minute:'2-digit'});
+const fmtT = iso => new Date(iso).toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'});
+const pct = v => v == null ? '—' : (Math.round(v * 10) / 10).toString();
+const niceMinus = s => String(s).replace(/(^|[\s(])-(?=\d)/g, '$1' + MINUS);
+const wkNum = w => parseInt(String(w || '').replace(/\D/g, ''), 10) || 0;
+const SYS = {
+  winless_road_vs_home_favorite:'Winless road team vs. a home favorite',
+  road_dog_window_02:'0–2 team as a road underdog',
+  off_loss_vs_off_win:'Off a loss vs. a team off a win',
+  repeat_home_loser_fade:'Repeat home loser fade',
+  double_revenge_home_favorite_fade:'Double-revenge home favorite fade',
+  swept_away_dog_first_meeting:'Swept last year, first rematch as road dog',
+  travel_under_backtoback_road_off_win:'Back-to-back road trip, travel Under',
+  desperation_over_02_singledigit:'Two 0–2 teams, single-digit spread',
+  divisional_underdogs:'Divisional underdog',
+};
+const MARKET = {spread:'Spread', total:'Total', moneyline:'Moneyline', prop:'Prop'};
+const PROP_M = {receptions:'Receptions', rec_yards:'Receiving yards', rush_yards:'Rushing yards', pass_yards:'Passing yards', completions:'Completions', attempts:'Attempts', pass_tds:'Passing TDs', rush_attempts:'Rush attempts'};
+
+/* Team colors for the money bars. Very dark primaries are lifted toward white so they read on the dark ground;
+   identity never rides on color alone because every bar carries team labels. */
+const TEAM = {ARI:'#97233F',ATL:'#A71930',BAL:'#241773',BUF:'#00338D',CAR:'#0085CA',CHI:'#C83803',CIN:'#FB4F14',CLE:'#FF3C00',
+  DAL:'#003594',DEN:'#FB4F14',DET:'#0076B6',GB:'#203731',HOU:'#A71930',IND:'#002C5F',JAX:'#006778',KC:'#E31837',
+  LV:'#A5ACAF',LAC:'#0080C6',LAR:'#003594',MIA:'#008E97',MIN:'#4F2683',NE:'#002244',NO:'#D3BC8D',NYG:'#0B2265',
+  NYJ:'#125740',PHI:'#004C54',PIT:'#FFB612',SF:'#AA0000',SEA:'#69BE28',TB:'#D50A0A',TEN:'#4B92DB',WAS:'#5A1414'};
+function lum(hex) {
+  const c = hex.replace('#', '').match(/../g).map(h => parseInt(h, 16) / 255).map(v => v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4));
+  return .2126 * c[0] + .7152 * c[1] + .0722 * c[2];
+}
+function mix(hex, t) {
+  const c = hex.replace('#', '').match(/../g).map(h => parseInt(h, 16));
+  return '#' + c.map(v => Math.round(v + (255 - v) * t).toString(16).padStart(2, '0')).join('');
+}
+function teamColor(abbr) {
+  let c = TEAM[abbr] || '#596074', t = 0;
+  while (lum(c) < 0.07 && t < 0.6) { t += 0.08; c = mix(TEAM[abbr] || '#596074', t); }
+  return c;
+}
+
+/* ---------- Shared pieces ---------- */
+function tierName(c) { return c >= 9 ? 'Rare' : c >= 7 ? 'Strong' : c >= 5 ? 'Real' : c >= 3 ? 'Mild' : 'Coinflip'; }
+function meter(c) {
+  const n = Math.max(0, Math.min(10, Math.round(c || 0)));
+  let cells = '';
+  for (let i = 0; i < 10; i++) cells += `<i${i < n ? ' class="on"' : ''}></i>`;
+  return `<span class="meter${n >= 7 ? ' strong' : ''}" role="img" aria-label="Confidence ${n} out of 10">${cells}</span>`;
+}
+function confRow(c) {
+  return `<div class="conf"><span class="conf-num num">${c ?? '—'}<small>/10</small></span><span class="conf-body"><span class="conf-tier">${tierName(c)}</span>${meter(c)}</span></div>`;
+}
+function alignRow(al) {
+  if (!al || al.for == null) return '';
+  return `<span class="align"><span class="f">${al.for} for</span><span class="a">${al.against} against</span>${al.neutral ? `<span class="n">${al.neutral} neutral</span>` : ''}</span>`;
+}
+function factorList(fs) {
+  if (!fs || !fs.length) return '';
+  return `<ul class="factors">${fs.map(f => `<li><span class="gl ${esc(f.dir)}" aria-label="${esc(f.dir)}">${f.dir === 'for' ? '✓' : f.dir === 'against' ? '✕' : '•'}</span><span><b>${esc(f.label)}.</b> ${esc(f.detail)}</span></li>`).join('')}</ul>`;
+}
+function cleanPick(p) {
+  let main = String(p).trim(), note = '';
+  const par = main.match(/^(.*?)\s*\((.*)\)\s*$/);
+  if (par) { main = par[1]; note = par[2]; }
+  const to = main.match(/^(.*?\d(?:\.\d)?)\s+to\s+(.+)$/);
+  if (to) { main = to[1]; note = (note ? note + ' · ' : '') + 'playable to ' + to[2]; }
+  return { main: niceMinus(main), note: niceMinus(note) };
+}
+function wongMain(w) {
+  const fav = w.side === 'favorite';
+  return `${w.team} ${fav ? niceMinus(w.from) : '+' + fmtAbs(w.from)} → ${fav ? niceMinus(w.to) : '+' + fmtAbs(w.to)}`;
+}
+
+/* Stake parsing: reasoning ends with " | Stake $X ... · pass at Y" (bet-sizing rule, 2026-10-05). */
+function stakeInfo(why) {
+  const w = String(why || '');
+  const i = w.lastIndexOf(' | Stake');
+  const text = i >= 0 ? w.slice(0, i) : w;
+  const tail = i >= 0 ? w.slice(i + 3) : '';
+  const m = /Stake \$([\d.]+)/.exec(tail);
+  const stake = m ? parseFloat(m[1]) : null;
+  const pa = /pass at ([^·|]+?)\s*$/.exec(tail);
+  const note = (/Stake \$[\d.]+\s*(.*?)(?:\s*·\s*pass at.*)?$/.exec(tail) || [])[1] || '';
+  return { text, stake, passAt: pa ? pa[1].trim() : null, note: (/^\(.*\)$/.test(note.trim()) ? note.trim().slice(1, -1) : note).trim(), swap: /swap/i.test(tail) };
+}
+const money = v => '$' + (Math.round(v * 100) / 100).toFixed(v % 1 ? 2 : 0);
+function stakeFoot(si) {
+  if (si.stake == null) return '';
+  const chip = si.stake > 0 ? `<span class="tag stake">${money(si.stake)}</span>` : `<span class="tag zero">$0 now</span>`;
+  return chip + (si.passAt ? `<span class="passat">pass at <b>${esc(niceMinus(si.passAt))}</b></span>` : '') + (si.note ? `<span>${esc(si.note)}</span>` : '');
+}
+
+/* Card builders: one shape for leans, props and Wong legs */
+function leanCard(l, opts = {}) {
+  const p = cleanPick(l.pick);
+  const si = stakeInfo(l.why);
+  const recheck = l.al && l.al.against > l.al.for;
+  const tagName = opts.link ? 'a' : 'article';
+  const href = opts.link ? ` href="#g-${l.g.id}" data-open="${l.g.id}"` : '';
+  return `<${tagName} class="card${l.best ? ' best' : ''}"${href}>
+    <div class="card-top"><span class="mchip">${MARKET[l.market] || esc(l.market)}</span><span><span class="game">${l.g.a} @ ${l.g.h}</span> · ${fmtKo(l.g.ko)}</span></div>
+    <div><div class="card-pick">${esc(p.main)}</div>${p.note ? `<div class="card-sub">${esc(p.note)}</div>` : ''}</div>
+    ${confRow(l.conf)}
+    <p class="card-why">${esc(si.text)}</p>
+    ${opts.factors ? factorList(l.factors) : ''}
+    <div class="card-foot">${stakeFoot(si)}${l.best ? (si.stake === 0 ? '<span class="tag watch">Was best bet · number gone</span>' : '<span class="tag best">Best bet</span>') : ''}${recheck ? '<span class="tag warn">Recheck</span>' : ''}${alignRow(l.al)}</div>
+  </${tagName}>`;
+}
+function propCard(p, opts = {}) {
+  const moved = p.cur != null && p.open != null && p.cur !== p.open;
+  const recheck = p.al && p.al.against > p.al.for;
+  const si = stakeInfo(p.why);
+  const tagName = opts.link ? 'a' : 'article';
+  const attr = opts.link ? ` href="#prop-${p.idx}"` : ` id="prop-${p.idx}"`;
+  const full = !opts.link;
+  const histRow = (p.hist && p.hist.length)
+    ? `<div class="hist"><span class="hist-label">Past graded weeks · ${p.histRate.hits}-${p.histRate.misses} (${p.histRate.pct}%)</span>${p.hist.map(h => `<span class="hist-chip ${esc(h.result)}">${h.actual != null ? h.actual : '–'}<span>${esc(h.wk || '')}</span></span>`).join('')}</div>`
+    : `<div class="hist"><span class="hist-label empty">No graded weeks yet on this player and market</span></div>`;
+  const btRow = (p.backtest && p.backtest.total)
+    ? `<div class="hist"><span class="hist-label">This season vs. today's line · ${p.backtest.hits}-${p.backtest.misses} (${p.backtest.pct}%)</span>${p.seasonLog.map(s => `<span class="hist-chip ${esc(s.result)}">${s.actual}<span>Wk${s.week}</span></span>`).join('')}${p.seasonLogSource ? `<span class="hist-src">${esc(p.seasonLogSource)}</span>` : ''}</div>` : '';
+  return `<${tagName} class="card"${attr}>
+    <div class="card-top"><span class="mchip prop">${PROP_M[p.market] || esc(p.market)}</span><span><span class="game">${p.a} @ ${p.h}</span> · ${fmtKo(p.ko)}</span></div>
+    <div class="card-main">
+      <div><div class="card-pick">${esc(p.player)}</div><div class="card-sub">${esc(p.pos || '')} · ${esc(p.team || '')}</div></div>
+      <div class="card-line"><span class="dir">${esc(p.lean)}</span><b class="num">${p.open}</b></div>
+    </div>
+    ${confRow(p.conf)}
+    <p class="card-why">${esc(si.text)}</p>
+    ${full ? factorList(p.factors) : ''}
+    ${full ? histRow + btRow : ''}
+    <div class="card-foot">${stakeFoot(si)}${p.res ? `<span class="tag ${esc(p.res)}">${esc(p.res)}${p.actual != null ? ' · ' + p.actual : ''}</span>` : ''}${recheck ? '<span class="tag warn">Recheck</span>' : ''}${alignRow(p.al)}${full && p.book ? `<span>${esc(p.book)}</span>` : ''}${full && moved ? `<span>now ${p.cur}</span>` : ''}${full && p.rank ? `<span>Opp. rank vs ${esc(p.pos)}: ${p.rank}/32</span>` : ''}</div>
+  </${tagName}>`;
+}
+function wongCard(g, opts = {}) {
+  const w = g.wong;
+  const tagName = opts.link ? 'a' : 'article';
+  const href = opts.link ? ` href="#g-${g.id}" data-open="${g.id}"` : '';
+  return `<${tagName} class="card wong"${href}>
+    <div class="card-top"><span class="mchip wong">Wong teaser</span><span><span class="game">${g.a} @ ${g.h}</span> · ${fmtKo(g.ko)}</span></div>
+    <div><div class="card-pick">${esc(wongMain(w))}</div><div class="card-sub">Total ${w.total} · via ${esc(w.book)}</div></div>
+    <div class="rule"><b>Qualifies</b><span>Rule-based leg, no confidence score. Pair it with another qualifying leg.</span></div>
+    <p class="card-why">${esc(w.reason)}</p>
+  </${tagName}>`;
+}
+
+/* ---------- Pools ---------- */
+const allLeans = [];
+D.games.forEach(g => (g.leans || []).forEach(l => allLeans.push({ ...l, g })));
+const props = (D.props || []).slice().sort((a, b) => (b.conf || 0) - (a.conf || 0) || new Date(a.ko) - new Date(b.ko));
+props.forEach((p, i) => { p.idx = i; });
+const wongGames = D.games.filter(g => g.wong && g.wong.qualifies).sort((a, b) => new Date(a.ko) - new Date(b.ko));
+allLeans.forEach(l => { l.si = stakeInfo(l.why); });
+props.forEach(p => { p.si = stakeInfo(p.why); });
+const isLive = x => new Date(x.ko || (x.g && x.g.ko)).getTime() > Date.now() - 4 * 36e5;
+const bestCount = allLeans.filter(l => l.best && l.si.stake > 0 && isLive(l)).length;
+
+/* ---------- Masthead + clock ---------- */
+const upcoming = D.games.filter(g => new Date(g.ko).getTime() > Date.now()).sort((a, b) => new Date(a.ko) - new Date(b.ko));
+const next = upcoming[0];
+function until(iso) {
+  const ms = new Date(iso).getTime() - Date.now();
+  if (ms <= 0) return 'now';
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+  return d ? `in ${d}d ${h}h` : h ? `in ${h}h ${m}m` : `in ${m}m`;
+}
+function tickClock() {
+  document.getElementById('clock').innerHTML = next ? `Next kickoff <b>${next.a} @ ${next.h}</b> ${until(next.ko)}` : 'All tracked games have kicked off';
+}
+tickClock(); setInterval(tickClock, 30000);
+const built = new Date(D.built);
+const withGap = D.games.filter(g => g.model != null && g.cur != null).map(g => ({ g, gap: g.model - g.cur })).sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap));
+const topGap = withGap[0];
+document.getElementById('mast-label').innerHTML = `<span>${esc(D.week)} · ${D.season} season</span><span>Updated ${built.toLocaleString([], {weekday:'short', hour:'numeric', minute:'2-digit'})}</span>`;
+document.getElementById('lede').innerHTML = `<b>${D.games.length}</b> games on the board. <a href="#bc-best"><b>${bestCount}</b> best bets</a>, <a href="#props"><b>${props.length}</b> props</a>, <a href="#teasers"><b>${wongGames.length}</b> Wong teasers</a>.` +
+  (topGap ? ` The model and market disagree most on <em>${esc(topGap.g.away.split(' ').slice(-1)[0])} at ${esc(topGap.g.home.split(' ').slice(-1)[0])}</em>, by ${fmtAbs(topGap.gap)} points.` : '');
+document.getElementById('conf-key').innerHTML = `<span>Confidence is scored <b>0–10</b></span>${meter(6)}<span>0–2 coinflip · 3–4 mild · 5–6 real · 7–8 strong · 9–10 rare</span>`;
+
+/* ---------- Bet card ---------- */
+(function renderBoard() {
+  const ET = iso => new Date(iso).toLocaleDateString('en-US', {timeZone:'America/New_York', weekday:'short'});
+  const byKo = (a, b) => new Date(a.ko) - new Date(b.ko) || (b.conf - a.conf);
+  const items = allLeans.filter(isLive).map(l => ({ kind:'lean', l, si:l.si, conf:l.conf || 0, best:l.best, ko:l.g.ko, gid:l.g.id, market:l.market, game:`${l.g.a} @ ${l.g.h}`, pick:l.pick }))
+    .concat(props.filter(isLive).map(p => ({ kind:'prop', p, si:p.si, conf:p.conf || 0, best:false, ko:p.ko, gid:p.gid, market:'prop', game:`${p.a} @ ${p.h}`, pick:`${p.player} ${p.lean} ${p.open} ${PROP_M[p.market] || p.market}` })));
+  const bet = x => x.si.stake == null ? x.conf >= 5 : x.si.stake > 0;
+  const best = items.filter(x => x.best && bet(x)).sort((a, b) => b.conf - a.conf || byKo(a, b));
+  const rest = items.filter(x => !(x.best && bet(x)));
+  const groups = [
+    { id:'bc-best', name:'Best bets', sub:'the strongest play on each game, ranked by confidence', list:best },
+    { id:'bc-spread', name:'Spreads', sub:'by kickoff', list:rest.filter(x => bet(x) && x.market === 'spread').sort(byKo) },
+    { id:'bc-total', name:'Totals', sub:'by kickoff', list:rest.filter(x => bet(x) && x.market === 'total').sort(byKo) },
+    { id:'bc-ml', name:'Moneylines', sub:'by kickoff', list:rest.filter(x => bet(x) && x.market === 'moneyline').sort(byKo) },
+    { id:'bc-props', name:'Player props', sub:'by kickoff · props capped at $18 (3%) until the 7–8 tier proves out', list:rest.filter(x => bet(x) && x.market === 'prop').sort(byKo) },
+    { id:'bc-watch', name:'Watch', sub:'$0 right now: the number moved past us, it waits on news, or it is a swap-in', list:rest.filter(x => !bet(x) && (x.conf >= 4 || x.best)).sort(byKo) },
+  ];
+  const passed = rest.filter(x => !bet(x) && !(x.conf >= 4 || x.best)).sort(byKo);
+  const sum = list => list.reduce((t, x) => t + (x.si.stake > 0 && !x.si.swap ? x.si.stake : 0), 0);
+  const card = x => x.kind === 'lean' ? leanCard(x.l, { link:true }) : propCard(x.p, { link:true });
+
+  const live = groups.slice(0, 5).flatMap(g => g.list);
+  const total = sum(live);
+  const days = {}; const perGame = {};
+  live.forEach(x => { if (x.si.stake > 0 && !x.si.swap) { const d = ET(x.ko); days[d] = (days[d] || 0) + x.si.stake; perGame[x.game] = (perGame[x.game] || 0) + x.si.stake; } });
+  const overCap = Object.entries(perGame).filter(([, v]) => v > 45);
+  const tile = (g, extra = '') => `<a href="#${g.id}"${extra}><span class="k">${g.name}</span><span class="v num">${g.list.length}</span><span class="s">${g.id === 'bc-watch' ? 'no money yet' : money(sum(g.list))}</span></a>`;
+  let html = `<div class="betsum">${groups.filter(g => g.list.length).map(g => tile(g)).join('')}
+    <a href="#bc-best" class="total"><span class="k">Total exposure</span><span class="v num">${money(total)}</span><span class="s">${live.length} bets · $600 bankroll, 1–5% per bet</span></a></div>`;
+  html += `<div class="daychips">${Object.entries(days).map(([d, v]) => `<span class="${v > 300 ? 'over' : ''}">${d} <b>${money(v)}</b>${v > 300 ? ' · over $300 day limit' : ''}</span>`).join('')}${overCap.map(([g, v]) => `<span class="over">${esc(g)} <b>${money(v)}</b> · over $45 game cap</span>`).join('')}</div>`;
+
+  groups.forEach(g => {
+    if (!g.list.length) return;
+    const amt = g.id === 'bc-watch' ? '<span class="amt zero">$0</span>' : `<span class="amt">${money(sum(g.list))}</span>`;
+    html += `<div class="label group-label" id="${g.id}"><span>${g.name} · ${g.list.length}</span><span class="sub">${g.sub}</span>${amt}</div>
+      <div class="cards">${g.list.map(card).join('')}</div>`;
+  });
+  if (!live.length) html += '<p class="empty-note">No bets with a stake on the current slate yet.</p>';
+  if (wongGames.length) {
+    html += `<div class="label group-label"><span>Wong teasers · ${wongGames.length}</span><span class="sub">rule-based legs, pair two together</span></div>
+      <div class="cards">${wongGames.map(g => wongCard(g, { link:true })).join('')}</div>`;
+  }
+  if (passed.length) {
+    html += `<details class="passed" id="bc-passed"><summary class="label"><span>Passed · ${passed.length}</span><span class="sub">looked at, no edge at this number</span></summary>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Pick</th><th>Game</th><th class="r">Conf</th><th>Why not</th></tr></thead><tbody>
+      ${passed.map(x => `<tr><td><b>${esc(x.kind === 'lean' ? cleanPick(x.pick).main : x.pick)}</b></td><td>${esc(x.game)} · ${fmtKo(x.ko)}</td><td class="r num">${x.conf}</td><td>${esc(x.si.text)}</td></tr>`).join('')}
+      </tbody></table></div></details>`;
+  }
+  document.getElementById('board-count').textContent = live.length;
+  document.getElementById('board-body').innerHTML = html;
+})();
+
+/* ---------- Teasers ---------- */
+document.getElementById('teasers-count').textContent = wongGames.length;
+document.getElementById('teaser-cards').innerHTML = wongGames.map(g => wongCard(g)).join('') || '<p class="empty-note">No games qualify from this slate.</p>';
+
+/* ---------- Line-history charts ---------- */
+function spreadLabel(g, v) { return Math.abs(v) < 0.05 ? 'PK' : `${v > 0 ? g.h : g.a} ${MINUS}${fmtAbs(v)}`; }
+function seriesFor(g, kind) {
+  const hist = g.hist || [], mh = g.mh || [];
+  if (kind === 'spread') return {
+    mk: hist.filter(p => p.dk != null).map(p => ({ t: +new Date(p.t), v: p.dk })),
+    cz: hist.filter(p => p.cz != null).map(p => ({ t: +new Date(p.t), v: p.cz })),
+    md: mh.filter(p => p.m != null).map(p => ({ t: +new Date(p.t), v: p.m })),
+    fmt: v => spreadLabel(g, v),
+  };
+  return {
+    mk: hist.filter(p => p.tot != null).map(p => ({ t: +new Date(p.t), v: p.tot })),
+    cz: [],
+    md: mh.filter(p => p.tot != null).map(p => ({ t: +new Date(p.t), v: p.tot })),
+    fmt: v => (Math.round(v * 10) / 10).toString(),
+  };
+}
+const CHARTS = {};
+function niceStep(range) { return range <= 4 ? 1 : range <= 9 ? 2 : range <= 20 ? 4 : 5; }
+function drawChart(el) {
+  const g = byId[el.dataset.g], kind = el.dataset.kind;
+  const S = seriesFor(g, kind);
+  const W = Math.max(280, Math.round(el.clientWidth)), H = kind === 'spread' ? 230 : 190;
+  const pad = { l: kind === 'spread' ? 62 : 36, r: 92, t: 14, b: 26 };
+  const all = S.mk.concat(S.cz, S.md);
+  if (!all.length) { el.innerHTML = '<p class="chart-foot">No line history logged yet.</p>'; return; }
+  let t0 = Math.min(...all.map(p => p.t)), t1 = Math.max(...all.map(p => p.t));
+  if (t1 - t0 < 36e5) { t0 -= 6 * 36e5; t1 += 6 * 36e5; }
+  let v0 = Math.min(...all.map(p => p.v)), v1 = Math.max(...all.map(p => p.v));
+  const step = niceStep(v1 - v0 + 2);
+  v0 = Math.floor((v0 - 1) / step) * step; v1 = Math.ceil((v1 + 1) / step) * step;
+  const X = t => pad.l + (t - t0) / (t1 - t0) * (W - pad.l - pad.r);
+  const Y = v => pad.t + (v1 - v) / (v1 - v0) * (H - pad.t - pad.b);
+  let svg = '';
+  // grid + y labels
+  for (let v = v0; v <= v1 + 1e-9; v += step) {
+    svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)" stroke-width="1"/>`;
+    svg += `<text x="${pad.l - 8}" y="${Y(v) + 4}" text-anchor="end">${esc(S.fmt(v))}</text>`;
+  }
+  if (kind === 'spread') {
+    [-7, -3, 0, 3, 7].filter(k => k > v0 && k < v1 && k % step !== 0).forEach(k => {
+      svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${Y(k)}" y2="${Y(k)}" stroke="var(--line-2)" stroke-dasharray="3 4" stroke-width="1"/>`;
+    });
+    [-7, -3, 3, 7].filter(k => k > v0 && k < v1 && k % step === 0).forEach(k => {
+      svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${Y(k)}" y2="${Y(k)}" stroke="var(--line-2)" stroke-width="1"/>`;
+    });
+  }
+  // x labels: first, last, and the middle when there is room
+  const xt = [t0, t1]; if (W > 520) xt.splice(1, 0, (t0 + t1) / 2);
+  xt.forEach((t, i) => svg += `<text x="${X(t)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === xt.length - 1 ? 'end' : 'middle'}">${esc(new Date(t).toLocaleString([], {month:'short', day:'numeric', hour:'numeric'}))}</text>`);
+  // market area + line (stock style)
+  const path = pts => pts.map((p, i) => `${i ? 'L' : 'M'}${X(p.t).toFixed(1)},${Y(p.v).toFixed(1)}`).join('');
+  const gid = `ga-${g.id}-${kind}`;
+  if (S.mk.length) {
+    const last = S.mk[S.mk.length - 1];
+    svg += `<defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--gold)" stop-opacity=".22"/><stop offset="1" stop-color="var(--gold)" stop-opacity="0"/></linearGradient></defs>`;
+    const mkPts = S.mk.concat(S.mk.length === 1 ? [{ t: t1, v: last.v }] : []);
+    svg += `<path d="${path(mkPts)}L${X(mkPts[mkPts.length - 1].t).toFixed(1)},${H - pad.b}L${X(mkPts[0].t).toFixed(1)},${H - pad.b}Z" fill="url(#${gid})"/>`;
+    if (S.cz.length > 1) svg += `<path d="${path(S.cz)}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>`;
+    S.cz.forEach(p => svg += `<circle cx="${X(p.t)}" cy="${Y(p.v)}" r="2.5" fill="var(--muted)"/>`);
+    svg += `<path d="${path(mkPts)}" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/>`;
+    S.mk.forEach(p => svg += `<circle cx="${X(p.t)}" cy="${Y(p.v)}" r="4" fill="var(--gold)" stroke="var(--surface)" stroke-width="2"/>`);
+    const f = S.mk[0];
+    svg += `<text class="annot" x="${X(f.t) + 6}" y="${Y(f.v) - 9}">Open</text>`;
+    svg += `<text class="end mk" x="${W - pad.r + 8}" y="${Y(last.v) + 4}">${esc(S.fmt(last.v))}</text>`;
+  }
+  // model: step line carried forward to the latest point on the chart
+  if (S.md.length) {
+    const st = [];
+    S.md.forEach((p, i) => { if (i) st.push({ t: p.t, v: S.md[i - 1].v }); st.push(p); });
+    st.push({ t: t1, v: S.md[S.md.length - 1].v });
+    svg += `<path d="${path(st)}" fill="none" stroke="var(--lilac)" stroke-width="2"/>`;
+    S.md.forEach(p => svg += `<circle cx="${X(p.t)}" cy="${Y(p.v)}" r="4.5" fill="var(--lilac)" stroke="var(--surface)" stroke-width="2"/>`);
+    const lm = S.md[S.md.length - 1];
+    let ly = Y(lm.v) + 4;
+    if (S.mk.length && Math.abs(Y(lm.v) - Y(S.mk[S.mk.length - 1].v)) < 14) ly += Y(lm.v) > Y(S.mk[S.mk.length - 1].v) ? 10 : -10;
+    svg += `<text class="end md" x="${W - pad.r + 8}" y="${ly}">Model ${esc(S.fmt(lm.v))}</text>`;
+  }
+  svg += `<line class="xh" x1="0" x2="0" y1="${pad.t}" y2="${H - pad.b}" stroke="var(--ink-2)" stroke-width="1" opacity="0"/>`;
+  svg += `<rect class="hit" x="${pad.l}" y="${pad.t}" width="${W - pad.l - pad.r}" height="${H - pad.t - pad.b}" fill="transparent"/>`;
+  el.innerHTML = `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${kind} history for ${esc(g.away)} at ${esc(g.home)}">${svg}</svg>`;
+  CHARTS[el.dataset.g + kind] = { S, X, Y, t0, t1, W, H, pad };
+}
+function nearestBefore(arr, t) { let r = null; arr.forEach(p => { if (p.t <= t + 1) r = p; }); return r; }
+function onChartMove(e) {
+  const el = e.target.closest('.chart-plot'); if (!el) return;
+  const C = CHARTS[el.dataset.g + el.dataset.kind]; if (!C) return;
+  const svg = el.querySelector('svg'); const r = svg.getBoundingClientRect();
+  const sx = (e.clientX - r.left) * (C.W / r.width);
+  const times = [...new Set(C.S.mk.concat(C.S.md, C.S.cz).map(p => p.t))].sort((a, b) => a - b);
+  let best = times[0]; times.forEach(t => { if (Math.abs(C.X(t) - sx) < Math.abs(C.X(best) - sx)) best = t; });
+  const xh = svg.querySelector('.xh'); xh.setAttribute('x1', C.X(best)); xh.setAttribute('x2', C.X(best)); xh.setAttribute('opacity', '.5');
+  const mk = nearestBefore(C.S.mk, best), cz = nearestBefore(C.S.cz, best), md = nearestBefore(C.S.md, best);
+  let tip = el.querySelector('.tip');
+  if (!tip) { tip = document.createElement('div'); tip.className = 'tip'; el.appendChild(tip); }
+  tip.innerHTML = `<b>${esc(new Date(best).toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}))}</b><br>` +
+    `<span class="k" style="background:var(--gold)"></span>DraftKings ${mk ? esc(C.S.fmt(mk.v)) : '—'}<br>` +
+    (C.S.cz.length ? `<span class="k" style="background:var(--muted)"></span>Caesars ${cz ? esc(C.S.fmt(cz.v)) : '—'}<br>` : '') +
+    `<span class="k" style="background:var(--lilac)"></span>Model ${md ? esc(C.S.fmt(md.v)) : 'not run yet'}`;
+  const px = C.X(best) * (r.width / C.W) + (svg.offsetLeft || 0);
+  tip.style.left = Math.max(80, Math.min(el.clientWidth - 80, px)) + 'px';
+  tip.style.top = (svg.offsetTop + 8) + 'px';
+}
+function onChartLeave(e) {
+  const el = e.target.closest('.chart-plot'); if (!el) return;
+  const tip = el.querySelector('.tip'); if (tip) tip.remove();
+  const xh = el.querySelector('.xh'); if (xh) xh.setAttribute('opacity', '0');
+}
+function sparkSvg(g) {
+  const S = seriesFor(g, 'spread');
+  const pts = S.mk; if (!pts.length) return '<svg class="spark" aria-hidden="true"></svg>';
+  const vals = pts.map(p => p.v).concat(S.md.map(p => p.v));
+  let v0 = Math.min(...vals) - 1, v1 = Math.max(...vals) + 1;
+  const W = 300, H = 44;
+  const ts = pts.map(p => p.t); let t0 = Math.min(...ts), t1 = Math.max(...ts); if (t1 === t0) { t0 -= 1; t1 += 1; }
+  const X = t => 4 + (t - t0) / (t1 - t0) * (W - 8), Y = v => 4 + (v1 - v) / (v1 - v0) * (H - 8);
+  const line = (pts.length === 1 ? [pts[0], { t: t1, v: pts[0].v }] : pts).map((p, i) => `${i ? 'L' : 'M'}${X(p.t).toFixed(1)},${Y(p.v).toFixed(1)}`).join('');
+  const m = S.md.length ? S.md[S.md.length - 1].v : null;
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+    ${m != null ? `<line x1="4" x2="${W - 4}" y1="${Y(m)}" y2="${Y(m)}" stroke="var(--lilac)" stroke-width="2" stroke-dasharray="5 4" vector-effect="non-scaling-stroke"/>` : ''}
+    <path d="${line}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
+}
+
+/* ---------- Slate ---------- */
+const byId = Object.fromEntries(D.games.map(g => [g.id, g]));
+function linesHtml(g) {
+  const ml = g.mlFav != null ? `${g.mlFav > 0 ? '+' : MINUS}${Math.abs(g.mlFav)} / ${g.mlDog != null ? (g.mlDog > 0 ? '+' : MINUS) + Math.abs(g.mlDog) : '—'}` : '—';
+  return `<div><h4 class="label">Lines</h4><div class="tbl-wrap"><table class="lines num">
+    <thead><tr><th>Book</th><th>Spread</th><th>Total</th></tr></thead><tbody>
+    <tr><td>Open</td><td>${sideStr(g, g.open)}</td><td>${g.openTot ?? '—'}</td></tr>
+    <tr><td>DraftKings</td><td>${sideStr(g, g.cur)}</td><td>${g.tot ?? '—'}</td></tr>
+    <tr><td>BookMaker.eu</td><td>${sideStr(g, g.bm)}</td><td>${g.bmTot ?? '—'}</td></tr>
+    <tr><td>Caesars</td><td>${sideStr(g, g.cz)}</td><td>—</td></tr>
+    <tr><td>Moneyline</td><td colspan="2">${ml}</td></tr>
+    </tbody></table></div></div>`;
+}
+function systemsHtml(g) {
+  const s = g.sys; if (!s) return '';
+  return `<div><h4 class="label">Situational systems · ${esc(niceMinus(s.pick))}</h4><ul class="checks">${s.checks.map(c => `
+    <li><span class="cbox" aria-hidden="true">✓</span><span><b>${esc(SYS[c.key] || c.key)}</b>${esc(c.why)}</span><span class="pc num">${pct(c.pct)}%</span></li>`).join('')}</ul></div>`;
+}
+function drawerHtml(g) {
+  const coverHome = g.cover != null && g.cover >= 50;
+  const coverTeam = coverHome ? g.h : g.a;
+  const coverPct = g.cover == null ? null : (coverHome ? g.cover : 100 - g.cover);
+  const winHome = g.winH != null && g.winH >= g.winA;
+  const overSide = g.over != null && g.over >= 50;
+  const scoreFav = g.medH >= g.medA;
+  const runs = (g.mh || []).length;
+  return `<div class="drawer">
+    <div class="charts">
+      <div class="chart"><div class="chart-head"><span class="label">Spread history</span><span class="now num">Market ${sideStr(g, g.cur)} · <span class="lilac">Model ${sideStr(g, g.model)}</span></span></div>
+        <div class="chart-plot" data-g="${g.id}" data-kind="spread"></div>
+        <p class="chart-foot">${(g.hist || []).length} line checks, ${runs} model run${runs === 1 ? '' : 's'} logged. Model runs are logged from Oct 2 onward.</p></div>
+      <div class="chart"><div class="chart-head"><span class="label">Total history</span><span class="now num">Market ${g.tot ?? '—'} · <span class="lilac">Model ${g.modelTot ?? '—'}</span></span></div>
+        <div class="chart-plot" data-g="${g.id}" data-kind="total"></div></div>
+    </div>
+    <div class="proj">
+      <div class="stat"><span class="label">Model's median score</span>
+        <div class="score num">${scoreFav ? `${g.h} ${g.medH}<em>–</em>${g.medA} ${g.a}` : `${g.a} ${g.medA}<em>–</em>${g.medH} ${g.h}`}</div></div>
+      <div class="stat"><b class="num">${pct(winHome ? g.winH : g.winA)}<small>%</small></b><span>${winHome ? g.h : g.a} wins outright</span></div>
+      <div class="stat"><b class="num">${pct(coverPct)}<small>%</small></b><span>${coverTeam} ${teamSpread(g, coverTeam)} covers</span></div>
+      <div class="stat"><b class="num">${pct(overSide ? g.over : 100 - g.over)}<small>%</small></b><span>${overSide ? 'Over' : 'Under'} ${g.tot} hits</span></div>
+    </div>
+    <div class="read">
+      <h4 class="label">The read</h4>
+      ${(g.analysis || []).map(p => `<p>${esc(p)}</p>`).join('') || '<p>No analyst write-up yet for this game.</p>'}
+      ${g.kn ? `<p class="callout"><b>Key number.</b> ${esc(g.kn)}</p>` : ''}
+      ${(g.notes || []).length ? `<ul class="notes">${g.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
+    </div>
+    <div class="side">
+      ${(g.leans || []).length ? `<div><h4 class="label">Leans</h4><div class="cards">${g.leans.map(l => leanCard({ ...l, g }, { factors: true })).join('')}</div></div>` : ''}
+      ${systemsHtml(g)}${linesHtml(g)}
+    </div>
+  </div>`;
+}
+(function renderSlate() {
+  const games = D.games.slice().sort((a, b) => {
+    const ga = a.model == null ? -1 : Math.abs(a.model - a.cur), gb = b.model == null ? -1 : Math.abs(b.model - b.cur);
+    return gb - ga;
+  });
+  document.getElementById('slate-count').textContent = games.length;
+  document.getElementById('rows').innerHTML = games.map(g => {
+    const gap = g.model != null && g.cur != null ? Math.abs(g.model - g.cur) : null;
+    const totDir = g.modelTot != null && g.tot != null ? (g.modelTot < g.tot ? '↓' : '↑') : '';
+    return `<details class="row" id="g-${g.id}">
+      <summary aria-label="${esc(g.away)} at ${esc(g.home)}">
+        <span class="tm away">${g.a}<small>${fmtKo(g.ko)}</small></span>
+        ${sparkSvg(g)}
+        <span class="tm home">${g.h}<small>home</small></span>
+        <span class="figs">
+          <span class="gapfig"><b class="num">${gap == null ? '—' : fmtAbs(gap)}</b><span>pts apart</span></span>
+          <span class="sub num"><i>Market</i> ${sideStr(g, g.cur)} · <i>Model</i> ${sideStr(g, g.model)}</span>
+          <span class="sub num"><i>Total</i> ${g.tot ?? '—'} · <i>Model</i> ${g.modelTot ?? '—'} ${totDir}</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      ${drawerHtml(g)}
+    </details>`;
+  }).join('');
+  document.querySelectorAll('details.row').forEach(d => d.addEventListener('toggle', () => {
+    if (d.open) d.querySelectorAll('.chart-plot').forEach(drawChart);
+  }));
+  const rows = document.getElementById('rows');
+  rows.addEventListener('mousemove', onChartMove);
+  rows.addEventListener('mouseleave', onChartLeave, true);
+  rows.addEventListener('pointerleave', onChartLeave, true);
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => document.querySelectorAll('details.row[open] .chart-plot').forEach(drawChart), 150); });
+})();
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-open]');
+  if (!a) return;
+  e.preventDefault();
+  const d = document.getElementById('g-' + a.dataset.open);
+  if (!d) return;
+  d.open = true;
+  d.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+});
+
+/* ---------- Money ---------- */
+function moveStr(g) {
+  const o = sideStr(g, g.open), c = sideStr(g, g.cur);
+  const ot = o.split(' ')[0], ct = c.split(' ')[0];
+  return ot === ct && ot !== 'PK' ? `${ot} ${o.split(' ')[1]} → ${c.split(' ')[1]}` : `${o} → ${c}`;
+}
+const ptsWord = v => `${fmtAbs(v)} point${fmtAbs(v) === '1' ? '' : 's'}`;
+function splitBar(name, aAbbr, hAbbr, homePct) {
+  if (homePct == null) return '';
+  const h = homePct, a = 100 - homePct;
+  return `<div class="split"><div class="split-cap"><span><b>${aAbbr}</b> ${a}%</span><span>${name}</span><span>${h}% <b>${hAbbr}</b></span></div>
+    <div class="sbar" role="img" aria-label="${name}: ${aAbbr} ${a}%, ${hAbbr} ${h}%"><i style="width:${a}%;background:${teamColor(aAbbr)}"></i><i style="width:${h}%;background:${teamColor(hAbbr)}"></i></div></div>`;
+}
+// The bet read. Inputs: model number vs current market (value side), line movement since open,
+// which side the money is on, and whether the move is a genuine reverse line move.
+function verdictFor(g) {
+  const m = g.ms || {};
+  if (g.model == null || g.cur == null) return { cls: 'pass', head: 'Pass', text: 'No model number yet for this game, so there is nothing to compare the line against.' };
+  const edge = g.model - g.cur;              // > 0: home side has value against the number
+  const side = edge > 0 ? g.h : g.a, other = edge > 0 ? g.a : g.h;
+  const line = `${side} ${teamSpread(g, side)}`;
+  const mv = g.open != null ? g.cur - g.open : 0; // > 0: market moved toward home
+  const moveSide = Math.abs(mv) < 0.05 ? null : (mv > 0 ? g.h : g.a);
+  const sharpSide = m.rlm ? moveSide : null;
+  const pubSide = m.sh == null ? null : m.sh >= 60 ? g.h : m.sh <= 40 ? g.a : null;
+  const spreadLean = (g.leans || []).find(l => l.market === 'spread');
+  const leanTxt = spreadLean ? ` Our write-up: ${cleanPick(spreadLean.pick).main} at ${spreadLean.conf}/10.` : '';
+  const pts = fmtAbs(edge);
+  const modelTxt = `the model makes it ${sideStr(g, g.model)} against a market of ${sideStr(g, g.cur)}`;
+  if (Math.abs(edge) < 1) {
+    return { cls: 'pass', head: 'Pass', text: `No value at this number: ${modelTxt}, less than a point apart.${sharpSide ? ` The reverse move toward ${sharpSide} is worth watching, but on its own it isn't a bet.` : ''}` };
+  }
+  if (sharpSide && sharpSide !== side) {
+    return { cls: 'pass', head: 'Pass for now', text: `The model likes ${side} by ${ptsWord(edge)}, but the line is moving toward ${other} against the public money, which points to sharper bettors on the other side. Revisit if the line comes back.` };
+  }
+  if (!spreadLean) {
+    return { cls: 'pass', head: 'Pass', text: `On paper ${modelTxt}, a ${pts}-point gap, but our analyst read doesn't back a spread bet here. Usually that means the market knows something the model can't see.` };
+  }
+  if (sharpSide && sharpSide === side && spreadLean.conf >= 6) {
+    return { cls: 'bet', head: `Bet ${line}`, text: `Model and sharp money agree: ${modelTxt}, and the line moved toward ${side} even though most of the money is on ${other}.${leanTxt}` };
+  }
+  if (sharpSide && sharpSide === side) {
+    return { cls: 'lean', head: `Lean ${line}`, text: `Sharp money agrees with the model: ${modelTxt}, and the line moved toward ${side} against the public. Our own conviction is still modest, so keep it small.${leanTxt}` };
+  }
+  if (moveSide === side) {
+    return { cls: 'lean', head: `Lean ${line}`, text: `${modelTxt[0].toUpperCase() + modelTxt.slice(1)}, and the line has already moved ${side}'s way since open, so some of the value is gone. Take it before it moves further.${leanTxt}` };
+  }
+  if (moveSide && moveSide !== side) {
+    return { cls: 'lean', head: `Lean ${line}`, text: `The line moved away from ${side}, which makes the number better for us: ${modelTxt}. Check that no injury news explains the move first.${leanTxt}` };
+  }
+  return { cls: 'lean', head: `Lean ${line}`, text: `${modelTxt[0].toUpperCase() + modelTxt.slice(1)}, a ${pts}-point gap, and the line hasn't moved since open${pubSide && pubSide !== side ? ` while the public leans ${pubSide}` : ''}.${leanTxt}` };
+}
+(function renderMoney() {
+  const games = D.games.filter(g => g.ms && (g.ms.sh != null || g.ms.th != null)).map(g => ({ g, v: verdictFor(g) }));
+  const rank = { bet: 0, lean: 1, pass: 2 };
+  games.sort((A, B) => (B.g.ms.rlm - A.g.ms.rlm) || rank[A.v.cls] - rank[B.v.cls] || Math.abs((B.g.ms.sh ?? 50) - 50) - Math.abs((A.g.ms.sh ?? 50) - 50));
+  document.getElementById('money-cards').innerHTML = games.map(({ g, v }) => {
+    const m = g.ms;
+    const moved = g.open != null && Math.abs(g.open - g.cur) >= 0.05;
+    const toward = moved ? (g.cur - g.open > 0 ? g.h : g.a) : null;
+    const homeMaj = m.sh != null && m.sh >= 50;
+    const majTeam = m.sh == null ? null : homeMaj ? g.h : g.a;
+    const majMoney = m.sh == null ? null : homeMaj ? m.sh : 100 - m.sh;
+    const majTix = m.sb == null ? null : homeMaj ? m.sb : 100 - m.sb;
+    const lopsided = m.sh != null && (m.sh >= 60 || m.sh <= 40);
+    const chip = m.rlm ? '<span class="tag rlm">Reverse line move</span>' : lopsided && !moved ? '<span class="tag watch">Watch</span>' : '';
+    return `<article class="card mc${m.rlm ? ' rlm' : ''}">
+      <div class="card-top"><span><span class="game">${g.a} @ ${g.h}</span> · ${fmtKo(g.ko)}</span>${chip}</div>
+      <div class="mc-dual">
+        <div class="mc-move"><span class="label">Line move</span><b class="num">${moved ? moveStr(g) : sideStr(g, g.cur)}</b><span>${moved ? `${ptsWord(g.cur - g.open)} toward ${toward}` : 'Unchanged since open'}</span></div>
+        <div class="mc-money"><span class="label">Money</span><b class="num">${majTeam ? `${majMoney}% on ${majTeam}` : '—'}</b><span>${majTix != null ? `${majTix}% of tickets on ${majTeam}` : 'No spread split this cycle'}</span></div>
+      </div>
+      ${splitBar('Tickets', g.a, g.h, m.sb)}${splitBar('Money', g.a, g.h, m.sh)}
+      <div class="verdict ${v.cls}"><span class="vh"><i>${v.cls === 'bet' ? 'Bet' : v.cls === 'lean' ? 'Lean' : 'Pass'}</i>${esc(v.head.replace(/^(Bet|Lean) /, ''))}</span><p>${esc(v.text)}</p></div>
+    </article>`;
+  }).join('') || '<p class="empty-note">No betting splits captured yet this week.</p>';
+})();
+
+/* ---------- Systems ---------- */
+(function renderSystems() {
+  const towers = D.games.filter(g => g.sys).map(g => {
+    const s = g.sys;
+    let side = null, agree = null;
+    if (s.team) { if (g.cover != null) { side = s.team === g.h ? g.cover : 100 - g.cover; agree = side >= 50; } }
+    else if (/^under/i.test(s.pick) && g.over != null) { side = 100 - g.over; agree = side >= 50; }
+    else if (/^over/i.test(s.pick) && g.over != null) { side = g.over; agree = side >= 50; }
+    return { g, s, side, agree };
+  }).sort((a, b) => b.s.checks.length - a.s.checks.length || b.s.pct - a.s.pct);
+  document.getElementById('sky').innerHTML = towers.map(({ g, s, side, agree }) => `
+    <div class="tower">
+      <div class="tw-head">
+        <div class="tw-pick">${esc(s.team ? `${s.team} ${niceMinus((s.pick.match(/[+-]\d+(?:\.\d+)?/) || [s.pick])[0])}` : niceMinus(s.pick))}</div>
+        ${agree == null ? '' : `<span class="tag ${agree ? 'agree' : 'disagree'}">Model ${agree ? 'agrees' : 'disagrees'} · ${pct(side)}%</span>`}
+      </div>
+      ${s.checks.slice().reverse().map(c => `
+        <div class="blk">
+          <span class="blk-pct num">${pct(c.pct)}<small>%</small></span>
+          <span class="blk-name">${esc(SYS[c.key] || c.key)}</span>
+          <span class="blk-meter" aria-hidden="true"><i style="width:${c.pct}%"></i><u style="left:52.4%"></u></span>
+        </div>`).join('')}
+      <div class="tw-base"><b>${g.a} @ ${g.h}</b> · ${fmtKo(g.ko)}</div>
+    </div>`).join('') || '<p class="empty-note">No situational systems match this week yet.</p>';
+})();
+
+/* ---------- Props ---------- */
+document.getElementById('props-count').textContent = props.length;
+document.getElementById('prop-cards').innerHTML = props.map(p => propCard(p)).join('') || '<p class="empty-note">No props captured yet this week.</p>';
+document.getElementById('pending').innerHTML = (D.pending || []).length ? `<b>Still waiting on props:</b> ${D.pending.map(esc).join(', ')}. Rechecked every run until a clean number posts.` : '';
+
+/* ---------- Hit rates ---------- */
+(function hitRates() {
+  const propRows = D.propRows || [], games = D.results || [];
+  const weeks = [...new Set(propRows.map(r => r.wk).concat(games.map(r => r.wk)).filter(Boolean))].sort((a, b) => wkNum(b) - wkNum(a));
+  const sel = document.getElementById('hr-week');
+  sel.innerHTML = `<option value="all">All weeks</option>` + weeks.map(w => `<option value="${esc(w)}">Week ${wkNum(w)}</option>`).join('');
+  const rate = (h, t) => t ? Math.round(h / t * 100) : null;
+  const rec = (rows, test) => { const h = rows.filter(r => test(r) === true).length, m = rows.filter(r => test(r) === false).length; return { h, m, t: h + m, p: rate(h, h + m) }; };
+  const propRec = rows => rec(rows, r => r.res === 'hit' ? true : r.res === 'miss' ? false : null);
+  const BE = 52.4;
+  const tile = (name, r, be) => `<div class="tile"><span class="label">${name}</span><b class="num">${r.p == null ? '—' : r.p}<small>%</small></b>
+    <span class="rec num">${r.h}–${r.m}${r.t ? '' : ' · no graded picks'}</span>
+    <span class="pbar"><i class="${be && r.p != null && r.p < BE ? 'low' : ''}" style="width:${r.p || 0}%"></i>${be ? `<u style="left:${BE}%"></u>` : ''}</span>
+    ${be ? `<span class="be">Tick: ${BE}% break-even</span>` : '<span class="be">Picking the winner</span>'}</div>`;
+  const miniCell = r => r.t ? `<b>${r.h}–${r.m}</b> <span class="num">${r.p}%</span>` : '<span>—</span>';
+  let showAll = false;
+  function render() {
+    const wk = sel.value;
+    const P = wk === 'all' ? propRows : propRows.filter(r => r.wk === wk);
+    const G = wk === 'all' ? games : games.filter(r => r.wk === wk);
+    const pr = propRec(P), su = rec(G, r => r.su), ats = rec(G, r => r.ats), tot = rec(G, r => r.tot);
+    const pushes = P.filter(r => r.res === 'push').length;
+    const scope = wk === 'all' ? 'Across every week' : `In Week ${wkNum(wk)}`;
+    document.getElementById('hr-summary').innerHTML = pr.t
+      ? `${scope}, props are hitting <b>${pr.p}%</b> (${pr.h}–${pr.m}), ${pr.p >= BE ? 'above' : 'below'} the ${BE}% break-even. Spread picks are at <b>${ats.p ?? '—'}%</b>${ats.t ? ` (${ats.h}–${ats.m})` : ''}.`
+      : `${scope}: no graded props yet.`;
+    const tiers = [['7–10 strong', r => (r.conf || 0) >= 7], ['5–6 real', r => (r.conf || 0) >= 5 && r.conf < 7], ['0–4 mild', r => (r.conf || 0) < 5]];
+    const tierRows = tiers.map(([n, f]) => { const r = propRec(P.filter(f)); return `<tr><td><b>${n}</b></td><td class="num">${r.t ? `${r.h}–${r.m}` : '—'}</td><td class="num r">${r.p == null ? '—' : r.p + '%'}</td><td><span class="mini"><i class="${r.p != null && r.p < BE ? 'low' : ''}" style="width:${r.p || 0}%"></i></span></td></tr>`; }).join('');
+    const wkRows = wk === 'all' ? weeks.map(w => {
+      const pp = propRec(propRows.filter(r => r.wk === w)), gg = games.filter(r => r.wk === w);
+      return `<tr><td><b>Week ${wkNum(w)}</b></td><td>${miniCell(pp)}</td><td>${miniCell(rec(gg, r => r.su))}</td><td>${miniCell(rec(gg, r => r.ats))}</td><td>${miniCell(rec(gg, r => r.tot))}</td></tr>`;
+    }).join('') : '';
+    const graded = P.filter(r => r.res === 'hit' || r.res === 'miss' || r.res === 'push').sort((a, b) => (a.res === 'miss' ? 0 : 1) - (b.res === 'miss' ? 0 : 1) || new Date(b.ko) - new Date(a.ko));
+    const shown = showAll ? graded : graded.slice(0, 12);
+    const pickRows = shown.map(r => `<tr><td><b>${esc(r.player)}</b><br><span class="num">${esc(String(r.lean).toUpperCase())} ${r.line} ${esc(PROP_M[r.market] || r.market)}</span></td><td class="num">${r.actual ?? '—'}</td><td><span class="res ${esc(r.res)}">${esc(r.res)}</span></td><td>${esc(r.a)} @ ${esc(r.h)}${wk === 'all' ? ` · W${wkNum(r.wk)}` : ''}</td></tr>`).join('');
+    const last = G.length ? G[G.length - 1] : null;
+    document.getElementById('hr-body').innerHTML = `
+      <div class="tiles">${tile('Player props', pr, true)}${tile('Straight up', su, false)}${tile('Against the spread', ats, true)}${tile('Totals', tot, true)}</div>
+      <div class="hr-cols">
+        <div>
+          <div class="label group-label"><span>Props by confidence</span>${pushes ? `<span class="sub">${pushes} push${pushes === 1 ? '' : 'es'} left out</span>` : ''}</div>
+          <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Tier</th><th>Record</th><th class="r">Hit</th><th></th></tr></thead><tbody>${tierRows}</tbody></table></div>
+          ${wk === 'all' && weeks.length ? `<div class="label group-label"><span>By week</span></div>
+          <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Week</th><th>Props</th><th>SU</th><th>ATS</th><th>Totals</th></tr></thead><tbody>${wkRows}</tbody></table></div>` : ''}
+          ${last ? `<div class="label group-label"><span>Latest result</span></div><p class="hr-summary"><b class="num">${esc(last.a)} ${last.as_}, ${esc(last.h)} ${last.hs}</b>. The model gave the winner a ${pct(last.wp)}% chance.</p>` : ''}
+        </div>
+        <div>
+          <div class="label group-label"><span>Graded props</span><span class="sub">misses first</span></div>
+          ${pickRows ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Pick</th><th>Actual</th><th>Result</th><th>Game</th></tr></thead><tbody>${pickRows}</tbody></table></div>${graded.length > 12 ? `<button class="more" id="hr-more" type="button">${showAll ? 'Show fewer' : `Show all ${graded.length} graded props`}</button>` : ''}` : '<p class="empty-note">No graded props in this view.</p>'}
+        </div>
+      </div>`;
+  }
+  sel.addEventListener('change', () => { showAll = false; render(); });
+  document.getElementById('hr-body').addEventListener('click', e => { if (e.target.id === 'hr-more') { showAll = !showAll; render(); } });
+  render();
+  document.getElementById('built').textContent = `Data built ${built.toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'})}`;
+})();
+
+/* ---------- Early edges / CLV ---------- */
+(function edges() {
+  const E = D.edges; const el = document.getElementById('edge-body');
+  if (!E || !E.rows || !E.rows.length) { el.innerHTML = ''; return; }
+  const s = E.summary, r = s.record || {};
+  const sign = v => v == null ? '—' : (v > 0 ? '+' : '') + v;
+  const days = Object.entries(s.byRecDay || {}).map(([d, v]) => `${esc(d)}: ${v.beat}/${v.n} beat, avg ${sign(v.avgPts)}`).join(' · ');
+  const grp = o => Object.entries(o || {}).map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td class="num">${v.n}</td><td class="num">${v.withLine ? v.beat + '/' + v.withLine + ' (' + v.beatPct + '%)' : '—'}</td><td class="num">${sign(v.avgPts)}</td><td class="num">${(v.record || {}).w || 0}–${(v.record || {}).l || 0}</td></tr>`).join('');
+  const sh = s.sharp || {};
+  const breakdown = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>By window / pick type</th><th>Picks</th><th>Beat close</th><th>Avg CLV</th><th>W–L</th></tr></thead><tbody>${grp(s.byWindow)}${grp(s.byPickType)}</tbody></table></div>
+    <p class="hr-summary">Vs the sharp close (BookMaker.eu): <b>${sh.beat || 0}/${sh.n || 0}</b> beat, avg <b>${sign(sh.avgPts)}</b> pts. Props with a recorded close: <b>${s.propsWithClose || 0}</b>.${(s.mlPriceClv || {}).n ? ' Moneyline no-vig price CLV avg <b>' + sign(s.mlPriceClv.avgPct) + ' pct pts</b>.' : ''} Benchmark: beating the close on 55%+ of picks.</p>`;
+  const rows = E.rows.map(x => `<tr><td><b>${esc(x.pick)}</b><br><span class="num">${esc(x.a)} @ ${esc(x.h)} · ${esc(x.day || '')} · conf ${x.conf ?? '—'} · $${x.stake ?? '—'}</span></td>
+    <td class="num">${x.rec}</td><td class="num">${x.close != null ? x.close + ' (close)' : (x.now ?? '—')}</td>
+    <td class="num"><span class="res ${x.clv > 0 ? 'hit' : x.clv < 0 ? 'miss' : ''}">${sign(x.clv)}</span></td>
+    <td>${x.taken ? '<b>Taken</b>' : '<span class="num">Paper</span>'}</td>
+    <td><span class="res ${x.res === 'win' ? 'hit' : x.res === 'loss' ? 'miss' : x.res === 'push' ? 'push' : ''}">${x.res || 'open'}</span></td></tr>`).join('');
+  el.innerHTML = `<div class="label group-label" style="margin-top:40px"><span>Early edges &amp; closing line value</span><span class="sub">did we beat the market's final number?</span></div>
+    <p class="hr-summary">Logged <b>${s.logged}</b> early recommendations. <b>${s.beatClose}</b> have beaten the line so far (${s.flat} unchanged), average <b>${sign(s.avgClvPts)} pts</b> of value. Results at our number: <b>${r.w || 0}–${r.l || 0}${r.p ? '–' + r.p : ''}</b>${r.pct != null ? ' (' + r.pct + '%)' : ''}; paper P/L <b>$${s.paperPnl}</b>${s.taken ? `; taken ${s.taken}, real P/L $${s.realPnl}` : ''}.${days ? ' By day recommended — ' + days + '.' : ''}</p>
+    ${breakdown}
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Pick</th><th>Our line</th><th>Now / close</th><th>CLV</th><th>Status</th><th>Result</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+})();
+</script>

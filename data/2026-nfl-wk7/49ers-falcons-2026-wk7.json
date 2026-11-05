@@ -1,0 +1,377 @@
+{
+  "game_id": "49ers-falcons-2026-wk7",
+  "matchup": "San Francisco 49ers @ Atlanta Falcons",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 4.5,
+      "total": 50.5,
+      "ml_fav": -218,
+      "ml_dog": 180
+    },
+    "fanduel": {
+      "spread": 3.5,
+      "total": 49.5,
+      "ml_fav": -190,
+      "ml_dog": 160
+    },
+    "caesars": {
+      "spread": 3.5,
+      "total": 50.5,
+      "ml_fav": -193,
+      "ml_dog": 161
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM. Home=Falcons. BookMaker.eu did not have this game posted today -- logged null."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 4.5,
+        "total": 50.5,
+        "ml_fav": -218,
+        "ml_dog": 180
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 49.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 50.5,
+        "ml_fav": -193,
+        "ml_dog": 161
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM. Home=Falcons. BookMaker.eu did not have this game posted today -- logged null."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 50,
+        "ml_fav": -185,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 50,
+        "ml_fav": -173,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 50.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM. BookMaker.eu not posted this game today (13 of 14 games on board). Home=Falcons."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 49.5,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 50.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": 50.5,
+        "ml_fav": -148,
+        "ml_dog": 125
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "49ers -3.5",
+    "total_lean": "Under 50.5",
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Model favors 49ers covering more comfortably than the market number, model-only signal",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 19,
+      "handle_pct_home": 31
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 75
+    },
+    "moneyline": {
+      "bets_pct_home": 17,
+      "handle_pct_home": 17
+    },
+    "reverse_line_move": true,
+    "rlm_note": "69% of handle is on the away side but the spread moved AGAINST them (+4.5 -> +2.5) -- real reverse line move toward home.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:48.974022+00:00",
+    "n": 10000,
+    "homeElo": 1437.3,
+    "awayElo": 1667.7,
+    "gamesSeen": 12,
+    "eloMarginHome": -7.3,
+    "statsMarginHome": -7.4,
+    "marginDivergence": 0.1,
+    "projTotal": 46.8,
+    "homeWinProbElo": 25.9,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 50.5,
+    "homeInjuryPts": -3.95,
+    "awayInjuryPts": -5.15,
+    "projHomeMeanRaw": 19.8,
+    "projAwayMeanRaw": 27.1,
+    "projHomeMeanAdjusted": 15.8,
+    "projAwayMeanAdjusted": 21.9,
+    "injuryAdjustedMarginHome": -6.1,
+    "projTotalAdjusted": 37.7,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -4.0 pts -- Brian Robinson (RB, out, -0.5), Michael Jerrell (T, out, -0.8), Cameron Williams (T, out, -0.8), Billy Bowman Jr. (CB, out, -0.4), Divine Deablo (LB, out, -0.4), Za'Darius Smith (DE, questionable, -0.3). T depth: 2 confirmed out (Michael Jerrell, Cameron Williams) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -5.2 pts -- Nick Bosa (DE, out, -1.5), Mike Evans (WR, out, -1.5), Deebo Samuel Sr. (WR, out, -1.0), Garret Wallow (LB, out, -0.4). WR depth: 2 confirmed out (Mike Evans, Deebo Samuel Sr.) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Atlanta Falcons (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "San Francisco 49ers (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]; Jauan Jennings (-1.0), Jaylon Moore (-1.0), Dre Greenlaw (-1.0), Arik Armstead (-0.8), Jiayir Brown (-0.5), Ross Dwelley (-0.2) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 32.5,
+    "awayWinPct": 64.8,
+    "tiePct": 2.7,
+    "medianHomeScore": 16,
+    "medianAwayScore": 22,
+    "coverPctHome": 40.7,
+    "overPct": 18.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.816834+00:00",
+      "marginHome": -7.3,
+      "total": 46.8
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.646159+00:00",
+      "marginHome": -7.3,
+      "total": 46.8
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.277240+00:00",
+      "marginHome": -7.3,
+      "total": 46.8
+    },
+    {
+      "run_at": "2026-10-23T13:04:36.984351+00:00",
+      "marginHome": -5.0,
+      "total": 44.5
+    },
+    {
+      "run_at": "2026-10-25T12:56:48.974022+00:00",
+      "marginHome": -6.1,
+      "total": 37.7
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:59:52Z",
+    "analysis": [
+      "Market is SF -2.5 (DK -115); model has SF by about 6.1 even after pricing Bosa, Evans and Deebo Samuel all out (Elo -7.3, recent scoring -7.4, both agree). Atlanta is down both starting-caliber tackles and RB Brian Robinson, so the Niners' remaining offense and pass rush face a weaker front.",
+      "On the total, the injury-blind projection (46.8) and the injury-adjusted one (37.7) both sit below the 50.5 number: SF is missing its top two WRs and Atlanta its OL depth, which points to fewer clean drives. Both leans are conf 5 (standard unit)."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "SF -2.5",
+        "confidence": 4,
+        "reasoning": "Model likes SF (Elo/scoring SF by 7) but a real reverse line move (69% handle on SF, line cut from SF -4.5 to -2.5) argues against laying it. | Stake $0 \u00b7 pass at -2.5",
+        "best_bet": false
+      },
+      {
+        "market": "total",
+        "pick": "Under 50.5",
+        "confidence": 5,
+        "reasoning": "Raw 46.8 and adjusted 37.7 projections both below 50.5; WR1/WR2 out for SF, two T out for ATL; public 71% on over. | Stake $15 \u00b7 pass at 49.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-21T02:12:45Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank.",
+    "picks": [
+      {
+        "player": "Brock Purdy",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "49ers are favored into a rush-leaning script and the model likes the over, but Atlanta has been stingy on QB scrambles specifically. | Stake $7.50 \u00b7 pass at 21.5",
+        "matchup": {
+          "opp_rank_vs_pos": 21,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "Atlanta allows just 4.50 QB rush yds/g avg (CBS posvsdef QB rushing split) vs the 19.5 line; overall QB rank 21st of 32 (not top-10 tough)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 27.05 vs 19.5 line, +7.5 diff, 25.55% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "49ers are favored by 4-4.5 and project as the 8th-most run-focused team on the slate (43.3% run rate)"
+          }
+        ],
+        "confidence_base": 4,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 19.5,
+        "opening_captured_at": "2026-10-21T02:12:45Z",
+        "current_line": 19.5,
+        "current_captured_at": "2026-10-21T02:12:45Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:48Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Brian Robinson",
+          "status": "out",
+          "pts": -0.5,
+          "note": "RB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Michael Jerrell",
+          "status": "out",
+          "pts": -0.8,
+          "note": "starting/swing tackle out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Cameron Williams",
+          "status": "out",
+          "pts": -0.8,
+          "note": "second tackle out, OL depth hit (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "Billy Bowman Jr.",
+          "status": "out",
+          "pts": -0.4,
+          "note": "CB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Divine Deablo",
+          "status": "out",
+          "pts": -0.4,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "DE",
+          "player": "Za'Darius Smith",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "pass rusher questionable (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.2,
+      "stacking_notes": [
+        "T depth: 2 confirmed out (Michael Jerrell, Cameron Williams) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -3.95
+    },
+    "away": {
+      "items": [
+        {
+          "position": "DE",
+          "player": "Nick Bosa",
+          "status": "out",
+          "pts": -1.5,
+          "note": "top pass rusher out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Mike Evans",
+          "status": "out",
+          "pts": -1.5,
+          "note": "WR out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Deebo Samuel Sr.",
+          "status": "out",
+          "pts": -1.0,
+          "note": "WR out, now confirmed (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Garret Wallow",
+          "status": "out",
+          "pts": -0.4,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -4.4,
+      "stacking_notes": [
+        "WR depth: 2 confirmed out (Mike Evans, Deebo Samuel Sr.) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -5.15
+    }
+  },
+  "final_score": {
+    "home": 29,
+    "away": 20
+  }
+}

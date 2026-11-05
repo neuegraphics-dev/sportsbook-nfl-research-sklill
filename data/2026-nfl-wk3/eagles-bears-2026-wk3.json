@@ -1,0 +1,429 @@
+{
+  "game_id": "eagles-bears-2026-wk3",
+  "matchup": "Philadelphia Eagles @ Chicago Bears",
+  "week": "Week 3",
+  "kickoff": "2026-09-29T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -1.5,
+      "total": 48.5,
+      "ml_fav": -112,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu odds pending for this game (confirmed live on its own board -- explicitly listed as pending). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 48.5,
+        "ml_fav": -112,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu odds pending for this game (confirmed live on its own board -- explicitly listed as pending). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:09Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 42.0,
+        "ml_fav": -231,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK lags (Eagles -3) vs FD/Caesars/BME (Eagles -4.5) -- 1.5pt gap"
+    },
+    {
+      "captured_at": "2026-09-24T12:12:30Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 41.0,
+        "ml_fav": -230,
+        "ml_dog": 191
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Eagles(away) favored; BME/Caesars agree 4.5, DK notably softer at 3.0 with a 3.5-pt total gap too (44.5 vs 41.0) -- worth a closer look next cycle."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 41.0,
+        "ml_fav": -231,
+        "ml_dog": 193
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:27:04Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday-eve check (Mon night game). BookMaker.eu unusable this cycle (wrong-week data). DK still lagging at PHI -3 vs Caesars -3.5 -- book-vs-sharp gap persists as of Sunday AM, unresolved since Thursday. Bears QB situation still unsettled: as of today, some reports say Bagent cleared protocol and practiced fully Sat, others say he remains in protocol with Case Keenum the presumptive starter (took 1st-team reps all week) -- genuinely conflicting, HC Ben Johnson has not named a starter. Recommend a final check Monday before kickoff."
+    },
+    {
+      "captured_at": "2026-09-28T20:07:47Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday, ~4hrs to kickoff. BookMaker.eu still showing wrong-week data (Bears/49ers Dec game), unusable again. DK(rotowire) fresh Sep28, ml_dog now posted (+160). Caesars(vegasinsider) spread only, Eagles -3.5. Case Keenum CONFIRMED starting QB for Bears per multiple outlets (Yahoo, NBC Chicago, ABC7) -- Caleb Williams out (hamstring), Tyson Bagent still in concussion protocol. DK-vs-Caesars gap persists (-3 vs -3.5) into kickoff."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-28",
+    "spread_lean": "Eagles -3 at DraftKings still the buy -- Caesars -3.5 confirms the sharper number, gap never closed all week",
+    "total_lean": "Lean Under 44.5 -- Bears now confirmed on 3rd-string-caliber QB (Keenum, first meaningful action since 2023), BME total read (41.0 last available) was well below DK all week",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Case Keenum CONFIRMED as Bears starter (Yahoo/NBC Chicago/ABC7, gameday reports) -- ends the week-long Bagent-vs-Keenum uncertainty in the worse direction (Bagent has starter reps in 2025; Keenum has not played meaningful snaps since 2023)",
+      "DK-vs-Caesars book gap never closed across the week (-3 vs -3.5), still open at kickoff -- persistent enough to note but not itself a new signal"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-28T20:08:15.916396+00:00",
+    "n": 10000,
+    "homeElo": 1528.6,
+    "awayElo": 1564.0,
+    "gamesSeen": 4,
+    "eloMarginHome": 0.5,
+    "statsMarginHome": -0.6,
+    "marginDivergence": 1.1,
+    "projTotal": 46.6,
+    "homeWinProbElo": 51.8,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 44.5,
+    "homeInjuryPts": -6.5,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.5,
+    "projAwayMeanRaw": 23.0,
+    "projHomeMeanAdjusted": 17.0,
+    "projAwayMeanAdjusted": 23.0,
+    "injuryAdjustedMarginHome": -6.0,
+    "projTotalAdjusted": 40.1,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -6.5 pts -- Caleb Williams (QB, out, -6.5)."
+    ],
+    "homeWinPct": 32.3,
+    "awayWinPct": 65.3,
+    "tiePct": 2.4,
+    "medianHomeScore": 17,
+    "medianAwayScore": 23,
+    "coverPctHome": 42.2,
+    "overPct": 37.7
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-28T20:08:15Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Caleb Williams",
+          "status": "out",
+          "pts": -6.5,
+          "note": "Hamstring, week-to-week, officially out for tonight. Case Keenum (38, no meaningful action since 2023) CONFIRMED as starting QB per Yahoo/NBC Chicago/ABC7 gameday reporting -- Tyson Bagent remains in concussion protocol and will not play. This resolves the week-long Bagent-vs-Keenum uncertainty in the worse direction. Keeping at -6.5 (top of the QB-out range) given Keenum's extreme unfamiliarity with this offense and lack of recent reps.",
+          "detail_confirmed": true
+        }
+      ],
+      "items_total_pts": -6.5,
+      "stacking_notes": [],
+      "total_pts": -6.5
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-28T20:08:44Z",
+    "analysis": [
+      "Case Keenum is now CONFIRMED as the Bears' starter tonight (Yahoo, NBC Chicago, ABC7) -- Caleb Williams (hamstring) is out and Tyson Bagent remains in concussion protocol, so the week-long Bagent-vs-Keenum uncertainty resolved in the worse direction for Chicago: a 38-year-old third-stringer with no meaningful snaps since 2023 making his first start of the year. The injury-adjusted model still has Chicago at -6.5 pts on offense, and with raw Elo essentially a coinflip (+0.5 home) the model's -6.0 adjusted margin is now almost entirely the QB downgrade talking, not a team-strength read.",
+      "The market actually got MORE favorable for Eagles bettors late in the week, not less: the number peaked at Eagles -4.5 mid-week (Tue-Thu) and has since drifted back to -3/-3.5 into kickoff even as the QB news got worse for the Bears and 74-83% of bets and handle piled onto Philadelphia. That combination -- a real, newly-confirmed talent gap the market hasn't fully re-priced, plus a number that softened rather than hardened -- is what turns this from a marginal, market-matching spread lean into a real one. The total lean is the cleaner, higher-conviction side of the two: model total (40.1) sits well under the market's 44.5, and Keenum's unfamiliarity with this offense argues for a slower, lower-scoring Bears night on top of the raw injury math."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 44.5 (44.0 at some books)",
+        "confidence": 7,
+        "reasoning": "Injury-adjusted model total (40.1) sits well below the market total and Keenum's confirmed start (vs. Bagent, who at least had 2025 starter reps) only reinforces the downgrade.",
+        "best_bet": true
+      },
+      {
+        "market": "spread",
+        "pick": "Eagles -3 to -3.5",
+        "confidence": 6,
+        "reasoning": "Model margin (-6.0 adjusted) has pulled further ahead of the market number as the market drifted back toward Chicago late week (-4.5 mid-week to -3/-3.5 at kickoff) despite the QB news getting worse for the Bears and heavy public money already on Philadelphia -- a real, not-yet-closed gap, not just noise.",
+        "best_bet": false
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "Marco",
+      "pick": "Chicago Bears (moneyline / outright)",
+      "best_bet": false,
+      "note": "Marco picks the Chicago Bears to win outright (8:33-14:00)."
+    }
+  ],
+  "props": {
+    "last_checked": "2026-09-25T13:10:36Z",
+    "status": "captured",
+    "source_note": "Screenshot betting-app props (D'\\''Andre Swift O13.5 rec yds -115, Rome Odunze 2.5 receptions O/U) cross-checked against RotoWire 2026 game logs, NBC Sports Wk2 recap, footballdb defense totals, and Bears QB news (NFL.com, ESPN, Bleacher Nation) -- research run 2026-09-25",
+    "picks": [
+      {
+        "player": "D'Andre Swift",
+        "team": "home",
+        "position": "RB",
+        "market": "rec_yards",
+        "book": "best-odds aggregate (-115 O / market)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Swift already leads Chicago in receiving two straight weeks and a Keenum-led offense typically leans on RB checkdowns, but the QB downgrade itself is real uncertainty against a small line.",
+        "matchup": {
+          "opp_rank_vs_pos": 32,
+          "rank_basis": "footballdb 2025 full-season total (637 rec yds allowed to RBs, most in NFL) -- 2026 Wks1-2 position-specific split not available, treated as a scheme-tendency signal, not a current-season rank"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Eagles allowed the most RB receiving yards in the NFL last season (637, 35.4/g) -- a real scheme tendency, though this is 2025 data, not a confirmed 2026 rank"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "5 rec/54 yds Wk2 (led CHI in receiving); already clears 13.5 on that game alone"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "Veteran game-manager QBs (Keenum profile) lean on RB checkdowns as the safest read -- supports targets even in a run-first plan"
+          },
+          {
+            "label": "QB uncertainty",
+            "dir": "against",
+            "detail": "Keenum has not played meaningful snaps since 2023 and Ben Johnson has not confirmed him as starter as of this week -- real variance"
+          },
+          {
+            "label": "Health",
+            "dir": "neutral",
+            "detail": "No Swift injury designation found this week"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 13.5,
+        "opening_captured_at": "2026-09-25T13:10:36Z",
+        "current_line": 13.5,
+        "current_captured_at": "2026-09-25T13:10:36Z"
+      },
+      {
+        "player": "Rome Odunze",
+        "team": "home",
+        "position": "WR",
+        "market": "receptions",
+        "book": "best-odds aggregate (-102 O / -130 U)",
+        "lean": "under",
+        "confidence": 7,
+        "reasoning": "Odunze is averaging exactly 2.5 rec/g through 2 games with a competent starting QB; a Keenum-led, more conservative offense is more likely to shrink WR1 volume further than grow it.",
+        "factors": [
+          {
+            "label": "Volume/usage",
+            "dir": "for",
+            "detail": "Only 7 targets / 5 rec / 95 yds through 2 games (3.5 tgt/g) even with Caleb Williams at QB -- \"slow start\" per RotoWire, no upward trend"
+          },
+          {
+            "label": "QB downgrade",
+            "dir": "for",
+            "detail": "Keenum (or even Bagent) is a downgrade from Williams for downfield/WR1 volume specifically -- conservative game-manager plans typically shrink WR1 targets first"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Eagles pass defense has allowed just 166.0 yds/g through 2 weeks (team-level strength; position-specific WR rank not confirmed)"
+          },
+          {
+            "label": "Game script",
+            "dir": "neutral",
+            "detail": "Bears ~4.5-pt home dogs -- competitive enough that it does not force a pass-heavy shootout script"
+          },
+          {
+            "label": "Market",
+            "dir": "neutral",
+            "detail": "Book already prices Under favorite (-130 vs -102) -- this confirms the market read rather than finding contrarian value"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 2,
+          "net": 3
+        },
+        "opening_line": 2.5,
+        "opening_captured_at": "2026-09-25T13:10:36Z",
+        "current_line": 2.5,
+        "current_captured_at": "2026-09-25T13:10:36Z"
+      },
+      {
+        "player": "Saquon Barkley",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Soft Bears run D plus a backup-QB opponent sets up a run-heavy PHI script, but Barkley's Wk2 stinger puts his volume in doubt until Thursday's practice report.",
+        "opening_line": 75.5,
+        "opening_captured_at": "2026-09-24T13:10:19Z",
+        "current_line": 75.5,
+        "current_captured_at": "2026-09-24T18:53:28Z",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CHI 23rd of 32 vs RBs (18.5 pts/g); 204 RB rush yds allowed in 2 games (102/g)"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "PHI -4.5 road fav; Caleb Williams (hamstring) likely out, Bagent starts -- lead = late rush volume"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "Wk1 vs WAS: 15 car, 83 yds (5.5 YPC) -- clears 75.5 at that rate on ~14 carries"
+          },
+          {
+            "label": "Health",
+            "dir": "against",
+            "detail": "Stinger on Wk2 opening snap, MRI; only 4 car/9 yds vs TEN. Status TBD (extra day: MNF)"
+          },
+          {
+            "label": "Timeshare",
+            "dir": "against",
+            "detail": "Bigsby 13 car + Shipley 7 car in Wk2 -- a limited Barkley cedes carries"
+          },
+          {
+            "label": "Sample",
+            "dir": "neutral",
+            "detail": "2-game DvP sample; CHI faced CAR and MIN run games"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 23,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 1,
+          "net": 1
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-28T20:08:02Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 25,
+      "handle_pct_home": 26
+    },
+    "total": {
+      "bets_pct_over": 61,
+      "handle_pct_over": 68
+    },
+    "moneyline": {
+      "bets_pct_home": 11,
+      "handle_pct_home": 17
+    },
+    "reverse_line_move": false,
+    "rlm_note": "74% of handle is on the away side and the spread has moved toward them (-1.5 -> +4.5) -- money and line agree, no RLM.",
+    "note": "Gameday split. Home=Bears. Spread/ML: ~74-83% of bets+handle on Eagles (away), consistent with the line moving toward Eagles all week (opened -1.5, now -3.5) -- money and line agree, not RLM. Total: 68% handle on Over 41.5 despite our total lean being Under; public leaning the opposite side of our read, worth flagging as a contrarian note, not a reason to change confidence on its own."
+  },
+  "final_score": {
+    "home": 27,
+    "away": 7
+  }
+}

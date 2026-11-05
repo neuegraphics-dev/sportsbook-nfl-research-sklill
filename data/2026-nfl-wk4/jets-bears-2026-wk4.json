@@ -1,0 +1,229 @@
+{
+  "game_id": "jets-bears-2026-wk4",
+  "matchup": "New York Jets @ Chicago Bears",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 43.5,
+      "ml_fav": -184,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW gave favorite/ML only (Bears favored, -184), spread confirmed via FoxSports and Gang Green Nation as Bears -2.5 (home fav). BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -184,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW gave favorite/ML only (Bears favored, -184), spread confirmed via FoxSports and Gang Green Nation as Bears -2.5 (home fav). BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:30Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 42.5,
+        "ml_fav": -160,
+        "ml_dog": 135
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:54Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -175,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars spread via vegasinsider.com (Bears -3), close to DK's -3.5, same side."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:36Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -175,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1): Bears(home) -3.5, matches Caesars via vegasinsider.com. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-02",
+    "spread_lean": "Bears -3.5 or better (model likes them by ~7.5 net)",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Line has continued drifting toward Chicago since open (-2.5 -> -3.0 -> -3.5 today), crossing key number 3 -- Caleb Williams (hamstring) remains confirmed out, Tyson Bagent/Case Keenum timeshare still the signal already priced into the -4.0 injury adjustment, no new confirmed news this cycle beyond the continuing absence",
+      "Elo gap (1558 vs 1318) remains the core driver; model margin still runs well ahead of even todays tighter market number"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-09-29T12:49:54Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Caleb Williams",
+          "status": "out",
+          "pts": -4.0,
+          "note": "Continuing absence -- Grade 2 hamstring strain (Wk2), reported 3-4 week recovery, long-shot to play Wk4. Case Keenum started and won convincingly (27-7) vs Eagles Wk3, so reduced from -6.5 (Wk3 number, when Bagent-vs-Keenum was unresolved) to -4.0 now that Keenum has a proven quality start on tape -- still a real downgrade, not a coinflip-erasing one."
+        }
+      ],
+      "items_total_pts": -4.0,
+      "stacking_notes": [],
+      "total_pts": -4.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-02T13:46:47.511102+00:00",
+    "n": 10000,
+    "homeElo": 1557.8,
+    "awayElo": 1317.6,
+    "gamesSeen": 6,
+    "eloMarginHome": 11.5,
+    "statsMarginHome": 3.0,
+    "marginDivergence": 8.5,
+    "projTotal": 47.3,
+    "homeWinProbElo": 84.0,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": -4.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 29.4,
+    "projAwayMeanRaw": 17.9,
+    "projHomeMeanAdjusted": 25.4,
+    "projAwayMeanAdjusted": 17.9,
+    "injuryAdjustedMarginHome": 7.5,
+    "projTotalAdjusted": 43.3,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+11.5) and recent-scoring margin (+3.0) disagree by 8.5 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -4.0 pts -- Caleb Williams (QB, out, -4.0).",
+      "Chicago Bears (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 68.5,
+    "awayWinPct": 29.2,
+    "tiePct": 2.3,
+    "medianHomeScore": 25,
+    "medianAwayScore": 18,
+    "coverPctHome": 60.2,
+    "overPct": 49.2
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:33Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 60,
+      "handle_pct_home": 47
+    },
+    "total": {
+      "bets_pct_over": 72,
+      "handle_pct_over": 64
+    },
+    "moneyline": {
+      "bets_pct_home": 76,
+      "handle_pct_home": 70
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-03T11:59:53Z",
+    "status": "pending",
+    "source_note": "Covers.com has three candidates for this game but none clear the bar: T. Bagent (Bears QB, backup starting with Caleb Williams still out w/ hamstring) rush yds o15.5 -- only 1 tracked game on statmuse with 0 carries, too thin/contradictory to trust the models +6.5 edge. G. Smith (Jets QB) rush yds o10.5 -- real but modest sample (11 car/24 yds over 2 games, 2.2 ypc), a genuine coinflip not an edge. B. Allen (Jets RB) rec yds o8.5 -- models 19.56 projection is wildly inconsistent with his real usage (1,1,3 targets, max 8 rec yds in any game this season); volume argues against, not for, this over. Re-check next cycle.",
+    "picks": []
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-29T13:35:57Z",
+    "analysis": [
+      "The corrected current line is Bears -3.0 (an earlier same-day fetch had a stale -2.5). Caleb Williams remains out, but Case Keenum's convincing 27-7 win over the Eagles keeps his downgrade at a reduced -4.0 rather than the -6.5 used in Week 3. Even after that discount, Chicago's Elo (1557.8) towers over a Jets team (1317.6) the model rates among its worst, and the resulting margin (7.5 net) still clears the corrected market number by about 4.5 points.",
+      "A small market-signal wrinkle adds a bit of corroboration: the Jets draw the majority of tickets (66%) while the money (58% handle) actually favors Chicago -- consistent with the model's read, though not itself a reverse-line-move since there's no prior line to compare against yet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Bears -3.0 or better",
+        "confidence": 6,
+        "reasoning": "Large Elo gap even after the Keenum-adjusted discount, plus a mild pro-Bears handle skew.",
+        "best_bet": true
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.511102+00:00",
+      "marginHome": 7.5,
+      "total": 43.3
+    }
+  ],
+  "final_score": {
+    "home": 23,
+    "away": 12
+  }
+}

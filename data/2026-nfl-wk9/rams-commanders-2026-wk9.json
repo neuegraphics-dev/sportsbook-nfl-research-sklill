@@ -1,0 +1,165 @@
+{
+  "game_id": "rams-commanders-2026-wk9",
+  "matchup": "Los Angeles Rams @ Washington Commanders",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 5.5,
+      "total": 47.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 5.5,
+      "total": 47.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 5.5,
+      "total": 48,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:37Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 48,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": -234,
+        "ml_dog": 195
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": -234,
+        "ml_dog": 195
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.818519+00:00",
+    "n": 10000,
+    "homeElo": 1405.7,
+    "awayElo": 1620.0,
+    "gamesSeen": 15,
+    "eloMarginHome": -6.7,
+    "statsMarginHome": -2.4,
+    "marginDivergence": -4.3,
+    "projTotal": 43.5,
+    "homeWinProbElo": 27.7,
+    "marketHomeSpread": 5.5,
+    "marketTotal": 48,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 18.4,
+    "projAwayMeanRaw": 25.1,
+    "projHomeMeanAdjusted": 18.4,
+    "projAwayMeanAdjusted": 25.1,
+    "injuryAdjustedMarginHome": -6.7,
+    "projTotalAdjusted": 43.5,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (-6.7) and recent-scoring margin (-2.4) disagree by 4.3 points -- worth a second look before trusting either alone.",
+      "Washington Commanders (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]; Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Los Angeles Rams (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]; Davante Adams (-1.8), Puka Nacua (-0.7), Trent McDuffie (-0.4), Nate Landman (-0.4) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 30.7,
+    "awayWinPct": 66.7,
+    "tiePct": 2.6,
+    "medianHomeScore": 18,
+    "medianAwayScore": 25,
+    "coverPctHome": 47.2,
+    "overPct": 36.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.014644+00:00",
+      "marginHome": -6.7,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-11-03T15:29:11.382868+00:00",
+      "marginHome": -6.7,
+      "total": 43.5
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.818519+00:00",
+      "marginHome": -6.7,
+      "total": 43.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Los Angeles Rams by 6.7 (injury-adjusted) against a market that has Los Angeles Rams favored by 5.5, a 1.2-point gap; sim cover% for Washington Commanders is 45.8% and projected total is 43.5 vs 48 (over 37.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

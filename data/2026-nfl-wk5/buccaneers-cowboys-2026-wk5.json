@@ -1,0 +1,675 @@
+{
+  "game_id": "buccaneers-cowboys-2026-wk5",
+  "matchup": "Tampa Bay Buccaneers @ Dallas Cowboys",
+  "week": "Week 5",
+  "kickoff": "2026-10-09T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -9.5,
+      "total": 47.5,
+      "ml_fav": -520,
+      "ml_dog": 400
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 DAL -9.5/47.5. Look-ahead was DAL -3.5/52.5 before Mayfield thumb injury."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -9.5,
+        "total": 47.5,
+        "ml_fav": -520,
+        "ml_dog": 400
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 DAL -9.5/47.5. Look-ahead was DAL -3.5/52.5 before Mayfield thumb injury."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -9.5,
+        "total": 47.5,
+        "ml_fav": -500,
+        "ml_dog": 450
+      },
+      "fanduel": {
+        "spread": -8.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 DAL -10."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -9.5,
+        "total": 47.5,
+        "ml_fav": -500,
+        "ml_dog": 450
+      },
+      "fanduel": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -8.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -8.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 47.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:56:26Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -8.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 47.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -8.5,
+        "total": 47.5,
+        "ml_fav": -470,
+        "ml_dog": 360
+      },
+      "fanduel": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -8.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-08T12:56:45Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Baker Mayfield",
+          "status": "out",
+          "pts": -5.5,
+          "note": "Dislocated throwing thumb Sept 27, out 3+ weeks; UDFA rookie Jalon Daniels starts (same pts as Wk4)"
+        },
+        {
+          "position": "S",
+          "player": "Antoine Winfield Jr.",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Rib -- ruled out (team report Oct 7)"
+        },
+        {
+          "position": "CB",
+          "player": "Benjamin Morrison",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Quad -- ruled out (team report Oct 7)"
+        },
+        {
+          "position": "LB",
+          "player": "SirVocea Dennis",
+          "status": "out",
+          "pts": -0.4,
+          "note": "Ankle/foot -- ruled out (team report Oct 7)"
+        }
+      ],
+      "items_total_pts": -7.4,
+      "stacking_notes": [],
+      "total_pts": -7.4
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-08T12:59:58.315888+00:00",
+    "n": 10000,
+    "homeElo": 1472.2,
+    "awayElo": 1399.4,
+    "gamesSeen": 8,
+    "eloMarginHome": 4.8,
+    "statsMarginHome": 2.0,
+    "marginDivergence": 2.8,
+    "projTotal": 50.5,
+    "homeWinProbElo": 66.7,
+    "marketHomeSpread": -8.5,
+    "marketTotal": 47.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -7.4,
+    "projHomeMeanRaw": 27.7,
+    "projAwayMeanRaw": 22.8,
+    "projHomeMeanAdjusted": 27.7,
+    "projAwayMeanAdjusted": 15.4,
+    "injuryAdjustedMarginHome": 12.2,
+    "projTotalAdjusted": 43.1,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Away injury adjustment: -7.4 pts -- Baker Mayfield (QB, out, -5.5), Antoine Winfield Jr. (S, out, -0.8), Benjamin Morrison (CB, out, -0.8), SirVocea Dennis (LB, out, -0.4).",
+      "Dallas Cowboys (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Tampa Bay Buccaneers (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Baker Mayfield (-5.5) [-5.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 79.8,
+    "awayWinPct": 18.3,
+    "tiePct": 1.9,
+    "medianHomeScore": 28,
+    "medianAwayScore": 15,
+    "coverPctHome": 60.3,
+    "overPct": 36.9
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.481263+00:00",
+      "marginHome": 10.3,
+      "total": 45.0
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.354710+00:00",
+      "marginHome": 10.3,
+      "total": 45.0
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.688492+00:00",
+      "marginHome": 10.3,
+      "total": 45.0
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.315888+00:00",
+      "marginHome": 12.2,
+      "total": 43.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-08T13:01:03Z",
+    "analysis": [
+      "TNF opener: Cowboys -9.5, total 47.5 (DraftKings and bet365 agree); Dallas team total 29.5 (-110). The number moved from a look-ahead of DAL -3.5 after Baker Mayfield dislocated his throwing thumb; UDFA rookie Jalon Daniels starts again (Tampa scored 14 with him in Week 4). With Mayfield priced at -5.5, the sim has Dallas by 10.3, so the spread is fairly priced.",
+      "CORRECTION 10/5: the earlier Over 47.5 lean read the injury-blind total (50.5). With the rookie QB priced in, the sim projects 45.0 (over only 43%) -- Tampa 17.3, Dallas 27.7. Real 2026 scoring lands in the same place once the Mayfield games are discounted. Dallas team total 29.5 sits about 2 points above both projections. No total bet; wait for TNF player props."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Cowboys -8 (Fanatics) / -8.5",
+        "confidence": 4,
+        "reasoning": "TB ruled out S Winfield, CB Morrison and LB Dennis on top of Mayfield; sim DAL by 12.2. But 90% of handle is on DAL and the line fell from -9.5 -- reverse move. | Stake $0 (over TNF game cap; props rank higher) \u00b7 pass at -9",
+        "best_bet": false
+      },
+      {
+        "market": "total",
+        "pick": "Over 47.5",
+        "confidence": 2,
+        "reasoning": "Sim total 43.1 understates DAL now that TB secondary is out (known sim limit). No total bet. | Stake $0",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-08T12:58:09Z",
+    "status": "captured",
+    "source_note": "TB secondary ruled out Oct 7",
+    "picks": [
+      {
+        "player": "Jalon Daniels",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Mobile rookie ran 8 for 55 in his first start; Dallas has allowed 188 rush yds to QBs in 4 games (47/g, 30th vs QB); TB will be trailing as a 9.5-pt dog. | Stake $15 \u00b7 pass at 47.5",
+        "matchup": {
+          "opp_rank_vs_pos": 30,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (DAL 107 pts; 188 QB rush yds allowed)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DAL allowed 188 rush yds to QBs thru Wk4 (47/g), 30th vs QB; Covers: DAL vulnerable to dual-threat QBs"
+          },
+          {
+            "label": "Usage",
+            "dir": "for",
+            "detail": "Wk4 first start: 8 carries, 55 rush yds"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "TB +9.5 road dog -- trailing means scrambles and designed runs"
+          },
+          {
+            "label": "Sample",
+            "dir": "neutral",
+            "detail": "One NFL start only -- small sample"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 43.5,
+        "opening_captured_at": "2026-10-06T12:48:56Z",
+        "current_line": 44.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "Javonte Williams",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Line sits 16 yds above his 57.8 average against a TB run D allowing 2.9 YPC to RBs; the number is inflated by Dallas being a big favorite. | Stake $15 \u00b7 pass at 69.5",
+        "matchup": {
+          "opp_rank_vs_pos": 8,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk3 (TB 30 pts; 165 RB rush yds on 57 att)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "TB allowed 165 RB rush yds on 57 att thru Wk3 (2.9 YPC), 8th-fewest RB pts"
+          },
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "57.8 rush yds/g in 2026 vs 73.5 line"
+          },
+          {
+            "label": "Offense trend",
+            "dir": "for",
+            "detail": "Dak averaging 266 pass yds -- DAL moves the ball through the air"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "DAL -9.5 home fav -- clock-killing carries if they lead big"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 73.5,
+        "opening_captured_at": "2026-10-06T12:48:56Z",
+        "current_line": 73.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "CeeDee Lamb",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Massive volume (9.3 rec/g, 103/g even excluding his 189-yd Wk4) but TB ranked 7th-toughest vs WRs thru Wk3, so the tough-matchup cap holds it at 4 despite TB's secondary injuries. | Stake $0 (over TNF game cap; swap-in) \u00b7 pass at 85.5",
+        "matchup": {
+          "opp_rank_vs_pos": 7,
+          "rank_basis": "footballdb WR fantasy pts allowed thru Wk3 (TB 45 pts) -- pre-injury sample"
+        },
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "37 rec on 46 targets in 4 games; 5+ catches every game"
+          },
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "124.5 rec yds/g (about 103/g excluding Wk4's 189)"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "TB CB Benjamin Morrison missed Wk4; S Antoine Winfield Jr. left Wk4 hurt"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "TB 7th-fewest WR fantasy pts thru Wk3 (357 rec yds allowed)"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "DAL -9.5 -- possible early sit in a blowout"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "Winfield Jr. and Morrison officially OUT (Oct 7)"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 2,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 81.5,
+        "opening_captured_at": "2026-10-06T12:48:56Z",
+        "current_line": 80.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "Bucky Irving",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "60.3 rush yds/g against a Dallas run defense ranked 24th vs RBs, and a rookie QB keeps Tampa leaning on the ground. | Stake $15 \u00b7 pass at 55.5",
+        "matchup": {
+          "opp_rank_vs_pos": 24,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk4 (DAL 71 pts; 389 RB rush yds on 97 att)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "60.3 rush yds/g over 4 games vs 51.5 line"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DAL 24th vs RB, 97 RB rush yds/g allowed (4.0 YPC)"
+          },
+          {
+            "label": "Projection",
+            "dir": "for",
+            "detail": "RotoWire projects 75.2; DK 53.5 / CZR 52.5 -- FD 51.5 is the low number"
+          },
+          {
+            "label": "QB",
+            "dir": "neutral",
+            "detail": "UDFA rookie Jalon Daniels starting -- run-first plan likely while close"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "TB +9.5 road dog -- carries dry up if DAL leads big"
+          },
+          {
+            "label": "Correlation",
+            "dir": "neutral",
+            "detail": "Same TB-stays-close script as Daniels rush over -- TNF game cap $45 reached"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 2,
+          "net": 2
+        },
+        "opening_line": 51.5,
+        "opening_captured_at": "2026-10-06T19:48:36Z",
+        "current_line": 51.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "CeeDee Lamb",
+        "team": "home",
+        "position": "WR",
+        "market": "receptions",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "9.3 catches a game at plus money (+116 DK; FD hangs 5.5 at -166) -- a cleaner Lamb vehicle than the yards line. | Stake $0 (over TNF game cap; swap-in) \u00b7 pass at -120",
+        "matchup": {
+          "opp_rank_vs_pos": 7,
+          "rank_basis": "footballdb WR fantasy pts allowed thru Wk3 (TB 45 pts) -- pre-injury sample"
+        },
+        "factors": [
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "37 rec on 46 targets in 4 games (9.3/g); 5+ catches every game"
+          },
+          {
+            "label": "Price",
+            "dir": "for",
+            "detail": "+116 implies 46%; FD prices 5.5 at -166 (62%)"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "TB CB Benjamin Morrison missed Wk4; S Winfield Jr. left Wk4 hurt"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "TB 7th-fewest WR fantasy pts thru Wk3"
+          },
+          {
+            "label": "Script",
+            "dir": "against",
+            "detail": "DAL -9.5 -- early sit risk in a blowout"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "Winfield Jr. and Morrison officially OUT (Oct 7)"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 2,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 6.5,
+        "opening_captured_at": "2026-10-06T19:48:36Z",
+        "current_line": 6.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "George Pickens",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "FanDuel",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "TB ruled out S Winfield and CB Morrison, so the 4th-ranked WR defense is weaker than its numbers. | Stake $0 (watch) \u00b7 pass at 58.5",
+        "matchup": {
+          "opp_rank_vs_pos": 4,
+          "rank_basis": "footballdb WR fantasy pts allowed thru Wk4 (TB 57 pts; 423 WR rec yds)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "56.2 rec yds/g (18 rec, 28 targets in 4 games)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "TB 4th-fewest WR pts, 106 WR rec yds/g allowed"
+          },
+          {
+            "label": "Target share",
+            "dir": "for",
+            "detail": "Lamb has 46 targets to Pickens' 28"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "DAL -8 to -9.5 -- run the clock late"
+          },
+          {
+            "label": "Projection",
+            "dir": "against",
+            "detail": "RotoWire projects 66.7; line 61.5 at all 4 books"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "TB S Winfield Jr., CB Morrison ruled out (Oct 7)"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 2,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 61.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 61.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      },
+      {
+        "player": "Cade Otton",
+        "team": "away",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Rookie QB plus a trailing script points to tight-end checkdowns, and Dallas gives up 56 TE yds/g (27th). | Stake $0 (over TNF game cap; swap-in) \u00b7 pass at 31.5",
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "footballdb TE fantasy pts allowed thru Wk3 (DAL 31 pts; 168 TE rec yds)"
+        },
+        "factors": [
+          {
+            "label": "Average",
+            "dir": "for",
+            "detail": "39.2 rec yds/g (15 rec, 23 targets)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DAL 27th vs TE, 56 TE rec yds/g allowed"
+          },
+          {
+            "label": "QB",
+            "dir": "for",
+            "detail": "UDFA rookie Jalon Daniels -- short, safe throws"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "TB +8 to +9.5 -- passing from behind"
+          },
+          {
+            "label": "Sample",
+            "dir": "against",
+            "detail": "Only 1 game with Daniels; single-source line"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 28.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 28.5,
+        "current_captured_at": "2026-10-08T12:58:09Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-08T12:59:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 69,
+      "handle_pct_home": 90
+    },
+    "total": {
+      "bets_pct_over": 81,
+      "handle_pct_over": 89
+    },
+    "moneyline": {
+      "bets_pct_home": 82,
+      "handle_pct_home": 47
+    },
+    "reverse_line_move": true,
+    "rlm_note": "90% of handle is on the home side but the spread moved AGAINST them (-9.5 -> -8.5) -- real reverse line move toward away.",
+    "note": "cleatz.com/public-betting/nfl/ Thu 10/8 ~8:55am ET; converted to home-relative. Directional, not precise."
+  },
+  "final_score": {
+    "home": 16,
+    "away": 24
+  }
+}

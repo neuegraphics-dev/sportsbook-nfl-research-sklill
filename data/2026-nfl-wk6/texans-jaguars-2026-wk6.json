@@ -1,0 +1,614 @@
+{
+  "game_id": "texans-jaguars-2026-wk6",
+  "matchup": "Houston Texans @ Jacksonville Jaguars",
+  "week": "Week 6",
+  "kickoff": "2026-10-18T13:30:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3,
+      "total": 43.5,
+      "ml_fav": -148,
+      "ml_dog": 124
+    },
+    "fanduel": {
+      "spread": -2.5,
+      "total": 43.5,
+      "ml_fav": -148,
+      "ml_dog": 124
+    },
+    "caesars": {
+      "spread": -3,
+      "total": 43.5,
+      "ml_fav": -148,
+      "ml_dog": 124
+    },
+    "note": "VegasInsider DOM (home=Jaguars). London game, 9:30am ET kickoff."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 43.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "note": "VegasInsider DOM (home=Jaguars). London game, 9:30am ET kickoff."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -140,
+        "ml_dog": 119
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 125
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -140,
+        "ml_dog": 119
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=JAX relative. DK cross-checked VI vs cleatz (HOU+3/-120, JAX-3/even=+100, total 42.5 -118/-102, ML HOU+124/JAX-148). BookMaker.eu from lines.bookmaker.eu."
+    },
+    {
+      "captured_at": "2026-10-15T16:59:56Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -147,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh, 4:11am PT Oct15): JAX-2.5/HOU+125 dog, total42.5. DK via cleatz.com (fresh): JAX-142/HOU+120, total42.5. Caesars/FanDuel spread via VI DOM (page banner Oct13, treat current spread as unconfirmed-stale; totals/ML not captured)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:19Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads, dated Oct 15 last-verified -1 day) + BookMaker.eu via lines.bookmaker.eu (13h stale). DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-16T17:04:08Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -143,
+        "ml_dog": 121
+      },
+      "note": "VI DOM (DK-2.5/-120,Caesars-2.5/-115,FD-2.5/-110, VI banner dated Oct15) + cleatz.com DK/FD/Caesars totals+ML (fresh, matches VI spreads) + lines.bookmaker.eu sharp (17h stale, JAX-2.5/-119). Fresh ESPN injury check via cleatz (12:53pm ET): Texans S Jalen Pitre (shoulder AC joint) and RB David Montgomery (groin) both Out -- Montgomery already missing since Wk5 (Woody Marks starting, priced into HOU scoring avg); Pitre is a new-this-week starting-S loss, favors JAX passing slightly, not formally modeled (single DB). Wembley weather: patchy rain, 11mph wind/23mph gusts, 23% rain chance -- mild total-suppressing signal only."
+    },
+    {
+      "captured_at": "2026-10-16T21:03:52Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI DOM (DK-2.5/-120,Caesars-2.5/-115,FD-2.5/-110) + cleatz DK total/ML (42.5, JAX-148/HOU+124) + BookMaker.eu (unchanged vs prior cycle, 21h-stale banner but values match). No material move since 17:04 snapshot."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -142.0,
+        "ml_dog": 120.0
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -143.0,
+        "ml_dog": 121.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-17T17:03:14Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -143,
+        "ml_dog": 121
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu; numbers unchanged vs this morning's 13:05Z snapshot, cross-confirmed by cleatz.com live feed (updated under 5 min) showing matching current lines -- treated as genuinely stable, not a stale-source artifact."
+    },
+    {
+      "captured_at": "2026-10-17T21:02:58Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -152,
+        "ml_dog": 128
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 125
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel spreads) + cleatz.com (DK totals/ML, cross-checked) + lines.bookmaker.eu"
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    }
+  ],
+  "research": {
+    "spread_lean": "Jacksonville Jaguars -2.5",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Model/market agree Jaguars favored at home, though Elo (+7.9) vs recent-scoring (+3.5) split by 4.4pts",
+      "Texans RB David Montgomery and WR Tank Dell both OUT per NFL.com Wk6 report (-1.75 adj pts)"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T13:05:46.486166+00:00",
+    "n": 10000,
+    "homeElo": 1671.0,
+    "awayElo": 1522.2,
+    "gamesSeen": 10,
+    "eloMarginHome": 7.9,
+    "statsMarginHome": 3.5,
+    "marginDivergence": 4.4,
+    "projTotal": 43.2,
+    "homeWinProbElo": 75.6,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 42.5,
+    "homeInjuryPts": -0.5,
+    "awayInjuryPts": -2.25,
+    "projHomeMeanRaw": 25.5,
+    "projAwayMeanRaw": 17.7,
+    "projHomeMeanAdjusted": 25.0,
+    "projAwayMeanAdjusted": 15.4,
+    "injuryAdjustedMarginHome": 9.6,
+    "projTotalAdjusted": 40.5,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+7.9) and recent-scoring margin (+3.5) disagree by 4.4 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -0.5 pts -- Montaric Brown (CB, out, -0.5).",
+      "Away injury adjustment: -2.2 pts -- Jalen Pitre (S, out, -0.5), David Montgomery (RB, out, -1.0), Tank Dell (WR, out, -0.8).",
+      "Houston Texans (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Nico Collins (-2.0) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 73.8,
+    "awayWinPct": 23.9,
+    "tiePct": 2.3,
+    "medianHomeScore": 25,
+    "medianAwayScore": 15,
+    "coverPctHome": 69.2,
+    "overPct": 44.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:58.713263+00:00",
+      "marginHome": 7.9,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.083779+00:00",
+      "marginHome": 7.9,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-13T14:03:05.078140+00:00",
+      "marginHome": 7.9,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-14T13:04:16.487671+00:00",
+      "marginHome": 6.4,
+      "total": 41.7
+    },
+    {
+      "run_at": "2026-10-16T17:04:12.833718+00:00",
+      "marginHome": 6.4,
+      "total": 41.7
+    },
+    {
+      "run_at": "2026-10-16T21:08:26.129949+00:00",
+      "marginHome": 6.4,
+      "total": 41.7
+    },
+    {
+      "run_at": "2026-10-17T13:10:47.547718+00:00",
+      "marginHome": 9.6,
+      "total": 41.5
+    },
+    {
+      "run_at": "2026-10-17T17:03:47.117605+00:00",
+      "marginHome": 9.6,
+      "total": 41.5
+    },
+    {
+      "run_at": "2026-10-17T21:10:57.988186+00:00",
+      "marginHome": 9.6,
+      "total": 40.5
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.486166+00:00",
+      "marginHome": 9.6,
+      "total": 40.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-17T21:19:25Z",
+    "analysis": [
+      "Jacksonville is favored at home and the model agrees after injuries: Houston is missing RB1 David Montgomery, WR Tank Dell and now S Jalen Pitre, while Jacksonville's only new absence is CB Montaric Brown. The sim has Jacksonville covering 69% of the time off a +4.4 Elo/recent-scoring gap worth a second look, but both signals point the same way.",
+      "DraftKings -148 on the Jaguars moneyline looks short of the model's 74% win probability, so there's a secondary moneyline angle here, but it's correlated with the spread and not sized separately."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Jaguars -2.5",
+        "confidence": 6,
+        "reasoning": "Model (69% cover) and the injury picture (Texans down RB1+WR1+a safety, Jags only missing a CB) both favor Jacksonville. | Stake $15 \u00b7 pass at -3.0",
+        "best_bet": true
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T13:03:02Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 75,
+      "handle_pct_home": 72
+    },
+    "total": {
+      "bets_pct_over": 69,
+      "handle_pct_over": 76
+    },
+    "moneyline": {
+      "bets_pct_home": 73,
+      "handle_pct_home": 55
+    },
+    "reverse_line_move": true,
+    "rlm_note": "72% of handle is on the home side but the spread moved AGAINST them (-3 -> -2.5) -- real reverse line move toward away.",
+    "note": "Home-relative (spread/ML) and over-relative (total). From cleatz.com/public-betting/nfl/ DOM (Spread/Total/Moneyline tabs), read live via built-in browser."
+  },
+  "props": {
+    "last_checked": "2026-10-13T14:41:48Z",
+    "status": "captured",
+    "source_note": "Rebuilt 2026-10-13 from Linemate live lines (team logo, season stats, L10 hit rate, injury list) + CBS posvsdef ranks; names/teams checked against Linemate team logos and roster news",
+    "picks": [
+      {
+        "player": "Bhayshul Tuten",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "Linemate -113",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Tuten averages 69.8 rush yds on 16.4 carries, but Houston allows the 3rd-fewest RB rush yds, so this is capped as a half-unit lean. | Stake $7.50 \u00b7 pass at 67.5",
+        "factors": [
+          {
+            "label": "Production",
+            "dir": "for",
+            "detail": "69.8 rush yds/game on 16.4 carries (Linemate)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "16.4 carries/game as JAX lead back"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "HOU 3rd-fewest RB rush yds allowed (Linemate); CBS RB rank 4"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 4,
+          "rank_basis": "CBS RB pts allowed YTD"
+        },
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-a",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 64.5,
+        "opening_captured_at": "2026-10-13T14:41:48Z",
+        "current_line": 64.5,
+        "current_captured_at": "2026-10-13T14:41:48Z"
+      },
+      {
+        "player": "C.J. Stroud",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Linemate -113",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Stroud averages 280.4 pass yds on 37 attempts and Jacksonville allows the 30th-most pass yds, but CBS ranks JAX 6th vs QBs, so capped at half a unit. | Stake $7.50 \u00b7 pass at 262.5",
+        "factors": [
+          {
+            "label": "Production",
+            "dir": "for",
+            "detail": "280.4 pass yds/game on 37 att (Linemate)"
+          },
+          {
+            "label": "Matchup yds",
+            "dir": "for",
+            "detail": "JAX 30th in pass yds allowed (Linemate)"
+          },
+          {
+            "label": "Matchup fantasy",
+            "dir": "against",
+            "detail": "CBS JAX QB rank 6 (few pass TDs allowed)"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 6,
+          "rank_basis": "CBS QB pts allowed YTD"
+        },
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-a",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 256.5,
+        "opening_captured_at": "2026-10-13T14:41:48Z",
+        "current_line": 256.5,
+        "current_captured_at": "2026-10-13T14:41:48Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-17T21:10:46Z",
+    "home": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "Montaric Brown",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Hamstring, OUT -- starting CB (CBS Sports Fri report, Oct 17 2026)."
+        }
+      ],
+      "items_total_pts": -0.5,
+      "stacking_notes": [],
+      "total_pts": -0.5
+    },
+    "away": {
+      "items": [
+        {
+          "position": "S",
+          "player": "Jalen Pitre",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Shoulder, OUT per Friday injury report (CBS Sports, Oct 17 2026)."
+        },
+        {
+          "position": "RB",
+          "player": "David Montgomery",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Groin, OUT."
+        },
+        {
+          "position": "WR",
+          "player": "Tank Dell",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Knee, OUT."
+        }
+      ],
+      "items_total_pts": -2.25,
+      "stacking_notes": [],
+      "total_pts": -2.25
+    }
+  },
+  "final_score": {
+    "home": 31,
+    "away": 34
+  }
+}

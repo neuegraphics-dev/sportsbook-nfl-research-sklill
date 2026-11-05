@@ -1,0 +1,382 @@
+{
+  "game_id": "giants-texans-2026-wk7",
+  "matchup": "New York Giants @ Houston Texans",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -10,
+      "total": 43,
+      "ml_fav": -440,
+      "ml_dog": 344
+    },
+    "draftkings": {
+      "spread": -9.5,
+      "total": 42.5,
+      "ml_fav": -520,
+      "ml_dog": 390
+    },
+    "fanduel": {
+      "spread": -9.5,
+      "total": 43.5,
+      "ml_fav": -480,
+      "ml_dog": 370
+    },
+    "caesars": {
+      "spread": -10,
+      "total": 43,
+      "ml_fav": -460,
+      "ml_dog": 350
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Texans."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 43,
+        "ml_fav": -440,
+        "ml_dog": 344
+      },
+      "draftkings": {
+        "spread": -9.5,
+        "total": 42.5,
+        "ml_fav": -520,
+        "ml_dog": 390
+      },
+      "fanduel": {
+        "spread": -9.5,
+        "total": 43.5,
+        "ml_fav": -480,
+        "ml_dog": 370
+      },
+      "caesars": {
+        "spread": -10,
+        "total": 43,
+        "ml_fav": -460,
+        "ml_dog": 350
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Texans."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 43,
+        "ml_fav": -440,
+        "ml_dog": 344
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": 43,
+        "ml_fav": -500,
+        "ml_dog": 400
+      },
+      "fanduel": {
+        "spread": -10,
+        "total": 43,
+        "ml_fav": -480,
+        "ml_dog": 360
+      },
+      "caesars": {
+        "spread": -10,
+        "total": 42.5,
+        "ml_fav": -535,
+        "ml_dog": 400
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Texans."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": -10.5,
+        "total": 43,
+        "ml_fav": -450,
+        "ml_dog": 351
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 42.5,
+        "ml_fav": -535,
+        "ml_dog": 400
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10.5,
+        "total": 42.5,
+        "ml_fav": -481,
+        "ml_dog": 360
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Giants +10",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Model has this closer than the market's double-digit number"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 26,
+      "handle_pct_home": 22
+    },
+    "total": {
+      "bets_pct_over": 77,
+      "handle_pct_over": 88
+    },
+    "moneyline": {
+      "bets_pct_home": 83,
+      "handle_pct_home": 29
+    },
+    "reverse_line_move": true,
+    "rlm_note": "78% of handle is on the away side but the spread moved AGAINST them (-9.5 -> -10.5) -- real reverse line move toward home.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.467962+00:00",
+    "n": 10000,
+    "homeElo": 1545.2,
+    "awayElo": 1442.5,
+    "gamesSeen": 12,
+    "eloMarginHome": 6.0,
+    "statsMarginHome": 2.4,
+    "marginDivergence": 3.6,
+    "projTotal": 45.6,
+    "homeWinProbElo": 70.4,
+    "marketHomeSpread": -10.5,
+    "marketTotal": 42.5,
+    "homeInjuryPts": -3.75,
+    "awayInjuryPts": -2.9,
+    "projHomeMeanRaw": 25.8,
+    "projAwayMeanRaw": 19.8,
+    "projHomeMeanAdjusted": 22.1,
+    "projAwayMeanAdjusted": 16.9,
+    "injuryAdjustedMarginHome": 5.2,
+    "projTotalAdjusted": 38.9,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -3.8 pts -- David Montgomery (RB, out, -0.8), Reed Blankenship (S, out, -0.5), Jalen Pitre (S, out, -0.5), Blake Fisher (T, out, -0.8), Tank Dell (WR, questionable, -0.4). S depth: 2 confirmed out (Reed Blankenship, Jalen Pitre) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -2.9 pts -- Tremaine Edmunds (LB, out, -0.9), Jevon Holland (S, out, -0.6), Greg Newsome II (CB, out, -0.6), Theo Johnson (TE, doubtful, -0.4), Jermaine Eluemunor (T, questionable, -0.4).",
+      "Houston Texans (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Nico Collins (-2.0) [-2.0 pts total]; Jalen Pitre (-0.5), David Montgomery (-1.0), Tank Dell (-0.8) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "New York Giants (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jameis Winston (-4.0), Malik Nabers (-0.6) [-4.6 pts total]; Jameis Winston (-4.0), Brian Burns (-1.5) [-5.5 pts total]; Abdul Carter (-0.5), Andrew Thomas (-0.5), Tyler Nubin (-0.5), Theo Johnson (-0.5), Colton Hood (-0.5), Jermaine Eluemunor (-0.5) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 63.1,
+    "awayWinPct": 34.2,
+    "tiePct": 2.7,
+    "medianHomeScore": 22,
+    "medianAwayScore": 17,
+    "coverPctHome": 35.1,
+    "overPct": 40.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.778451+00:00",
+      "marginHome": 6.0,
+      "total": 45.6
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.599382+00:00",
+      "marginHome": 6.0,
+      "total": 45.6
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.586304+00:00",
+      "marginHome": 6.0,
+      "total": 45.6
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.282289+00:00",
+      "marginHome": 6.3,
+      "total": 44.3
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.467962+00:00",
+      "marginHome": 5.2,
+      "total": 38.9
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:59:52Z",
+    "analysis": [
+      "DraftKings has Houston -10.5; our injury-adjusted model has Houston by only about 5.2 (Elo 6.0, recent-scoring 2.4), so 64.9% of sims have the Giants covering. Both sides are thin: Houston is without RB1 David Montgomery, T Blake Fisher and two safeties, New York without LB Tremaine Edmunds, S Jevon Holland and CB Greg Newsome II.",
+      "Double-digit road dogs are a spot where the model sees a real gap between a 10.5 number and a ~5-point projection. Rated a real lean, not a strong one, because it is a single-source model gap with no market confirmation yet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "NYG +10.5",
+        "confidence": 5,
+        "reasoning": "Model has HOU by ~5.2 vs 10.5, but 78% of handle is on NYG while the line moved from HOU -9.5 to -10.5 (reverse line move toward HOU) so trimmed from 6 to 5. | Stake $15 \u00b7 pass at +9.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-21T12:53:31Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank; roster/team verified this run (Geno Smith/Jets, Kyler Murray/Vikings, Daniel Jones/Colts, Cam Ward/Titans confirmed via web search of 2026 transactions).",
+    "picks": [
+      {
+        "player": "C.J. Stroud",
+        "team": "home",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Cleared 3.5 rush yds in all 6 games this season (min 5); soft Giants matchup for QB rushing backs it up further.",
+        "matchup": {
+          "opp_rank_vs_pos": 26,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "New York Giants allow 28.0 QB rush yds/g avg this season (CBS posvsdef QB rushing split), far above the 3.5 line; overall rank 26th of 32 vs QB"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "statmuse box scores: Stroud has cleared 3.5 rush yds in all 6 games this season (15,29,10,12,5,5), min 5 on as few as 1 attempt"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projects 17.03 vs 3.5 line (25.95% EV), though that is above his own 12.67 season-avg -- model likely a bit hot, line still very soft"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 3.5,
+        "opening_captured_at": "2026-10-21T02:12:30Z",
+        "current_line": 3.5,
+        "current_captured_at": "2026-10-21T12:53:31Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "David Montgomery",
+          "status": "out",
+          "pts": -0.8,
+          "note": "RB1 out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Reed Blankenship",
+          "status": "out",
+          "pts": -0.5,
+          "note": "S out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Jalen Pitre",
+          "status": "out",
+          "pts": -0.5,
+          "note": "second S out, depth (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Blake Fisher",
+          "status": "out",
+          "pts": -0.8,
+          "note": "T out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Tank Dell",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "knee (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.0,
+      "stacking_notes": [
+        "S depth: 2 confirmed out (Reed Blankenship, Jalen Pitre) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -3.75
+    },
+    "away": {
+      "items": [
+        {
+          "position": "LB",
+          "player": "Tremaine Edmunds",
+          "status": "out",
+          "pts": -0.9,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Jevon Holland",
+          "status": "out",
+          "pts": -0.6,
+          "note": "S out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "Greg Newsome II",
+          "status": "out",
+          "pts": -0.6,
+          "note": "CB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "TE",
+          "player": "Theo Johnson",
+          "status": "doubtful",
+          "pts": -0.4,
+          "note": "TE doubtful (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Jermaine Eluemunor",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "T q (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -2.9,
+      "stacking_notes": [],
+      "total_pts": -2.9
+    }
+  },
+  "final_score": {
+    "home": 21,
+    "away": 27
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "game_id": "cardinals-cowboys-2026-wk8",
+  "matchup": "Arizona Cardinals @ Dallas Cowboys",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -6.5,
+      "total": 52,
+      "ml_fav": -305,
+      "ml_dog": 250
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 52,
+        "ml_fav": -305,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 52,
+        "ml_fav": -305,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); BookMaker.eu not listing this game; Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6,
+        "total": 54,
+        "ml_fav": -280,
+        "ml_dog": 250
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -7,
+        "total": 54.5,
+        "ml_fav": -296,
+        "ml_dog": 242
+      },
+      "draftkings": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 54.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 54.5,
+        "ml_fav": -330,
+        "ml_dog": 265
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 54.5,
+        "ml_fav": -319,
+        "ml_dog": 250
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T17:03:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 54.5,
+        "ml_fav": -340,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": -7.5,
+        "total": 54.5,
+        "ml_fav": -370,
+        "ml_dog": 295
+      },
+      "caesars": {
+        "spread": -7.5,
+        "total": 54.5,
+        "ml_fav": -350,
+        "ml_dog": 270
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~17:05Z (12:05pm ET). BookMaker.eu null (stale board)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": null,
+    "total_lean": "UNDER 54.5 (swap-in)",
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "model total 51.8",
+      "85% handle on over"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": true,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T17:03:46.544177+00:00",
+    "n": 10000,
+    "homeElo": 1465.2,
+    "awayElo": 1365.6,
+    "gamesSeen": 14,
+    "eloMarginHome": 5.9,
+    "statsMarginHome": 5.7,
+    "marginDivergence": 0.2,
+    "projTotal": 51.8,
+    "homeWinProbElo": 70.1,
+    "marketHomeSpread": -7.5,
+    "marketTotal": 54.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 28.9,
+    "projAwayMeanRaw": 22.9,
+    "projHomeMeanAdjusted": 28.9,
+    "projAwayMeanAdjusted": 22.9,
+    "injuryAdjustedMarginHome": 5.9,
+    "projTotalAdjusted": 51.8,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Dallas Cowboys (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]; CeeDee Lamb (-2.0), Tyler Booker (-0.5) [-2.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Arizona Cardinals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jeremiyah Love (-1.5), Jon Gaines II (-0.5), Walter Nolen (-0.7), Andrew Wingard (-0.3), Budda Baker (-0.3) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 64.5,
+    "awayWinPct": 33.0,
+    "tiePct": 2.5,
+    "medianHomeScore": 29,
+    "medianAwayScore": 23,
+    "coverPctHome": 45.5,
+    "overPct": 42.8
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:07.842486+00:00",
+      "marginHome": 3.8,
+      "total": 51.1
+    },
+    {
+      "run_at": "2026-10-26T13:09:26.989414+00:00",
+      "marginHome": 4.3,
+      "total": 51.3
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.556908+00:00",
+      "marginHome": 4.3,
+      "total": 51.3
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.451213+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:36.858513+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.621015+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.743318+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.693076+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-11-01T01:52:15.032421+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-11-01T13:12:55.924906+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-11-01T13:40:00.898575+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    },
+    {
+      "run_at": "2026-11-01T17:03:46.544177+00:00",
+      "marginHome": 5.9,
+      "total": 51.8
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T17:04:30Z",
+    "analysis": [
+      "Sim: Cowboys by 5.9 (Elo 5.9, scoring 5.7), projected total 51.8 vs 54.5; under in 58.4% of runs. 85% of total handle is on the over (cleatz splits snapshot 12:52am ET 11/1). The spread came off 7 to 6.5.",
+      "Both methods sit just under 6.5, so the side is thin once the 7 is gone. The under is the model's play, but Dallas draws the 30th-ranked defense vs QBs: real over risk. Swap-in only."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "UNDER 54.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Model total 51.8 vs 54.5; promoted to a staked bet at 12pm (PIT -3.5 dropped as a duplicate of Michael's PIT -2.5). | Stake $12 \u00b7 pass at 53.5",
+        "factors": [
+          {
+            "label": "Model total",
+            "dir": "for",
+            "detail": "51.8 projected vs 54.5; under 57.2% of sims"
+          },
+          {
+            "label": "Public",
+            "dir": "neutral",
+            "detail": "85% of total handle on the over (cleatz 12:52am ET)"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "DAL faces ARI, 30th vs QBs (CBS)"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        }
+      },
+      {
+        "market": "spread",
+        "pick": "ARI +7.5",
+        "confidence": 5,
+        "reasoning": "Line moved to 7.5 by noon; both methods have DAL by about 6, so the dog now gets the 7. | Stake $12 \u00b7 pass at +7",
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "DAL by 5.9 vs 7.5"
+          },
+          {
+            "label": "Scoring margin",
+            "dir": "for",
+            "detail": "DAL by 5.7 vs 7.5"
+          },
+          {
+            "label": "Key number",
+            "dir": "for",
+            "detail": "+7.5 gets the hook over 7"
+          }
+        ],
+        "best_bet": false,
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 49,
+      "handle_pct_home": 33
+    },
+    "total": {
+      "bets_pct_over": 62,
+      "handle_pct_over": 85
+    },
+    "moneyline": {
+      "bets_pct_home": 81,
+      "handle_pct_home": 88
+    },
+    "reverse_line_move": false,
+    "rlm_note": "67% of handle is on the away side but the spread hasn't moved yet (-6.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 30,
+    "away": 33
+  }
+}

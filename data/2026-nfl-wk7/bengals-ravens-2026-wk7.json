@@ -1,0 +1,378 @@
+{
+  "game_id": "bengals-ravens-2026-wk7",
+  "matchup": "Cincinnati Bengals @ Baltimore Ravens",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -3,
+      "total": 51,
+      "ml_fav": -145,
+      "ml_dog": 124
+    },
+    "draftkings": {
+      "spread": -3,
+      "total": 51.5,
+      "ml_fav": -148,
+      "ml_dog": 124
+    },
+    "fanduel": {
+      "spread": -2.5,
+      "total": 50.5,
+      "ml_fav": -146,
+      "ml_dog": 124
+    },
+    "caesars": {
+      "spread": -2.5,
+      "total": 51,
+      "ml_fav": -152,
+      "ml_dog": 128
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Ravens."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 51,
+        "ml_fav": -145,
+        "ml_dog": 124
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 51.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 50.5,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 51,
+        "ml_fav": -152,
+        "ml_dog": 128
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Ravens."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 51,
+        "ml_fav": -145,
+        "ml_dog": 124
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 51,
+        "ml_fav": -150,
+        "ml_dog": 125
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 51,
+        "ml_fav": -152,
+        "ml_dog": 128
+      },
+      "caesars": {
+        "spread": -3,
+        "total": 51.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Ravens."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": -1.5,
+        "total": 48.5,
+        "ml_fav": -125,
+        "ml_dog": 106
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 46.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": 46.0,
+        "ml_fav": -154,
+        "ml_dog": 131
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Ravens -2.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Model-only signal, modest edge",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 29,
+      "handle_pct_home": 16
+    },
+    "total": {
+      "bets_pct_over": 73,
+      "handle_pct_over": 54
+    },
+    "moneyline": {
+      "bets_pct_home": 33,
+      "handle_pct_home": 28
+    },
+    "reverse_line_move": false,
+    "rlm_note": "84% of handle is on the away side and the spread has moved toward them (-3 -> +2.5) -- money and line agree, no RLM.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.034486+00:00",
+    "n": 10000,
+    "homeElo": 1546.9,
+    "awayElo": 1482.8,
+    "gamesSeen": 11,
+    "eloMarginHome": 4.5,
+    "statsMarginHome": 1.1,
+    "marginDivergence": 3.4,
+    "projTotal": 50.7,
+    "homeWinProbElo": 65.6,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 46.0,
+    "homeInjuryPts": -6.6,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 27.6,
+    "projAwayMeanRaw": 23.1,
+    "projHomeMeanAdjusted": 21.0,
+    "projAwayMeanAdjusted": 23.1,
+    "injuryAdjustedMarginHome": -2.1,
+    "projTotalAdjusted": 44.1,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -6.6 pts -- Lamar Jackson (QB, out, -5.0), Jaylinn Hawkins (S, out, -0.4), Tavius Robinson (LB, out, -0.8), T.J. Tampa (CB, doubtful, -0.4).",
+      "Baltimore Ravens (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]; Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Cincinnati Bengals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 41.9,
+    "awayWinPct": 55.2,
+    "tiePct": 2.9,
+    "medianHomeScore": 21,
+    "medianAwayScore": 23,
+    "coverPctHome": 50.3,
+    "overPct": 43.5
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.669202+00:00",
+      "marginHome": 4.5,
+      "total": 50.7
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.737503+00:00",
+      "marginHome": 4.5,
+      "total": 50.7
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.311882+00:00",
+      "marginHome": 4.5,
+      "total": 50.7
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.017581+00:00",
+      "marginHome": 3.5,
+      "total": 49.7
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.034486+00:00",
+      "marginHome": -2.1,
+      "total": 44.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Market flipped from Ravens -3 at open to Bengals -2.5 after Lamar Jackson was ruled out Friday (Tyler Huntley's third straight start; Tavius Robinson on IR, S Hawkins out). The model with Jackson priced at -5.0 has Cincinnati by about 2.1, almost exactly the market.",
+      "No edge on side or total (44.1 adjusted vs 46)."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-21T01:41:57Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM); CBS posvsdef WR/QB for matchup ranks.",
+    "picks": [
+      {
+        "player": "Ja'Marr Chase",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Covers.com consensus best price",
+        "lean": "over",
+        "confidence": 3,
+        "reasoning": "Real model gap, but Baltimore's WR matchup is only middling and this is the weaker rec_yards market. | Stake $7.50 \u00b7 pass at 83.5",
+        "matchup": {
+          "opp_rank_vs_pos": 18,
+          "rank_basis": "CBS posvsdef WR, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "Baltimore ranks 18th of 32 vs WR (20.00 pts/g allowed, CBS posvsdef) -- middling"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 93.20 vs 78.5 line, +14.7 diff, 26.04% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Cincinnati is a road underdog (DK -2.5/+2.5) and the public/handle is almost entirely on Cincinnati (97% handle) -- a trailing/pass-needing script favors the WR1"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "rec_yards picks hit 21/44 (48%) in graded Line Watch history"
+          }
+        ],
+        "confidence_base": 4,
+        "stake": 0,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 78.5,
+        "opening_captured_at": "2026-10-21T01:41:57Z",
+        "current_line": 78.5,
+        "current_captured_at": "2026-10-21T01:41:57Z"
+      },
+      {
+        "player": "Joe Burrow",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Covers.com consensus best price",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Tough-matchup capped: Baltimore ranks 7th of 32 vs QB, a real deterrent even with a strong model gap and road-dog pass-volume script. | Stake $7.50 \u00b7 pass at 269.5",
+        "matchup": {
+          "opp_rank_vs_pos": 7,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "Baltimore ranks 7th of 32 vs QB (15.67 pts/g allowed, CBS posvsdef) -- a genuinely tough matchup, triggers the tough-matchup cap"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 297.42 vs 259.5 line, +37.9 diff, 26.19% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Cincinnati is a road underdog with the public heavily on them -- trailing/road-dog scripts tend to push pass volume up"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 259.5,
+        "opening_captured_at": "2026-10-21T01:41:57Z",
+        "current_line": 259.5,
+        "current_captured_at": "2026-10-21T01:41:57Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:48Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Lamar Jackson",
+          "status": "out",
+          "pts": -5.0,
+          "note": "ruled out Fri, 3rd straight miss, Tyler Huntley starts; market swung ~5.5 pts (BAL -3 open to CIN -2.5) (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "S",
+          "player": "Jaylinn Hawkins",
+          "status": "out",
+          "pts": -0.4,
+          "note": "S out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Tavius Robinson",
+          "status": "out",
+          "pts": -0.8,
+          "note": "pass rusher on IR, season-ending (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "T.J. Tampa",
+          "status": "doubtful",
+          "pts": -0.4,
+          "note": "CB doubtful (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -6.6,
+      "stacking_notes": [],
+      "total_pts": -6.6
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 13,
+    "away": 35
+  }
+}

@@ -1,0 +1,650 @@
+{
+  "game_id": "panthers-eagles-2026-wk6",
+  "matchup": "Carolina Panthers @ Philadelphia Eagles",
+  "week": "Week 6",
+  "kickoff": "2026-10-18T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -1.5,
+      "total": 42.5,
+      "ml_fav": -118,
+      "ml_dog": -102
+    },
+    "fanduel": {
+      "spread": -1.5,
+      "total": 42.5,
+      "ml_fav": -118,
+      "ml_dog": -102
+    },
+    "caesars": {
+      "spread": -1.5,
+      "total": 42.5,
+      "ml_fav": -118,
+      "ml_dog": -102
+    },
+    "note": "VegasInsider DOM (home=Eagles). Near pick'em game -- both teams' DK moneyline show negative (-118/-102), which is correct for a true coinflip market, not a data error."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -1.5,
+        "total": 42.5,
+        "ml_fav": -118,
+        "ml_dog": -102
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 42.5,
+        "ml_fav": -118,
+        "ml_dog": -102
+      },
+      "caesars": {
+        "spread": -1.5,
+        "total": 42.5,
+        "ml_fav": -118,
+        "ml_dog": -102
+      },
+      "note": "VegasInsider DOM (home=Eagles). Near pick'em game -- both teams' DK moneyline show negative (-118/-102), which is correct for a true coinflip market, not a data error."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": -1.0,
+        "total": 42.5,
+        "ml_fav": -113,
+        "ml_dog": -103
+      },
+      "draftkings": {
+        "spread": -1.5,
+        "total": 41.5,
+        "ml_fav": -115,
+        "ml_dog": -105
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": 41.5,
+        "ml_fav": -118,
+        "ml_dog": -100
+      },
+      "caesars": {
+        "spread": -1.0,
+        "total": 41.5,
+        "ml_fav": -120,
+        "ml_dog": 102
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": -1,
+        "total": 42.5,
+        "ml_fav": -113,
+        "ml_dog": -103
+      },
+      "draftkings": {
+        "spread": -1.5,
+        "total": 40.5,
+        "ml_fav": -115,
+        "ml_dog": -105
+      },
+      "fanduel": {
+        "spread": -1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -1,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=PHI relative. DK cross-checked VI vs cleatz (CAR+1.5/-120, PHI-1.5/even, total 40.5 -110/-110, ML CAR-105/PHI-115). BookMaker.eu from lines.bookmaker.eu."
+    },
+    {
+      "captured_at": "2026-10-15T16:59:56Z",
+      "bookmaker_eu": {
+        "spread": 1,
+        "total": 40.5,
+        "ml_fav": -114,
+        "ml_dog": -103
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 40.5,
+        "ml_fav": -115,
+        "ml_dog": -105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh): PHI+1(-107 dog, essentially a coinflip, CAR -114/PHI -103 on ML -- near pick'em). DK via cleatz.com (fresh): CAR-115/PHI-105, total40.5. Caesars/FanDuel spread via VI DOM (Oct13 banner, unconfirmed-stale)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:20Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads) + BookMaker.eu. ml_fav=Panthers(away,-191), ml_dog=Eagles(home,+160). DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-16T13:05:50Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": -180,
+        "ml_dog": 152
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "UPDATE same-cycle correction: Philadelphia Inquirer (2026-10-15) confirms Jalen Hurts OUT (blood clot, calf), Tanner McKee (3rd career start) starts; total dropped to 38.5 at DK/FD, ML Eagles +152/+154 Panthers -180/-185. Supersedes the earlier same-cycle VI/BookMaker.eu snapshot which predated this news reaching DK/FD's own board."
+    },
+    {
+      "captured_at": "2026-10-16T13:06:24Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": -180,
+        "ml_dog": 152
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars total not independently fetched this cycle; set to 38.5 to match the DK/FD consensus post-Hurts-news rather than let current_market()'s priority order carry forward Caesars' stale pre-news total (41.5) into the sim. Flagging this as an assumption, not a confirmed Caesars number."
+    },
+    {
+      "captured_at": "2026-10-16T21:04:23Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI DOM (DK+3/-102,Caesars+3.5/-118,FD+3.5/-122; home=Eagles) + cleatz DK total/ML (39.5, CAR-175/PHI+145) + BookMaker.eu unchanged vs prior cycle."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": -164.0,
+        "ml_dog": 138.0
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 39.0,
+        "ml_fav": -182.0,
+        "ml_dog": 153.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-17T17:03:14Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 38.5,
+        "ml_fav": -164,
+        "ml_dog": 138
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 39.0,
+        "ml_fav": -182,
+        "ml_dog": 153
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu; numbers unchanged vs this morning's 13:05Z snapshot, cross-confirmed by cleatz.com live feed (updated under 5 min) showing matching current lines -- treated as genuinely stable, not a stale-source artifact."
+    },
+    {
+      "captured_at": "2026-10-17T21:02:59Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 39.0,
+        "ml_fav": -191,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": 38.5,
+        "ml_fav": -172,
+        "ml_dog": 144
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 39.0,
+        "ml_fav": -182,
+        "ml_dog": 153
+      },
+      "note": "VegasInsider DOM + cleatz.com + lines.bookmaker.eu. Home(PHI)-relative spread +3 = Panthers(away) favored."
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    },
+    {
+      "captured_at": "2026-10-18T17:04:46Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 39,
+        "ml_fav": -154,
+        "ml_dog": 136
+      },
+      "draftkings": {
+        "spread": 3,
+        "total": 39.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 38.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads (DK/Caesars/FanDuel) from VegasInsider DOM per-book columns, home-relative. BookMaker.eu + DK total/ML from lines.bookmaker.eu board (cleatz.com odds-compare panel required per-game clicks not done this cycle for ML on Caesars/FanDuel -- logged null)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No lean",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Eagles QB Jalen Hurts and RB Saquon Barkley both OUT (-8.0 adj pts) but market (PHI +3) already prices it in -- model cover read lands almost exactly on the number"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T17:09:35.081322+00:00",
+    "n": 10000,
+    "homeElo": 1515.7,
+    "awayElo": 1461.1,
+    "gamesSeen": 9,
+    "eloMarginHome": 4.1,
+    "statsMarginHome": -0.3,
+    "marginDivergence": 4.4,
+    "projTotal": 45.9,
+    "homeWinProbElo": 64.4,
+    "marketHomeSpread": 3,
+    "marketTotal": 39.5,
+    "homeInjuryPts": -9.25,
+    "awayInjuryPts": -1.0,
+    "projHomeMeanRaw": 25.0,
+    "projAwayMeanRaw": 20.9,
+    "projHomeMeanAdjusted": 15.7,
+    "projAwayMeanAdjusted": 19.9,
+    "injuryAdjustedMarginHome": -4.1,
+    "projTotalAdjusted": 35.6,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+4.1) and recent-scoring margin (-0.3) disagree by 4.4 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -9.2 pts -- Jalen Hurts (QB, out, -6.0), Saquon Barkley (RB, out, -2.0), Will Shipley (RB, out, -0.5). RB depth: 2 confirmed out (Saquon Barkley, Will Shipley) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -1.0 pts -- Taylor Moton (RT, questionable, -0.5), A.J. Dillon (RB, out, -0.5).",
+      "Philadelphia Eagles (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Saquon Barkley (-2.0), DeVonta Smith (-2.0), Hollywood Brown (-0.8) [-5.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Carolina Panthers (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jaycee Horn (-1.0), Mike Jackson (-0.8), Xavier Legette (-0.5), Jalen Coker (-0.4), Damien Lewis (-0.5) [-4.7 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 37.4,
+    "awayWinPct": 59.7,
+    "tiePct": 2.9,
+    "medianHomeScore": 16,
+    "medianAwayScore": 20,
+    "coverPctHome": 47.2,
+    "overPct": 38.9
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:58.745910+00:00",
+      "marginHome": 4.1,
+      "total": 45.9
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.307998+00:00",
+      "marginHome": 4.1,
+      "total": 45.9
+    },
+    {
+      "run_at": "2026-10-13T14:03:04.894537+00:00",
+      "marginHome": 4.1,
+      "total": 45.9
+    },
+    {
+      "run_at": "2026-10-14T13:04:16.420987+00:00",
+      "marginHome": 4.1,
+      "total": 42.9
+    },
+    {
+      "run_at": "2026-10-16T13:06:24.262008+00:00",
+      "marginHome": -1.4,
+      "total": 37.4
+    },
+    {
+      "run_at": "2026-10-16T21:08:12.410977+00:00",
+      "marginHome": 2.6,
+      "total": 44.4
+    },
+    {
+      "run_at": "2026-10-16T23:14:54.275263+00:00",
+      "marginHome": -2.9,
+      "total": 36.9
+    },
+    {
+      "run_at": "2026-10-17T13:10:47.668914+00:00",
+      "marginHome": -2.9,
+      "total": 36.9
+    },
+    {
+      "run_at": "2026-10-17T17:03:42.430072+00:00",
+      "marginHome": -2.9,
+      "total": 36.9
+    },
+    {
+      "run_at": "2026-10-17T21:11:04.529696+00:00",
+      "marginHome": -4.1,
+      "total": 35.6
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.603255+00:00",
+      "marginHome": -4.1,
+      "total": 35.6
+    },
+    {
+      "run_at": "2026-10-18T17:09:35.081322+00:00",
+      "marginHome": -4.1,
+      "total": 35.6
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-17T21:19:25Z",
+    "analysis": [
+      "Philadelphia is without Jalen Hurts (now on IR), Saquon Barkley AND backup Will Shipley -- the model's automatic depth-stacking penalty kicked in because the Eagles are down their top two running backs, on top of losing their starting QB. The market has already caught up to this (Carolina favored on the road at -3), and the model agrees with no further spread edge beyond that.",
+      "Where there is a real gap is the total: 35.6 projected vs. a 39.5 market number, a near-4-point gap driven by the Eagles' offense being gutted at QB and RB simultaneously."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 39.5",
+        "confidence": 7,
+        "reasoning": "Eagles are down their starting QB, RB1 and RB2 together (automatic depth-stacking flag); model total sits ~4 points under market. | Stake $15 \u00b7 pass at 37.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T17:05:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 53,
+      "handle_pct_home": 32
+    },
+    "total": {
+      "bets_pct_over": 68,
+      "handle_pct_over": 55
+    },
+    "moneyline": {
+      "bets_pct_home": 30,
+      "handle_pct_home": 35
+    },
+    "reverse_line_move": false,
+    "rlm_note": "68% of handle is on the away side and the spread has moved toward them (-1 -> +3) -- money and line agree, no RLM.",
+    "note": "Spread bet%/handle% from cleatz.com public-betting board, home-relative. Total/ML splits not fetched this cycle except cardinals-rams."
+  },
+  "props": {
+    "last_checked": "2026-10-16T17:07:16Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser; CBS posvsdef for matchup rank. Only clean pick found this cycle -- other PIT@TB-slate candidates (QB rush-yard props, a WR rec-yards prop into a top-5-toughest PIT pass defense) didn't clear the bar.",
+    "picks": [
+      {
+        "player": "Tanner McKee",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Covers.com (best price Fanatics Sportsbook -120)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Backup-QB trailing-team script plus a Panthers defense that forces heavy pass volume. | Stake $15 \u00b7 pass at 205.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projects 208.41 pass yds vs the 192.5 line, +15.9 diff, 23.82% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Panthers allow the 6th-most pass attempts/g (38.8) and rank 21 of 32 vs QB, 242.5 pass yds/g allowed (CBS posvsdef)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Eagles are a 3.5-pt home underdog with Hurts out -- trailing-team script means more dropbacks for McKee"
+          },
+          {
+            "label": "Volume",
+            "dir": "neutral",
+            "detail": "McKees first extended start since Hurts (calf) went Out Oct 15 -- no 2026 game log yet, but Eagles project 65.9 total plays, 4th-most on the slate"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 21,
+          "rank_basis": "CBS QB pts allowed YTD"
+        },
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 192.5,
+        "opening_captured_at": "2026-10-16T17:07:16Z",
+        "current_line": 192.5,
+        "current_captured_at": "2026-10-16T17:07:16Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-17T21:10:46Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jalen Hurts",
+          "status": "out",
+          "pts": -6.0,
+          "note": "Calf/blood clot, OUT (now on IR per Yahoo Sports)."
+        },
+        {
+          "position": "RB",
+          "player": "Saquon Barkley",
+          "status": "out",
+          "pts": -2.0,
+          "note": "Hamstring, OUT."
+        },
+        {
+          "position": "RB",
+          "player": "Will Shipley",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Foot, OUT -- Barkley's primary backup, so Eagles are down their RB1 and RB2 (CBS Sports Fri report, Oct 17 2026)."
+        }
+      ],
+      "items_total_pts": -8.5,
+      "stacking_notes": [
+        "RB depth: 2 confirmed out (Saquon Barkley, Will Shipley) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -9.25
+    },
+    "away": {
+      "items": [
+        {
+          "position": "RT",
+          "player": "Taylor Moton",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Lungs/blood clot. Eagles.com final report Oct16 lists Moton Questionable, not Out as previously logged -- corrected."
+        },
+        {
+          "position": "RB",
+          "player": "A.J. Dillon",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Knee. Eagles.com final report Oct16 lists Dillon OUT; backup/depth role, modest impact."
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    }
+  },
+  "final_score": {
+    "home": 14,
+    "away": 25
+  }
+}

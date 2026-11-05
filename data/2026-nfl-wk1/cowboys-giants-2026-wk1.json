@@ -1,0 +1,362 @@
+{
+  "game_id": "cowboys-giants-2026-wk1",
+  "matchup": "Dallas Cowboys @ New York Giants",
+  "week": "Week 1",
+  "kickoff": "2026-09-14T00:20:00Z",
+  "opening_line": {
+    "captured_at": "2026-05-14",
+    "pinnacle": null,
+    "draftkings": {
+      "spread": 2.5,
+      "total": 47.5,
+      "ml_fav": -130,
+      "ml_dog": 110
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "True schedule-release opening line, DraftKings only, spread normalized to home-team sign (negative=home favored). Cross-validated identical on covers.com, foxsports.com, oddsshopper.com. FD/Caesars/Pinnacle not confirmed for this historical date."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-05-14T12:00:00Z",
+      "pinnacle": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "True schedule-release opening line, DraftKings only, spread normalized to home-team sign (negative=home favored). Cross-validated identical on covers.com, foxsports.com, oddsshopper.com. FD/Caesars/Pinnacle not confirmed for this historical date."
+    },
+    {
+      "captured_at": "2026-08-31T13:00:00Z",
+      "pinnacle": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com (verified 8/30/26), spread normalized to home-team sign. Caesars spread-only via vegasinsider.com (total unconfirmed). FanDuel's editorial page had an unresolved favorite/underdog labeling issue this run -- logged null rather than risk a flipped number. Pinnacle not surfaced by any tested aggregator today."
+    },
+    {
+      "captured_at": "2026-09-01T01:49:07Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 48.5,
+        "ml_fav": -167,
+        "ml_dog": 141
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "FanDuel's editorial research page re-checked today and confirmed frozen/stale again (numbers still match the original mid-May opening, e.g. still shows Dolphins favored over Raiders and Lions -6.5 vs Saints -- both since moved on every other book). Logged fanduel null per the skill's corrected finding; this source is not usable as a current read."
+    },
+    {
+      "captured_at": "2026-09-02T17:56:53Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -156,
+        "ml_dog": 132
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu moved the home-relative spread from +3.0 to +2.5 today (moved off the key number), DK/Caesars unchanged at +2.5. Giants WR Malik Nabers (torn ACL) is at full-contact practice but still not confirmed for Week 1 -- notably the move went the OPPOSITE direction you'd expect if the market were pricing him out (Dallas's margin shrank, not grew), so this doesn't read as Nabers-driven. Source: FOX Sports. FanDuel re-checked again today and still confirmed frozen/stale (still shows Dolphins favored over Raiders, Lions -6.5 vs Saints, Chargers only -9.5 vs Cardinals -- all stale mid-May numbers, none matching today's real lines). Logged fanduel null."
+    },
+    {
+      "captured_at": "2026-09-04T13:09:23Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -156,
+        "ml_dog": 132
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK (rotowire) and Caesars (vegasinsider) numbers are unchanged for the 3rd consecutive check (2026-09-01, 09-02, 09-04) -- confirmed static/non-refreshing sources, not evidence of 'no move.' BookMaker.eu is the only source showing real movement this run; weighting book-vs-sharp gap triggers accordingly. FanDuel not re-checked today -- already established as frozen/stale editorial content, logged null without re-verifying."
+    },
+    {
+      "captured_at": "2026-09-05T10:07:52Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -156,
+        "ml_dog": 132
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "All 3 books (DK/rotowire, Caesars/vegasinsider, BookMaker.eu) returned numbers byte-identical to the 2026-09-04 snapshot across the entire slate today -- this now includes BookMaker.eu, which had been the one source showing real movement on prior checks. Treating today's fetch as a stale/non-refreshed read on all three sources, not a genuine 24h market freeze; no trigger re-evaluation or research re-run warranted from this alone."
+    },
+    {
+      "captured_at": "2026-09-06T12:22:12Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire not refreshed today (freshness marker still shows Sept 5; numbers byte-identical to yesterday across the entire slate) - logged null rather than pass off a stale number as todays line. Caesars/VegasInsider dated 9/6, cross-checked against yesterday: only a handful of games moved (not slate-wide), treated as genuine small movement, not a systemic freeze. BookMaker.eu fetched live directly, shows normal day-to-day ML/price drift across most games. FanDuel editorial source remains frozen/stale per prior runs - logged null as always. Caesars/VegasInsider page cut off before this game in todays fetch - logged null, not a book outage."
+    },
+    {
+      "captured_at": "2026-09-07T12:26:50Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "Fresh pull 2026-09-07. BookMaker.eu fetched live, normal day-to-day ML drift vs. yesterday. DK: DK/rotowire 'Info Last Verified' still reads September 06, 2026 (checked verbatim on-page text on 2026-09-07) -- unchanged from yesterday's run, so logged null again rather than trust a label that isn't advancing day over day. Second day in a row this source hasn't refreshed -- worth watching, may need a backup DK source if it stays stuck. Caesars: Caesars/VegasInsider now shows 'Last Updated: Sep 3 2026, 8:29 PM' -- 4 days stale, worse than yesterday's 1-day lag. Logged null rather than pass off a stale number as current. VegasInsider table also cut off before the last game again."
+    },
+    {
+      "captured_at": "2026-09-07T13:36:49Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 48.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": 48.5,
+        "ml_fav": -154,
+        "ml_dog": 132
+      },
+      "caesars": null,
+      "note": "Backfilled same day via The Odds API (api.the-odds-api.com), discovered live in Michael's sports-betting-ev-plugin (SBEV_ODDS_API_KEY, shared key) on 2026-09-07 -- replaces rotowire.com as the DK source and gives FanDuel a real current line for the first time (previously always null, frozen-editorial-page only). BookMaker.eu and Caesars re-supplied unchanged from this morning's fetch -- this snapshot only adds DK+FanDuel, doesn't re-check the sharp book or Caesars a second time today."
+    },
+    {
+      "captured_at": "2026-09-08T10:32:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "The Odds API (api.the-odds-api.com), the primary source since 2026-09-07, was unreachable this run (403 from the network gateway on both the cloud session and this device before the request reached the API) -- fell back to the manual scrape sources: rotowire.com (DK), vegasinsider.com (Caesars), lines.bookmaker.eu (sharp). All three pages carried a Sept 7 freshness marker (one day old) rather than today's date. BookMaker.eu's numbers came back byte-identical to yesterday's snapshot -- confirmed stale, logged null rather than pass off yesterday's sharp-book price as today's (sharp reference is effectively missing this cycle). DraftKings/Caesars values differ from the prior snapshot so were kept, but the one-day-old marker means lower confidence that today's actual market (not just today's page render) was captured -- treat any trigger this cycle with that caveat. Caesars/VegasInsider page was cut off before this game today -- logged null, not an outage."
+    },
+    {
+      "captured_at": "2026-09-08T13:10:19Z",
+      "bookmaker_eu": {
+        "spread": 2.5,
+        "total": 48.0,
+        "ml_fav": -158,
+        "ml_dog": 134
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 47.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Correction pass, same day: the earlier 2026-09-08 snapshot logged BookMaker.eu as null because its fetched numbers matched 2026-09-07 exactly, which was read as a stale/non-refreshed source. That was an overreach -- BookMaker.eu is normally the most reliably-fetchable book here, and matching yesterday isn't strong evidence of a bad fetch on its own (a sharp book sitting still mid-week, several days from most kickoffs, is a perfectly ordinary outcome, not just a caching artifact). Restoring the real parsed values instead of discarding them. Where a number is unchanged from yesterday, that may be genuine price stability rather than a stale fetch -- flagging both possibilities rather than asserting either. The Odds API is still unreachable this pass too (403 from the org's egress policy on both the cloud session and this device, confirmed again just now, not just a transient block)."
+    },
+    {
+      "captured_at": "2026-09-10T14:22:13Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 48.5,
+        "ml_fav": -156,
+        "ml_dog": 132
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK/Caesars via VegasInsider (spread only, dated 9/9); total/ML via BookMaker.eu"
+    },
+    {
+      "captured_at": "2026-09-11T12:59:47Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 48.5,
+        "ml_fav": -160,
+        "ml_dog": 135
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 48.5,
+        "ml_fav": -154,
+        "ml_dog": 140
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Caesars via VegasInsider stale (9/9) - logged null"
+    },
+    {
+      "captured_at": "2026-09-12T12:42:44Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 48,
+        "ml_fav": -163,
+        "ml_dog": 138
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "DraftKings (via rotowire) and Caesars (via vegasinsider) returned numbers identical/near-identical to yesterday's snapshot with stale freshness markers (rotowire: Sept 11; vegasinsider: Sept 8-10) across the whole tracked slate -- reads as source pages not refreshing, not distinct game news. Logged null rather than pass off yesterday's numbers as today's. BookMaker.eu is dated fresh (Sat Sept 12, ~6:30am PT) and is this cycle's only confirmed-current book."
+    },
+    {
+      "captured_at": "2026-09-13T12:10:19Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 48.0,
+        "ml_fav": -163,
+        "ml_dog": 138
+      },
+      "draftkings": {
+        "spread": 2.5,
+        "total": 48.5,
+        "ml_fav": -154,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tier-1 refresh 2026-09-13 (kickoff day). DraftKings via rotowire.com (dated Sep 12, cross-checked against movement from the prior snapshot -- several games moved, so treated as genuinely current, not stale). Caesars spread via vegasinsider.com (spread only, no total/ML -- not reliably exposed by that source). BookMaker.eu via its own public odds board, full spread/total/ML. FanDuel current not fetched this pass -- the vegasinsider extraction for FanDuel's moneyline was confirmed unreliable (can't distinguish it from spread juice) as of 2026-09-08 and hasn't been re-attempted; logged null rather than guess."
+    },
+    {
+      "captured_at": "2026-09-13T12:39:21Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 48,
+        "ml_fav": -177,
+        "ml_dog": 149
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK stale (9/12) -- null."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Both rosters are clean -- Giants report is entirely FULL designations (Harris, Hudson, Johnson, Nabers, Thomas); Cowboys' only note is Cornelius LIMITED.",
+      "Weather mild (74F, W 5mph, 4% precip).",
+      "No book_vs_sharp_gap or key-number trigger on this game."
+    ],
+    "last_run": "2026-09-13"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-13T12:39:21.583983+00:00",
+    "n": 10000,
+    "homeElo": 1443.1,
+    "awayElo": 1460.8,
+    "gamesSeen": 0,
+    "eloMarginHome": 1.2,
+    "statsMarginHome": 0.1,
+    "marginDivergence": 1.2,
+    "projTotal": 49.6,
+    "homeWinProbElo": 54.4,
+    "marketHomeSpread": 3.0,
+    "marketTotal": 48,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Neither team has a 2026 result logged yet -- the total lean on each team's regressed 2025 scoring rate, not anything that's actually happened this season. The spread side (Elo) is seeded the same way. Both will shift as real 2026 results get logged."
+    ],
+    "homeWinPct": 52.4,
+    "awayWinPct": 45.0,
+    "tiePct": 2.6,
+    "medianHomeScore": 25,
+    "medianAwayScore": 24,
+    "coverPctHome": 62.0,
+    "overPct": 54.4
+  },
+  "final_score": {
+    "home": 28,
+    "away": 20
+  }
+}

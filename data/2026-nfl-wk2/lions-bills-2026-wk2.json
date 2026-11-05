@@ -1,0 +1,155 @@
+{
+  "game_id": "lions-bills-2026-wk2",
+  "matchup": "Detroit Lions @ Buffalo Bills",
+  "week": "Week 2",
+  "kickoff": "2026-09-18T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-14",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -3.0,
+      "total": 53.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-14T15:06:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 53.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+    },
+    {
+      "captured_at": "2026-09-14T16:03:37Z",
+      "bookmaker_eu": {
+        "spread": -4.5,
+        "total": 53,
+        "ml_fav": -221,
+        "ml_dog": 184
+      },
+      "draftkings": null,
+      "fanduel": {
+        "spread": -3.5,
+        "total": 52.5,
+        "ml_fav": -196,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "Full-refresh pass 2026-09-14 ~16:00 UTC, replacing this morning's consensus-preview placeholder with real per-book data. BookMaker.eu fetched live from its own odds board. FanDuel fetched from its research page (confirmed today-dated, 2026-09-14 -- not the historically-frozen pattern this source usually shows, since Week 2 content didn't exist before this week). DraftKings via rotowire failed to render tonight (page stuck on client-side 'Loading NFL Odds...', no data in the static fetch) -- logged null rather than guess. Caesars via vegasinsider produced internally inconsistent numbers this pass (several entries contradicted BookMaker.eu/FanDuel by 3-5+ points in ways no other source supports) -- treated as unreliable and logged null rather than pass off a probable extraction error as real."
+    },
+    {
+      "captured_at": "2026-09-15T12:36:14Z",
+      "bookmaker_eu": {
+        "spread": -5.0,
+        "total": 53.5,
+        "ml_fav": -228,
+        "ml_dog": 190
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu fetched live (fresh Sep 15 6:30am PT board). DraftKings via rotowire.com failed to load (page returned only loading placeholders, no data). Caesars/DK cross-check via vegasinsider.com returned a stale Week 1 table (marked 'Last Updated: September 13, 2026', still showing Week 1 matchups) instead of Week 2 -- not a real current read, logged null rather than pass off Week 1 numbers as Week 2. FanDuel not attempted this pass (editorial page long since established frozen/stale). Sharp reference (BookMaker.eu) is the only confirmed-current book this cycle."
+    },
+    {
+      "captured_at": "2026-09-16T01:55:53Z",
+      "bookmaker_eu": {
+        "spread": -5.0,
+        "total": 53.5,
+        "ml_fav": -228,
+        "ml_dog": 190
+      },
+      "draftkings": {
+        "spread": -4.5,
+        "total": 53.5,
+        "ml_fav": -192,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars via VegasInsider (spread only, totals unconfirmed); FanDuel source frozen/stale, logged null"
+    },
+    {
+      "captured_at": "2026-09-17T16:16:00Z",
+      "bookmaker_eu": {
+        "spread": -5.5,
+        "total": 55,
+        "ml_fav": -253,
+        "ml_dog": 209
+      },
+      "draftkings": {
+        "spread": -4.5,
+        "total": 53.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire identical to Sep 16 (stale/non-refreshed). Caesars/VegasInsider dated Sep 15 (stale), logged null. BookMaker.eu moved (spread -5.0->-5.5, ml tightened) -- treat as informational pending DK confirmation."
+    }
+  ],
+  "research": {
+    "spread_lean": "Bills -4.5 or better",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Lions officially OUT: LG Christian Mahogany, RT Blake Miller (2 starting O-line spots) -- CB D.J. Reed Questionable (foot). Backup patchwork of Ben Bartch/Juice Scruggs/Larry Borom vs a full-strength Bills front.",
+      "Bills carry only minor Questionables (S Cole Bishop, RB Ty Johnson, DT T.J. Sanders) -- nobody ruled out.",
+      "BookMaker.eu moved toward Bills since yesterday (-5.0 -> -5.5, ml -228 -> -253) in the same direction as the O-line news -- DK/rotowire is flat/stale today (identical to Sep 16 across the whole slate) so treat DK's -4.5 as lagging, not as evidence the market disagrees."
+    ],
+    "last_run": "2026-09-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": true,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-17T16:22:30.743509+00:00",
+    "n": 10000,
+    "homeElo": 1634.1,
+    "awayElo": 1569.9,
+    "gamesSeen": 2,
+    "eloMarginHome": 4.5,
+    "statsMarginHome": 0.3,
+    "marginDivergence": 4.2,
+    "projTotal": 51.4,
+    "homeWinProbElo": 65.6,
+    "marketHomeSpread": -4.5,
+    "marketTotal": 53.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+4.5) and recent-scoring margin (+0.3) disagree by 4.2 points -- worth a second look before trusting either alone.",
+      "Only 2 logged game(s) across both teams -- leans are suppressed below 4 to avoid mistaking a cold-start rating gap for a real signal. Raw cover%/over% still shown below for reference."
+    ],
+    "homeWinPct": 60.7,
+    "awayWinPct": 36.3,
+    "tiePct": 3.1,
+    "medianHomeScore": 28,
+    "medianAwayScore": 23,
+    "coverPctHome": 49.6,
+    "overPct": 44.2
+  },
+  "final_score": {
+    "home": 41,
+    "away": 31
+  }
+}

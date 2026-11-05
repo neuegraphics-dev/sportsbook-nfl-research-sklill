@@ -1,0 +1,164 @@
+{
+  "game_id": "giants-eagles-2026-wk9",
+  "matchup": "New York Giants @ Philadelphia Eagles",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3,
+      "total": 40.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 3,
+      "total": 39.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 3,
+      "total": 40.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 40.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 40.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 40.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 40.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.500365+00:00",
+    "n": 10000,
+    "homeElo": 1412.1,
+    "awayElo": 1472.0,
+    "gamesSeen": 15,
+    "eloMarginHome": -0.5,
+    "statsMarginHome": -0.2,
+    "marginDivergence": -0.3,
+    "projTotal": 43.8,
+    "homeWinProbElo": 48.3,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 40.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 21.7,
+    "projAwayMeanRaw": 22.2,
+    "projHomeMeanAdjusted": 21.7,
+    "projAwayMeanAdjusted": 22.2,
+    "injuryAdjustedMarginHome": -0.5,
+    "projTotalAdjusted": 43.8,
+    "spreadLean": "home",
+    "totalLean": "over",
+    "notes": [
+      "Philadelphia Eagles (home)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Saquon Barkley (-2.0), DeVonta Smith (-2.0), Hollywood Brown (-0.8) [-5.5 pts total]; Jalen Hurts (-6.0), Saquon Barkley (-2.0), Will Shipley (-0.5) [-9.2 pts total]; Jalen Hurts (-5.0), DeVonta Smith (-1.8), Dontayvion Wicks (-0.4), Nolan Smith (-0.6), Michael Carter II (-0.5), Saquon Barkley (-0.8), Landon Dickerson (-0.4), Jonathan Greenard (-0.5), Jalyx Hunt (-0.3) [-11.1 pts total]; Jalen Hurts (-4.0) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "New York Giants (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Jameis Winston (-4.0), Malik Nabers (-0.6) [-4.6 pts total]; Jameis Winston (-4.0), Brian Burns (-1.5) [-5.5 pts total]; Abdul Carter (-0.5), Andrew Thomas (-0.5), Tyler Nubin (-0.5), Theo Johnson (-0.5), Colton Hood (-0.5), Jermaine Eluemunor (-0.5) [-3.0 pts total]; Tremaine Edmunds (-0.9), Jevon Holland (-0.6), Greg Newsome II (-0.6), Theo Johnson (-0.4), Jermaine Eluemunor (-0.4) [-2.9 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 46.8,
+    "awayWinPct": 50.4,
+    "tiePct": 2.8,
+    "medianHomeScore": 22,
+    "medianAwayScore": 22,
+    "coverPctHome": 58.1,
+    "overPct": 58.7
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.431743+00:00",
+      "marginHome": -0.5,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-03T15:29:11.020314+00:00",
+      "marginHome": -0.5,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.500365+00:00",
+      "marginHome": -0.5,
+      "total": 43.8
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: New York Giants by 0.5 (injury-adjusted) against a market that has New York Giants favored by 3, a 2.5-point gap; sim cover% for Philadelphia Eagles is 58.2% and projected total is 43.8 vs 40.5 (over 60.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

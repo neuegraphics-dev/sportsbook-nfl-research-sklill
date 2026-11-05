@@ -1,0 +1,164 @@
+{
+  "game_id": "texans-chargers-2026-wk9",
+  "matchup": "Houston Texans @ Los Angeles Chargers",
+  "week": "Week 9",
+  "kickoff": "2026-11-08T21:05:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 5.5,
+      "total": 41.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 4.5,
+      "total": 41.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 4.5,
+      "total": 41.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:38Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 41,
+        "ml_fav": -224,
+        "ml_dog": 187
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 41,
+        "ml_fav": -224,
+        "ml_dog": 187
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.859827+00:00",
+    "n": 10000,
+    "homeElo": 1396.0,
+    "awayElo": 1515.8,
+    "gamesSeen": 14,
+    "eloMarginHome": -2.9,
+    "statsMarginHome": -4.7,
+    "marginDivergence": 1.8,
+    "projTotal": 43.7,
+    "homeWinProbElo": 39.8,
+    "marketHomeSpread": 4.5,
+    "marketTotal": 41.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 20.4,
+    "projAwayMeanRaw": 23.3,
+    "projHomeMeanAdjusted": 20.4,
+    "projAwayMeanAdjusted": 23.3,
+    "injuryAdjustedMarginHome": -2.9,
+    "projTotalAdjusted": 43.7,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Los Angeles Chargers (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Trey Pipkins III (-1.0), Dalvin Tomlinson (-1.0), Elijah Molden (-0.5), Kayode Awosika (-0.5), Charlie Kolar (-0.2), Brenen Thompson (-0.1) [-3.4 pts total]; Derwin James (-1.5), Joe Alt (-1.5), Donte Jackson (-0.5), Bud Dupree (-1.5) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Houston Texans (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Nico Collins (-2.0) [-2.0 pts total]; Jalen Pitre (-0.5), David Montgomery (-1.0), Tank Dell (-0.8) [-2.2 pts total]; David Montgomery (-0.8), Reed Blankenship (-0.5), Jalen Pitre (-0.5), Blake Fisher (-0.8), Tank Dell (-0.4) [-3.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 40.5,
+    "awayWinPct": 56.7,
+    "tiePct": 2.8,
+    "medianHomeScore": 20,
+    "medianAwayScore": 23,
+    "coverPctHome": 54.1,
+    "overPct": 56.0
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:49:38.516293+00:00",
+      "marginHome": -2.9,
+      "total": 43.7
+    },
+    {
+      "run_at": "2026-11-03T15:29:11.443757+00:00",
+      "marginHome": -2.9,
+      "total": 43.7
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.859827+00:00",
+      "marginHome": -2.9,
+      "total": 43.7
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Houston Texans by 2.9 (injury-adjusted) against a market that has Houston Texans favored by 4.5, a 1.6-point gap; sim cover% for Los Angeles Chargers is 54.9% and projected total is 43.7 vs 41.5 (over 56.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+    ],
+    "leans": []
+  }
+}

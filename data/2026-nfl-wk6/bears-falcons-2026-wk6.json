@@ -1,0 +1,547 @@
+{
+  "game_id": "bears-falcons-2026-wk6",
+  "matchup": "Chicago Bears @ Atlanta Falcons",
+  "week": "Week 6",
+  "kickoff": "2026-10-18T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3,
+      "total": 47.5,
+      "ml_fav": -175,
+      "ml_dog": 145
+    },
+    "fanduel": {
+      "spread": 3.5,
+      "total": 47.5,
+      "ml_fav": -175,
+      "ml_dog": 145
+    },
+    "caesars": {
+      "spread": 3,
+      "total": 47.5,
+      "ml_fav": -175,
+      "ml_dog": 145
+    },
+    "note": "VegasInsider DOM (home=Falcons)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 47.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 47.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 47.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "note": "VegasInsider DOM (home=Falcons)."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": 3.0,
+        "total": 49.5,
+        "ml_fav": -171,
+        "ml_dog": 145
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 49.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 49.5,
+        "ml_fav": -176,
+        "ml_dog": 148
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 49.5,
+        "ml_fav": -173,
+        "ml_dog": 146
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 49.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 3,
+        "total": 49.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=ATL relative (Falcons home dog). DK cross-checked VI vs cleatz (CHI-3/-105, ATL+3/-115, total 49.5 -112/-108). BookMaker.eu ML not posted for this game, logged null. ATL+3 is current; VI open was ATL-1.5, line flipped to CHI favored after Bears QB's hamstring return confirmed per vegasinsider notable-matchups note."
+    },
+    {
+      "captured_at": "2026-10-15T17:00:10Z",
+      "bookmaker_eu": {
+        "spread": 1,
+        "total": 51.5,
+        "ml_fav": -109,
+        "ml_dog": -105
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -115,
+        "ml_dog": -105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh): near pick'em, CHI-109/ATL-105, total51.5. DK via cleatz.com (fresh): CHI-115/ATL-105, total51.5. Caesars/FanDuel spread via VI DOM (Oct13 banner, unconfirmed-stale). Opened ATL-1.5 vs CHI, line jumped to CHI favored on Caleb Johnson hamstring return news (VegasInsider notable-moves note)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:20Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 51.5,
+        "ml_fav": -110,
+        "ml_dog": -107
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads) + BookMaker.eu. Near-even ML (Bears -110 / Falcons -107) as sourced -- unusual both-negative price, logged as given, not corrected. DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-16T21:04:23Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 51.5,
+        "ml_fav": -110,
+        "ml_dog": -107
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -118,
+        "ml_dog": -102
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI DOM (DK+1.5/-120,Caesars+1.5/-117,FD+1.5/-115; home=Falcons) + cleatz DK total/ML (51.5; CHI-118/ATL-102 -- both-negative ML as sourced, unusual near-even market, logged as given) + BookMaker.eu unchanged vs prior cycle."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 51.5,
+        "ml_fav": -110,
+        "ml_dog": -107
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -118,
+        "ml_dog": -102
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -118.0,
+        "ml_dog": -100.0
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 52.5,
+        "ml_fav": -117.0,
+        "ml_dog": -102.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-17T17:03:14Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 51.5,
+        "ml_fav": -110,
+        "ml_dog": -107
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 52.5,
+        "ml_fav": 0,
+        "ml_dog": -120
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -116,
+        "ml_dog": -102
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 52.5,
+        "ml_fav": -117,
+        "ml_dog": -102
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu; numbers unchanged vs this morning's 13:05Z snapshot, cross-confirmed by cleatz.com live feed (updated under 5 min) showing matching current lines -- treated as genuinely stable, not a stale-source artifact."
+    },
+    {
+      "captured_at": "2026-10-17T21:02:58Z",
+      "bookmaker_eu": {
+        "spread": 1.0,
+        "total": 51.5,
+        "ml_fav": -110,
+        "ml_dog": -107
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 52.5,
+        "ml_fav": -120,
+        "ml_dog": 100
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -116,
+        "ml_dog": -102
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 52.5,
+        "ml_fav": -117,
+        "ml_dog": -102
+      },
+      "note": "VegasInsider DOM + cleatz.com + lines.bookmaker.eu. Near-pickem game (home ATL +1.5/CHI -1.5); some books show both ML sides negative given the tight vig on a true coinflip."
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 52.5,
+        "ml_fav": -120,
+        "ml_dog": 100
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    },
+    {
+      "captured_at": "2026-10-18T17:04:46Z",
+      "bookmaker_eu": {
+        "spread": 1,
+        "total": 51,
+        "ml_fav": -110,
+        "ml_dog": -105
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": -118,
+        "ml_dog": -102
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 52,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 51.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads (DK/Caesars/FanDuel) from VegasInsider DOM per-book columns, home-relative. BookMaker.eu + DK total/ML from lines.bookmaker.eu board (cleatz.com odds-compare panel required per-game clicks not done this cycle for ML on Caesars/FanDuel -- logged null)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No lean",
+    "total_lean": "Under 51.5",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Model total well under market (37.0% over) but Caleb Williams (hamstring, questionable) status not firm -- signs point to him playing per SI/NBC Sports",
+      "Sized as uncertainty-weighted lean, not a standard play, pending final QB confirmation"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T17:09:35.007201+00:00",
+    "n": 10000,
+    "homeElo": 1457.6,
+    "awayElo": 1528.4,
+    "gamesSeen": 10,
+    "eloMarginHome": -0.9,
+    "statsMarginHome": -3.7,
+    "marginDivergence": 2.7,
+    "projTotal": 48.6,
+    "homeWinProbElo": 46.7,
+    "marketHomeSpread": 1.5,
+    "marketTotal": 51.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -1.0,
+    "projHomeMeanRaw": 23.8,
+    "projAwayMeanRaw": 24.7,
+    "projHomeMeanAdjusted": 23.8,
+    "projAwayMeanAdjusted": 23.7,
+    "injuryAdjustedMarginHome": 0.1,
+    "projTotalAdjusted": 47.6,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Away injury adjustment: -1.0 pts -- Caleb Williams (QB, questionable, -1.0).",
+      "Atlanta Falcons (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Chicago Bears (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]; Caleb Williams (-4.0) [-4.0 pts total]; Caleb Williams (-4.0), D'Andre Swift (-0.5), Kyle Monangai (-0.5) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 49.2,
+    "awayWinPct": 48.0,
+    "tiePct": 2.8,
+    "medianHomeScore": 24,
+    "medianAwayScore": 24,
+    "coverPctHome": 54.6,
+    "overPct": 39.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:58.817234+00:00",
+      "marginHome": -0.9,
+      "total": 48.6
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.234586+00:00",
+      "marginHome": -0.9,
+      "total": 48.6
+    },
+    {
+      "run_at": "2026-10-13T14:03:04.633186+00:00",
+      "marginHome": -0.9,
+      "total": 48.6
+    },
+    {
+      "run_at": "2026-10-14T13:04:24.298820+00:00",
+      "marginHome": -0.9,
+      "total": 48.6
+    },
+    {
+      "run_at": "2026-10-16T21:08:26.493240+00:00",
+      "marginHome": -0.9,
+      "total": 48.6
+    },
+    {
+      "run_at": "2026-10-17T13:10:47.587253+00:00",
+      "marginHome": 0.1,
+      "total": 47.6
+    },
+    {
+      "run_at": "2026-10-17T17:03:42.327435+00:00",
+      "marginHome": 0.1,
+      "total": 47.6
+    },
+    {
+      "run_at": "2026-10-17T21:11:04.465820+00:00",
+      "marginHome": 0.1,
+      "total": 47.6
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.525690+00:00",
+      "marginHome": 0.1,
+      "total": 47.6
+    },
+    {
+      "run_at": "2026-10-18T17:09:35.007201+00:00",
+      "marginHome": 0.1,
+      "total": 47.6
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-17T21:19:25Z",
+    "analysis": [
+      "This is close to a coinflip on the spread (model gives no real edge either way with Caleb Williams questionable rather than out, and Michael Penix Jr. playing for Atlanta), so there's no spread lean here.",
+      "The total is a different story: the model's 47.6 projection is nearly 5 points under the market's 52.5, even with both offenses healthy at the skill-position level. That's a big enough gap to flag, but it's also a big enough gap to treat with some caution given these two offenses have trended toward shootouts."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 52.5",
+        "confidence": 5,
+        "reasoning": "Model total sits ~5 points under the market number even with Penix playing and Williams considered likely to go. | Stake $15 \u00b7 pass at 50.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T17:05:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 26,
+      "handle_pct_home": 45
+    },
+    "total": {
+      "bets_pct_over": 59,
+      "handle_pct_over": 92
+    },
+    "moneyline": {
+      "bets_pct_home": 49,
+      "handle_pct_home": 59
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "Spread bet%/handle% from cleatz.com public-betting board, home-relative. Total/ML splits not fetched this cycle except cardinals-rams."
+  },
+  "props": {
+    "last_checked": "2026-10-14T21:06:01Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board, rendered via browser DOM; CBS posvsdef RB rank confirmed same run",
+    "picks": [
+      {
+        "player": "Bijan Robinson",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "covers.com consensus (best odds BetRivers)",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "Model projects 70.8 vs the 94.5 line, Atlanta is a home -3 dog skewing pass-heavy, and Chicago ranks 13th-toughest vs RB rush. | Stake $15 \u00b7 pass at 90.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 70.8 vs 94.5 line, -23.7 diff, 26.6% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CHI ranks 13th-toughest of 32 vs RB rushing (CBS posvsdef, read 10/14)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Falcons are a home -3 underdog this week, which implies a more pass-heavy game script per covers.com's own analysis"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 13,
+          "rank_basis": "CBS RB fantasy pts allowed YTD, read 10/14"
+        },
+        "confidence_base": 5,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 94.5,
+        "opening_captured_at": "2026-10-14T21:06:01Z",
+        "current_line": 94.5,
+        "current_captured_at": "2026-10-14T21:06:01Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-17T13:10:32Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Caleb Williams",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "Hamstring, questionable per NFL.com Wk6 report; multiple reports (si.com, nbcsports.com) say signs point to him playing -- small uncertainty weighting, not priced as likely-out"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    }
+  },
+  "final_score": {
+    "home": 23,
+    "away": 31
+  }
+}

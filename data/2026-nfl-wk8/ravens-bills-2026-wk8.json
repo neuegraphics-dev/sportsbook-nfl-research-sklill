@@ -1,0 +1,454 @@
+{
+  "game_id": "ravens-bills-2026-wk8",
+  "matchup": "Baltimore Ravens @ Buffalo Bills",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 53.5,
+      "ml_fav": -148,
+      "ml_dog": 132
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 53.5,
+        "ml_fav": -148,
+        "ml_dog": 132
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 53.5,
+        "ml_fav": -148,
+        "ml_dog": 132
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); BookMaker.eu not listing this game; Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -3.5,
+        "total": 53.5,
+        "ml_fav": -174,
+        "ml_dog": 147
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 54,
+        "ml_fav": -175,
+        "ml_dog": 160
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -3.5,
+        "total": 53.5,
+        "ml_fav": -174,
+        "ml_dog": 147
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 55,
+        "ml_fav": -176,
+        "ml_dog": 148
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -174,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -173,
+        "ml_dog": 145
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T17:03:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 55.5,
+        "ml_fav": -176,
+        "ml_dog": 148
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -173,
+        "ml_dog": 145
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~17:05Z (12:05pm ET). BookMaker.eu null (stale board)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "BUF -3.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Elo 8.2 vs scoring -0.3"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T17:03:46.667278+00:00",
+    "n": 10000,
+    "homeElo": 1661.7,
+    "awayElo": 1503.6,
+    "gamesSeen": 13,
+    "eloMarginHome": 8.2,
+    "statsMarginHome": -0.3,
+    "marginDivergence": 8.5,
+    "projTotal": 54.3,
+    "homeWinProbElo": 76.6,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 54.5,
+    "homeInjuryPts": -0.8,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 31.3,
+    "projAwayMeanRaw": 23.0,
+    "projHomeMeanAdjusted": 30.5,
+    "projAwayMeanAdjusted": 23.0,
+    "injuryAdjustedMarginHome": 7.4,
+    "projTotalAdjusted": 53.5,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+8.2) and recent-scoring margin (-0.3) disagree by 8.5 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -0.8 pts -- Spencer Brown (OT, out, -0.5), Dee Alford (CB, out, -0.3).",
+      "Buffalo Bills (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Baltimore Ravens (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]; Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]; Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 68.8,
+    "awayWinPct": 28.7,
+    "tiePct": 2.5,
+    "medianHomeScore": 31,
+    "medianAwayScore": 23,
+    "coverPctHome": 60.7,
+    "overPct": 47.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:08.329973+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.327582+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.929448+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.843552+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-28T00:49:37.194524+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.972735+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-29T01:46:44.074656+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-10-29T15:33:33.134840+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-11-01T01:52:21.556049+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.220919+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.498518+00:00",
+      "marginHome": 8.2,
+      "total": 54.3
+    },
+    {
+      "run_at": "2026-11-01T17:03:46.667278+00:00",
+      "marginHome": 7.4,
+      "total": 53.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Bills by 8.2 on Elo, but 2026 scoring rates Baltimore 0.3 better; total 54.3 vs 54.5. The line moved 2.5 to 3.5 with 82% of handle on Buffalo.",
+      "The two methods disagree by 8.5 points, and Buffalo carries questionable tags on DJ Moore, Dalton Kincaid and RT Spencer Brown. No bet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "BUF -3.5",
+        "confidence": 4,
+        "reasoning": "Elo only; scoring disagrees and the line is through 3. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-28T01:09:34Z",
+    "status": "captured",
+    "source_note": "covers.com props board 10/28 + CBS posvsdef + statmuse logs",
+    "picks": [
+      {
+        "player": "Derrick Henry",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "covers.com consensus",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Buffalo is the 29th-ranked run defense vs RBs and Henry averages 82.7, but he has gone over 73.5 in only 3 of 7 and slid to 58 and 45 in the last two.",
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "CBS RB fantasy pts allowed, Wks 1-7 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "BUF is rank 29 of 32 vs RBs (CBS): 82.8 rush yds/g allowed on 23.0 carries"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Season average 82.7 rush yds on 20.7 carries/g (144,68,89,73,102,58,45)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projects 84.55 vs 73.5 line (+11.1), 24.65% EV"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "against",
+            "detail": "Over 73.5 in only 3 of 7 games"
+          },
+          {
+            "label": "Trend",
+            "dir": "against",
+            "detail": "Last two games 58 and 45 yards on 17 carries each, down from 24+ carries early"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 73.5,
+        "opening_captured_at": "2026-10-28T01:09:34Z",
+        "current_line": 73.5,
+        "current_captured_at": "2026-10-28T01:09:34Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 144,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 68,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 89,
+            "result": "hit"
+          },
+          {
+            "week": 4,
+            "actual": 73,
+            "result": "miss"
+          },
+          {
+            "week": 5,
+            "actual": 102,
+            "result": "hit"
+          },
+          {
+            "week": 6,
+            "actual": 58,
+            "result": "miss"
+          },
+          {
+            "week": 7,
+            "actual": 45,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 3,
+          "misses": 4,
+          "pushes": 0,
+          "total": 7,
+          "pct": 43,
+          "line": 73.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 78,
+      "handle_pct_home": 82
+    },
+    "total": {
+      "bets_pct_over": 74,
+      "handle_pct_over": 89
+    },
+    "moneyline": {
+      "bets_pct_home": 84,
+      "handle_pct_home": 72
+    },
+    "reverse_line_move": false,
+    "rlm_note": "82% of handle is on the home side and the spread has moved toward them (-2.5 -> -3.5) -- money and line agree, no RLM.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-01T17:03:46Z",
+    "home": {
+      "items": [
+        {
+          "position": "OT",
+          "player": "Spencer Brown",
+          "status": "out",
+          "pts": -0.5,
+          "note": "RT inactive (RotoWire lineups inactives 11/1 ~12:00pm ET)"
+        },
+        {
+          "position": "CB",
+          "player": "Dee Alford",
+          "status": "out",
+          "pts": -0.3,
+          "note": "Inactive (RotoWire lineups inactives 11/1 ~12:00pm ET)"
+        }
+      ],
+      "items_total_pts": -0.8,
+      "stacking_notes": [],
+      "total_pts": -0.8
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 36,
+    "away": 10
+  }
+}

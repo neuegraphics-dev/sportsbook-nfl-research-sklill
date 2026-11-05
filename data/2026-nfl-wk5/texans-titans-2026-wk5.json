@@ -1,0 +1,506 @@
+{
+  "game_id": "texans-titans-2026-wk5",
+  "matchup": "Houston Texans @ Tennessee Titans",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 6.5,
+      "total": 39.5,
+      "ml_fav": -298,
+      "ml_dog": 265
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 HOU -6.5/39.5. Look-ahead HOU -3.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 39.5,
+        "ml_fav": -298,
+        "ml_dog": 265
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 HOU -6.5/39.5. Look-ahead HOU -3.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 39.5,
+        "ml_fav": -300,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 HOU -7."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 39.5,
+        "ml_fav": -300,
+        "ml_dog": 270
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 37.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.5,
+        "total": 37.5,
+        "ml_fav": -395,
+        "ml_dog": 310
+      },
+      "fanduel": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Titans"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.5,
+        "total": 38.5,
+        "ml_fav": -425,
+        "ml_dog": 330
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 37.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 38.0,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Titans. DK ML via cleatz (Texans -425/Titans +330)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 38.5,
+        "ml_fav": -360.0,
+        "ml_dog": 285.0
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 37.5,
+        "ml_fav": -370.0,
+        "ml_dog": 295.0
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 38.0,
+        "ml_fav": -380.0,
+        "ml_dog": 290.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 38.5,
+        "ml_fav": -360,
+        "ml_dog": 285
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 37.5,
+        "ml_fav": -370,
+        "ml_dog": 295
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 38.0,
+        "ml_fav": -380,
+        "ml_dog": 290
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7.0,
+        "total": 38.5,
+        "ml_fav": -355,
+        "ml_dog": 280
+      },
+      "fanduel": {
+        "spread": 7.0,
+        "total": 37.5,
+        "ml_fav": -370,
+        "ml_dog": 295
+      },
+      "caesars": {
+        "spread": 7.0,
+        "total": 38.0,
+        "ml_fav": -380,
+        "ml_dog": 290
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Titans."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 7,
+        "total": 37.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "fanduel": {
+        "spread": 7,
+        "total": 37.5,
+        "ml_fav": -375,
+        "ml_dog": 300
+      },
+      "caesars": {
+        "spread": 7,
+        "total": 38,
+        "ml_fav": -380,
+        "ml_dog": 290
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.5,
+        "total": 37.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "fanduel": {
+        "spread": 6.5,
+        "total": 37.5,
+        "ml_fav": -330,
+        "ml_dog": 265
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": 37,
+        "ml_fav": -325,
+        "ml_dog": 255
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Elo (-8.0) and real-2026 scoring form (-2.9) disagree by 5.1 pts -- discounting the Elo-driven model read",
+      "No new injury signal found this cycle"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": true,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.243527+00:00",
+    "n": 10000,
+    "homeElo": 1260.7,
+    "awayElo": 1508.1,
+    "gamesSeen": 8,
+    "eloMarginHome": -8.0,
+    "statsMarginHome": -2.9,
+    "marginDivergence": -5.1,
+    "projTotal": 43.6,
+    "homeWinProbElo": 24.1,
+    "marketHomeSpread": 7,
+    "marketTotal": 38,
+    "homeInjuryPts": -0.75,
+    "awayInjuryPts": -1.0,
+    "projHomeMeanRaw": 17.8,
+    "projAwayMeanRaw": 25.8,
+    "projHomeMeanAdjusted": 17.1,
+    "projAwayMeanAdjusted": 24.8,
+    "injuryAdjustedMarginHome": -7.7,
+    "projTotalAdjusted": 41.9,
+    "spreadLean": null,
+    "totalLean": "over",
+    "notes": [
+      "Elo margin (-8.0) and recent-scoring margin (-2.9) disagree by 5.1 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -0.8 pts -- Amani Hooker (S, out, -0.8).",
+      "Away injury adjustment: -1.0 pts -- Tank Dell (WR, out, -1.0).",
+      "Houston Texans (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Nico Collins (-2.0) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 28.8,
+    "awayWinPct": 68.8,
+    "tiePct": 2.4,
+    "medianHomeScore": 17,
+    "medianAwayScore": 25,
+    "coverPctHome": 48.6,
+    "overPct": 60.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.763624+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.616858+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.948138+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.589079+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.987353+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.818950+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.217093+00:00",
+      "marginHome": -8.0,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-10T17:10:32.087758+00:00",
+      "marginHome": -7.7,
+      "total": 41.9
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.999295+00:00",
+      "marginHome": -7.7,
+      "total": 41.9
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.243527+00:00",
+      "marginHome": -7.7,
+      "total": 41.9
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-10T17:11:46Z",
+    "analysis": [
+      "Houston is a 7-point road favorite and both the model and real-2026 scoring data agree the Texans are the better team (Elo margin -8.0 home, recent-scoring margin -2.9 home) -- the two signals disagree on magnitude (5.1-pt gap) but agree on direction. Tennessee's injury news (Hooker out at safety) is modest; Houston's Tank Dell being out trims its receiving corps but the Texans' rolling scoring average already excludes an older Nico Collins injury-affected game, so the offensive read isn't artificially inflated.",
+      "Market total sits at 38, the model's injury-adjusted projection runs a couple points higher (41.9) with an over lean, mostly a function of Houston's offensive pace. No strong spread edge here since the market (-7) and model both have Houston comfortably ahead; this is a total-side look, not a spread play."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 38",
+        "confidence": 5,
+        "reasoning": "Model projects 41.9 combined vs a 38 market total, driven by Houston's offensive pace; moderate confidence given the Elo/scoring-form gap on the spread side adds uncertainty to the overall game-flow read. | Stake $15 \u00b7 pass at 40.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-10T17:15:27Z",
+    "status": "captured",
+    "source_note": "covers.com top-EV table, rendered via browser (DOM table query)",
+    "picks": [
+      {
+        "player": "David Montgomery",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "Fanatics Sportsbook",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Model projects well above the line and Houston leans run-heavy as a big road favorite against a soft Titans run defense. | Stake $15 \u00b7 pass at 46.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 56.83 vs 43.5 line, +13.3 diff, 25.87% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Titans rank ~16th-21st of 32 vs RB (99.8 rush yds/g allowed) -- not a top-10 tough matchup"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Projected 14.5 carries, 79th percentile among RBs this season"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Texans 7-pt road favorites; Houston already the 9th-most run-centric team (44.5% projected run rate) in a game projected for 130 total plays"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 0,
+          "net": 4
+        },
+        "opening_line": 43.5,
+        "opening_captured_at": "2026-10-10T17:15:27Z",
+        "current_line": 43.5,
+        "current_captured_at": "2026-10-10T17:15:27Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 34,
+      "handle_pct_home": 31
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 78
+    },
+    "moneyline": {
+      "bets_pct_home": 9,
+      "handle_pct_home": 26
+    },
+    "reverse_line_move": false,
+    "rlm_note": "69% of handle is on the away side but the spread hasn't moved yet (+6.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-10T17:10:32Z",
+    "home": {
+      "items": [
+        {
+          "position": "S",
+          "player": "Amani Hooker",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Concussion, starting safety, out"
+        }
+      ],
+      "items_total_pts": -0.75,
+      "stacking_notes": [],
+      "total_pts": -0.75
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Tank Dell",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Knee, DNP Fri, starting WR; OL trio (Ersery/Fisher/Ingram) questionable with illness but trending toward playing (limited/full Fri) -- not priced"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    }
+  },
+  "final_score": {
+    "home": 3,
+    "away": 26
+  }
+}

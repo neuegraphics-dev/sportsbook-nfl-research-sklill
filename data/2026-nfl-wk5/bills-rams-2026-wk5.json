@@ -1,0 +1,586 @@
+{
+  "game_id": "bills-rams-2026-wk5",
+  "matchup": "Buffalo Bills @ Los Angeles Rams",
+  "week": "Week 5",
+  "kickoff": "2026-10-13T00:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 53.5,
+      "ml_fav": -130,
+      "ml_dog": 116
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 LAR -2.5/53.5; Covers 52.5."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 53.5,
+        "ml_fav": -130,
+        "ml_dog": 116
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 LAR -2.5/53.5; Covers 52.5."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 54.5,
+        "ml_fav": -142,
+        "ml_dog": 135
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). bet365 LAR -2.5/53.5."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 54.5,
+        "ml_fav": -142,
+        "ml_dog": 135
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 54.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Rams"
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 54.5,
+        "ml_fav": -175.0,
+        "ml_dog": 145.0
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -178.0,
+        "ml_dog": 150.0
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -176.0,
+        "ml_dog": 147.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -178,
+        "ml_dog": 150
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -176,
+        "ml_dog": 147
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3,
+        "total": 54.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -176,
+        "ml_dog": 148
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -176,
+        "ml_dog": 147
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    },
+    {
+      "captured_at": "2026-10-12T13:02:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK/Caesars/FanDuel spread -3.5 (home, Rams) from VegasInsider per-book DOM columns. Total 54.5 from cleatz.com consensus board, cross-checked vs rotowire (2-day-stale spread -2.5 but matching total). Moneylines not confirmed per-book, logged null. BookMaker.eu not posting this game today (checked lines.bookmaker.eu directly, only Dec futures listed)."
+    },
+    {
+      "captured_at": "2026-10-12T16:57:52Z",
+      "bookmaker_eu": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -174,
+        "ml_dog": 147
+      },
+      "draftkings": {
+        "spread": -3.5,
+        "total": 54.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "No movement since this morning: DK/Caesars/FanDuel all -3.5 via VegasInsider DOM. DK total/ML 54.5/-180/+150 via cleatz.com. BookMaker.eu -3.5/54.5/-174/+147, but page shows last update 5h ago -- stale, logged with caveat."
+    }
+  ],
+  "research": {
+    "spread_lean": "No edge",
+    "total_lean": "Under 54.5",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "DJ Moore (BUF WR1) questionable, shoulder, no Wed update found -- minor discount",
+      "Total near 54.5 on heavy early over public money (94% handle); sim ~47.7, well under"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-12T13:03:55Z",
+    "home": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "DJ Moore",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "Shoulder, Questionable with no Wednesday practice update found by Friday. Bills WR1."
+        },
+        {
+          "position": "DT",
+          "player": "Ed Oliver",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Confirmed OUT Week 5 (CBS Sports injury report), expected back Week 6. Bills top interior pass rusher."
+        },
+        {
+          "position": "WR",
+          "player": "Josh Palmer",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Confirmed OUT Week 5 (CBS Sports injury report), expected back Week 6. Complementary WR, not the Bills top target."
+        }
+      ],
+      "items_total_pts": -3.25,
+      "stacking_notes": [],
+      "total_pts": -3.25
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-12T13:03:55.465951+00:00",
+    "n": 10000,
+    "homeElo": 1633.5,
+    "awayElo": 1640.0,
+    "gamesSeen": 8,
+    "eloMarginHome": 1.7,
+    "statsMarginHome": 0.4,
+    "marginDivergence": 1.3,
+    "projTotal": 48.7,
+    "homeWinProbElo": 55.9,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 54.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": -3.25,
+    "projHomeMeanRaw": 25.2,
+    "projAwayMeanRaw": 23.5,
+    "projHomeMeanAdjusted": 25.2,
+    "projAwayMeanAdjusted": 20.3,
+    "injuryAdjustedMarginHome": 4.9,
+    "projTotalAdjusted": 45.4,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Away injury adjustment: -3.2 pts -- DJ Moore (WR, questionable, -1.0), Ed Oliver (DT, out, -1.5), Josh Palmer (WR, out, -0.8).",
+      "Los Angeles Rams (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 61.6,
+    "awayWinPct": 35.7,
+    "tiePct": 2.7,
+    "medianHomeScore": 25,
+    "medianAwayScore": 20,
+    "coverPctHome": 53.6,
+    "overPct": 26.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.370592+00:00",
+      "marginHome": 2.1,
+      "total": 48.3
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.239377+00:00",
+      "marginHome": 2.1,
+      "total": 48.3
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.577803+00:00",
+      "marginHome": 2.1,
+      "total": 48.3
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.200586+00:00",
+      "marginHome": 2.1,
+      "total": 48.3
+    },
+    {
+      "run_at": "2026-10-09T16:15:13.194078+00:00",
+      "marginHome": 2.1,
+      "total": 48.3
+    },
+    {
+      "run_at": "2026-10-09T21:05:22.191093+00:00",
+      "marginHome": 2.7,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.457714+00:00",
+      "marginHome": 2.7,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-10T21:04:16.224978+00:00",
+      "marginHome": 2.7,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.475773+00:00",
+      "marginHome": 2.7,
+      "total": 47.7
+    },
+    {
+      "run_at": "2026-10-12T13:03:55.465951+00:00",
+      "marginHome": 4.9,
+      "total": 45.4
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-12T13:04:24Z",
+    "analysis": [
+      "MNF Week 5: Rams opened -2.5 and have moved to -3.5 across DraftKings, Caesars and FanDuel, crossing the key number 3. The total sits at 54.5, the highest full-game number on the slate this week. Three Bills contributors are now confirmed out or limited: Ed Oliver (DT, out) and Josh Palmer (WR, out) join DJ Moore (WR1, questionable) -- the model now takes 3.25 points off Buffalo, pushing the injury-adjusted total down to 45.4, a full 9 points under the market 54.5.",
+      "That gap is the story here: the Under has both a real model edge and a real injury signal (two independent reasons agreeing), even though 78% of bets and 85% of handle are piled on the Over -- public money is leaning the wrong way on total scoring given who is out for Buffalo. On the spread, the injury-adjusted margin (Rams by 4.9) is a touch stronger than the market -3.5, enough to note but not strong enough on its own (53.6% sim cover) to carry a second lean this game."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 54.5 (DK/Caesars/FanDuel)",
+        "confidence": 7,
+        "reasoning": "Model and injuries now agree: Ed Oliver and Josh Palmer join DJ Moore as OUT/questionable for Buffalo, pushing the injury-adjusted total to 45.4 vs a 54.5 market high -- a 9-point gap underneath 78% Over public money. | Stake $15 \u00b7 pass at 51.5",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-12T13:41:37Z",
+    "status": "captured",
+    "source_note": "Re-checked covers.com player-props board gameday for additional clean picks. Added Puka Nacua rec_yards. Reviewed and passed on: Khalil Shakir rec_yards o45.5 (model +26% EV but hit rate only 1/4 clearing 45.5 this season, net alignment 0 -- fails the confidence-5 gate); Dalton Kincaid rec_yards o54.5 (Rams D 4th of 32 vs TE -- tough-matchup cap to conf 4 -- plus a 2-game slump, 38 then 7 yds; not worth .50); James Cook III props (Rams D 1st of 32 vs RB overall, conflicting signals between his rush-under and rec-over legs, not clean enough to size in the time available).",
+    "picks": [
+      {
+        "player": "Puka Nacua",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Fanatics via covers.com",
+        "lean": "over",
+        "confidence": 7,
+        "reasoning": "Rams WR1 pulling 9-12 targets a game against a Bills defense that is 29th of 32 vs WR; covers.com projects 96.49 vs the 90.5 line (+17.75% EV). | Stake $15 (capped -- 7-8 tier not yet at 30+ graded/57%+) \u00b7 pass at 94.5",
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "footballdb.com WR fantasy pts allowed thru Wk4 (BUF 26.3 pts/g, 29th of 32)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Buffalo ranks 29th of 32 vs WR, allowing 26.3 fantasy pts/g (footballdb.com)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "9 and 12 targets in his last two logged games -- clear, locked-in WR1 role"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 96.49 vs 90.5 line, +17.75% EV (Fanatics)"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "neutral",
+            "detail": "Only 2 of 4 games have full data on file: 125 vs PHI (hit), 74 vs SF (miss) -- limited sample"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "LAR -3.5 home favorite; passing role not expected to change with game script"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 2,
+          "net": 3
+        },
+        "opening_line": 90.5,
+        "opening_captured_at": "2026-10-12T13:41:37Z",
+        "current_line": 90.5,
+        "current_captured_at": "2026-10-12T13:41:37Z"
+      },
+      {
+        "player": "Josh Allen",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "bet365 via covers.com",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Allen threw 334, 248, 204, 253: over 245.5 in 3 of 4. The LAR pass-D read is real, but his own log says no. | Stake $0 (watch) \u00b7 pass at 245.5",
+        "matchup": {
+          "opp_rank_vs_pos": 14,
+          "rank_basis": "footballdb QB fantasy pts allowed thru Wk4 (LAR 71 pts; 615 pass yds)"
+        },
+        "factors": [
+          {
+            "label": "Pass D",
+            "dir": "for",
+            "detail": "LAR allowed 615 pass yds in 4 games (154/g)"
+          },
+          {
+            "label": "Run game",
+            "dir": "for",
+            "detail": "Cook 105.2 rush yds/g, 6.0 YPC"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "30 att/g (119 in 4) -- needs 8.2 YPA"
+          },
+          {
+            "label": "Average",
+            "dir": "against",
+            "detail": "259.8 pass yds/g in 2026"
+          },
+          {
+            "label": "Correlation",
+            "dir": "neutral",
+            "detail": "Same script as BUF/LAR Under 54.5 -- game cap $45"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "against",
+            "detail": "Wk1-4: 334, 248, 204, 253 -- under 245.5 only once"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 2,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 245.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 244.5,
+        "current_captured_at": "2026-10-12T13:05:02Z"
+      },
+      {
+        "player": "Kyren Williams",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "SBD list Oct 7 (verify at your book)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "5.4 YPC as the Rams' lead back against a Buffalo defense 28th vs RBs, with LA a home favorite. | Stake $15 \u00b7 pass at 74.5",
+        "matchup": {
+          "opp_rank_vs_pos": 28,
+          "rank_basis": "footballdb RB fantasy pts allowed thru Wk4 (BUF 85 pts; 364 RB rush yds on 97 att)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "BUF 28th vs RB, 91 RB rush yds/g allowed"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "5.44 YPC (294 yds on 54 att)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "LAR -2.5 home fav"
+          },
+          {
+            "label": "Average",
+            "dir": "neutral",
+            "detail": "73.5 rush yds/g vs 71.5"
+          },
+          {
+            "label": "Committee",
+            "dir": "against",
+            "detail": "Blake Corum ~8 carries/g"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "for",
+            "detail": "Wk1-4: 41, 85, 88, 80 -- over 71.5 in 3 of 4"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 71.5,
+        "opening_captured_at": "2026-10-07T17:48:30Z",
+        "current_line": 71.5,
+        "current_captured_at": "2026-10-08T12:40:26Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-12T16:57:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 34,
+      "handle_pct_home": 53
+    },
+    "total": {
+      "bets_pct_over": 73,
+      "handle_pct_over": 77
+    },
+    "moneyline": {
+      "bets_pct_home": 38,
+      "handle_pct_home": 31
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "Gameday refresh, Rams(home)-relative. Spread handle on Rams eased further (56%->53%) even with the line holding -3.5. ML handle is majority (69%) on Bills (dog) despite Rams favored -- worth noting, not yet RLM per script."
+  },
+  "final_score": {
+    "home": 34,
+    "away": 37
+  }
+}

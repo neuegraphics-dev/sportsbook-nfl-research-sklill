@@ -1,0 +1,569 @@
+{
+  "game_id": "bills-raiders-2026-wk6",
+  "matchup": "Buffalo Bills @ Las Vegas Raiders",
+  "week": "Week 6",
+  "kickoff": "2026-10-18T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 6,
+      "total": 52.5,
+      "ml_fav": -258,
+      "ml_dog": 210
+    },
+    "fanduel": {
+      "spread": 5.5,
+      "total": 52.5,
+      "ml_fav": -258,
+      "ml_dog": 210
+    },
+    "caesars": {
+      "spread": 5.5,
+      "total": 52.5,
+      "ml_fav": -258,
+      "ml_dog": 210
+    },
+    "note": "VegasInsider DOM (home=Raiders)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6,
+        "total": 52.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 52.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 52.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "note": "VegasInsider DOM (home=Raiders)."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 6.0,
+        "total": 53.5,
+        "ml_fav": -278,
+        "ml_dog": 225
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -275,
+        "ml_dog": 225
+      },
+      "caesars": {
+        "spread": 6.0,
+        "total": 53.5,
+        "ml_fav": -275,
+        "ml_dog": 220
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": null,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=LV relative. DK cross-checked VI vs cleatz (total 53.5 -108/-112, ML BUF-258/LV+210). lines.bookmaker.eu board did not list this game -- logged null."
+    },
+    {
+      "captured_at": "2026-10-15T17:00:27Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -230,
+        "ml_dog": 191
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -285,
+        "ml_dog": 230
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh): BUF-230/LV+4.5, total53.5. DK spread+total via cleatz.com (fresh, Bills-5.5/Over53.5); cleatz had no ML row for this game, ML via rotowire.com (Info Last Verified Oct 15 2026): BUF-285/LV+230. Caesars/FanDuel spread via VI DOM (Oct13 banner, unconfirmed-stale)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:20Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -231,
+        "ml_dog": 192
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads) + BookMaker.eu. ml_fav=Bills(away,-231), ml_dog=Raiders(home,+192). DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-16T21:04:36Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -231,
+        "ml_dog": 192
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -230,
+        "ml_dog": 190
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI DOM (DK+4.5/-102,Caesars+4.5/-106,FD+5.5/-115; home=Raiders) + cleatz DK total/ML (53.5, BUF-230/LV+190) + BookMaker.eu unchanged vs prior cycle."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -231,
+        "ml_dog": 192
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -225.0,
+        "ml_dog": 185.0
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -240.0,
+        "ml_dog": 198.0
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -240.0,
+        "ml_dog": 195.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-17T17:03:14Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -231,
+        "ml_dog": 192
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -245,
+        "ml_dog": 200
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -240,
+        "ml_dog": 195
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu; numbers unchanged vs this morning's 13:05Z snapshot, cross-confirmed by cleatz.com live feed (updated under 5 min) showing matching current lines -- treated as genuinely stable, not a stale-source artifact."
+    },
+    {
+      "captured_at": "2026-10-17T21:02:59Z",
+      "bookmaker_eu": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -231,
+        "ml_dog": 192
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -245,
+        "ml_dog": 200
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 53.5,
+        "ml_fav": -240,
+        "ml_dog": 195
+      },
+      "note": "VegasInsider DOM + cleatz.com + lines.bookmaker.eu. Home(LV)-relative spread = Bills(away) favored."
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    },
+    {
+      "captured_at": "2026-10-18T17:04:46Z",
+      "bookmaker_eu": {
+        "spread": 5,
+        "total": 53.5,
+        "ml_fav": -243,
+        "ml_dog": 206
+      },
+      "draftkings": {
+        "spread": 5,
+        "total": 53.5,
+        "ml_fav": -245,
+        "ml_dog": 200
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5.5,
+        "total": 53.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads (DK/Caesars/FanDuel) from VegasInsider DOM per-book columns, home-relative. BookMaker.eu + DK total/ML from lines.bookmaker.eu board (cleatz.com odds-compare panel required per-game clicks not done this cycle for ML on Caesars/FanDuel -- logged null)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Buffalo Bills -5.5",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Model cover rate (60.2%) meaningfully above what a -5.5 favorite typically covers at",
+      "book_vs_sharp gap + steam flags noted on this game's snapshot but no confirming news yet -- timing signal, not standalone"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T17:09:35.191853+00:00",
+    "n": 10000,
+    "homeElo": 1400.1,
+    "awayElo": 1655.8,
+    "gamesSeen": 10,
+    "eloMarginHome": -8.3,
+    "statsMarginHome": -2.9,
+    "marginDivergence": -5.4,
+    "projTotal": 51.5,
+    "homeWinProbElo": 23.2,
+    "marketHomeSpread": 5.5,
+    "marketTotal": 53.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 21.6,
+    "projAwayMeanRaw": 29.9,
+    "projHomeMeanAdjusted": 21.6,
+    "projAwayMeanAdjusted": 29.9,
+    "injuryAdjustedMarginHome": -8.3,
+    "projTotalAdjusted": 51.5,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (-8.3) and recent-scoring margin (-2.9) disagree by 5.4 points -- worth a second look before trusting either alone.",
+      "Buffalo Bills (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 27.0,
+    "awayWinPct": 70.5,
+    "tiePct": 2.6,
+    "medianHomeScore": 22,
+    "medianAwayScore": 30,
+    "coverPctHome": 42.0,
+    "overPct": 44.4
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:59.026933+00:00",
+      "marginHome": -7.7,
+      "total": 51.2
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.418740+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-13T14:03:04.673871+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-14T13:04:24.507072+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-16T21:08:26.737136+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-17T13:10:47.911159+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-17T17:03:42.582312+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-17T21:11:04.632279+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.840974+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    },
+    {
+      "run_at": "2026-10-18T17:09:35.191853+00:00",
+      "marginHome": -8.3,
+      "total": 51.5
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-17T21:19:25Z",
+    "analysis": [
+      "Buffalo is favored on the road and the model likes them even more than the market does, covering 61% of the time (home Las Vegas covering just 40%). Neither team has a notable injury this week -- Bills DJ Moore and Ed Oliver are questionable, Raiders are mostly clean.",
+      "Elo (-8.3 for the home team) and recent scoring margin (-2.9) disagree by over 5 points, which is the main reason this sits at a moderate rather than high confidence."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Bills -5.5",
+        "confidence": 5,
+        "reasoning": "Model has Buffalo covering 61% of the time with both rosters largely healthy; Elo/scoring-margin gap keeps this at a moderate rating. | Stake $15 \u00b7 pass at -6.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T17:05:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 29,
+      "handle_pct_home": 31
+    },
+    "total": {
+      "bets_pct_over": 74,
+      "handle_pct_over": 86
+    },
+    "moneyline": {
+      "bets_pct_home": 9,
+      "handle_pct_home": 17
+    },
+    "reverse_line_move": false,
+    "rlm_note": "69% of handle is on the away side and the spread has moved toward them (+4.5 -> +5) -- money and line agree, no RLM.",
+    "note": "Spread bet%/handle% from cleatz.com public-betting board, home-relative. Total/ML splits not fetched this cycle except cardinals-rams."
+  },
+  "props": {
+    "last_checked": "2026-10-14T17:07:46Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (browser DOM) + CBS posvsdef RB/WR/QB/TE pages read today; ESPN team injury pages (Oct 13) for both teams. Verified Allen/Tucker roster, team, position before writing.",
+    "picks": [
+      {
+        "player": "Josh Allen",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "Covers.com consensus (best bet365 -115)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "DK total is 53.5, the highest on the Week 6 slate, and Las Vegas ranks 28th of 32 vs QB; covers.com projects 262.96 vs the 239.5 line (+26.06% EV). Allen is not on the injury report (ESPN, Oct 13). | Stake $15 \u00b7 pass at 244.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 262.96 pass yds vs 239.5 line, +23.5 diff, 26.06% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Las Vegas ranks 28th of 32 vs QB, 25.20 fantasy pts/g allowed (CBS posvsdef)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "DK game total 53.5, the highest total on the Week 6 slate"
+          },
+          {
+            "label": "Injury",
+            "dir": "neutral",
+            "detail": "Allen not listed on Bills injury report as of Oct 13 (ESPN)"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 239.5,
+        "opening_captured_at": "2026-10-14T17:07:46Z",
+        "current_line": 239.5,
+        "current_captured_at": "2026-10-14T17:07:46Z"
+      },
+      {
+        "player": "Tre Tucker",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Covers.com consensus (best theScore Bet -111)",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Raiders are 5.5-pt home dogs in the slate's highest total (53.5) and Buffalo ranks 31st of 32 vs WR; covers.com projects 49.09 vs the 35.5 line (+26.03% EV). | Stake $15 \u00b7 pass at 38.5",
+        "factors": [
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projects 49.09 rec yds vs 35.5 line, +13.6 diff, 26.03% EV"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Buffalo ranks 31st of 32 vs WR, 27.00 fantasy pts/g allowed (CBS posvsdef)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Raiders 5.5-pt home dogs in a 53.5 total -- more pass volume likely for the trailing side"
+          },
+          {
+            "label": "Injury",
+            "dir": "neutral",
+            "detail": "Tucker not listed on Raiders injury report as of Oct 13 (ESPN); Nailor (WR) questionable"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "rec_yards picks hit 19/41 (46%) in graded Line Watch history"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 35.5,
+        "opening_captured_at": "2026-10-14T17:07:46Z",
+        "current_line": 35.5,
+        "current_captured_at": "2026-10-14T17:07:46Z"
+      }
+    ]
+  },
+  "final_score": {
+    "home": 30,
+    "away": 33
+  }
+}

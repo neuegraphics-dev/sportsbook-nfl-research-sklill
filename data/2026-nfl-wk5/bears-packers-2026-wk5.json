@@ -1,0 +1,516 @@
+{
+  "game_id": "bears-packers-2026-wk5",
+  "matchup": "Chicago Bears @ Green Bay Packers",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 45.5,
+      "ml_fav": -135,
+      "ml_dog": 118
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 has CHI -1.5/44.5 -- books disagree on the favorite; Caleb Williams status likely the swing."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 45.5,
+        "ml_fav": -135,
+        "ml_dog": 118
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 has CHI -1.5/44.5 -- books disagree on the favorite; Caleb Williams status likely the swing."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -138,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). CHI now favored (-2.5/-3) with Bagent; SI (Oct 6) says DK actually OPENED CHI -1.5 -- Monday's GB -2.5 opener capture was likely a misread; treat opening_line on this game as unreliable."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 45.5,
+        "ml_fav": -138,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": 2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 2.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 45.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:49Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Packers"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -120,
+        "ml_dog": 100
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 1,
+        "total": 45.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Packers. DK ML via cleatz (Bears -120/Packers +100)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -125.0,
+        "ml_dog": 105.0
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -124.0,
+        "ml_dog": 106.0
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -124.0,
+        "ml_dog": 105.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -122,
+        "ml_dog": 104
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 46.5,
+        "ml_fav": -124,
+        "ml_dog": 105
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 46.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 45.5,
+        "ml_fav": -124,
+        "ml_dog": 106
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 46.5,
+        "ml_fav": -124,
+        "ml_dog": 105
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Packers."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 47.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 46.5,
+        "ml_fav": -124,
+        "ml_dog": 106
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 47,
+        "ml_fav": -124,
+        "ml_dog": 105
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 47.5,
+        "ml_fav": -125,
+        "ml_dog": 105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 46.5,
+        "ml_fav": -120,
+        "ml_dog": 102
+      },
+      "caesars": {
+        "spread": 1,
+        "total": 47,
+        "ml_fav": -124,
+        "ml_dog": 105
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Packers +1.5 to +2.5",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Caleb Williams (CHI QB) out, D'Andre Swift/Monangai questionable -- already priced (-5.0 pts away)",
+      "Edgerrin Cooper (GB LB) out (-0.75 home)",
+      "89% of handle on CHI with the line moved to GB's benefit -- money and line agree, no RLM"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-08T12:56:45Z",
+    "home": {
+      "items": [
+        {
+          "position": "LB",
+          "player": "Edgerrin Cooper",
+          "status": "out",
+          "pts": -0.75,
+          "note": "Achilles, likely season-ending"
+        }
+      ],
+      "items_total_pts": -0.75,
+      "stacking_notes": [],
+      "total_pts": -0.75
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Caleb Williams",
+          "status": "out",
+          "pts": -4.0,
+          "note": "Ruled out Wk5 (grade 2 hamstring, week-to-week) per NBC/BR/SI Oct 5-6; Tyson Bagent starts"
+        },
+        {
+          "position": "RB",
+          "player": "D'Andre Swift",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Hip/knee, DNP Wed Oct 7"
+        },
+        {
+          "position": "RB",
+          "player": "Kyle Monangai",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Thumb/toe, DNP Wed Oct 7 -- both lead backs DNP"
+        }
+      ],
+      "items_total_pts": -5.0,
+      "stacking_notes": [],
+      "total_pts": -5.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.280455+00:00",
+    "n": 10000,
+    "homeElo": 1478.2,
+    "awayElo": 1564.8,
+    "gamesSeen": 8,
+    "eloMarginHome": -1.5,
+    "statsMarginHome": -1.5,
+    "marginDivergence": -0.1,
+    "projTotal": 47.1,
+    "homeWinProbElo": 44.5,
+    "marketHomeSpread": 1.5,
+    "marketTotal": 47,
+    "homeInjuryPts": -0.75,
+    "awayInjuryPts": -5.0,
+    "projHomeMeanRaw": 22.8,
+    "projAwayMeanRaw": 24.3,
+    "projHomeMeanAdjusted": 22.0,
+    "projAwayMeanAdjusted": 19.3,
+    "injuryAdjustedMarginHome": 2.7,
+    "projTotalAdjusted": 41.4,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -0.8 pts -- Edgerrin Cooper (LB, out, -0.8).",
+      "Away injury adjustment: -5.0 pts -- Caleb Williams (QB, out, -4.0), D'Andre Swift (RB, questionable, -0.5), Kyle Monangai (RB, questionable, -0.5).",
+      "Green Bay Packers (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Aaron Banks (-1.0), Zach Bako-Bewele (-1.0), Jayden Reed (-1.2), Warren Brinson (-0.5), Javon Hargrave (-0.3) [-4.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Chicago Bears (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]; Caleb Williams (-4.0) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 55.4,
+    "awayWinPct": 41.7,
+    "tiePct": 2.9,
+    "medianHomeScore": 22,
+    "medianAwayScore": 19,
+    "coverPctHome": 61.2,
+    "overPct": 33.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.296983+00:00",
+      "marginHome": 1.2,
+      "total": 42.9
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.164021+00:00",
+      "marginHome": 1.7,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.503673+00:00",
+      "marginHome": 1.7,
+      "total": 42.4
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.125654+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-09T16:15:13.022730+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.744081+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.256353+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-10T17:10:49.938683+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.778164+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.280455+00:00",
+      "marginHome": 2.7,
+      "total": 41.4
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-08T13:00:13Z",
+    "analysis": [
+      "Caleb Williams is out for Week 5 (grade 2 hamstring) and Tyson Bagent starts; even so the market has moved toward Chicago, from an opening Bears -1.5 to -3. (Monday's capture logged Green Bay as the opening favorite -- SI reports DraftKings actually opened Chicago -1.5, so treat this game's opening line as unreliable.) The game moved to 1pm ET.",
+      "With Williams priced out, Elo makes Green Bay a 1.7-point favorite, but Chicago's real 2026 scoring is far better than Green Bay's, and Green Bay lost Edgerrin Cooper with Micah Parsons still out. The two model views point opposite ways -- pass."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Packers +2.5 (Hard Rock) / +1.5",
+        "confidence": 5,
+        "reasoning": "Both CHI lead backs (Swift, Monangai) DNP with Bagent at QB; sim GB by 2.7. Line moved from GB +2.5 to +1.5 at DK even with 89% of handle on CHI. | Stake $15 at +2/+2.5; $7.50 at +1.5 \u00b7 pass at +1",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-09T17:32:37Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM); statmuse.com game log for volume",
+    "picks": [
+      {
+        "player": "Luther Burden III",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Covers (best line)",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Averaged 62 rec yds over last 2 games on 11 and 6 targets; model projects well clear of the line. | Stake $15 \u00b7 pass at 49.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "GB ranks 15th of 32 vs WR, 139.0 yds/g allowed -- middle of the pack"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "29 targets across 4 games (~7.3/g); 63 rec yds in each of last 2 outings on 11 and 6 targets"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 62.45 vs 45.5 line, +16.9 diff, 26.2% EV"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 45.5,
+        "opening_captured_at": "2026-10-09T17:32:37Z",
+        "current_line": 45.5,
+        "current_captured_at": "2026-10-09T17:32:37Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:56Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 49,
+      "handle_pct_home": 29
+    },
+    "total": {
+      "bets_pct_over": 58,
+      "handle_pct_over": 81
+    },
+    "moneyline": {
+      "bets_pct_home": 42,
+      "handle_pct_home": 52
+    },
+    "reverse_line_move": false,
+    "rlm_note": "71% of handle is on the away side and the spread has moved toward them (-2.5 -> +1.5) -- money and line agree, no RLM.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "final_score": {
+    "home": 31,
+    "away": 7
+  }
+}

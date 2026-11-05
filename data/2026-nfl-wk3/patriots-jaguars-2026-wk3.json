@@ -1,0 +1,330 @@
+{
+  "game_id": "patriots-jaguars-2026-wk3",
+  "matchup": "New England Patriots @ Jacksonville Jaguars",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": -2.5,
+      "total": 45.0,
+      "ml_fav": -152,
+      "ml_dog": 129
+    },
+    "draftkings": {
+      "spread": -1.5,
+      "total": 46.5,
+      "ml_fav": -132,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 45.0,
+        "ml_fav": -152,
+        "ml_dog": 129
+      },
+      "draftkings": {
+        "spread": -1.5,
+        "total": 46.5,
+        "ml_fav": -132,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -157,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 46.0,
+        "ml_fav": -152,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK Jaguars -2.5 vs Caesars/BME -3.0"
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 45.0,
+        "ml_fav": -158,
+        "ml_dog": 139
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 46.0,
+        "ml_fav": -152,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Jaguars(home) favored; BME/Caesars agree -3, DK half-pt softer at -2.5."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 46.0,
+        "ml_fav": -158,
+        "ml_dog": 139
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 46.0,
+        "ml_fav": -152,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:28:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 46.0,
+        "ml_fav": -152,
+        "ml_dog": 140
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK/Caesars steady at JAX -2.5/-3 since Fri. NE OUT: OLB Dre'Mont Jones (shoulder), OLB Hutchins (IR); NE also lost G Onwenu and S Pettus to IR earlier -- real O-line/pass-rush depletion for the Patriots. A.J. Brown remains on IR, already long-priced. Cleatz shows heavy NE tickets+handle (72/78%) but the line hasn't moved toward NE at all -- per this projects own RLM rule, lopsided-with-no-movement is NOT evidence of RLM."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- JAX steady at -2.5/-3, NE getting the public/money but the line hasnt followed (explicitly not RLM per this cycles own criteria -- no movement to point at)",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "NE missing 2 OLBs (Jones, Hutchins) plus earlier OL/S IR losses -- real depth issue but nothing crossing the starter-out threshold today",
+      "72-78% of NE tickets/handle with zero line movement -- logged, not actionable per this projects RLM rule"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:28:02.604025+00:00",
+    "n": 10000,
+    "homeElo": 1621.1,
+    "awayElo": 1669.8,
+    "gamesSeen": 4,
+    "eloMarginHome": -0.0,
+    "statsMarginHome": -0.3,
+    "marginDivergence": 0.3,
+    "projTotal": 43.0,
+    "homeWinProbElo": 49.9,
+    "marketHomeSpread": -3.0,
+    "marketTotal": 46.0,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 21.5,
+    "projAwayMeanRaw": 21.5,
+    "projHomeMeanAdjusted": 21.5,
+    "projAwayMeanAdjusted": 21.5,
+    "injuryAdjustedMarginHome": -0.0,
+    "projTotalAdjusted": 43.0,
+    "spreadLean": "away",
+    "totalLean": "under",
+    "notes": [],
+    "homeWinPct": 48.1,
+    "awayWinPct": 48.7,
+    "tiePct": 3.1,
+    "medianHomeScore": 21,
+    "medianAwayScore": 22,
+    "coverPctHome": 41.2,
+    "overPct": 41.4
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-25T13:42:29Z",
+    "analysis": [
+      "The model reads this as close to dead even (home margin essentially 0.0) despite Jacksonville being favored at market -- DraftKings has the Jaguars at -2.5, Caesars at -3.0 -- a real gap between what the numbers say and what the market is charging either way. A.J. Brown remains on IR for New England, but that's been priced in since early September and isn't new information moving this week's read.",
+      "The total agrees with the spread signal here: model total (43.0) sits 3 points under the market's 46.0, and 58% of sim runs have the Patriots covering the current number -- two signals pointing the same direction, even if neither individually clears the model's higher-conviction bar."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "NE +2.5 (DraftKings)",
+        "confidence": 6,
+        "reasoning": "Model has this game at a near-even margin against a market favoring Jacksonville by 2.5-3 -- a real gap, and 58% of sims have New England covering.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "Near-even (-0.0) vs a market favoring Jacksonville by 2.5-3 -- a real gap"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "58% of sims have New England covering"
+          },
+          {
+            "label": "Reverse line move",
+            "dir": "against",
+            "detail": "66% of handle is on Patriots but the line moved TOWARD Jacksonville -- sharp money disagrees with this lean"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      },
+      {
+        "market": "total",
+        "pick": "Under 46",
+        "confidence": 5,
+        "reasoning": "Model total (43.0) sits 3 points under the market number, agreeing directionally with the spread-side read on a tighter game than the market expects.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model total 43.0, 3 points under the market (46)"
+          },
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "Near-even game (-0.0) implies no blowout, consistent with a lower-scoring read"
+          },
+          {
+            "label": "Spread linkage",
+            "dir": "neutral",
+            "detail": "Agrees directionally with the spread-side read on this game, not an independent signal"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "wagertalk_host_picks": [
+    {
+      "host": "Marco",
+      "pick": "Jacksonville Jaguars -- \"Sandwich Game of the Week\"",
+      "best_bet": false,
+      "note": "Marco flags Jacksonville as his Sandwich Game of the Week (27:20-30:53); this designation typically flags a let-down/trap spot, so it may signal fading JAX rather than backing them -- worth confirming his exact side from the video."
+    }
+  ],
+  "market_signal": {
+    "captured_at": "2026-09-27T13:28:02Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 28,
+      "handle_pct_home": 22
+    },
+    "total": null,
+    "moneyline": {
+      "bets_pct_home": 30,
+      "handle_pct_home": 15
+    },
+    "reverse_line_move": true,
+    "rlm_note": "78% of handle is on the away side but the spread moved AGAINST them (-2.5 -> -3) -- real reverse line move toward home.",
+    "note": "Home-relative: JAX is home/favorite."
+  },
+  "props": {
+    "last_checked": "2026-09-24T19:20:37Z",
+    "status": "captured",
+    "source_note": "BetMGM via sportsbettingdime props roundup",
+    "picks": [
+      {
+        "player": "Bhayshul Tuten",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "BetMGM",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Tuten ran well in Wk2, but NE is a top-10 run D vs RBs and a -3 spread doesn't promise a lead -- capped as a lean into a tough matchup.",
+        "opening_line": 53.5,
+        "opening_captured_at": "2026-09-24T13:10:20Z",
+        "current_line": 53.5,
+        "current_captured_at": "2026-09-24T19:20:37Z",
+        "factors": [
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "Wk2 vs DEN: 13 car, 65 yds, TD (5.0 YPC) -- clears 53.5 on ~11 carries at that rate"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "NE 9th-fewest pts to RBs (10.5/g); 165 RB rush yds allowed in 2 games (82.5/g)"
+          },
+          {
+            "label": "Volume",
+            "dir": "against",
+            "detail": "Only 13 carries in Wk2 -- thin margin if the workload doesn't grow"
+          },
+          {
+            "label": "Game script",
+            "dir": "neutral",
+            "detail": "JAX -3, 45 total -- close game, no clear run-heavy script"
+          }
+        ],
+        "matchup": {
+          "opp_rank_vs_pos": 9,
+          "rank_basis": "footballdb fantasy pts allowed to RBs, Wks 1-2 (1 = fewest)"
+        },
+        "alignment": {
+          "for": 1,
+          "against": 2,
+          "neutral": 1,
+          "net": -1
+        }
+      }
+    ]
+  },
+  "final_score": {
+    "home": 35,
+    "away": 6
+  }
+}

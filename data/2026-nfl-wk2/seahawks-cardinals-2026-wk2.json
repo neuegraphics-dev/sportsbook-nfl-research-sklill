@@ -1,0 +1,234 @@
+{
+  "game_id": "seahawks-cardinals-2026-wk2",
+  "matchup": "Seattle Seahawks @ Arizona Cardinals",
+  "week": "Week 2",
+  "kickoff": "2026-09-20T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-14",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 5.5,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-14T15:06:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 5.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening/current line captured via consensus preview sources (sportsbettingdime.com + foxsports.com cross-check for direction) ahead of the normal Tier-2/3 validated-source cycle -- logged as draftkings pending a rotowire/vegasinsider/bookmaker.eu refresh. Vikings-Bears direction corrected after sportsbettingdime showed it backwards vs. multiple other sources (Bears are favored, not Vikings)."
+    },
+    {
+      "captured_at": "2026-09-14T16:03:37Z",
+      "bookmaker_eu": {
+        "spread": -4.0,
+        "total": 40.5,
+        "ml_fav": -223,
+        "ml_dog": 186
+      },
+      "draftkings": null,
+      "fanduel": {
+        "spread": -4.5,
+        "total": 41.5,
+        "ml_fav": -235,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "Full-refresh pass 2026-09-14 ~16:00 UTC, replacing this morning's consensus-preview placeholder with real per-book data. BookMaker.eu fetched live from its own odds board. FanDuel fetched from its research page (confirmed today-dated, 2026-09-14 -- not the historically-frozen pattern this source usually shows, since Week 2 content didn't exist before this week). DraftKings via rotowire failed to render tonight (page stuck on client-side 'Loading NFL Odds...', no data in the static fetch) -- logged null rather than guess. Caesars via vegasinsider produced internally inconsistent numbers this pass (several entries contradicted BookMaker.eu/FanDuel by 3-5+ points in ways no other source supports) -- treated as unreliable and logged null rather than pass off a probable extraction error as real."
+    },
+    {
+      "captured_at": "2026-09-14T16:04:13Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 40.5,
+        "ml_fav": -223,
+        "ml_dog": 186
+      },
+      "draftkings": null,
+      "fanduel": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -235,
+        "ml_dog": null
+      },
+      "caesars": null,
+      "note": "CORRECTION to the snapshot logged minutes ago in this same refresh pass: the spread sign was entered wrong on this game. The AWAY team is the favorite here, so the home-relative spread (this project's convention: negative = HOME favored) must be POSITIVE, not negative -- I initially wrote the raw 'favorite's own number' without flipping the sign for the away-favorite case, exactly the mistake the skill's own sign-convention notes warn about. Numbers themselves (which book, which price) are unchanged from the prior snapshot -- only the spread sign is corrected."
+    },
+    {
+      "captured_at": "2026-09-15T12:36:15Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 41.0,
+        "ml_fav": -212,
+        "ml_dog": 178
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu fetched live (fresh Sep 15 6:30am PT board). DraftKings via rotowire.com failed to load (page returned only loading placeholders, no data). Caesars/DK cross-check via vegasinsider.com returned a stale Week 1 table (marked 'Last Updated: September 13, 2026', still showing Week 1 matchups) instead of Week 2 -- not a real current read, logged null rather than pass off Week 1 numbers as Week 2. FanDuel not attempted this pass (editorial page long since established frozen/stale). Sharp reference (BookMaker.eu) is the only confirmed-current book this cycle."
+    },
+    {
+      "captured_at": "2026-09-16T01:57:14Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 41.0,
+        "ml_fav": -212,
+        "ml_dog": 178
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -225,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Caesars via VegasInsider (spread only, totals unconfirmed); FanDuel source frozen/stale, logged null"
+    },
+    {
+      "captured_at": "2026-09-17T16:16:00Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 41,
+        "ml_fav": -222,
+        "ml_dog": 185
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire returned numbers byte-identical to the Sep 16 snapshot across the entire tracked slate despite a same-day freshness marker -- treated as a probable stale/non-refreshed source, not confirmed real 'no movement'. Caesars/VegasInsider page dated Sep 15 (2 days old) -- logged null rather than pass off a stale number. BookMaker.eu shows real movement on several games but without a second live book corroborating it today, treat that movement as informational only this cycle, not yet confirmed as a genuine market move."
+    },
+    {
+      "captured_at": "2026-09-18T13:38:39Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 41.0,
+        "ml_fav": -222,
+        "ml_dog": 185
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK/rotowire (marked 'Last Verified: Sep 18 2026') and BookMaker.eu both returned numbers byte-identical to the Sep 17 snapshot across the ENTIRE tracked slate -- treated as a probable stale/non-refreshed source pass, not confirmed as genuine 'no movement' today. Caesars via VegasInsider still dated Sep 15 (3 days old) -- logged null. FanDuel's editorial page is established frozen/stale, not attempted this pass."
+    },
+    {
+      "captured_at": "2026-09-19T12:35:11Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 41.0,
+        "ml_fav": -202,
+        "ml_dog": 170
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "Systemic staleness this cycle: DraftKings via rotowire.com returned numbers byte-identical to the Sep 18 snapshot with a Sep-18-dated (not today) freshness marker -- treated as stale/non-refreshed, logged null rather than pass off yesterday's numbers as today's. Caesars/FanDuel via vegasinsider.com dated Sep 15/Sep 17 -- also stale, logged null. BookMaker.eu fetched live from its own board and moved on most games -- treat this movement as informational pending a US book actually repricing, not yet confirmed as a genuine market move (see systemic-divergence caution)."
+    },
+    {
+      "captured_at": "2026-09-20T12:44:48Z",
+      "bookmaker_eu": {
+        "spread": 4.0,
+        "total": 41.0,
+        "ml_fav": -202,
+        "ml_dog": 170
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 4.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home-relative spread shown for Cardinals (home); Seahawks favored. DK via rotowire last verified 2026-09-19. Caesars spread-only via VegasInsider."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-20",
+    "spread_lean": "No lean",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Cardinals have a lengthy report (6 questionable) but no starters ruled out; Seahawks OL Anthony Bradford is out plus one more, two more questionable -- roughly a wash",
+      "No weather concern flagged (Arizona plays under a roof)"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-20T12:45:05.087153+00:00",
+    "n": 10000,
+    "homeElo": 1412.9,
+    "awayElo": 1698.1,
+    "gamesSeen": 2,
+    "eloMarginHome": -9.5,
+    "statsMarginHome": -5.1,
+    "marginDivergence": -4.4,
+    "projTotal": 44.7,
+    "homeWinProbElo": 20.3,
+    "marketHomeSpread": 4.0,
+    "marketTotal": 41.5,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (-9.5) and recent-scoring margin (-5.1) disagree by 4.4 points -- worth a second look before trusting either alone.",
+      "Only 2 logged game(s) across both teams -- leans are suppressed below 4 to avoid mistaking a cold-start rating gap for a real signal. Raw cover%/over% still shown below for reference."
+    ],
+    "homeWinPct": 23.9,
+    "awayWinPct": 73.8,
+    "tiePct": 2.4,
+    "medianHomeScore": 18,
+    "medianAwayScore": 27,
+    "coverPctHome": 35.1,
+    "overPct": 59.1
+  },
+  "wagertalk_angle": {
+    "pick": "Cardinals +5.5",
+    "pick_team": "Arizona Cardinals",
+    "pct": 87.5,
+    "system": "Away favorite after a home-favorite win (fade)",
+    "why": "Seattle was a -4 home favorite in Week 1 and is now a -5.5 AWAY favorite in Week 2, inside the up-to -6.5 window this system fades. That specific shape has covered only ~12.5% ATS for the road favorite historically -- implying ~87.5% for the other side.",
+    "stack_count": 1
+  },
+  "final_score": {
+    "home": 7,
+    "away": 31
+  }
+}

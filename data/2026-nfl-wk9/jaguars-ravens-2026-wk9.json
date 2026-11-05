@@ -1,0 +1,236 @@
+{
+  "game_id": "jaguars-ravens-2026-wk9",
+  "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
+  "week": "Week 9",
+  "kickoff": "2026-11-06T01:15:00Z",
+  "opening_line": {
+    "captured_at": "2026-11-02",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 8.5,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "fanduel": {
+      "spread": 8.5,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "caesars": {
+      "spread": 8.5,
+      "total": 43.5,
+      "ml_fav": null,
+      "ml_dog": null
+    },
+    "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-11-02T14:49:37Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 8.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 8.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 8.5,
+        "total": 43.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Week 9 first capture Mon 2026-11-02 ~15:00Z from covers.com odds board (browser render, page updated 9:47 AM ET). Not the true opener (posted Sunday night). Moneylines not captured. BookMaker.eu unavailable."
+    },
+    {
+      "captured_at": "2026-11-03T15:29:04Z",
+      "bookmaker_eu": {
+        "spread": 9.5,
+        "total": 42,
+        "ml_fav": -428,
+        "ml_dog": 336
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": {
+        "spread": 9.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-03 run: Caesars spread via VegasInsider (updated 11/2 3:40PM, spread only, totals unavailable); BookMaker.eu live board (updated 11/3 12:24AM PT; spread/total/ML). DraftKings/FanDuel null: rotowire odds page returned stale 2025 content and covers week-9 page unreachable, so no confirmed current DK number."
+    },
+    {
+      "captured_at": "2026-11-04T14:57:17Z",
+      "bookmaker_eu": {
+        "spread": 9.5,
+        "total": 42,
+        "ml_fav": -428,
+        "ml_dog": 336
+      },
+      "draftkings": {
+        "spread": 10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    }
+  ],
+  "research": {
+    "last_run": null,
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": null,
+    "top_signals": []
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "active",
+  "simulation": {
+    "run_at": "2026-11-04T14:57:28.573267+00:00",
+    "n": 10000,
+    "homeElo": 1489.5,
+    "awayElo": 1660.6,
+    "gamesSeen": 15,
+    "eloMarginHome": -4.9,
+    "statsMarginHome": -6.2,
+    "marginDivergence": 1.3,
+    "projTotal": 47.9,
+    "homeWinProbElo": 33.0,
+    "marketHomeSpread": 9.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": -3.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 21.5,
+    "projAwayMeanRaw": 26.4,
+    "projHomeMeanAdjusted": 18.5,
+    "projAwayMeanAdjusted": 26.4,
+    "injuryAdjustedMarginHome": -7.9,
+    "projTotalAdjusted": 44.9,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -3.0 pts -- Lamar Jackson / Tyler Huntley (QB, doubtful, -3.0).",
+      "Baltimore Ravens (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]; Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]; Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 28.9,
+    "awayWinPct": 68.9,
+    "tiePct": 2.2,
+    "medianHomeScore": 19,
+    "medianAwayScore": 26,
+    "coverPctHome": 55.2,
+    "overPct": 54.2
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-11-02T14:50:11.762043+00:00",
+      "marginHome": -7.9,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-11-03T15:29:16.359675+00:00",
+      "marginHome": -7.9,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-11-04T14:57:28.573267+00:00",
+      "marginHome": -7.9,
+      "total": 44.9
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-11-02T14:50:11Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Lamar Jackson / Tyler Huntley",
+          "status": "doubtful",
+          "pts": -3.0,
+          "note": "Jackson thumb injury (could be out for more time per baltimoreravens.com 11/1), Huntley toe injury; rookie Joe Fagnano played in relief. Starter unresolved, so priced at an uncertainty-weighted -3.0 rather than the full backup penalty; the -8.5 market already reflects part of it. Revisit Wed/Thu."
+        }
+      ],
+      "items_total_pts": -3.0,
+      "stacking_notes": [],
+      "total_pts": -3.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "props": {
+    "last_checked": "2026-11-02T14:50:11Z",
+    "status": "pending",
+    "source_note": "TNF props not on covers.com board Mon 2026-11-02 AM (page lists only prior games); re-check Tue/Wed.",
+    "picks": []
+  },
+  "game_evaluation": {
+    "last_updated": "2026-11-02T14:50:26Z",
+    "analysis": [
+      "Sim: Jacksonville Jaguars by 7.9 (injury-adjusted) against a market that has Jacksonville Jaguars favored by 8.5, a 0.6-point gap; sim cover% for Baltimore Ravens is 51.7% and projected total is 44.9 vs 43.5 (over 53.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
+      "Ravens QB situation is unresolved (Lamar Jackson thumb, Tyler Huntley toe, rookie Joe Fagnano played in relief), priced at -3.0 pts for Baltimore. With no spread edge after that adjustment, the only thin lean is the Over, labeled minimum-action for the Thursday-night window; re-check once the starting QB is known."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 43.5",
+        "confidence": 4,
+        "best_bet": true,
+        "reasoning": "Minimum-action pick (Thursday-night window): sim projects 44.9 adjusted vs 43.5 (over 53.8%), but the starting QB for BAL is unresolved. Re-check Wed/Thu. | Stake $6 \u00b7 pass at 44",
+        "factors": [
+          {
+            "label": "Sim total",
+            "dir": "for",
+            "detail": "Adjusted projection 44.9 vs 43.5 market"
+          },
+          {
+            "label": "QB status",
+            "dir": "against",
+            "detail": "BAL QB unresolved (Jackson thumb, Huntley toe); a rookie QB drags scoring"
+          },
+          {
+            "label": "Injury model",
+            "dir": "neutral",
+            "detail": "Injury pts shrink BAL scoring; sim already includes -3.0"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 1,
+          "neutral": 1,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "weather": {
+    "captured_at": "2026-11-05T02:48:41Z",
+    "stadium": "M&T Bank Stadium",
+    "roof": "open",
+    "wind_mph": 5.0,
+    "gust_mph": null,
+    "temp_f": 60.0,
+    "precip_pct": 50.0,
+    "impact": "none",
+    "source": "forecast.weather.gov MapClick, Thursday night period (rain mainly after midnight)",
+    "history": []
+  }
+}

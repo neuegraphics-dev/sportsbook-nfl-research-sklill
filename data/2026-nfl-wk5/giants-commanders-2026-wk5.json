@@ -1,0 +1,522 @@
+{
+  "game_id": "giants-commanders-2026-wk5",
+  "matchup": "New York Giants @ Washington Commanders",
+  "week": "Week 5",
+  "kickoff": "2026-10-11T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-05",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -2.5,
+      "total": 43.5,
+      "ml_fav": -138,
+      "ml_dog": 120
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 WAS -3/44.5. WAS QB: Daniels (elbow) and Mariota (knee, Wk4) both hurt."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-05T12:56:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 43.5,
+        "ml_fav": -138,
+        "ml_dog": 120
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Opening capture Mon 10/5 AM: DK via rotowire.com/betting/nfl/odds/week-5 (last verified Oct 4; book label from page summary). bet365 (FOX Sports, Oct 4 8:41pm) cross-check in note. bet365 WAS -3/44.5. WAS QB: Daniels (elbow) and Mariota (knee, Wk4) both hurt."
+    },
+    {
+      "captured_at": "2026-10-05T17:56:24Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "Mon 10/5 midday: Michael reports Giants +3 at his book (logged in DK slot as the current US-book read; book unconfirmed)."
+    },
+    {
+      "captured_at": "2026-10-06T12:47:20Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 44.5,
+        "ml_fav": -170,
+        "ml_dog": 155
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Tue 10/6 AM: DK via rotowire week-5 (last verified Oct 5); Caesars/FanDuel spreads via VegasInsider (Oct 5); bet365 via FOX (Oct 5 3:08pm) in note. BookMaker.eu unavailable (served stale 2025 board). Moved toward WAS on Glazer report Daniels plans to start."
+    },
+    {
+      "captured_at": "2026-10-07T17:46:09Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 44.5,
+        "ml_fav": -170,
+        "ml_dog": 155
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Wed 10/7 1:45pm ET: DK via rotowire week-5 (verified Oct 7) -- numbers identical to Tue across the whole slate, treat as possibly stale; Caesars/FanDuel spreads via VegasInsider (moved on several games)"
+    },
+    {
+      "captured_at": "2026-10-08T12:55:58Z",
+      "bookmaker_eu": null,
+      "draftkings": null,
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Thu 10/8 9am ET: FanDuel/Caesars spreads via VegasInsider. DK not logged -- rotowire DK page unchanged for 3 days (stale). Consensus totals per cleatz.com: total 42.5"
+    },
+    {
+      "captured_at": "2026-10-08T12:59:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 42.5,
+        "ml_fav": -180,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "CORRECTION Thu 10/8 9:15am ET: replaces this morning's snapshot, whose FD/CZR numbers came from a mis-columned page summary. Spreads read directly from VegasInsider's per-book columns (DK/CZR/FD); DK totals and moneylines from cleatz.com, which matches DK's prices."
+    },
+    {
+      "captured_at": "2026-10-09T16:13:39Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -4,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spread via VegasInsider DOM, home=Commanders"
+    },
+    {
+      "captured_at": "2026-10-09T21:00:46Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -4.5,
+        "total": 41.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 42.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -4.0,
+        "total": 41.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=Commanders. DK ML via cleatz (Commanders -192/Giants +160)."
+    },
+    {
+      "captured_at": "2026-10-10T13:06:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -170.0,
+        "ml_dog": 142.0
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 42.5,
+        "ml_fav": -190.0,
+        "ml_dog": 160.0
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190.0,
+        "ml_dog": 157.0
+      },
+      "note": "VegasInsider per-book DOM read (bet365/betmgm/draftkings/caesars/fanduel/hardrock/fanatics/riverscasino columns), cross-checked vs cleatz.com DK spread for Eagles-Jaguars (exact match). BookMaker.eu unreachable today, logged null."
+    },
+    {
+      "captured_at": "2026-10-10T17:07:01Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 157
+      }
+    },
+    {
+      "captured_at": "2026-10-10T21:01:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 157
+      },
+      "note": "DK total/ML via cleatz.com; DK/Caesars/FanDuel spread + Caesars/FanDuel total/ML via VegasInsider DOM. Home=Commanders."
+    },
+    {
+      "captured_at": "2026-10-11T13:01:00Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 160
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 157
+      },
+      "note": "BookMaker.eu blocked for browser access today (site not approved); VegasInsider DOM (DK/Caesars/FD) via built-in browser."
+    },
+    {
+      "captured_at": "2026-10-11T17:04:57Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -192,
+        "ml_dog": 160
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -172,
+        "ml_dog": 144
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 41.5,
+        "ml_fav": -190,
+        "ml_dog": 157
+      },
+      "note": "DK spread via VegasInsider DOM; DK total/ML via cleatz.com consensus per run instructions. Caesars/FanDuel spread+total+ML via VegasInsider DOM. BookMaker.eu unreachable this cycle (nav blocked)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Giants +3.5 (FanDuel) to +4.5 (DraftKings)",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Stefon Diggs ruled out (hamstring); Terry McLaurin still limited (hamstring) -- model now favors Giants outright (58.7% win)",
+      "Caution: WAS's own line move (-2.5 to -4.5) is a genuine reverse line move toward Washington, against this pick -- market money disagrees with our model+injury read"
+    ],
+    "last_run": "2026-10-09"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "injury_adjustments": {
+    "last_updated": "2026-10-09T21:05:15Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Stefon Diggs",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Hamstring, DNP all week per Giants.com Fri report. McLaurin remains the true WR1, so pricing this below a full alpha-WR penalty."
+        },
+        {
+          "position": "WR",
+          "player": "Terry McLaurin",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Hamstring, limited Fri practice. Trending to play but genuine uncertainty, small weighted penalty."
+        }
+      ],
+      "items_total_pts": -2.0,
+      "stacking_notes": [],
+      "total_pts": -2.0
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "simulation": {
+    "run_at": "2026-10-11T13:02:42.204705+00:00",
+    "n": 10000,
+    "homeElo": 1379.2,
+    "awayElo": 1473.6,
+    "gamesSeen": 8,
+    "eloMarginHome": -1.9,
+    "statsMarginHome": -0.3,
+    "marginDivergence": -1.6,
+    "projTotal": 46.7,
+    "homeWinProbElo": 43.4,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 41.5,
+    "homeInjuryPts": -2.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 22.4,
+    "projAwayMeanRaw": 24.3,
+    "projHomeMeanAdjusted": 20.4,
+    "projAwayMeanAdjusted": 24.3,
+    "injuryAdjustedMarginHome": -3.9,
+    "projTotalAdjusted": 44.7,
+    "spreadLean": "away",
+    "totalLean": "over",
+    "notes": [
+      "Home injury adjustment: -2.0 pts -- Stefon Diggs (WR, out, -1.5), Terry McLaurin (WR, questionable, -0.5).",
+      "Washington Commanders (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "New York Giants (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Jameis Winston (-4.0), Malik Nabers (-0.6) [-4.6 pts total]; Jameis Winston (-4.0), Brian Burns (-1.5) [-5.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 38.2,
+    "awayWinPct": 59.2,
+    "tiePct": 2.5,
+    "medianHomeScore": 21,
+    "medianAwayScore": 24,
+    "coverPctHome": 30.5,
+    "overPct": 59.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-05T13:01:20.615602+00:00",
+      "marginHome": -5.4,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-05T17:56:24.465275+00:00",
+      "marginHome": -5.4,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-06T12:47:21.468799+00:00",
+      "marginHome": -2.9,
+      "total": 45.7
+    },
+    {
+      "run_at": "2026-10-07T17:49:15.801210+00:00",
+      "marginHome": -2.9,
+      "total": 45.7
+    },
+    {
+      "run_at": "2026-10-08T12:59:58.436929+00:00",
+      "marginHome": -1.1,
+      "total": 45.9
+    },
+    {
+      "run_at": "2026-10-09T16:15:12.952241+00:00",
+      "marginHome": -1.1,
+      "total": 45.9
+    },
+    {
+      "run_at": "2026-10-09T17:27:39.693435+00:00",
+      "marginHome": -1.9,
+      "total": 45.7
+    },
+    {
+      "run_at": "2026-10-09T21:05:21.930272+00:00",
+      "marginHome": -3.9,
+      "total": 44.7
+    },
+    {
+      "run_at": "2026-10-10T13:09:15.177413+00:00",
+      "marginHome": -3.9,
+      "total": 44.7
+    },
+    {
+      "run_at": "2026-10-10T17:10:50.109198+00:00",
+      "marginHome": -3.9,
+      "total": 44.7
+    },
+    {
+      "run_at": "2026-10-10T21:04:15.925730+00:00",
+      "marginHome": -3.9,
+      "total": 44.7
+    },
+    {
+      "run_at": "2026-10-11T13:02:42.204705+00:00",
+      "marginHome": -3.9,
+      "total": 44.7
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-10T21:05:14Z",
+    "analysis": [
+      "Washington is favored by 3-3.5 across books (down a touch from the -4.5 high earlier in the week), but the sim now has the Giants favored outright (58.7% win, WAS covers only 30.5% of sim trials) after Stefon Diggs (hamstring) was ruled out and Terry McLaurin remains limited with his own hamstring. New York's own injuries (Golston, Pinnock) are rotational-depth losses on defense, not offensive starters, so they are noted but not priced into the Giants own scoring.",
+      "Important correction: the market-side line move toward Washington is news-driven, not unexplained sharp money -- Jayden Daniels is expected back at QB after missing two games with a dislocated elbow (reported Oct 7), and Washington's backup options (Mariota hurt, rookie Kaliakmanis 15/33 in relief) are weak enough that his return alone moved the number. 93% of handle is still on New York and the line has moved toward Washington anyway (apply_market_signal.py flags this as a genuine reverse line move toward the home favorite), but given the Daniels-return explanation this reads as the market correctly pricing a real QB upgrade, not necessarily sharp money disagreeing with our injury-driven Giants lean. We keep the Giants lean on model+injury grounds while flagging that the line move itself has an honest news explanation, which tempers how much weight the RLM tag alone should carry here."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Giants +3.5 (FanDuel) to +4 (DraftKings/Caesars/FanDuel)",
+        "confidence": 6,
+        "reasoning": "Model favors NYG outright (58.7% win, WAS covers only 30.5% of sim trials) on the Diggs-out injury read, but Washington's line move is explained by Jayden Daniels' expected return (not unexplained sharp money) -- taking the number on model+injury edge while noting the market move has an honest news explanation rather than being a pure sharp signal. | Stake $15 \u00b7 pass at +3",
+        "best_bet": true
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-09T17:32:41Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM); statmuse.com game log",
+    "picks": [
+      {
+        "player": "Cam Skattebo",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "Covers (best line)",
+        "lean": "over",
+        "confidence": 3,
+        "reasoning": "Workhorse volume (18-20 carries/game) but WAS is the toughest rush defense he has faced, and he is questionable (shoulder, limited Thu) with no official Friday tag yet -- context only, not a bet this week. | Stake $0 \u00b7 pass at 48.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "WAS ranks 6th of 32 vs RB (tough-matchup cap applies), 73.5 rush yds/g allowed"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "18, 12, 20, 18 carries last 4 games -- clear workhorse role"
+          },
+          {
+            "label": "Injury",
+            "dir": "against",
+            "detail": "Shoulder, limited practice Thu Oct 8, no official Friday designation yet"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 2,
+          "neutral": 0,
+          "net": -1
+        },
+        "opening_line": 52.5,
+        "opening_captured_at": "2026-10-09T17:32:41Z",
+        "current_line": 52.5,
+        "current_captured_at": "2026-10-09T17:32:41Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-11T17:04:57Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 29,
+      "handle_pct_home": 19
+    },
+    "total": {
+      "bets_pct_over": 62,
+      "handle_pct_over": 26
+    },
+    "moneyline": {
+      "bets_pct_home": 53,
+      "handle_pct_home": 77
+    },
+    "reverse_line_move": true,
+    "rlm_note": "81% of handle is on the away side but the spread moved AGAINST them (-2.5 -> -3.5) -- real reverse line move toward home.",
+    "note": "Converted to home/over-relative from cleatz.com's team-labeled splits."
+  },
+  "final_score": {
+    "home": 27,
+    "away": 27
+  }
+}

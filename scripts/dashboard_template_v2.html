@@ -1,0 +1,1103 @@
+<title>Line Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght,ROND@6..144,25..151,1..1000,0..100&display=swap">
+<style>
+/* Layout: one scrolling page of card grids (Board, Teasers, Props, Money), a stock-chart slate, and a filterable hit-rate panel.
+   Single deliberate dark look: gold = the market's number, lilac = our model, cyan = where the money sits. */
+:root{
+  color-scheme: dark;
+  --ground:#0B0D12;
+  --surface:#151923;
+  --surface-2:#1B2030;
+  --surface-3:#222838;
+  --line:#232836;
+  --line-2:#343B4D;
+  --ink:#F2F3F7;
+  --ink-2:#BCC2D0;
+  --muted:#868EA2;
+  --faint:#596074;
+  --gold:#F2C35B;
+  --gold-dim:rgba(242,195,91,.14);
+  --lilac:#A99DFF;
+  --lilac-dim:rgba(169,157,255,.16);
+  --cash:#6CC6E8;
+  --cash-dim:rgba(108,198,232,.14);
+  --for:#6BDBAA;
+  --for-dim:rgba(107,219,170,.15);
+  --against:#FF8C7C;
+  --against-dim:rgba(255,140,124,.15);
+  --gutter:clamp(16px,4vw,56px);
+  --maxw:1320px;
+  --f:"Google Sans Flex","Google Sans","Product Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+html{background:var(--ground)}
+body{
+  margin:0;
+  background:radial-gradient(1100px 520px at 78% -8%,rgba(169,157,255,.10),transparent 62%),var(--ground);
+  color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;font-variation-settings:"ROND" 30;
+}
+*,*::before,*::after{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--lilac);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.num{font-variant-numeric:tabular-nums}
+.gold{color:var(--gold)} .lilac{color:var(--lilac)} .cash{color:var(--cash)}
+.label{font-size:.72rem;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- Top bar ---------- */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,13,18,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;gap:24px;min-height:56px}
+.mark{font-size:1.15rem;font-weight:500;letter-spacing:-.01em;white-space:nowrap}
+.mark b{font-weight:850;font-stretch:112%}
+.bar-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.bar-links::-webkit-scrollbar{display:none}
+.bar-links a{padding:6px 12px;border-radius:999px;font-size:.88rem;font-weight:550;color:var(--ink-2);white-space:nowrap}
+.bar-links a:hover{background:var(--surface-2);color:var(--ink)}
+.bar-clock{font-size:.82rem;color:var(--muted);white-space:nowrap}
+.bar-clock b{color:var(--ink);font-weight:650}
+@media (max-width:720px){.bar-clock{display:none}.bar-in{gap:12px}}
+
+/* ---------- Masthead ---------- */
+.mast{padding-block:clamp(36px,6vw,72px) 8px}
+.mast .label{display:flex;flex-wrap:wrap;gap:6px 14px}
+.lede{margin:16px 0 0;max-width:24ch;font-size:clamp(1.8rem,4.2vw,3.2rem);line-height:1.06;font-weight:420;letter-spacing:-.025em;text-wrap:balance}
+.lede b{font-weight:820}
+.lede a{border-bottom:2px solid var(--line-2)}
+.lede a:hover{border-color:var(--lilac)}
+.lede em{font-style:normal;color:var(--lilac);font-weight:700}
+.conf-key{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;color:var(--muted);font-size:.88rem}
+.conf-key .meter{width:150px;flex:none}
+.conf-key b{color:var(--ink-2);font-weight:650}
+
+/* ---------- Sections ---------- */
+.sec{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
+.sec.first{border-top:0;padding-top:32px}
+.sec-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px 48px;align-items:end;margin-bottom:clamp(24px,3.5vw,44px)}
+.sec-title{margin:0;font-size:clamp(2.3rem,6vw,4.8rem);line-height:.92;font-weight:780;font-stretch:88%;letter-spacing:-.04em;text-wrap:balance}
+.sec-title sup{font-size:.3em;font-weight:600;font-stretch:100%;letter-spacing:0;color:var(--muted);vertical-align:top;margin-left:.3em;position:relative;top:.5em}
+.sec-deck{margin:0;max-width:54ch;color:var(--ink-2);font-size:1rem}
+.sec-deck b{font-weight:700}
+.group-label{display:flex;align-items:baseline;gap:10px;margin:32px 0 14px}
+.group-label:first-child{margin-top:0}
+.group-label .sub{color:var(--faint);font-size:.8rem;letter-spacing:0;text-transform:none;font-weight:500}
+@media (max-width:820px){.sec-head{grid-template-columns:1fr}}
+
+/* ---------- Cards (shared by Board, Teasers, Props) ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px}
+.cards.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr))}
+.card{position:relative;display:flex;flex-direction:column;gap:12px;padding:18px 18px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;min-width:0;transition:border-color .2s,background .2s}
+a.card:hover{border-color:var(--line-2);background:#181D29}
+.card.best{border-color:rgba(242,243,247,.38)}
+.card.wong{border-color:rgba(169,157,255,.4)}
+.card-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 10px;font-size:.78rem;color:var(--muted)}
+.card-top .game{font-weight:650;color:var(--ink-2)}
+.mchip{display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:.68rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;background:var(--surface-3);color:var(--ink-2);white-space:nowrap}
+.mchip.prop{background:var(--gold-dim);color:var(--gold)}
+.mchip.wong{background:var(--lilac-dim);color:var(--lilac)}
+.card-main{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.card-main>div{min-width:0}
+.card-pick{font-size:1.4rem;font-weight:720;line-height:1.12;letter-spacing:-.02em;overflow-wrap:anywhere}
+.card-sub{margin-top:3px;font-size:.8rem;color:var(--muted)}
+.card-line{text-align:right;flex:none;line-height:1}
+.card-line .dir{display:block;font-size:.68rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:5px}
+.card-line b{font-size:2rem;font-weight:780;letter-spacing:-.03em}
+.card-why{margin:0;font-size:.88rem;color:var(--ink-2);line-height:1.5}
+.card-note{font-size:.78rem;color:var(--muted)}
+.card-foot{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line);font-size:.76rem;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:.7rem;font-weight:720;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.tag.best{background:var(--ink);color:var(--ground)}
+.tag.warn{background:var(--against-dim);color:var(--against)}
+.tag.rlm{background:var(--gold-dim);color:var(--gold)}
+.tag.watch{background:var(--surface-3);color:var(--ink-2)}
+.tag.hit{background:var(--for-dim);color:var(--for)}
+.tag.miss{background:var(--against-dim);color:var(--against)}
+.tag.push{background:var(--gold-dim);color:var(--gold)}
+.tag.stake{background:var(--for-dim);color:var(--for);font-size:.78rem}
+.tag.zero{background:var(--surface-3);color:var(--muted)}
+.passat{color:var(--ink-2)}
+.passat b{font-weight:700;color:var(--ink)}
+/* Bet card summary */
+.betsum{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:10px}
+.betsum a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.betsum a:hover{border-color:var(--line-2);background:#181D29}
+.betsum .k{font-size:.7rem;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.betsum .v{font-size:1.7rem;font-weight:780;letter-spacing:-.02em;line-height:1.1}
+.betsum .s{font-size:.8rem;color:var(--muted)}
+.betsum a.total{border-color:rgba(107,219,170,.4)}
+.betsum a.total .v{color:var(--for)}
+.daychips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:.8rem;color:var(--muted)}
+.daychips span{padding:4px 10px;border-radius:999px;background:var(--surface-2)}
+.daychips span b{color:var(--ink);font-weight:700}
+.daychips span.over{background:var(--against-dim);color:var(--against)}
+.daychips span.over b{color:var(--against)}
+.group-label .amt{margin-left:auto;color:var(--for);font-weight:750;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.group-label .amt.zero{color:var(--faint)}
+.passed{margin-top:32px;border-top:1px solid var(--line);padding-top:18px}
+.passed>summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:10px}
+.passed>summary::-webkit-details-marker{display:none}
+.passed>summary::after{content:'Show';margin-left:auto;font-size:.8rem;color:var(--ink-2);text-transform:none;letter-spacing:0}
+.passed[open]>summary::after{content:'Hide'}
+.passed .tbl-wrap{margin-top:14px}
+
+/* Confidence: a 0-10 score with a ten-cell meter. Same weight type everywhere; strength lives in the number. */
+.conf{display:flex;align-items:center;gap:12px}
+.conf-num{font-size:1.75rem;font-weight:800;line-height:1;letter-spacing:-.03em;min-width:2.6ch}
+.conf-num small{font-size:.48em;font-weight:600;color:var(--muted);letter-spacing:0}
+.conf-body{flex:1;display:flex;flex-direction:column;gap:5px;min-width:0}
+.conf-tier{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.meter{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+.meter i{height:7px;border-radius:2px;background:var(--surface-3)}
+.meter i.on{background:var(--lilac)}
+.meter.strong i.on{background:var(--ink)}
+.rule{display:flex;align-items:center;gap:10px;font-size:.8rem;color:var(--ink-2)}
+.rule b{font-size:1.05rem;font-weight:780;color:var(--lilac)}
+
+.factors{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.factors li{display:grid;grid-template-columns:16px 1fr;gap:8px;font-size:.82rem;line-height:1.42;color:var(--ink-2)}
+.factors li b{color:var(--ink);font-weight:650}
+.gl{font-weight:800;text-align:center}
+.gl.for{color:var(--for)}.gl.against{color:var(--against)}.gl.neutral{color:var(--faint)}
+.align{display:flex;gap:10px;font-size:.74rem;font-weight:650}
+.align .f{color:var(--for)}.align .a{color:var(--against)}.align .n{color:var(--faint)}
+
+.hist{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.hist-label{width:100%;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.hist-label.empty{text-transform:none;letter-spacing:0;font-weight:500;color:var(--faint)}
+.hist-chip{display:inline-flex;flex-direction:column;align-items:center;min-width:32px;padding:3px 6px;border-radius:7px;font-size:.78rem;font-weight:800;line-height:1.1}
+.hist-chip span{font-size:.58rem;font-weight:650;text-transform:uppercase;letter-spacing:.04em;opacity:.8}
+.hist-chip.hit{background:var(--for-dim);color:var(--for)}
+.hist-chip.miss{background:var(--against-dim);color:var(--against)}
+.hist-chip.push{background:var(--gold-dim);color:var(--gold)}
+.hist-src{font-size:.66rem;color:var(--faint)}
+.pending{margin-top:24px;font-size:.9rem;color:var(--ink-2)}
+.pending b{color:var(--ink)}
+.empty-note{color:var(--muted);font-size:.95rem}
+
+/* ---------- Slate ---------- */
+.slate-head,.row>summary{display:grid;grid-template-columns:4.4rem minmax(0,1fr) 4.4rem 14rem 1.6rem;column-gap:16px;align-items:center}
+.slate-head{padding-bottom:10px;border-bottom:1px solid var(--line);font-size:.7rem;color:var(--muted);font-weight:650;letter-spacing:.08em;text-transform:uppercase}
+.slate-head .r{text-align:right}
+.slate-legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:20px;font-size:.84rem;color:var(--ink-2)}
+.slate-legend span{display:inline-flex;align-items:center;gap:8px}
+.lg-line{width:22px;height:2px;background:var(--gold);display:inline-block}
+.lg-dash{width:22px;height:0;border-top:2px dashed var(--muted);display:inline-block}
+.lg-model{width:22px;height:0;border-top:2px solid var(--lilac);display:inline-block;position:relative}
+.lg-model::after{content:"";position:absolute;left:7px;top:-5px;width:8px;height:8px;border-radius:50%;background:var(--lilac)}
+.rows{display:flex;flex-direction:column}
+.row{border-bottom:1px solid var(--line)}
+.row>summary{list-style:none;cursor:pointer;padding-block:10px}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary:hover{background:linear-gradient(90deg,transparent,rgba(255,255,255,.025),transparent)}
+.row[open]>summary{background:linear-gradient(90deg,transparent,rgba(169,157,255,.05),transparent)}
+.tm{font-size:1.05rem;font-weight:720;letter-spacing:-.01em}
+.tm.away{text-align:right}
+.tm small{display:block;font-size:.7rem;font-weight:550;color:var(--muted)}
+.spark{display:block;width:100%;height:44px}
+.figs{display:flex;flex-direction:column;gap:2px;min-width:0}
+.gapfig{display:flex;align-items:baseline;gap:8px}
+.gapfig b{font-size:1.5rem;font-weight:800;line-height:1;color:var(--lilac)}
+.gapfig span{font-size:.78rem;color:var(--muted)}
+.figs .sub{font-size:.8rem;color:var(--ink-2);line-height:1.35}
+.figs .sub i{font-style:normal;color:var(--muted)}
+.chev{width:26px;height:26px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--muted);transition:transform .3s}
+.chev::before{content:"+";font-size:1rem;line-height:1}
+.row[open] .chev{transform:rotate(45deg);background:var(--surface-2);color:var(--ink)}
+@media (max-width:760px){
+  .slate-head{display:none}
+  .row>summary{grid-template-columns:2.8rem minmax(0,1fr) 2.8rem 1.6rem;grid-template-areas:"away spark home chev" "figs figs figs figs";row-gap:6px}
+  .row>summary .tm.away{grid-area:away}.row>summary .spark{grid-area:spark}.row>summary .tm.home{grid-area:home}.row>summary .figs{grid-area:figs;padding-left:3.6rem}.row>summary .chev{grid-area:chev}
+}
+
+/* Drawer */
+.drawer{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px 56px;padding:18px 0 40px}
+@media (max-width:980px){.drawer{grid-template-columns:1fr}}
+.charts{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:20px}
+@media (max-width:900px){.charts{grid-template-columns:1fr}}
+.chart{position:relative;min-width:0;padding:14px 14px 8px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;margin-bottom:6px}
+.chart-head .now{font-size:.82rem;color:var(--ink-2)}
+.chart-svg{display:block;width:100%;height:auto;overflow:visible}
+.chart-svg text{font-family:var(--f);font-size:11px;fill:var(--muted)}
+.chart-svg .end{font-size:11.5px;font-weight:700}
+.chart-svg .end.mk{fill:var(--gold)} .chart-svg .end.md{fill:var(--lilac)}
+.chart-svg .annot{fill:var(--ink-2);font-weight:650}
+.tip{position:absolute;z-index:3;pointer-events:none;min-width:150px;padding:8px 10px;border-radius:10px;background:var(--surface-3);border:1px solid var(--line-2);font-size:.78rem;color:var(--ink-2);line-height:1.45;transform:translate(-50%,-100%)}
+.tip b{color:var(--ink);font-weight:700}
+.tip .k{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px}
+.chart-foot{font-size:.74rem;color:var(--faint);margin:4px 2px 0}
+.proj{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:flex-end;gap:18px 44px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.score{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:800;line-height:.95;letter-spacing:-.035em;font-stretch:92%}
+.score em{font-style:normal;color:var(--faint);font-weight:300;margin-inline:.12em}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat b{font-size:clamp(1.5rem,2.8vw,2.1rem);font-weight:760;line-height:1;color:var(--lilac)}
+.stat b small{font-size:.5em;font-weight:600;color:var(--muted);margin-left:2px}
+.stat span{font-size:.82rem;color:var(--ink-2)}
+.read h4,.side h4{margin:0 0 12px}
+.read p{margin:0 0 14px;max-width:64ch;font-size:1.02rem;line-height:1.62}
+.callout{margin:16px 0 0;padding:12px 14px;border-radius:12px;background:var(--gold-dim);font-size:.9rem;line-height:1.5}
+.callout b{color:var(--gold)}
+.notes{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:.84rem;color:var(--muted)}
+.side{display:flex;flex-direction:column;gap:28px;min-width:0}
+.side .card{background:var(--surface-2)}
+.lines{width:100%;border-collapse:collapse;font-size:.86rem}
+.lines th,.lines td{padding:7px 0;border-bottom:1px solid var(--line);text-align:left}
+.lines th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.lines td:not(:first-child),.lines th:not(:first-child){text-align:right}
+.lines td:first-child{color:var(--ink-2)}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.checks li{display:grid;grid-template-columns:20px 1fr auto;gap:10px;align-items:start;font-size:.86rem;color:var(--ink-2);line-height:1.45}
+.cbox{width:18px;height:18px;border-radius:5px;background:var(--for);color:var(--ground);display:grid;place-items:center;font-size:.72rem;font-weight:900;margin-top:1px}
+.checks b{color:var(--ink);font-weight:650;display:block}
+.checks .pc{font-weight:800;color:var(--for)}
+
+/* ---------- Split bars (team colors, labels outside the color) ---------- */
+.split{display:flex;flex-direction:column;gap:4px}
+.split-cap{display:flex;justify-content:space-between;gap:8px;font-size:.76rem;color:var(--ink-2)}
+.split-cap span:nth-child(2){color:var(--muted);font-weight:650;letter-spacing:.06em;text-transform:uppercase;font-size:.66rem;align-self:center}
+.split-cap b{font-weight:750;color:var(--ink)}
+.sbar{display:flex;gap:2px;height:10px;border-radius:5px;overflow:hidden;background:var(--surface-3)}
+.sbar i{display:block;height:100%}
+.sbar i:first-child{border-radius:5px 0 0 5px}
+.sbar i:last-child{border-radius:0 5px 5px 0}
+
+/* ---------- Money cards ---------- */
+.mc{gap:14px}
+.mc.rlm{border-color:rgba(242,195,91,.45)}
+.mc-dual{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mc-dual>div{display:flex;flex-direction:column;gap:3px;padding:12px;border-radius:10px;min-width:0}
+.mc-move{background:var(--gold-dim)}
+.mc-money{background:var(--cash-dim)}
+.mc-dual .label{font-size:.64rem}
+.mc-move b{color:var(--gold)} .mc-money b{color:var(--cash)}
+.mc-dual b{font-size:1.15rem;font-weight:780;line-height:1.1;letter-spacing:-.02em}
+.mc-dual span:last-child{font-size:.78rem;color:var(--ink-2)}
+.verdict{display:flex;flex-direction:column;gap:6px;padding:12px 14px;border-radius:10px;background:var(--surface-2);border-left:3px solid var(--faint)}
+.verdict.bet{border-left-color:var(--for)}
+.verdict.lean{border-left-color:var(--gold)}
+.verdict .vh{display:flex;align-items:center;gap:8px;font-weight:780;font-size:.95rem}
+.verdict .vh i{font-style:normal;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:var(--surface-3);color:var(--ink-2)}
+.verdict.bet .vh i{background:var(--for-dim);color:var(--for)}
+.verdict.lean .vh i{background:var(--gold-dim);color:var(--gold)}
+.verdict p{margin:0;font-size:.86rem;line-height:1.5;color:var(--ink-2)}
+.caveat{margin-top:18px;font-size:.82rem;color:var(--muted);max-width:72ch}
+
+/* ---------- Systems ---------- */
+.sky{display:flex;flex-wrap:wrap;align-items:flex-end;gap:32px 18px}
+.tower{flex:1 1 140px;max-width:240px;min-width:0;display:flex;flex-direction:column}
+.tw-head{padding-bottom:12px}
+.tw-pick{font-size:clamp(1.4rem,2vw,1.8rem);font-weight:820;letter-spacing:-.03em;line-height:1}
+.tw-head .tag{margin-top:10px;white-space:normal}
+.tag.agree{background:var(--for-dim);color:var(--for)}
+.tag.disagree{background:var(--against-dim);color:var(--against)}
+.blk{position:relative;display:flex;flex-direction:column;gap:3px;min-height:104px;padding:12px 12px 14px;background:var(--surface);border-radius:10px;overflow:hidden;margin-top:6px}
+.blk-pct{font-size:1.9rem;font-weight:850;line-height:1;color:var(--for)}
+.blk-pct small{font-size:.5em}
+.blk-name{font-size:.82rem;font-weight:600;line-height:1.3}
+.blk-meter{position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--line)}
+.blk-meter i{position:absolute;left:0;top:0;bottom:0;background:var(--for)}
+.blk-meter u{position:absolute;top:-4px;width:2px;height:12px;background:var(--ink)}
+.tw-base{margin-top:12px;padding-top:10px;border-top:2px solid var(--line-2);font-size:.84rem;color:var(--ink-2)}
+.sky-note{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.84rem;color:var(--muted)}
+
+/* ---------- Hit rates ---------- */
+.hr-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:24px}
+.hr-bar label{font-size:.8rem;color:var(--muted)}
+.select{appearance:none;-webkit-appearance:none;font:inherit;font-size:.95rem;font-weight:650;color:var(--ink);background:var(--surface-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23BCC2D0' stroke-width='1.8'/%3E%3C/svg%3E") no-repeat right 12px center;border:1px solid var(--line-2);border-radius:10px;padding:9px 38px 9px 14px;cursor:pointer}
+.hr-summary{font-size:1rem;color:var(--ink-2);max-width:70ch;margin:0}
+.hr-summary b{color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:32px}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tile{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;min-width:0}
+.tile b{font-size:clamp(2rem,4vw,2.8rem);font-weight:820;line-height:1;letter-spacing:-.04em}
+.tile b small{font-size:.45em;font-weight:650;color:var(--muted);letter-spacing:0}
+.tile .rec{font-size:.86rem;color:var(--ink-2)}
+.pbar{position:relative;height:6px;border-radius:3px;background:var(--surface-3);margin-top:4px}
+.pbar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--for)}
+.pbar i.low{background:var(--against)}
+.pbar u{position:absolute;top:-3px;width:2px;height:12px;background:var(--ink-2)}
+.tile .be{font-size:.7rem;color:var(--faint)}
+.hr-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 48px}
+@media (max-width:900px){.hr-cols{grid-template-columns:1fr}}
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}
+.tbl th{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:650;text-align:left;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.tbl td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);color:var(--ink-2);vertical-align:middle}
+.tbl td b{color:var(--ink);font-weight:700}
+.tbl .r{text-align:right}
+.tbl .mini{display:block;width:90px;height:5px;border-radius:3px;background:var(--surface-3);position:relative}
+.tbl .mini i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--for)}
+.tbl .mini i.low{background:var(--against)}
+.more{margin-top:14px;font:inherit;font-size:.86rem;font-weight:650;color:var(--ink);background:var(--surface-2);border:1px solid var(--line-2);border-radius:10px;padding:9px 14px;cursor:pointer}
+.more:hover{background:var(--surface-3)}
+.res{font-weight:750}.res.hit{color:var(--for)}.res.miss{color:var(--against)}.res.push{color:var(--gold)}
+
+footer{border-top:1px solid var(--line);padding-block:40px 64px;color:var(--muted);font-size:.84rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+footer b{color:var(--ink-2);font-weight:650}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<nav class="bar" aria-label="Sections">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">Line<b>Watch</b></a>
+    <div class="bar-links">
+      <a href="#board">Bet card</a>
+      <a href="#teasers">Teasers</a>
+      <a href="#slate">Slate</a>
+      <a href="#money">Money</a>
+      <a href="#systems">Systems</a>
+      <a href="#props">Props</a>
+      <a href="#hitrates">Hit rates</a>
+    </div>
+    <div class="bar-clock" id="clock"></div>
+  </div>
+</nav>
+
+<header class="mast wrap" id="top">
+  <div class="label" id="mast-label"></div>
+  <h1 class="lede" id="lede"></h1>
+  <div class="conf-key" id="conf-key"></div>
+</header>
+
+<section class="sec first" id="board" aria-label="Bet card">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Bet card<sup id="board-count"></sup></h2>
+      <p class="sec-deck">Every pick with money on it, in one place. <b>Best bets</b> are worth playing at today's number. Spreads, totals and props follow, each in its own group. Picks at $0 sit in <b>Watch</b> because the number moved or they're waiting on news. Everything else is under <b>Passed</b>.</p>
+    </div>
+    <div id="board-body"></div>
+  </div>
+</section>
+
+<section class="sec" id="teasers">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Wong teasers<sup id="teasers-count"></sup></h2>
+      <p class="sec-deck">A 6-point teaser leg qualifies when a favorite sits at exactly −7.5 or an underdog sits at +1.5 to +2.5, with the game total at 47 or under. Every qualifying leg is listed. This list is never capped.</p>
+    </div>
+    <div class="cards" id="teaser-cards"></div>
+  </div>
+</section>
+
+<section class="sec" id="slate">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">The slate<sup id="slate-count"></sup></h2>
+      <p class="sec-deck">Every run logs the market's line and the model's number. The chart starts at the opening line and adds a point each time the lines are checked. Higher on the chart means the home team is more favored. Games where the model and market sit furthest apart come first.</p>
+    </div>
+    <div class="slate-legend">
+      <span><i class="lg-line"></i>DraftKings line</span>
+      <span><i class="lg-dash"></i>Caesars</span>
+      <span><i class="lg-model"></i>Model (each sim run)</span>
+    </div>
+    <div class="slate-head"><span class="r">Away</span><span>Line history</span><span>Home</span><span>Model vs. market</span><span></span></div>
+    <div class="rows" id="rows"></div>
+  </div>
+</section>
+
+<section class="sec" id="money">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Follow the money</h2>
+      <p class="sec-deck">Tickets count bettors. Money counts dollars. When the dollars pile onto one side and the line moves the other way, the book is respecting someone other than the public. Each card ends with what that means for the bet.</p>
+    </div>
+    <div class="cards wide" id="money-cards"></div>
+    <p class="caveat">Splits from cleatz.com. A game without a fresh split this cycle keeps its last captured numbers. Treat exact percentages as directional.</p>
+  </div>
+</section>
+
+<section class="sec" id="systems">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Situational systems</h2>
+      <p class="sec-deck">Historical spots that have beaten the spread. Every block is one system that fits this week's real situation. Taller stacks mean more systems agree on the same side.</p>
+    </div>
+    <div class="sky" id="sky"></div>
+    <div class="sky-note"><span>White tick: 52.4%, break-even at standard −110 juice.</span><span>Percentages are third-party historical records, not this model's output.</span></div>
+  </div>
+</section>
+
+<section class="sec" id="props">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Player props<sup id="props-count"></sup></h2>
+      <p class="sec-deck">Opening numbers, captured when the books first posted them. Each card shows the confidence score, every reason for and against, and how this player has done against today's line this season.</p>
+    </div>
+    <div class="cards" id="prop-cards"></div>
+    <p class="pending" id="pending"></p>
+  </div>
+</section>
+
+<section class="sec" id="hitrates">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title">Hit rates</h2>
+      <p class="sec-deck">Every graded prop and every logged game, scored against the call we made before kickoff. Pushes are left out of every rate.</p>
+    </div>
+    <div class="hr-bar">
+      <label for="hr-week">Show</label>
+      <select class="select" id="hr-week"></select>
+      <p class="hr-summary" id="hr-summary"></p>
+    </div>
+    <div id="hr-body"></div>
+    <div id="edge-body"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Line Watch</b> is personal research. Every lean is a read with a confidence score, never a guaranteed outcome.</span>
+    <span id="built"></span>
+  </div>
+</footer>
+
+<script>
+const D = __D_JSON__;
+const MINUS = '−';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtAbs = v => (Math.round(Math.abs(v) * 10) / 10).toString();
+// D sign convention: spread values are positive when the HOME team is favored.
+const sideStr = (g, m) => m == null ? '—' : Math.abs(m) < 0.05 ? 'PK' : `${m > 0 ? g.h : g.a} ${MINUS}${fmtAbs(m)}`;
+const signed = v => Math.abs(v) < 0.05 ? 'PK' : (v > 0 ? '+' : MINUS) + fmtAbs(v);
+const teamSpread = (g, team) => team === g.h ? signed(-g.cur) : signed(g.cur);
+const fmtKo = iso => new Date(iso).toLocaleString([], {weekday:'short', hour:'numeric', minute:'2-digit'});
+const fmtT = iso => new Date(iso).toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'});
+const pct = v => v == null ? '—' : (Math.round(v * 10) / 10).toString();
+const niceMinus = s => String(s).replace(/(^|[\s(])-(?=\d)/g, '$1' + MINUS);
+const wkNum = w => parseInt(String(w || '').replace(/\D/g, ''), 10) || 0;
+const SYS = {
+  winless_road_vs_home_favorite:'Winless road team vs. a home favorite',
+  road_dog_window_02:'0–2 team as a road underdog',
+  off_loss_vs_off_win:'Off a loss vs. a team off a win',
+  repeat_home_loser_fade:'Repeat home loser fade',
+  double_revenge_home_favorite_fade:'Double-revenge home favorite fade',
+  swept_away_dog_first_meeting:'Swept last year, first rematch as road dog',
+  travel_under_backtoback_road_off_win:'Back-to-back road trip, travel Under',
+  desperation_over_02_singledigit:'Two 0–2 teams, single-digit spread',
+  divisional_underdogs:'Divisional underdog',
+};
+const MARKET = {spread:'Spread', total:'Total', moneyline:'Moneyline', prop:'Prop'};
+const PROP_M = {receptions:'Receptions', rec_yards:'Receiving yards', rush_yards:'Rushing yards', pass_yards:'Passing yards', completions:'Completions', attempts:'Attempts', pass_tds:'Passing TDs', rush_attempts:'Rush attempts'};
+
+/* Team colors for the money bars. Very dark primaries are lifted toward white so they read on the dark ground;
+   identity never rides on color alone because every bar carries team labels. */
+const TEAM = {ARI:'#97233F',ATL:'#A71930',BAL:'#241773',BUF:'#00338D',CAR:'#0085CA',CHI:'#C83803',CIN:'#FB4F14',CLE:'#FF3C00',
+  DAL:'#003594',DEN:'#FB4F14',DET:'#0076B6',GB:'#203731',HOU:'#A71930',IND:'#002C5F',JAX:'#006778',KC:'#E31837',
+  LV:'#A5ACAF',LAC:'#0080C6',LAR:'#003594',MIA:'#008E97',MIN:'#4F2683',NE:'#002244',NO:'#D3BC8D',NYG:'#0B2265',
+  NYJ:'#125740',PHI:'#004C54',PIT:'#FFB612',SF:'#AA0000',SEA:'#69BE28',TB:'#D50A0A',TEN:'#4B92DB',WAS:'#5A1414'};
+function lum(hex) {
+  const c = hex.replace('#', '').match(/../g).map(h => parseInt(h, 16) / 255).map(v => v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4));
+  return .2126 * c[0] + .7152 * c[1] + .0722 * c[2];
+}
+function mix(hex, t) {
+  const c = hex.replace('#', '').match(/../g).map(h => parseInt(h, 16));
+  return '#' + c.map(v => Math.round(v + (255 - v) * t).toString(16).padStart(2, '0')).join('');
+}
+function teamColor(abbr) {
+  let c = TEAM[abbr] || '#596074', t = 0;
+  while (lum(c) < 0.07 && t < 0.6) { t += 0.08; c = mix(TEAM[abbr] || '#596074', t); }
+  return c;
+}
+
+/* ---------- Shared pieces ---------- */
+function tierName(c) { return c >= 9 ? 'Rare' : c >= 7 ? 'Strong' : c >= 5 ? 'Real' : c >= 3 ? 'Mild' : 'Coinflip'; }
+function meter(c) {
+  const n = Math.max(0, Math.min(10, Math.round(c || 0)));
+  let cells = '';
+  for (let i = 0; i < 10; i++) cells += `<i${i < n ? ' class="on"' : ''}></i>`;
+  return `<span class="meter${n >= 7 ? ' strong' : ''}" role="img" aria-label="Confidence ${n} out of 10">${cells}</span>`;
+}
+function confRow(c) {
+  return `<div class="conf"><span class="conf-num num">${c ?? '—'}<small>/10</small></span><span class="conf-body"><span class="conf-tier">${tierName(c)}</span>${meter(c)}</span></div>`;
+}
+function alignRow(al) {
+  if (!al || al.for == null) return '';
+  return `<span class="align"><span class="f">${al.for} for</span><span class="a">${al.against} against</span>${al.neutral ? `<span class="n">${al.neutral} neutral</span>` : ''}</span>`;
+}
+function factorList(fs) {
+  if (!fs || !fs.length) return '';
+  return `<ul class="factors">${fs.map(f => `<li><span class="gl ${esc(f.dir)}" aria-label="${esc(f.dir)}">${f.dir === 'for' ? '✓' : f.dir === 'against' ? '✕' : '•'}</span><span><b>${esc(f.label)}.</b> ${esc(f.detail)}</span></li>`).join('')}</ul>`;
+}
+function cleanPick(p) {
+  let main = String(p).trim(), note = '';
+  const par = main.match(/^(.*?)\s*\((.*)\)\s*$/);
+  if (par) { main = par[1]; note = par[2]; }
+  const to = main.match(/^(.*?\d(?:\.\d)?)\s+to\s+(.+)$/);
+  if (to) { main = to[1]; note = (note ? note + ' · ' : '') + 'playable to ' + to[2]; }
+  return { main: niceMinus(main), note: niceMinus(note) };
+}
+function wongMain(w) {
+  const fav = w.side === 'favorite';
+  return `${w.team} ${fav ? niceMinus(w.from) : '+' + fmtAbs(w.from)} → ${fav ? niceMinus(w.to) : '+' + fmtAbs(w.to)}`;
+}
+
+/* Stake parsing: reasoning ends with " | Stake $X ... · pass at Y" (bet-sizing rule, 2026-10-05). */
+function stakeInfo(why) {
+  const w = String(why || '');
+  const i = w.lastIndexOf(' | Stake');
+  const text = i >= 0 ? w.slice(0, i) : w;
+  const tail = i >= 0 ? w.slice(i + 3) : '';
+  const m = /Stake \$([\d.]+)/.exec(tail);
+  const stake = m ? parseFloat(m[1]) : null;
+  const pa = /pass at ([^·|]+?)\s*$/.exec(tail);
+  const note = (/Stake \$[\d.]+\s*(.*?)(?:\s*·\s*pass at.*)?$/.exec(tail) || [])[1] || '';
+  return { text, stake, passAt: pa ? pa[1].trim() : null, note: (/^\(.*\)$/.test(note.trim()) ? note.trim().slice(1, -1) : note).trim(), swap: /swap/i.test(tail) };
+}
+const money = v => '$' + (Math.round(v * 100) / 100).toFixed(v % 1 ? 2 : 0);
+function stakeFoot(si) {
+  if (si.stake == null) return '';
+  const chip = si.stake > 0 ? `<span class="tag stake">${money(si.stake)}</span>` : `<span class="tag zero">$0 now</span>`;
+  return chip + (si.passAt ? `<span class="passat">pass at <b>${esc(niceMinus(si.passAt))}</b></span>` : '') + (si.note ? `<span>${esc(si.note)}</span>` : '');
+}
+
+/* Card builders: one shape for leans, props and Wong legs */
+function leanCard(l, opts = {}) {
+  const p = cleanPick(l.pick);
+  const si = stakeInfo(l.why);
+  const recheck = l.al && l.al.against > l.al.for;
+  const tagName = opts.link ? 'a' : 'article';
+  const href = opts.link ? ` href="#g-${l.g.id}" data-open="${l.g.id}"` : '';
+  return `<${tagName} class="card${l.best ? ' best' : ''}"${href}>
+    <div class="card-top"><span class="mchip">${MARKET[l.market] || esc(l.market)}</span><span><span class="game">${l.g.a} @ ${l.g.h}</span> · ${fmtKo(l.g.ko)}</span></div>
+    <div><div class="card-pick">${esc(p.main)}</div>${p.note ? `<div class="card-sub">${esc(p.note)}</div>` : ''}</div>
+    ${confRow(l.conf)}
+    <p class="card-why">${esc(si.text)}</p>
+    ${opts.factors ? factorList(l.factors) : ''}
+    <div class="card-foot">${stakeFoot(si)}${l.best ? (si.stake === 0 ? '<span class="tag watch">Was best bet · number gone</span>' : '<span class="tag best">Best bet</span>') : ''}${recheck ? '<span class="tag warn">Recheck</span>' : ''}${alignRow(l.al)}</div>
+  </${tagName}>`;
+}
+function propCard(p, opts = {}) {
+  const moved = p.cur != null && p.open != null && p.cur !== p.open;
+  const recheck = p.al && p.al.against > p.al.for;
+  const si = stakeInfo(p.why);
+  const tagName = opts.link ? 'a' : 'article';
+  const attr = opts.link ? ` href="#prop-${p.idx}"` : ` id="prop-${p.idx}"`;
+  const full = !opts.link;
+  const histRow = (p.hist && p.hist.length)
+    ? `<div class="hist"><span class="hist-label">Past graded weeks · ${p.histRate.hits}-${p.histRate.misses} (${p.histRate.pct}%)</span>${p.hist.map(h => `<span class="hist-chip ${esc(h.result)}">${h.actual != null ? h.actual : '–'}<span>${esc(h.wk || '')}</span></span>`).join('')}</div>`
+    : `<div class="hist"><span class="hist-label empty">No graded weeks yet on this player and market</span></div>`;
+  const btRow = (p.backtest && p.backtest.total)
+    ? `<div class="hist"><span class="hist-label">This season vs. today's line · ${p.backtest.hits}-${p.backtest.misses} (${p.backtest.pct}%)</span>${p.seasonLog.map(s => `<span class="hist-chip ${esc(s.result)}">${s.actual}<span>Wk${s.week}</span></span>`).join('')}${p.seasonLogSource ? `<span class="hist-src">${esc(p.seasonLogSource)}</span>` : ''}</div>` : '';
+  return `<${tagName} class="card"${attr}>
+    <div class="card-top"><span class="mchip prop">${PROP_M[p.market] || esc(p.market)}</span><span><span class="game">${p.a} @ ${p.h}</span> · ${fmtKo(p.ko)}</span></div>
+    <div class="card-main">
+      <div><div class="card-pick">${esc(p.player)}</div><div class="card-sub">${esc(p.pos || '')} · ${esc(p.team || '')}</div></div>
+      <div class="card-line"><span class="dir">${esc(p.lean)}</span><b class="num">${p.open}</b></div>
+    </div>
+    ${confRow(p.conf)}
+    <p class="card-why">${esc(si.text)}</p>
+    ${full ? factorList(p.factors) : ''}
+    ${full ? histRow + btRow : ''}
+    <div class="card-foot">${stakeFoot(si)}${p.res ? `<span class="tag ${esc(p.res)}">${esc(p.res)}${p.actual != null ? ' · ' + p.actual : ''}</span>` : ''}${recheck ? '<span class="tag warn">Recheck</span>' : ''}${alignRow(p.al)}${full && p.book ? `<span>${esc(p.book)}</span>` : ''}${full && moved ? `<span>now ${p.cur}</span>` : ''}${full && p.rank ? `<span>Opp. rank vs ${esc(p.pos)}: ${p.rank}/32</span>` : ''}</div>
+  </${tagName}>`;
+}
+function wongCard(g, opts = {}) {
+  const w = g.wong;
+  const tagName = opts.link ? 'a' : 'article';
+  const href = opts.link ? ` href="#g-${g.id}" data-open="${g.id}"` : '';
+  return `<${tagName} class="card wong"${href}>
+    <div class="card-top"><span class="mchip wong">Wong teaser</span><span><span class="game">${g.a} @ ${g.h}</span> · ${fmtKo(g.ko)}</span></div>
+    <div><div class="card-pick">${esc(wongMain(w))}</div><div class="card-sub">Total ${w.total} · via ${esc(w.book)}</div></div>
+    <div class="rule"><b>Qualifies</b><span>Rule-based leg, no confidence score. Pair it with another qualifying leg.</span></div>
+    <p class="card-why">${esc(w.reason)}</p>
+  </${tagName}>`;
+}
+
+/* ---------- Pools ---------- */
+const allLeans = [];
+D.games.forEach(g => (g.leans || []).forEach(l => allLeans.push({ ...l, g })));
+const props = (D.props || []).slice().sort((a, b) => (b.conf || 0) - (a.conf || 0) || new Date(a.ko) - new Date(b.ko));
+props.forEach((p, i) => { p.idx = i; });
+const wongGames = D.games.filter(g => g.wong && g.wong.qualifies).sort((a, b) => new Date(a.ko) - new Date(b.ko));
+allLeans.forEach(l => { l.si = stakeInfo(l.why); });
+props.forEach(p => { p.si = stakeInfo(p.why); });
+const isLive = x => new Date(x.ko || (x.g && x.g.ko)).getTime() > Date.now() - 4 * 36e5;
+const bestCount = allLeans.filter(l => l.best && l.si.stake > 0 && isLive(l)).length;
+
+/* ---------- Masthead + clock ---------- */
+const upcoming = D.games.filter(g => new Date(g.ko).getTime() > Date.now()).sort((a, b) => new Date(a.ko) - new Date(b.ko));
+const next = upcoming[0];
+function until(iso) {
+  const ms = new Date(iso).getTime() - Date.now();
+  if (ms <= 0) return 'now';
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+  return d ? `in ${d}d ${h}h` : h ? `in ${h}h ${m}m` : `in ${m}m`;
+}
+function tickClock() {
+  document.getElementById('clock').innerHTML = next ? `Next kickoff <b>${next.a} @ ${next.h}</b> ${until(next.ko)}` : 'All tracked games have kicked off';
+}
+tickClock(); setInterval(tickClock, 30000);
+const built = new Date(D.built);
+const withGap = D.games.filter(g => g.model != null && g.cur != null).map(g => ({ g, gap: g.model - g.cur })).sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap));
+const topGap = withGap[0];
+document.getElementById('mast-label').innerHTML = `<span>${esc(D.week)} · ${D.season} season</span><span>Updated ${built.toLocaleString([], {weekday:'short', hour:'numeric', minute:'2-digit'})}</span>`;
+document.getElementById('lede').innerHTML = `<b>${D.games.length}</b> games on the board. <a href="#bc-best"><b>${bestCount}</b> best bets</a>, <a href="#props"><b>${props.length}</b> props</a>, <a href="#teasers"><b>${wongGames.length}</b> Wong teasers</a>.` +
+  (topGap ? ` The model and market disagree most on <em>${esc(topGap.g.away.split(' ').slice(-1)[0])} at ${esc(topGap.g.home.split(' ').slice(-1)[0])}</em>, by ${fmtAbs(topGap.gap)} points.` : '');
+document.getElementById('conf-key').innerHTML = `<span>Confidence is scored <b>0–10</b></span>${meter(6)}<span>0–2 coinflip · 3–4 mild · 5–6 real · 7–8 strong · 9–10 rare</span>`;
+
+/* ---------- Bet card ---------- */
+(function renderBoard() {
+  const ET = iso => new Date(iso).toLocaleDateString('en-US', {timeZone:'America/New_York', weekday:'short'});
+  const byKo = (a, b) => new Date(a.ko) - new Date(b.ko) || (b.conf - a.conf);
+  const items = allLeans.filter(isLive).map(l => ({ kind:'lean', l, si:l.si, conf:l.conf || 0, best:l.best, ko:l.g.ko, gid:l.g.id, market:l.market, game:`${l.g.a} @ ${l.g.h}`, pick:l.pick }))
+    .concat(props.filter(isLive).map(p => ({ kind:'prop', p, si:p.si, conf:p.conf || 0, best:false, ko:p.ko, gid:p.gid, market:'prop', game:`${p.a} @ ${p.h}`, pick:`${p.player} ${p.lean} ${p.open} ${PROP_M[p.market] || p.market}` })));
+  const bet = x => x.si.stake == null ? x.conf >= 5 : x.si.stake > 0;
+  const best = items.filter(x => x.best && bet(x)).sort((a, b) => b.conf - a.conf || byKo(a, b));
+  const rest = items.filter(x => !(x.best && bet(x)));
+  const groups = [
+    { id:'bc-best', name:'Best bets', sub:'the strongest play on each game, ranked by confidence', list:best },
+    { id:'bc-spread', name:'Spreads', sub:'by kickoff', list:rest.filter(x => bet(x) && x.market === 'spread').sort(byKo) },
+    { id:'bc-total', name:'Totals', sub:'by kickoff', list:rest.filter(x => bet(x) && x.market === 'total').sort(byKo) },
+    { id:'bc-ml', name:'Moneylines', sub:'by kickoff', list:rest.filter(x => bet(x) && x.market === 'moneyline').sort(byKo) },
+    { id:'bc-props', name:'Player props', sub:'by kickoff · props capped at $18 (3%) until the 7–8 tier proves out', list:rest.filter(x => bet(x) && x.market === 'prop').sort(byKo) },
+    { id:'bc-watch', name:'Watch', sub:'$0 right now: the number moved past us, it waits on news, or it is a swap-in', list:rest.filter(x => !bet(x) && (x.conf >= 4 || x.best)).sort(byKo) },
+  ];
+  const passed = rest.filter(x => !bet(x) && !(x.conf >= 4 || x.best)).sort(byKo);
+  const sum = list => list.reduce((t, x) => t + (x.si.stake > 0 && !x.si.swap ? x.si.stake : 0), 0);
+  const card = x => x.kind === 'lean' ? leanCard(x.l, { link:true }) : propCard(x.p, { link:true });
+
+  const live = groups.slice(0, 5).flatMap(g => g.list);
+  const total = sum(live);
+  const days = {}; const perGame = {};
+  live.forEach(x => { if (x.si.stake > 0 && !x.si.swap) { const d = ET(x.ko); days[d] = (days[d] || 0) + x.si.stake; perGame[x.game] = (perGame[x.game] || 0) + x.si.stake; } });
+  const overCap = Object.entries(perGame).filter(([, v]) => v > 45);
+  const tile = (g, extra = '') => `<a href="#${g.id}"${extra}><span class="k">${g.name}</span><span class="v num">${g.list.length}</span><span class="s">${g.id === 'bc-watch' ? 'no money yet' : money(sum(g.list))}</span></a>`;
+  let html = `<div class="betsum">${groups.filter(g => g.list.length).map(g => tile(g)).join('')}
+    <a href="#bc-best" class="total"><span class="k">Total exposure</span><span class="v num">${money(total)}</span><span class="s">${live.length} bets · $600 bankroll, 1–5% per bet</span></a></div>`;
+  html += `<div class="daychips">${Object.entries(days).map(([d, v]) => `<span class="${v > 300 ? 'over' : ''}">${d} <b>${money(v)}</b>${v > 300 ? ' · over $300 day limit' : ''}</span>`).join('')}${overCap.map(([g, v]) => `<span class="over">${esc(g)} <b>${money(v)}</b> · over $45 game cap</span>`).join('')}</div>`;
+
+  groups.forEach(g => {
+    if (!g.list.length) return;
+    const amt = g.id === 'bc-watch' ? '<span class="amt zero">$0</span>' : `<span class="amt">${money(sum(g.list))}</span>`;
+    html += `<div class="label group-label" id="${g.id}"><span>${g.name} · ${g.list.length}</span><span class="sub">${g.sub}</span>${amt}</div>
+      <div class="cards">${g.list.map(card).join('')}</div>`;
+  });
+  if (!live.length) html += '<p class="empty-note">No bets with a stake on the current slate yet.</p>';
+  if (wongGames.length) {
+    html += `<div class="label group-label"><span>Wong teasers · ${wongGames.length}</span><span class="sub">rule-based legs, pair two together</span></div>
+      <div class="cards">${wongGames.map(g => wongCard(g, { link:true })).join('')}</div>`;
+  }
+  if (passed.length) {
+    html += `<details class="passed" id="bc-passed"><summary class="label"><span>Passed · ${passed.length}</span><span class="sub">looked at, no edge at this number</span></summary>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Pick</th><th>Game</th><th class="r">Conf</th><th>Why not</th></tr></thead><tbody>
+      ${passed.map(x => `<tr><td><b>${esc(x.kind === 'lean' ? cleanPick(x.pick).main : x.pick)}</b></td><td>${esc(x.game)} · ${fmtKo(x.ko)}</td><td class="r num">${x.conf}</td><td>${esc(x.si.text)}</td></tr>`).join('')}
+      </tbody></table></div></details>`;
+  }
+  document.getElementById('board-count').textContent = live.length;
+  document.getElementById('board-body').innerHTML = html;
+})();
+
+/* ---------- Teasers ---------- */
+document.getElementById('teasers-count').textContent = wongGames.length;
+document.getElementById('teaser-cards').innerHTML = wongGames.map(g => wongCard(g)).join('') || '<p class="empty-note">No games qualify from this slate.</p>';
+
+/* ---------- Line-history charts ---------- */
+function spreadLabel(g, v) { return Math.abs(v) < 0.05 ? 'PK' : `${v > 0 ? g.h : g.a} ${MINUS}${fmtAbs(v)}`; }
+function seriesFor(g, kind) {
+  const hist = g.hist || [], mh = g.mh || [];
+  if (kind === 'spread') return {
+    mk: hist.filter(p => p.dk != null).map(p => ({ t: +new Date(p.t), v: p.dk })),
+    cz: hist.filter(p => p.cz != null).map(p => ({ t: +new Date(p.t), v: p.cz })),
+    md: mh.filter(p => p.m != null).map(p => ({ t: +new Date(p.t), v: p.m })),
+    fmt: v => spreadLabel(g, v),
+  };
+  return {
+    mk: hist.filter(p => p.tot != null).map(p => ({ t: +new Date(p.t), v: p.tot })),
+    cz: [],
+    md: mh.filter(p => p.tot != null).map(p => ({ t: +new Date(p.t), v: p.tot })),
+    fmt: v => (Math.round(v * 10) / 10).toString(),
+  };
+}
+const CHARTS = {};
+function niceStep(range) { return range <= 4 ? 1 : range <= 9 ? 2 : range <= 20 ? 4 : 5; }
+function drawChart(el) {
+  const g = byId[el.dataset.g], kind = el.dataset.kind;
+  const S = seriesFor(g, kind);
+  const W = Math.max(280, Math.round(el.clientWidth)), H = kind === 'spread' ? 230 : 190;
+  const pad = { l: kind === 'spread' ? 62 : 36, r: 92, t: 14, b: 26 };
+  const all = S.mk.concat(S.cz, S.md);
+  if (!all.length) { el.innerHTML = '<p class="chart-foot">No line history logged yet.</p>'; return; }
+  let t0 = Math.min(...all.map(p => p.t)), t1 = Math.max(...all.map(p => p.t));
+  if (t1 - t0 < 36e5) { t0 -= 6 * 36e5; t1 += 6 * 36e5; }
+  let v0 = Math.min(...all.map(p => p.v)), v1 = Math.max(...all.map(p => p.v));
+  const step = niceStep(v1 - v0 + 2);
+  v0 = Math.floor((v0 - 1) / step) * step; v1 = Math.ceil((v1 + 1) / step) * step;
+  const X = t => pad.l + (t - t0) / (t1 - t0) * (W - pad.l - pad.r);
+  const Y = v => pad.t + (v1 - v) / (v1 - v0) * (H - pad.t - pad.b);
+  let svg = '';
+  // grid + y labels
+  for (let v = v0; v <= v1 + 1e-9; v += step) {
+    svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)" stroke-width="1"/>`;
+    svg += `<text x="${pad.l - 8}" y="${Y(v) + 4}" text-anchor="end">${esc(S.fmt(v))}</text>`;
+  }
+  if (kind === 'spread') {
+    [-7, -3, 0, 3, 7].filter(k => k > v0 && k < v1 && k % step !== 0).forEach(k => {
+      svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${Y(k)}" y2="${Y(k)}" stroke="var(--line-2)" stroke-dasharray="3 4" stroke-width="1"/>`;
+    });
+    [-7, -3, 3, 7].filter(k => k > v0 && k < v1 && k % step === 0).forEach(k => {
+      svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${Y(k)}" y2="${Y(k)}" stroke="var(--line-2)" stroke-width="1"/>`;
+    });
+  }
+  // x labels: first, last, and the middle when there is room
+  const xt = [t0, t1]; if (W > 520) xt.splice(1, 0, (t0 + t1) / 2);
+  xt.forEach((t, i) => svg += `<text x="${X(t)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === xt.length - 1 ? 'end' : 'middle'}">${esc(new Date(t).toLocaleString([], {month:'short', day:'numeric', hour:'numeric'}))}</text>`);
+  // market area + line (stock style)
+  const path = pts => pts.map((p, i) => `${i ? 'L' : 'M'}${X(p.t).toFixed(1)},${Y(p.v).toFixed(1)}`).join('');
+  const gid = `ga-${g.id}-${kind}`;
+  if (S.mk.length) {
+    const last = S.mk[S.mk.length - 1];
+    svg += `<defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--gold)" stop-opacity=".22"/><stop offset="1" stop-color="var(--gold)" stop-opacity="0"/></linearGradient></defs>`;
+    const mkPts = S.mk.concat(S.mk.length === 1 ? [{ t: t1, v: last.v }] : []);
+    svg += `<path d="${path(mkPts)}L${X(mkPts[mkPts.length - 1].t).toFixed(1)},${H - pad.b}L${X(mkPts[0].t).toFixed(1)},${H - pad.b}Z" fill="url(#${gid})"/>`;
+    if (S.cz.length > 1) svg += `<path d="${path(S.cz)}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>`;
+    S.cz.forEach(p => svg += `<circle cx="${X(p.t)}" cy="${Y(p.v)}" r="2.5" fill="var(--muted)"/>`);
+    svg += `<path d="${path(mkPts)}" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/>`;
+    S.mk.forEach(p => svg += `<circle cx="${X(p.t)}" cy="${Y(p.v)}" r="4" fill="var(--gold)" stroke="var(--surface)" stroke-width="2"/>`);
+    const f = S.mk[0];
+    svg += `<text class="annot" x="${X(f.t) + 6}" y="${Y(f.v) - 9}">Open</text>`;
+    svg += `<text class="end mk" x="${W - pad.r + 8}" y="${Y(last.v) + 4}">${esc(S.fmt(last.v))}</text>`;
+  }
+  // model: step line carried forward to the latest point on the chart
+  if (S.md.length) {
+    const st = [];
+    S.md.forEach((p, i) => { if (i) st.push({ t: p.t, v: S.md[i - 1].v }); st.push(p); });
+    st.push({ t: t1, v: S.md[S.md.length - 1].v });
+    svg += `<path d="${path(st)}" fill="none" stroke="var(--lilac)" stroke-width="2"/>`;
+    S.md.forEach(p => svg += `<circle cx="${X(p.t)}" cy="${Y(p.v)}" r="4.5" fill="var(--lilac)" stroke="var(--surface)" stroke-width="2"/>`);
+    const lm = S.md[S.md.length - 1];
+    let ly = Y(lm.v) + 4;
+    if (S.mk.length && Math.abs(Y(lm.v) - Y(S.mk[S.mk.length - 1].v)) < 14) ly += Y(lm.v) > Y(S.mk[S.mk.length - 1].v) ? 10 : -10;
+    svg += `<text class="end md" x="${W - pad.r + 8}" y="${ly}">Model ${esc(S.fmt(lm.v))}</text>`;
+  }
+  svg += `<line class="xh" x1="0" x2="0" y1="${pad.t}" y2="${H - pad.b}" stroke="var(--ink-2)" stroke-width="1" opacity="0"/>`;
+  svg += `<rect class="hit" x="${pad.l}" y="${pad.t}" width="${W - pad.l - pad.r}" height="${H - pad.t - pad.b}" fill="transparent"/>`;
+  el.innerHTML = `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${kind} history for ${esc(g.away)} at ${esc(g.home)}">${svg}</svg>`;
+  CHARTS[el.dataset.g + kind] = { S, X, Y, t0, t1, W, H, pad };
+}
+function nearestBefore(arr, t) { let r = null; arr.forEach(p => { if (p.t <= t + 1) r = p; }); return r; }
+function onChartMove(e) {
+  const el = e.target.closest('.chart-plot'); if (!el) return;
+  const C = CHARTS[el.dataset.g + el.dataset.kind]; if (!C) return;
+  const svg = el.querySelector('svg'); const r = svg.getBoundingClientRect();
+  const sx = (e.clientX - r.left) * (C.W / r.width);
+  const times = [...new Set(C.S.mk.concat(C.S.md, C.S.cz).map(p => p.t))].sort((a, b) => a - b);
+  let best = times[0]; times.forEach(t => { if (Math.abs(C.X(t) - sx) < Math.abs(C.X(best) - sx)) best = t; });
+  const xh = svg.querySelector('.xh'); xh.setAttribute('x1', C.X(best)); xh.setAttribute('x2', C.X(best)); xh.setAttribute('opacity', '.5');
+  const mk = nearestBefore(C.S.mk, best), cz = nearestBefore(C.S.cz, best), md = nearestBefore(C.S.md, best);
+  let tip = el.querySelector('.tip');
+  if (!tip) { tip = document.createElement('div'); tip.className = 'tip'; el.appendChild(tip); }
+  tip.innerHTML = `<b>${esc(new Date(best).toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}))}</b><br>` +
+    `<span class="k" style="background:var(--gold)"></span>DraftKings ${mk ? esc(C.S.fmt(mk.v)) : '—'}<br>` +
+    (C.S.cz.length ? `<span class="k" style="background:var(--muted)"></span>Caesars ${cz ? esc(C.S.fmt(cz.v)) : '—'}<br>` : '') +
+    `<span class="k" style="background:var(--lilac)"></span>Model ${md ? esc(C.S.fmt(md.v)) : 'not run yet'}`;
+  const px = C.X(best) * (r.width / C.W) + (svg.offsetLeft || 0);
+  tip.style.left = Math.max(80, Math.min(el.clientWidth - 80, px)) + 'px';
+  tip.style.top = (svg.offsetTop + 8) + 'px';
+}
+function onChartLeave(e) {
+  const el = e.target.closest('.chart-plot'); if (!el) return;
+  const tip = el.querySelector('.tip'); if (tip) tip.remove();
+  const xh = el.querySelector('.xh'); if (xh) xh.setAttribute('opacity', '0');
+}
+function sparkSvg(g) {
+  const S = seriesFor(g, 'spread');
+  const pts = S.mk; if (!pts.length) return '<svg class="spark" aria-hidden="true"></svg>';
+  const vals = pts.map(p => p.v).concat(S.md.map(p => p.v));
+  let v0 = Math.min(...vals) - 1, v1 = Math.max(...vals) + 1;
+  const W = 300, H = 44;
+  const ts = pts.map(p => p.t); let t0 = Math.min(...ts), t1 = Math.max(...ts); if (t1 === t0) { t0 -= 1; t1 += 1; }
+  const X = t => 4 + (t - t0) / (t1 - t0) * (W - 8), Y = v => 4 + (v1 - v) / (v1 - v0) * (H - 8);
+  const line = (pts.length === 1 ? [pts[0], { t: t1, v: pts[0].v }] : pts).map((p, i) => `${i ? 'L' : 'M'}${X(p.t).toFixed(1)},${Y(p.v).toFixed(1)}`).join('');
+  const m = S.md.length ? S.md[S.md.length - 1].v : null;
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+    ${m != null ? `<line x1="4" x2="${W - 4}" y1="${Y(m)}" y2="${Y(m)}" stroke="var(--lilac)" stroke-width="2" stroke-dasharray="5 4" vector-effect="non-scaling-stroke"/>` : ''}
+    <path d="${line}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
+}
+
+/* ---------- Slate ---------- */
+const byId = Object.fromEntries(D.games.map(g => [g.id, g]));
+function linesHtml(g) {
+  const ml = g.mlFav != null ? `${g.mlFav > 0 ? '+' : MINUS}${Math.abs(g.mlFav)} / ${g.mlDog != null ? (g.mlDog > 0 ? '+' : MINUS) + Math.abs(g.mlDog) : '—'}` : '—';
+  return `<div><h4 class="label">Lines</h4><div class="tbl-wrap"><table class="lines num">
+    <thead><tr><th>Book</th><th>Spread</th><th>Total</th></tr></thead><tbody>
+    <tr><td>Open</td><td>${sideStr(g, g.open)}</td><td>${g.openTot ?? '—'}</td></tr>
+    <tr><td>DraftKings</td><td>${sideStr(g, g.cur)}</td><td>${g.tot ?? '—'}</td></tr>
+    <tr><td>BookMaker.eu</td><td>${sideStr(g, g.bm)}</td><td>${g.bmTot ?? '—'}</td></tr>
+    <tr><td>Caesars</td><td>${sideStr(g, g.cz)}</td><td>—</td></tr>
+    <tr><td>Moneyline</td><td colspan="2">${ml}</td></tr>
+    </tbody></table></div></div>`;
+}
+function systemsHtml(g) {
+  const s = g.sys; if (!s) return '';
+  return `<div><h4 class="label">Situational systems · ${esc(niceMinus(s.pick))}</h4><ul class="checks">${s.checks.map(c => `
+    <li><span class="cbox" aria-hidden="true">✓</span><span><b>${esc(SYS[c.key] || c.key)}</b>${esc(c.why)}</span><span class="pc num">${pct(c.pct)}%</span></li>`).join('')}</ul></div>`;
+}
+function drawerHtml(g) {
+  const coverHome = g.cover != null && g.cover >= 50;
+  const coverTeam = coverHome ? g.h : g.a;
+  const coverPct = g.cover == null ? null : (coverHome ? g.cover : 100 - g.cover);
+  const winHome = g.winH != null && g.winH >= g.winA;
+  const overSide = g.over != null && g.over >= 50;
+  const scoreFav = g.medH >= g.medA;
+  const runs = (g.mh || []).length;
+  return `<div class="drawer">
+    <div class="charts">
+      <div class="chart"><div class="chart-head"><span class="label">Spread history</span><span class="now num">Market ${sideStr(g, g.cur)} · <span class="lilac">Model ${sideStr(g, g.model)}</span></span></div>
+        <div class="chart-plot" data-g="${g.id}" data-kind="spread"></div>
+        <p class="chart-foot">${(g.hist || []).length} line checks, ${runs} model run${runs === 1 ? '' : 's'} logged. Model runs are logged from Oct 2 onward.</p></div>
+      <div class="chart"><div class="chart-head"><span class="label">Total history</span><span class="now num">Market ${g.tot ?? '—'} · <span class="lilac">Model ${g.modelTot ?? '—'}</span></span></div>
+        <div class="chart-plot" data-g="${g.id}" data-kind="total"></div></div>
+    </div>
+    <div class="proj">
+      <div class="stat"><span class="label">Model's median score</span>
+        <div class="score num">${scoreFav ? `${g.h} ${g.medH}<em>–</em>${g.medA} ${g.a}` : `${g.a} ${g.medA}<em>–</em>${g.medH} ${g.h}`}</div></div>
+      <div class="stat"><b class="num">${pct(winHome ? g.winH : g.winA)}<small>%</small></b><span>${winHome ? g.h : g.a} wins outright</span></div>
+      <div class="stat"><b class="num">${pct(coverPct)}<small>%</small></b><span>${coverTeam} ${teamSpread(g, coverTeam)} covers</span></div>
+      <div class="stat"><b class="num">${pct(overSide ? g.over : 100 - g.over)}<small>%</small></b><span>${overSide ? 'Over' : 'Under'} ${g.tot} hits</span></div>
+    </div>
+    <div class="read">
+      <h4 class="label">The read</h4>
+      ${(g.analysis || []).map(p => `<p>${esc(p)}</p>`).join('') || '<p>No analyst write-up yet for this game.</p>'}
+      ${g.kn ? `<p class="callout"><b>Key number.</b> ${esc(g.kn)}</p>` : ''}
+      ${(g.notes || []).length ? `<ul class="notes">${g.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
+    </div>
+    <div class="side">
+      ${(g.leans || []).length ? `<div><h4 class="label">Leans</h4><div class="cards">${g.leans.map(l => leanCard({ ...l, g }, { factors: true })).join('')}</div></div>` : ''}
+      ${systemsHtml(g)}${linesHtml(g)}
+    </div>
+  </div>`;
+}
+(function renderSlate() {
+  const games = D.games.slice().sort((a, b) => {
+    const ga = a.model == null ? -1 : Math.abs(a.model - a.cur), gb = b.model == null ? -1 : Math.abs(b.model - b.cur);
+    return gb - ga;
+  });
+  document.getElementById('slate-count').textContent = games.length;
+  document.getElementById('rows').innerHTML = games.map(g => {
+    const gap = g.model != null && g.cur != null ? Math.abs(g.model - g.cur) : null;
+    const totDir = g.modelTot != null && g.tot != null ? (g.modelTot < g.tot ? '↓' : '↑') : '';
+    return `<details class="row" id="g-${g.id}">
+      <summary aria-label="${esc(g.away)} at ${esc(g.home)}">
+        <span class="tm away">${g.a}<small>${fmtKo(g.ko)}</small></span>
+        ${sparkSvg(g)}
+        <span class="tm home">${g.h}<small>home</small></span>
+        <span class="figs">
+          <span class="gapfig"><b class="num">${gap == null ? '—' : fmtAbs(gap)}</b><span>pts apart</span></span>
+          <span class="sub num"><i>Market</i> ${sideStr(g, g.cur)} · <i>Model</i> ${sideStr(g, g.model)}</span>
+          <span class="sub num"><i>Total</i> ${g.tot ?? '—'} · <i>Model</i> ${g.modelTot ?? '—'} ${totDir}</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      ${drawerHtml(g)}
+    </details>`;
+  }).join('');
+  document.querySelectorAll('details.row').forEach(d => d.addEventListener('toggle', () => {
+    if (d.open) d.querySelectorAll('.chart-plot').forEach(drawChart);
+  }));
+  const rows = document.getElementById('rows');
+  rows.addEventListener('mousemove', onChartMove);
+  rows.addEventListener('mouseleave', onChartLeave, true);
+  rows.addEventListener('pointerleave', onChartLeave, true);
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => document.querySelectorAll('details.row[open] .chart-plot').forEach(drawChart), 150); });
+})();
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-open]');
+  if (!a) return;
+  e.preventDefault();
+  const d = document.getElementById('g-' + a.dataset.open);
+  if (!d) return;
+  d.open = true;
+  d.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+});
+
+/* ---------- Money ---------- */
+function moveStr(g) {
+  const o = sideStr(g, g.open), c = sideStr(g, g.cur);
+  const ot = o.split(' ')[0], ct = c.split(' ')[0];
+  return ot === ct && ot !== 'PK' ? `${ot} ${o.split(' ')[1]} → ${c.split(' ')[1]}` : `${o} → ${c}`;
+}
+const ptsWord = v => `${fmtAbs(v)} point${fmtAbs(v) === '1' ? '' : 's'}`;
+function splitBar(name, aAbbr, hAbbr, homePct) {
+  if (homePct == null) return '';
+  const h = homePct, a = 100 - homePct;
+  return `<div class="split"><div class="split-cap"><span><b>${aAbbr}</b> ${a}%</span><span>${name}</span><span>${h}% <b>${hAbbr}</b></span></div>
+    <div class="sbar" role="img" aria-label="${name}: ${aAbbr} ${a}%, ${hAbbr} ${h}%"><i style="width:${a}%;background:${teamColor(aAbbr)}"></i><i style="width:${h}%;background:${teamColor(hAbbr)}"></i></div></div>`;
+}
+// The bet read. Inputs: model number vs current market (value side), line movement since open,
+// which side the money is on, and whether the move is a genuine reverse line move.
+function verdictFor(g) {
+  const m = g.ms || {};
+  if (g.model == null || g.cur == null) return { cls: 'pass', head: 'Pass', text: 'No model number yet for this game, so there is nothing to compare the line against.' };
+  const edge = g.model - g.cur;              // > 0: home side has value against the number
+  const side = edge > 0 ? g.h : g.a, other = edge > 0 ? g.a : g.h;
+  const line = `${side} ${teamSpread(g, side)}`;
+  const mv = g.open != null ? g.cur - g.open : 0; // > 0: market moved toward home
+  const moveSide = Math.abs(mv) < 0.05 ? null : (mv > 0 ? g.h : g.a);
+  const sharpSide = m.rlm ? moveSide : null;
+  const pubSide = m.sh == null ? null : m.sh >= 60 ? g.h : m.sh <= 40 ? g.a : null;
+  const spreadLean = (g.leans || []).find(l => l.market === 'spread');
+  const leanTxt = spreadLean ? ` Our write-up: ${cleanPick(spreadLean.pick).main} at ${spreadLean.conf}/10.` : '';
+  const pts = fmtAbs(edge);
+  const modelTxt = `the model makes it ${sideStr(g, g.model)} against a market of ${sideStr(g, g.cur)}`;
+  if (Math.abs(edge) < 1) {
+    return { cls: 'pass', head: 'Pass', text: `No value at this number: ${modelTxt}, less than a point apart.${sharpSide ? ` The reverse move toward ${sharpSide} is worth watching, but on its own it isn't a bet.` : ''}` };
+  }
+  if (sharpSide && sharpSide !== side) {
+    return { cls: 'pass', head: 'Pass for now', text: `The model likes ${side} by ${ptsWord(edge)}, but the line is moving toward ${other} against the public money, which points to sharper bettors on the other side. Revisit if the line comes back.` };
+  }
+  if (!spreadLean) {
+    return { cls: 'pass', head: 'Pass', text: `On paper ${modelTxt}, a ${pts}-point gap, but our analyst read doesn't back a spread bet here. Usually that means the market knows something the model can't see.` };
+  }
+  if (sharpSide && sharpSide === side && spreadLean.conf >= 6) {
+    return { cls: 'bet', head: `Bet ${line}`, text: `Model and sharp money agree: ${modelTxt}, and the line moved toward ${side} even though most of the money is on ${other}.${leanTxt}` };
+  }
+  if (sharpSide && sharpSide === side) {
+    return { cls: 'lean', head: `Lean ${line}`, text: `Sharp money agrees with the model: ${modelTxt}, and the line moved toward ${side} against the public. Our own conviction is still modest, so keep it small.${leanTxt}` };
+  }
+  if (moveSide === side) {
+    return { cls: 'lean', head: `Lean ${line}`, text: `${modelTxt[0].toUpperCase() + modelTxt.slice(1)}, and the line has already moved ${side}'s way since open, so some of the value is gone. Take it before it moves further.${leanTxt}` };
+  }
+  if (moveSide && moveSide !== side) {
+    return { cls: 'lean', head: `Lean ${line}`, text: `The line moved away from ${side}, which makes the number better for us: ${modelTxt}. Check that no injury news explains the move first.${leanTxt}` };
+  }
+  return { cls: 'lean', head: `Lean ${line}`, text: `${modelTxt[0].toUpperCase() + modelTxt.slice(1)}, a ${pts}-point gap, and the line hasn't moved since open${pubSide && pubSide !== side ? ` while the public leans ${pubSide}` : ''}.${leanTxt}` };
+}
+(function renderMoney() {
+  const games = D.games.filter(g => g.ms && (g.ms.sh != null || g.ms.th != null)).map(g => ({ g, v: verdictFor(g) }));
+  const rank = { bet: 0, lean: 1, pass: 2 };
+  games.sort((A, B) => (B.g.ms.rlm - A.g.ms.rlm) || rank[A.v.cls] - rank[B.v.cls] || Math.abs((B.g.ms.sh ?? 50) - 50) - Math.abs((A.g.ms.sh ?? 50) - 50));
+  document.getElementById('money-cards').innerHTML = games.map(({ g, v }) => {
+    const m = g.ms;
+    const moved = g.open != null && Math.abs(g.open - g.cur) >= 0.05;
+    const toward = moved ? (g.cur - g.open > 0 ? g.h : g.a) : null;
+    const homeMaj = m.sh != null && m.sh >= 50;
+    const majTeam = m.sh == null ? null : homeMaj ? g.h : g.a;
+    const majMoney = m.sh == null ? null : homeMaj ? m.sh : 100 - m.sh;
+    const majTix = m.sb == null ? null : homeMaj ? m.sb : 100 - m.sb;
+    const lopsided = m.sh != null && (m.sh >= 60 || m.sh <= 40);
+    const chip = m.rlm ? '<span class="tag rlm">Reverse line move</span>' : lopsided && !moved ? '<span class="tag watch">Watch</span>' : '';
+    return `<article class="card mc${m.rlm ? ' rlm' : ''}">
+      <div class="card-top"><span><span class="game">${g.a} @ ${g.h}</span> · ${fmtKo(g.ko)}</span>${chip}</div>
+      <div class="mc-dual">
+        <div class="mc-move"><span class="label">Line move</span><b class="num">${moved ? moveStr(g) : sideStr(g, g.cur)}</b><span>${moved ? `${ptsWord(g.cur - g.open)} toward ${toward}` : 'Unchanged since open'}</span></div>
+        <div class="mc-money"><span class="label">Money</span><b class="num">${majTeam ? `${majMoney}% on ${majTeam}` : '—'}</b><span>${majTix != null ? `${majTix}% of tickets on ${majTeam}` : 'No spread split this cycle'}</span></div>
+      </div>
+      ${splitBar('Tickets', g.a, g.h, m.sb)}${splitBar('Money', g.a, g.h, m.sh)}
+      <div class="verdict ${v.cls}"><span class="vh"><i>${v.cls === 'bet' ? 'Bet' : v.cls === 'lean' ? 'Lean' : 'Pass'}</i>${esc(v.head.replace(/^(Bet|Lean) /, ''))}</span><p>${esc(v.text)}</p></div>
+    </article>`;
+  }).join('') || '<p class="empty-note">No betting splits captured yet this week.</p>';
+})();
+
+/* ---------- Systems ---------- */
+(function renderSystems() {
+  const towers = D.games.filter(g => g.sys).map(g => {
+    const s = g.sys;
+    let side = null, agree = null;
+    if (s.team) { if (g.cover != null) { side = s.team === g.h ? g.cover : 100 - g.cover; agree = side >= 50; } }
+    else if (/^under/i.test(s.pick) && g.over != null) { side = 100 - g.over; agree = side >= 50; }
+    else if (/^over/i.test(s.pick) && g.over != null) { side = g.over; agree = side >= 50; }
+    return { g, s, side, agree };
+  }).sort((a, b) => b.s.checks.length - a.s.checks.length || b.s.pct - a.s.pct);
+  document.getElementById('sky').innerHTML = towers.map(({ g, s, side, agree }) => `
+    <div class="tower">
+      <div class="tw-head">
+        <div class="tw-pick">${esc(s.team ? `${s.team} ${niceMinus((s.pick.match(/[+-]\d+(?:\.\d+)?/) || [s.pick])[0])}` : niceMinus(s.pick))}</div>
+        ${agree == null ? '' : `<span class="tag ${agree ? 'agree' : 'disagree'}">Model ${agree ? 'agrees' : 'disagrees'} · ${pct(side)}%</span>`}
+      </div>
+      ${s.checks.slice().reverse().map(c => `
+        <div class="blk">
+          <span class="blk-pct num">${pct(c.pct)}<small>%</small></span>
+          <span class="blk-name">${esc(SYS[c.key] || c.key)}</span>
+          <span class="blk-meter" aria-hidden="true"><i style="width:${c.pct}%"></i><u style="left:52.4%"></u></span>
+        </div>`).join('')}
+      <div class="tw-base"><b>${g.a} @ ${g.h}</b> · ${fmtKo(g.ko)}</div>
+    </div>`).join('') || '<p class="empty-note">No situational systems match this week yet.</p>';
+})();
+
+/* ---------- Props ---------- */
+document.getElementById('props-count').textContent = props.length;
+document.getElementById('prop-cards').innerHTML = props.map(p => propCard(p)).join('') || '<p class="empty-note">No props captured yet this week.</p>';
+document.getElementById('pending').innerHTML = (D.pending || []).length ? `<b>Still waiting on props:</b> ${D.pending.map(esc).join(', ')}. Rechecked every run until a clean number posts.` : '';
+
+/* ---------- Hit rates ---------- */
+(function hitRates() {
+  const propRows = D.propRows || [], games = D.results || [];
+  const weeks = [...new Set(propRows.map(r => r.wk).concat(games.map(r => r.wk)).filter(Boolean))].sort((a, b) => wkNum(b) - wkNum(a));
+  const sel = document.getElementById('hr-week');
+  sel.innerHTML = `<option value="all">All weeks</option>` + weeks.map(w => `<option value="${esc(w)}">Week ${wkNum(w)}</option>`).join('');
+  const rate = (h, t) => t ? Math.round(h / t * 100) : null;
+  const rec = (rows, test) => { const h = rows.filter(r => test(r) === true).length, m = rows.filter(r => test(r) === false).length; return { h, m, t: h + m, p: rate(h, h + m) }; };
+  const propRec = rows => rec(rows, r => r.res === 'hit' ? true : r.res === 'miss' ? false : null);
+  const BE = 52.4;
+  const tile = (name, r, be) => `<div class="tile"><span class="label">${name}</span><b class="num">${r.p == null ? '—' : r.p}<small>%</small></b>
+    <span class="rec num">${r.h}–${r.m}${r.t ? '' : ' · no graded picks'}</span>
+    <span class="pbar"><i class="${be && r.p != null && r.p < BE ? 'low' : ''}" style="width:${r.p || 0}%"></i>${be ? `<u style="left:${BE}%"></u>` : ''}</span>
+    ${be ? `<span class="be">Tick: ${BE}% break-even</span>` : '<span class="be">Picking the winner</span>'}</div>`;
+  const miniCell = r => r.t ? `<b>${r.h}–${r.m}</b> <span class="num">${r.p}%</span>` : '<span>—</span>';
+  let showAll = false;
+  function render() {
+    const wk = sel.value;
+    const P = wk === 'all' ? propRows : propRows.filter(r => r.wk === wk);
+    const G = wk === 'all' ? games : games.filter(r => r.wk === wk);
+    const pr = propRec(P), su = rec(G, r => r.su), ats = rec(G, r => r.ats), tot = rec(G, r => r.tot);
+    const pushes = P.filter(r => r.res === 'push').length;
+    const scope = wk === 'all' ? 'Across every week' : `In Week ${wkNum(wk)}`;
+    document.getElementById('hr-summary').innerHTML = pr.t
+      ? `${scope}, props are hitting <b>${pr.p}%</b> (${pr.h}–${pr.m}), ${pr.p >= BE ? 'above' : 'below'} the ${BE}% break-even. Spread picks are at <b>${ats.p ?? '—'}%</b>${ats.t ? ` (${ats.h}–${ats.m})` : ''}.`
+      : `${scope}: no graded props yet.`;
+    const tiers = [['7–10 strong', r => (r.conf || 0) >= 7], ['5–6 real', r => (r.conf || 0) >= 5 && r.conf < 7], ['0–4 mild', r => (r.conf || 0) < 5]];
+    const tierRows = tiers.map(([n, f]) => { const r = propRec(P.filter(f)); return `<tr><td><b>${n}</b></td><td class="num">${r.t ? `${r.h}–${r.m}` : '—'}</td><td class="num r">${r.p == null ? '—' : r.p + '%'}</td><td><span class="mini"><i class="${r.p != null && r.p < BE ? 'low' : ''}" style="width:${r.p || 0}%"></i></span></td></tr>`; }).join('');
+    const wkRows = wk === 'all' ? weeks.map(w => {
+      const pp = propRec(propRows.filter(r => r.wk === w)), gg = games.filter(r => r.wk === w);
+      return `<tr><td><b>Week ${wkNum(w)}</b></td><td>${miniCell(pp)}</td><td>${miniCell(rec(gg, r => r.su))}</td><td>${miniCell(rec(gg, r => r.ats))}</td><td>${miniCell(rec(gg, r => r.tot))}</td></tr>`;
+    }).join('') : '';
+    const graded = P.filter(r => r.res === 'hit' || r.res === 'miss' || r.res === 'push').sort((a, b) => (a.res === 'miss' ? 0 : 1) - (b.res === 'miss' ? 0 : 1) || new Date(b.ko) - new Date(a.ko));
+    const shown = showAll ? graded : graded.slice(0, 12);
+    const pickRows = shown.map(r => `<tr><td><b>${esc(r.player)}</b><br><span class="num">${esc(String(r.lean).toUpperCase())} ${r.line} ${esc(PROP_M[r.market] || r.market)}</span></td><td class="num">${r.actual ?? '—'}</td><td><span class="res ${esc(r.res)}">${esc(r.res)}</span></td><td>${esc(r.a)} @ ${esc(r.h)}${wk === 'all' ? ` · W${wkNum(r.wk)}` : ''}</td></tr>`).join('');
+    const last = G.length ? G[G.length - 1] : null;
+    document.getElementById('hr-body').innerHTML = `
+      <div class="tiles">${tile('Player props', pr, true)}${tile('Straight up', su, false)}${tile('Against the spread', ats, true)}${tile('Totals', tot, true)}</div>
+      <div class="hr-cols">
+        <div>
+          <div class="label group-label"><span>Props by confidence</span>${pushes ? `<span class="sub">${pushes} push${pushes === 1 ? '' : 'es'} left out</span>` : ''}</div>
+          <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Tier</th><th>Record</th><th class="r">Hit</th><th></th></tr></thead><tbody>${tierRows}</tbody></table></div>
+          ${wk === 'all' && weeks.length ? `<div class="label group-label"><span>By week</span></div>
+          <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Week</th><th>Props</th><th>SU</th><th>ATS</th><th>Totals</th></tr></thead><tbody>${wkRows}</tbody></table></div>` : ''}
+          ${last ? `<div class="label group-label"><span>Latest result</span></div><p class="hr-summary"><b class="num">${esc(last.a)} ${last.as_}, ${esc(last.h)} ${last.hs}</b>. The model gave the winner a ${pct(last.wp)}% chance.</p>` : ''}
+        </div>
+        <div>
+          <div class="label group-label"><span>Graded props</span><span class="sub">misses first</span></div>
+          ${pickRows ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Pick</th><th>Actual</th><th>Result</th><th>Game</th></tr></thead><tbody>${pickRows}</tbody></table></div>${graded.length > 12 ? `<button class="more" id="hr-more" type="button">${showAll ? 'Show fewer' : `Show all ${graded.length} graded props`}</button>` : ''}` : '<p class="empty-note">No graded props in this view.</p>'}
+        </div>
+      </div>`;
+  }
+  sel.addEventListener('change', () => { showAll = false; render(); });
+  document.getElementById('hr-body').addEventListener('click', e => { if (e.target.id === 'hr-more') { showAll = !showAll; render(); } });
+  render();
+  document.getElementById('built').textContent = `Data built ${built.toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'})}`;
+})();
+
+/* ---------- Early edges / CLV ---------- */
+(function edges() {
+  const E = D.edges; const el = document.getElementById('edge-body');
+  if (!E || !E.rows || !E.rows.length) { el.innerHTML = ''; return; }
+  const s = E.summary, r = s.record || {};
+  const sign = v => v == null ? '—' : (v > 0 ? '+' : '') + v;
+  const days = Object.entries(s.byRecDay || {}).map(([d, v]) => `${esc(d)}: ${v.beat}/${v.n} beat, avg ${sign(v.avgPts)}`).join(' · ');
+  const grp = o => Object.entries(o || {}).map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td class="num">${v.n}</td><td class="num">${v.withLine ? v.beat + '/' + v.withLine + ' (' + v.beatPct + '%)' : '—'}</td><td class="num">${sign(v.avgPts)}</td><td class="num">${(v.record || {}).w || 0}–${(v.record || {}).l || 0}</td></tr>`).join('');
+  const sh = s.sharp || {};
+  const breakdown = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>By window / pick type</th><th>Picks</th><th>Beat close</th><th>Avg CLV</th><th>W–L</th></tr></thead><tbody>${grp(s.byWindow)}${grp(s.byPickType)}</tbody></table></div>
+    <p class="hr-summary">Vs the sharp close (BookMaker.eu): <b>${sh.beat || 0}/${sh.n || 0}</b> beat, avg <b>${sign(sh.avgPts)}</b> pts. Props with a recorded close: <b>${s.propsWithClose || 0}</b>.${(s.mlPriceClv || {}).n ? ' Moneyline no-vig price CLV avg <b>' + sign(s.mlPriceClv.avgPct) + ' pct pts</b>.' : ''} Benchmark: beating the close on 55%+ of picks.</p>`;
+  const rows = E.rows.map(x => `<tr><td><b>${esc(x.pick)}</b><br><span class="num">${esc(x.a)} @ ${esc(x.h)} · ${esc(x.day || '')} · conf ${x.conf ?? '—'} · $${x.stake ?? '—'}</span></td>
+    <td class="num">${x.rec}</td><td class="num">${x.close != null ? x.close + ' (close)' : (x.now ?? '—')}</td>
+    <td class="num"><span class="res ${x.clv > 0 ? 'hit' : x.clv < 0 ? 'miss' : ''}">${sign(x.clv)}</span></td>
+    <td>${x.taken ? '<b>Taken</b>' : '<span class="num">Paper</span>'}</td>
+    <td><span class="res ${x.res === 'win' ? 'hit' : x.res === 'loss' ? 'miss' : x.res === 'push' ? 'push' : ''}">${x.res || 'open'}</span></td></tr>`).join('');
+  el.innerHTML = `<div class="label group-label" style="margin-top:40px"><span>Early edges &amp; closing line value</span><span class="sub">did we beat the market's final number?</span></div>
+    <p class="hr-summary">Logged <b>${s.logged}</b> early recommendations. <b>${s.beatClose}</b> have beaten the line so far (${s.flat} unchanged), average <b>${sign(s.avgClvPts)} pts</b> of value. Results at our number: <b>${r.w || 0}–${r.l || 0}${r.p ? '–' + r.p : ''}</b>${r.pct != null ? ' (' + r.pct + '%)' : ''}; paper P/L <b>$${s.paperPnl}</b>${s.taken ? `; taken ${s.taken}, real P/L $${s.realPnl}` : ''}.${days ? ' By day recommended — ' + days + '.' : ''}</p>
+    ${breakdown}
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Pick</th><th>Our line</th><th>Now / close</th><th>CLV</th><th>Status</th><th>Result</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+})();
+</script>

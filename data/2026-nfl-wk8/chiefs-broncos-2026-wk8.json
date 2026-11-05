@@ -1,0 +1,433 @@
+{
+  "game_id": "chiefs-broncos-2026-wk8",
+  "matchup": "Kansas City Chiefs @ Denver Broncos",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T21:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 1.5,
+      "total": 42.5,
+      "ml_fav": -122,
+      "ml_dog": 108
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -122,
+        "ml_dog": 108
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 42.5,
+        "ml_fav": -122,
+        "ml_dog": 108
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); BookMaker.eu not listing this game; Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": 1,
+        "total": 41,
+        "ml_fav": -121,
+        "ml_dog": 103
+      },
+      "draftkings": {
+        "spread": 1,
+        "total": 42.5,
+        "ml_fav": -115,
+        "ml_dog": 108
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": 1,
+        "total": 41,
+        "ml_fav": -121,
+        "ml_dog": 103
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": 1,
+        "total": 40.5,
+        "ml_fav": -117,
+        "ml_dog": 100
+      },
+      "draftkings": {
+        "spread": 1.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 1,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:13Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 40.5,
+        "ml_fav": -115,
+        "ml_dog": -105
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 40.5,
+        "ml_fav": -118,
+        "ml_dog": 100
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 40.5,
+        "ml_fav": -115,
+        "ml_dog": -103
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T20:31:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 1.5,
+        "total": 41.5,
+        "ml_fav": -112,
+        "ml_dog": -108
+      },
+      "fanduel": {
+        "spread": 1.5,
+        "total": 41.5,
+        "ml_fav": -112,
+        "ml_dog": -104
+      },
+      "caesars": {
+        "spread": 1.5,
+        "total": 41.5,
+        "ml_fav": -115,
+        "ml_dog": -103
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~20:32Z (3:32pm ET). BookMaker.eu null."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": null,
+    "total_lean": "OVER 40.5",
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "model 43.8; 90% handle on under"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T20:31:44.810678+00:00",
+    "n": 10000,
+    "homeElo": 1620.6,
+    "awayElo": 1589.4,
+    "gamesSeen": 13,
+    "eloMarginHome": 3.2,
+    "statsMarginHome": -3.1,
+    "marginDivergence": 6.3,
+    "projTotal": 43.8,
+    "homeWinProbElo": 61.2,
+    "marketHomeSpread": 1.5,
+    "marketTotal": 41.5,
+    "homeInjuryPts": -0.5,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.5,
+    "projAwayMeanRaw": 20.3,
+    "projHomeMeanAdjusted": 23.0,
+    "projAwayMeanAdjusted": 20.3,
+    "injuryAdjustedMarginHome": 2.7,
+    "projTotalAdjusted": 43.3,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+3.2) and recent-scoring margin (-3.1) disagree by 6.3 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -0.5 pts -- Talanoa Hufanga (S, out, -0.5).",
+      "Kansas City Chiefs (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Rashee Rice (-2.0), Josh Simmons (-1.0) [-3.0 pts total]; Rashee Rice (-1.8), Josh Simmons (-1.2), Jaylon Moore (-0.8), Brashard Smith (-0.2), L'Jarius Sneed (-0.3) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 56.1,
+    "awayWinPct": 41.1,
+    "tiePct": 2.9,
+    "medianHomeScore": 23,
+    "medianAwayScore": 20,
+    "coverPctHome": 61.6,
+    "overPct": 55.0
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:07.950520+00:00",
+      "marginHome": 1.8,
+      "total": 43.3
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.063331+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.632479+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.522848+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-28T00:49:36.933543+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.705622+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.818742+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.792312+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T01:52:15.144735+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.000208+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.013563+00:00",
+      "marginHome": 3.2,
+      "total": 43.8
+    },
+    {
+      "run_at": "2026-11-01T20:31:44.810678+00:00",
+      "marginHome": 2.7,
+      "total": 43.3
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Broncos by 3.2 on Elo but Chiefs by 3.1 on 2026 scoring; total 43.8 vs 40.5, over in 59.2% of runs. 90% of total handle is on the under and the total slipped from 41 to 40.5.",
+      "The methods split on the side. The over is the model's lean, but heavy under money moved the number. Jaylen Waddle and LT Garett Bolles are questionable for Denver. No bet."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "OVER 40.5",
+        "confidence": 4,
+        "reasoning": "Model 43.8, against 90% under handle. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 41,
+      "handle_pct_home": 45
+    },
+    "total": {
+      "bets_pct_over": 43,
+      "handle_pct_over": 10
+    },
+    "moneyline": null,
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "props": {
+    "last_checked": "2026-11-01T13:21:29Z",
+    "status": "captured",
+    "source_note": "Lines/projections: covers.com player-props board (live browser render 2026-11-01 ~13:00Z), best price shown. Roster/starter check: RotoWire NFL lineups 11/1. Ranks: CBS posvsdef (QB/RB/TE, thru Wk8 TNF) and footballdb 2026 WR (thru Wk7). Game logs: statmuse (partial).",
+    "picks": [
+      {
+        "player": "Patrick Mahomes",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "BetRivers",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Denver allows the 6th-most QB rushing yards and Mahomes ran for 23 against them in Week 2. | Stake $18 \u00b7 pass at 15.5",
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "CBS QB rush yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DEN allows 22.9 QB rush yds/g, 6th most (CBS; league avg 16.4)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 19.2 vs 12.5 line (+6.7)"
+          },
+          {
+            "label": "Backtest",
+            "dir": "for",
+            "detail": "cleared 12.5 in 3 of 5 games, incl. 23 yds vs DEN Wk2 (statmuse)"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "KC -1.5, total 40.5: close game, no blowout"
+          },
+          {
+            "label": "Volume",
+            "dir": "neutral",
+            "detail": "3.4 rush att/g this season (17 on 5 games)"
+          }
+        ],
+        "confidence_base": 5,
+        "stake": 18,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 2,
+          "net": 3
+        },
+        "opening_line": 12.5,
+        "opening_captured_at": "2026-11-01T13:21:29Z",
+        "current_line": 12.5,
+        "current_captured_at": "2026-11-01T13:21:29Z",
+        "season_log": [
+          {
+            "week": 2,
+            "actual": 23,
+            "result": "hit"
+          },
+          {
+            "week": 3,
+            "actual": 17,
+            "result": "hit"
+          },
+          {
+            "week": 4,
+            "actual": 1,
+            "result": "miss"
+          },
+          {
+            "week": 5,
+            "actual": 0,
+            "result": "miss"
+          },
+          {
+            "week": 7,
+            "actual": 16,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 3,
+          "misses": 2,
+          "pushes": 0,
+          "total": 5,
+          "pct": 60,
+          "line": 12.5,
+          "lean": "over"
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-01T20:31:44Z",
+    "home": {
+      "items": [
+        {
+          "position": "S",
+          "player": "Talanoa Hufanga",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Inactive (RotoWire lineups inactives 11/1 ~3:30pm ET)"
+        }
+      ],
+      "items_total_pts": -0.5,
+      "stacking_notes": [],
+      "total_pts": -0.5
+    },
+    "away": {
+      "items": [],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    }
+  },
+  "final_score": {
+    "home": 28,
+    "away": 24
+  }
+}

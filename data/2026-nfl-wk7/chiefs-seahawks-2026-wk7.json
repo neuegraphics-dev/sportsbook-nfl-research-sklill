@@ -1,0 +1,396 @@
+{
+  "game_id": "chiefs-seahawks-2026-wk7",
+  "matchup": "Kansas City Chiefs @ Seattle Seahawks",
+  "week": "Week 7",
+  "kickoff": "2026-10-26T00:20:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -2,
+      "total": 42.5,
+      "ml_fav": -138,
+      "ml_dog": 118
+    },
+    "draftkings": {
+      "spread": -2.5,
+      "total": 42.5,
+      "ml_fav": -135,
+      "ml_dog": 114
+    },
+    "fanduel": {
+      "spread": -2.5,
+      "total": 42.5,
+      "ml_fav": -134,
+      "ml_dog": 114
+    },
+    "caesars": {
+      "spread": -2.5,
+      "total": 42.5,
+      "ml_fav": -136,
+      "ml_dog": 115
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Seahawks."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -2,
+        "total": 42.5,
+        "ml_fav": -138,
+        "ml_dog": 118
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -135,
+        "ml_dog": 114
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -134,
+        "ml_dog": 114
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -136,
+        "ml_dog": 115
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Seahawks."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:09Z",
+      "bookmaker_eu": {
+        "spread": -2,
+        "total": 42.5,
+        "ml_fav": -138,
+        "ml_dog": 118
+      },
+      "draftkings": {
+        "spread": -3,
+        "total": 42.5,
+        "ml_fav": -145,
+        "ml_dog": 125
+      },
+      "fanduel": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -150,
+        "ml_dog": 126
+      },
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Seahawks."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -146,
+        "ml_dog": 124
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:06Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -150,
+        "ml_dog": 126
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": null,
+    "total_lean": "Over 42.5",
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Model total projection above market, model-only signal",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 26,
+      "handle_pct_home": 54
+    },
+    "total": {
+      "bets_pct_over": 75,
+      "handle_pct_over": 68
+    },
+    "moneyline": {
+      "bets_pct_home": 43,
+      "handle_pct_home": 49
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T20:44:38.855603+00:00",
+    "n": 10000,
+    "homeElo": 1660.3,
+    "awayElo": 1609.4,
+    "gamesSeen": 11,
+    "eloMarginHome": 4.0,
+    "statsMarginHome": -0.4,
+    "marginDivergence": 4.3,
+    "projTotal": 45.7,
+    "homeWinProbElo": 63.9,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 42.5,
+    "homeInjuryPts": -4.55,
+    "awayInjuryPts": -5.05,
+    "projHomeMeanRaw": 24.8,
+    "projAwayMeanRaw": 20.9,
+    "projHomeMeanAdjusted": 20.3,
+    "projAwayMeanAdjusted": 15.8,
+    "injuryAdjustedMarginHome": 4.5,
+    "projTotalAdjusted": 36.1,
+    "spreadLean": null,
+    "totalLean": "under",
+    "notes": [
+      "Elo margin (+4.0) and recent-scoring margin (-0.4) disagree by 4.3 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -4.5 pts -- Zach Charbonnet (RB, out, -1.2), Drake Thomas (LB, out, -0.4), Chazz Surratt (LB, out, -0.3), Drew Lock (QB, questionable, -0.8), DeMarcus Lawrence (LB, questionable, -0.4), Uchenna Nwosu (LB, questionable, -0.3), Elijah Arroyo (TE, out, -0.4). LB depth: 2 confirmed out (Drake Thomas, Chazz Surratt) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -5.0 pts -- Rashee Rice (WR, out, -1.8), Josh Simmons (T, out, -1.2), Jaylon Moore (T, out, -0.8), Brashard Smith (RB, out, -0.2), L'Jarius Sneed (CB, questionable, -0.3). T depth: 2 confirmed out (Josh Simmons, Jaylon Moore) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Kansas City Chiefs (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Rashee Rice (-2.0), Josh Simmons (-1.0) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 60.7,
+    "awayWinPct": 36.3,
+    "tiePct": 3.0,
+    "medianHomeScore": 20,
+    "medianAwayScore": 16,
+    "coverPctHome": 55.0,
+    "overPct": 32.9
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:08.007992+00:00",
+      "marginHome": 4.0,
+      "total": 45.7
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.922558+00:00",
+      "marginHome": 4.0,
+      "total": 45.7
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.448335+00:00",
+      "marginHome": 4.0,
+      "total": 45.7
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.148247+00:00",
+      "marginHome": 4.8,
+      "total": 42.5
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.221254+00:00",
+      "marginHome": 4.5,
+      "total": 36.1
+    },
+    {
+      "run_at": "2026-10-25T20:44:38.855603+00:00",
+      "marginHome": 4.5,
+      "total": 36.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Seattle -2.5 (DK -129); Elo has Seattle by 4.0 but recent scoring has Kansas City by 0.4, and the injury-adjusted model says Seattle by 4.5. Kansas City loses Rashee Rice and two tackles; Seattle loses RB1 Charbonnet and Drew Lock is questionable.",
+      "Signals disagree on the side and the raw and adjusted totals disagree, so no lean."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-21T02:12:30Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank; roster/team verified this run (Geno Smith/Jets, Kyler Murray/Vikings, Daniel Jones/Colts, Cam Ward/Titans confirmed via web search of 2026 transactions).",
+    "picks": [
+      {
+        "player": "Patrick Mahomes",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Real model gap but Seattle is the 4th-toughest pass defense in the NFL -- tough-matchup capped. | Stake Follow.50 \u00b7 pass at 219.5",
+        "matchup": {
+          "opp_rank_vs_pos": 4,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "Seattle ranks 4th of 32 vs QB (fantasy pts allowed, CBS posvsdef), allowing only 156.83 pass yds/g avg -- far under the 211.5 line"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 229.06 vs 211.5 line, +17.6 diff, 23.32% EV"
+          },
+          {
+            "label": "Offense trend",
+            "dir": "for",
+            "detail": "Chiefs project as the 6th-most pass-heavy team in the NFL at a 63.6% pass rate"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 211.5,
+        "opening_captured_at": "2026-10-21T02:12:30Z",
+        "current_line": 211.5,
+        "current_captured_at": "2026-10-21T02:12:30Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Zach Charbonnet",
+          "status": "out",
+          "pts": -1.2,
+          "note": "RB1 out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Drake Thomas",
+          "status": "out",
+          "pts": -0.4,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Chazz Surratt",
+          "status": "out",
+          "pts": -0.3,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "QB",
+          "player": "Drew Lock",
+          "status": "questionable",
+          "pts": -0.8,
+          "note": "elbow, status unresolved (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "DeMarcus Lawrence",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "pass rusher knee (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Uchenna Nwosu",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "pass rusher hip (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "TE",
+          "player": "Elijah Arroyo",
+          "status": "out",
+          "pts": -0.4,
+          "note": "TE out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.8,
+      "stacking_notes": [
+        "LB depth: 2 confirmed out (Drake Thomas, Chazz Surratt) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -4.55
+    },
+    "away": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "Rashee Rice",
+          "status": "out",
+          "pts": -1.8,
+          "note": "WR1 out, now confirmed (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Josh Simmons",
+          "status": "out",
+          "pts": -1.2,
+          "note": "T out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Jaylon Moore",
+          "status": "out",
+          "pts": -0.8,
+          "note": "second T out, OL depth hit (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "RB",
+          "player": "Brashard Smith",
+          "status": "out",
+          "pts": -0.2,
+          "note": "RB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "CB",
+          "player": "L'Jarius Sneed",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "knee (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -4.3,
+      "stacking_notes": [
+        "T depth: 2 confirmed out (Josh Simmons, Jaylon Moore) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -5.05
+    }
+  },
+  "final_score": {
+    "home": 20,
+    "away": 3
+  }
+}

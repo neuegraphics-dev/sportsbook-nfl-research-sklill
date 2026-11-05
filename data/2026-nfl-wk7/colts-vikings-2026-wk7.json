@@ -1,0 +1,372 @@
+{
+  "game_id": "colts-vikings-2026-wk7",
+  "matchup": "Indianapolis Colts @ Minnesota Vikings",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -6.5,
+      "total": 42,
+      "ml_fav": -252,
+      "ml_dog": 208
+    },
+    "draftkings": {
+      "spread": -5.5,
+      "total": 41.5,
+      "ml_fav": -278,
+      "ml_dog": 225
+    },
+    "fanduel": {
+      "spread": -6.5,
+      "total": 41.5,
+      "ml_fav": -290,
+      "ml_dog": 235
+    },
+    "caesars": {
+      "spread": -6.5,
+      "total": 51,
+      "ml_fav": -265,
+      "ml_dog": 215
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Vikings. CAESARS TOTAL CORRECTED TO 41.5, see follow-up note."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 42,
+        "ml_fav": -252,
+        "ml_dog": 208
+      },
+      "draftkings": {
+        "spread": -5.5,
+        "total": 41.5,
+        "ml_fav": -278,
+        "ml_dog": 225
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -290,
+        "ml_dog": 235
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 51,
+        "ml_fav": -265,
+        "ml_dog": 215
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Vikings. CAESARS TOTAL CORRECTED TO 41.5, see follow-up note."
+    },
+    {
+      "captured_at": "2026-10-20T14:10:04Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 42,
+        "ml_fav": -252,
+        "ml_dog": 208
+      },
+      "draftkings": {
+        "spread": -5.5,
+        "total": 41.5,
+        "ml_fav": -278,
+        "ml_dog": 225
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -290,
+        "ml_dog": 235
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -265,
+        "ml_dog": 215
+      },
+      "note": "CORRECTION: prior snapshot had a typo'd Caesars total (51, copy-paste error from the Bengals-Ravens row) -- corrected to 41.5 per VegasInsider DOM. DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Vikings."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 42,
+        "ml_fav": -252,
+        "ml_dog": 208
+      },
+      "draftkings": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -285,
+        "ml_dog": 230
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -280,
+        "ml_dog": 225
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -290,
+        "ml_dog": 235
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Vikings."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -288,
+        "ml_dog": 236
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -325,
+        "ml_dog": 260
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -6.5,
+        "total": 41.5,
+        "ml_fav": -319,
+        "ml_dog": 250
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": null,
+    "total_lean": "Over 41.5",
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Model-only signal, modest edge",
+      "Checked BookMaker.eu directly this cycle (lines.bookmaker.eu) -- page itself reports last update about 1 day ago and every tracked game shows byte-identical numbers to the prior snapshot, while DK/Caesars/FanDuel show small (0.5-1.5pt, normal weekday) moves. This game's book_vs_sharp_gap/key_number_crossed trigger is therefore likely an artifact of comparing a live US-book number against a stale sharp reference, not confirmed independent news -- treated as Low-confidence/watch, not a finding, pending a fresh BookMaker.eu read."
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 67,
+      "handle_pct_home": 73
+    },
+    "total": {
+      "bets_pct_over": 67,
+      "handle_pct_over": 51
+    },
+    "moneyline": {
+      "bets_pct_home": 90,
+      "handle_pct_home": 80
+    },
+    "reverse_line_move": false,
+    "rlm_note": "73% of handle is on the home side and the spread has moved toward them (-5.5 -> -6.5) -- money and line agree, no RLM.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.282456+00:00",
+    "n": 10000,
+    "homeElo": 1595.6,
+    "awayElo": 1460.1,
+    "gamesSeen": 12,
+    "eloMarginHome": 7.3,
+    "statsMarginHome": 3.4,
+    "marginDivergence": 3.9,
+    "projTotal": 44.0,
+    "homeWinProbElo": 74.2,
+    "marketHomeSpread": -6.5,
+    "marketTotal": 41.5,
+    "homeInjuryPts": -0.2,
+    "awayInjuryPts": -3.5,
+    "projHomeMeanRaw": 25.7,
+    "projAwayMeanRaw": 18.4,
+    "projHomeMeanAdjusted": 25.5,
+    "projAwayMeanAdjusted": 14.9,
+    "injuryAdjustedMarginHome": 10.6,
+    "projTotalAdjusted": 40.3,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -0.2 pts -- Jordan Mason (RB, questionable, -0.2).",
+      "Away injury adjustment: -3.5 pts -- Sauce Gardner (CB, out, -1.5), Tyler Warren (TE, out, -1.0), Anthony Gould (WR, out, -0.3), CJ Allen (LB, out, -0.5), Bryce Boettcher (LB, questionable, -0.2).",
+      "Indianapolis Colts (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 76.1,
+    "awayWinPct": 21.8,
+    "tiePct": 2.1,
+    "medianHomeScore": 25,
+    "medianAwayScore": 15,
+    "coverPctHome": 60.9,
+    "overPct": 46.5
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.705549+00:00",
+      "marginHome": 7.3,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.692161+00:00",
+      "marginHome": 7.3,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.482728+00:00",
+      "marginHome": 7.3,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.180586+00:00",
+      "marginHome": 7.5,
+      "total": 42.2
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.282456+00:00",
+      "marginHome": 10.6,
+      "total": 40.3
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Minnesota -6.5; the injury-adjusted model has the Vikings by 10.6 but recent scoring has them by only 3.4. Indianapolis loses CB Sauce Gardner and TE Tyler Warren. The Elo and scoring signals disagree, so no bet.",
+      "Total 41.5 is in line with the model."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-21T02:12:30Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank; roster/team verified this run (Geno Smith/Jets, Kyler Murray/Vikings, Daniel Jones/Colts, Cam Ward/Titans confirmed via web search of 2026 transactions).",
+    "picks": [
+      {
+        "player": "Daniel Jones",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "bet365",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Model likes the over but Minnesota is the single toughest pass defense in the NFL this season -- tough-matchup capped. | Stake Follow.50 \u00b7 pass at 203.5",
+        "matchup": {
+          "opp_rank_vs_pos": 1,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "Minnesota ranks 1st of 32 vs QB (fantasy pts allowed, CBS posvsdef) -- the toughest in the NFL, allowing just 195.40 pass yds/g avg, essentially equal to the 195.5 line itself"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 226.48 vs 195.5 line, +31.0 diff, 26.01% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Colts are a 6-point road underdog, which typically means a heavier passing workload for Jones"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 195.5,
+        "opening_captured_at": "2026-10-21T02:12:30Z",
+        "current_line": 195.5,
+        "current_captured_at": "2026-10-21T02:12:30Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Jordan Mason",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "thumb (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -0.2,
+      "stacking_notes": [],
+      "total_pts": -0.2
+    },
+    "away": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "Sauce Gardner",
+          "status": "out",
+          "pts": -1.5,
+          "note": "CB1 out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "TE",
+          "player": "Tyler Warren",
+          "status": "out",
+          "pts": -1.0,
+          "note": "top TE out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Anthony Gould",
+          "status": "out",
+          "pts": -0.3,
+          "note": "WR out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "CJ Allen",
+          "status": "out",
+          "pts": -0.5,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Bryce Boettcher",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "groin (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -3.5,
+      "stacking_notes": [],
+      "total_pts": -3.5
+    }
+  },
+  "final_score": {
+    "home": 16,
+    "away": 10
+  }
+}

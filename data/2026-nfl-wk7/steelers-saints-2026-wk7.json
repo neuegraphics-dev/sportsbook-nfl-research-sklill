@@ -1,0 +1,330 @@
+{
+  "game_id": "steelers-saints-2026-wk7",
+  "matchup": "Pittsburgh Steelers @ New Orleans Saints",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T13:30:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": 3,
+      "total": 44.5,
+      "ml_fav": -167,
+      "ml_dog": 144
+    },
+    "draftkings": {
+      "spread": 3,
+      "total": 44.5,
+      "ml_fav": -166,
+      "ml_dog": 140
+    },
+    "fanduel": {
+      "spread": 3,
+      "total": 44.5,
+      "ml_fav": -174,
+      "ml_dog": 146
+    },
+    "caesars": {
+      "spread": 3.5,
+      "total": 44.5,
+      "ml_fav": -182,
+      "ml_dog": 154
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Saints."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": 144
+      },
+      "draftkings": {
+        "spread": 3,
+        "total": 44.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 44.5,
+        "ml_fav": -174,
+        "ml_dog": 146
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 44.5,
+        "ml_fav": -182,
+        "ml_dog": 154
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Saints."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 44.5,
+        "ml_fav": -167,
+        "ml_dog": 144
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 44.5,
+        "ml_fav": -185,
+        "ml_dog": 150
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 44.5,
+        "ml_fav": -182,
+        "ml_dog": 154
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 44.5,
+        "ml_fav": -185,
+        "ml_dog": 154
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Saints."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 44.5,
+        "ml_fav": -180,
+        "ml_dog": 159
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 43.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 2.5,
+        "total": 43.0,
+        "ml_fav": -159,
+        "ml_dog": 133
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": null,
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "Model and market essentially agree on both markets -- no real gap to lean into"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 46,
+      "handle_pct_home": 63
+    },
+    "total": {
+      "bets_pct_over": 74,
+      "handle_pct_over": 71
+    },
+    "moneyline": {
+      "bets_pct_home": 36,
+      "handle_pct_home": 67
+    },
+    "reverse_line_move": false,
+    "rlm_note": "63% of handle is on the home side and the spread has moved toward them (+3 -> +2.5) -- money and line agree, no RLM.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:48.909589+00:00",
+    "n": 10000,
+    "homeElo": 1408.0,
+    "awayElo": 1562.1,
+    "gamesSeen": 13,
+    "eloMarginHome": -4.2,
+    "statsMarginHome": -1.5,
+    "marginDivergence": -2.8,
+    "projTotal": 44.9,
+    "homeWinProbElo": 35.2,
+    "marketHomeSpread": 2.5,
+    "marketTotal": 43.0,
+    "homeInjuryPts": -0.2,
+    "awayInjuryPts": -1.3,
+    "projHomeMeanRaw": 20.3,
+    "projAwayMeanRaw": 24.6,
+    "projHomeMeanAdjusted": 20.1,
+    "projAwayMeanAdjusted": 23.3,
+    "injuryAdjustedMarginHome": -3.1,
+    "projTotalAdjusted": 43.4,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -0.2 pts -- Cesar Ruiz (G, questionable, -0.2).",
+      "Away injury adjustment: -1.3 pts -- Brandin Echols (CB, out, -0.5), Ben Skowronek (WR, out, -0.4), Rico Dowdle (RB, questionable, -0.4).",
+      "New Orleans Saints (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Kaden Ellis (-0.5), Pete Werner (-0.5), Anfernee Jennings (-0.4), Carl Granderson (-0.6), Travis Etienne (-0.5) [-2.5 pts total]; Alvin Kamara (-0.5), Kaden Elliss (-0.8), Anfernee Jennings (-0.8) [-2.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
+      "Pittsburgh Steelers (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Michael Pittman Jr. (-0.8), DeShon Elliott (-0.8), Jamel Dean (-0.8) [-2.2 pts total]; Michael Pittman Jr. (-0.8), DeShon Elliott (-0.8), Jamel Dean (-0.8) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 39.7,
+    "awayWinPct": 57.6,
+    "tiePct": 2.7,
+    "medianHomeScore": 20,
+    "medianAwayScore": 23,
+    "coverPctHome": 47.8,
+    "overPct": 52.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.592025+00:00",
+      "marginHome": -4.2,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.410336+00:00",
+      "marginHome": -4.2,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.720582+00:00",
+      "marginHome": -4.2,
+      "total": 44.9
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.380484+00:00",
+      "marginHome": -3.3,
+      "total": 44.0
+    },
+    {
+      "run_at": "2026-10-25T12:56:48.909589+00:00",
+      "marginHome": -3.1,
+      "total": 43.4
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Paris game; Pittsburgh -2.5 (DK -132) against a model of Pittsburgh by 3.1. No edge. Both the side and the 43 total sit within the model range (43.4).",
+      "No bet."
+    ],
+    "leans": []
+  },
+  "props": {
+    "last_checked": "2026-10-21T02:12:30Z",
+    "status": "captured",
+    "source_note": "covers.com player-props board (rendered via built-in browser DOM table extraction); CBS posvsdef QB (fantasy pts allowed + rushing split) for matchup rank; roster/team verified this run (Geno Smith/Jets, Kyler Murray/Vikings, Daniel Jones/Colts, Cam Ward/Titans confirmed via web search of 2026 transactions).",
+    "picks": [
+      {
+        "player": "Tyler Shough",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 4,
+        "reasoning": "Model gap is real but this throws into Pittsburgh's 3rd-toughest-in-NFL pass defense -- tough-matchup capped. | Stake Follow.50 \u00b7 pass at 242.5",
+        "matchup": {
+          "opp_rank_vs_pos": 3,
+          "rank_basis": "CBS posvsdef QB, fantasy pts allowed, 2026 season avg"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "Pittsburgh ranks 3rd of 32 vs QB (fantasy pts allowed, CBS posvsdef), allowing only 222.0 pass yds/g avg -- well under the 234.5 line"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projection 267.22 vs 234.5 line, +32.7 diff, 26.06% EV"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Saints project 3rd-most offensive plays on the slate (132.6) and a 61.4% pass rate, 7th-highest"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 234.5,
+        "opening_captured_at": "2026-10-21T02:12:30Z",
+        "current_line": 234.5,
+        "current_captured_at": "2026-10-21T02:12:30Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:48Z",
+    "home": {
+      "items": [
+        {
+          "position": "G",
+          "player": "Cesar Ruiz",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "knee, expected to play (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -0.2,
+      "stacking_notes": [],
+      "total_pts": -0.2
+    },
+    "away": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "Brandin Echols",
+          "status": "out",
+          "pts": -0.5,
+          "note": "depth CB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "WR",
+          "player": "Ben Skowronek",
+          "status": "out",
+          "pts": -0.4,
+          "note": "rotational WR out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "RB",
+          "player": "Rico Dowdle",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "RB1 knee, likely limited (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -1.3,
+      "stacking_notes": [],
+      "total_pts": -1.3
+    }
+  },
+  "final_score": {
+    "home": 10,
+    "away": 16
+  }
+}

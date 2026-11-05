@@ -1,0 +1,573 @@
+{
+  "game_id": "ravens-browns-2026-wk6",
+  "matchup": "Baltimore Ravens @ Cleveland Browns",
+  "week": "Week 6",
+  "kickoff": "2026-10-18T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-12",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3.5,
+      "total": 40.5,
+      "ml_fav": -230,
+      "ml_dog": 190
+    },
+    "fanduel": {
+      "spread": 4.5,
+      "total": 41.5,
+      "ml_fav": -230,
+      "ml_dog": 190
+    },
+    "caesars": {
+      "spread": 3.5,
+      "total": 41.5,
+      "ml_fav": -230,
+      "ml_dog": 190
+    },
+    "note": "VegasInsider DOM (home=Browns)."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-12T13:45:27Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.5,
+        "total": 40.5,
+        "ml_fav": -230,
+        "ml_dog": 190
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -230,
+        "ml_dog": 190
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 41.5,
+        "ml_fav": -230,
+        "ml_dog": 190
+      },
+      "note": "VegasInsider DOM (home=Browns)."
+    },
+    {
+      "captured_at": "2026-10-13T11:42:31Z",
+      "bookmaker_eu": {
+        "spread": 5.0,
+        "total": 42.0,
+        "ml_fav": -236,
+        "ml_dog": 196
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 40.5,
+        "ml_fav": -238,
+        "ml_dog": 195
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -225,
+        "ml_dog": 188
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu (sharp). cleatz.com odds/nfl page had no DK-labeled column this run (its 'Book' column is an unlabeled consensus) -- used VI's verified DK column instead for total/ML."
+    },
+    {
+      "captured_at": "2026-10-14T13:03:43Z",
+      "bookmaker_eu": {
+        "spread": 5,
+        "total": 42,
+        "ml_fav": -236,
+        "ml_dog": 196
+      },
+      "draftkings": {
+        "spread": 4.5,
+        "total": 41.5,
+        "ml_fav": -238,
+        "ml_dog": 195
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Home=CLE relative. DK cross-checked VI vs cleatz (total 41.5 -108/-112, ML BAL-238/CLE+195). BookMaker.eu from lines.bookmaker.eu. Lamar Jackson (BAL QB, ankle) genuinely questionable -- see injury_adjustments note."
+    },
+    {
+      "captured_at": "2026-10-15T16:59:56Z",
+      "bookmaker_eu": {
+        "spread": 5.5,
+        "total": 43,
+        "ml_fav": -230,
+        "ml_dog": 192
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 42.5,
+        "ml_fav": -258,
+        "ml_dog": 210
+      },
+      "fanduel": {
+        "spread": 5.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BookMaker.eu (fresh): BAL-230/CLE+5.5, total43. DK via cleatz.com (fresh): BAL-258/CLE+210, total42.5. Caesars/FanDuel spread via VI DOM (Oct13 banner, unconfirmed-stale)."
+    },
+    {
+      "captured_at": "2026-10-16T13:03:19Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 41.0,
+        "ml_fav": -214,
+        "ml_dog": 179
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 4.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI (DK/Caesars/FD spreads) + BookMaker.eu. ml_fav=Ravens(away,-214), ml_dog=Browns(home,+179). DK/Caesars/FD total+ML not captured this cycle."
+    },
+    {
+      "captured_at": "2026-10-16T21:04:03Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 41.0,
+        "ml_fav": -214,
+        "ml_dog": 179
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "VI DOM (DK+3/-107,Caesars+3/-112,FD+3/-105; home=Browns) + cleatz DK total/ML (39.5, BAL-166/CLE+140) + BookMaker.eu unchanged vs prior cycle."
+    },
+    {
+      "captured_at": "2026-10-17T13:05:31Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 41.0,
+        "ml_fav": -214,
+        "ml_dog": 179
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -162.0,
+        "ml_dog": 136.0
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -170.0,
+        "ml_dog": 143.0
+      },
+      "note": "VI DK/Caesars/FanDuel spreads (DOM); DK total/ml from cleatz.com where available, else VI; BookMaker.eu page last refreshed Thu Oct15 4:52pm PT (stale, informational only -- not treated as same-day movement)"
+    },
+    {
+      "captured_at": "2026-10-17T17:03:14Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 41.0,
+        "ml_fav": -214,
+        "ml_dog": 179
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -166,
+        "ml_dog": 140
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -170,
+        "ml_dog": 143
+      },
+      "note": "VegasInsider DOM (DK/Caesars/FanDuel per-book columns) + lines.bookmaker.eu; numbers unchanged vs this morning's 13:05Z snapshot, cross-confirmed by cleatz.com live feed (updated under 5 min) showing matching current lines -- treated as genuinely stable, not a stale-source artifact."
+    },
+    {
+      "captured_at": "2026-10-17T21:02:58Z",
+      "bookmaker_eu": {
+        "spread": 3.5,
+        "total": 41.0,
+        "ml_fav": -214,
+        "ml_dog": 179
+      },
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -178,
+        "ml_dog": 150
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -176,
+        "ml_dog": 147
+      },
+      "note": "VegasInsider DOM + cleatz.com + lines.bookmaker.eu. Home(CLE)-relative spread +3 = Ravens(away) favored."
+    },
+    {
+      "captured_at": "2026-10-18T13:01:35Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 39.5,
+        "ml_fav": -175,
+        "ml_dog": 145
+      },
+      "fanduel": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK total/ML from cleatz.com (DK compare-all-books panel). Spreads for DK/Caesars/FanDuel from VegasInsider DOM (per-book columns, home-relative). Caesars/FanDuel total/ML not fetched this cycle (out of scope per run instructions) -- logged null. BookMaker.eu not fetched this cycle -- logged null."
+    },
+    {
+      "captured_at": "2026-10-18T17:04:46Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 40,
+        "ml_fav": -176,
+        "ml_dog": 155
+      },
+      "draftkings": {
+        "spread": 3,
+        "total": 39.5,
+        "ml_fav": -170,
+        "ml_dog": 142
+      },
+      "fanduel": {
+        "spread": 3,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3,
+        "total": 39.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Spreads (DK/Caesars/FanDuel) from VegasInsider DOM per-book columns, home-relative. BookMaker.eu + DK total/ML from lines.bookmaker.eu board (cleatz.com odds-compare panel required per-game clicks not done this cycle for ML on Caesars/FanDuel -- logged null)."
+    }
+  ],
+  "research": {
+    "spread_lean": "Baltimore Ravens -3",
+    "total_lean": "No lean",
+    "moneyline_lean": "No edge",
+    "confidence": "Medium",
+    "top_signals": [
+      "Both teams start backup QBs: Tyler Huntley (BAL, has started/performed well) vs likely rookie Shedeur Sanders (CLE, first start) per baltimoreravens.com/brownsnation.com Oct 17",
+      "Model gives Ravens a 57.6% cover rate on the road number, consistent with the QB-swap mismatch"
+    ],
+    "last_run": "2026-10-17"
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-18T17:09:34.969069+00:00",
+    "n": 10000,
+    "homeElo": 1420.6,
+    "awayElo": 1565.4,
+    "gamesSeen": 10,
+    "eloMarginHome": -3.9,
+    "statsMarginHome": -4.0,
+    "marginDivergence": 0.1,
+    "projTotal": 46.1,
+    "homeWinProbElo": 36.4,
+    "marketHomeSpread": 3,
+    "marketTotal": 39.5,
+    "homeInjuryPts": -5.0,
+    "awayInjuryPts": -3.0,
+    "projHomeMeanRaw": 21.1,
+    "projAwayMeanRaw": 25.0,
+    "projHomeMeanAdjusted": 16.1,
+    "projAwayMeanAdjusted": 22.0,
+    "injuryAdjustedMarginHome": -5.9,
+    "projTotalAdjusted": 38.1,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -5.0 pts -- Dillon Gabriel (QB, out, -5.0).",
+      "Away injury adjustment: -3.0 pts -- Lamar Jackson (QB, out, -2.5), Cam Jurgens (C, out, -0.5).",
+      "Baltimore Ravens (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 32.4,
+    "awayWinPct": 64.7,
+    "tiePct": 2.8,
+    "medianHomeScore": 16,
+    "medianAwayScore": 22,
+    "coverPctHome": 42.1,
+    "overPct": 45.9
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-12T13:45:58.781401+00:00",
+      "marginHome": -3.9,
+      "total": 46.1
+    },
+    {
+      "run_at": "2026-10-13T11:44:20.196742+00:00",
+      "marginHome": -3.9,
+      "total": 46.1
+    },
+    {
+      "run_at": "2026-10-13T14:03:04.930928+00:00",
+      "marginHome": -3.9,
+      "total": 46.1
+    },
+    {
+      "run_at": "2026-10-13T21:21:04.570942+00:00",
+      "marginHome": -2.4,
+      "total": 44.6
+    },
+    {
+      "run_at": "2026-10-14T13:04:16.353205+00:00",
+      "marginHome": -1.4,
+      "total": 43.6
+    },
+    {
+      "run_at": "2026-10-16T21:07:03.387304+00:00",
+      "marginHome": -1.9,
+      "total": 44.1
+    },
+    {
+      "run_at": "2026-10-17T13:10:47.709116+00:00",
+      "marginHome": -5.9,
+      "total": 38.1
+    },
+    {
+      "run_at": "2026-10-17T17:03:42.274781+00:00",
+      "marginHome": -5.9,
+      "total": 38.1
+    },
+    {
+      "run_at": "2026-10-17T21:11:04.434763+00:00",
+      "marginHome": -5.9,
+      "total": 38.1
+    },
+    {
+      "run_at": "2026-10-18T13:05:46.564587+00:00",
+      "marginHome": -5.9,
+      "total": 38.1
+    },
+    {
+      "run_at": "2026-10-18T17:09:34.969069+00:00",
+      "marginHome": -5.9,
+      "total": 38.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-17T21:19:25Z",
+    "analysis": [
+      "Both starting quarterbacks are out (Lamar Jackson, ankle; Dillon Gabriel, back), so this is a backup-QB game on both sides, but Cleveland's backup situation is priced worse by the model (-5.0 team pts vs Baltimore's -2.5 QB hit plus a center out). The sim has Baltimore covering the +3 home number 58% of the time (42% for Cleveland).",
+      "Elo and recent scoring agree on direction here even with both QBs down, which is the main reason to trust the lean despite the QB uncertainty on both sides."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "Ravens -3",
+        "confidence": 6,
+        "reasoning": "Both teams are on backup QBs, but Cleveland's is priced as the bigger downgrade by the model. | Stake $15 \u00b7 pass at -4.0",
+        "best_bet": true
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-10-18T17:05:50Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 44,
+      "handle_pct_home": 60
+    },
+    "total": {
+      "bets_pct_over": 70,
+      "handle_pct_over": 46
+    },
+    "moneyline": {
+      "bets_pct_home": 25,
+      "handle_pct_home": 28
+    },
+    "reverse_line_move": false,
+    "rlm_note": "60% of handle is on the home side and the spread has moved toward them (+5 -> +3) -- money and line agree, no RLM.",
+    "note": "Spread bet%/handle% from cleatz.com public-betting board, home-relative. Total/ML splits not fetched this cycle except cardinals-rams."
+  },
+  "props": {
+    "last_checked": "2026-10-13T21:17:53Z",
+    "status": "captured",
+    "source_note": "covers.com props board (browser DOM); CBS posvsdef RB page; statmuse.com game log; ESPN Ravens injuries/roster, read 2026-10-13",
+    "picks": [
+      {
+        "player": "Derrick Henry",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Workhorse volume into a Browns run D that gives up 106.8 rush yds/g despite a tough composite rank; 3 of last 5 games cleared this number. | Stake $15 \u00b7 pass at 84.5",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CLE allows 106.8 rush yds/g to RBs (CBS posvsdef) -- generous by raw yardage despite a 6th-toughest composite FPTS rank"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "24,23,26,16,24 carries across 5 games; team leader w/ 476 rush yds, Ravens rank 3rd NFL at 164.4 rush yds/g (statmuse.com)"
+          },
+          {
+            "label": "Recent form",
+            "dir": "for",
+            "detail": "Game log: 144,68,89,73,102 rush yds -- 3 of 5 clear 79.5, season avg 95.2/g (statmuse.com)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Ravens favored on the road (CLE +4.5 home per DK snapshot) -- lead-protect script favors rush volume"
+          },
+          {
+            "label": "Injuries",
+            "dir": "neutral",
+            "detail": "QB Lamar Jackson Questionable (Oct 13, ESPN); direction unclear til Wed/Thu reports. Henry has no designation"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 15,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 1,
+          "net": 4
+        },
+        "opening_line": 79.5,
+        "opening_captured_at": "2026-10-13T21:17:08Z",
+        "current_line": 79.5,
+        "current_captured_at": "2026-10-13T21:17:53Z"
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-17T13:10:32Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Dillon Gabriel",
+          "status": "out",
+          "pts": -5.0,
+          "note": "Back injury, ruled out per NFL.com/brownsnation.com Oct 17 2026; Shedeur Sanders (rookie QB2) expected to start, real drop-off"
+        }
+      ],
+      "items_total_pts": -5.0,
+      "stacking_notes": [],
+      "total_pts": -5.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Lamar Jackson",
+          "status": "out",
+          "pts": -2.5,
+          "note": "Ankle, out 2nd straight game per baltimoreravens.com Oct 17 2026; Tyler Huntley starts, has played well recently (OT comeback win Wk5), moderate drop-off"
+        },
+        {
+          "position": "C",
+          "player": "Cam Jurgens",
+          "status": "out",
+          "pts": -0.5,
+          "note": "Concussion, rookie Vega Ioane likely starts at C per baltimoreravens.com"
+        }
+      ],
+      "items_total_pts": -3.0,
+      "stacking_notes": [],
+      "total_pts": -3.0
+    }
+  },
+  "final_score": {
+    "home": 13,
+    "away": 10
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "game_id": "colts-jaguars-2026-wk8",
+  "matchup": "Indianapolis Colts @ Jacksonville Jaguars",
+  "week": "Week 8",
+  "kickoff": "2026-11-01T18:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-25",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -7.5,
+      "total": 47.5,
+      "ml_fav": -375,
+      "ml_dog": 320
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-25T20:52:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -7.5,
+        "total": 47.5,
+        "ml_fav": -375,
+        "ml_dog": 320
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-25 DK-equivalent from RotoWire odds table (verified 10/24; book unlabeled on page); BookMaker/FD/Caesars not available. Treat as lookahead/early number, not true open."
+    },
+    {
+      "captured_at": "2026-10-26T20:44:08Z",
+      "bookmaker_eu": {
+        "spread": -7.5,
+        "total": 46.5,
+        "ml_fav": -384,
+        "ml_dog": 306
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 47.5,
+        "ml_fav": -375,
+        "ml_dog": 320
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-26 ~20:50Z: DK-equivalent from RotoWire odds table (last verified 10/25, book unlabeled, identical to prior snapshot -- freshness unconfirmed); BookMaker.eu direct (updated 10/25 11:16PM PT); Caesars/FanDuel not refreshed (VegasInsider page showed prior-week games)"
+    },
+    {
+      "captured_at": "2026-10-28T00:49:01Z",
+      "bookmaker_eu": {
+        "spread": -8,
+        "total": 46.5,
+        "ml_fav": -397,
+        "ml_dog": 315
+      },
+      "draftkings": {
+        "spread": -7.5,
+        "total": 47,
+        "ml_fav": -360,
+        "ml_dog": 350
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -7.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-10-28 run: DK-equivalent from RotoWire odds wk8 (last verified 10/26, book unlabeled); BookMaker.eu direct (updated Mon 10/26 4:49PM PT, ML/total as listed); Caesars spread only via VegasInsider (totals/ML not retrieved); FanDuel not refreshed. Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-10-29T15:32:58Z",
+      "bookmaker_eu": {
+        "spread": -8,
+        "total": 46.5,
+        "ml_fav": -397,
+        "ml_dog": 315
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu 10/29; DK/CZ spreads via VegasInsider (updated 10/28, totals/ML not fresh -> null)"
+    },
+    {
+      "captured_at": "2026-11-01T01:52:08Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 46,
+        "ml_fav": -501,
+        "ml_dog": 384
+      },
+      "draftkings": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -10,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "BM.eu bookmaker.eu page (updated 10/29 5:07pm PT) incl totals/ML; DK/CZ spreads via VegasInsider (updated 10/30 4:48pm ET); totals/ML for DK/CZ null (not fresh). No 10/31 source available -> lines ~1 day old"
+    },
+    {
+      "captured_at": "2026-11-01T13:09:12Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -9.5,
+        "total": 46.5,
+        "ml_fav": -485,
+        "ml_dog": 370
+      },
+      "fanduel": {
+        "spread": -10.5,
+        "total": 45.5,
+        "ml_fav": -520,
+        "ml_dog": 400
+      },
+      "caesars": {
+        "spread": -9.5,
+        "total": 46.5,
+        "ml_fav": -481,
+        "ml_dog": 360
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~13:10Z. BookMaker.eu null: its page still showed 'last update Oct 29 5:07pm PT' (stale)."
+    },
+    {
+      "captured_at": "2026-11-01T17:03:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -10.5,
+        "total": 45.5,
+        "ml_fav": -485,
+        "ml_dog": 370
+      },
+      "fanduel": {
+        "spread": -9.5,
+        "total": 45.5,
+        "ml_fav": -520,
+        "ml_dog": 400
+      },
+      "caesars": {
+        "spread": -9.5,
+        "total": 45.5,
+        "ml_fav": -481,
+        "ml_dog": 370
+      },
+      "note": "DK/FD/CZ from covers.com NFL odds board, live browser render 2026-11-01 ~17:05Z (12:05pm ET). BookMaker.eu null (stale board)."
+    }
+  ],
+  "research": {
+    "last_run": "2026-11-01T13:22:18Z",
+    "spread_lean": "IND +9.5",
+    "total_lean": null,
+    "moneyline_lean": null,
+    "confidence": "Low",
+    "top_signals": [
+      "scoring margin 4.5 vs Elo 9.8"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": true
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-11-01T17:03:46.342341+00:00",
+    "n": 10000,
+    "homeElo": 1648.0,
+    "awayElo": 1450.9,
+    "gamesSeen": 14,
+    "eloMarginHome": 9.8,
+    "statsMarginHome": 4.5,
+    "marginDivergence": 5.3,
+    "projTotal": 47.1,
+    "homeWinProbElo": 80.4,
+    "marketHomeSpread": -9.5,
+    "marketTotal": 45.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 28.5,
+    "projAwayMeanRaw": 18.7,
+    "projHomeMeanAdjusted": 28.5,
+    "projAwayMeanAdjusted": 18.7,
+    "injuryAdjustedMarginHome": 9.8,
+    "projTotalAdjusted": 47.1,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+9.8) and recent-scoring margin (+4.5) disagree by 5.3 points -- worth a second look before trusting either alone.",
+      "Indianapolis Colts (away)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Sauce Gardner (-1.5), Tyler Warren (-1.0), Anthony Gould (-0.3), CJ Allen (-0.5), Bryce Boettcher (-0.2) [-3.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 74.4,
+    "awayWinPct": 23.2,
+    "tiePct": 2.4,
+    "medianHomeScore": 28,
+    "medianAwayScore": 19,
+    "coverPctHome": 50.8,
+    "overPct": 54.3
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-25T20:52:08.003626+00:00",
+      "marginHome": 9.4,
+      "total": 47.0
+    },
+    {
+      "run_at": "2026-10-26T13:09:27.100136+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-10-26T20:44:17.674086+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-10-27T13:00:51.620323+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-10-28T00:49:36.970901+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-10-28T12:53:19.742132+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-10-29T01:46:43.856879+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-10-29T15:33:32.840777+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-11-01T01:52:15.200411+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-11-01T13:12:56.036274+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-11-01T13:40:01.137271+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    },
+    {
+      "run_at": "2026-11-01T17:03:46.342341+00:00",
+      "marginHome": 9.8,
+      "total": 47.1
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-11-01T13:18:45Z",
+    "analysis": [
+      "Sim: Jaguars by 9.8 (Elo) vs 4.5 (scoring), total 47.1 vs 46.5; at -9.5 the Elo sim is a coin flip (Jaguars cover 50.6%). The line moved from 7.5 to 9.5-10 with 80% of handle on Jacksonville.",
+      "The scoring margin says Indianapolis +9.5 has room, but Elo doesn't back it and the money is on Jacksonville. No bet."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "IND +9.5",
+        "confidence": 4,
+        "reasoning": "Scoring margin only. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-11-01T13:21:29Z",
+    "status": "captured",
+    "source_note": "Lines/projections: covers.com player-props board (live browser render 2026-11-01 ~13:00Z), best price shown. Roster/starter check: RotoWire NFL lineups 11/1. Ranks: CBS posvsdef (QB/RB/TE, thru Wk8 TNF) and footballdb 2026 WR (thru Wk7). Game logs: statmuse (partial).",
+    "picks": [
+      {
+        "player": "Josh Downs",
+        "team": "away",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "Fanatics",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Jacksonville allows the most WR receiving yards in the league and Indianapolis is a 9.5-point dog. | Stake $12 \u00b7 pass at 36.5",
+        "matchup": {
+          "opp_rank_vs_pos": 32,
+          "rank_basis": "footballdb 2026 WR rec yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "JAX allows 210.0 WR rec yds/g, most in NFL (footballdb thru Wk7; avg 148.6)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 44.8 vs 30.5 line (+14.3)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "IND +9.5 dog: trailing script adds pass volume"
+          },
+          {
+            "label": "Backtest",
+            "dir": "for",
+            "detail": "37 and 72 yds in his 2 logged games (statmuse, partial log)"
+          },
+          {
+            "label": "Competition",
+            "dir": "neutral",
+            "detail": "shares targets with Keenan Allen and Tyler Warren"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "rec_yards picks hit 22/46 (48%) in graded Line Watch history"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 12,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 30.5,
+        "opening_captured_at": "2026-11-01T13:21:29Z",
+        "current_line": 30.5,
+        "current_captured_at": "2026-11-01T13:21:29Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 37,
+            "result": "hit"
+          },
+          {
+            "week": 2,
+            "actual": 72,
+            "result": "hit"
+          }
+        ],
+        "season_log_source": "statmuse.com (only 2 games returned)",
+        "backtest": {
+          "hits": 2,
+          "misses": 0,
+          "pushes": 0,
+          "total": 2,
+          "pct": 100,
+          "line": 30.5,
+          "lean": "over"
+        }
+      },
+      {
+        "player": "Jonathan Taylor",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "covers.com consensus",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Jacksonville is the toughest run defense vs RBs and IND is a 7.5-pt road dog, but Taylor has cleared 72.5 in 4 of 6 logged games, so this is only a small edge.",
+        "matchup": {
+          "opp_rank_vs_pos": 1,
+          "rank_basis": "CBS RB fantasy pts allowed, Wks 1-7 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "JAX is rank 1 of 32 vs RBs (CBS): 51.5 rush yds/g and 2.97 yds/carry allowed to RBs"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "Covers.com projects 64.05 vs 72.5 line (-8.5), 24.07% EV"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "IND is a 7.5-pt road underdog (DK), so a trailing script trims carries"
+          },
+          {
+            "label": "Efficiency",
+            "dir": "for",
+            "detail": "Line 72.5 on about 20 carries implies 3.6 ypc vs JAX allowing 2.97 to RBs"
+          },
+          {
+            "label": "Hit rate",
+            "dir": "against",
+            "detail": "Under 72.5 hit in only 2 of 6 logged games (98,92,68,95,45,94 through 10/18; Wk7 not in source)"
+          },
+          {
+            "label": "Volume",
+            "dir": "against",
+            "detail": "Averages 82 rush yds on about 20 carries/g, above the line"
+          }
+        ],
+        "confidence_base": 3,
+        "stake": 7.5,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 2,
+          "neutral": 0,
+          "net": 2
+        },
+        "opening_line": 72.5,
+        "opening_captured_at": "2026-10-28T01:09:34Z",
+        "current_line": 72.5,
+        "current_captured_at": "2026-10-28T01:09:34Z",
+        "season_log": [
+          {
+            "week": 1,
+            "actual": 98,
+            "result": "miss"
+          },
+          {
+            "week": 2,
+            "actual": 92,
+            "result": "miss"
+          },
+          {
+            "week": 3,
+            "actual": 68,
+            "result": "hit"
+          },
+          {
+            "week": 4,
+            "actual": 95,
+            "result": "miss"
+          },
+          {
+            "week": 5,
+            "actual": 45,
+            "result": "hit"
+          },
+          {
+            "week": 6,
+            "actual": 94,
+            "result": "miss"
+          }
+        ],
+        "season_log_source": "statmuse.com",
+        "backtest": {
+          "hits": 2,
+          "misses": 4,
+          "pushes": 0,
+          "total": 6,
+          "pct": 33,
+          "line": 72.5,
+          "lean": "under"
+        }
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-11-01T13:18:45Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 58,
+      "handle_pct_home": 80
+    },
+    "total": {
+      "bets_pct_over": 47,
+      "handle_pct_over": 41
+    },
+    "moneyline": {
+      "bets_pct_home": 90,
+      "handle_pct_home": 82
+    },
+    "reverse_line_move": false,
+    "rlm_note": "80% of handle is on the home side and the spread has moved toward them (-7.5 -> -9.5) -- money and line agree, no RLM.",
+    "note": "cleatz snapshot 2026-11-01 ~05:55Z (12:52am ET); converted to home/over-relative."
+  },
+  "final_score": {
+    "home": 42,
+    "away": 7
+  }
+}

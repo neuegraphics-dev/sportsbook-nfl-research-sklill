@@ -1,0 +1,282 @@
+{
+  "game_id": "rams-eagles-2026-wk4",
+  "matchup": "Los Angeles Rams @ Philadelphia Eagles",
+  "week": "Week 4",
+  "kickoff": "2026-10-04T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-29",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": 3.0,
+      "total": 46.5,
+      "ml_fav": -152,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "RW/DK Rams -3 (away fav) -> home(Eagles)=+3. Fox opening Rams -2.5/46.5, close. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-29T12:46:44Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 46.5,
+        "ml_fav": -152,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "RW/DK Rams -3 (away fav) -> home(Eagles)=+3. Fox opening Rams -2.5/46.5, close. BookMaker.eu/Caesars/FanDuel unavailable this cycle."
+    },
+    {
+      "captured_at": "2026-09-29T13:33:31Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 46.5,
+        "ml_fav": -130,
+        "ml_dog": 110
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "CORRECTION, same day: the earlier snapshot today sourced DK-current numbers from rotowire.com/betting/nfl/odds/week-4, whose 'last verified Sep 28' marker turned out to be stale (unchanged from a prior fetch) rather than genuinely current -- flagged live by Michael. Re-verified against sportsbookreview.com (bet365, timestamped Sep 28 3:14pm EDT), cbssports.com's Week 4 early-odds roundup (Sep 28), and same-day (Sep 29) SI.com betting-preview articles citing DraftKings/BetMGM directly -- all three agree closely with each other and diverge from the earlier rotowire read on several games, most notably Packers-Buccaneers (Baker Mayfield's injury had genuinely moved the line toward Green Bay; the earlier rotowire fetch had it backwards). Treating this reconciled cross-source read as the corrected current line; the just-prior same-day snapshot's DK numbers should be read as erroneous, not as real intraday movement."
+    },
+    {
+      "captured_at": "2026-09-30T18:28:54Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 45.5,
+        "ml_fav": -155,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire.com wk4 (verified Sep30). Caesars/FanDuel not confirmed for this game this cycle."
+    },
+    {
+      "captured_at": "2026-10-02T13:05:55Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3,
+        "total": 45.5,
+        "ml_fav": -155,
+        "ml_dog": 140
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com wk4 (verified Oct1), matches Caesars via vegasinsider.com: Rams(away) -3 -> home(Eagles) +3. BookMaker.eu unusable this cycle."
+    },
+    {
+      "captured_at": "2026-10-03T11:52:45Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 3.0,
+        "total": 45.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": 3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "DK via rotowire.com/betting/nfl/odds (last verified 2026-10-02); Caesars via vegasinsider.com (spread only, no total); FanDuel current not available (editorial source is frozen/stale); BookMaker.eu fetch returned Dec2025/Jan2026 fixtures this cycle, not this week's slate -- excluded as unreliable, treated as unavailable."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-29",
+    "spread_lean": "No edge",
+    "total_lean": "Lean Under 46.5 (model 43.2)",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Corrected current spread is Rams -2.5 (was a stale +3.0 home-relative read, i.e. Rams -3) -- small correction, spread edge stays negligible",
+      "Total gap (43.2 model vs 46.5 market) is unchanged and is the more notable read; Rams' banged-up receiving corps (Ferguson, Watson, Nacua) is a plausible complement but still not formally priced"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": true,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-10-03T11:55:34.726833+00:00",
+    "n": 10000,
+    "homeElo": 1534.8,
+    "awayElo": 1619.3,
+    "gamesSeen": 6,
+    "eloMarginHome": -1.5,
+    "statsMarginHome": -2.3,
+    "marginDivergence": 0.9,
+    "projTotal": 43.2,
+    "homeWinProbElo": 44.8,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 45.5,
+    "homeInjuryPts": -1.0,
+    "awayInjuryPts": -1.5,
+    "projHomeMeanRaw": 20.9,
+    "projAwayMeanRaw": 22.3,
+    "projHomeMeanAdjusted": 19.9,
+    "projAwayMeanAdjusted": 20.8,
+    "injuryAdjustedMarginHome": -1.0,
+    "projTotalAdjusted": 40.7,
+    "spreadLean": "home",
+    "totalLean": "under",
+    "notes": [
+      "Home injury adjustment: -1.0 pts -- DeVonta Smith (WR, out, -1.0).",
+      "Away injury adjustment: -1.5 pts -- Aaron Donald (DT, out, -1.5).",
+      "Los Angeles Rams (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 46.5,
+    "awayWinPct": 50.6,
+    "tiePct": 2.8,
+    "medianHomeScore": 20,
+    "medianAwayScore": 21,
+    "coverPctHome": 57.9,
+    "overPct": 37.0
+  },
+  "market_signal": {
+    "captured_at": "2026-10-03T12:00:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 31,
+      "handle_pct_home": 16
+    },
+    "total": {
+      "bets_pct_over": 88,
+      "handle_pct_over": 64
+    },
+    "moneyline": {
+      "bets_pct_home": 24,
+      "handle_pct_home": 16
+    },
+    "reverse_line_move": false,
+    "rlm_note": "84% of handle is on the away side but the spread hasn't moved yet (+3, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com/public-betting/nfl/, fetched 2026-10-03. Spread % converted to home-team-relative; chargers-seahawks/chiefs-raiders/falcons-saints had no split listed this fetch, skipped."
+  },
+  "props": {
+    "last_checked": "2026-10-03T11:59:44Z",
+    "status": "captured",
+    "source_note": "Ertz over stays off the board (thin volume + tough Rams TE matchup already noted last cycle). Added Higbee under 30.5 from covers.com player-props board (Fanatics +100), cross-checked vs statmuse.com game log and footballdb.com TE matchup ranks.",
+    "picks": [
+      {
+        "player": "Tyler Higbee",
+        "team": "away",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "Fanatics",
+        "lean": "under",
+        "confidence": 6,
+        "reasoning": "Philadelphia is one of the toughest TE defenses in the league and Higbee is boom-bust enough that last weeks 62-yard outburst (vs a much weaker Denver defense) is not a reliable baseline.",
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "PHI ranks 3rd of 32 vs TE (2.3 fantasy pts/g, 29.7 rec yds/g allowed) -- one of the leagues toughest TE defenses"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "Boom-bust target share thru 3 games (2, 0, 11) averaging 24.7 rec yds/g; his one big game (62 yds) came against a much softer Denver defense"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Sim projects this game under the market total (40.7 vs 45.5) with both DeVonta Smith and Aaron Donald out, a lower-volume game state overall"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 0,
+          "net": 3
+        },
+        "opening_line": 30.5,
+        "opening_captured_at": "2026-10-03T11:59:44Z",
+        "current_line": 30.5,
+        "current_captured_at": "2026-10-03T11:59:44Z"
+      }
+    ]
+  },
+  "game_evaluation": {
+    "last_updated": "2026-10-03T11:56:39Z",
+    "analysis": [
+      "Both sides took a real hit this week: DeVonta Smith (hamstring) is officially out for Philadelphia, and Aaron Donald (back) is out for the Rams, who are also down CB Jaylen Watson and TE Terrance Ferguson. With both adjustments now priced in, the sim pulls the total down to 40.7 against a market of 45.5 -- a meaningfully bigger gap than before either injury was formal, and it nudges the margin slightly toward Philadelphia (model sees a near-pick em game against the Rams getting only +3.5).",
+      "The spread gap is still modest enough that this reads mainly as a total play: two offenses missing a notable piece (Rams twice over, between Donald up front and the receiving-corps attrition already in the data) in a game that was already projecting under before the news hardened."
+    ],
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 45.5",
+        "confidence": 6,
+        "reasoning": "Model total (40.7) now sits well under the market with both DeVonta Smith and Aaron Donald confirmed out, a real-points gap rather than a speculative one.",
+        "best_bet": false
+      },
+      {
+        "market": "spread",
+        "pick": "Eagles +3.5",
+        "confidence": 4,
+        "reasoning": "Model has this closer to a pick em than the markets 3.5, a mild lean to take the Eagles points.",
+        "best_bet": false
+      }
+    ]
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-02T13:46:47.734534+00:00",
+      "marginHome": -1.5,
+      "total": 43.2
+    },
+    {
+      "run_at": "2026-10-03T11:55:34.726833+00:00",
+      "marginHome": -1.0,
+      "total": 40.7
+    }
+  ],
+  "injury_adjustments": {
+    "last_updated": "2026-10-03T11:55:34Z",
+    "home": {
+      "items": [
+        {
+          "position": "WR",
+          "player": "DeVonta Smith",
+          "status": "out",
+          "pts": -1.0,
+          "note": "Hamstring, officially ruled OUT Friday; A.J. Brown remains Philadelphias true WR1 so this is a complementary-weapon loss, not a full alpha hit"
+        }
+      ],
+      "items_total_pts": -1.0,
+      "stacking_notes": [],
+      "total_pts": -1.0
+    },
+    "away": {
+      "items": [
+        {
+          "position": "DT",
+          "player": "Aaron Donald",
+          "status": "out",
+          "pts": -1.5,
+          "note": "Back injury, officially OUT; disruptive interior presence even in the part-time role hes played since returning from retirement"
+        }
+      ],
+      "items_total_pts": -1.5,
+      "stacking_notes": [],
+      "total_pts": -1.5
+    }
+  },
+  "final_score": {
+    "home": 20,
+    "away": 24
+  }
+}

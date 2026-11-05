@@ -1,0 +1,313 @@
+{
+  "game_id": "dolphins-jets-2026-wk7",
+  "matchup": "Miami Dolphins @ New York Jets",
+  "week": "Week 7",
+  "kickoff": "2026-10-25T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-10-20",
+    "bookmaker_eu": {
+      "spread": -5,
+      "total": 38.5,
+      "ml_fav": -233,
+      "ml_dog": 194
+    },
+    "draftkings": {
+      "spread": -4.5,
+      "total": 38.5,
+      "ml_fav": -230,
+      "ml_dog": 190
+    },
+    "fanduel": {
+      "spread": -4.5,
+      "total": 39.5,
+      "ml_fav": -250,
+      "ml_dog": 205
+    },
+    "caesars": {
+      "spread": -4.5,
+      "total": 39.5,
+      "ml_fav": -235,
+      "ml_dog": 192
+    },
+    "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Jets."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-10-20T14:09:52Z",
+      "bookmaker_eu": {
+        "spread": -5,
+        "total": 38.5,
+        "ml_fav": -233,
+        "ml_dog": 194
+      },
+      "draftkings": {
+        "spread": -4.5,
+        "total": 38.5,
+        "ml_fav": -230,
+        "ml_dog": 190
+      },
+      "fanduel": {
+        "spread": -4.5,
+        "total": 39.5,
+        "ml_fav": -250,
+        "ml_dog": 205
+      },
+      "caesars": {
+        "spread": -4.5,
+        "total": 39.5,
+        "ml_fav": -235,
+        "ml_dog": 192
+      },
+      "note": "DK/total/ML via cleatz.com; Caesars/FanDuel spread via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Jets."
+    },
+    {
+      "captured_at": "2026-10-21T01:34:08Z",
+      "bookmaker_eu": {
+        "spread": -5,
+        "total": 38.5,
+        "ml_fav": -233,
+        "ml_dog": 194
+      },
+      "draftkings": {
+        "spread": -5,
+        "total": 39.5,
+        "ml_fav": -235,
+        "ml_dog": 195
+      },
+      "fanduel": {
+        "spread": -5,
+        "total": 39.5,
+        "ml_fav": -235,
+        "ml_dog": 192
+      },
+      "caesars": {
+        "spread": -4.5,
+        "total": 38.5,
+        "ml_fav": -230,
+        "ml_dog": 190
+      },
+      "note": "DK/Caesars/FanDuel via VegasInsider DOM; BookMaker.eu via lines.bookmaker.eu. Home=Jets."
+    },
+    {
+      "captured_at": "2026-10-23T13:02:12Z",
+      "bookmaker_eu": {
+        "spread": -4.5,
+        "total": 39,
+        "ml_fav": -213,
+        "ml_dog": 178
+      },
+      "draftkings": null,
+      "fanduel": null,
+      "caesars": null,
+      "note": "2026-10-23 refresh: only BookMaker.eu board fresh (page updated 10/22 4:59pm PT, ~13h old). DK/FD/Caesars null: VegasInsider table last updated 10/20-21 (stale), RotoWire odds unlabeled/loading, Covers shows opens only."
+    },
+    {
+      "captured_at": "2026-10-25T12:49:05Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.5,
+        "total": 39.5,
+        "ml_fav": -218,
+        "ml_dog": 180
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": 39.5,
+        "ml_fav": -213,
+        "ml_dog": 176
+      },
+      "note": "2026-10-25 ~12:50Z DK+Caesars from covers.com odds table (updated 8:48 ET); BookMaker.eu page stale (Oct 22 data, identical to 10/23) and Rotowire/VegasInsider DK stale, logged null; FanDuel not available"
+    }
+  ],
+  "research": {
+    "last_run": "2026-10-21",
+    "spread_lean": "Dolphins +4.5",
+    "total_lean": "Over 39.5",
+    "moneyline_lean": null,
+    "confidence": "Medium",
+    "top_signals": [
+      "Model-only signal on both markets"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "market_signal": {
+    "captured_at": "2026-10-25T12:59:34Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 69,
+      "handle_pct_home": 57
+    },
+    "total": {
+      "bets_pct_over": 46,
+      "handle_pct_over": 27
+    },
+    "moneyline": {
+      "bets_pct_home": 85,
+      "handle_pct_home": 87
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "2026-10-25 ~13:10Z; converted to home/over-relative from cleatz team rows; cleatz line may differ slightly from DK"
+  },
+  "simulation": {
+    "run_at": "2026-10-25T12:56:49.406087+00:00",
+    "n": 10000,
+    "homeElo": 1330.1,
+    "awayElo": 1343.4,
+    "gamesSeen": 11,
+    "eloMarginHome": 1.4,
+    "statsMarginHome": 2.4,
+    "marginDivergence": -1.0,
+    "projTotal": 42.6,
+    "homeWinProbElo": 55.0,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 39.5,
+    "homeInjuryPts": -2.7,
+    "awayInjuryPts": -0.7,
+    "projHomeMeanRaw": 22.0,
+    "projAwayMeanRaw": 20.6,
+    "projHomeMeanAdjusted": 19.3,
+    "projAwayMeanAdjusted": 19.9,
+    "injuryAdjustedMarginHome": -0.6,
+    "projTotalAdjusted": 39.2,
+    "spreadLean": "away",
+    "totalLean": null,
+    "notes": [
+      "Home injury adjustment: -2.7 pts -- Breece Hall (RB, questionable, -0.5), Max Mitchell (T, out, -0.8), Joseph Ossai (DE, out, -0.8), Francisco Mauigoa (LB, out, -0.3), Dylan Parham (G, questionable, -0.3).",
+      "Away injury adjustment: -0.7 pts -- Reese Taylor (CB, out, -0.4), Rob Beal Jr. (DE, doubtful, -0.3).",
+      "New York Jets (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+    ],
+    "homeWinPct": 47.0,
+    "awayWinPct": 50.1,
+    "tiePct": 2.9,
+    "medianHomeScore": 19,
+    "medianAwayScore": 20,
+    "coverPctHome": 38.2,
+    "overPct": 49.1
+  },
+  "simulation_history": [
+    {
+      "run_at": "2026-10-20T14:12:07.742587+00:00",
+      "marginHome": 1.4,
+      "total": 42.6
+    },
+    {
+      "run_at": "2026-10-21T01:43:31.505283+00:00",
+      "marginHome": 1.4,
+      "total": 42.6
+    },
+    {
+      "run_at": "2026-10-21T02:07:29.552187+00:00",
+      "marginHome": 1.4,
+      "total": 42.6
+    },
+    {
+      "run_at": "2026-10-23T13:04:37.249842+00:00",
+      "marginHome": 0.4,
+      "total": 41.6
+    },
+    {
+      "run_at": "2026-10-25T12:56:49.406087+00:00",
+      "marginHome": -0.6,
+      "total": 39.2
+    }
+  ],
+  "game_evaluation": {
+    "last_updated": "2026-10-25T12:58:07Z",
+    "analysis": [
+      "Jets -3.5 (DK -115); the model has the Jets by only about 0.6 (Elo 1.4, recent scoring 2.4) with a 39.5 total. The 4.5 we saw Friday has dropped to a 3.5 hook, so most of the early value is gone.",
+      "Jets are missing T Max Mitchell, edge Joseph Ossai and have RB1 Breece Hall questionable. Still a small model gap on Miami +3.5, but below the bar for a bet after the line move."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "MIA +3.5",
+        "confidence": 4,
+        "reasoning": "Model gap ~3 pts but the line already moved 1 pt from the +4.5 we flagged; thin. | Stake $0 \u00b7 pass at +3.5",
+        "best_bet": false
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-10-25T12:59:25Z",
+    "status": "pending",
+    "source_note": "2026-10-25 re-check (covers.com props, footballdb DvP thru Wk6): Sadiq rec o20.5 has soft matchup (MIA 28th vs TE, 11.4 pts/g) and model gap but only 3-4 targets/g and 2 of 4 games cleared the line; rec_yards -1 drops conf to 3 (stake 0). G. Smith QB rush o6.5 unverified team and minor. No pick clears the checklist.",
+    "picks": []
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-10-25T12:56:49Z",
+    "home": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Breece Hall",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "RB1 quad, upgraded from doubtful (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "T",
+          "player": "Max Mitchell",
+          "status": "out",
+          "pts": -0.8,
+          "note": "T out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "DE",
+          "player": "Joseph Ossai",
+          "status": "out",
+          "pts": -0.8,
+          "note": "edge out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "LB",
+          "player": "Francisco Mauigoa",
+          "status": "out",
+          "pts": -0.3,
+          "note": "LB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "G",
+          "player": "Dylan Parham",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "knee (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -2.7,
+      "stacking_notes": [],
+      "total_pts": -2.7
+    },
+    "away": {
+      "items": [
+        {
+          "position": "CB",
+          "player": "Reese Taylor",
+          "status": "out",
+          "pts": -0.4,
+          "note": "CB out (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        },
+        {
+          "position": "DE",
+          "player": "Rob Beal Jr.",
+          "status": "doubtful",
+          "pts": -0.3,
+          "note": "DE doubtful (NFL.com Wk7 report / team site, checked 2026-10-25)"
+        }
+      ],
+      "items_total_pts": -0.7,
+      "stacking_notes": [],
+      "total_pts": -0.7
+    }
+  },
+  "final_score": {
+    "home": 25,
+    "away": 28
+  }
+}

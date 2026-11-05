@@ -1,0 +1,311 @@
+{
+  "game_id": "raiders-saints-2026-wk3",
+  "matchup": "Las Vegas Raiders @ New Orleans Saints",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T20:25:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": {
+      "spread": -3.5,
+      "total": 43.0,
+      "ml_fav": -171,
+      "ml_dog": 145
+    },
+    "draftkings": {
+      "spread": -3.0,
+      "total": 45.5,
+      "ml_fav": -162,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": {
+        "spread": -3.5,
+        "total": 43.0,
+        "ml_fav": -171,
+        "ml_dog": 145
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 45.5,
+        "ml_fav": -162,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu + DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:09Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 44.0,
+        "ml_fav": -170,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 44.5,
+        "ml_fav": -168,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:30Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -172,
+        "ml_dog": 145
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 44.5,
+        "ml_fav": -168,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Saints(home) favored, all 3 agree on spread; total gap DK 44.5 vs BME 43.5."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 43.5,
+        "ml_fav": -175,
+        "ml_dog": 148
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 44.5,
+        "ml_fav": -168,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:28:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 44.5,
+        "ml_fav": -168,
+        "ml_dog": 150
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -3.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data). DK/Caesars steady at NO -3/-3.5 since Fri. LV TE Brock Bowers expected back after meniscus trim -- mild positive for Raiders passing game, not schedule-moving alone. LV S Stukes out (concussion); NO WR Barion Brown, DL Christen Miller out (both rookies) -- role-tier."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "No edge -- number steady, nothing new crosses the starter-out threshold",
+    "total_lean": "No edge",
+    "moneyline_lean": "No edge",
+    "confidence": "Low",
+    "top_signals": [
+      "Bowers expected back for LV -- mild positive, not independently actionable",
+      "Role-tier OUTs on both sides, nothing starter-critical confirmed"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:28:02.774799+00:00",
+    "n": 10000,
+    "homeElo": 1455.4,
+    "awayElo": 1387.5,
+    "gamesSeen": 4,
+    "eloMarginHome": 4.6,
+    "statsMarginHome": -0.2,
+    "marginDivergence": 4.8,
+    "projTotal": 42.9,
+    "homeWinProbElo": 66.1,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 44.5,
+    "homeInjuryPts": 0.0,
+    "awayInjuryPts": 0.0,
+    "projHomeMeanRaw": 23.8,
+    "projAwayMeanRaw": 19.1,
+    "projHomeMeanAdjusted": 23.8,
+    "projAwayMeanAdjusted": 19.1,
+    "injuryAdjustedMarginHome": 4.6,
+    "projTotalAdjusted": 42.9,
+    "spreadLean": null,
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+4.6) and recent-scoring margin (-0.2) disagree by 4.8 points -- worth a second look before trusting either alone."
+    ],
+    "homeWinPct": 62.1,
+    "awayWinPct": 35.2,
+    "tiePct": 2.8,
+    "medianHomeScore": 24,
+    "medianAwayScore": 19,
+    "coverPctHome": 53.5,
+    "overPct": 45.8
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-25T14:16:37Z",
+    "analysis": [
+      "New Orleans is a modest home favorite by both signals -- Elo has them +4.6, close to the market's -3.0 -- though recent scoring margin is essentially flat (-0.2), a 4.8-point gap between the two that's large enough to flag but not extreme. Brock Bowers is expected back for Las Vegas after a meniscus trim, a mild positive for the Raiders' passing game but not enough on its own to move a lean.",
+      "NEW: cleatz.com shows 82% of handle on the Saints, but the spread has actually moved AGAINST them since open (-3.5 to -3) -- a real reverse line move toward Las Vegas. That's a genuine signal working against the model's modest Saints lean, not for it, and combined with the 55% cover rate that already fell short of a real edge, this now reads closer to a pick'em than a Saints side."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "NO -3",
+        "confidence": 2,
+        "reasoning": "Elo still favors New Orleans but a confirmed reverse line move (82% handle on NO, line moving toward LV) now works against this side, on top of a cover rate that already didnt clear the bar.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "+4.6 pts, close to and slightly above the market number (-3)"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "against",
+            "detail": "55.0% doesnt clear the models own 60% confidence bar"
+          },
+          {
+            "label": "Reverse line move",
+            "dir": "against",
+            "detail": "82% of handle is on Saints but the line moved toward Raiders (-3.5 -> -3) -- sharp money disagrees with this lean"
+          }
+        ],
+        "alignment": {
+          "for": 1,
+          "against": 2,
+          "neutral": 0,
+          "net": -1
+        }
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "Under 44.5",
+    "pick_team": null,
+    "pct": 74,
+    "system": "travel under backtoback road off win",
+    "why": "Las Vegas won on the road last week (26-14 at the Chargers) and is on the road again; New Orleans is also coming off a road game (a win at Baltimore) -- same back-to-back-road-fatigue shape.",
+    "stack_count": 1,
+    "applied_at": "2026-09-25T13:06:18.229323+00:00",
+    "checks": [
+      {
+        "key": "travel_under_backtoback_road_off_win",
+        "label": "travel under backtoback road off win",
+        "pct": 74,
+        "why": "Las Vegas won on the road last week (26-14 at the Chargers) and is on the road again; New Orleans is also coming off a road game (a win at Baltimore) -- same back-to-back-road-fatigue shape.",
+        "applies": true,
+        "mechanism": "Away team won on the road last week and is on the road again; home team is also coming off a road game -- fatigue on both sides suppresses scoring.",
+        "source": "same as above",
+        "baseline_pct": 74
+      }
+    ]
+  },
+  "props": {
+    "last_checked": "2026-09-24T20:17:38Z",
+    "status": "captured",
+    "source_note": "FanDuel via raiders.com/BetMGM roundup, captured 2026-09-24. Jeanty rush-yards and Olave rec-yards angles noted but no confirmed book number yet -- re-check next cycle.",
+    "picks": [
+      {
+        "player": "Kirk Cousins",
+        "team": "away",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Trending-up passing volume against a middling Saints pass defense, with Jeanty's early-down struggles likely pushing more work to Cousins' arm.",
+        "matchup": {
+          "opp_rank_vs_pos": 15,
+          "rank_basis": "footballdb fantasy pts allowed to QB, Wks 1-2 (1=toughest)"
+        },
+        "factors": [
+          {
+            "label": "Form",
+            "dir": "for",
+            "detail": "Averaging 206.5 yds/gm through 2 games at 68% completion, 6 TD, trending up in Wk2"
+          },
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "Saints pass D ranks 15th, 441 yds/3TD allowed through 2 games"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "Jeanty's rushing struggles (2.3 YPC Wk2) could push more volume to the passing game"
+          },
+          {
+            "label": "Total",
+            "dir": "neutral",
+            "detail": "Game total sits at 43.5, an above-average implied total supporting both offenses throwing"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 211.5,
+        "opening_captured_at": "2026-09-24T20:17:38Z",
+        "current_line": 211.5,
+        "current_captured_at": "2026-09-24T20:17:38Z"
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:28:02Z",
+    "source": "cleatz.com",
+    "spread": null,
+    "total": {
+      "bets_pct_over": 79,
+      "handle_pct_over": 74
+    },
+    "moneyline": null,
+    "reverse_line_move": null,
+    "rlm_note": null,
+    "note": "Cleatz did not post a spread/ML ticket split for this game this cycle -- total only."
+  },
+  "final_score": {
+    "home": 27,
+    "away": 35
+  }
+}

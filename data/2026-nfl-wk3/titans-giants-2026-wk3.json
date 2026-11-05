@@ -1,0 +1,559 @@
+{
+  "game_id": "titans-giants-2026-wk3",
+  "matchup": "Tennessee Titans @ New York Giants",
+  "week": "Week 3",
+  "kickoff": "2026-09-27T17:00:00Z",
+  "opening_line": {
+    "captured_at": "2026-09-22",
+    "bookmaker_eu": null,
+    "draftkings": {
+      "spread": -5.5,
+      "total": 43.5,
+      "ml_fav": -250,
+      "ml_dog": null
+    },
+    "fanduel": null,
+    "caesars": null,
+    "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+  },
+  "snapshots": [
+    {
+      "captured_at": "2026-09-22T12:40:56Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -5.5,
+        "total": 43.5,
+        "ml_fav": -250,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "BookMaker.eu has not posted this game yet (confirmed live on its own board). DraftKings(rotowire) fetched live 2026-09-22. Caesars/VegasInsider stale (Week 2 table). FanDuel not attempted. First snapshot = opening line."
+    },
+    {
+      "captured_at": "2026-09-23T12:46:08Z",
+      "bookmaker_eu": {
+        "spread": -3.0,
+        "total": 40.5,
+        "ml_fav": -146,
+        "ml_dog": null
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 40.5,
+        "ml_fav": -155,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": -3.0,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      }
+    },
+    {
+      "captured_at": "2026-09-24T12:12:29Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 40.0,
+        "ml_fav": -139,
+        "ml_dog": 118
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 40.5,
+        "ml_fav": -155,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Giants(home) favored; BME/Caesars agree -2.5, DK half-pt steeper at -3."
+    },
+    {
+      "captured_at": "2026-09-25T12:15:41Z",
+      "bookmaker_eu": {
+        "spread": -2.5,
+        "total": 38.5,
+        "ml_fav": -142,
+        "ml_dog": 121
+      },
+      "draftkings": {
+        "spread": -3.0,
+        "total": 40.5,
+        "ml_fav": -155,
+        "ml_dog": null
+      },
+      "fanduel": null,
+      "caesars": null,
+      "note": "DK via rotowire (freshness marker Sep 24, not today) and Caesars via vegasinsider (marker Sep 22, 3 days stale) -- logged DK as best-available but flag as possibly non-refreshed; Caesars/FanDuel logged null this cycle rather than pass off stale numbers as current. BookMaker.eu confirmed live (2 real total moves found vs yesterday: patriots-jaguars, titans-giants)."
+    },
+    {
+      "captured_at": "2026-09-27T13:30:02Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": -3.0,
+        "total": 40.5,
+        "ml_fav": -155,
+        "ml_dog": 155
+      },
+      "fanduel": null,
+      "caesars": {
+        "spread": -2.5,
+        "total": null,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "Gameday AM check. BookMaker.eu unusable this cycle (wrong-week data) but its last live read (9/25) had the total at 38.5 (down from 40.0), a real sharp-only move DK hasnt followed yet. NEW and material: MetLife forecast for kickoff window is NE winds 21-24mph with 84-93% hourly rain-shower probability -- a genuine, confirmed weather signal (heavy wind is this projects strongest total-suppressing factor), independent of and stacking with the sharp total drop already in the research. Pollard/Spears trend unchanged, still no official Fri tag."
+    }
+  ],
+  "research": {
+    "last_run": "2026-09-27",
+    "spread_lean": "NYG -2.5 to -3 (unchanged, smaller edge)",
+    "total_lean": "Under -- now a real, higher-confidence lean: BookMaker.eus sharp-only total drop (40.0 to 38.5) PLUS a confirmed 21-24mph wind/heavy-rain forecast at kickoff are two independent signals pointing the same way",
+    "moneyline_lean": "No edge",
+    "confidence": "High",
+    "top_signals": [
+      "Confirmed MetLife forecast: 21-24mph winds, 84-93% hourly rain probability at kickoff -- this projects own guidance flags 15mph+ wind as the strongest total-suppressing signal, and this is well above that",
+      "BookMaker.eus sharp-only total drop (40.0 to 38.5) from earlier this week still stands, DK/rotowire (40.5) hasnt followed -- a second, independent signal agreeing with the weather",
+      "Pollard/Spears both trending worse through the week on practice participation, unchanged from Fridays read -- caps both teams rushing-then-passing game script in the wind"
+    ]
+  },
+  "triggers": {
+    "book_vs_sharp_gap": false,
+    "key_number_crossed": false,
+    "steam_no_news": false
+  },
+  "status": "final",
+  "simulation": {
+    "run_at": "2026-09-27T13:30:02.737296+00:00",
+    "n": 10000,
+    "homeElo": 1449.6,
+    "awayElo": 1272.2,
+    "gamesSeen": 4,
+    "eloMarginHome": 9.0,
+    "statsMarginHome": 2.1,
+    "marginDivergence": 6.9,
+    "projTotal": 44.8,
+    "homeWinProbElo": 78.5,
+    "marketHomeSpread": -2.5,
+    "marketTotal": 40.5,
+    "homeInjuryPts": -4.6,
+    "awayInjuryPts": -1.5,
+    "projHomeMeanRaw": 26.9,
+    "projAwayMeanRaw": 17.9,
+    "projHomeMeanAdjusted": 22.3,
+    "projAwayMeanAdjusted": 16.4,
+    "injuryAdjustedMarginHome": 5.9,
+    "projTotalAdjusted": 38.7,
+    "spreadLean": "home",
+    "totalLean": null,
+    "notes": [
+      "Elo margin (+9.0) and recent-scoring margin (+2.1) disagree by 6.9 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -4.6 pts -- Jameis Winston (QB, out, -4.0), Malik Nabers (WR, questionable, -0.6).",
+      "Away injury adjustment: -1.5 pts -- Tony Pollard (RB, questionable, -1.0), Tyjae Spears (RB, questionable, -0.5)."
+    ],
+    "homeWinPct": 64.1,
+    "awayWinPct": 33.1,
+    "tiePct": 2.8,
+    "medianHomeScore": 22,
+    "medianAwayScore": 16,
+    "coverPctHome": 59.0,
+    "overPct": 44.8
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-09-27T13:30:02Z",
+    "home": {
+      "items": [
+        {
+          "position": "QB",
+          "player": "Jameis Winston",
+          "status": "out",
+          "pts": -4.0,
+          "note": "Unchanged -- Dart out for season, Winston starting."
+        },
+        {
+          "position": "WR",
+          "player": "Malik Nabers",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "Trending positive -- X-ray came back clean, he expects to play, but still no full-participation confirmation from a reliable source. Slightly reduced from -0.75."
+        }
+      ],
+      "items_total_pts": -4.6,
+      "stacking_notes": [],
+      "total_pts": -4.6
+    },
+    "away": {
+      "items": [
+        {
+          "position": "RB",
+          "player": "Tony Pollard",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "Unchanged -- worsening practice trend (DNP Fri) continues, no official Fri designation yet as of this run."
+        },
+        {
+          "position": "RB",
+          "player": "Tyjae Spears",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "Unchanged."
+        }
+      ],
+      "items_total_pts": -1.5,
+      "stacking_notes": [],
+      "total_pts": -1.5
+    }
+  },
+  "game_evaluation": {
+    "last_updated": "2026-09-27T13:33:15Z",
+    "analysis": [
+      "Jameis Winston starting for the season-ending-injured Jaxson Dart remains the biggest priced-in factor here, and the model still favors New York by nearly 6 points against a market number of -2.5 to -3, with 59% of sims covering. Tony Pollard and Tyjae Spears both continue trending worse through the week on the practice report without an official Friday tag yet, capping the Titans backfield.",
+      "The total is where todays new information matters most: MetLife is forecasting 21-24mph winds with 84-93% hourly rain-shower probability at kickoff -- well above this projects own 15mph flag threshold for total-suppressing weather, and it stacks with an already-real sharp-book total drop (BookMaker.eu moved 40.0 to 38.5 earlier this week, unmatched by DK). Two independent signals now point the same way, though the models own total number (38.7) is only modestly below the market (40.5), so size this as a real lean rather than a maximum-conviction play."
+    ],
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "NYG -2.5 to -3",
+        "confidence": 6,
+        "reasoning": "Model margin (5.9) still favors the Giants beyond the market number even with the Titans backfield injuries applied, 59% of sims cover.",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Elo margin",
+            "dir": "for",
+            "detail": "+9.0 pts favors Giants"
+          },
+          {
+            "label": "Sim cover%",
+            "dir": "for",
+            "detail": "59.0% of sims have Giants covering"
+          },
+          {
+            "label": "Injury (both sides)",
+            "dir": "against",
+            "detail": "Home -4.6, away -1.5 pts -- Winston-for-Dart and the Titans RB duo both trim the raw Elo edge"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        }
+      },
+      {
+        "market": "total",
+        "pick": "Under 40.5",
+        "confidence": 6,
+        "reasoning": "Confirmed 21-24mph wind and heavy rain at kickoff stacks with an already-real sharp-book total drop from earlier this week -- two independent signals, though the models own number gap is modest (38.7 vs 40.5).",
+        "best_bet": false,
+        "factors": [
+          {
+            "label": "Weather",
+            "dir": "for",
+            "detail": "Confirmed 21-24mph wind, 84-93% rain probability at kickoff -- well above the 15mph flag"
+          },
+          {
+            "label": "Sharp book move",
+            "dir": "for",
+            "detail": "BookMaker.eu total dropped 40.0 to 38.5 earlier this week, DK/rotowire havent followed"
+          },
+          {
+            "label": "Model total gap",
+            "dir": "for",
+            "detail": "Model 38.7 vs market 40.5 -- real but modest"
+          },
+          {
+            "label": "Public agreement",
+            "dir": "neutral",
+            "detail": "88% of cleatz handle already on the Under -- agrees with, doesnt independently confirm, this pick"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        }
+      }
+    ]
+  },
+  "wagertalk_angle": {
+    "pick": "Titans +3",
+    "pick_team": "Tennessee Titans",
+    "pct": 79,
+    "system": "winless road vs home favorite + road dog window 02",
+    "why": "Tennessee is 0-2, on the road, and off a loss (20-24 to Philadelphia), facing a home favorite. Independently fits the broader 0-2-road-dog window on its own.",
+    "stack_count": 2,
+    "applied_at": "2026-09-25T13:06:18.129549+00:00",
+    "checks": [
+      {
+        "key": "winless_road_vs_home_favorite",
+        "label": "winless road vs home favorite",
+        "pct": 79,
+        "why": "Tennessee is 0-2, on the road, and off a loss (20-24 to Philadelphia), facing a home favorite.",
+        "applies": true,
+        "mechanism": "A winless team on the road, off a loss, facing a home favorite -- desperation/no-respect shape.",
+        "source": "WagerTalk-style trend video, cross-checked against real records each week (see _add_wagertalk_angles*.py history)",
+        "baseline_pct": 79
+      },
+      {
+        "key": "road_dog_window_02",
+        "label": "road dog window 02",
+        "pct": 66,
+        "why": "Independently fits the broader 0-2-road-dog window on its own.",
+        "applies": true,
+        "mechanism": "Broader window: any 0-2 team as a road underdog.",
+        "source": "same as above",
+        "baseline_pct": 66
+      }
+    ]
+  },
+  "market_signal": {
+    "captured_at": "2026-09-27T13:30:02Z",
+    "source": "cleatz.com",
+    "spread": null,
+    "total": {
+      "bets_pct_over": 33,
+      "handle_pct_over": 12
+    },
+    "moneyline": null,
+    "reverse_line_move": null,
+    "rlm_note": null,
+    "note": "Cleatz did not post a spread/ML split for this game this cycle -- total only. 88% of handle already on the Under, agreeing with the weather+sharp signal rather than against it."
+  },
+  "props": {
+    "last_checked": "2026-09-27T13:34:36Z",
+    "status": "captured",
+    "source_note": "DraftKings props (via SportsBettingDime/DK Network), Sun AM 9/27; matchup ranks via footballdb fantasy-pts-allowed, Wks 1-2",
+    "picks": [
+      {
+        "player": "Cam Skattebo",
+        "team": "home",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Lead-back volume into a soft Titans run defense, and confirmed 20+mph wind/rain should push both offenses toward a run-heavier script.",
+        "matchup": {
+          "opp_rank_vs_pos": 29,
+          "rank_basis": "RB fantasy pts allowed, Wks 1-2"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "TEN ranks 29th vs RB, 16.5 fantasy pts/g allowed"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "50+ scrimmage yds in 8 of last 9 games, career 100.5 scrimmage yds/g at home"
+          },
+          {
+            "label": "Weather script",
+            "dir": "for",
+            "detail": "Confirmed 21-24mph wind + heavy rain at kickoff should push both offenses to lean run"
+          },
+          {
+            "label": "Game script",
+            "dir": "neutral",
+            "detail": "Giants favored per model, could mean early-down runs to protect a lead late -- supportive either way"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 0,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 57.5,
+        "opening_captured_at": "2026-09-27T13:34:36Z",
+        "current_line": 57.5,
+        "current_captured_at": "2026-09-27T13:34:36Z"
+      },
+      {
+        "player": "Isaiah Likely",
+        "team": "home",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Titans defense is stingy vs TE (10th, ~4.5 rec/17.5 yds allowed/g) and confirmed heavy wind/rain at kickoff caps big-play passing.",
+        "matchup": {
+          "opp_rank_vs_pos": 10,
+          "rank_basis": "TE fantasy pts allowed, Wks 1-2"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "TEN ranks 10th vs TE, only ~17.5 rec yds/g allowed to the position"
+          },
+          {
+            "label": "Weather",
+            "dir": "for",
+            "detail": "Confirmed 21-24mph wind + heavy rain suppresses downfield/contested-catch production"
+          },
+          {
+            "label": "Usage",
+            "dir": "against",
+            "detail": "Team-high 5 catches in Wk2, one of only 4 TEs leaguewide with 5+ catches both weeks -- real target share"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 40.5,
+        "opening_captured_at": "2026-09-27T13:34:36Z",
+        "current_line": 40.5,
+        "current_captured_at": "2026-09-27T13:34:36Z"
+      },
+      {
+        "player": "Malik Nabers",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Shoulder injury trending better but not fully confirmed, and confirmed heavy wind/rain at kickoff works against a big receiving day even for the clear WR1.",
+        "matchup": {
+          "opp_rank_vs_pos": 24,
+          "rank_basis": "WR fantasy pts allowed, Wks 1-2"
+        },
+        "factors": [
+          {
+            "label": "Injury",
+            "dir": "for",
+            "detail": "Shoulder, limited practice Wed, no full-participation confirmation yet despite a clean X-ray"
+          },
+          {
+            "label": "Weather",
+            "dir": "for",
+            "detail": "Confirmed 21-24mph wind + heavy rain caps downfield production"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "TEN 24th vs WR -- roughly average, not a strong driver either way"
+          },
+          {
+            "label": "Target share",
+            "dir": "against",
+            "detail": "Clear WR1, 5+ catches/50+ yds in 8 of 11 career home games -- real volume even in poor conditions"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 1,
+          "net": 1
+        },
+        "opening_line": 55.5,
+        "opening_captured_at": "2026-09-27T13:34:36Z",
+        "current_line": 55.5,
+        "current_captured_at": "2026-09-27T13:34:36Z"
+      },
+      {
+        "player": "Jameis Winston",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "DraftKings",
+        "lean": "under",
+        "confidence": 5,
+        "reasoning": "Confirmed heavy wind/rain at kickoff is this projects strongest total-suppressing signal, and a game-manager veteran with a lead late tends toward fewer drop-backs, not more.",
+        "factors": [
+          {
+            "label": "Weather",
+            "dir": "for",
+            "detail": "Confirmed 21-24mph wind + 84-93% rain probability at kickoff -- the strongest total-suppressing signal this project tracks"
+          },
+          {
+            "label": "Game script",
+            "dir": "for",
+            "detail": "Model favors Giants (~59% cover) -- a lead tends to mean fewer necessary drop-backs for a game-manager QB"
+          },
+          {
+            "label": "Matchup",
+            "dir": "neutral",
+            "detail": "No confirmed Titans pass-defense rank found this cycle"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 1,
+          "net": 2
+        },
+        "opening_line": 206.5,
+        "opening_captured_at": "2026-09-27T13:34:36Z",
+        "current_line": 206.5,
+        "current_captured_at": "2026-09-27T13:34:36Z"
+      },
+      {
+        "player": "Tony Pollard",
+        "team": "away",
+        "position": "RB",
+        "market": "rush_yards",
+        "book": "DraftKings",
+        "lean": "under",
+        "confidence": 4,
+        "reasoning": "Ankle trend has worsened all week (DNP Friday) with no official game-status tag yet -- health risk is the driver here even though the Giants run defense matchup is soft.",
+        "matchup": {
+          "opp_rank_vs_pos": 31,
+          "rank_basis": "RB fantasy pts allowed, Wks 1-2"
+        },
+        "factors": [
+          {
+            "label": "Injury trend",
+            "dir": "for",
+            "detail": "Ankle -- DNP Wed/Thu, not spotted at Fri practice at all, worsening trend with no official tag yet"
+          },
+          {
+            "label": "Matchup",
+            "dir": "against",
+            "detail": "NYG ranks 31st vs RB, 20.5 fantasy pts/g allowed -- a very soft matchup that argues the other way"
+          },
+          {
+            "label": "Role uncertainty",
+            "dir": "for",
+            "detail": "If limited or eases off after contact given the ankle, Spears likely absorbs some of the workload"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 1,
+          "neutral": 0,
+          "net": 1
+        },
+        "opening_line": 48.5,
+        "opening_captured_at": "2026-09-27T13:34:36Z",
+        "current_line": 48.5,
+        "current_captured_at": "2026-09-27T13:34:36Z"
+      }
+    ]
+  },
+  "final_score": {
+    "home": 12,
+    "away": 7
+  }
+}

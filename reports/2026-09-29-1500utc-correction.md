@@ -1,0 +1,31 @@
+NFL LINE REPORT — 2026-09-29 — 15:00 UTC
+
+This is research, not a guaranteed outcome.
+
+TIER 1 — IMMINENT (<=48 hrs to kickoff)
+FILTERED LEANS (Medium+ confidence only)
+
+  (none clear Medium+ confidence right now)
+WATCHING, NOT YET ACTIONABLE
+  (nothing in this window)
+
+NO EDGE
+  0 game(s) researched with no Medium+ lean — full slate available in data/ if you want to review manually.
+
+TIER 2/3 — TRACKING (not yet imminent)
+  Pittsburgh Steelers @ Cleveland Browns (Week 4) — 2.4 days out — opening line logged
+  Indianapolis Colts @ Washington Commanders (Week 4) — 4.9 days out — early confidence: Medium — injury-adjusted (home -3.0 / away +0.0 pts)
+  Arizona Cardinals @ New York Giants (Week 4) — 5.1 days out — opening line logged — injury-adjusted (home -4.0 / away +0.0 pts)
+  Dallas Cowboys @ Houston Texans (Week 4) — 5.1 days out — opening line logged
+  Jacksonville Jaguars @ Cincinnati Bengals (Week 4) — 5.1 days out — early confidence: Medium
+  New York Jets @ Chicago Bears (Week 4) — 5.1 days out — early confidence: Medium — injury-adjusted (home -4.0 / away +0.0 pts)
+  Green Bay Packers @ Tampa Bay Buccaneers (Week 4) — 5.1 days out — early confidence: Medium — injury-adjusted (home -5.5 / away +0.0 pts)
+  New England Patriots @ Buffalo Bills (Week 4) — 5.1 days out — opening line logged
+  Los Angeles Rams @ Philadelphia Eagles (Week 4) — 5.1 days out — opening line logged
+  Tennessee Titans @ Baltimore Ravens (Week 4) — 5.1 days out — opening line logged
+  Miami Dolphins @ Minnesota Vikings (Week 4) — 5.2 days out — opening line logged
+  Denver Broncos @ San Francisco 49ers (Week 4) — 5.2 days out — opening line logged
+  Los Angeles Chargers @ Seattle Seahawks (Week 4) — 5.2 days out — early confidence: Medium
+  Kansas City Chiefs @ Las Vegas Raiders (Week 4) — 5.2 days out — opening line logged
+  Detroit Lions @ Carolina Panthers (Week 4) — 5.4 days out — opening line logged
+  Atlanta Falcons @ New Orleans Saints (Week 4) — 6.4 days out — early confidence: Medium
