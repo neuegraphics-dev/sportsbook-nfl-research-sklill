@@ -1086,7 +1086,8 @@ document.getElementById('pending').innerHTML = (D.pending || []).length ? `<b>St
   const s = E.summary, r = s.record || {};
   const sign = v => v == null ? '—' : (v > 0 ? '+' : '') + v;
   const days = Object.entries(s.byRecDay || {}).map(([d, v]) => `${esc(d)}: ${v.beat}/${v.n} beat, avg ${sign(v.avgPts)}`).join(' · ');
-  const grp = o => Object.entries(o || {}).map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td class="num">${v.n}</td><td class="num">${v.withLine ? v.beat + '/' + v.withLine + ' (' + v.beatPct + '%)' : '—'}</td><td class="num">${sign(v.avgPts)}</td><td class="num">${(v.record || {}).w || 0}–${(v.record || {}).l || 0}</td></tr>`).join('');
+  const ORD = ['Thu night','Sat','Sun AM','Sun 1pm','Sun 4pm','Sun night','Mon night','edge','min-action'];
+  const grp = o => Object.entries(o || {}).sort((x, y) => { const k = v => ORD.indexOf(v) < 0 ? 99 : ORD.indexOf(v); return k(x[0]) - k(y[0]); }).map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td class="num">${v.n}</td><td class="num">${v.withLine ? v.beat + '/' + v.withLine + ' (' + v.beatPct + '%)' : '—'}</td><td class="num">${sign(v.avgPts)}</td><td class="num">${(v.record || {}).w || 0}–${(v.record || {}).l || 0}</td></tr>`).join('');
   const sh = s.sharp || {};
   const breakdown = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>By window / pick type</th><th>Picks</th><th>Beat close</th><th>Avg CLV</th><th>W–L</th></tr></thead><tbody>${grp(s.byWindow)}${grp(s.byPickType)}</tbody></table></div>
     <p class="hr-summary">Vs the sharp close (BookMaker.eu): <b>${sh.beat || 0}/${sh.n || 0}</b> beat, avg <b>${sign(sh.avgPts)}</b> pts. Props with a recorded close: <b>${s.propsWithClose || 0}</b>.${(s.mlPriceClv || {}).n ? ' Moneyline no-vig price CLV avg <b>' + sign(s.mlPriceClv.avgPct) + ' pct pts</b>.' : ''} Benchmark: beating the close on 55%+ of picks.</p>`;
