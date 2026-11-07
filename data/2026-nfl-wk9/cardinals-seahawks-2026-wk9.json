@@ -143,7 +143,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:14.348129+00:00",
+    "run_at": "2026-11-07T13:42:33.994903+00:00",
     "n": 10000,
     "homeElo": 1636.2,
     "awayElo": 1386.4,
@@ -155,30 +155,30 @@
     "homeWinProbElo": 84.7,
     "marketHomeSpread": -8.5,
     "marketTotal": 39.5,
-    "homeInjuryPts": -1.7,
-    "awayInjuryPts": -0.8,
+    "homeInjuryPts": -4.9,
+    "awayInjuryPts": 1.15,
     "projHomeMeanRaw": 30.5,
     "projAwayMeanRaw": 18.6,
-    "projHomeMeanAdjusted": 28.8,
-    "projAwayMeanAdjusted": 17.8,
-    "injuryAdjustedMarginHome": 11.0,
-    "projTotalAdjusted": 46.6,
+    "projHomeMeanAdjusted": 25.6,
+    "projAwayMeanAdjusted": 19.8,
+    "injuryAdjustedMarginHome": 5.9,
+    "projTotalAdjusted": 45.4,
     "spreadLean": null,
     "totalLean": "over",
     "notes": [
       "Elo margin (+11.9) and recent-scoring margin (+4.1) disagree by 7.8 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -3.0 pts -- Sam Darnold (QB, out, -3.0).",
-      "Away injury adjustment: -2.1 pts -- Budda Baker (S, questionable, -0.8), Josh Sweat (LB, questionable, -0.5), Isaac Seumalo (OG, questionable, -0.4), Hjalte Froddolt (OC, questionable, -0.4).",
+      "Home injury adjustment: -8.8 pts -- Sam Darnold (QB, out, -3.0), Charles Cross (OT, out, -1.5), Quenton Nelson (OG, out, -0.8), Leonard Williams (DT, out, -1.0), Brandon Pili (DT, out, -0.3), Uchenna Nwosu (LB, out, -0.7), Rashid Shaheed (WR, out, -0.6), Connor O'Toole (LB, questionable, -0.2). DT depth: 2 confirmed out (Leonard Williams, Brandon Pili) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -2.8 pts -- Jon Gaines II (OG, out, -0.7), Jayden Williams (OT, out, -0.8), Walter Nolen III (DT, questionable, -0.5), Max Melton (CB, questionable, -0.5), Bam Knight (RB, out, -0.3).",
       "Seattle Seahawks (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Zach Charbonnet (-1.2), Drake Thomas (-0.4), Chazz Surratt (-0.3), Drew Lock (-0.8), DeMarcus Lawrence (-0.4), Uchenna Nwosu (-0.3), Elijah Arroyo (-0.4) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Arizona Cardinals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jeremiyah Love (-1.5), Jon Gaines II (-0.5), Walter Nolen (-0.7), Andrew Wingard (-0.3), Budda Baker (-0.3) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 76.6,
-    "awayWinPct": 21.0,
-    "tiePct": 2.4,
-    "medianHomeScore": 29,
-    "medianAwayScore": 18,
-    "coverPctHome": 56.2,
-    "overPct": 70.2
+    "homeWinPct": 64.7,
+    "awayWinPct": 32.6,
+    "tiePct": 2.7,
+    "medianHomeScore": 26,
+    "medianAwayScore": 20,
+    "coverPctHome": 42.7,
+    "overPct": 66.3
   },
   "simulation_history": [
     {
@@ -200,108 +200,189 @@
       "run_at": "2026-11-05T03:19:14.348129+00:00",
       "marginHome": 11.0,
       "total": 46.6
+    },
+    {
+      "run_at": "2026-11-07T13:42:33.994903+00:00",
+      "marginHome": 5.9,
+      "total": 45.4
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Seattle Seahawks by 11.0, projected total 46.6 (over 70.2%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Seattle Seahawks by 7.6, total 47.3. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Lean: Both models sit near 47 (sim 46.6, 2026-only 47.3) against a 39.5 market that cut 5 points on Darnold out. Gap is large but the sharp number already prices Lock (listed Q himself) and rain risk, so it is context at 4 with no stake: the window's top three are staked. Swap-in only if a top-3 price moves past its pass-at."
+      "Sim (injury-adjusted, 10,000 runs): Seattle Seahawks by 5.9, projected total 45.4 (over 66.3%). 2026-only stats margin: Seattle Seahawks by 4.1; Elo margin: Seattle Seahawks by 11.9. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread -8.5, total 39.5.",
+      "SEA is missing QB Darnold, LT Cross, G Nelson, DT Williams and DT Pili; ARI is missing both G Gaines and OT Williams. The line has already fallen from -11.5 to -8.5 (cleatz RLM toward ARI) and the sim has SEA by 5.9 with the 2026-only margin at 4.1; 84% of total handle is on the Under, so the sim's Over 45.4 is not backed by money."
     ],
     "leans": [
       {
+        "market": "spread",
+        "pick": "ARI +8.5",
+        "confidence": 5,
+        "reasoning": "Sim SEA by 5.9 and 2026 form SEA by 4.1 under 8.5, line already moving toward ARI, SEA OL/QB heavily depleted. | Stake $12 \u00b7 pass at +7.5",
+        "best_bet": true
+      },
+      {
         "market": "total",
         "pick": "Over 39.5",
-        "confidence": 4,
-        "best_bet": false,
-        "reasoning": "Both models sit near 47 (sim 46.6, 2026-only 47.3) against a 39.5 market that cut 5 points on Darnold out. Gap is large but the sharp number already prices Lock (listed Q himself) and rain risk, so it is context at 4 with no stake: the window's top three are staked. Swap-in only if a top-3 price moves past its pass-at. | Stake $0 \u00b7 pass at 40.5",
-        "factors": [
-          {
-            "label": "Sim total",
-            "dir": "for",
-            "detail": "46.6 vs 39.5 (over 70.2%)"
-          },
-          {
-            "label": "2026-only form",
-            "dir": "for",
-            "detail": "47.3 projected"
-          },
-          {
-            "label": "QB status",
-            "dir": "against",
-            "detail": "Lock (Q) replaces Darnold; market cut 44.5 to 39.5"
-          },
-          {
-            "label": "Weather",
-            "dir": "against",
-            "detail": "26% rain, 11 mph SSW"
-          }
-        ],
-        "alignment": {
-          "for": 2,
-          "against": 2,
-          "neutral": 0,
-          "net": 0
-        }
+        "confidence": 3,
+        "reasoning": "Sim total 45.4 vs 39.5 but 84% of handle is on the Under; context only. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
       }
     ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:14Z",
+    "last_updated": "2026-11-07T13:42:33Z",
     "home": {
-      "offense_pts": -3.0,
-      "defense_pts": 0.0,
+      "offense_pts": -5.9,
+      "defense_pts": -2.95,
       "items": [
         {
           "position": "QB",
           "player": "Sam Darnold",
           "status": "out",
           "pts": -3.0,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): Darnold out (quad), Drew Lock (himself listed Q) starts; Lock has played well as backup"
-        }
-      ],
-      "items_total_pts": -3.0,
-      "stacking_notes": [],
-      "total_pts": -3.0
-    },
-    "away": {
-      "offense_pts": -0.8,
-      "defense_pts": -1.3,
-      "items": [
-        {
-          "position": "S",
-          "player": "Budda Baker",
-          "status": "questionable",
-          "pts": -0.8,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent Wed"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
-          "position": "LB",
-          "player": "Josh Sweat",
-          "status": "questionable",
-          "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent"
+          "position": "OT",
+          "player": "Charles Cross",
+          "status": "out",
+          "pts": -1.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "OG",
-          "player": "Isaac Seumalo",
-          "status": "questionable",
-          "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent"
+          "player": "Quenton Nelson",
+          "status": "out",
+          "pts": -0.8,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
-          "position": "OC",
-          "player": "Hjalte Froddolt",
+          "position": "DT",
+          "player": "Leonard Williams",
+          "status": "out",
+          "pts": -1.0,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DT",
+          "player": "Brandon Pili",
+          "status": "out",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Uchenna Nwosu",
+          "status": "out",
+          "pts": -0.7,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "WR",
+          "player": "Rashid Shaheed",
+          "status": "out",
+          "pts": -0.6,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Connor O'Toole",
           "status": "questionable",
-          "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent"
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -2.1,
-      "stacking_notes": [],
-      "total_pts": -2.1
+      "items_total_pts": -8.1,
+      "stacking_notes": [
+        "DT depth: 2 confirmed out (Leonard Williams, Brandon Pili) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -8.85
     },
-    "def_clusters": []
+    "away": {
+      "offense_pts": -1.8,
+      "defense_pts": -1.0,
+      "items": [
+        {
+          "position": "OG",
+          "player": "Jon Gaines II",
+          "status": "out",
+          "pts": -0.7,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "OT",
+          "player": "Jayden Williams",
+          "status": "out",
+          "pts": -0.8,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DT",
+          "player": "Walter Nolen III",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "CB",
+          "player": "Max Melton",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "RB",
+          "player": "Bam Knight",
+          "status": "out",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        }
+      ],
+      "items_total_pts": -2.8,
+      "stacking_notes": [],
+      "total_pts": -2.8
+    },
+    "def_clusters": [
+      {
+        "team_side": "home",
+        "unit": "offensive line",
+        "count": 2,
+        "players": [
+          "Charles Cross",
+          "Quenton Nelson"
+        ],
+        "own_pts": 2.3,
+        "watch": "own QB/RB UNDER (pressure, fewer clean runs)",
+        "defensive": false,
+        "opp_pts": 0.0
+      },
+      {
+        "team_side": "home",
+        "unit": "front",
+        "count": 2,
+        "players": [
+          "Leonard Williams",
+          "Brandon Pili"
+        ],
+        "opp_pts": 2.05,
+        "watch": "rushing OVER",
+        "defensive": true
+      },
+      {
+        "team_side": "away",
+        "unit": "offensive line",
+        "count": 2,
+        "players": [
+          "Jon Gaines II",
+          "Jayden Williams"
+        ],
+        "own_pts": 1.5,
+        "watch": "own QB/RB UNDER (pressure, fewer clean runs)",
+        "defensive": false,
+        "opp_pts": 0.0
+      }
+    ]
   },
   "weather": {
     "captured_at": "2026-11-07T13:41:34Z",
@@ -328,22 +409,28 @@
     ]
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:28Z",
+    "captured_at": "2026-11-07T13:47:39Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 45,
-      "handle_pct_home": 60
+      "bets_pct_home": 53,
+      "handle_pct_home": 61
     },
     "total": {
-      "bets_pct_over": 73,
-      "handle_pct_over": 37
+      "bets_pct_over": 70,
+      "handle_pct_over": 16
     },
     "moneyline": {
-      "bets_pct_home": 86,
-      "handle_pct_home": 90
+      "bets_pct_home": 89,
+      "handle_pct_home": 87
     },
-    "reverse_line_move": false,
-    "rlm_note": "60% of handle is on the home side but the spread hasn't moved yet (-9, unchanged) -- too early to call RLM, not evidence of one.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "reverse_line_move": true,
+    "rlm_note": "61% of handle is on the home side but the spread moved AGAINST them (-11.5 -> -8.5) -- real reverse line move toward away.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg. Result: All ARI overs lean into SEA ranks (WR 1, RB rush 6, QB pass 1). No qualifier.",
+    "picks": []
   }
 }

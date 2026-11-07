@@ -143,7 +143,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:13.762046+00:00",
+    "run_at": "2026-11-07T13:42:34.049018+00:00",
     "n": 10000,
     "homeElo": 1438.2,
     "awayElo": 1444.4,
@@ -155,30 +155,30 @@
     "homeWinProbElo": 56.0,
     "marketHomeSpread": 5.5,
     "marketTotal": 51.5,
-    "homeInjuryPts": 1.7,
-    "awayInjuryPts": 0.4,
+    "homeInjuryPts": 1.6,
+    "awayInjuryPts": -0.6,
     "projHomeMeanRaw": 26.5,
     "projAwayMeanRaw": 24.8,
-    "projHomeMeanAdjusted": 28.2,
-    "projAwayMeanAdjusted": 25.2,
-    "injuryAdjustedMarginHome": 3.0,
-    "projTotalAdjusted": 53.4,
+    "projHomeMeanAdjusted": 28.1,
+    "projAwayMeanAdjusted": 24.2,
+    "injuryAdjustedMarginHome": 3.9,
+    "projTotalAdjusted": 52.3,
     "spreadLean": "home",
     "totalLean": null,
     "notes": [
       "Elo margin (+1.7) and recent-scoring margin (-4.1) disagree by 5.8 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -1.2 pts -- Akeem Davis-Gaither (LB, questionable, -0.4), Justin Walley (CB, questionable, -0.5), Andrew Ogletree (TE, questionable, -0.3).",
-      "Away injury adjustment: -2.5 pts -- Caleb Downs (S, questionable, -0.8), P.J. Locke III (S, questionable, -0.5), Malachi Lawrence (EDGE, out, -0.7), Jake Ferguson (TE, questionable, -0.5).",
+      "Home injury adjustment: -1.9 pts -- Justin Walley (CB, out, -0.6), A.J. Haulcy (S, questionable, -0.4), Jalen Travis (OT, questionable, -0.4), Akeem Davis-Gaither (LB, out, -0.5).",
+      "Away injury adjustment: -4.1 pts -- Joey Porter Jr. (CB, questionable, -0.8), DeMarvion Overshown (LB, questionable, -0.5), Malachi Lawrence (EDGE, out, -0.7), KaVontae Turpin (WR, out, -0.4), Jake Ferguson (TE, questionable, -0.5), George Pickens (WR, questionable, -1.0), Luke Schoonmaker (TE, questionable, -0.2).",
       "Indianapolis Colts (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Darius Slayton (-1.0), Will Mallory (-0.8), Arden Key (-0.5) [-2.2 pts total]; Sauce Gardner (-1.5), Tyler Warren (-1.0), Anthony Gould (-0.3), CJ Allen (-0.5), Bryce Boettcher (-0.2) [-3.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Dallas Cowboys (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Tyler Smith (-1.5), Cobie Durant (-0.8), P.J. Locke (-0.5), Malik Hooker (-0.8), DeMarvion Overshown (-1.0) [-5.2 pts total]; CeeDee Lamb (-2.0), Tyler Booker (-0.5) [-2.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 56.8,
-    "awayWinPct": 40.0,
-    "tiePct": 3.2,
+    "homeWinPct": 59.3,
+    "awayWinPct": 38.1,
+    "tiePct": 2.6,
     "medianHomeScore": 28,
-    "medianAwayScore": 25,
-    "coverPctHome": 72.8,
-    "overPct": 55.2
+    "medianAwayScore": 24,
+    "coverPctHome": 74.5,
+    "overPct": 53.5
   },
   "simulation_history": [
     {
@@ -200,140 +200,270 @@
       "run_at": "2026-11-05T03:19:13.762046+00:00",
       "marginHome": 3.0,
       "total": 53.4
+    },
+    {
+      "run_at": "2026-11-07T13:42:34.049018+00:00",
+      "marginHome": 3.9,
+      "total": 52.3
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Indianapolis Colts by 3.0, projected total 53.4 (over 55.2%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Dallas Cowboys by 1.5, total 49.9. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Lean: Elo sim has IND by 3.0 and the 2026-only form check has DAL by only 1.5, both well inside DAL -5.5. DAL secondary is hit (S Downs and S Locke concussions, EDGE Lawrence out multiple weeks, TE Ferguson DNP). Colts rest-day DNPs (Allen, Taylor, Ward) are vets resting, not injuries."
+      "Sim (injury-adjusted, 10,000 runs): Indianapolis Colts by 3.9, projected total 52.3 (over 53.5%). 2026-only stats margin: Dallas Cowboys by 4.1; Elo margin: Indianapolis Colts by 1.7. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread +4.5, total 51.5.",
+      "Saturday injury reports are in: DAL has CB Porter, LB Overshown, WR Pickens and TE Ferguson questionable and WR Turpin out, IND CB Walley and LB Davis-Gaither out. Money-wise 84% of handle is on DAL, yet DK has shortened DAL from -6 to -4.5 (reverse line move toward IND), and the 2026-only stats margin (DAL by 4.1) still sits inside +5.5."
     ],
     "leans": [
       {
         "market": "spread",
         "pick": "IND +5.5",
-        "confidence": 5,
-        "best_bet": true,
-        "reasoning": "Elo sim has IND by 3.0 and the 2026-only form check has DAL by only 1.5, both well inside DAL -5.5. DAL secondary is hit (S Downs and S Locke concussions, EDGE Lawrence out multiple weeks, TE Ferguson DNP). Colts rest-day DNPs (Allen, Taylor, Ward) are vets resting, not injuries. | Stake $12 \u00b7 pass at +5",
-        "factors": [
-          {
-            "label": "Sim margin",
-            "dir": "for",
-            "detail": "IND by 3.0 vs DAL -5.5 market"
-          },
-          {
-            "label": "2026-only form",
-            "dir": "for",
-            "detail": "DAL by 1.5 only"
-          },
-          {
-            "label": "Injuries",
-            "dir": "for",
-            "detail": "DAL: S Downs, S Locke, EDGE Lawrence, TE Ferguson all DNP Wed"
-          },
-          {
-            "label": "Rest/vet days",
-            "dir": "neutral",
-            "detail": "IND vet rest days, expected to play"
-          }
-        ],
-        "alignment": {
-          "for": 3,
-          "against": 0,
-          "neutral": 1,
-          "net": 3
-        }
+        "confidence": 6,
+        "reasoning": "RLM toward IND, 74.5% sim cover, and both Elo-adjusted sim and 2026-only form land inside the number. | Stake $18 \u00b7 pass at +4.5",
+        "best_bet": true
       }
     ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:13Z",
+    "last_updated": "2026-11-07T13:42:34Z",
     "home": {
-      "offense_pts": -0.3,
-      "defense_pts": -0.9,
+      "offense_pts": -0.4,
+      "defense_pts": -1.5,
       "items": [
-        {
-          "position": "LB",
-          "player": "Akeem Davis-Gaither",
-          "status": "questionable",
-          "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP knee"
-        },
         {
           "position": "CB",
           "player": "Justin Walley",
-          "status": "questionable",
-          "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP knee"
+          "status": "out",
+          "pts": -0.6,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
-          "position": "TE",
-          "player": "Andrew Ogletree",
+          "position": "S",
+          "player": "A.J. Haulcy",
           "status": "questionable",
-          "pts": -0.3,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP knee"
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "OT",
+          "player": "Jalen Travis",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Akeem Davis-Gaither",
+          "status": "out",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -1.2,
+      "items_total_pts": -1.9,
       "stacking_notes": [],
-      "total_pts": -1.2
+      "total_pts": -1.9
     },
     "away": {
-      "offense_pts": -0.5,
+      "offense_pts": -2.1,
       "defense_pts": -2.0,
       "items": [
         {
-          "position": "S",
-          "player": "Caleb Downs",
+          "position": "CB",
+          "player": "Joey Porter Jr.",
           "status": "questionable",
           "pts": -0.8,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP concussion/ankle"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
-          "position": "S",
-          "player": "P.J. Locke III",
+          "position": "LB",
+          "player": "DeMarvion Overshown",
           "status": "questionable",
           "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP concussion"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "EDGE",
           "player": "Malachi Lawrence",
           "status": "out",
           "pts": -0.7,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): out multiple weeks, IR possible"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "WR",
+          "player": "KaVontae Turpin",
+          "status": "out",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "TE",
           "player": "Jake Ferguson",
           "status": "questionable",
           "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "WR",
+          "player": "George Pickens",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "TE",
+          "player": "Luke Schoonmaker",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -2.5,
+      "items_total_pts": -4.1,
       "stacking_notes": [],
-      "total_pts": -2.5
+      "total_pts": -4.1
     },
     "def_clusters": []
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:28Z",
+    "captured_at": "2026-11-07T13:47:39Z",
     "source": "cleatz.com",
     "spread": {
       "bets_pct_home": 17,
-      "handle_pct_home": 10
+      "handle_pct_home": 16
     },
     "total": {
-      "bets_pct_over": 30,
-      "handle_pct_over": 39
+      "bets_pct_over": 57,
+      "handle_pct_over": 71
     },
     "moneyline": {
-      "bets_pct_home": 14,
-      "handle_pct_home": 15
+      "bets_pct_home": 13,
+      "handle_pct_home": 12
     },
-    "reverse_line_move": false,
-    "rlm_note": "90% of handle is on the away side but the spread hasn't moved yet (+5.5, unchanged) -- too early to call RLM, not evidence of one.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "reverse_line_move": true,
+    "rlm_note": "84% of handle is on the away side but the spread moved AGAINST them (+6 -> +4.5) -- real reverse line move toward home.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg.",
+    "picks": [
+      {
+        "player": "Dak Prescott",
+        "team": "away",
+        "position": "QB",
+        "market": "rush_yards",
+        "book": "FanDuel",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Indianapolis allows the 27th-most QB rushing yards and Prescott cleared 5.5 in 7 of 8 games. | Stake $18 \u00b7 pass at 6.5",
+        "matchup": {
+          "opp_rank_vs_pos": 27,
+          "rank_basis": "CBS QB rush yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "IND allows 22.3 QB rush yds/g, 27th (CBS; league avg 15.8)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 15.8 vs 5.5 line (+10.3)"
+          },
+          {
+            "label": "Backtest",
+            "dir": "for",
+            "detail": "cleared 5.5 in 7 of 8 games, avg 12.6 yds (ESPN game log)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "about 3 rush att/g (25 att in 8 games)"
+          },
+          {
+            "label": "Script",
+            "dir": "neutral",
+            "detail": "DAL -4.5 to -5.5, total 51.5: no blowout signal"
+          }
+        ],
+        "confidence_base": 5,
+        "stake": 18,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 1,
+          "net": 4
+        },
+        "opening_line": 5.5,
+        "opening_captured_at": "2026-11-07T13:46:50Z",
+        "current_line": 5.5,
+        "current_captured_at": "2026-11-07T13:46:50Z"
+      },
+      {
+        "player": "Keenan Allen",
+        "team": "home",
+        "position": "WR",
+        "market": "rec_yards",
+        "book": "DraftKings",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Dallas allows the 26th-most WR receiving yards, Allen cleared 40.5 in 4 of 7 and IND is the underdog. | Stake $12 \u00b7 pass at 42.5",
+        "matchup": {
+          "opp_rank_vs_pos": 26,
+          "rank_basis": "CBS WR rec yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DAL allows 164.1 WR rec yds/g, 26th (CBS; league avg 145.7)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 54.8 vs 40.5 line (+14.3)"
+          },
+          {
+            "label": "Backtest",
+            "dir": "for",
+            "detail": "cleared 40.5 in 4 of 7 games, avg 46.4 yds (ESPN game log)"
+          },
+          {
+            "label": "Volume",
+            "dir": "for",
+            "detail": "7.1 targets/g (50 in 7 games)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "IND +4.5 to +5.5 dog: pass-leaning script"
+          },
+          {
+            "label": "Injuries",
+            "dir": "neutral",
+            "detail": "DAL CB Porter questionable (ankle)"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "rec_yards picks hit 22/47 (47%) in graded Line Watch history"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 12,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 5,
+          "against": 1,
+          "neutral": 1,
+          "net": 4
+        },
+        "opening_line": 40.5,
+        "opening_captured_at": "2026-11-07T13:46:50Z",
+        "current_line": 40.5,
+        "current_captured_at": "2026-11-07T13:46:50Z"
+      }
+    ]
   }
 }

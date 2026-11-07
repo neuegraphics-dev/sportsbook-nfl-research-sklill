@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:14.478607+00:00",
+    "run_at": "2026-11-07T13:42:34.496455+00:00",
     "n": 10000,
     "homeElo": 1589.3,
     "awayElo": 1675.8,
@@ -164,7 +164,7 @@
     "projTotal": 45.3,
     "homeWinProbElo": 44.5,
     "marketHomeSpread": 3.5,
-    "marketTotal": 45.5,
+    "marketTotal": 44,
     "homeInjuryPts": -1.5,
     "awayInjuryPts": -0.4,
     "projHomeMeanRaw": 21.9,
@@ -181,12 +181,12 @@
       "Buffalo Bills (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
     "homeWinPct": 40.8,
-    "awayWinPct": 56.3,
-    "tiePct": 2.9,
+    "awayWinPct": 56.5,
+    "tiePct": 2.7,
     "medianHomeScore": 20,
     "medianAwayScore": 23,
-    "coverPctHome": 51.9,
-    "overPct": 43.9
+    "coverPctHome": 52.0,
+    "overPct": 47.0
   },
   "simulation_history": [
     {
@@ -208,49 +208,26 @@
       "run_at": "2026-11-05T03:19:14.478607+00:00",
       "marginHome": -2.6,
       "total": 43.4
+    },
+    {
+      "run_at": "2026-11-07T13:42:34.496455+00:00",
+      "marginHome": -2.6,
+      "total": 43.4
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Buffalo Bills by 2.6, projected total 43.4 (over 43.9%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Minnesota Vikings by 1.6, total 46.2. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Lean: Minimum-action pick (Monday-night window). Sim has BUF by 2.6 and the 2026-only form check MIN by 1.6, so +3.5 carries a hook of value. Kyler Murray (Q) and DJ Moore (Q) first official reports come Thursday; re-check Monday before betting."
+      "Sim (injury-adjusted, 10,000 runs): Buffalo Bills by 2.6, projected total 43.4 (over 47.0%). 2026-only stats margin: Buffalo Bills by 0.7; Elo margin: Buffalo Bills by 1.5. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread +3.5, total 43.5.",
+      "Monday night. MIN QB Murray is questionable (hamstring); BUF WRs Coleman, Moore and Palmer and several linemen are questionable. Sim has MIN by 2.6 (stats margin 0.7) vs BUF -3.5; line moved from -2.5 to -3.5 toward BUF with money and tickets agreeing. Must re-check Monday for Murray and the BUF injury report."
     ],
     "leans": [
       {
         "market": "spread",
         "pick": "MIN +3.5",
         "confidence": 4,
-        "best_bet": true,
-        "reasoning": "Minimum-action pick (Monday-night window). Sim has BUF by 2.6 and the 2026-only form check MIN by 1.6, so +3.5 carries a hook of value. Kyler Murray (Q) and DJ Moore (Q) first official reports come Thursday; re-check Monday before betting. | Stake $6 \u00b7 pass at +3",
-        "factors": [
-          {
-            "label": "Sim margin",
-            "dir": "for",
-            "detail": "BUF by 2.6 vs 3.5"
-          },
-          {
-            "label": "2026-only form",
-            "dir": "for",
-            "detail": "MIN by 1.6"
-          },
-          {
-            "label": "QB status",
-            "dir": "against",
-            "detail": "Murray Q, first report Thursday"
-          },
-          {
-            "label": "Key number",
-            "dir": "for",
-            "detail": "+3.5 hook"
-          }
-        ],
-        "alignment": {
-          "for": 3,
-          "against": 1,
-          "neutral": 0,
-          "net": 2
-        }
+        "reasoning": "Minimum-action pick (Monday-night window): sim MIN by 2.6 vs +3.5; re-check Monday for Murray and the BUF WR injuries. | Stake $6 \u00b7 pass at +3",
+        "best_bet": true
       }
     ]
   },
@@ -291,22 +268,28 @@
     "def_clusters": []
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:28Z",
+    "captured_at": "2026-11-07T13:47:39Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 35,
-      "handle_pct_home": 46
+      "bets_pct_home": 23,
+      "handle_pct_home": 32
     },
     "total": {
       "bets_pct_over": 83,
-      "handle_pct_over": 44
+      "handle_pct_over": 56
     },
     "moneyline": {
-      "bets_pct_home": 15,
-      "handle_pct_home": 22
+      "bets_pct_home": 18,
+      "handle_pct_home": 25
     },
     "reverse_line_move": false,
-    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "rlm_note": "68% of handle is on the away side and the spread has moved toward them (+2.5 -> +3.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg. Result: Monday game, 59h out; board rows (A. Jones/Cook rec, Kincaid rec) lean into MIN RB-rec 3 / TE 4 or BUF RB-rec 29 weak market (3 of 7 cleared). No qualifier; re-check Monday with Murray's status.",
+    "picks": []
   }
 }

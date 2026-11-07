@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:13.830537+00:00",
+    "run_at": "2026-11-07T13:42:34.395820+00:00",
     "n": 10000,
     "homeElo": 1405.7,
     "awayElo": 1620.0,
@@ -164,31 +164,31 @@
     "projTotal": 43.5,
     "homeWinProbElo": 27.7,
     "marketHomeSpread": 4.5,
-    "marketTotal": 48,
-    "homeInjuryPts": 2.1,
-    "awayInjuryPts": 2.45,
+    "marketTotal": 47.5,
+    "homeInjuryPts": 1.05,
+    "awayInjuryPts": 1.85,
     "projHomeMeanRaw": 18.4,
     "projAwayMeanRaw": 25.1,
-    "projHomeMeanAdjusted": 20.5,
-    "projAwayMeanAdjusted": 27.5,
-    "injuryAdjustedMarginHome": -7.0,
-    "projTotalAdjusted": 48.1,
-    "spreadLean": null,
+    "projHomeMeanAdjusted": 19.5,
+    "projAwayMeanAdjusted": 26.9,
+    "injuryAdjustedMarginHome": -7.5,
+    "projTotalAdjusted": 46.4,
+    "spreadLean": "away",
     "totalLean": null,
     "notes": [
       "Elo margin (-6.7) and recent-scoring margin (-2.4) disagree by 4.3 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -2.9 pts -- Daron Payne (DT, out, -1.0), Javon Kinlaw (DT, out, -0.7), Treylon Burks (WR, questionable, -0.4). DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
-      "Away injury adjustment: -2.5 pts -- Jaylen Watson (CB, out, -1.2), Trent McDuffie (CB, questionable, -0.8), Kam Curl (S, questionable, -0.5).",
+      "Home injury adjustment: -4.1 pts -- Daron Payne (DT, out, -1.0), Javon Kinlaw (DT, out, -0.7), Dyami Brown (WR, out, -0.4), Treylon Burks (WR, out, -0.5). DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts WR depth: 2 confirmed out (Dyami Brown, Treylon Burks) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -3.3 pts -- Jaylen Watson (CB, out, -1.2), Trent McDuffie (CB, questionable, -0.8), Kam Curl (S, questionable, -0.5), Jordan Whittington (WR, questionable, -0.3), Colby Parkinson (TE, questionable, -0.3), Grant Stuard (LB, questionable, -0.2).",
       "Washington Commanders (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]; Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Los Angeles Rams (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]; Davante Adams (-1.8), Puka Nacua (-0.7), Trent McDuffie (-0.4), Nate Landman (-0.4) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 29.2,
-    "awayWinPct": 68.2,
-    "tiePct": 2.5,
+    "homeWinPct": 28.4,
+    "awayWinPct": 69.0,
+    "tiePct": 2.6,
     "medianHomeScore": 20,
-    "medianAwayScore": 28,
-    "coverPctHome": 42.7,
-    "overPct": 50.0
+    "medianAwayScore": 27,
+    "coverPctHome": 41.6,
+    "overPct": 47.4
   },
   "simulation_history": [
     {
@@ -210,20 +210,33 @@
       "run_at": "2026-11-05T03:19:13.830537+00:00",
       "marginHome": -7.0,
       "total": 48.1
+    },
+    {
+      "run_at": "2026-11-07T13:42:34.395820+00:00",
+      "marginHome": -7.5,
+      "total": 46.4
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Los Angeles Rams by 7.0, projected total 48.1 (over 50.0%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Los Angeles Rams by 1.2, total 46.9. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Sim has LAR by 7.0 but the 2026-only form check has LAR by only 1.2 against LAR -4.5 to -5.5; the two models disagree, so no lean. Real news: LAR CB Watson out for the season and CB McDuffie DNP, WAS DT Payne and Kinlaw on IR (front-seven cluster, watch Kyren Williams rushing props)."
+      "Sim (injury-adjusted, 10,000 runs): Los Angeles Rams by 7.5, projected total 46.4 (over 47.4%). 2026-only stats margin: Los Angeles Rams by 2.4; Elo margin: Los Angeles Rams by 6.7. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread +4.5, total 47.5.",
+      "WAS is missing DTs Payne and Kinlaw (IR) and WRs Brown and Burks; LAR is missing CB Watson and has CB McDuffie and S Curl questionable. The line moved from LAR -5.5 to -4.5 (RLM toward WAS) while 2026-only form has LAR by only 2.4, so LAR -4.5 is not supported; 88% of handle is on the Under (sim total 46.4 vs 47.5)."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 47.5",
+        "confidence": 3,
+        "reasoning": "Sim 46.4 vs 47.5 only 1.1 pts; sharp handle gap +50 on the Under; context only. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:13Z",
+    "last_updated": "2026-11-07T13:42:34Z",
     "home": {
-      "offense_pts": -0.4,
+      "offense_pts": -1.65,
       "defense_pts": -2.45,
       "items": [
         {
@@ -231,58 +244,87 @@
           "player": "Daron Payne",
           "status": "out",
           "pts": -1.0,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): placed on IR"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): IR"
         },
         {
           "position": "DT",
           "player": "Javon Kinlaw",
           "status": "out",
           "pts": -0.7,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): placed on IR"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): IR"
+        },
+        {
+          "position": "WR",
+          "player": "Dyami Brown",
+          "status": "out",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "WR",
           "player": "Treylon Burks",
-          "status": "questionable",
-          "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP foot"
+          "status": "out",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): out per feed"
         }
       ],
-      "items_total_pts": -2.1,
+      "items_total_pts": -2.6,
       "stacking_notes": [
-        "DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+        "DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+        "WR depth: 2 confirmed out (Dyami Brown, Treylon Burks) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
       ],
-      "total_pts": -2.85
+      "total_pts": -4.1
     },
     "away": {
-      "offense_pts": 0.0,
-      "defense_pts": -2.5,
+      "offense_pts": -0.6,
+      "defense_pts": -2.7,
       "items": [
         {
           "position": "CB",
           "player": "Jaylen Watson",
           "status": "out",
           "pts": -1.2,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): season-ending shoulder surgery, IR"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): IR"
         },
         {
           "position": "CB",
           "player": "Trent McDuffie",
           "status": "questionable",
           "pts": -0.8,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP, McVay 'feeling better than expected'"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "S",
           "player": "Kam Curl",
           "status": "questionable",
           "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "WR",
+          "player": "Jordan Whittington",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "TE",
+          "player": "Colby Parkinson",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Grant Stuard",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -2.5,
+      "items_total_pts": -3.3,
       "stacking_notes": [],
-      "total_pts": -2.5
+      "total_pts": -3.3
     },
     "def_clusters": [
       {
@@ -324,22 +366,28 @@
     ]
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:28Z",
+    "captured_at": "2026-11-07T13:47:38Z",
     "source": "cleatz.com",
     "spread": {
       "bets_pct_home": 28,
       "handle_pct_home": 30
     },
     "total": {
-      "bets_pct_over": 64,
-      "handle_pct_over": 66
+      "bets_pct_over": 62,
+      "handle_pct_over": 12
     },
     "moneyline": {
       "bets_pct_home": 15,
-      "handle_pct_home": 24
+      "handle_pct_home": 22
     },
     "reverse_line_move": true,
-    "rlm_note": "70% of handle is on the away side but the spread moved AGAINST them (+5.5 -> +4) -- real reverse line move toward home.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "rlm_note": "70% of handle is on the away side but the spread moved AGAINST them (+5.5 -> +4.5) -- real reverse line move toward home.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg. Result: No board row clears the filter: LAR WR/RB opponents (WAS rush RB rank 8 tough, LAR WR rank 2). R. White rush o36.5 leans into LAR RB rank 10.",
+    "picks": []
   }
 }

@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:13.698262+00:00",
+    "run_at": "2026-11-07T13:42:33.831646+00:00",
     "n": 10000,
     "homeElo": 1431.4,
     "awayElo": 1632.7,
@@ -164,29 +164,29 @@
     "projTotal": 46.1,
     "homeWinProbElo": 29.3,
     "marketHomeSpread": 2.5,
-    "marketTotal": 43.5,
+    "marketTotal": 44.5,
     "homeInjuryPts": 1.1,
-    "awayInjuryPts": 0.8,
+    "awayInjuryPts": 2.0,
     "projHomeMeanRaw": 20.0,
     "projAwayMeanRaw": 26.1,
     "projHomeMeanAdjusted": 21.1,
-    "projAwayMeanAdjusted": 26.9,
-    "injuryAdjustedMarginHome": -5.8,
-    "projTotalAdjusted": 48.0,
+    "projAwayMeanAdjusted": 28.1,
+    "injuryAdjustedMarginHome": -7.0,
+    "projTotalAdjusted": 49.2,
     "spreadLean": "away",
     "totalLean": "over",
     "notes": [
       "Elo margin (-6.1) and recent-scoring margin (+0.1) disagree by 6.2 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -1.3 pts -- Jaelan Phillips (EDGE, questionable, -0.5), Damien Lewis (OG, questionable, -0.5), Bobby Okereke (LB, questionable, -0.3).",
-      "Away injury adjustment: -1.6 pts -- Talanoa Hufanga (S, questionable, -0.7), Brandon Jones (S, questionable, -0.5), Kris Abrams-Draine (CB, questionable, -0.4).",
+      "Home injury adjustment: -3.2 pts -- Jaelan Phillips (EDGE, out, -1.0), Damien Lewis (OG, out, -0.7), Bobby Okereke (LB, out, -0.6), Will Lee III (CB, out, -0.4), Torricelli Simpkins III (OG, questionable, -0.2), Corey Bullock (OC, questionable, -0.3).",
+      "Away injury adjustment: -2.3 pts -- Talanoa Hufanga (S, questionable, -0.7), Brandon Jones (S, out, -0.5), Kris Abrams-Draine (CB, out, -0.5), Eyioma Uwazurike (DE, out, -0.4), Dondrea Tillman (LB, questionable, -0.2).",
       "Carolina Panthers (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Jaycee Horn (-1.0), Mike Jackson (-0.8), Xavier Legette (-0.5), Jalen Coker (-0.4), Damien Lewis (-0.5) [-4.7 pts total]; Jaelan Phillips (-0.8), Thomas Incoom (-0.3), Monroe Freeling (-0.3) [-2.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 33.2,
-    "awayWinPct": 63.9,
-    "tiePct": 2.9,
+    "homeWinPct": 30.1,
+    "awayWinPct": 67.6,
+    "tiePct": 2.4,
     "medianHomeScore": 21,
-    "medianAwayScore": 27,
-    "coverPctHome": 40.9,
+    "medianAwayScore": 28,
+    "coverPctHome": 37.4,
     "overPct": 63.0
   },
   "simulation_history": [
@@ -209,115 +209,140 @@
       "run_at": "2026-11-05T03:19:13.698262+00:00",
       "marginHome": -5.8,
       "total": 48.0
+    },
+    {
+      "run_at": "2026-11-07T13:42:33.831646+00:00",
+      "marginHome": -7.0,
+      "total": 49.2
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:23:15Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Denver Broncos by 5.8, projected total 48.0 (over 63.0%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Carolina Panthers by 0.5, total 47.0. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Lean: Elo sim projects 48.0 and the 2026-only form check 47.0 against 43.5 (FD, Caesars) to 44.5 (DK). DEN secondary cluster (S Hufanga, S Jones, CB Abrams-Draine DNP Wed) credits CAR in the sim. Wednesday status for those three is DNP, not confirmed out, so confidence stops at 5."
+      "Sim (injury-adjusted, 10,000 runs): Denver Broncos by 7.0, projected total 49.2 (over 63.0%). 2026-only stats margin: Carolina Panthers by 0.1; Elo margin: Denver Broncos by 6.1. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread +2.5, total 44.5.",
+      "CAR is missing EDGE Phillips, G Lewis, LB Okereke and CB Lee; DEN is missing S Jones, CB Abrams-Draine and DE Uwazurike. Money is 75% on DEN yet the line moved from DEN -3 to -2.5 (RLM toward CAR), but the 2026-only stats margin is even and the sim/Elo both favor DEN, and cleatz flags sharp money on the Under (56% handle vs 35% tickets) against a sim total of 49.2."
     ],
     "leans": [
       {
-        "market": "total",
-        "pick": "Over 43.5",
-        "confidence": 4,
-        "best_bet": false,
-        "reasoning": "Both models sit above the number (sim 48.0, 2026-only 47.0 vs 43.5 to 44.5) and the DEN secondary cluster (S Hufanga, S Jones, CB Abrams-Draine DNP Wed) credits CAR. But cleatz flags SHARP MONEY on the Under 44.5 (72% of handle on 32% of tickets), so the model and the money disagree: context at 4, no stake. | Stake $0 \u00b7 pass at 44.5",
-        "factors": [
-          {
-            "label": "Sim total",
-            "dir": "for",
-            "detail": "48.0 vs 43.5 (over 63.0%)"
-          },
-          {
-            "label": "2026-only form",
-            "dir": "for",
-            "detail": "47.0 projected"
-          },
-          {
-            "label": "Injuries",
-            "dir": "for",
-            "detail": "DEN 3 DBs DNP Wed"
-          },
-          {
-            "label": "Handle",
-            "dir": "against",
-            "detail": "72% of handle on Under 44.5 vs 32% of tickets (sharp total signal)"
-          }
-        ],
-        "alignment": {
-          "for": 3,
-          "against": 1,
-          "neutral": 0,
-          "net": 2
-        }
+        "market": "spread",
+        "pick": "CAR +2.5",
+        "confidence": 3,
+        "reasoning": "RLM toward CAR and 2026 form even, but sim/Elo have DEN by 6-7; context only. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
       }
     ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:13Z",
+    "last_updated": "2026-11-07T13:42:33Z",
     "home": {
-      "offense_pts": -0.5,
-      "defense_pts": -0.8,
+      "offense_pts": -1.2,
+      "defense_pts": -2.0,
       "items": [
         {
           "position": "EDGE",
           "player": "Jaelan Phillips",
-          "status": "questionable",
-          "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): hamstring, missed last week (est.)"
+          "status": "out",
+          "pts": -1.0,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "OG",
           "player": "Damien Lewis",
-          "status": "questionable",
-          "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): knee, missed last week (est.)"
+          "status": "out",
+          "pts": -0.7,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "LB",
           "player": "Bobby Okereke",
+          "status": "out",
+          "pts": -0.6,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "CB",
+          "player": "Will Lee III",
+          "status": "out",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "OG",
+          "player": "Torricelli Simpkins III",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "OC",
+          "player": "Corey Bullock",
           "status": "questionable",
           "pts": -0.3,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): foot (est.)"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -1.3,
+      "items_total_pts": -3.2,
       "stacking_notes": [],
-      "total_pts": -1.3
+      "total_pts": -3.2
     },
     "away": {
       "offense_pts": 0.0,
-      "defense_pts": -1.6,
+      "defense_pts": -2.3,
       "items": [
         {
           "position": "S",
           "player": "Talanoa Hufanga",
           "status": "questionable",
           "pts": -0.7,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "S",
           "player": "Brandon Jones",
-          "status": "questionable",
+          "status": "out",
           "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hamstring"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "CB",
           "player": "Kris Abrams-Draine",
-          "status": "questionable",
+          "status": "out",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DE",
+          "player": "Eyioma Uwazurike",
+          "status": "out",
           "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Dondrea Tillman",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -1.6,
+      "items_total_pts": -2.3,
       "stacking_notes": [],
-      "total_pts": -1.6
+      "total_pts": -2.3
     },
-    "def_clusters": []
+    "def_clusters": [
+      {
+        "team_side": "away",
+        "unit": "secondary",
+        "count": 2,
+        "players": [
+          "Brandon Jones",
+          "Kris Abrams-Draine"
+        ],
+        "opp_pts": 1.0,
+        "watch": "passing/receiving OVER",
+        "defensive": true
+      }
+    ]
   },
   "weather": {
     "captured_at": "2026-11-07T13:41:34Z",
@@ -344,22 +369,88 @@
     ]
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:27Z",
+    "captured_at": "2026-11-07T13:47:38Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 24,
-      "handle_pct_home": 46
+      "bets_pct_home": 25,
+      "handle_pct_home": 25
     },
     "total": {
-      "bets_pct_over": 67,
-      "handle_pct_over": 29
+      "bets_pct_over": 65,
+      "handle_pct_over": 44
     },
     "moneyline": {
-      "bets_pct_home": 26,
-      "handle_pct_home": 17
+      "bets_pct_home": 24,
+      "handle_pct_home": 25
     },
-    "reverse_line_move": false,
-    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "reverse_line_move": true,
+    "rlm_note": "75% of handle is on the away side but the spread moved AGAINST them (+3 -> +2.5) -- real reverse line move toward home.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg.",
+    "picks": [
+      {
+        "player": "Darren Waller",
+        "team": "home",
+        "position": "TE",
+        "market": "rec_yards",
+        "book": "Fanatics Sportsbook",
+        "lean": "over",
+        "confidence": 5,
+        "reasoning": "Denver allows the 26th-most TE receiving yards, Waller cleared 16.5 in 5 of 7, and DEN safeties Jones is out. | Stake $12 \u00b7 pass at 17.5",
+        "matchup": {
+          "opp_rank_vs_pos": 26,
+          "rank_basis": "CBS TE rec yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "DEN allows 68.1 TE rec yds/g, 26th (CBS; league avg 55.4)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 24.6 vs 16.5 headline line (+8.1); Fanatics posts 15.5"
+          },
+          {
+            "label": "Backtest",
+            "dir": "for",
+            "detail": "cleared 15.5 in 5 of 7 games, avg 29.9 yds (ESPN game log)"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "DEN S Brandon Jones out, S Hufanga questionable"
+          },
+          {
+            "label": "Volume",
+            "dir": "neutral",
+            "detail": "3.6 targets/g (25 in 7 games)"
+          },
+          {
+            "label": "Market history",
+            "dir": "against",
+            "detail": "rec_yards picks hit 22/47 (47%) in graded Line Watch history"
+          }
+        ],
+        "confidence_base": 6,
+        "stake": 12,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 4,
+          "against": 1,
+          "neutral": 1,
+          "net": 3
+        },
+        "opening_line": 15.5,
+        "opening_captured_at": "2026-11-07T13:46:50Z",
+        "current_line": 15.5,
+        "current_captured_at": "2026-11-07T13:46:50Z"
+      }
+    ]
   }
 }

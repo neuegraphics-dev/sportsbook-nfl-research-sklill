@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:14.217869+00:00",
+    "run_at": "2026-11-07T13:42:34.333097+00:00",
     "n": 10000,
     "homeElo": 1630.5,
     "awayElo": 1396.4,
@@ -164,30 +164,30 @@
     "projTotal": 50.9,
     "homeWinProbElo": 83.5,
     "marketHomeSpread": -9.5,
-    "marketTotal": 52.5,
-    "homeInjuryPts": -3.6,
-    "awayInjuryPts": 0.0,
+    "marketTotal": 52,
+    "homeInjuryPts": -4.35,
+    "awayInjuryPts": 0.4,
     "projHomeMeanRaw": 31.1,
     "projAwayMeanRaw": 19.8,
-    "projHomeMeanAdjusted": 27.5,
-    "projAwayMeanAdjusted": 19.8,
-    "injuryAdjustedMarginHome": 7.7,
-    "projTotalAdjusted": 47.3,
-    "spreadLean": null,
+    "projHomeMeanAdjusted": 26.8,
+    "projAwayMeanAdjusted": 20.2,
+    "injuryAdjustedMarginHome": 6.5,
+    "projTotalAdjusted": 47.0,
+    "spreadLean": "away",
     "totalLean": "under",
     "notes": [
       "Elo margin (+11.3) and recent-scoring margin (+6.2) disagree by 5.0 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -4.0 pts -- Mike Evans (WR, questionable, -1.0), Deebo Samuel (WR, questionable, -0.8), Christian McCaffrey (RB, questionable, -1.2), Trent Williams (OT, questionable, -1.0).",
-      "Away injury adjustment: -0.4 pts -- Darien Porter (CB, questionable, -0.4).",
+      "Home injury adjustment: -5.7 pts -- Mike Evans (WR, out, -1.0), Christian Kirk (WR, out, -0.7), Deebo Samuel (WR, out, -0.8), Brandon Aiyuk (WR, out, -0.5), Siran Neal (S, questionable, -0.2), Upton Stout (CB, questionable, -0.2). WR depth: 4 confirmed out (Mike Evans, Christian Kirk, Deebo Samuel, Brandon Aiyuk) -- extra -2.25 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -0.9 pts -- Thomas Booker IV (DT, out, -0.5), Darien Porter (CB, questionable, -0.4).",
       "San Francisco 49ers (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]; Jauan Jennings (-1.0), Jaylon Moore (-1.0), Dre Greenlaw (-1.0), Arik Armstead (-0.8), Jiayir Brown (-0.5), Ross Dwelley (-0.2) [-4.5 pts total]; Nick Bosa (-1.5), Mike Evans (-1.5), Deebo Samuel Sr. (-1.0), Garret Wallow (-0.4) [-5.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 68.8,
-    "awayWinPct": 28.8,
-    "tiePct": 2.4,
+    "homeWinPct": 66.7,
+    "awayWinPct": 30.7,
+    "tiePct": 2.6,
     "medianHomeScore": 27,
     "medianAwayScore": 20,
-    "coverPctHome": 44.0,
-    "overPct": 35.3
+    "coverPctHome": 42.0,
+    "overPct": 35.4
   },
   "simulation_history": [
     {
@@ -209,106 +209,113 @@
       "run_at": "2026-11-05T03:19:14.217869+00:00",
       "marginHome": 7.7,
       "total": 47.3
+    },
+    {
+      "run_at": "2026-11-07T13:42:34.333097+00:00",
+      "marginHome": 6.5,
+      "total": 47.0
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): San Francisco 49ers by 7.7, projected total 47.3 (over 35.3%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): San Francisco 49ers by 6.3, total 52.1. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Lean: Sim has SF by 7.7 and the 2026-only form check SF by 6.3, both short of SF -9.5. SF skill and line is thin: WR Evans, WR Deebo, RB McCaffrey and LT Trent Williams all DNP Wed (several missed last week). BookMaker is at SF -10, FD and DK at -9.5."
+      "Sim (injury-adjusted, 10,000 runs): San Francisco 49ers by 6.5, projected total 47.0 (over 35.4%). 2026-only stats margin: San Francisco 49ers by 6.2; Elo margin: San Francisco 49ers by 11.3. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread -9.5, total 52.5.",
+      "SF is missing four WRs (Evans, Kirk, Samuel, Aiyuk), which the sim prices with a depth-stack penalty of about -5.3 on offense. Sim has SF by 6.5 and a total of 47.0 (over 35.4%) versus 9.5 and 52.5; 2026 stats margin is SF by 6.2. Handle is 66% on LV with the spread still at 9.5, while 94% of total handle is on the Over."
     ],
     "leans": [
       {
         "market": "spread",
         "pick": "LV +9.5",
+        "confidence": 6,
+        "reasoning": "Sim SF by 6.5 and 2026 form SF by 6.2 both well under 9.5, SF WR room gutted, handle 66% on LV (cleatz sharp flag). | Stake $18 \u00b7 pass at +9",
+        "best_bet": true
+      },
+      {
+        "market": "total",
+        "pick": "Under 52.5",
         "confidence": 5,
-        "best_bet": true,
-        "reasoning": "Sim has SF by 7.7 and the 2026-only form check SF by 6.3, both short of SF -9.5. SF skill and line is thin: WR Evans, WR Deebo, RB McCaffrey and LT Trent Williams all DNP Wed (several missed last week). BookMaker is at SF -10, FD and DK at -9.5. | Stake $12 \u00b7 pass at +9",
-        "factors": [
-          {
-            "label": "Sim margin",
-            "dir": "for",
-            "detail": "SF by 7.7 vs 9.5"
-          },
-          {
-            "label": "2026-only form",
-            "dir": "for",
-            "detail": "SF by 6.3"
-          },
-          {
-            "label": "Injuries",
-            "dir": "for",
-            "detail": "SF: WR Evans, WR Deebo, RB McCaffrey, LT Williams DNP Wed"
-          },
-          {
-            "label": "Favorite size",
-            "dir": "against",
-            "detail": "SF 6-1, double-digit favorites are rarely wrong on talent"
-          }
-        ],
-        "alignment": {
-          "for": 3,
-          "against": 1,
-          "neutral": 0,
-          "net": 2
-        }
+        "reasoning": "Sim 47.0 vs 52.5 (under 64.6%) with SF WRs out, but 94% of handle is on the Over; swap-in only. | Stake $0 \u00b7 pass at 51.5",
+        "best_bet": false
       }
     ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:14Z",
+    "last_updated": "2026-11-07T13:42:34Z",
     "home": {
-      "offense_pts": -4.0,
-      "defense_pts": 0.0,
+      "offense_pts": -5.25,
+      "defense_pts": -0.4,
       "items": [
         {
           "position": "WR",
           "player": "Mike Evans",
-          "status": "questionable",
+          "status": "out",
           "pts": -1.0,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ribs/Achilles, missed last week"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "WR",
+          "player": "Christian Kirk",
+          "status": "out",
+          "pts": -0.7,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "WR",
           "player": "Deebo Samuel",
-          "status": "questionable",
+          "status": "out",
           "pts": -0.8,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hamstring, missed last week"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
-          "position": "RB",
-          "player": "Christian McCaffrey",
-          "status": "questionable",
-          "pts": -1.2,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hamstring"
+          "position": "WR",
+          "player": "Brandon Aiyuk",
+          "status": "out",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): personal"
         },
         {
-          "position": "OT",
-          "player": "Trent Williams",
+          "position": "S",
+          "player": "Siran Neal",
           "status": "questionable",
-          "pts": -1.0,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP"
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "CB",
+          "player": "Upton Stout",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -4.0,
-      "stacking_notes": [],
-      "total_pts": -4.0
+      "items_total_pts": -3.4,
+      "stacking_notes": [
+        "WR depth: 4 confirmed out (Mike Evans, Christian Kirk, Deebo Samuel, Brandon Aiyuk) -- extra -2.25 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -5.65
     },
     "away": {
       "offense_pts": 0.0,
-      "defense_pts": -0.4,
+      "defense_pts": -0.9,
       "items": [
+        {
+          "position": "DT",
+          "player": "Thomas Booker IV",
+          "status": "out",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
         {
           "position": "CB",
           "player": "Darien Porter",
           "status": "questionable",
           "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP groin"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -0.4,
+      "items_total_pts": -0.9,
       "stacking_notes": [],
-      "total_pts": -0.4
+      "total_pts": -0.9
     },
     "def_clusters": []
   },
@@ -337,19 +344,28 @@
     ]
   },
   "market_signal": {
-    "captured_at": "2026-11-05T03:23:05Z",
+    "captured_at": "2026-11-07T13:47:39Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 51,
-      "handle_pct_home": 28
+      "bets_pct_home": 48,
+      "handle_pct_home": 34
     },
     "total": {
-      "bets_pct_over": 94,
-      "handle_pct_over": 100
+      "bets_pct_over": 77,
+      "handle_pct_over": 94
     },
-    "moneyline": null,
+    "moneyline": {
+      "bets_pct_home": 92,
+      "handle_pct_home": 67
+    },
     "reverse_line_move": false,
-    "rlm_note": "72% of handle is on the away side but the spread hasn't moved yet (-10, unchanged) -- too early to call RLM, not evidence of one.",
-    "note": "cleatz.com board 11/4 10:22PM ET (DK snapshot); converted to home/over-relative"
+    "rlm_note": "66% of handle is on the away side but the spread hasn't moved yet (-9.5, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg. Result: Watkins rec o25.5 (LV WR rank 25) qualifies on weakness but weak market (-1), 2 of 5 cleared, 1-6 targets: conf 3. Other rows lean into SF QB-rush 2 / SF WR 8.",
+    "picks": []
   }
 }

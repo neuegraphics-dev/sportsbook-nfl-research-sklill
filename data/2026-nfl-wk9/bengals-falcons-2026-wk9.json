@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:13.632818+00:00",
+    "run_at": "2026-11-07T13:42:33.773209+00:00",
     "n": 10000,
     "homeElo": 1449.6,
     "awayElo": 1531.7,
@@ -165,30 +165,30 @@
     "homeWinProbElo": 45.1,
     "marketHomeSpread": 3.5,
     "marketTotal": 52.5,
-    "homeInjuryPts": 1.1,
-    "awayInjuryPts": 0.0,
+    "homeInjuryPts": 0.2,
+    "awayInjuryPts": 0.6,
     "projHomeMeanRaw": 23.6,
     "projAwayMeanRaw": 25.0,
-    "projHomeMeanAdjusted": 24.7,
-    "projAwayMeanAdjusted": 25.0,
-    "injuryAdjustedMarginHome": -0.3,
-    "projTotalAdjusted": 49.8,
-    "spreadLean": "home",
+    "projHomeMeanAdjusted": 23.8,
+    "projAwayMeanAdjusted": 25.6,
+    "injuryAdjustedMarginHome": -1.8,
+    "projTotalAdjusted": 49.5,
+    "spreadLean": null,
     "totalLean": "under",
     "notes": [
       "Elo margin (-1.4) and recent-scoring margin (-7.6) disagree by 6.2 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -0.4 pts -- Zachariah Branch (WR, out, -0.4).",
-      "Away injury adjustment: -1.5 pts -- Kyle Dugger (S, questionable, -0.5), DJ Turner II (CB, questionable, -0.6), Cedric Johnson (DE, questionable, -0.4).",
+      "Home injury adjustment: -1.5 pts -- Zachariah Branch (WR, out, -0.4), Brian Robinson Jr. (RB, out, -0.5), James Pearce Jr. (LB, questionable, -0.4), Divine Deablo (LB, questionable, -0.2).",
+      "Away injury adjustment: -1.1 pts -- Kyle Dugger (S, out, -0.7), Cedric Johnson (DE, questionable, -0.4).",
       "Atlanta Falcons (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]; Brian Robinson (-0.5), Michael Jerrell (-0.8), Cameron Williams (-0.8), Billy Bowman Jr. (-0.4), Divine Deablo (-0.4), Za'Darius Smith (-0.3) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Cincinnati Bengals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 48.0,
-    "awayWinPct": 48.9,
-    "tiePct": 3.1,
-    "medianHomeScore": 25,
-    "medianAwayScore": 25,
-    "coverPctHome": 59.4,
-    "overPct": 42.1
+    "homeWinPct": 44.5,
+    "awayWinPct": 52.7,
+    "tiePct": 2.8,
+    "medianHomeScore": 24,
+    "medianAwayScore": 26,
+    "coverPctHome": 55.1,
+    "overPct": 40.3
   },
   "simulation_history": [
     {
@@ -210,83 +210,176 @@
       "run_at": "2026-11-05T03:19:13.632818+00:00",
       "marginHome": -0.3,
       "total": 49.8
+    },
+    {
+      "run_at": "2026-11-07T13:42:33.773209+00:00",
+      "marginHome": -1.8,
+      "total": 49.5
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Cincinnati Bengals by 0.3, projected total 49.8 (over 42.1%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Cincinnati Bengals by 1.9, total 48.4. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Sim has the game a coin flip (CIN by 0.3) and the 2026-only form check has CIN by 1.9, against CIN -3.5 at US books (BM -3). ATL +3.5 is the soft lean but it costs -127 to -141 and the Wednesday Bengals defensive DNPs are team estimates, so this stays a context note at confidence 4 with no stake."
+      "Sim (injury-adjusted, 10,000 runs): Cincinnati Bengals by 1.8, projected total 49.5 (over 40.3%). 2026-only stats margin: Cincinnati Bengals by 7.6; Elo margin: Cincinnati Bengals by 1.4. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread +3.5, total 52.5.",
+      "London game (9:30 AM ET). ATL is missing WR Branch and RB Robinson; CIN is missing S Dugger. Sim is a near coin flip (CIN by 1.8) with a projected total of 49.5 vs 52.5, but handle is 69% on the Over and the 2026-only stats margin has CIN by 7.6, so neither side clears confidence 5."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 52.5",
+        "confidence": 3,
+        "reasoning": "Sim 49.5 vs 52.5 but 69% of handle is on the Over; context only. | Stake $0 \u00b7 pass at n/a",
+        "best_bet": false
+      }
+    ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:13Z",
+    "last_updated": "2026-11-07T13:42:33Z",
     "home": {
-      "offense_pts": -0.4,
-      "defense_pts": 0.0,
+      "offense_pts": -0.9,
+      "defense_pts": -0.6,
       "items": [
         {
           "position": "WR",
           "player": "Zachariah Branch",
           "status": "out",
           "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP"
-        }
-      ],
-      "items_total_pts": -0.4,
-      "stacking_notes": [],
-      "total_pts": -0.4
-    },
-    "away": {
-      "offense_pts": 0.0,
-      "defense_pts": -1.5,
-      "items": [
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
         {
-          "position": "S",
-          "player": "Kyle Dugger",
-          "status": "questionable",
+          "position": "RB",
+          "player": "Brian Robinson Jr.",
+          "status": "out",
           "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP quad (est.)"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): hamstring, new out"
         },
         {
-          "position": "CB",
-          "player": "DJ Turner II",
-          "status": "questionable",
-          "pts": -0.6,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP heel (est.)"
-        },
-        {
-          "position": "DE",
-          "player": "Cedric Johnson",
+          "position": "LB",
+          "player": "James Pearce Jr.",
           "status": "questionable",
           "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle/foot (est.)"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Divine Deablo",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
       "items_total_pts": -1.5,
       "stacking_notes": [],
       "total_pts": -1.5
     },
+    "away": {
+      "offense_pts": 0.0,
+      "defense_pts": -1.1,
+      "items": [
+        {
+          "position": "S",
+          "player": "Kyle Dugger",
+          "status": "out",
+          "pts": -0.7,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): quad, upgraded from questionable to out"
+        },
+        {
+          "position": "DE",
+          "player": "Cedric Johnson",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        }
+      ],
+      "items_total_pts": -1.1,
+      "stacking_notes": [],
+      "total_pts": -1.1
+    },
     "def_clusters": []
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:27Z",
+    "captured_at": "2026-11-07T13:47:38Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 17,
-      "handle_pct_home": 39
+      "bets_pct_home": 18,
+      "handle_pct_home": 33
     },
     "total": {
-      "bets_pct_over": 68,
-      "handle_pct_over": 89
+      "bets_pct_over": 56,
+      "handle_pct_over": 69
     },
     "moneyline": {
-      "bets_pct_home": 17,
-      "handle_pct_home": 11
+      "bets_pct_home": 18,
+      "handle_pct_home": 18
     },
     "reverse_line_move": false,
-    "rlm_note": "61% of handle is on the away side but the spread hasn't moved yet (+3, unchanged) -- too early to call RLM, not evidence of one.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "rlm_note": "67% of handle is on the away side and the spread has moved toward them (+3 -> +3.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg.",
+    "picks": [
+      {
+        "player": "Michael Penix Jr.",
+        "team": "home",
+        "position": "QB",
+        "market": "pass_yards",
+        "book": "BetRivers",
+        "lean": "over",
+        "confidence": 6,
+        "reasoning": "Cincinnati allows the 28th-most QB passing yards and Penix cleared 217.5 in 4 of 6 with ATL a home underdog in a 52.5 total. | Stake $18 \u00b7 pass at 223.5",
+        "matchup": {
+          "opp_rank_vs_pos": 28,
+          "rank_basis": "CBS QB pass yds allowed/g (1 = fewest)"
+        },
+        "factors": [
+          {
+            "label": "Matchup",
+            "dir": "for",
+            "detail": "CIN allows 261.0 QB pass yds/g, 28th (CBS; league avg 233.2)"
+          },
+          {
+            "label": "Model",
+            "dir": "for",
+            "detail": "covers.com projection 247.8 vs 221.5 headline line (+26.3); BetRivers posts 217.5"
+          },
+          {
+            "label": "Backtest",
+            "dir": "for",
+            "detail": "cleared 217.5 in 4 of 6 games (225, 240, 223, 256; ESPN game log)"
+          },
+          {
+            "label": "Script",
+            "dir": "for",
+            "detail": "CIN -3.5, total 52.5: ATL dog with pass volume"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "CIN S Kyle Dugger out (quad)"
+          },
+          {
+            "label": "Injuries",
+            "dir": "against",
+            "detail": "ATL WR Branch and RB Robinson out; 125 yds last week vs TB"
+          }
+        ],
+        "confidence_base": 5,
+        "stake": 18,
+        "rules_version": "2026-10-13-c",
+        "alignment": {
+          "for": 5,
+          "against": 1,
+          "neutral": 0,
+          "net": 4
+        },
+        "opening_line": 217.5,
+        "opening_captured_at": "2026-11-07T13:46:50Z",
+        "current_line": 217.5,
+        "current_captured_at": "2026-11-07T13:46:50Z"
+      }
+    ]
   }
 }

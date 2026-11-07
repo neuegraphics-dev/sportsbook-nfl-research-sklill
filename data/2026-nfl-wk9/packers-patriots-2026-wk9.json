@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:14.282283+00:00",
+    "run_at": "2026-11-07T13:42:34.271520+00:00",
     "n": 10000,
     "homeElo": 1648.5,
     "awayElo": 1533.0,
@@ -164,30 +164,30 @@
     "projTotal": 42.5,
     "homeWinProbElo": 71.9,
     "marketHomeSpread": -3.5,
-    "marketTotal": 46,
-    "homeInjuryPts": -1.9,
-    "awayInjuryPts": 0.1,
+    "marketTotal": 44.5,
+    "homeInjuryPts": -1.2,
+    "awayInjuryPts": -1.6,
     "projHomeMeanRaw": 24.5,
     "projAwayMeanRaw": 18.0,
-    "projHomeMeanAdjusted": 22.6,
-    "projAwayMeanAdjusted": 18.1,
-    "injuryAdjustedMarginHome": 4.5,
-    "projTotalAdjusted": 40.7,
-    "spreadLean": null,
+    "projHomeMeanAdjusted": 23.3,
+    "projAwayMeanAdjusted": 16.4,
+    "injuryAdjustedMarginHome": 6.9,
+    "projTotalAdjusted": 39.7,
+    "spreadLean": "home",
     "totalLean": "under",
     "notes": [
       "Elo margin (+6.5) and recent-scoring margin (-0.1) disagree by 6.7 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -2.8 pts -- A.J. Brown (WR, questionable, -1.5), Hunter Henry (TE, questionable, -0.8), Christian Barmore (DT, questionable, -0.5).",
-      "Away injury adjustment: -0.8 pts -- Zaire Franklin (LB, questionable, -0.4), Travis Glover (OT, questionable, -0.4).",
+      "Home injury adjustment: -4.5 pts -- TreVeyon Henderson (RB, out, -1.0), Hunter Henry (TE, questionable, -0.8), A.J. Brown (WR, out, -1.8), Brenden Schooler (S, questionable, -0.3), Morgan Moses (OT, questionable, -0.6).",
+      "Away injury adjustment: -4.9 pts -- Travis Glover (OT, out, -0.8), Sean Rhyan (OG, out, -0.6), Keisean Nixon (CB, questionable, -0.4), Zaire Franklin (LB, out, -0.6), Josh Whyle (TE, out, -0.3), MarShawn Lloyd (RB, questionable, -0.2), Micah Parsons (DE, out, -2.0).",
       "Green Bay Packers (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Aaron Banks (-1.0), Zach Bako-Bewele (-1.0), Jayden Reed (-1.2), Warren Brinson (-0.5), Javon Hargrave (-0.3) [-4.8 pts total]; Javon Hargrave (-1.3), Jonathan Ford (-0.4), Benjamin St-Juste (-0.7), Skyy Moore (-0.2) [-3.4 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 61.2,
-    "awayWinPct": 36.1,
-    "tiePct": 2.8,
+    "homeWinPct": 67.2,
+    "awayWinPct": 30.2,
+    "tiePct": 2.6,
     "medianHomeScore": 23,
-    "medianAwayScore": 18,
-    "coverPctHome": 53.0,
-    "overPct": 35.1
+    "medianAwayScore": 17,
+    "coverPctHome": 59.6,
+    "overPct": 37.1
   },
   "simulation_history": [
     {
@@ -209,108 +209,148 @@
       "run_at": "2026-11-05T03:19:14.282283+00:00",
       "marginHome": 4.5,
       "total": 40.7
+    },
+    {
+      "run_at": "2026-11-07T13:42:34.271520+00:00",
+      "marginHome": 6.9,
+      "total": 39.7
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): New England Patriots by 4.5, projected total 40.7 (over 35.1%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): New England Patriots by 2.9, total 42.6. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Lean: Sim projects 40.7 and the 2026-only form check 42.6 against 45.5 to 46. NE offense is banged up (WR A.J. Brown DNP and missed last week, TE Hunter Henry foot, DT Barmore ill), GB LB Franklin and G/T Glover DNP. Parsons is limited only. 53F, 8 mph, no weather edge."
+      "Sim (injury-adjusted, 10,000 runs): New England Patriots by 6.9, projected total 39.7 (over 37.1%). 2026-only stats margin: Green Bay Packers by 0.1; Elo margin: New England Patriots by 6.5. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread -3.5, total 44.5.",
+      "GB loses DE Parsons (ACL), OTs Glover and Rhyan and LB Franklin; NE loses WR A.J. Brown and RB Henderson. Sim total is 39.7 vs 44.5 (under 62.9%) with Parsons-less GB and a Brown-less NE offense; 81% of tickets and 79% of handle are on the Over, which is public-leaning."
     ],
     "leans": [
       {
         "market": "total",
-        "pick": "Under 45.5",
+        "pick": "Under 44.5",
         "confidence": 5,
-        "best_bet": true,
-        "reasoning": "Sim projects 40.7 and the 2026-only form check 42.6 against 45.5 to 46. NE offense is banged up (WR A.J. Brown DNP and missed last week, TE Hunter Henry foot, DT Barmore ill), GB LB Franklin and G/T Glover DNP. Parsons is limited only. 53F, 8 mph, no weather edge. | Stake $12 \u00b7 pass at 44.5",
-        "factors": [
-          {
-            "label": "Sim total",
-            "dir": "for",
-            "detail": "40.7 vs 45.5 (under 64.9%)"
-          },
-          {
-            "label": "2026-only form",
-            "dir": "for",
-            "detail": "42.6 projected"
-          },
-          {
-            "label": "Injuries",
-            "dir": "for",
-            "detail": "NE WR Brown, TE Henry out/DNP; GB OL depth dinged"
-          },
-          {
-            "label": "Weather",
-            "dir": "neutral",
-            "detail": "53F, 8 mph, 6% precip"
-          }
-        ],
-        "alignment": {
-          "for": 3,
-          "against": 0,
-          "neutral": 1,
-          "net": 3
-        }
+        "reasoning": "Sim 39.7 vs 44.5 (under 62.9%), both offenses missing key pieces, handle on the Over is public-side. | Stake $12 \u00b7 pass at 43.5",
+        "best_bet": true
       }
     ]
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:14Z",
+    "last_updated": "2026-11-07T13:42:34Z",
     "home": {
-      "offense_pts": -2.3,
-      "defense_pts": -0.5,
+      "offense_pts": -4.2,
+      "defense_pts": -0.3,
       "items": [
         {
-          "position": "WR",
-          "player": "A.J. Brown",
-          "status": "questionable",
-          "pts": -1.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle/knee, missed last week"
+          "position": "RB",
+          "player": "TreVeyon Henderson",
+          "status": "out",
+          "pts": -1.0,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): illness"
         },
         {
           "position": "TE",
           "player": "Hunter Henry",
           "status": "questionable",
           "pts": -0.8,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent foot"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
-          "position": "DT",
-          "player": "Christian Barmore",
-          "status": "questionable",
-          "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent illness"
-        }
-      ],
-      "items_total_pts": -2.8,
-      "stacking_notes": [],
-      "total_pts": -2.8
-    },
-    "away": {
-      "offense_pts": -0.4,
-      "defense_pts": -0.4,
-      "items": [
+          "position": "WR",
+          "player": "A.J. Brown",
+          "status": "out",
+          "pts": -1.8,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): knee, upgraded to out"
+        },
         {
-          "position": "LB",
-          "player": "Zaire Franklin",
+          "position": "S",
+          "player": "Brenden Schooler",
           "status": "questionable",
-          "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP shin"
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         },
         {
           "position": "OT",
-          "player": "Travis Glover",
+          "player": "Morgan Moses",
           "status": "questionable",
-          "pts": -0.4,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP knee"
+          "pts": -0.6,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -0.8,
+      "items_total_pts": -4.5,
       "stacking_notes": [],
-      "total_pts": -0.8
+      "total_pts": -4.5
     },
-    "def_clusters": []
+    "away": {
+      "offense_pts": -1.9,
+      "defense_pts": -3.0,
+      "items": [
+        {
+          "position": "OT",
+          "player": "Travis Glover",
+          "status": "out",
+          "pts": -0.8,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "OG",
+          "player": "Sean Rhyan",
+          "status": "out",
+          "pts": -0.6,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "CB",
+          "player": "Keisean Nixon",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "LB",
+          "player": "Zaire Franklin",
+          "status": "out",
+          "pts": -0.6,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "TE",
+          "player": "Josh Whyle",
+          "status": "out",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "RB",
+          "player": "MarShawn Lloyd",
+          "status": "questionable",
+          "pts": -0.2,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DE",
+          "player": "Micah Parsons",
+          "status": "out",
+          "pts": -2.0,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): ACL, new out, top pass rusher"
+        }
+      ],
+      "items_total_pts": -4.9,
+      "stacking_notes": [],
+      "total_pts": -4.9
+    },
+    "def_clusters": [
+      {
+        "team_side": "away",
+        "unit": "offensive line",
+        "count": 2,
+        "players": [
+          "Travis Glover",
+          "Sean Rhyan"
+        ],
+        "own_pts": 1.4,
+        "watch": "own QB/RB UNDER (pressure, fewer clean runs)",
+        "defensive": false,
+        "opp_pts": 0.0
+      }
+    ]
   },
   "weather": {
     "captured_at": "2026-11-07T13:41:34Z",
@@ -337,22 +377,28 @@
     ]
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:28Z",
+    "captured_at": "2026-11-07T13:47:39Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 68,
-      "handle_pct_home": 89
+      "bets_pct_home": 67,
+      "handle_pct_home": 78
     },
     "total": {
       "bets_pct_over": 81,
-      "handle_pct_over": 80
+      "handle_pct_over": 79
     },
     "moneyline": {
-      "bets_pct_home": 64,
-      "handle_pct_home": 38
+      "bets_pct_home": 67,
+      "handle_pct_home": 47
     },
     "reverse_line_move": false,
-    "rlm_note": "89% of handle is on the home side but the spread hasn't moved yet (-3, unchanged) -- too early to call RLM, not evidence of one.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "rlm_note": "78% of handle is on the home side and the spread has moved toward them (-3 -> -3.5) -- money and line agree, no RLM.",
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg. Result: Jacobs rush o47.5 leans into NE RB rush rank 13; Douglas rec over: GB WR rank 22 (not 23-32). No qualifier.",
+    "picks": []
   }
 }

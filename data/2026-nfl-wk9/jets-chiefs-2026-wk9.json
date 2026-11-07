@@ -153,7 +153,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-05T03:19:13.895953+00:00",
+    "run_at": "2026-11-07T13:42:34.157952+00:00",
     "n": 10000,
     "homeElo": 1577.4,
     "awayElo": 1297.7,
@@ -164,31 +164,31 @@
     "projTotal": 44.1,
     "homeWinProbElo": 86.8,
     "marketHomeSpread": -9.5,
-    "marketTotal": 47.5,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": -1.2,
+    "marketTotal": 48,
+    "homeInjuryPts": 1.5,
+    "awayInjuryPts": 1.05,
     "projHomeMeanRaw": 28.6,
     "projAwayMeanRaw": 15.5,
-    "projHomeMeanAdjusted": 28.6,
-    "projAwayMeanAdjusted": 14.3,
-    "injuryAdjustedMarginHome": 14.3,
-    "projTotalAdjusted": 43.0,
+    "projHomeMeanAdjusted": 30.1,
+    "projAwayMeanAdjusted": 16.6,
+    "injuryAdjustedMarginHome": 13.6,
+    "projTotalAdjusted": 46.7,
     "spreadLean": "home",
-    "totalLean": "under",
+    "totalLean": null,
     "notes": [
       "Elo margin (+13.1) and recent-scoring margin (+4.1) disagree by 9.0 points -- worth a second look before trusting either alone.",
-      "Home injury adjustment: -0.5 pts -- Peter Woods (DT, questionable, -0.5).",
-      "Away injury adjustment: -1.7 pts -- Garrett Wilson (WR, questionable, -1.5), Breece Hall (RB, questionable, -0.2).",
+      "Home injury adjustment: -2.6 pts -- Peter Woods (DT, out, -0.7), Mansoor Delane (CB, out, -0.8), Omarr Norman-Lott (DT, out, -0.3), Nikko Remigio (WR, questionable, -0.1). DT depth: 2 confirmed out (Peter Woods, Omarr Norman-Lott) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -3.1 pts -- Garrett Wilson (WR, out, -1.5), Trevin Wallace (LB, out, -0.5), Joseph Ossai (DE, questionable, -0.4), Nahshon Wright (CB, questionable, -0.4), Harrison Phillips (DT, questionable, -0.3).",
       "Kansas City Chiefs (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Rashee Rice (-2.0), Josh Simmons (-1.0) [-3.0 pts total]; Rashee Rice (-1.8), Josh Simmons (-1.2), Jaylon Moore (-0.8), Brashard Smith (-0.2), L'Jarius Sneed (-0.3) [-5.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "New York Jets (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-1.5), Adonai Mitchell (-0.5) [-2.0 pts total]; Breece Hall (-0.5), Max Mitchell (-0.8), Joseph Ossai (-0.8), Francisco Mauigoa (-0.3), Dylan Parham (-0.3) [-2.7 pts total]; Breece Hall (-1.0), Max Mitchell (-0.5), Joseph Ossai (-0.4), David Bailey (-0.4) [-3.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 83.5,
-    "awayWinPct": 14.4,
-    "tiePct": 2.0,
-    "medianHomeScore": 29,
-    "medianAwayScore": 14,
-    "coverPctHome": 62.9,
-    "overPct": 37.4
+    "homeWinPct": 82.3,
+    "awayWinPct": 16.1,
+    "tiePct": 1.6,
+    "medianHomeScore": 30,
+    "medianAwayScore": 17,
+    "coverPctHome": 60.9,
+    "overPct": 46.8
   },
   "simulation_history": [
     {
@@ -210,58 +210,120 @@
       "run_at": "2026-11-05T03:19:13.895953+00:00",
       "marginHome": 14.3,
       "total": 43.0
+    },
+    {
+      "run_at": "2026-11-07T13:42:34.157952+00:00",
+      "marginHome": 13.6,
+      "total": 46.7
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-05T03:21:34Z",
+    "last_updated": "2026-11-07T13:48:42Z",
     "analysis": [
-      "Sim (injury-adjusted, 10,000 runs): Kansas City Chiefs by 14.3, projected total 43.0 (over 37.4%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Kansas City Chiefs by 5.4, total 43.7. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
-      "Sim has KC by 14.3 against KC -9.5 to -10.5, but the 2026-only form check has KC by 5.4, so the models disagree and there is no lean. NYJ WR Garrett Wilson is in concussion protocol; KC DL Woods DNP."
+      "Sim (injury-adjusted, 10,000 runs): Kansas City Chiefs by 13.6, projected total 46.7 (over 46.8%). 2026-only stats margin: Kansas City Chiefs by 4.1; Elo margin: Kansas City Chiefs by 13.1. Market (DK/FD/Caesars, 11/7 8:39 AM ET): home spread -8.5, total 47.5.",
+      "KC is missing DTs Woods and Norman-Lott and CB Delane; NYJ is missing WR Wilson and LB Wallace. Sim has KC by 13.6 but the 2026-only stats margin is only 4.1 and the market is KC -8.5 to -9.5, so no side clears the 2026 check; cleatz flags sharp money on NYJ and the Under."
     ],
     "leans": []
   },
   "injury_adjustments": {
-    "last_updated": "2026-11-05T03:19:13Z",
+    "last_updated": "2026-11-07T13:42:34Z",
     "home": {
-      "offense_pts": 0.0,
-      "defense_pts": -0.5,
+      "offense_pts": -0.1,
+      "defense_pts": -2.55,
       "items": [
         {
           "position": "DT",
           "player": "Peter Woods",
+          "status": "out",
+          "pts": -0.7,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "CB",
+          "player": "Mansoor Delane",
+          "status": "out",
+          "pts": -0.8,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DT",
+          "player": "Omarr Norman-Lott",
+          "status": "out",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): ACL"
+        },
+        {
+          "position": "WR",
+          "player": "Nikko Remigio",
           "status": "questionable",
-          "pts": -0.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP neck"
+          "pts": -0.1,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -0.5,
-      "stacking_notes": [],
-      "total_pts": -0.5
+      "items_total_pts": -1.9,
+      "stacking_notes": [
+        "DT depth: 2 confirmed out (Peter Woods, Omarr Norman-Lott) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -2.65
     },
     "away": {
-      "offense_pts": -1.7,
-      "defense_pts": 0.0,
+      "offense_pts": -1.5,
+      "defense_pts": -1.6,
       "items": [
         {
           "position": "WR",
           "player": "Garrett Wilson",
-          "status": "questionable",
+          "status": "out",
           "pts": -1.5,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): concussion protocol, DNP"
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations): concussion, out"
         },
         {
-          "position": "RB",
-          "player": "Breece Hall",
+          "position": "LB",
+          "player": "Trevin Wallace",
+          "status": "out",
+          "pts": -0.5,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DE",
+          "player": "Joseph Ossai",
           "status": "questionable",
-          "pts": -0.2,
-          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): limited, trending right direction"
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "CB",
+          "player": "Nahshon Wright",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
+        },
+        {
+          "position": "DT",
+          "player": "Harrison Phillips",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "ESPN injuries feed Sat 2026-11-07 (Fri/Sat designations)"
         }
       ],
-      "items_total_pts": -1.7,
+      "items_total_pts": -3.1,
       "stacking_notes": [],
-      "total_pts": -1.7
+      "total_pts": -3.1
     },
-    "def_clusters": []
+    "def_clusters": [
+      {
+        "team_side": "home",
+        "unit": "front",
+        "count": 2,
+        "players": [
+          "Peter Woods",
+          "Omarr Norman-Lott"
+        ],
+        "opp_pts": 1.75,
+        "watch": "rushing OVER",
+        "defensive": true
+      }
+    ]
   },
   "weather": {
     "captured_at": "2026-11-07T13:41:34Z",
@@ -288,22 +350,28 @@
     ]
   },
   "market_signal": {
-    "captured_at": "2026-11-05T22:15:28Z",
+    "captured_at": "2026-11-07T13:47:38Z",
     "source": "cleatz.com",
     "spread": {
-      "bets_pct_home": 62,
-      "handle_pct_home": 44
+      "bets_pct_home": 59,
+      "handle_pct_home": 48
     },
     "total": {
-      "bets_pct_over": 47,
+      "bets_pct_over": 42,
       "handle_pct_over": 22
     },
     "moneyline": {
-      "bets_pct_home": 94,
-      "handle_pct_home": 74
+      "bets_pct_home": 95,
+      "handle_pct_home": 76
     },
     "reverse_line_move": false,
     "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
-    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+    "note": "cleatz.com board 11/7 8:37AM EST; converted to home/over-relative from team rows (cleatz books may carry a half-point different number than the DK snapshot)."
+  },
+  "props": {
+    "last_checked": "2026-11-07T13:46:50Z",
+    "status": "captured",
+    "source_note": "2026-11-07 ~14:10Z covers.com player-props board (browser render, top-50 EV rows) + CBS position-vs-defense (market-stat rank, 1=fewest allowed; footballdb WR not checked, CBS WR used) + ESPN rosters (team/position/home-away verified: player team is on the game's roster, side mapped from 'Away @ Home') + ESPN game logs for volume/backtest. Screened for team-weakness: OVER needs opp rank 23-32 and worse than league avg; UNDER needs rank 1-10 and better than avg. Result: Mahomes/Smith/Walker overs lean into KC QB-rush 18, KC QB pass 13, NYJ RB-rec 9: none in the 23-32 band. No qualifier.",
+    "picks": []
   }
 }
