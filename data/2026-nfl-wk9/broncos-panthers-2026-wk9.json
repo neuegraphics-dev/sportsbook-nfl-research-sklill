@@ -113,6 +113,29 @@
         "ml_dog": 127
       },
       "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-11-07T13:40:41Z",
+      "bookmaker_eu": null,
+      "draftkings": {
+        "spread": 2.5,
+        "total": 44.5,
+        "ml_fav": -148,
+        "ml_dog": 124
+      },
+      "fanduel": {
+        "spread": 2.5,
+        "total": 44.5,
+        "ml_fav": -142,
+        "ml_dog": 120
+      },
+      "caesars": {
+        "spread": 2.5,
+        "total": 44.5,
+        "ml_fav": -150,
+        "ml_dog": 127
+      },
+      "note": "2026-11-07 ~13:40Z run: DK/FD/Caesars from covers.com NFL odds board, live browser render (page 'last updated Nov 07 8:39 AM ET', columns verified by header). Spreads home-relative. BookMaker.eu null: board still showed 'Last update: 2 days ago' (stale)."
     }
   ],
   "research": {
@@ -125,7 +148,7 @@
   },
   "triggers": {
     "book_vs_sharp_gap": false,
-    "key_number_crossed": true,
+    "key_number_crossed": false,
     "steam_no_news": false
   },
   "status": "active",

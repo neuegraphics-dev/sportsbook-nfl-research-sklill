@@ -9922,6 +9922,91 @@
         "coverPctHome": 54.6,
         "overPct": 53.5
       }
+    },
+    {
+      "gameId": "jaguars-ravens-2026-wk9",
+      "week": "Week 9",
+      "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
+      "awayTeam": "Jacksonville Jaguars",
+      "homeTeam": "Baltimore Ravens",
+      "kickoff": "2026-11-06T01:15:00Z",
+      "openingLine": {
+        "spreadHomeRel": 8.5,
+        "total": 43.5
+      },
+      "closingLineIsFallback": false,
+      "boxscore": {
+        "homeYards": 227,
+        "awayYards": 319,
+        "homePlays": 54,
+        "awayPlays": 56,
+        "homeTimeOfPossession": "30:45",
+        "awayTimeOfPossession": "29:15",
+        "homeTurnovers": 3,
+        "awayTurnovers": 1,
+        "source": "ESPN API summary + covers.com final"
+      },
+      "capturedAt": "2026-11-07T13:41:08Z",
+      "actual": {
+        "homeScore": 10,
+        "awayScore": 33,
+        "marginHome": -23,
+        "total": 43,
+        "winner": "away"
+      },
+      "closingLine": {
+        "spreadHomeRel": 9.5,
+        "total": 39.5,
+        "source": "draftkings"
+      },
+      "grading": {
+        "atsResult": "away_covered",
+        "totalResult": "over",
+        "marketMarginErrorPts": -13.5,
+        "marketTotalErrorPts": 3.5,
+        "simMarginErrorPts": -18.1,
+        "simTotalErrorPts": -4.9,
+        "simStraightUpCorrect": true,
+        "simAtsPickCorrect": false,
+        "simTotalPickCorrect": true,
+        "winProbOfActualWinner": 67.0
+      },
+      "pregameSim": {
+        "run_at": "2026-11-05T03:17:28.859591+00:00",
+        "n": 10000,
+        "homeElo": 1489.5,
+        "awayElo": 1660.6,
+        "gamesSeen": 15,
+        "eloMarginHome": -4.9,
+        "statsMarginHome": -6.2,
+        "marginDivergence": 1.3,
+        "projTotal": 47.9,
+        "homeWinProbElo": 33.0,
+        "marketHomeSpread": 9.5,
+        "marketTotal": 39.5,
+        "homeInjuryPts": -6.0,
+        "awayInjuryPts": -0.3,
+        "projHomeMeanRaw": 21.5,
+        "projAwayMeanRaw": 26.4,
+        "projHomeMeanAdjusted": 15.5,
+        "projAwayMeanAdjusted": 26.1,
+        "injuryAdjustedMarginHome": -10.6,
+        "projTotalAdjusted": 41.6,
+        "spreadLean": null,
+        "totalLean": null,
+        "notes": [
+          "Home injury adjustment: -6.0 pts -- Lamar Jackson / Tyler Huntley (QB, out, -6.0).",
+          "Away injury adjustment: -0.3 pts -- Bhayshul Tuten (RB, questionable, -0.3).",
+          "Baltimore Ravens (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]; Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]; Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
+        ],
+        "homeWinPct": 21.8,
+        "awayWinPct": 75.8,
+        "tiePct": 2.4,
+        "medianHomeScore": 15,
+        "medianAwayScore": 26,
+        "coverPctHome": 47.2,
+        "overPct": 55.9
+      }
     }
   ]
 }

@@ -221,47 +221,47 @@
       ]
     },
     "Baltimore Ravens": {
-      "elo": 1489.4838699174104,
-      "games_played": 8,
+      "elo": 1469.6315214242175,
+      "games_played": 9,
       "scored_history": [
-        41,
         17,
         34,
         24,
         30,
         10,
         13,
+        10,
         10
       ],
       "allowed_history": [
-        23,
         24,
         31,
         18,
         23,
         13,
         35,
-        36
+        36,
+        33
       ],
       "injury_flags": [
         false,
         false,
         false,
+        true,
+        true,
+        true,
         false,
-        true,
-        true,
-        true,
-        false
+        true
       ],
       "injury_flag_notes": [
-        null,
         null,
         null,
         null,
         "Lamar Jackson (-3.5) [-3.5 pts total]",
         "Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]",
         "Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]",
-        null
+        null,
+        "Lamar Jackson / Tyler Huntley (-6.0) [-6.0 pts total]"
       ]
     },
     "Cincinnati Bengals": {
@@ -353,27 +353,27 @@
       ]
     },
     "Jacksonville Jaguars": {
-      "elo": 1660.6490259612574,
-      "games_played": 7,
+      "elo": 1680.5013744544503,
+      "games_played": 8,
       "scored_history": [
-        25.4,
         34,
         13,
         35,
         22,
         19,
         31,
-        42
+        42,
+        33
       ],
       "allowed_history": [
-        20.9,
         10,
         20,
         6,
         17,
         17,
         34,
-        7
+        7,
+        10
       ],
       "injury_flags": [
         false,

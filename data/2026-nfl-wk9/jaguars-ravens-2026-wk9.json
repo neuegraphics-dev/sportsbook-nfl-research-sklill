@@ -184,7 +184,7 @@
     "key_number_crossed": false,
     "steam_no_news": true
   },
-  "status": "active",
+  "status": "final",
   "simulation": {
     "run_at": "2026-11-05T03:17:28.859591+00:00",
     "n": 10000,
@@ -354,5 +354,9 @@
     "reverse_line_move": false,
     "rlm_note": "67% of handle is on the away side and the spread has moved toward them (+9.5 -> +10) -- money and line agree, no RLM.",
     "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
+  },
+  "final_score": {
+    "home": 10,
+    "away": 33
   }
 }
