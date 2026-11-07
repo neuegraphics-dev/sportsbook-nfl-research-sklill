@@ -107,7 +107,9 @@ is the book here instead of Pinnacle.)
 - **Tier 2/3 games**: always pass `--skip-if-same-day`. It's a no-op on
   price data (prints `"skipped": true`, doesn't touch the snapshot list)
   if today already has a snapshot, so calling it more than once a day for
-  a slow-moving game never creates duplicate points.
+  a slow-moving game never creates duplicate points. "Same day" means the
+  Eastern-time calendar day (fixed 2026-11-07; it used the UTC date, so an
+  11pm ET snapshot blocked the whole next ET day).
 - **Research-only follow-up on an already-skipped day**: `--skip-if-same-day`
   only blocks a duplicate *price* snapshot -- it does not block `--research`.
   If a Tier 2/3 game's triggers flip true later the same day it was already
@@ -988,6 +990,13 @@ rebuilds it from whatever's in `data/` at that moment. Changing the
 cadence never requires touching `build_dashboard_v2.py` or the template.
 
 ## Drive JSON snapshot (added 2026-10-23 per Michael)
+
+> **Superseded 2026-11-07.** The snapshot is now published as a file of the
+> "Line Watch" artifact (https://claude.ai/artifact/PSAGLffSH8buxbrqDFPgfo,
+> path `line-watch-snapshot.json`) in the same publish as the dashboard (SKILL
+> step 16). The Drive upload below needed the whole file retyped through the
+> connector (~50k tokens) and ran out of room on 2026-11-05. It is kept only as
+> a reference and fallback, and runs no longer write Drive.
 
 Michael wants to ask Claude chat questions from his phone while away from
 his computer, with chat reading the latest Line Watch numbers from Google

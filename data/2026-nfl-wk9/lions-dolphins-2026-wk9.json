@@ -85,6 +85,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:03Z",
+      "bookmaker_eu": {
+        "spread": 7,
+        "total": 50.5,
+        "ml_fav": -326,
+        "ml_dog": 264
+      },
+      "draftkings": {
+        "spread": 6.5,
+        "total": 50.5,
+        "ml_fav": -355,
+        "ml_dog": 280
+      },
+      "fanduel": {
+        "spread": 7.5,
+        "total": null,
+        "ml_fav": -360,
+        "ml_dog": 290
+      },
+      "caesars": {
+        "spread": 6.5,
+        "total": 50.5,
+        "ml_fav": -345,
+        "ml_dog": 275
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -97,12 +125,12 @@
   },
   "triggers": {
     "book_vs_sharp_gap": false,
-    "key_number_crossed": false,
+    "key_number_crossed": true,
     "steam_no_news": false
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.702383+00:00",
+    "run_at": "2026-11-05T03:19:13.958347+00:00",
     "n": 10000,
     "homeElo": 1352.2,
     "awayElo": 1583.2,
@@ -112,28 +140,29 @@
     "marginDivergence": -3.1,
     "projTotal": 47.8,
     "homeWinProbElo": 25.9,
-    "marketHomeSpread": 7,
-    "marketTotal": 49.5,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": 0.0,
+    "marketHomeSpread": 6.5,
+    "marketTotal": 50.5,
+    "homeInjuryPts": 2.6,
+    "awayInjuryPts": -0.6,
     "projHomeMeanRaw": 20.2,
     "projAwayMeanRaw": 27.6,
-    "projHomeMeanAdjusted": 20.2,
-    "projAwayMeanAdjusted": 27.6,
-    "injuryAdjustedMarginHome": -7.3,
-    "projTotalAdjusted": 47.8,
+    "projHomeMeanAdjusted": 22.8,
+    "projAwayMeanAdjusted": 27.0,
+    "injuryAdjustedMarginHome": -4.1,
+    "projTotalAdjusted": 49.8,
     "spreadLean": null,
     "totalLean": null,
     "notes": [
+      "Away injury adjustment: -3.2 pts -- Kerby Joseph (S, out, -0.8), Jack Campbell (LB, out, -0.7), Cade Mays (OC, questionable, -0.6), DJ Reed (CB, questionable, -0.6), DJ Wonnum (EDGE, questionable, -0.5).",
       "Detroit Lions (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Brian Branch (-1.5), Rock Ya-Sin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 29.4,
-    "awayWinPct": 68.1,
-    "tiePct": 2.4,
-    "medianHomeScore": 20,
+    "homeWinPct": 37.0,
+    "awayWinPct": 60.2,
+    "tiePct": 2.8,
+    "medianHomeScore": 23,
     "medianAwayScore": 27,
-    "coverPctHome": 49.3,
-    "overPct": 45.1
+    "coverPctHome": 56.4,
+    "overPct": 47.4
   },
   "simulation_history": [
     {
@@ -150,14 +179,150 @@
       "run_at": "2026-11-04T14:57:28.702383+00:00",
       "marginHome": -7.3,
       "total": 47.8
+    },
+    {
+      "run_at": "2026-11-05T03:19:13.958347+00:00",
+      "marginHome": -4.1,
+      "total": 49.8
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Detroit Lions by 7.3 (injury-adjusted) against a market that has Detroit Lions favored by 7, a 0.3-point gap; sim cover% for Miami Dolphins is 49.1% and projected total is 47.8 vs 49.5 (over 45.1%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): Detroit Lions by 4.1, projected total 49.8 (over 47.4%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Detroit Lions by 3.7, total 48.6. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Lean: Both models make DET about 4 (sim 4.1, 2026-only 3.7) against DET -6.5 to -7.5. DET defense loses S Kerby Joseph and LB Jack Campbell (out), with C Mays, CB Reed and EDGE Wonnum DNP. +7.5 crosses the key number 7 at FD and BetMGM; DK is only +6.5."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "MIA +7.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Both models make DET about 4 (sim 4.1, 2026-only 3.7) against DET -6.5 to -7.5. DET defense loses S Kerby Joseph and LB Jack Campbell (out), with C Mays, CB Reed and EDGE Wonnum DNP. +7.5 crosses the key number 7 at FD and BetMGM; DK is only +6.5. | Stake $12 \u00b7 pass at +7",
+        "factors": [
+          {
+            "label": "Sim margin",
+            "dir": "for",
+            "detail": "DET by 4.1 vs 7.5 at FD/MGM"
+          },
+          {
+            "label": "2026-only form",
+            "dir": "for",
+            "detail": "DET by 3.7"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "DET defensive cluster: S Joseph out, LB Campbell out, CB Reed/EDGE Wonnum DNP; MIA front mostly limited"
+          },
+          {
+            "label": "Key number",
+            "dir": "for",
+            "detail": "+7.5 clears 7"
+          }
+        ],
+        "alignment": {
+          "for": 4,
+          "against": 0,
+          "neutral": 0,
+          "net": 4
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:13Z",
+    "home": {
+      "offense_pts": 0.0,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "EDGE",
+          "player": "Chop Robinson",
+          "status": "questionable",
+          "pts": 0.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): limited only"
+        }
+      ],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "offense_pts": -0.6,
+      "defense_pts": -2.6,
+      "items": [
+        {
+          "position": "S",
+          "player": "Kerby Joseph",
+          "status": "out",
+          "pts": -0.8,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): Campbell said out"
+        },
+        {
+          "position": "LB",
+          "player": "Jack Campbell",
+          "status": "out",
+          "pts": -0.7,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): hospitalized after injury"
+        },
+        {
+          "position": "OC",
+          "player": "Cade Mays",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle"
+        },
+        {
+          "position": "CB",
+          "player": "DJ Reed",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hip"
+        },
+        {
+          "position": "EDGE",
+          "player": "DJ Wonnum",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP concussion"
+        }
+      ],
+      "items_total_pts": -3.2,
+      "stacking_notes": [],
+      "total_pts": -3.2
+    },
+    "def_clusters": []
+  },
+  "weather": {
+    "captured_at": "2026-11-05T03:22:14Z",
+    "stadium": "Hard Rock Stadium",
+    "roof": "open",
+    "wind_mph": 6.0,
+    "gust_mph": null,
+    "temp_f": 82.0,
+    "precip_pct": 15.0,
+    "impact": "none",
+    "source": "api.weather.gov hourly forecast via browser fetch, kickoff-hour period, 2026-11-05",
+    "history": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:28Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 19,
+      "handle_pct_home": 40
+    },
+    "total": {
+      "bets_pct_over": 69,
+      "handle_pct_over": 99
+    },
+    "moneyline": {
+      "bets_pct_home": 8,
+      "handle_pct_home": 12
+    },
+    "reverse_line_move": false,
+    "rlm_note": "60% of handle is on the away side but the spread hasn't moved yet (+7, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

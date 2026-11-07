@@ -113,11 +113,15 @@ $22.50 figure in `docs/reference.md` is historical.
    built on the injury-adjusted sim numbers.
 9. **Results + prop grading** for newly final games (two sources for scores
    and box scores).
-10. **Props** for games with no `props` block or `pending`: covers.com
+10. **Props (mandatory every run, not just Tier 1)** for every game kicking
+    off within 96 hours with no `props` block or `pending`: covers.com
     (browser-rendered), RotoWire, Linemate player search, lineups.com team
     defense once per cycle. Never re-check a captured game. Apply the
     team-weakness filter from `line-watch-slate-bets`
-    (reference: "Player props -- validated sources").
+    (reference: "Player props -- validated sources"). A game screened with
+    no qualifier is still written (`apply_props.py --status captured --picks
+    '[]' --source-note ...`) so the next run knows it was done. If the board
+    hasn't posted a game yet, write `--status pending` with that note.
 11. **Market signal** with `apply_market_signal.py` (Tier 1 every run,
     Tier 2/3 daily). Only call it a reverse line move if the script says so.
 12. **CLV.**
@@ -136,22 +140,31 @@ $22.50 figure in `docs/reference.md` is historical.
 13. **Props record** with `report_props.py`, plus the game-lean record by
     confidence tier.
 14. `generate_report.py`, save under `reports/`, present it with a stake and
-    pass-at on every bet (format from `line-watch-slate-bets`).
+    pass-at on every bet (format from `line-watch-slate-bets`). Read its
+    **RUN HEALTH** section: every "PROPS MISSING" or "STALE LINES" row is a
+    skipped step. Go back and do it, then regenerate. Report any row you
+    could not clear.
 15. **Dashboard:** `build_dashboard_v2.py data
     scripts/dashboard_template_v2.html dashboard/line-watch-build.html` (it
     also writes `dashboard/index.html`). Check the printed `propsGraded`.
     Stage the build file in a separate call, `Artifact` list -> find "Line
     Watch" -> publish to that url with a `label` (never a `note` parameter)
     (reference: "The dashboard").
-16. **Drive snapshot:** on the Mac run `python3 -I scripts/export_snapshot.py
-    dashboard/line-watch-build.html _sync/line-watch-snapshot.json`, stage the
-    JSON, then follow reference "Drive JSON snapshot" steps 3-8 exactly
-    (create -> verify fileSize = `wc -c` -> only then trash old copies,
-    sequential calls). The game-day check tasks read this file, so a failed
-    snapshot means they read stale picks. Say so in the report.
-17. **GitHub sync:** on the Mac run `scripts/repo_pack.sh`, stage
-    `_sync/linewatch-sync.tar.gz`, then in the cloud: `add_repo`
-    neuegraphics-dev/sportsbook-nfl-research-sklill (push), clone it
+16. **Snapshot (artifact file, replaces the Drive upload 2026-11-07):** run
+    `python3 -I scripts/export_snapshot.py dashboard/line-watch-build.html
+    _sync/line-watch-snapshot.json` on the Mac BEFORE step 15's publish, stage
+    the JSON with the build file, `cp` both from `/mnt/user-data/uploads/...`
+    into the scratchpad (the Artifact tool only publishes files from the
+    working dir or scratchpad), then do step 15's publish with
+    `files: {"line-watch-snapshot.json": "<scratchpad copy>"}`. Verify with
+    `Artifact read` + `path: "line-watch-snapshot.json"`: the byte count must
+    equal `wc -c` on the Mac. No retyping, so it never runs out of room. The
+    game-day checks read this file first. Drive is no longer written.
+17. **GitHub sync (backup only, not a fallback):** needs the repo attached
+    as a source on the scheduled task. Without it the push gets a 403 ("not
+    in this session's authorized repository set"); report that in one line and
+    move on. On the Mac run `scripts/repo_pack.sh`, stage
+    `_sync/linewatch-sync.tar.gz`, then in the cloud clone
     (`git clone --depth 1`, long timeout), extract the tarball over the clone
     (`tar xzf ... -C <clone>`), `git add -A`, commit "Line Watch run
     <date time ET>" and push to `main`. If any part fails, finish the run and
@@ -174,13 +187,13 @@ $22.50 figure in `docs/reference.md` is historical.
 
 Message the user with `SendUserMessage`: the card by window with stakes,
 qualifying props, the CLV line (overall, by window, by pick type, vs sharp),
-the props record, the dashboard note, one line each for the Drive snapshot
+the props record, the dashboard note, one line each for the snapshot file
 and the GitHub sync, and any gaps. If a message already went out before
 steps 16-17 finish, send those lines as a short follow-up.
 
 ## Quick question with no device access
 
-Read the newest `line-watch-snapshot.json` from the Drive folder by title
+Read `line-watch-snapshot.json` from the "Line Watch" artifact (`Artifact read`, `path: "line-watch-snapshot.json"`); fall back to the newest Drive copy by title
 (never reuse an old file id), follow its own `meta.howToAnswer`, lead with
 how fresh it is, and treat a bet as live only while the line beats its
 `passAt`. Fallback: the "Line Watch" artifact's embedded `const D`

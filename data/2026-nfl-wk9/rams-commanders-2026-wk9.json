@@ -85,6 +85,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:03Z",
+      "bookmaker_eu": {
+        "spread": 4,
+        "total": 48,
+        "ml_fav": -217,
+        "ml_dog": 181
+      },
+      "draftkings": {
+        "spread": 5.5,
+        "total": 47.5,
+        "ml_fav": -225,
+        "ml_dog": 185
+      },
+      "fanduel": {
+        "spread": 4.5,
+        "total": 47.5,
+        "ml_fav": -225,
+        "ml_dog": 188
+      },
+      "caesars": {
+        "spread": 4.5,
+        "total": 48,
+        "ml_fav": -235,
+        "ml_dog": 193
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -96,13 +124,13 @@
     "top_signals": []
   },
   "triggers": {
-    "book_vs_sharp_gap": false,
+    "book_vs_sharp_gap": true,
     "key_number_crossed": false,
-    "steam_no_news": false
+    "steam_no_news": true
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.818519+00:00",
+    "run_at": "2026-11-05T03:19:13.830537+00:00",
     "n": 10000,
     "homeElo": 1405.7,
     "awayElo": 1620.0,
@@ -112,30 +140,32 @@
     "marginDivergence": -4.3,
     "projTotal": 43.5,
     "homeWinProbElo": 27.7,
-    "marketHomeSpread": 5.5,
+    "marketHomeSpread": 4.5,
     "marketTotal": 48,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": 0.0,
+    "homeInjuryPts": 2.1,
+    "awayInjuryPts": 2.45,
     "projHomeMeanRaw": 18.4,
     "projAwayMeanRaw": 25.1,
-    "projHomeMeanAdjusted": 18.4,
-    "projAwayMeanAdjusted": 25.1,
-    "injuryAdjustedMarginHome": -6.7,
-    "projTotalAdjusted": 43.5,
+    "projHomeMeanAdjusted": 20.5,
+    "projAwayMeanAdjusted": 27.5,
+    "injuryAdjustedMarginHome": -7.0,
+    "projTotalAdjusted": 48.1,
     "spreadLean": null,
-    "totalLean": "under",
+    "totalLean": null,
     "notes": [
       "Elo margin (-6.7) and recent-scoring margin (-2.4) disagree by 4.3 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -2.9 pts -- Daron Payne (DT, out, -1.0), Javon Kinlaw (DT, out, -0.7), Treylon Burks (WR, questionable, -0.4). DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts",
+      "Away injury adjustment: -2.5 pts -- Jaylen Watson (CB, out, -1.2), Trent McDuffie (CB, questionable, -0.8), Kam Curl (S, questionable, -0.5).",
       "Washington Commanders (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Jayden Daniels (-5.0) [-5.0 pts total]; Jayden Daniels (-3.0) [-3.0 pts total]; Stefon Diggs (-1.5), Terry McLaurin (-0.5) [-2.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Los Angeles Rams (away)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Puka Nacua (-1.5), Kam Kinchens (-0.5) [-2.0 pts total]; Davante Adams (-1.8), Puka Nacua (-0.7), Trent McDuffie (-0.4), Nate Landman (-0.4) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 30.7,
-    "awayWinPct": 66.7,
-    "tiePct": 2.6,
-    "medianHomeScore": 18,
-    "medianAwayScore": 25,
-    "coverPctHome": 47.2,
-    "overPct": 36.3
+    "homeWinPct": 29.2,
+    "awayWinPct": 68.2,
+    "tiePct": 2.5,
+    "medianHomeScore": 20,
+    "medianAwayScore": 28,
+    "coverPctHome": 42.7,
+    "overPct": 50.0
   },
   "simulation_history": [
     {
@@ -152,14 +182,129 @@
       "run_at": "2026-11-04T14:57:28.818519+00:00",
       "marginHome": -6.7,
       "total": 43.5
+    },
+    {
+      "run_at": "2026-11-05T03:19:13.830537+00:00",
+      "marginHome": -7.0,
+      "total": 48.1
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Los Angeles Rams by 6.7 (injury-adjusted) against a market that has Los Angeles Rams favored by 5.5, a 1.2-point gap; sim cover% for Washington Commanders is 45.8% and projected total is 43.5 vs 48 (over 37.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): Los Angeles Rams by 7.0, projected total 48.1 (over 50.0%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Los Angeles Rams by 1.2, total 46.9. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Sim has LAR by 7.0 but the 2026-only form check has LAR by only 1.2 against LAR -4.5 to -5.5; the two models disagree, so no lean. Real news: LAR CB Watson out for the season and CB McDuffie DNP, WAS DT Payne and Kinlaw on IR (front-seven cluster, watch Kyren Williams rushing props)."
     ],
     "leans": []
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:13Z",
+    "home": {
+      "offense_pts": -0.4,
+      "defense_pts": -2.45,
+      "items": [
+        {
+          "position": "DT",
+          "player": "Daron Payne",
+          "status": "out",
+          "pts": -1.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): placed on IR"
+        },
+        {
+          "position": "DT",
+          "player": "Javon Kinlaw",
+          "status": "out",
+          "pts": -0.7,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): placed on IR"
+        },
+        {
+          "position": "WR",
+          "player": "Treylon Burks",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP foot"
+        }
+      ],
+      "items_total_pts": -2.1,
+      "stacking_notes": [
+        "DT depth: 2 confirmed out (Daron Payne, Javon Kinlaw) -- extra -0.75 pts for exhausted depth at that position, on top of each player's own individual pts"
+      ],
+      "total_pts": -2.85
+    },
+    "away": {
+      "offense_pts": 0.0,
+      "defense_pts": -2.5,
+      "items": [
+        {
+          "position": "CB",
+          "player": "Jaylen Watson",
+          "status": "out",
+          "pts": -1.2,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): season-ending shoulder surgery, IR"
+        },
+        {
+          "position": "CB",
+          "player": "Trent McDuffie",
+          "status": "questionable",
+          "pts": -0.8,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP, McVay 'feeling better than expected'"
+        },
+        {
+          "position": "S",
+          "player": "Kam Curl",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP"
+        }
+      ],
+      "items_total_pts": -2.5,
+      "stacking_notes": [],
+      "total_pts": -2.5
+    },
+    "def_clusters": [
+      {
+        "team_side": "home",
+        "unit": "front",
+        "count": 2,
+        "players": [
+          "Daron Payne",
+          "Javon Kinlaw"
+        ],
+        "opp_pts": 2.45,
+        "watch": "rushing OVER",
+        "defensive": true
+      }
+    ]
+  },
+  "weather": {
+    "captured_at": "2026-11-05T03:22:14Z",
+    "stadium": "Northwest Stadium",
+    "roof": "open",
+    "wind_mph": 12.0,
+    "gust_mph": null,
+    "temp_f": 60.0,
+    "precip_pct": 0.0,
+    "impact": "mild",
+    "source": "api.weather.gov hourly forecast via browser fetch, kickoff-hour period, 2026-11-05",
+    "history": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:28Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 28,
+      "handle_pct_home": 30
+    },
+    "total": {
+      "bets_pct_over": 64,
+      "handle_pct_over": 66
+    },
+    "moneyline": {
+      "bets_pct_home": 15,
+      "handle_pct_home": 24
+    },
+    "reverse_line_move": true,
+    "rlm_note": "70% of handle is on the away side but the spread moved AGAINST them (+5.5 -> +4) -- real reverse line move toward home.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

@@ -85,6 +85,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:03Z",
+      "bookmaker_eu": {
+        "spread": -10,
+        "total": 52.5,
+        "ml_fav": -436,
+        "ml_dog": 342
+      },
+      "draftkings": {
+        "spread": -9.5,
+        "total": 52.5,
+        "ml_fav": -535,
+        "ml_dog": 400
+      },
+      "fanduel": {
+        "spread": -9.5,
+        "total": 52.5,
+        "ml_fav": -500,
+        "ml_dog": 385
+      },
+      "caesars": {
+        "spread": -9.5,
+        "total": 52.5,
+        "ml_fav": -481,
+        "ml_dog": 375
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -102,7 +130,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.780939+00:00",
+    "run_at": "2026-11-05T03:19:14.217869+00:00",
     "n": 10000,
     "homeElo": 1630.5,
     "awayElo": 1396.4,
@@ -112,29 +140,31 @@
     "marginDivergence": 5.0,
     "projTotal": 50.9,
     "homeWinProbElo": 83.5,
-    "marketHomeSpread": -10,
-    "marketTotal": 51.5,
-    "homeInjuryPts": 0.0,
+    "marketHomeSpread": -9.5,
+    "marketTotal": 52.5,
+    "homeInjuryPts": -3.6,
     "awayInjuryPts": 0.0,
     "projHomeMeanRaw": 31.1,
     "projAwayMeanRaw": 19.8,
-    "projHomeMeanAdjusted": 31.1,
+    "projHomeMeanAdjusted": 27.5,
     "projAwayMeanAdjusted": 19.8,
-    "injuryAdjustedMarginHome": 11.3,
-    "projTotalAdjusted": 50.9,
+    "injuryAdjustedMarginHome": 7.7,
+    "projTotalAdjusted": 47.3,
     "spreadLean": null,
-    "totalLean": null,
+    "totalLean": "under",
     "notes": [
       "Elo margin (+11.3) and recent-scoring margin (+6.2) disagree by 5.0 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -4.0 pts -- Mike Evans (WR, questionable, -1.0), Deebo Samuel (WR, questionable, -0.8), Christian McCaffrey (RB, questionable, -1.2), Trent Williams (OT, questionable, -1.0).",
+      "Away injury adjustment: -0.4 pts -- Darien Porter (CB, questionable, -0.4).",
       "San Francisco 49ers (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Brock Purdy (-2.5), Nick Bosa (-2.0) [-4.5 pts total]; Jauan Jennings (-1.0), Jaylon Moore (-1.0), Dre Greenlaw (-1.0), Arik Armstead (-0.8), Jiayir Brown (-0.5), Ross Dwelley (-0.2) [-4.5 pts total]; Nick Bosa (-1.5), Mike Evans (-1.5), Deebo Samuel Sr. (-1.0), Garret Wallow (-0.4) [-5.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 78.2,
-    "awayWinPct": 19.9,
-    "tiePct": 1.9,
-    "medianHomeScore": 31,
+    "homeWinPct": 68.8,
+    "awayWinPct": 28.8,
+    "tiePct": 2.4,
+    "medianHomeScore": 27,
     "medianAwayScore": 20,
-    "coverPctHome": 54.4,
-    "overPct": 48.4
+    "coverPctHome": 44.0,
+    "overPct": 35.3
   },
   "simulation_history": [
     {
@@ -151,14 +181,140 @@
       "run_at": "2026-11-04T14:57:28.780939+00:00",
       "marginHome": 11.3,
       "total": 50.9
+    },
+    {
+      "run_at": "2026-11-05T03:19:14.217869+00:00",
+      "marginHome": 7.7,
+      "total": 47.3
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: San Francisco 49ers by 11.3 (injury-adjusted) against a market that has San Francisco 49ers favored by 9.5, a 1.8-point gap; sim cover% for San Francisco 49ers is 55.8% and projected total is 50.9 vs 51.5 (over 47.7%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): San Francisco 49ers by 7.7, projected total 47.3 (over 35.3%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): San Francisco 49ers by 6.3, total 52.1. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Lean: Sim has SF by 7.7 and the 2026-only form check SF by 6.3, both short of SF -9.5. SF skill and line is thin: WR Evans, WR Deebo, RB McCaffrey and LT Trent Williams all DNP Wed (several missed last week). BookMaker is at SF -10, FD and DK at -9.5."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "LV +9.5",
+        "confidence": 5,
+        "best_bet": true,
+        "reasoning": "Sim has SF by 7.7 and the 2026-only form check SF by 6.3, both short of SF -9.5. SF skill and line is thin: WR Evans, WR Deebo, RB McCaffrey and LT Trent Williams all DNP Wed (several missed last week). BookMaker is at SF -10, FD and DK at -9.5. | Stake $12 \u00b7 pass at +9",
+        "factors": [
+          {
+            "label": "Sim margin",
+            "dir": "for",
+            "detail": "SF by 7.7 vs 9.5"
+          },
+          {
+            "label": "2026-only form",
+            "dir": "for",
+            "detail": "SF by 6.3"
+          },
+          {
+            "label": "Injuries",
+            "dir": "for",
+            "detail": "SF: WR Evans, WR Deebo, RB McCaffrey, LT Williams DNP Wed"
+          },
+          {
+            "label": "Favorite size",
+            "dir": "against",
+            "detail": "SF 6-1, double-digit favorites are rarely wrong on talent"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:14Z",
+    "home": {
+      "offense_pts": -4.0,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "WR",
+          "player": "Mike Evans",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ribs/Achilles, missed last week"
+        },
+        {
+          "position": "WR",
+          "player": "Deebo Samuel",
+          "status": "questionable",
+          "pts": -0.8,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hamstring, missed last week"
+        },
+        {
+          "position": "RB",
+          "player": "Christian McCaffrey",
+          "status": "questionable",
+          "pts": -1.2,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hamstring"
+        },
+        {
+          "position": "OT",
+          "player": "Trent Williams",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP"
+        }
+      ],
+      "items_total_pts": -4.0,
+      "stacking_notes": [],
+      "total_pts": -4.0
+    },
+    "away": {
+      "offense_pts": 0.0,
+      "defense_pts": -0.4,
+      "items": [
+        {
+          "position": "CB",
+          "player": "Darien Porter",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP groin"
+        }
+      ],
+      "items_total_pts": -0.4,
+      "stacking_notes": [],
+      "total_pts": -0.4
+    },
+    "def_clusters": []
+  },
+  "weather": {
+    "captured_at": "2026-11-05T03:22:14Z",
+    "stadium": "Levi's Stadium",
+    "roof": "open",
+    "wind_mph": 3.0,
+    "gust_mph": null,
+    "temp_f": 72.0,
+    "precip_pct": 0.0,
+    "impact": "none",
+    "source": "api.weather.gov hourly forecast via browser fetch, kickoff-hour period, 2026-11-05",
+    "history": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T03:23:05Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 51,
+      "handle_pct_home": 28
+    },
+    "total": {
+      "bets_pct_over": 94,
+      "handle_pct_over": 100
+    },
+    "moneyline": null,
+    "reverse_line_move": false,
+    "rlm_note": "72% of handle is on the away side but the spread hasn't moved yet (-10, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com board 11/4 10:22PM ET (DK snapshot); converted to home/over-relative"
   }
 }

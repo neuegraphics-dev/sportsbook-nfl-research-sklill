@@ -85,6 +85,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:03Z",
+      "bookmaker_eu": {
+        "spread": -3,
+        "total": 42.5,
+        "ml_fav": -160,
+        "ml_dog": 135
+      },
+      "draftkings": {
+        "spread": -2.5,
+        "total": 42.5,
+        "ml_fav": -162,
+        "ml_dog": 136
+      },
+      "fanduel": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -168,
+        "ml_dog": 142
+      },
+      "caesars": {
+        "spread": -3.5,
+        "total": 43.5,
+        "ml_fav": -170,
+        "ml_dog": 140
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -97,12 +125,12 @@
   },
   "triggers": {
     "book_vs_sharp_gap": false,
-    "key_number_crossed": false,
+    "key_number_crossed": true,
     "steam_no_news": false
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.341763+00:00",
+    "run_at": "2026-11-05T03:19:14.023104+00:00",
     "n": 10000,
     "homeElo": 1394.9,
     "awayElo": 1433.0,
@@ -112,29 +140,30 @@
     "marginDivergence": -0.5,
     "projTotal": 41.0,
     "homeWinProbElo": 51.4,
-    "marketHomeSpread": -2.5,
-    "marketTotal": 43,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": 0.0,
+    "marketHomeSpread": -3.5,
+    "marketTotal": 43.5,
+    "homeInjuryPts": 0.5,
+    "awayInjuryPts": -2.9,
     "projHomeMeanRaw": 20.7,
     "projAwayMeanRaw": 20.3,
-    "projHomeMeanAdjusted": 20.7,
-    "projAwayMeanAdjusted": 20.3,
-    "injuryAdjustedMarginHome": 0.4,
-    "projTotalAdjusted": 41.0,
+    "projHomeMeanAdjusted": 21.2,
+    "projAwayMeanAdjusted": 17.4,
+    "injuryAdjustedMarginHome": 3.8,
+    "projTotalAdjusted": 38.6,
     "spreadLean": null,
-    "totalLean": null,
+    "totalLean": "under",
     "notes": [
+      "Away injury adjustment: -3.4 pts -- Deshaun Watson (QB, questionable, -2.5), Quincy Williams (LB, questionable, -0.5), Austin Barber (OT, questionable, -0.4).",
       "New Orleans Saints (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (Kaden Ellis (-0.5), Pete Werner (-0.5), Anfernee Jennings (-0.4), Carl Granderson (-0.6), Travis Etienne (-0.5) [-2.5 pts total]; Alvin Kamara (-0.5), Kaden Elliss (-0.8), Anfernee Jennings (-0.8) [-2.8 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Cleveland Browns (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Dillon Gabriel (-2.0), Denzel Ward (-0.3), Teven Jenkins (-0.4), Kalia Davis (-0.5), Mike Hall Jr. (-0.5) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 50.8,
-    "awayWinPct": 46.3,
+    "homeWinPct": 58.6,
+    "awayWinPct": 38.5,
     "tiePct": 2.9,
     "medianHomeScore": 21,
-    "medianAwayScore": 20,
-    "coverPctHome": 44.6,
-    "overPct": 44.8
+    "medianAwayScore": 17,
+    "coverPctHome": 50.7,
+    "overPct": 35.9
   },
   "simulation_history": [
     {
@@ -151,14 +180,88 @@
       "run_at": "2026-11-04T14:57:28.341763+00:00",
       "marginHome": 0.4,
       "total": 41.0
+    },
+    {
+      "run_at": "2026-11-05T03:19:14.023104+00:00",
+      "marginHome": 3.8,
+      "total": 38.6
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: New Orleans Saints by 0.4 (injury-adjusted) against a market that has New Orleans Saints favored by 3, a 2.6-point gap; sim cover% for New Orleans Saints is 42.4% and projected total is 41.0 vs 43 (over 43.7%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): New Orleans Saints by 3.8, projected total 38.6 (over 35.9%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): New Orleans Saints by 1.9, total 44.4. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Sim has NO by 3.8 (with Watson in concussion protocol priced at -2.5) and the 2026-only form check NO by 1.9, bracketing NO -3. No spread lean; the sim total (38.6) and form total (44.4) disagree."
     ],
     "leans": []
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:13Z",
+    "home": {
+      "offense_pts": 0.0,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "RB",
+          "player": "Alvin Kamara",
+          "status": "questionable",
+          "pts": 0.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): rest day only"
+        }
+      ],
+      "items_total_pts": 0.0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "offense_pts": -2.9,
+      "defense_pts": -0.5,
+      "items": [
+        {
+          "position": "QB",
+          "player": "Deshaun Watson",
+          "status": "questionable",
+          "pts": -2.5,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): concussion protocol, DNP Wed; uncertainty-weighted, backup unclear"
+        },
+        {
+          "position": "LB",
+          "player": "Quincy Williams",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP hamstring"
+        },
+        {
+          "position": "OT",
+          "player": "Austin Barber",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP calf"
+        }
+      ],
+      "items_total_pts": -3.4,
+      "stacking_notes": [],
+      "total_pts": -3.4
+    },
+    "def_clusters": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:28Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 45,
+      "handle_pct_home": 87
+    },
+    "total": {
+      "bets_pct_over": 83,
+      "handle_pct_over": 8
+    },
+    "moneyline": {
+      "bets_pct_home": 57,
+      "handle_pct_home": 67
+    },
+    "reverse_line_move": false,
+    "rlm_note": "87% of handle is on the home side and the spread has moved toward them (-2.5 -> -3) -- money and line agree, no RLM.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

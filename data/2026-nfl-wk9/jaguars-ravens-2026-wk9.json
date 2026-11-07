@@ -85,6 +85,90 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:03Z",
+      "bookmaker_eu": {
+        "spread": 10,
+        "total": 40,
+        "ml_fav": -458,
+        "ml_dog": 356
+      },
+      "draftkings": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -520,
+        "ml_dog": 390
+      },
+      "fanduel": {
+        "spread": 10.5,
+        "total": 39.5,
+        "ml_fav": -510,
+        "ml_dog": 390
+      },
+      "caesars": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -529,
+        "ml_dog": 390
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
+    },
+    {
+      "captured_at": "2026-11-05T13:41:58Z",
+      "bookmaker_eu": {
+        "spread": 10,
+        "total": 40,
+        "ml_fav": -458,
+        "ml_dog": 356
+      },
+      "draftkings": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -535,
+        "ml_dog": 400
+      },
+      "fanduel": {
+        "spread": 10.5,
+        "total": 39.5,
+        "ml_fav": -550,
+        "ml_dog": 410
+      },
+      "caesars": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -529,
+        "ml_dog": 390
+      },
+      "note": "2026-11-05 ~13:50Z run: DK/FD/Caesars from covers.com odds board browser render (updated 11/5 8:40AM ET; columns/sides from table); BookMaker.eu board (page said updated 6h ago). Spreads home-relative (BAL +9.5/10.5)."
+    },
+    {
+      "captured_at": "2026-11-05T22:12:58Z",
+      "bookmaker_eu": {
+        "spread": 10,
+        "total": 40,
+        "ml_fav": -489,
+        "ml_dog": 377
+      },
+      "draftkings": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -535,
+        "ml_dog": 400
+      },
+      "fanduel": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -550,
+        "ml_dog": 410
+      },
+      "caesars": {
+        "spread": 9.5,
+        "total": 39.5,
+        "ml_fav": -529,
+        "ml_dog": 390
+      },
+      "note": "2026-11-05 22:2xZ run: DK/FD/Caesars from covers.com odds board browser render (updated 11/5 5:08PM ET, columns by header: BetMGM,bet365,DK,FD,Fanatics,BetRivers,Caesars,theScore,HardRock; all 9.5, BetRivers total 40). ML carried from prior capture for DK/FD/Czr; BookMaker.eu board (page said updated 8h ago, so partly stale). Spreads home-relative (BAL +9.5)."
     }
   ],
   "research": {
@@ -98,11 +182,11 @@
   "triggers": {
     "book_vs_sharp_gap": false,
     "key_number_crossed": false,
-    "steam_no_news": false
+    "steam_no_news": true
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.573267+00:00",
+    "run_at": "2026-11-05T03:17:28.859591+00:00",
     "n": 10000,
     "homeElo": 1489.5,
     "awayElo": 1660.6,
@@ -113,28 +197,29 @@
     "projTotal": 47.9,
     "homeWinProbElo": 33.0,
     "marketHomeSpread": 9.5,
-    "marketTotal": 43.5,
-    "homeInjuryPts": -3.0,
-    "awayInjuryPts": 0.0,
+    "marketTotal": 39.5,
+    "homeInjuryPts": -6.0,
+    "awayInjuryPts": -0.3,
     "projHomeMeanRaw": 21.5,
     "projAwayMeanRaw": 26.4,
-    "projHomeMeanAdjusted": 18.5,
-    "projAwayMeanAdjusted": 26.4,
-    "injuryAdjustedMarginHome": -7.9,
-    "projTotalAdjusted": 44.9,
+    "projHomeMeanAdjusted": 15.5,
+    "projAwayMeanAdjusted": 26.1,
+    "injuryAdjustedMarginHome": -10.6,
+    "projTotalAdjusted": 41.6,
     "spreadLean": null,
     "totalLean": null,
     "notes": [
-      "Home injury adjustment: -3.0 pts -- Lamar Jackson / Tyler Huntley (QB, doubtful, -3.0).",
+      "Home injury adjustment: -6.0 pts -- Lamar Jackson / Tyler Huntley (QB, out, -6.0).",
+      "Away injury adjustment: -0.3 pts -- Bhayshul Tuten (RB, questionable, -0.3).",
       "Baltimore Ravens (home)'s scoring average excludes 3 recent game(s) logged with a significant injury at the time (Lamar Jackson (-3.5) [-3.5 pts total]; Lamar Jackson (-2.5), Cam Jurgens (-0.5) [-3.0 pts total]; Lamar Jackson (-5.0), Jaylinn Hawkins (-0.4), Tavius Robinson (-0.8), T.J. Tampa (-0.4) [-6.6 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 28.9,
-    "awayWinPct": 68.9,
-    "tiePct": 2.2,
-    "medianHomeScore": 19,
+    "homeWinPct": 21.8,
+    "awayWinPct": 75.8,
+    "tiePct": 2.4,
+    "medianHomeScore": 15,
     "medianAwayScore": 26,
-    "coverPctHome": 55.2,
-    "overPct": 54.2
+    "coverPctHome": 47.2,
+    "overPct": 55.9
   },
   "simulation_history": [
     {
@@ -151,72 +236,90 @@
       "run_at": "2026-11-04T14:57:28.573267+00:00",
       "marginHome": -7.9,
       "total": 44.9
+    },
+    {
+      "run_at": "2026-11-05T03:17:28.859591+00:00",
+      "marginHome": -10.6,
+      "total": 41.6
     }
   ],
   "injury_adjustments": {
-    "last_updated": "2026-11-02T14:50:11Z",
+    "last_updated": "2026-11-05T03:17:28Z",
     "home": {
+      "offense_pts": -6.0,
+      "defense_pts": 0.0,
       "items": [
         {
           "position": "QB",
           "player": "Lamar Jackson / Tyler Huntley",
-          "status": "doubtful",
-          "pts": -3.0,
-          "note": "Jackson thumb injury (could be out for more time per baltimoreravens.com 11/1), Huntley toe injury; rookie Joe Fagnano played in relief. Starter unresolved, so priced at an uncertainty-weighted -3.0 rather than the full backup penalty; the -8.5 market already reflects part of it. Revisit Wed/Thu."
+          "status": "out",
+          "pts": -6.0,
+          "note": "RotoWire lineups 11/5: rookie Joe Fagnano listed as BAL starting QB (Jackson thumb, Huntley toe both out). Market reacted: spread 8.5->9.5/10, total 43.5->39.5-40. Priced -6.0 for unproven third-stringer; part already in market."
         }
       ],
-      "items_total_pts": -3.0,
+      "items_total_pts": -6.0,
       "stacking_notes": [],
-      "total_pts": -3.0
+      "total_pts": -6.0
     },
     "away": {
-      "items": [],
-      "items_total_pts": 0,
+      "offense_pts": -0.3,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "RB",
+          "player": "Bhayshul Tuten",
+          "status": "questionable",
+          "pts": -0.3,
+          "note": "RotoWire Q tag; Jaguars RB depth, small haircut only."
+        }
+      ],
+      "items_total_pts": -0.3,
       "stacking_notes": [],
-      "total_pts": 0.0
-    }
+      "total_pts": -0.3
+    },
+    "def_clusters": []
   },
   "props": {
-    "last_checked": "2026-11-02T14:50:11Z",
-    "status": "pending",
-    "source_note": "TNF props not on covers.com board Mon 2026-11-02 AM (page lists only prior games); re-check Tue/Wed.",
+    "last_checked": "2026-11-05T22:14:42Z",
+    "status": "captured",
+    "source_note": "2026-11-05 22:3xZ covers.com props board (browser render) + CBS position-vs-defense (QB/RB/WR/TE avg). TNF screened: no prop clears the team-weakness filter at confidence 5+. Opp ranks (1=toughest, 32=softest): JAX D vs QB 9, RB 1 (57.7 rush yd/g), WR 24 (CBS; footballdb not checked), TE 11. BAL D vs QB 18, RB 10, WR 22, TE 20. Closest: Zay Flowers o48.5 rec yds (JAX WR rank 24), but rec_yards is the weak market (-1) and Fagnano is a first-career-start QB, so it lands under 5. Henry rush UNDER 70.5 (JAX RB rank 1) fails the alignment gate (Covers proj 81.2 and 19.8 proj carries against).",
     "picks": []
   },
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Jacksonville Jaguars by 7.9 (injury-adjusted) against a market that has Jacksonville Jaguars favored by 8.5, a 0.6-point gap; sim cover% for Baltimore Ravens is 51.7% and projected total is 44.9 vs 43.5 (over 53.8%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "Ravens QB situation is unresolved (Lamar Jackson thumb, Tyler Huntley toe, rookie Joe Fagnano played in relief), priced at -3.0 pts for Baltimore. With no spread edge after that adjustment, the only thin lean is the Over, labeled minimum-action for the Thursday-night window; re-check once the starting QB is known."
+      "Sim (injury-adjusted, 10,000 runs): Jacksonville Jaguars by 10.6, projected total 41.6 (over 55.9%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Jacksonville Jaguars by 5.1, total 46.0. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Lean: Minimum-action pick (Thursday-night window). Rookie Joe Fagnano starts (Jackson, Huntley out); books dropped the total from 43.5 to 39.5, but the adjusted sim projects 41.6 and the 2026-only form check projects 46.0, so both sit above the number. First-career-start QB variance and sharp books at 40 keep this at 4."
     ],
     "leans": [
       {
         "market": "total",
-        "pick": "Over 43.5",
+        "pick": "Over 39.5",
         "confidence": 4,
         "best_bet": true,
-        "reasoning": "Minimum-action pick (Thursday-night window): sim projects 44.9 adjusted vs 43.5 (over 53.8%), but the starting QB for BAL is unresolved. Re-check Wed/Thu. | Stake $6 \u00b7 pass at 44",
+        "reasoning": "Minimum-action pick (Thursday-night window). Rookie Joe Fagnano starts (Jackson, Huntley out); books dropped the total from 43.5 to 39.5, but the adjusted sim projects 41.6 and the 2026-only form check projects 46.0, so both sit above the number. First-career-start QB variance and sharp books at 40 keep this at 4. | Stake $6 \u00b7 pass at 40.5",
         "factors": [
           {
             "label": "Sim total",
             "dir": "for",
-            "detail": "Adjusted projection 44.9 vs 43.5 market"
+            "detail": "Adjusted 41.6 vs 39.5 (over 55.9%)"
+          },
+          {
+            "label": "2026-only form",
+            "dir": "for",
+            "detail": "46.0 projected from 2026 PF/PA"
           },
           {
             "label": "QB status",
             "dir": "against",
-            "detail": "BAL QB unresolved (Jackson thumb, Huntley toe); a rookie QB drags scoring"
-          },
-          {
-            "label": "Injury model",
-            "dir": "neutral",
-            "detail": "Injury pts shrink BAL scoring; sim already includes -3.0"
+            "detail": "Rookie first start, Jackson and Huntley out; market already cut 4 pts"
           }
         ],
         "alignment": {
-          "for": 1,
+          "for": 2,
           "against": 1,
-          "neutral": 1,
-          "net": 0
+          "neutral": 0,
+          "net": 1
         }
       }
     ]
@@ -232,5 +335,24 @@
     "impact": "none",
     "source": "forecast.weather.gov MapClick, Thursday night period (rain mainly after midnight)",
     "history": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:27Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 30,
+      "handle_pct_home": 33
+    },
+    "total": {
+      "bets_pct_over": 71,
+      "handle_pct_over": 89
+    },
+    "moneyline": {
+      "bets_pct_home": 15,
+      "handle_pct_home": 26
+    },
+    "reverse_line_move": false,
+    "rlm_note": "67% of handle is on the away side and the spread has moved toward them (+9.5 -> +10) -- money and line agree, no RLM.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

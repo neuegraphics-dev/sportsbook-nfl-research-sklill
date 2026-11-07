@@ -85,6 +85,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:03Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 52.5,
+        "ml_fav": -165,
+        "ml_dog": 143
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 52.5,
+        "ml_fav": -155,
+        "ml_dog": 130
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 52.5,
+        "ml_fav": -164,
+        "ml_dog": 138
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 52.5,
+        "ml_fav": -164,
+        "ml_dog": 139
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -97,12 +125,12 @@
   },
   "triggers": {
     "book_vs_sharp_gap": false,
-    "key_number_crossed": false,
+    "key_number_crossed": true,
     "steam_no_news": false
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.227854+00:00",
+    "run_at": "2026-11-05T03:19:13.632818+00:00",
     "n": 10000,
     "homeElo": 1449.6,
     "awayElo": 1531.7,
@@ -112,30 +140,32 @@
     "marginDivergence": 6.2,
     "projTotal": 48.7,
     "homeWinProbElo": 45.1,
-    "marketHomeSpread": 3,
-    "marketTotal": 51.5,
-    "homeInjuryPts": 0.0,
+    "marketHomeSpread": 3.5,
+    "marketTotal": 52.5,
+    "homeInjuryPts": 1.1,
     "awayInjuryPts": 0.0,
     "projHomeMeanRaw": 23.6,
     "projAwayMeanRaw": 25.0,
-    "projHomeMeanAdjusted": 23.6,
+    "projHomeMeanAdjusted": 24.7,
     "projAwayMeanAdjusted": 25.0,
-    "injuryAdjustedMarginHome": -1.4,
-    "projTotalAdjusted": 48.7,
-    "spreadLean": null,
+    "injuryAdjustedMarginHome": -0.3,
+    "projTotalAdjusted": 49.8,
+    "spreadLean": "home",
     "totalLean": "under",
     "notes": [
       "Elo margin (-1.4) and recent-scoring margin (-7.6) disagree by 6.2 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -0.4 pts -- Zachariah Branch (WR, out, -0.4).",
+      "Away injury adjustment: -1.5 pts -- Kyle Dugger (S, questionable, -0.5), DJ Turner II (CB, questionable, -0.6), Cedric Johnson (DE, questionable, -0.4).",
       "Atlanta Falcons (home)'s scoring average excludes 2 recent game(s) logged with a significant injury at the time (A.J. Terrell (-1.0), Billy Bowman Jr. (-0.5), Samson Ebukam (-1.0) [-3.2 pts total]; Brian Robinson (-0.5), Michael Jerrell (-0.8), Cameron Williams (-0.8), Billy Bowman Jr. (-0.4), Divine Deablo (-0.4), Za'Darius Smith (-0.3) [-4.0 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Cincinnati Bengals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Tee Higgins (-1.5), Jessie Bates III (-0.8) [-2.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 45.3,
-    "awayWinPct": 51.6,
+    "homeWinPct": 48.0,
+    "awayWinPct": 48.9,
     "tiePct": 3.1,
-    "medianHomeScore": 24,
+    "medianHomeScore": 25,
     "medianAwayScore": 25,
-    "coverPctHome": 55.4,
-    "overPct": 41.2
+    "coverPctHome": 59.4,
+    "overPct": 42.1
   },
   "simulation_history": [
     {
@@ -152,14 +182,88 @@
       "run_at": "2026-11-04T14:57:28.227854+00:00",
       "marginHome": -1.4,
       "total": 48.7
+    },
+    {
+      "run_at": "2026-11-05T03:19:13.632818+00:00",
+      "marginHome": -0.3,
+      "total": 49.8
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:25Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Cincinnati Bengals by 1.4 (injury-adjusted) against a market that has Cincinnati Bengals favored by 3, a 1.6-point gap; sim cover% for Atlanta Falcons is 54.3% and projected total is 48.7 vs 51.5 (over 42.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): Cincinnati Bengals by 0.3, projected total 49.8 (over 42.1%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Cincinnati Bengals by 1.9, total 48.4. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Sim has the game a coin flip (CIN by 0.3) and the 2026-only form check has CIN by 1.9, against CIN -3.5 at US books (BM -3). ATL +3.5 is the soft lean but it costs -127 to -141 and the Wednesday Bengals defensive DNPs are team estimates, so this stays a context note at confidence 4 with no stake."
     ],
     "leans": []
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:13Z",
+    "home": {
+      "offense_pts": -0.4,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "WR",
+          "player": "Zachariah Branch",
+          "status": "out",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP"
+        }
+      ],
+      "items_total_pts": -0.4,
+      "stacking_notes": [],
+      "total_pts": -0.4
+    },
+    "away": {
+      "offense_pts": 0.0,
+      "defense_pts": -1.5,
+      "items": [
+        {
+          "position": "S",
+          "player": "Kyle Dugger",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP quad (est.)"
+        },
+        {
+          "position": "CB",
+          "player": "DJ Turner II",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP heel (est.)"
+        },
+        {
+          "position": "DE",
+          "player": "Cedric Johnson",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP ankle/foot (est.)"
+        }
+      ],
+      "items_total_pts": -1.5,
+      "stacking_notes": [],
+      "total_pts": -1.5
+    },
+    "def_clusters": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:27Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 17,
+      "handle_pct_home": 39
+    },
+    "total": {
+      "bets_pct_over": 68,
+      "handle_pct_over": 89
+    },
+    "moneyline": {
+      "bets_pct_home": 17,
+      "handle_pct_home": 11
+    },
+    "reverse_line_move": false,
+    "rlm_note": "61% of handle is on the away side but the spread hasn't moved yet (+3, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

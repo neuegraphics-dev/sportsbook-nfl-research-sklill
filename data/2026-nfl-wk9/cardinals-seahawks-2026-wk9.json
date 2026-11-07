@@ -75,6 +75,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:04Z",
+      "bookmaker_eu": {
+        "spread": -9,
+        "total": 39.5,
+        "ml_fav": -385,
+        "ml_dog": 306
+      },
+      "draftkings": {
+        "spread": -8.5,
+        "total": 39.5,
+        "ml_fav": -455,
+        "ml_dog": 350
+      },
+      "fanduel": {
+        "spread": -8.5,
+        "total": 39.5,
+        "ml_fav": -400,
+        "ml_dog": 310
+      },
+      "caesars": {
+        "spread": -8.5,
+        "total": 39.5,
+        "ml_fav": -420,
+        "ml_dog": 325
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -88,11 +116,11 @@
   "triggers": {
     "book_vs_sharp_gap": false,
     "key_number_crossed": false,
-    "steam_no_news": false
+    "steam_no_news": true
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.420049+00:00",
+    "run_at": "2026-11-05T03:19:14.348129+00:00",
     "n": 10000,
     "homeElo": 1636.2,
     "awayElo": 1386.4,
@@ -102,30 +130,32 @@
     "marginDivergence": 7.8,
     "projTotal": 49.1,
     "homeWinProbElo": 84.7,
-    "marketHomeSpread": -10.5,
-    "marketTotal": 44.5,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": 0.0,
+    "marketHomeSpread": -8.5,
+    "marketTotal": 39.5,
+    "homeInjuryPts": -1.7,
+    "awayInjuryPts": -0.8,
     "projHomeMeanRaw": 30.5,
     "projAwayMeanRaw": 18.6,
-    "projHomeMeanAdjusted": 30.5,
-    "projAwayMeanAdjusted": 18.6,
-    "injuryAdjustedMarginHome": 11.9,
-    "projTotalAdjusted": 49.1,
+    "projHomeMeanAdjusted": 28.8,
+    "projAwayMeanAdjusted": 17.8,
+    "injuryAdjustedMarginHome": 11.0,
+    "projTotalAdjusted": 46.6,
     "spreadLean": null,
     "totalLean": "over",
     "notes": [
       "Elo margin (+11.9) and recent-scoring margin (+4.1) disagree by 7.8 points -- worth a second look before trusting either alone.",
+      "Home injury adjustment: -3.0 pts -- Sam Darnold (QB, out, -3.0).",
+      "Away injury adjustment: -2.1 pts -- Budda Baker (S, questionable, -0.8), Josh Sweat (LB, questionable, -0.5), Isaac Seumalo (OG, questionable, -0.4), Hjalte Froddolt (OC, questionable, -0.4).",
       "Seattle Seahawks (home)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Zach Charbonnet (-1.2), Drake Thomas (-0.4), Chazz Surratt (-0.3), Drew Lock (-0.8), DeMarcus Lawrence (-0.4), Uchenna Nwosu (-0.3), Elijah Arroyo (-0.4) [-4.5 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Arizona Cardinals (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (Jeremiyah Love (-1.5), Jon Gaines II (-0.5), Walter Nolen (-0.7), Andrew Wingard (-0.3), Budda Baker (-0.3) [-3.3 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 79.2,
-    "awayWinPct": 18.9,
-    "tiePct": 1.9,
-    "medianHomeScore": 31,
-    "medianAwayScore": 19,
-    "coverPctHome": 54.2,
-    "overPct": 62.8
+    "homeWinPct": 76.6,
+    "awayWinPct": 21.0,
+    "tiePct": 2.4,
+    "medianHomeScore": 29,
+    "medianAwayScore": 18,
+    "coverPctHome": 56.2,
+    "overPct": 70.2
   },
   "simulation_history": [
     {
@@ -142,14 +172,143 @@
       "run_at": "2026-11-04T14:57:28.420049+00:00",
       "marginHome": 11.9,
       "total": 49.1
+    },
+    {
+      "run_at": "2026-11-05T03:19:14.348129+00:00",
+      "marginHome": 11.0,
+      "total": 46.6
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Seattle Seahawks by 13.7 (injury-adjusted) against a market that has Seattle Seahawks favored by 11.5, a 2.2-point gap; sim cover% for Seattle Seahawks is 56.4% and projected total is 48.8 vs 44.5 (over 62.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): Seattle Seahawks by 11.0, projected total 46.6 (over 70.2%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Seattle Seahawks by 7.6, total 47.3. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Lean: Both models sit near 47 (sim 46.6, 2026-only 47.3) against a 39.5 market that cut 5 points on Darnold out. Gap is large but the sharp number already prices Lock (listed Q himself) and rain risk, so it is context at 4 with no stake: the window's top three are staked. Swap-in only if a top-3 price moves past its pass-at."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Over 39.5",
+        "confidence": 4,
+        "best_bet": false,
+        "reasoning": "Both models sit near 47 (sim 46.6, 2026-only 47.3) against a 39.5 market that cut 5 points on Darnold out. Gap is large but the sharp number already prices Lock (listed Q himself) and rain risk, so it is context at 4 with no stake: the window's top three are staked. Swap-in only if a top-3 price moves past its pass-at. | Stake $0 \u00b7 pass at 40.5",
+        "factors": [
+          {
+            "label": "Sim total",
+            "dir": "for",
+            "detail": "46.6 vs 39.5 (over 70.2%)"
+          },
+          {
+            "label": "2026-only form",
+            "dir": "for",
+            "detail": "47.3 projected"
+          },
+          {
+            "label": "QB status",
+            "dir": "against",
+            "detail": "Lock (Q) replaces Darnold; market cut 44.5 to 39.5"
+          },
+          {
+            "label": "Weather",
+            "dir": "against",
+            "detail": "26% rain, 11 mph SSW"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 2,
+          "neutral": 0,
+          "net": 0
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:14Z",
+    "home": {
+      "offense_pts": -3.0,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "QB",
+          "player": "Sam Darnold",
+          "status": "out",
+          "pts": -3.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): Darnold out (quad), Drew Lock (himself listed Q) starts; Lock has played well as backup"
+        }
+      ],
+      "items_total_pts": -3.0,
+      "stacking_notes": [],
+      "total_pts": -3.0
+    },
+    "away": {
+      "offense_pts": -0.8,
+      "defense_pts": -1.3,
+      "items": [
+        {
+          "position": "S",
+          "player": "Budda Baker",
+          "status": "questionable",
+          "pts": -0.8,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent Wed"
+        },
+        {
+          "position": "LB",
+          "player": "Josh Sweat",
+          "status": "questionable",
+          "pts": -0.5,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent"
+        },
+        {
+          "position": "OG",
+          "player": "Isaac Seumalo",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent"
+        },
+        {
+          "position": "OC",
+          "player": "Hjalte Froddolt",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): absent"
+        }
+      ],
+      "items_total_pts": -2.1,
+      "stacking_notes": [],
+      "total_pts": -2.1
+    },
+    "def_clusters": []
+  },
+  "weather": {
+    "captured_at": "2026-11-05T03:22:14Z",
+    "stadium": "Lumen Field",
+    "roof": "open",
+    "wind_mph": 9.0,
+    "gust_mph": null,
+    "temp_f": 55.0,
+    "precip_pct": 21.0,
+    "impact": "none",
+    "source": "api.weather.gov hourly forecast via browser fetch, kickoff-hour period, 2026-11-05",
+    "history": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:28Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 45,
+      "handle_pct_home": 60
+    },
+    "total": {
+      "bets_pct_over": 73,
+      "handle_pct_over": 37
+    },
+    "moneyline": {
+      "bets_pct_home": 86,
+      "handle_pct_home": 90
+    },
+    "reverse_line_move": false,
+    "rlm_note": "60% of handle is on the home side but the spread hasn't moved yet (-9, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

@@ -36,6 +36,7 @@ triggers, gap sizes) so the caller can decide what goes in the report.
 """
 import argparse
 import json
+from datetime import timezone
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
@@ -77,7 +78,16 @@ def main():
 
     prev = game["snapshots"][-1] if game["snapshots"] else None
 
-    if args.skip_if_same_day and prev is not None and prev["captured_at"][:10] == date:
+    # "Same day" is the Eastern-time calendar day (2026-11-07 fix): a late-evening
+    # ET snapshot (e.g. 11:17pm ET = 03:17Z next day) used to count as the next
+    # UTC day and block every Tier 2/3 update for the whole following ET day.
+    def _et_day(ts):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        return datetime.strptime(ts[:19], "%Y-%m-%dT%H:%M:%S").replace(
+            tzinfo=timezone.utc).astimezone(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+
+    if args.skip_if_same_day and prev is not None and _et_day(prev["captured_at"]) == _et_day(captured_at):
         # Still a no-op on price data (today's snapshot stands as-is, no
         # duplicate point) -- but a research pass run later the same day
         # shouldn't be blocked from attaching, or every research-only

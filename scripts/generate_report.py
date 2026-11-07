@@ -104,6 +104,26 @@ def render(data_dir, reference=None):
             status_txt += f" — injury-adjusted (home {home_inj:+.1f} / away {away_inj:+.1f} pts)"
         lines.append(f"  {game['matchup']} ({game.get('week', '')}) — {days:.1f} days out — {status_txt}")
 
+    # RUN HEALTH (added 2026-11-07): props and line gaps the run must fix before
+    # it reports. A game inside 96h with no props block, or with lines older
+    # than 18h, means a step was skipped or a run was missed.
+    from lib import parse_iso as _pi
+    gaps = []
+    for _, hours, label, game in rows:
+        if hours is None or hours < 0 or hours > 96:
+            continue
+        pr = game.get("props") or {}
+        if pr.get("status") not in ("captured",):
+            gaps.append(f"  PROPS MISSING: {game['matchup']} — kickoff in {hours:.0f}h — props status {pr.get('status') or 'none'} (run step 10 now)")
+        snaps = game.get("snapshots") or []
+        if snaps:
+            age = (now - _pi(snaps[-1]["captured_at"])).total_seconds() / 3600
+            if age > 18:
+                gaps.append(f"  STALE LINES: {game['matchup']} — last snapshot {age:.0f}h old (run step 3/4 without skip)")
+    lines.append("")
+    lines.append("RUN HEALTH")
+    lines.extend(gaps or ["  OK: every game inside 96h has props captured and lines under 18h old"])
+
     return "\n".join(lines)
 
 

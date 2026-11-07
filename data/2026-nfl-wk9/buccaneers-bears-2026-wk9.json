@@ -75,6 +75,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:04Z",
+      "bookmaker_eu": {
+        "spread": -6,
+        "total": 47.5,
+        "ml_fav": -286,
+        "ml_dog": 235
+      },
+      "draftkings": {
+        "spread": -6,
+        "total": 47.5,
+        "ml_fav": -305,
+        "ml_dog": 245
+      },
+      "fanduel": {
+        "spread": -6.5,
+        "total": 47.5,
+        "ml_fav": -290,
+        "ml_dog": 235
+      },
+      "caesars": {
+        "spread": -6.5,
+        "total": 47.5,
+        "ml_fav": -290,
+        "ml_dog": 230
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -92,7 +120,7 @@
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.382198+00:00",
+    "run_at": "2026-11-05T03:19:14.412241+00:00",
     "n": 10000,
     "homeElo": 1616.9,
     "awayElo": 1488.4,
@@ -102,29 +130,30 @@
     "marginDivergence": 1.8,
     "projTotal": 46.2,
     "homeWinProbElo": 73.4,
-    "marketHomeSpread": -6,
-    "marketTotal": 47,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": 0.0,
+    "marketHomeSpread": -6.5,
+    "marketTotal": 47.5,
+    "homeInjuryPts": 0.6,
+    "awayInjuryPts": -1.0,
     "projHomeMeanRaw": 26.7,
     "projAwayMeanRaw": 19.6,
-    "projHomeMeanAdjusted": 26.7,
-    "projAwayMeanAdjusted": 19.6,
-    "injuryAdjustedMarginHome": 7.1,
-    "projTotalAdjusted": 46.2,
+    "projHomeMeanAdjusted": 27.3,
+    "projAwayMeanAdjusted": 18.6,
+    "injuryAdjustedMarginHome": 8.7,
+    "projTotalAdjusted": 45.9,
     "spreadLean": null,
     "totalLean": null,
     "notes": [
+      "Away injury adjustment: -1.6 pts -- Yaya Diaby (EDGE, questionable, -0.6), Emeka Egbuka (WR, questionable, -1.0).",
       "Chicago Bears (home)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Caleb Williams (-6.5) [-6.5 pts total]; Caleb Williams (-4.0) [-4.0 pts total]; Caleb Williams (-4.0), D'Andre Swift (-0.5), Kyle Monangai (-0.5) [-5.0 pts total]; T.J. Edwards (-1.0), Jack Sanborn (-0.4), Jonah Jackson (-0.6), Kyle Monangai (-0.2) [-2.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window.",
       "Tampa Bay Buccaneers (away)'s scoring average excludes 4 recent game(s) logged with a significant injury at the time (Baker Mayfield (-5.5) [-5.5 pts total]; Baker Mayfield (-5.5), Antoine Winfield Jr. (-0.8), Benjamin Morrison (-0.8), SirVocea Dennis (-0.4) [-7.4 pts total]; Baker Mayfield (-6.0), Antoine Winfield Jr. (-1.0) [-7.0 pts total]; Emeka Egbuka (-1.5), Luke Goedeke (-0.8), Antoine Winfield Jr. (-1.0), Baker Mayfield (-0.8) [-4.1 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 68.4,
-    "awayWinPct": 29.1,
-    "tiePct": 2.5,
+    "homeWinPct": 72.2,
+    "awayWinPct": 25.4,
+    "tiePct": 2.4,
     "medianHomeScore": 27,
     "medianAwayScore": 19,
-    "coverPctHome": 53.9,
-    "overPct": 47.0
+    "coverPctHome": 55.9,
+    "overPct": 45.5
   },
   "simulation_history": [
     {
@@ -141,14 +170,121 @@
       "run_at": "2026-11-04T14:57:28.382198+00:00",
       "marginHome": 7.1,
       "total": 46.2
+    },
+    {
+      "run_at": "2026-11-05T03:19:14.412241+00:00",
+      "marginHome": 8.7,
+      "total": 45.9
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:26Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Chicago Bears by 5.3 (injury-adjusted) against a market that has Chicago Bears favored by 5.5, a 0.2-point gap; sim cover% for Chicago Bears is 49.1% and projected total is 45.9 vs 47 (over 46.6%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): Chicago Bears by 8.7, projected total 45.9 (over 45.5%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Chicago Bears by 3.7, total 43.9. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Lean: Minimum-action pick (Sunday-night window). Sim projects 45.9 and the 2026-only form check 43.9 against 47.5, but TB WR Egbuka and EDGE Diaby are DNP (RotoWire has Egbuka Q) and Mayfield is back, which cuts both ways. No pick reaches 5 in this window."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "total",
+        "pick": "Under 47.5",
+        "confidence": 4,
+        "best_bet": true,
+        "reasoning": "Minimum-action pick (Sunday-night window). Sim projects 45.9 and the 2026-only form check 43.9 against 47.5, but TB WR Egbuka and EDGE Diaby are DNP (RotoWire has Egbuka Q) and Mayfield is back, which cuts both ways. No pick reaches 5 in this window. | Stake $6 \u00b7 pass at 46.5",
+        "factors": [
+          {
+            "label": "Sim total",
+            "dir": "for",
+            "detail": "45.9 vs 47.5 (under 54.5%)"
+          },
+          {
+            "label": "2026-only form",
+            "dir": "for",
+            "detail": "43.9 projected"
+          },
+          {
+            "label": "Injuries",
+            "dir": "neutral",
+            "detail": "TB Egbuka/Diaby DNP, Mayfield back"
+          },
+          {
+            "label": "Weather",
+            "dir": "neutral",
+            "detail": "50F, 6 mph"
+          }
+        ],
+        "alignment": {
+          "for": 2,
+          "against": 0,
+          "neutral": 2,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:14Z",
+    "home": {
+      "offense_pts": 0.0,
+      "defense_pts": 0.0,
+      "items": [],
+      "items_total_pts": 0,
+      "stacking_notes": [],
+      "total_pts": 0.0
+    },
+    "away": {
+      "offense_pts": -1.0,
+      "defense_pts": -0.6,
+      "items": [
+        {
+          "position": "EDGE",
+          "player": "Yaya Diaby",
+          "status": "questionable",
+          "pts": -0.6,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP knee"
+        },
+        {
+          "position": "WR",
+          "player": "Emeka Egbuka",
+          "status": "questionable",
+          "pts": -1.0,
+          "note": "CBS Sports Wk9 injury report 11/4 (Wed practice; some teams estimated): DNP foot (RotoWire Q)"
+        }
+      ],
+      "items_total_pts": -1.6,
+      "stacking_notes": [],
+      "total_pts": -1.6
+    },
+    "def_clusters": []
+  },
+  "weather": {
+    "captured_at": "2026-11-05T03:22:14Z",
+    "stadium": "Soldier Field",
+    "roof": "open",
+    "wind_mph": 5.0,
+    "gust_mph": null,
+    "temp_f": 49.0,
+    "precip_pct": 0.0,
+    "impact": "none",
+    "source": "api.weather.gov hourly forecast via browser fetch, kickoff-hour period, 2026-11-05",
+    "history": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:28Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 75,
+      "handle_pct_home": 36
+    },
+    "total": {
+      "bets_pct_over": 78,
+      "handle_pct_over": 70
+    },
+    "moneyline": {
+      "bets_pct_home": 89,
+      "handle_pct_home": 81
+    },
+    "reverse_line_move": false,
+    "rlm_note": "64% of handle is on the away side but the spread hasn't moved yet (-6, unchanged) -- too early to call RLM, not evidence of one.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }

@@ -85,6 +85,34 @@
       "fanduel": null,
       "caesars": null,
       "note": "2026-11-04 run: DraftKings spread via VegasInsider (page updated 11/3 2:46PM ET; spread only, totals/ML unavailable -> null); BookMaker.eu live board (spread/total/ML). rotowire odds page is stale 2025 content, not used. FanDuel/Caesars null (no current source)."
+    },
+    {
+      "captured_at": "2026-11-05T03:17:04Z",
+      "bookmaker_eu": {
+        "spread": 3,
+        "total": 45.5,
+        "ml_fav": -169,
+        "ml_dog": 143
+      },
+      "draftkings": {
+        "spread": 3.5,
+        "total": 45.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "fanduel": {
+        "spread": 3.5,
+        "total": 45.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "caesars": {
+        "spread": 3.5,
+        "total": 45.5,
+        "ml_fav": null,
+        "ml_dog": null
+      },
+      "note": "2026-11-05 03:2xZ run (10:15PM ET 11/4 board): DK/FD/Caesars from covers.com odds board browser render (updated 11/4 10:15 PM ET, columns verified via table headers); BookMaker.eu live board lines.bookmaker.eu (updated ~1h ago). Spreads home-relative."
     }
   ],
   "research": {
@@ -97,12 +125,12 @@
   },
   "triggers": {
     "book_vs_sharp_gap": false,
-    "key_number_crossed": false,
+    "key_number_crossed": true,
     "steam_no_news": false
   },
   "status": "active",
   "simulation": {
-    "run_at": "2026-11-04T14:57:28.266092+00:00",
+    "run_at": "2026-11-05T03:19:14.478607+00:00",
     "n": 10000,
     "homeElo": 1589.3,
     "awayElo": 1675.8,
@@ -113,27 +141,29 @@
     "projTotal": 45.3,
     "homeWinProbElo": 44.5,
     "marketHomeSpread": 3.5,
-    "marketTotal": 46.5,
-    "homeInjuryPts": 0.0,
-    "awayInjuryPts": 0.0,
+    "marketTotal": 45.5,
+    "homeInjuryPts": -1.5,
+    "awayInjuryPts": -0.4,
     "projHomeMeanRaw": 21.9,
     "projAwayMeanRaw": 23.4,
-    "projHomeMeanAdjusted": 21.9,
-    "projAwayMeanAdjusted": 23.4,
-    "injuryAdjustedMarginHome": -1.5,
-    "projTotalAdjusted": 45.3,
+    "projHomeMeanAdjusted": 20.4,
+    "projAwayMeanAdjusted": 23.0,
+    "injuryAdjustedMarginHome": -2.6,
+    "projTotalAdjusted": 43.4,
     "spreadLean": null,
     "totalLean": null,
     "notes": [
+      "Home injury adjustment: -1.5 pts -- Kyler Murray (QB, questionable, -1.5).",
+      "Away injury adjustment: -0.4 pts -- DJ Moore (WR, questionable, -0.4).",
       "Buffalo Bills (away)'s scoring average excludes 1 recent game(s) logged with a significant injury at the time (DJ Moore (-1.0), Ed Oliver (-1.5), Josh Palmer (-0.8) [-3.2 pts total]) -- averaging over the remaining clean games instead of diluting the read with injury-affected performances. Will fold those games back in automatically once they age out of the rolling window."
     ],
-    "homeWinPct": 44.5,
-    "awayWinPct": 52.7,
+    "homeWinPct": 40.8,
+    "awayWinPct": 56.3,
     "tiePct": 2.9,
-    "medianHomeScore": 22,
+    "medianHomeScore": 20,
     "medianAwayScore": 23,
-    "coverPctHome": 55.5,
-    "overPct": 46.2
+    "coverPctHome": 51.9,
+    "overPct": 43.9
   },
   "simulation_history": [
     {
@@ -150,14 +180,110 @@
       "run_at": "2026-11-04T14:57:28.266092+00:00",
       "marginHome": -1.5,
       "total": 45.3
+    },
+    {
+      "run_at": "2026-11-05T03:19:14.478607+00:00",
+      "marginHome": -2.6,
+      "total": 43.4
     }
   ],
   "game_evaluation": {
-    "last_updated": "2026-11-02T14:50:25Z",
+    "last_updated": "2026-11-05T03:21:34Z",
     "analysis": [
-      "Sim: Buffalo Bills by 1.5 (injury-adjusted) against a market that has Buffalo Bills favored by 3, a 1.5-point gap; sim cover% for Minnesota Vikings is 54.9% and projected total is 45.3 vs 46.5 (over 47.0%). Elo-based and still weighted toward 2025 scoring this early in the season, so a gap of this size is treated as an artifact until it survives a 2026-only check.",
-      "First capture of Week 9 on Monday 11/2 from the covers.com board; injury reports have not been researched yet for this game, so no lean is issued. Re-check after Wednesday/Thursday practice reports."
+      "Sim (injury-adjusted, 10,000 runs): Buffalo Bills by 2.6, projected total 43.4 (over 43.9%). 2026-only form check (2026 PF/PA, 1.0 pt home edge each way): Minnesota Vikings by 1.6, total 46.2. Wednesday injury reports are in; Elo still carries 2025 strength, so a model-vs-market gap only counts as a lean when the 2026-only check agrees.",
+      "Lean: Minimum-action pick (Monday-night window). Sim has BUF by 2.6 and the 2026-only form check MIN by 1.6, so +3.5 carries a hook of value. Kyler Murray (Q) and DJ Moore (Q) first official reports come Thursday; re-check Monday before betting."
     ],
-    "leans": []
+    "leans": [
+      {
+        "market": "spread",
+        "pick": "MIN +3.5",
+        "confidence": 4,
+        "best_bet": true,
+        "reasoning": "Minimum-action pick (Monday-night window). Sim has BUF by 2.6 and the 2026-only form check MIN by 1.6, so +3.5 carries a hook of value. Kyler Murray (Q) and DJ Moore (Q) first official reports come Thursday; re-check Monday before betting. | Stake $6 \u00b7 pass at +3",
+        "factors": [
+          {
+            "label": "Sim margin",
+            "dir": "for",
+            "detail": "BUF by 2.6 vs 3.5"
+          },
+          {
+            "label": "2026-only form",
+            "dir": "for",
+            "detail": "MIN by 1.6"
+          },
+          {
+            "label": "QB status",
+            "dir": "against",
+            "detail": "Murray Q, first report Thursday"
+          },
+          {
+            "label": "Key number",
+            "dir": "for",
+            "detail": "+3.5 hook"
+          }
+        ],
+        "alignment": {
+          "for": 3,
+          "against": 1,
+          "neutral": 0,
+          "net": 2
+        }
+      }
+    ]
+  },
+  "injury_adjustments": {
+    "last_updated": "2026-11-05T03:19:14Z",
+    "home": {
+      "offense_pts": -1.5,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "QB",
+          "player": "Kyler Murray",
+          "status": "questionable",
+          "pts": -1.5,
+          "note": "RotoWire Q tag; first reports Thursday; uncertainty-weighted"
+        }
+      ],
+      "items_total_pts": -1.5,
+      "stacking_notes": [],
+      "total_pts": -1.5
+    },
+    "away": {
+      "offense_pts": -0.4,
+      "defense_pts": 0.0,
+      "items": [
+        {
+          "position": "WR",
+          "player": "DJ Moore",
+          "status": "questionable",
+          "pts": -0.4,
+          "note": "RotoWire Q tag; first reports Thursday"
+        }
+      ],
+      "items_total_pts": -0.4,
+      "stacking_notes": [],
+      "total_pts": -0.4
+    },
+    "def_clusters": []
+  },
+  "market_signal": {
+    "captured_at": "2026-11-05T22:15:28Z",
+    "source": "cleatz.com",
+    "spread": {
+      "bets_pct_home": 35,
+      "handle_pct_home": 46
+    },
+    "total": {
+      "bets_pct_over": 83,
+      "handle_pct_over": 44
+    },
+    "moneyline": {
+      "bets_pct_home": 15,
+      "handle_pct_home": 22
+    },
+    "reverse_line_move": false,
+    "rlm_note": "Handle split isn't lopsided enough (40-60%) to call a majority side.",
+    "note": "cleatz.com board 11/5 4:07PM ET; converted to home/over-relative"
   }
 }
